@@ -5,16 +5,90 @@
         <title>Chapter Index - 2 A2</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <style>
-            body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; max-width: 900px; margin: 0 auto; padding: 40px 20px; line-height: 1.6; color: #333; background: #fdfdfd; }
-            h1 { color: #2c3e50; font-size: 2rem; margin-bottom: 30px; border-bottom: 3px solid #3498db; padding-bottom: 10px; }
-            ul { list-style: none; padding: 0; background: white; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); overflow: hidden; border: 1px solid #eee; }
-            li:last-child { border-bottom: none; }
-            a:hover { background: #f7fbfe; color: #21618c; }
-            .container { margin-top: 20px; }
-        </style>
-    </head>
-    <body>
+        
+    
+
+<style id="global-theme-styles">
+    :root {
+        --bg-color: #ffffff;
+        --text-color: #333333;
+        --heading-color: #2c3e50;
+        --link-color: #3498db;
+        --border-color: #dddddd;
+        --table-bg: #f9f9f9;
+        --nav-bg: #2c3e50;
+        --nav-text: #ffffff;
+    }
+    @media (prefers-color-scheme: dark) {
+        :root {
+            --bg-color: #1a1a1a;
+            --text-color: #e0e0e0;
+            --heading-color: #8ab4f8;
+            --link-color: #64b5f6;
+            --border-color: #444444;
+            --table-bg: #2a2a2a;
+            --nav-bg: #121212;
+            --nav-text: #e0e0e0;
+        }
+    }
+    body {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        line-height: 1.6;
+        color: var(--text-color);
+        background-color: var(--bg-color);
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 0;
+    }
+    #nav-header {
+        background: var(--nav-bg) !important;
+        color: var(--nav-text) !important;
+    }
+    #nav-header a {
+        color: var(--nav-text) !important;
+    }
+    .main-content {
+        padding: 20px;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 30px auto;
+        border-radius: 8px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+    h1, h2, h3, h4, h5, h6 {
+        color: var(--heading-color);
+        margin-top: 1.5em;
+        margin-bottom: 0.5em;
+        font-weight: 600;
+    }
+    a {
+        color: var(--link-color);
+        text-decoration: none;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+    table {
+        border-collapse: collapse;
+        width: 100%;
+        margin: 2em 0;
+        background-color: var(--bg-color);
+    }
+    th, td {
+        border: 1px solid var(--border-color);
+        padding: 12px;
+        text-align: left;
+    }
+    th {
+        background-color: var(--table-bg);
+        font-weight: 600;
+    }
+</style>
+</head>
+    <body><div class="main-content">
         <div class="container">
             <a href="../index.html" style="text-decoration: none; color: #7f8c8d; margin-bottom: 20px; display: inline-flex; align-items: center; gap: 5px; font-weight: 500;"> <span style="font-size: 1.2rem;">↑</span> Parent Directory</a>
             <h1>Chapter Index - 2 A2</h1>
@@ -58,6 +132,6 @@
         </li>
             </ul>
         </div>
-    </body>
+    </div></body>
     </html>
     
