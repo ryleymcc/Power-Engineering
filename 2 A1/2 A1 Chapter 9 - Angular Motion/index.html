@@ -1,0 +1,1577 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+ 
+    <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['\\(', '\\)']],
+        displayMath: [['$$', '$$']]
+      }
+    };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+</head>
+ <body>
+    <div id="nav-header" style="padding: 15px 20px; background: #2c3e50; color: white; display: flex; align-items: center; gap: 20px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+        <a href="../index.html" style="color: white; text-decoration: none; background: #34495e; padding: 8px 16px; border-radius: 4px; font-weight: 600; font-size: 0.9rem; transition: background 0.2s;">← Back to Index</a>
+        <h1 style="margin: 0; font-size: 1.2rem; font-weight: 500; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Power Engineering Series</h1>
+    </div>
+    
+  <h1>
+   Angular Motion
+  </h1>
+  <h2>
+   9
+  </h2>
+  <h2>
+   Learning Outcome
+  </h2>
+  <p>
+   <i>
+    When you complete this learning material, you will be able to:
+   </i>
+  </p>
+  <p>
+   Apply the theory of applied mechanics to bodies in angular motion.
+  </p>
+  <h2>
+   Learning Objectives
+  </h2>
+  <p>
+   <i>
+    You will specifically be able to complete the following tasks:
+   </i>
+  </p>
+  <ol style="list-style-type: none">
+   <li>
+    1. Define and calculate angular displacement, angular velocity and angular acceleration.
+   </li>
+   <li>
+    2. Define and calculate moment of inertia, radius of gyration and torque.
+   </li>
+   <li>
+    3. Define and calculate the kinetic energy of rotating masses.
+   </li>
+   <li>
+    4. Define work and power. Calculate brake power and mechanical efficiency of a reciprocating engine.
+   </li>
+   <li>
+    5. Calculate the power transmitted by a belt drive.
+   </li>
+   <li>
+    6. Define centrifugal and centripetal force, centripetal acceleration, and perform calculations involving them.
+   </li>
+   <li>
+    7. Calculate the distance of movement of a governor due to centrifugal force.
+   </li>
+   <li>
+    8. Calculate how to balance a rotating mass.
+   </li>
+  </ol>
+  <h2>
+   Objective 1
+  </h2>
+  <p>
+   <b>
+    Define and calculate angular displacement, angular velocity, and angular acceleration.
+   </b>
+  </p>
+  <h3>
+   INTRODUCTION
+  </h3>
+  <p>
+   Angular motion, where a rigid body rotates around a fixed axis, is a very important form of motion. All types of rotating equipment have this type of motion, for example, rotors in gas turbines, pumps and compressors and shafts and flywheels in reciprocating engines and compressors.
+  </p>
+  <h3>
+   ANGULAR DISPLACEMENT
+  </h3>
+  <p>
+   The displacement of a rotating body is determined by the angle through which it rotates. The angle of rotation is measured by a unit of measure called the radian. As illustrated in Fig. 1, the radian is the angle obtained when the radius is equal to the length of the arc circumscribed by a circle with that radius.
+  </p>
+  <img alt="Diagram illustrating the definition of a radian. A sector of a circle is shown with two radii labeled 'r' and an arc length also labeled 'r'. The angle at the center is labeled '1 Radian'." src="373e2ccc5c19a052a1b8cb6de3eebc94_img.jpg"/>
+  <div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+   <p>
+    A diagram showing a sector of a circle. Two straight lines (radii) extend from a central point to the circumference, both labeled with the variable 'r'. A curved line (arc) connects the ends of these radii, also labeled with 'r'. The angle between the two radii at the center is marked with an arc and labeled '1 Radian'.
+   </p>
+   <div class="img-alt">
+    Diagram illustrating the definition of a radian. A sector of a circle is shown with two radii labeled 'r' and an arc length also labeled 'r'. The angle at the center is labeled '1 Radian'.
+   </div>
+  </div>
+  <p>
+   <i>
+    Figure 1
+    <br/>
+    Definition of a Radian
+   </i>
+  </p>
+  <p>
+   Since the circumference of a circle is
+   \(
+    2\pi r
+   \)
+   , there are
+   \(
+    2\pi
+   \)
+   radians in a complete circle or revolution. The appropriate formula is
+  </p>
+  <p>
+   $$
+    \theta \text{ (rad)} = 2\pi \times \theta \text{ (rev)}
+   $$
+  </p>
+  <p>
+   A radian is equal to
+   \(
+    57.2958^\circ
+   \)
+   or 0.159 revolutions.
+  </p>
+  <p>
+   The conventional symbol for angular displacement is
+   \(
+    \theta
+   \)
+   (theta).
+  </p>
+  <h3>
+   ANGULAR VELOCITY
+  </h3>
+  <p>
+   <b>
+    Angular velocity
+   </b>
+   is a scalar quantity that describes the angular distance moved in a given time interval. It is normally measured in rad/s (radians/second).
+  </p>
+  <p>
+   The conventional symbol for angular velocity is
+   \(
+    \omega
+   \)
+   (omega).
+  </p>
+  <p>
+   Since the rotation of engines is usually measured in revolutions per minute, it is often necessary to convert between radians and revolutions.
+  </p>
+  <p>
+   $$
+    \omega \text{ (rad/s)} = \frac{2\pi \text{ rad/rev}}{60 \text{ s/min}} \times n \text{ (rev/min)}
+   $$
+  </p>
+  <p>
+   If a rotating object increases from an initial angular velocity
+   \(
+    \omega_i
+   \)
+   to a final angular velocity
+   \(
+    \omega_f
+   \)
+   , then the average angular velocity will be:
+  </p>
+  <p>
+   $$
+    \omega_{ave} = \frac{\omega_i + \omega_f}{2}
+   $$
+  </p>
+  <p>
+   The angular displacement can be calculated from the average angular velocity by the formula:
+  </p>
+  <p>
+   $$
+    \text{Angular displacement} = \text{Average angular velocity} \times \text{time}
+   $$
+  </p>
+  <p>
+   $$
+    \theta = \omega_{ave} \times t
+   $$
+  </p>
+  <p>
+   Substituting, the result is
+  </p>
+  <p>
+   $$
+    \theta = \frac{\omega_i + \omega_f}{2} \times t
+   $$
+  </p>
+  <h4>
+   Example 1
+  </h4>
+  <p>
+   What is the angular velocity of a flywheel rotating at 240 rpm?
+  </p>
+  <h5>
+   Answer
+  </h5>
+  <p>
+   Using the following formula:
+  </p>
+  <p>
+   $$
+    \begin{aligned}\omega &amp;= \frac{2\pi \text{ rad/rev}}{60 \text{ s/min}} \times n \text{ rev/min} \\ &amp;= \frac{2\pi}{60} \times 240 \\ &amp;= 25.133 \text{ rad/s (Ans.)}\end{aligned}
+   $$
+  </p>
+  <h3>
+   ANGULAR ACCELERATION
+  </h3>
+  <p>
+   <b>
+    Angular acceleration
+   </b>
+   is a scalar quantity that describes the change in angular velocity in a given time interval. It is normally measured in
+   \(
+    \text{rad/s}^2
+   \)
+   (radians/second
+   <sup>
+    2
+   </sup>
+   ).
+  </p>
+  <p>
+   The conventional symbol for angular acceleration is
+   \(
+    \alpha
+   \)
+   (alpha).
+  </p>
+  <p>
+   If the change in angular velocity is uniform over the time period, then the angular acceleration or deceleration is constant.
+  </p>
+  <p>
+   $$
+    \text{Angular acceleration} = \frac{\text{Final angular velocity} - \text{Initial angular velocity}}{\text{Time interval}} \quad \text{or}
+   $$
+  </p>
+  <p>
+   $$
+    \alpha = \frac{\omega_f - \omega_i}{t}
+   $$
+  </p>
+  <h4>
+   Example 2
+  </h4>
+  <p>
+   A flywheel starts rotating from rest and reaches a speed of 200 rpm in 60 seconds. What will be the average angular velocity and angular acceleration?
+  </p>
+  <h5>
+   Answer
+  </h5>
+  <p>
+   Convert rpm to rad/s:
+  </p>
+  <p>
+   $$
+    \begin{aligned}\omega_f \text{ (rad/s)} &amp;= \frac{2\pi}{60} \times n \\ &amp;= \frac{2\pi}{60} \times 200 \\ &amp;= 20.94 \text{ rad/s}\end{aligned}
+   $$
+  </p>
+  <p>
+   Average angular velocity:
+  </p>
+  <p>
+   $$
+    \begin{aligned}\omega_{ave} &amp;= \frac{\omega_i + \omega_f}{2} \\ &amp;= \frac{0 + 20.94}{2} \\ &amp;= 10.47 \text{ rad/s (Ans.)}\end{aligned}
+   $$
+  </p>
+  <p>
+   The angular acceleration is then determined:
+  </p>
+  <p>
+   $$
+    \begin{aligned}\alpha &amp;= \frac{\omega_f - \omega_i}{t} \\ &amp;= \frac{20.94 - 0}{60} \\ &amp;= 0.349 \text{ rad/s}^2 \text{ (Ans.)}\end{aligned}
+   $$
+  </p>
+  <h4>
+   Example 3
+  </h4>
+  <p>
+   A pulley wheel of 1 m diameter, rotating at 300 rpm, is brought to rest in 10 seconds.
+  </p>
+  <p>
+   Determine:
+  </p>
+  <ol style="list-style-type: none">
+   <li>
+    The average angular velocity during run down
+   </li>
+   <li>
+    The angular acceleration
+   </li>
+   <li>
+    The number of revolutions made before stopping.
+   </li>
+  </ol>
+  <h5>
+   Answer
+  </h5>
+  <ol style="list-style-type: none">
+   <li>
+    The average angular velocity during run down.
+   </li>
+  </ol>
+  <p>
+   Convert rpm to rad/s:
+  </p>
+  <p>
+   $$
+    \begin{aligned}\omega_i \text{ (rad/s)} &amp;= \frac{2\pi}{60} \times n \\ &amp;= \frac{2\pi}{60} \times 300 \\ &amp;= 31.42 \text{ rad/s}\end{aligned}
+   $$
+  </p>
+  <p>
+   Average angular velocity:
+  </p>
+  <p>
+   $$
+    \begin{aligned}\omega_{ave} &amp;= \frac{\omega_i + \omega_f}{2} \\ &amp;= \frac{31.42 + 0}{2} \\ &amp;= 15.71 \text{ rad/s} \text{ (Ans.)}\end{aligned}
+   $$
+  </p>
+  <p>
+   b) Angular acceleration (or actually deceleration)
+  </p>
+  <p>
+   $$
+    \begin{aligned}\alpha &amp;= \frac{\omega_f - \omega_i}{t} \\ &amp;= \frac{0 - 31.42}{10} \\ &amp;= -3.142 \text{ rad/s}^2 \text{ (Ans.)}\end{aligned}
+   $$
+  </p>
+  <p>
+   c) The number of revolutions made before stopping.
+  </p>
+  <p>
+   The angular displacement in radians is
+  </p>
+  <p>
+   $$
+    \begin{aligned}\theta &amp;= \frac{\omega_i + \omega_f}{2} \times t \\ &amp;= \frac{31.42 + 0}{2} \times 10 \\ &amp;= 157.1 \text{ rad}\end{aligned}
+   $$
+  </p>
+  <p>
+   Since it is customary to convert this to revolutions, the angular displacement is:
+  </p>
+  <p>
+   $$
+    \begin{aligned}\theta \text{ (rev)} &amp;= \frac{\theta \text{ (rad)}}{2\pi} \\ &amp;= \frac{157.1}{2\pi} \\ &amp;= 25.00 \text{ revolutions}\end{aligned}
+   $$
+  </p>
+  <p>
+   Note that none of the answers are dependent on the diameter of the pulley.
+  </p>
+  <h2>
+   Objective 2
+  </h2>
+  <p>
+   <b>
+    <i>
+     Define and calculate moment of inertia, radius of gyration and torque.
+    </i>
+   </b>
+  </p>
+  <h3>
+   MOMENT OF INERTIA
+  </h3>
+  <p>
+   When an object moves in linear motion, its inertia is concentrated in the center of mass of the object and moves in the same path as the object. To calculate momentum and work, it is often possible to assume a force acting at the center of mass and to ignore the distribution of mass in the object.
+  </p>
+  <p>
+   When an object such as a flywheel or a shaft is rotating around its axis, matters are somewhat more complicated since the mass is distributed around the axis at different distances from the center of rotation. This leads to the need to define a moment of inertia that is dependent on the shape of the object and the axis of the rotation.
+  </p>
+  <p>
+   The moment of inertia is “the mass of a body multiplied by the square of its distance from a given point”.
+  </p>
+  <p>
+   Formulas to calculate the moment of inertia have been developed for a variety of common shapes and can be found in textbooks. As an example, the moment of inertia for a rotating disk such as a flywheel is defined as:
+  </p>
+  <p>
+   $$
+    I = mr^2
+   $$
+  </p>
+  <p>
+   The mass is in kg and the flywheel is assumed to be of uniform density. The radius is in meters. Therefore, the units for inertia are
+   \(
+    \text{kg m}^2
+   \)
+   .
+  </p>
+  <h3>
+   RADIUS OF GYRATION
+  </h3>
+  <p>
+   Once the moment of inertia has been determined, it is convenient to define an equivalent radius at which the mass can be assumed to be concentrated. This is called the radius of gyration. In formula form, it is defined as
+  </p>
+  <p>
+   $$
+    k = \sqrt{\frac{I}{m}}
+   $$
+  </p>
+  <p>
+   For the flywheel example, the radius of gyration can be derived by substituting formulas, to give:
+  </p>
+  <p>
+   $$
+    \begin{aligned}
+ k &amp;= \sqrt{\frac{I}{m}} \\
+ &amp;= \sqrt{\frac{\frac{1}{2}mr^2}{m}} \\
+ &amp;= \sqrt{\frac{1}{2}r^2} \\
+ &amp;= 0.707r
+ \end{aligned}
+   $$
+  </p>
+  <h4>
+   Example 4
+  </h4>
+  <p>
+   A flywheel with a mass of 300 kg and a radius of 1 meter rotates at 300 rpm. What are the moment of inertia and radius of gyration?
+  </p>
+  <h5>
+   Answer
+  </h5>
+  <p>
+   The moment of inertia is found:
+  </p>
+  <p>
+   $$
+    \begin{aligned}
+ I &amp;= mr^2 \\
+ &amp;= 300 \times 1^2 \\
+ &amp;= \mathbf{300 \text{ kg m}^2} \text{ (Ans.)}
+ \end{aligned}
+   $$
+  </p>
+  <p>
+   The radius of gyration:
+  </p>
+  <p>
+   $$
+    \begin{aligned}
+ k &amp;= 0.707r \\
+ &amp;= 0.707 \times 1 \\
+ &amp;= \mathbf{0.707 \text{ m}} \text{ (Ans.)}
+ \end{aligned}
+   $$
+  </p>
+  <h3>
+   TORQUE
+  </h3>
+  <p>
+   In angular motion, there is a specific way of looking at the force that is applied to a rotating body. This is referred to as torque which is a measure of how much a force acting on a body causes it to rotate (see Fig. 2). Torque
+   \(
+    T
+   \)
+   is defined as the product of force and radial distance or
+  </p>
+  <p>
+   $$
+    T = F \times r
+   $$
+  </p>
+  <p>
+   The unit is Nm (Newton meter) which is also known as a Joule. However, for torque, Nm is used instead of Joule to avoid confusion. Energy is a scalar quantity while torque is a vector.
+  </p>
+  <img alt="Diagram illustrating the definition of torque. A dashed circle represents a wheel. A horizontal radius line labeled 'r(m)' extends from the center to the right edge. A vertical force vector labeled 'F(N)' is applied at the right edge, pointing downwards. A curved arrow at the bottom of the circle indicates a clockwise direction of rotation." src="967c30813761a8952ecc5e16bf42ea45_img.jpg"/>
+  <div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+   <div class="img-alt">
+    Diagram illustrating the definition of torque. A dashed circle represents a wheel. A horizontal radius line labeled 'r(m)' extends from the center to the right edge. A vertical force vector labeled 'F(N)' is applied at the right edge, pointing downwards. A curved arrow at the bottom of the circle indicates a clockwise direction of rotation.
+   </div>
+  </div>
+  <p>
+   Figure 2
+   <br/>
+   Definition of Torque
+  </p>
+  <p>
+   It is important to note that the force used in the torque formula is tangential or perpendicular to the radius. If the force acts in a different direction, the tangential component has to be determined to calculate torque. If the direction of the force acts through the center of rotation of the body, then the torque will be zero.
+  </p>
+  <h4>
+   Example 5
+  </h4>
+  <p>
+   A force of 70 N is applied to a wheel with a diameter of 1 m. What is the torque?
+  </p>
+  <h5>
+   Answer
+  </h5>
+  <p>
+   The torque is calculated as
+  </p>
+  <p>
+   $$
+    \begin{aligned} T &amp;= F \times r \\ &amp;= 70\text{N} \times 1\text{m} \\ &amp;= 70\text{ Nm (Ans.)} \end{aligned}
+   $$
+  </p>
+  <h3>
+   TORQUE AND ANGULAR ACCELERATION
+  </h3>
+  <p>
+   If a body is rotating and a force is applied with no counteracting force, the body will accelerate (or decelerate if the force is applied in the opposite direction of rotation). The acceleration or deceleration is described by Newton's Second Law or the formula
+   \(
+    F = ma
+   \)
+   . Since the linear and angular acceleration are related by the formula,
+  </p>
+  <p>
+   $$
+    a\text{ (m/s}^2\text{)} = \alpha\text{ (rad/s}^2\text{)} \times r\text{ (m)}
+   $$
+  </p>
+  <p>
+   then force is described by the formula:
+  </p>
+  <p>
+   $$
+    F = m\alpha r
+   $$
+  </p>
+  <p>
+   This is the force applied at radius
+   \(
+    r
+   \)
+   . If the force is applied at radius
+   \(
+    L
+   \)
+   , the formula is changed to:
+  </p>
+  <p>
+   $$
+    FL = m\alpha r^2
+   $$
+  </p>
+  <p>
+   As
+   \(
+    F \times L
+   \)
+   is the torque causing the acceleration, the formula can be written as:
+  </p>
+  <p>
+   $$
+    T = m\alpha r^2
+   $$
+  </p>
+  <p>
+   Since the mass is rarely concentrated only at the rim, it may be necessary to use the radius of gyration
+   \(
+    k
+   \)
+   which then results in the formula:
+  </p>
+  <p>
+   $$
+    T = m\alpha k^2
+   $$
+  </p>
+  <p>
+   Substituting, the torque causing the acceleration can be expressed in terms of the moment of inertia and angular acceleration:
+  </p>
+  <p>
+   $$
+    \begin{aligned} T &amp;= m\alpha k^2 \\ \sqrt{T} &amp;= m\alpha k \\ \sqrt{T} &amp;= m\alpha \sqrt{\frac{I}{m}} \\ T &amp;= m\alpha \frac{I}{m} \\ T &amp;= I\alpha \end{aligned}
+   $$
+  </p>
+  <p>
+   Comparing the linear and angular versions of Newton's Second Law, torque is analogous to force, moment of inertia is analogous to mass and linear acceleration is analogous to angular acceleration.
+  </p>
+  <h4>
+   Example 6
+  </h4>
+  <p>
+   A flywheel with a mass of 200 kg is brought from standstill to 600 rpm in 40 seconds. If the radius of gyration is 500 mm, what torque is required?
+  </p>
+  <h5>
+   Answer
+  </h5>
+  <p>
+   Convert rpm to rad/s:
+  </p>
+  <p>
+   $$
+    \begin{aligned} \omega_f \text{ (rad/s)} &amp;= \frac{2\pi}{60} \times n \\ &amp;= \frac{2\pi}{60} \times 600 \\ &amp;= 62.83 \text{ rad/s} \end{aligned}
+   $$
+  </p>
+  <p>
+   The angular acceleration is determined:
+  </p>
+  <p>
+   $$
+    \begin{aligned}\alpha &amp;= \frac{\omega_f - \omega_i}{t} \\ &amp;= \frac{62.84 - 0}{40} \\ &amp;= 1.571 \text{ rad/s}^2\end{aligned}
+   $$
+  </p>
+  <p>
+   The torque is then derived:
+  </p>
+  <p>
+   $$
+    \begin{aligned}T &amp;= m\alpha k^2 \\ &amp;= 200 \times 1.571 \times 0.5^2 \\ &amp;= 78.55 \text{ Nm (Ans.)}\end{aligned}
+   $$
+  </p>
+  <h2>
+   Objective 3
+  </h2>
+  <p>
+   <b>
+    Define and calculate the kinetic energy of rotating masses.
+   </b>
+  </p>
+  <h3>
+   KINETIC ENERGY
+  </h3>
+  <p>
+   <b>
+    Kinetic energy
+   </b>
+   is the ability to do work due to the motion of a body.
+  </p>
+  <p>
+   The kinetic energy
+   \(
+    E_k
+   \)
+   can be calculated by the following formula which was derived in the module on linear motion (PE2-1-8)
+  </p>
+  <p>
+   $$
+    E_k = \frac{1}{2}mv^2
+   $$
+  </p>
+  <p>
+   It is customary to express the velocity in terms of angular velocity as expressed by the formula
+  </p>
+  <p>
+   $$
+    v = \omega r
+   $$
+  </p>
+  <p>
+   The radius used is the radius of gyration
+   \(
+    r = k
+   \)
+   as described in the previous objective.
+  </p>
+  <p>
+   The formula for kinetic energy then becomes
+  </p>
+  <p>
+   $$
+    K = \frac{1}{2}mv^2
+   $$
+  </p>
+  <p>
+   $$
+    K = \frac{1}{2}m\omega^2k^2
+   $$
+  </p>
+  <p>
+   The units for kinetic energy are the same as those for work, Joules.
+  </p>
+  <h4>
+   Example 7
+  </h4>
+  <p>
+   A flywheel with a mass of 500 kg and a radius of gyration of 0.5 meter rotates at 150 rpm. What is the kinetic energy?
+  </p>
+  <h5>
+   Answer
+  </h5>
+  <p>
+   Convert rpm to rad/s:
+  </p>
+  <p>
+   $$
+    \begin{aligned}\omega \text{ (rad/s)} &amp;= \frac{2\pi}{60} \times n \\ &amp;= \frac{2\pi}{60} \times 150 \\ &amp;= 15.71 \text{ rad/s}\end{aligned}
+   $$
+  </p>
+  <p>
+   The kinetic energy is then calculated:
+  </p>
+  <p>
+   $$
+    \begin{aligned}K &amp;= \frac{1}{2} m \omega^2 k^2 \\ &amp;= \frac{1}{2} \times 500 \times 15.71^2 \times 0.5^2 \\ &amp;= 15.425 \text{ kJ (Ans.)}\end{aligned}
+   $$
+  </p>
+  <h2>
+   Objective 4
+  </h2>
+  <p>
+   <b>
+    Define work and power. Calculate brake power and mechanical efficiency of a reciprocating engine.
+   </b>
+  </p>
+  <h3>
+   WORK
+  </h3>
+  <p>
+   The work performed by a rotating body is derived from the normal formula for work which is force times distance. In this case, the distance is the circular distance traveled by the applied force. For angular motion, this means that for one revolution:
+  </p>
+  <p>
+   $$
+    W = F \times 2\pi r
+   $$
+  </p>
+  <p>
+   Using the formula for torque, the work for multiple revolutions
+   \(
+    \theta
+   \)
+   becomes
+  </p>
+  <p>
+   $$
+    W = 2\pi T\theta
+   $$
+  </p>
+  <h3>
+   POWER
+  </h3>
+  <p>
+   Whereas work is rarely calculated for rotating bodies, power is very important. Since power is the rate of doing work, the power related to speed
+   \(
+    n
+   \)
+   in rpm will be:
+  </p>
+  <p>
+   $$
+    P = 2\pi T \frac{n}{60}
+   $$
+  </p>
+  <p>
+   Substituting, it can also be expressed in terms of angular velocity
+   \(
+    \omega
+   \)
+   (rad/s) which gives the formula:
+  </p>
+  <p>
+   $$
+    P = T\omega
+   $$
+  </p>
+  <h3>
+   BRAKE POWER
+  </h3>
+  <p>
+   The power of an engine is usually measured at the output shaft. It is normally referred to as brake power because a device called a rope brake is often used to measure the shaft power. An example of a rope brake is shown in Fig. 3.
+  </p>
+  <img alt="Figure 3: Rope Brake. The diagram shows two views of a rope brake setup. On the left, a rectangular block labeled 'Engine' is connected to a vertical shaft. A rope is wrapped around a pulley on the shaft. One end of the rope is attached to a fixed support, and the other end is attached to a weight. On the right, a more detailed view shows a 'Spring Balance - S (N)' at the top, a 'Brake Drum (Water Cooled)' in the middle, and an 'Engine Shaft' passing through the center. A rope is wrapped around the drum, with one end connected to the spring balance and the other to a 'Load W (N)'. The radius of the drum is labeled 'r'." src="fbfaa723129f8b8e3be651c6fe7cfab7_img.jpg"/>
+  <div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+   <div class="img-alt">
+    Figure 3: Rope Brake. The diagram shows two views of a rope brake setup. On the left, a rectangular block labeled 'Engine' is connected to a vertical shaft. A rope is wrapped around a pulley on the shaft. One end of the rope is attached to a fixed support, and the other end is attached to a weight. On the right, a more detailed view shows a 'Spring Balance - S (N)' at the top, a 'Brake Drum (Water Cooled)' in the middle, and an 'Engine Shaft' passing through the center. A rope is wrapped around the drum, with one end connected to the spring balance and the other to a 'Load W (N)'. The radius of the drum is labeled 'r'.
+   </div>
+  </div>
+  <p>
+   Figure 3
+   <br/>
+   Rope Brake
+  </p>
+  <p>
+   As shown in Fig. 3, the rope is turned once around a flywheel or brake drum which is water cooled to dissipate the heat produced by the brake. One end of the rope is tied to a spring balance and the other end is attached to a weight. The difference between the force of the weight and the force measured by the spring balance is the force applied by the friction produced. With the radius of the flywheel known, the torque can be calculated which, combined with the angular velocity, determines the power output.
+  </p>
+  <p>
+   If the force measured by the spring is
+   \(
+    S
+   \)
+   (newtons) and the force of the load is found from mass
+   \(
+    \times
+   \)
+   acceleration due to gravity or
+   \(
+    mg
+   \)
+   , the net force is
+   \(
+    mg - S
+   \)
+   . The brake power measured by the rope brake will be
+  </p>
+  <p>
+   $$
+    P_{brake} = 2\pi(mg - S)r \frac{n}{60}
+   $$
+  </p>
+  <h4>
+   Example 8
+  </h4>
+  <p>
+   A brake power test was carried out using a brake with a radius of 600 mm and a weight with a mass of 25 kg. The engine was rotating at 360 rpm and the reading on the spring balance was 50 N. What is the brake power produced?
+  </p>
+  <h5>
+   Answer
+  </h5>
+  <p>
+   The brake power is found:
+  </p>
+  <p>
+   $$
+    \begin{aligned}P_{brake} &amp;= 2\pi(mg - S)r \frac{n}{60} \\&amp;= 2\pi(25 \times 9.81 - 50)0.6 \times \frac{360}{60} \\&amp;= 4416.5 \text{ W} \\&amp;= 4.42 \text{ kW (Ans.)}\end{aligned}
+   $$
+  </p>
+  <h3>
+   MECHANICAL EFFICIENCY
+  </h3>
+  <p>
+   Due to friction and mechanical losses, the power available at the output shaft is less than that indicated at the cylinder. The ratio of the brake and indicated power is called the mechanical efficiency and is in the range of 90-95%.
+  </p>
+  <p>
+   Therefore, the mechanical efficiency is defined as:
+  </p>
+  <p>
+   $$
+    \text{Mechanical efficiency (\%)} = \frac{\text{Brake power}}{\text{Indicated power}} \times 100 \text{ or}
+   $$
+  </p>
+  <p>
+   $$
+    \eta_m = \frac{P_b}{P_i} \times 100
+   $$
+  </p>
+  <h4>
+   Example 9
+  </h4>
+  <p>
+   The indicated power for an engine is calculated at 7500 kW. The brake power is measured as being 7000 kW. What is the mechanical efficiency of the engine?
+  </p>
+  <h5>
+   Answer
+  </h5>
+  <p>
+   The mechanical efficiency is:
+  </p>
+  <p>
+   $$
+    \begin{aligned}\eta_m &amp;= \frac{P_b}{P_i} \times 100 \\&amp;= \frac{7000}{7500} \times 100 \\&amp;= 93.3\% \text{ (Ans.)}\end{aligned}
+   $$
+  </p>
+  <h2>
+   Objective 5
+  </h2>
+  <p>
+   <b>
+    Calculate the power transmitted by a belt drive.
+   </b>
+  </p>
+  <h3>
+   TRANSMISSION OF POWER BY BELT DRIVES
+  </h3>
+  <p>
+   Power may be transmitted over short distances by means of pulleys connected by belts. If the belts are tight enough and there is sufficient surface area where the belt touches the pulley, the friction will be high enough that the belts will not slip and the velocities of the belt and the pulley will be the same.
+  </p>
+  <p>
+   Since belts will stretch when subjected to force, one side will be tighter than the other. In the case of the pulleys and belt shown in Fig. 4, force
+   \(
+    F_1
+   \)
+   will be higher than
+   \(
+    F_2
+   \)
+   and the effective driving force will be
+   \(
+    F_1 - F_2
+   \)
+   newtons.
+  </p>
+  <img alt="Diagram of a belt drive system showing a driver pulley and a driven pulley connected by a belt. The driver pulley is on the left, labeled 'Driver', and the driven pulley is on the right, labeled 'Driven'. The belt is labeled F2 on the top and F1 on the bottom. Arrows indicate the direction of rotation for both pulleys." src="b038de46b62ad59f030ec5a0501673e1_img.jpg"/>
+  <div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+   <p>
+    A diagram of a belt drive system. It consists of two circular pulleys connected by a single belt. The larger pulley on the left is labeled "Driver" and has a clockwise rotation arrow. The smaller pulley on the right is labeled "Driven" and has a counter-clockwise rotation arrow. The belt is labeled
+   </p>
+   \(
+    F_2
+   \)
+   <p>
+    on the top (tight side) and
+   </p>
+   \(
+    F_1
+   \)
+   <p>
+    on the bottom (loose side).
+   </p>
+   <div class="img-alt">
+    Diagram of a belt drive system showing a driver pulley and a driven pulley connected by a belt. The driver pulley is on the left, labeled 'Driver', and the driven pulley is on the right, labeled 'Driven'. The belt is labeled F2 on the top and F1 on the bottom. Arrows indicate the direction of rotation for both pulleys.
+   </div>
+  </div>
+  <p>
+   Figure 4
+   <br/>
+   Belt Drive
+  </p>
+  <p>
+   The power can be calculated from the formula:
+  </p>
+  <p>
+   $$
+    P = 2\pi(F_1 - F_2)r \frac{n}{60}
+   $$
+  </p>
+  <p>
+   It should be mentioned that the calculation can be done on either the driving or driven pulley. Since the velocity of the pulley is constant, the rotational speed will vary in proportion to the radius of the pulley.
+  </p>
+  <h4>
+   Example 10
+  </h4>
+  <p>
+   A pulley of 300 mm diameter is driven at 200 rpm by a belt. The tension on the tight side is 2000 N and the tension on the slack side is 500 N. Neglecting the thickness of the belt, what is the power transmitted?
+  </p>
+  <h5>
+   Answer
+  </h5>
+  <p>
+   The power transmitted is:
+  </p>
+  <p>
+   Given:
+  </p>
+  <p>
+   Radius of the pulley = 150 mm
+  </p>
+  <p>
+   Speed of the pulley = 200 rpm
+  </p>
+  <p>
+   Tension on right side = 2000 N
+  </p>
+  <p>
+   Tension on slack side = 500 N
+  </p>
+  <p>
+   $$
+    \begin{aligned} P &amp;= 2\pi(F_1 - F_2)r \frac{n}{60} \\ &amp;= 2\pi(2000 - 500) \times 0.15 \times \frac{200}{60} \\ &amp;= 4712 \text{ W} \\ &amp;= \mathbf{4.712 \text{ kW}} \text{ (Ans.)} \end{aligned}
+   $$
+  </p>
+  <p>
+   If the belt thickness is taken into account, the radius will be increased by half of the belt thickness. Assuming a belt thickness of 15 mm, the new radius will be 157.5 mm and the power transmitted increases to
+  </p>
+  <p>
+   $$
+    \begin{aligned} P &amp;= 2\pi(F_1 - F_2)r \frac{n}{60} \\ &amp;= 2\pi(2000 - 500) \times 0.1575 \times \frac{200}{60} \\ &amp;= 4948 \text{ W} \\ &amp;= \mathbf{4.948 \text{ kW}} \text{ (Ans.)} \end{aligned}
+   $$
+  </p>
+  <h2>
+   Objective 6
+  </h2>
+  <p>
+   <b>
+    Define centrifugal and centripetal force, centripetal acceleration and perform calculations involving them.
+   </b>
+  </p>
+  <h3>
+   CENTRIPETAL/CENTRIFUGAL FORCES
+  </h3>
+  <p>
+   Newton's first law of motion states that an object in motion tends to stay in motion, with the same speed and in the same direction, unless acted upon by an unbalanced force. For example, a stone is fastened to the end of a string and whirled around in a circular path. Inward forces must be constantly exerted to keep it travelling in the circle even though the stone itself is exerting an outward radial pull.
+  </p>
+  <h3>
+   Centrifugal Force
+  </h3>
+  <p>
+   Centrifugal force is the outward radial force created by the stone, travelling in a circular path, having the tendency to fly off and travel in a straight line.
+  </p>
+  <h4>
+   Centripetal Force
+  </h4>
+  <p>
+   Centripetal force is the inward pull that is required to counteract the outward radial force and keep the stone on its circular path. The centripetal force must be equal in magnitude to the centrifugal force but act in an opposite direction (Newton's third law of motion). Centripetal and centrifugal forces can be calculated from Newton's Second Law.
+  </p>
+  <p>
+   $$
+    \text{Force} = \text{mass} \times \text{acceleration}
+   $$
+  </p>
+  <p>
+   or
+  </p>
+  <p>
+   $$
+    F_c = \frac{mv^2}{r} \text{ or } = m\omega^2 r
+   $$
+  </p>
+  <p>
+   The units of measure are:
+  </p>
+  <p>
+   \(
+    m
+   \)
+   = mass, kg
+  </p>
+  <p>
+   \(
+    v
+   \)
+   = velocity, m/s
+  </p>
+  <p>
+   \(
+    r
+   \)
+   = radius, m
+  </p>
+  <p>
+   \(
+    \omega
+   \)
+   = angular velocity, rad/s
+  </p>
+  <p>
+   \(
+    F
+   \)
+   = force, N
+  </p>
+  <p>
+   Referring to Fig. 5, a body moves at a constant speed of
+   \(
+    v
+   \)
+   around a circle of radius
+   \(
+    r
+   \)
+   . At the instant the body passes point
+   \(
+    A
+   \)
+   , its velocity is
+   \(
+    v
+   \)
+   in the direction tangential to the circle at
+   \(
+    A
+   \)
+   . As the body passes point
+   \(
+    B
+   \)
+   , its velocity is now
+   \(
+    v
+   \)
+   tangential to the circle at
+   \(
+    B
+   \)
+   . Even though the body maintains a constant speed, its velocity has changed due to there being a change in direction.
+  </p>
+  <img alt="Figure 5: Rotating Velocity Vectors. A diagram showing a circular path with radius r. A body moves from point A to point B along the arc. At point A, the velocity vector Va is shown as a horizontal tangent line. At point B, the velocity vector Vb is shown as a tangent line at an angle. The angle between the two radii to points A and B is labeled theta. The radius r is indicated by dashed lines from the center of the circle to points A and B." src="7cdd3a0b8107619a3a05ea9ed16eff02_img.jpg"/>
+  <div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+   <div class="img-alt">
+    Figure 5: Rotating Velocity Vectors. A diagram showing a circular path with radius r. A body moves from point A to point B along the arc. At point A, the velocity vector Va is shown as a horizontal tangent line. At point B, the velocity vector Vb is shown as a tangent line at an angle. The angle between the two radii to points A and B is labeled theta. The radius r is indicated by dashed lines from the center of the circle to points A and B.
+   </div>
+  </div>
+  <p>
+   Figure 5
+   <br/>
+   Rotating Velocity Vectors
+  </p>
+  <p>
+   Consider the movement from point
+   \(
+    A
+   \)
+   to
+   \(
+    B
+   \)
+   be through the angle
+   \(
+    \theta
+   \)
+   . To calculate the change in velocity, the velocities vector diagram is drawn, as shown in Fig. 6.
+  </p>
+  <img alt="Figure 6: Velocity Vectors Diagram. A vector diagram starting from origin O. Vector V1 is a horizontal vector pointing right. Vector V2 is a vector pointing down and to the right, making an angle theta with V1. The vector difference V3, labeled 'Change in Velocity - V3', is shown as a vertical vector pointing downwards from the tip of V1 to the tip of V2, forming a right-angled triangle with V1 and V2." src="ca81500b365ed30190cb2d9c38fc1f84_img.jpg"/>
+  <div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+   <div class="img-alt">
+    Figure 6: Velocity Vectors Diagram. A vector diagram starting from origin O. Vector V1 is a horizontal vector pointing right. Vector V2 is a vector pointing down and to the right, making an angle theta with V1. The vector difference V3, labeled 'Change in Velocity - V3', is shown as a vertical vector pointing downwards from the tip of V1 to the tip of V2, forming a right-angled triangle with V1 and V2.
+   </div>
+  </div>
+  <p>
+   Figure 6
+   <br/>
+   Velocity Vectors Diagram
+  </p>
+  <p>
+   Note that
+   \(
+    V_1 = V_2
+   \)
+   . Since
+   \(
+    \theta
+   \)
+   is considered a small angle, the triangle base angles are almost
+   \(
+    90^\circ
+   \)
+   . For small angles,
+   \(
+    \sin \theta \approx \tan \theta \approx \theta
+   \)
+   radians.
+  </p>
+  <p>
+   $$
+    \sin \theta = \frac{V_3}{V_1}
+   $$
+  </p>
+  <p>
+   $$
+    \tan \theta = \frac{V_3}{V_2}
+   $$
+  </p>
+  <p>
+   $$
+    V_3 = V_1 \sin \theta
+   $$
+  </p>
+  <p>
+   $$
+    V_3 = V_2 \tan \theta
+   $$
+  </p>
+  <p>
+   $$
+    \text{Since } V_1 = V_2
+   $$
+  </p>
+  <p>
+   $$
+    V_3 = V \sin \theta
+   $$
+  </p>
+  <p>
+   $$
+    = V \tan \theta
+   $$
+  </p>
+  <p>
+   $$
+    = V \theta \text{ rad}
+   $$
+  </p>
+  <h3>
+   CENTRIPETAL ACCELERATION
+  </h3>
+  <p>
+   Since the body is travelling at constant speed, its acceleration is due to the constantly changing velocity (by changing direction) as the body travels around its circular path. This acceleration, directed toward the center of the circle, is referred to as
+   <i>
+    centripetal acceleration
+   </i>
+   .
+  </p>
+  <p>
+   The change in velocity is equal to
+   \(
+    V\theta \text{ rad}
+   \)
+   . With a change in velocity, there is acceleration. The time for the body to travel from one velocity vector to the next one is determined by:
+  </p>
+  <p>
+   $$
+    \begin{aligned} a \text{ to } b &amp;= \frac{\text{distance}}{\text{speed}} \\ &amp;= \frac{r\theta}{v} \\ \text{Acceleration} &amp;= \frac{\text{change in velocity}}{\text{time}} \\ &amp;= v\theta \div \frac{r\theta}{v} \\ &amp;= \frac{v\theta \times v}{r\theta} \\ &amp;= \frac{v^2}{r} \end{aligned}
+   $$
+  </p>
+  <p>
+   Due to the circular motion, the velocity of the body can be expressed in angular measurement
+   \(
+    \omega \text{ rad/s}
+   \)
+   instead of linear units,
+   \(
+    v
+   \)
+   . Therefore, this relationship is
+   \(
+    v = \omega r
+   \)
+   .
+  </p>
+  <p>
+   Substituting this value for
+   \(
+    v
+   \)
+   :
+  </p>
+  <p>
+   $$
+    \begin{aligned} \text{Centripetal acceleration} &amp;= \frac{v^2}{r} \\ &amp;= \frac{\omega^2 r^2}{r} \\ a_c &amp;= \omega^2 r \end{aligned}
+   $$
+  </p>
+  <p>
+   The units of measure for centripetal acceleration are
+   \(
+    \text{m/s}^2
+   \)
+   which is not to be confused with the units for angular acceleration which are
+   \(
+    \text{rad/s}^2
+   \)
+   .
+  </p>
+  <h4>
+   Example 11
+  </h4>
+  <p>
+   A mass of 5 kg rotates at 200 rpm in a radius of 500 mm. What are the centripetal acceleration and force?
+  </p>
+  <h5>
+   Answer
+  </h5>
+  <p>
+   Convert rpm to rad/s:
+  </p>
+  <p>
+   $$
+    \begin{aligned}\omega \text{ (rad/s)} &amp;= \frac{2\pi}{60} \times n \\ &amp;= \frac{2\pi}{60} \times 200 \\ &amp;= 20.94 \text{ rad/s}\end{aligned}
+   $$
+  </p>
+  <p>
+   The centripetal acceleration is found:
+  </p>
+  <p>
+   $$
+    \begin{aligned}a_c &amp;= \omega^2 r \\ &amp;= 20.94^2 \times 0.5 \\ &amp;= \mathbf{219.24 \text{ m/s}^2} \text{ (Ans.)}\end{aligned}
+   $$
+  </p>
+  <p>
+   The centripetal force is obtained:
+  </p>
+  <p>
+   $$
+    \begin{aligned}F &amp;= m\omega^2 r \\ &amp;= 5 \times 20.94^2 \times 0.5 \\ &amp;= \mathbf{1096.2 \text{ N}} \text{ (Ans.)}\end{aligned}
+   $$
+  </p>
+  <h3>
+   CENTRIFUGAL FORCES IN ROTATING EQUIPMENT
+  </h3>
+  <p>
+   Substantial forces are created in rotating components in machinery by centrifugal forces. For this reason, speed limitations are always placed on rotating machinery often with overspeed protection to prevent mechanical failure.
+  </p>
+  <h4>
+   Example 12
+  </h4>
+  <p>
+   An axial compressor rotates at 6000 rpm. On one of the stages of the compressor, the mass of a blade is 0.1 kg and the center of mass is 0.75 m from the center of rotation. What is the centrifugal force on the blade?
+  </p>
+  <h5>
+   Answer
+  </h5>
+  <p>
+   First convert rpm to rad/s:
+  </p>
+  <p>
+   $$
+    \begin{aligned}\omega \text{ (rad/s)} &amp;= \frac{2\pi}{60} \times n \\ &amp;= \frac{2\pi}{60} \times 6000 \\ &amp;= 628.32 \text{ rad/s}\end{aligned}
+   $$
+  </p>
+  <p>
+   The centrifugal force is then obtained:
+  </p>
+  <p>
+   $$
+    \begin{aligned}F_c &amp;= m\omega^2 r \\ &amp;= 0.1 \times 628.32^2 \times 0.75 \\ &amp;= 29609 \text{ N} \\ &amp;= \mathbf{29.61 \text{ kN}} \text{ (Ans.)}\end{aligned}
+   $$
+  </p>
+  <h2>
+   Objective 7
+  </h2>
+  <p>
+   <b>
+    Calculate the distance of movement of a governor due to centrifugal force.
+   </b>
+  </p>
+  <h3>
+   GOVERNORS
+  </h3>
+  <p>
+   A governor is a device used to control the speed of an engine. It was introduced by Isaac Watt to control the steam engine and several versions have become common on different types of engines. Mechanical governors are now being replaced by electronic versions.
+  </p>
+  <p>
+   Fig. 7 illustrates the principles associated with a Watt governor. The sliding sleeve is connected to a mechanism which is attached to a throttle valve that controls steam or fuel flow. When the speed is zero, the sliding sleeve drops and the balls or 'bobs' are in their inward position. The throttle is fully open at this point. As the speed increases, the bobs move outward due to centrifugal force and the throttle valve closes until a point of equilibrium is reached. If an increase in load causes a drop in speed, the governor will cause the throttle to open and to re-establish the original speed.
+  </p>
+  <img alt="Diagram of a mechanical governor (Watt governor) showing the forces and movement." src="6ca05954842b17f14dfd52f26b9d43d2_img.jpg"/>
+  <div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+   <p>
+    The diagram illustrates a mechanical governor, specifically a Watt governor. It consists of a central vertical shaft connected to the rotating part of an engine or turbine. At the top of the shaft is a suspension point. Two links are pivoted at this point, each ending in a spherical bob. The distance from the vertical shaft to the center of each bob is labeled
+    \(
+     r
+    \)
+    . The total distance between the centers of the two bobs is labeled
+    \(
+     2r
+    \)
+    . As the shaft rotates, the bobs move outward due to centrifugal force, represented by a horizontal arrow labeled "Centrifugal Force" and the formula
+    \(
+     m \omega^2 r
+    \)
+    . The weight of each bob is represented by a downward arrow labeled
+    \(
+     m
+    \)
+    . The bobs are connected to a sliding sleeve on the vertical shaft via a linkage mechanism. The sliding sleeve is labeled "Sliding Sleeve Connected to Linkage and Throttle Valve". The vertical distance from the suspension point to the sliding sleeve is labeled
+    \(
+     h
+    \)
+    .
+   </p>
+   <div class="img-alt">
+    Diagram of a mechanical governor (Watt governor) showing the forces and movement.
+   </div>
+  </div>
+  <p>
+   Figure 7
+   <br/>
+   <i>
+    Mechanical Governor
+   </i>
+  </p>
+  <p>
+   To know the position of the throttle for a certain speed, it is important to calculate the height of the weights, also known as the height of the governor shown as
+   \(
+    h
+   \)
+   in Fig. 7. One way to calculate the forces is to take the moment around the point O. The clockwise moments consist of the centrifugal force multiplied by the height or
+  </p>
+  <p>
+   $$
+    \text{clockwise moments} = m\omega^2 rh
+   $$
+  </p>
+  <p>
+   The anticlockwise moment is determined by the force of gravity acting on the mass of the bob, therefore:
+  </p>
+  <p>
+   $$
+    \text{anticlockwise moments} = mgr
+   $$
+  </p>
+  <p>
+   Since the clockwise and anticlockwise moments will be in equilibrium at the governed speed, the two moments are equal and the final formula for the height is
+  </p>
+  <p>
+   $$
+    \text{clockwise moments} = \text{anticlockwise moments}
+   $$
+  </p>
+  <p>
+   $$
+    m\omega^2 rh = mgr
+   $$
+  </p>
+  <p>
+   $$
+    h = \frac{g}{\omega^2}
+   $$
+  </p>
+  <p>
+   It is interesting to note that the height is not dependent on the mass of the bob but only on the force of gravity and the speed.
+  </p>
+  <h4>
+   Example 13
+  </h4>
+  <p>
+   A Watt governor rotates at 100 rpm. What is the height of the governor?
+  </p>
+  <h5>
+   Answer
+  </h5>
+  <p>
+   Convert rpm to rad/s:
+  </p>
+  <p>
+   $$
+    \begin{aligned}\omega \text{ (rad/s)} &amp;= \frac{2\pi}{60} \times n \\ &amp;= \frac{2\pi}{60} \times 100 \\ &amp;= 10.47 \text{ rad/s}\end{aligned}
+   $$
+  </p>
+  <p>
+   The height will be:
+  </p>
+  <p>
+   $$
+    \begin{aligned}h &amp;= \frac{g}{\omega^2} \\ &amp;= \frac{9.81}{10.47^2} \\ &amp;= 0.0895 \text{ m} \\ &amp;= 89.5 \text{ mm (Ans.)}\end{aligned}
+   $$
+  </p>
+  <h2>
+   Objective 8
+  </h2>
+  <p>
+   <b>
+    Calculate how to balance a rotating mass.
+   </b>
+  </p>
+  <h3>
+   BALANCING A SINGLE MASS
+  </h3>
+  <p>
+   If rotating masses such as turbine rotors are not balanced, significant centrifugal forces are created which produces excessive vibration and can cause major damage. If the unbalance is located at one position, it is possible to counteract it by providing an equal mass at the opposite location and the same distance from the center of rotation. In reality this is not usually practical, but it is possible to calculate a moment that will cancel out the net unbalance by placing an equivalent mass at the appropriate radius.
+  </p>
+  <h4>
+   Example 14
+  </h4>
+  <p>
+   A shaft has an unbalance of 0.25 kg at a radius of 20 mm from the center of rotation. At what radius and position in the same plane should a mass of 0.4 kg be placed for balance?
+  </p>
+  <h5>
+   Answer
+  </h5>
+  <p>
+   Fig. 8 shows the situation graphically.
+  </p>
+  <img alt="Diagram of a shaft showing an unbalance mass and a balancing mass." src="dc1f232cfd39be5c20b21374ad4c04c0_img.jpg"/>
+  <div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+   <p>
+    The diagram shows a straight line representing a shaft. At the center, there is a point labeled '0' and 'Shaft Centre'. To the right, along the line, is a point labeled '0.25 kg' at a distance of '20 mm' from the center. To the left, along the line, is a point labeled '0.4 kg' at a distance of 'r' from the center. The line extends beyond both masses.
+   </p>
+   <div class="img-alt">
+    Diagram of a shaft showing an unbalance mass and a balancing mass.
+   </div>
+  </div>
+  <p>
+   Figure 8
+   <br/>
+   Unbalance with Single Mass
+  </p>
+  <p>
+   Taking moments about the center of rotation shown by O, the solution will be
+  </p>
+  <p>
+   $$
+    \begin{aligned} 0.25 \times 20 &amp;= 0.4 \times r \\ r &amp;= 12.5 \text{ mm} \end{aligned}
+   $$
+  </p>
+  <p>
+   The compensating mass is placed in the opposite direction to the unbalanced mass.
+  </p>
+  <h3>
+   BALANCING OF MULTIPLE ROTATING MASSES
+  </h3>
+  <p>
+   When considering a number of rotating masses, the direction of the masses has to be taken into account. A vector diagram can be used to determine the direction and location of the mass needed to provide the counterbalance.
+  </p>
+  <h4>
+   Example 15
+  </h4>
+  <p>
+   A mass of 1 kg at a radius of 50 mm is at an angle of
+   \(
+    90^\circ
+   \)
+   to another mass of 2 kg at a radius of 30 mm as shown in Fig. 9. What mass would be required at a radius of 45 mm for balance?
+  </p>
+  <img alt="Figure 9: Unbalance with Dual Masses. A vector diagram showing two masses, 1 kg and 2 kg, at different radii and angles. The 1 kg mass is at a radius of 50 mm and is at an angle of 45 degrees to the horizontal. The 2 kg mass is at a radius of 30 mm and is at an angle of 90 degrees to the 1 kg mass, making an angle of 135 degrees to the horizontal." src="933ecd14c858bf3fc919222d8e357bc8_img.jpg"/>
+  <div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+   <p>
+    The diagram shows a central point with two vectors originating from it. The first vector, labeled '1 kg', has a length of '50 mm' and points upwards and to the left, making an angle of '45°' with a horizontal dashed line. The second vector, labeled '2 kg', has a length of '30 mm' and points upwards and to the right. A right-angle symbol indicates that the 2 kg mass is at a
+    \(
+     90^\circ
+    \)
+    angle to the 1 kg mass.
+   </p>
+   <div class="img-alt">
+    Figure 9: Unbalance with Dual Masses. A vector diagram showing two masses, 1 kg and 2 kg, at different radii and angles. The 1 kg mass is at a radius of 50 mm and is at an angle of 45 degrees to the horizontal. The 2 kg mass is at a radius of 30 mm and is at an angle of 90 degrees to the 1 kg mass, making an angle of 135 degrees to the horizontal.
+   </div>
+  </div>
+  <p>
+   Figure 9
+   <br/>
+   Unbalance with Dual Masses
+  </p>
+  <h5>
+   Answer
+  </h5>
+  <p>
+   The moment of force for each mass is:
+  </p>
+  <p>
+   $$
+    \begin{aligned} m_1 r_1 &amp;= 1 \times 50 \\ &amp;= 50 \text{ kg mm} \end{aligned}
+   $$
+  </p>
+  <p>
+   $$
+    \begin{aligned} m_2 r_2 &amp;= 2 \times 30 \\ &amp;= 60 \text{ kg mm} \end{aligned}
+   $$
+  </p>
+  <p>
+   The moment vectors are drawn in Fig. 10 and the equilibrant moment is measured to be 78 kg mm with the direction as shown.
+  </p>
+  <img alt="Figure 10: Vector Solution. A right-angled triangle is shown. The two legs are solid vectors labeled m1r1 and m2r2. The hypotenuse is a dashed vector labeled m3r3 and 'Equilibrant'. A right-angle symbol is at the vertex between the two legs. Below the triangle, the text 'Scale 1 cm = 10 kg mm' is present." src="d68ecc44f3cfaed866a846f9fa4bdf38_img.jpg"/>
+  <div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+   <div class="img-alt">
+    Figure 10: Vector Solution. A right-angled triangle is shown. The two legs are solid vectors labeled m1r1 and m2r2. The hypotenuse is a dashed vector labeled m3r3 and 'Equilibrant'. A right-angle symbol is at the vertex between the two legs. Below the triangle, the text 'Scale 1 cm = 10 kg mm' is present.
+   </div>
+  </div>
+  <p>
+   Figure 10
+   <br/>
+   Vector Solution
+  </p>
+  <p>
+   It can also be calculated as follows
+  </p>
+  <p>
+   $$
+    \begin{aligned}
+ m_3 r_3 &amp;= \sqrt{m_1 r_1 + m_2 r_2} \\
+ m_3 r_3 &amp;= \sqrt{50^2 + 60^2} \\
+ &amp;= \sqrt{2500 + 3600} \\
+ &amp;= 78.1 \text{ kg mm}
+ \end{aligned}
+   $$
+  </p>
+  <p>
+   The mass can then be calculated:
+  </p>
+  <p>
+   $$
+    \begin{aligned}
+ m_3 r_3 &amp;= 78.1 \text{ kg mm} \\
+ m_3 &amp;= \frac{78.1}{45} \\
+ &amp;= 1.736 \text{ kg (Ans.)}
+ \end{aligned}
+   $$
+  </p>
+  <p>
+   Note: if the two known moment vectors do not form a right angled triangle, as in the previous example, then the sine and/or cosine laws would be used to solve the oblique equilibrium triangle.
+  </p>
+  <ol style="list-style-type: none">
+   <li>
+    1. What is the angular velocity of a flywheel rotating at 200 rpm?
+   </li>
+   <li>
+    2. Define the moment of inertia and describe what is meant by the radius of gyration.
+   </li>
+   <li>
+    3. A force of 50 N is applied to a wheel with a diameter of 2 m. What is the torque?
+   </li>
+   <li>
+    4. The mass of a flywheel is 125 kg and its radius of gyration is 400 mm. Calculate the kinetic energy stored when rotating at 150 and 350 rpm, respectively.
+   </li>
+   <li>
+    5. A crane engine lifts a 420 kg mass to a height of 10 m in 1.74 minutes. The indicated power of the engine is 416 W. What is the mechanical efficiency of the engine?
+   </li>
+   <li>
+    6. A pulley, 300 mm in diameter, is driven at 350 rpm by a belt 15 mm thick. The tensions in the tight and slack sides of the belt are 1800 and 500 N respectively. Considering the thickness of the belt, find the power transmitted.
+   </li>
+   <li>
+    7. Describe centripetal and centrifugal force and indicate the difference between them.
+   </li>
+   <li>
+    8. Find the change in height of a Watt governor when it changes speed from 80 to 120 rpm.
+   </li>
+   <li>
+    9. A shaft is found to have an unbalance of 0.5 kg at a radius of 100 mm from the center of rotation. At what radius and position in the same plane should a mass of 1 kg be placed for balance?
+   </li>
+  </ol>
+ </body>
+</html>

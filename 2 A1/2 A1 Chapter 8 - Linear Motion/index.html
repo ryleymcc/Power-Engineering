@@ -1,0 +1,1357 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+ 
+    <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['\\(', '\\)']],
+        displayMath: [['$$', '$$']]
+      }
+    };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+</head>
+ <body>
+    <div id="nav-header" style="padding: 15px 20px; background: #2c3e50; color: white; display: flex; align-items: center; gap: 20px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+        <a href="../index.html" style="color: white; text-decoration: none; background: #34495e; padding: 8px 16px; border-radius: 4px; font-weight: 600; font-size: 0.9rem; transition: background 0.2s;">← Back to Index</a>
+        <h1 style="margin: 0; font-size: 1.2rem; font-weight: 500; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Power Engineering Series</h1>
+    </div>
+    
+  <h1>
+   Linear Motion
+  </h1>
+  <h2>
+   8
+  </h2>
+  <h2>
+   Learning Outcome
+  </h2>
+  <p>
+   <i>
+    When you complete this learning material, you will be able to:
+   </i>
+  </p>
+  <p>
+   Apply the theory of applied mechanics to bodies at rest and in linear motion.
+  </p>
+  <h2>
+   Learning Objectives
+  </h2>
+  <p>
+   <i>
+    You will specifically be able to complete the following tasks:
+   </i>
+  </p>
+  <ol style="list-style-type: none">
+   <li>
+    1. Calculate the displacement, velocity, and acceleration of bodies moving in a straight line.
+   </li>
+   <li>
+    2. Describe the relationship between mass, force, acceleration and weight.
+   </li>
+   <li>
+    3. Explain “inertia” and “momentum.”
+   </li>
+   <li>
+    4. Demonstrate graphically the relationship between work, force, and distance.
+   </li>
+   <li>
+    5. Define and calculate the kinetic energy of moving objects.
+   </li>
+   <li>
+    6. Define and calculate the potential energy of stationary objects.
+   </li>
+   <li>
+    7. Explain the Law of Conservation of Energy.
+   </li>
+   <li>
+    8. Define and calculate indicated power.
+   </li>
+  </ol>
+  <h2>
+   Objective 1
+  </h2>
+  <p>
+   <b>
+    <i>
+     Calculate the displacement, velocity, and acceleration of bodies moving in a straight line.
+    </i>
+   </b>
+  </p>
+  <h3>
+   INTRODUCTION
+  </h3>
+  <p>
+   Mechanics is the study of the forces acting on objects and their resulting motion. It is widely applicable to problems such as the movement of vehicles and aircraft, the trajectory of a spacecraft, the motion of engine parts, such as a piston, and many other mechanical objects.
+  </p>
+  <p>
+   Kinematics is the study of motion of objects without taking into consideration forces that act on the object. If forces are considered, the study of motion is called dynamics which is covered in Module 2-1-11.
+  </p>
+  <p>
+   The simplest form of kinematics deals with particles. A
+   <b>
+    particle
+   </b>
+   is an object whose size can be ignored when dealing with its motion. A particle may be a small or a large object physically but for the purpose of studying its motion, its orientation and rotation can be ignored. For example, for air traffic control, the aircraft can be considered as a particle because its size is small compared to the distance travelled. When calculating the movement of a vehicle over a long trip, its size and orientation can also be ignored.
+  </p>
+  <p>
+   Objects move in three dimensions. For some problems, only one dimension is considered and the result is called linear (or sometimes rectilinear) motion. All quantities are scalar (magnitude only) and not vector (magnitude and direction) because only one dimension is involved.
+  </p>
+  <p>
+   The three quantities required to determine linear motion are displacement, velocity and acceleration.
+  </p>
+  <h3>
+   DISPLACEMENT
+  </h3>
+  <p>
+   The position of a particle at any point in time is defined by a coordinate system and therefore is a vector quantity. The difference in position is described as either displacement or distance.
+  </p>
+  <p>
+   <b>
+    Displacement
+   </b>
+   is a vector quantity that is the difference in position between two points in space.
+  </p>
+  <p>
+   <b>
+    Distance
+   </b>
+   is a scalar quantity that is the length of a path that a body travels.
+  </p>
+  <p>
+   When a car travels between two cities, the displacement (or the straight line distance) is usually less than the distance required to travel from one city to another.
+  </p>
+  <p>
+   In linear motion, distance is actually the relevant measure of position. The term displacement is used in this module so that it is consistent with standard notation.
+  </p>
+  <p>
+   In SI units, both distance and displacement are measured in metres (m) or a derived measure such as kilometre (km).
+  </p>
+  <h3>
+   SPEED AND VELOCITY
+  </h3>
+  <p>
+   When position is described as a function of time, the movement of a particle is called either speed or velocity.
+  </p>
+  <p>
+   <b>
+    Speed
+   </b>
+   is a scalar quantity that describes the distance moved in a given time interval.
+  </p>
+  <p>
+   <b>
+    Velocity
+   </b>
+   is a vector quantity that describes the displacement of an object between two points in time.
+  </p>
+  <p>
+   In linear motion, speed is the relevant measure of position but the term velocity is used in this module so that it is consistent with standard notation.
+  </p>
+  <p>
+   In SI units, both speed and velocity are measured in metres/second (m/s) or a derived measure such as kilometre/hour (km/h).
+  </p>
+  <p>
+   If the distance travelled between two points and the time interval are known, the velocity will be the average velocity and is defined mathematically as:
+  </p>
+  <p>
+   $$
+    \text{Average velocity} = \frac{\text{Displacement}}{\text{Time interval}} \quad \text{or}
+   $$
+   $$
+    v = \frac{s}{t}
+   $$
+  </p>
+  <p>
+   If an object increases from an initial velocity
+   \(
+    v_i
+   \)
+   to a final velocity
+   \(
+    v_f
+   \)
+   , then the average velocity is:
+  </p>
+  <p>
+   $$
+    v_{\text{ave}} = \frac{u + v}{2}
+   $$
+  </p>
+  <h4>
+   Example 1
+  </h4>
+  <p>
+   A vehicle travels from Calgary to Edmonton, a distance of 300 km, in 3 hours and then continues to Grande Prairie, a distance of 240 km, arriving 2 hours later. What is the velocity for each portion of the trip and the average velocity for the whole trip?
+  </p>
+  <h5>
+   Answer
+  </h5>
+  <p>
+   For the Calgary to Edmonton portion:
+  </p>
+  <p>
+   $$
+    \begin{aligned} v &amp;= \frac{s}{t} \\ v &amp;= \frac{300}{3} \\ v &amp;= 100 \text{ km/h (Ans.)} \end{aligned}
+   $$
+  </p>
+  <p>
+   For the Edmonton to Grande Prairie portion:
+  </p>
+  <p>
+   $$
+    \begin{aligned} v &amp;= \frac{s}{t} \\ v &amp;= \frac{240}{2} \\ &amp;= 120 \text{ km/h (Ans.)} \end{aligned}
+   $$
+  </p>
+  <p>
+   The average velocity is:
+  </p>
+  <p>
+   $$
+    \begin{aligned} v_{ave} &amp;= \frac{u + v}{2} \\ v_{ave} &amp;= \frac{100 + 120}{2} \\ &amp;= 110 \text{ km/h (Ans.)} \end{aligned}
+   $$
+  </p>
+  <h3>
+   ACCELERATION
+  </h3>
+  <p>
+   <b>
+    Acceleration
+   </b>
+   is a vector quantity that describes the change of velocity with time.
+  </p>
+  <p>
+   In SI units, acceleration is measured in metres/second
+   <sup>
+    2
+   </sup>
+   (m/s
+   <sup>
+    2
+   </sup>
+   ).
+  </p>
+  <p>
+   If the change in velocity is uniform over a time period, then the acceleration or deceleration is constant.
+  </p>
+  <p>
+   $$
+    \begin{aligned} \text{Average acceleration} &amp;= \frac{\text{Final velocity} - \text{Initial velocity}}{\text{Time interval}} \text{ or} \\ a &amp;= \frac{v - u}{t} \end{aligned}
+   $$
+  </p>
+  <p>
+   For constant acceleration
+   \(
+    a = k
+   \)
+   , the following relationships between distance, velocity and acceleration can be established.
+  </p>
+  <p>
+   The final velocity is calculated from the initial velocity, acceleration, and time by reorganizing the formula:
+  </p>
+  <p>
+   $$
+    a = \frac{v - u}{t}
+   $$
+  </p>
+  <p>
+   $$
+    v = u + at
+   $$
+  </p>
+  <p>
+   The distance is calculated from the initial velocity, final velocity, and time by substituting formula
+   \(
+    v = \frac{s}{t}
+   \)
+   into the left hand side of formula
+   \(
+    v_{ave} = \frac{u + v}{2}
+   \)
+  </p>
+  <p>
+   $$
+    V_{ave} = \frac{u + v}{2}
+   $$
+  </p>
+  <p>
+   $$
+    \frac{s}{t} = \frac{u + v}{2}
+   $$
+  </p>
+  <p>
+   $$
+    s = \left( \frac{u + v}{2} \right) \times t
+   $$
+  </p>
+  <p>
+   The distance can also be calculated from the initial velocity, acceleration, and time by substituting formula
+   \(
+    v = u + at
+   \)
+   into formula
+   \(
+    s = \left( \frac{u + v}{2} \right) \times t
+   \)
+   :
+  </p>
+  <p>
+   $$
+    s = \left( \frac{u + u + at}{2} \right) t
+   $$
+  </p>
+  <p>
+   $$
+    s = ut + \frac{at^2}{2}
+   $$
+  </p>
+  <p>
+   The final velocity is calculated from the initial velocity, acceleration, and distance by reorganizing formula:
+  </p>
+  <p>
+   $$
+    s = \left( \frac{u + v}{2} \right) \times t
+   $$
+  </p>
+  <p>
+   $$
+    t = \left( \frac{2s}{u + v} \right)
+   $$
+  </p>
+  <p>
+   and then substituting this into formula
+   \(
+    v = u + at
+   \)
+   :
+  </p>
+  <p>
+   $$
+    v_f = u + a \left( \frac{2s}{u + v} \right)
+   $$
+  </p>
+  <p>
+   so that a reorganization of the terms yields:
+  </p>
+  <p>
+   $$
+    \begin{aligned}(v-u) &amp;= \left( \frac{2as}{u+v} \right) \\(v-u)(u+v) &amp;= 2as \\v^2 - u^2 &amp;= 2as\end{aligned}
+   $$
+  </p>
+  <p>
+   and the final formula is:
+  </p>
+  <p>
+   $$
+    v^2 = u^2 + 2as
+   $$
+  </p>
+  <h4>
+   Example 2
+  </h4>
+  <p>
+   A body moving at 20 m/s accelerates uniformly at
+   \(
+    4 \text{ m/s}^2
+   \)
+   for 5 seconds. What is the final velocity and the total distance traveled?
+  </p>
+  <h5>
+   Answer
+  </h5>
+  <p>
+   The final velocity is calculated by using the following formula:
+  </p>
+  <p>
+   $$
+    \begin{aligned}v &amp;= u + at \\v &amp;= 20 + (4 \times 5) \\v &amp;= \mathbf{40 \text{ m/s}} \text{ (Ans.)}\end{aligned}
+   $$
+  </p>
+  <p>
+   The distance is then determined:
+  </p>
+  <p>
+   $$
+    \begin{aligned}s &amp;= \left( \frac{u+v}{2} \right) t \\s &amp;= \left( \frac{20+40}{2} \right) 5 \\s &amp;= \mathbf{150 \text{ m}} \text{ (Ans.)}\end{aligned}
+   $$
+  </p>
+  <h4>
+   Example 3
+  </h4>
+  <p>
+   A vehicle reduces its velocity from 80 km/h to 20 km/h in 10 seconds. What is the deceleration and the total distance traveled?
+  </p>
+  <h5>
+   Answer
+  </h5>
+  <p>
+   Since the answer is to be in
+   \(
+    \text{m/s}^2
+   \)
+   , convert the velocities from
+   \(
+    \text{km/h}
+   \)
+   to
+   \(
+    \text{m/s}
+   \)
+   which is done by the following conversion:
+  </p>
+  <p>
+   $$
+    \begin{aligned} u &amp;= \frac{80 \text{ km} \times 1000 \text{ m/km}}{\text{h} \times 60 \text{ min/h} \times 60 \text{ sec/min}} \\ &amp;= 22.2 \text{ m/s} \end{aligned}
+   $$
+  </p>
+  <p>
+   $$
+    \begin{aligned} v &amp;= \frac{20 \text{ km} \times 1000 \text{ m/km}}{\text{h} \times 60 \text{ min/h} \times 60 \text{ sec/min}} \\ &amp;= 5.56 \text{ m/s} \end{aligned}
+   $$
+  </p>
+  <p>
+   The deceleration (shown as a negative acceleration) is determined::
+  </p>
+  <p>
+   $$
+    \begin{aligned} a &amp;= \frac{v - u}{t} \\ a &amp;= \frac{5.56 - 22.2}{10} \\ &amp;= -1.66 \text{ m/s}^2 \text{ (Ans.)} \end{aligned}
+   $$
+  </p>
+  <p>
+   The distance traveled is then calculated:
+  </p>
+  <p>
+   $$
+    \begin{aligned} s &amp;= ut + \frac{at^2}{2} \\ s &amp;= 22.2 \times 10 + \frac{-1.66 \times 10^2}{2} \\ &amp;= 139 \text{ m (Ans.)} \end{aligned}
+   $$
+  </p>
+  <h2>
+   Objective 2
+  </h2>
+  <p>
+   <b>
+    <i>
+     Describe the relationship between mass, force, acceleration and weight.
+    </i>
+   </b>
+  </p>
+  <h3>
+   MASS
+  </h3>
+  <p>
+   <b>
+    Mass
+   </b>
+   , the amount of matter in an object, is dependent on the volume and density of the substance making up its body. The unit of mass is the kilogram (kg).
+  </p>
+  <p>
+   In the SI system of units, mass is a fundamental quantity and is a measure of inertia or resistance to change in motion.
+  </p>
+  <h3>
+   FORCE AND ACCELERATION
+  </h3>
+  <p>
+   Newton described the relationship between force, mass, and acceleration in his Second Law. It states that
+  </p>
+  <p>
+   “An unbalanced force acting on a body produces an acceleration that is directly proportional to the force and inversely proportional to its mass.”
+  </p>
+  <p>
+   The formula is therefore:
+  </p>
+  <p>
+   $$
+    \text{Acceleration} = \frac{\text{Force}}{\text{Mass}}
+   $$
+  </p>
+  <p>
+   or:
+  </p>
+  <p>
+   $$
+    \text{Force} = \text{mass} \times \text{acceleration} \quad \text{or}
+   $$
+  </p>
+  <p>
+   $$
+    F = ma
+   $$
+  </p>
+  <p>
+   Force is a derived quantity that is measured in
+   \(
+    \text{kg m/s}^2
+   \)
+   or N (Newtons).
+  </p>
+  <h4>
+   Example 4
+  </h4>
+  <p>
+   A mass of 100 kg is accelerated at
+   \(
+    2 \text{ m/s}^2
+   \)
+   . What is the force required to accomplish this?
+  </p>
+  <h5>
+   Answer
+  </h5>
+  <p>
+   The accelerating force is determined:
+  </p>
+  <p>
+   $$
+    \begin{aligned} F &amp;= ma \\ &amp;= 100 \times 2 \\ &amp;= 200 \text{ kg m/s}^2 \\ &amp;= \mathbf{200 \text{ N}} \text{ (Ans.)} \end{aligned}
+   $$
+  </p>
+  <h3>
+   WEIGHT
+  </h3>
+  <p>
+   <b>
+    Weight
+   </b>
+   is the force of gravity acting on a mass. Objects on the earth are subjected to the force of gravity. Weight varies with location and therefore a person's weight on the moon is different from their weight on earth.
+  </p>
+  <p>
+   The formula for Newton's Second Law
+   <b>
+    Error! Reference source not found.
+   </b>
+   can be rewritten in terms of weight by substituting acceleration due to gravity
+   \(
+    g
+   \)
+   for acceleration
+   \(
+    a
+   \)
+   so that force becomes weight. The formula then becomes:
+  </p>
+  <p>
+   $$
+    \begin{aligned} w &amp;= mg \\ g &amp;= 9.81 \text{ m/s}^2 \end{aligned}
+   $$
+  </p>
+  <p>
+   Weight is measured in N (Newtons) or the same units as force.
+  </p>
+  <h4>
+   Example 5
+  </h4>
+  <p>
+   What is the weight of a 1 kg mass on the earth's surface?
+  </p>
+  <h5>
+   Answer
+  </h5>
+  <p>
+   The weight is:
+  </p>
+  <p>
+   $$
+    \begin{aligned} w &amp;= mg \\ &amp;= 1 \text{ kg} \times 9.81 \text{ m/s}^2 \\ &amp;= 9.81 \text{ kg m/s}^2 \\ &amp;= \mathbf{9.81 \text{ N}} \text{ (Ans.)} \end{aligned}
+   $$
+  </p>
+  <h4>
+   Example 6
+  </h4>
+  <p>
+   If an object weighs 64 N on the earth's surface, what is its mass?
+  </p>
+  <h5>
+   Answer
+  </h5>
+  <p>
+   The mass is:
+  </p>
+  <p>
+   $$
+    \begin{aligned} m &amp;= \frac{w}{g} \\ &amp;= \frac{64}{9.81} \\ &amp;= 6.52 \text{ kg (Ans.)} \end{aligned}
+   $$
+  </p>
+  <h2>
+   Objective 3
+  </h2>
+  <p>
+   <b>
+    Explain “inertia” and “momentum.”
+   </b>
+  </p>
+  <h3>
+   INERTIA
+  </h3>
+  <p>
+   <b>
+    Inertia
+   </b>
+   is a property of matter that causes resistance to a change in motion. Inertia is related to the mass of a body. As mass increases, a greater force is required to change the state of motion of the body or to cause it to accelerate.
+  </p>
+  <p>
+   Newton’s First Law is also called the law of inertia. It states that:
+  </p>
+  <p>
+   “A body at rest will remain at rest and a body in uniform motion along a straight line will continue unless it is acted upon by an external unbalanced force.”
+  </p>
+  <h3>
+   MOMENTUM
+  </h3>
+  <p>
+   Momentum is the product of the mass of a body and its velocity. Newton’s Second Law refers to momentum.
+  </p>
+  <p>
+   The linear momentum
+   \(
+    p
+   \)
+   (rho) is written as:
+  </p>
+  <p>
+   Momentum = mass
+   \(
+    \times
+   \)
+   velocity or
+  </p>
+  <p>
+   $$
+    p = mv
+   $$
+  </p>
+  <p>
+   If the formula for acceleration
+   \(
+    a = \frac{v-u}{t}
+   \)
+   is substituted into formula
+   \(
+    F = ma
+   \)
+   , then force is stated in terms of a change of momentum.
+  </p>
+  <p>
+   Force =
+   \(
+    \frac{\text{Change in momentum}}{\text{Time}}
+   \)
+   or
+  </p>
+  <p>
+   $$
+    F = ma
+   $$
+  </p>
+  <p>
+   $$
+    F = m \frac{v-u}{t}
+   $$
+  </p>
+  <p>
+   $$
+    F = \frac{mv - mu}{t}
+   $$
+  </p>
+  <h4>
+   Example 7
+  </h4>
+  <p>
+   A mass of 2 kg moving at 10 m/s is brought to rest in 0.005 seconds. What force is required?
+  </p>
+  <h5>
+   Answer
+  </h5>
+  <p>
+   v = final velocity, 0 m/s
+  </p>
+  <p>
+   u = initial velocity, 10 m/s
+  </p>
+  <p>
+   $$
+    \begin{aligned} F &amp;= \frac{mv - mu}{t} \\ F &amp;= \frac{2 \times 0 - 2 \times 10}{0.005} \\ &amp;= 4000 \text{ kg m/s}^2 \\ &amp;= 4000 \text{ N (newtons) (Ans.)} \end{aligned}
+   $$
+  </p>
+  <h2>
+   Objective 4
+  </h2>
+  <p>
+   <b>
+    Demonstrate graphically the relationship between work, force, and distance.
+   </b>
+  </p>
+  <h3>
+   WORK
+  </h3>
+  <p>
+   <b>
+    Work
+   </b>
+   is done when a force moves an object over a certain distance. The formula for work is:
+  </p>
+  <p>
+   Work = Force
+   \(
+    \times
+   \)
+   distance or
+  </p>
+  <p>
+   $$
+    W = Fs
+   $$
+  </p>
+  <p>
+   When applied to work, distance is a scalar quantity because the length of the path is proportional to the amount of work done. For example, if a body is moved in a complete circle, work is still done in proportion to the circumference of the circle even though the net displacement is zero. Therefore, work is also a scalar quantity.
+  </p>
+  <p>
+   It is important to note that distance as it applies to work is in the same direction as the applied force. As an example, if an object is raised using a ramp, the applied force is that of gravity which acts in a vertical direction. The relevant distance is the vertical distance and, assuming a frictionless ramp, the amount of work done is the same regardless of the length or incline of the ramp.
+  </p>
+  <p>
+   The unit of work is the Joule and one Joule is equal to one Nm (Newton-metre).
+  </p>
+  <p>
+   It is helpful to display formula
+   \(
+    W = Fs
+   \)
+   graphically if the force applied varies with distance. The total work done is determined by the area under the graph. The simplest case occurs when the force is constant for the entire distance, as shown in Fig. 1. Formula
+   \(
+    W = Fs
+   \)
+   is used to calculate the work done, which is equal to the area under the graph.
+  </p>
+  <img alt="Figure 1: A graph showing Work Done with a Constant Force. The vertical axis is labeled 'Force (N)' and the horizontal axis is labeled 'Distance (m)'. A shaded rectangular area represents the work done, with the text 'Area = Work Done' inside it." src="ad29805cd4f64ad2828e14feb66de664_img.jpg"/>
+  <div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+   <div class="img-alt">
+    Figure 1: A graph showing Work Done with a Constant Force. The vertical axis is labeled 'Force (N)' and the horizontal axis is labeled 'Distance (m)'. A shaded rectangular area represents the work done, with the text 'Area = Work Done' inside it.
+   </div>
+  </div>
+  <p>
+   <i>
+    Figure 1
+   </i>
+   <br/>
+   <i>
+    Work Done with a Constant Force
+   </i>
+  </p>
+  <p>
+   If there is a linear increase in the force, as shown in Fig. 2, the area is one half of that in Fig. 1 and the formula is:
+  </p>
+  <p>
+   $$
+    W = \frac{1}{2} Fs
+   $$
+  </p>
+  <img alt="Figure 2: A graph showing Work Done with an Increasing Force. The vertical axis is labeled 'Force (N)' and the horizontal axis is labeled 'Distance (m)'. A shaded triangular area represents the work done, with the text 'Area = Work Done' and an arrow pointing to it." src="e95f47f7a4c01c8889d6d46919b4c73d_img.jpg"/>
+  <div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+   <div class="img-alt">
+    Figure 2: A graph showing Work Done with an Increasing Force. The vertical axis is labeled 'Force (N)' and the horizontal axis is labeled 'Distance (m)'. A shaded triangular area represents the work done, with the text 'Area = Work Done' and an arrow pointing to it.
+   </div>
+  </div>
+  <p>
+   <i>
+    Figure 2
+   </i>
+   <br/>
+   <i>
+    Work Done with an Increasing Force
+   </i>
+  </p>
+  <h4>
+   Example 8
+  </h4>
+  <p>
+   A mass of 50 kg is moved a distance of 10 m against a force of 100N. Calculate the amount of work done.
+  </p>
+  <h5>
+   Answer
+  </h5>
+  <p>
+   The work is calculated as:
+  </p>
+  <p>
+   $$
+    \begin{aligned}W &amp;= Fs \\&amp;= 100 \times 10 \\&amp;= 1000 \text{ J} \\&amp;= \mathbf{1 \text{ kJ}} \text{ (Ans.)}\end{aligned}
+   $$
+  </p>
+  <p>
+   Note that the mass of the object is irrelevant in this case.
+  </p>
+  <h4>
+   Example 9
+  </h4>
+  <p>
+   A force varying uniformly between 0 and 1000 N moves an object a distance of 20 m. How much work is done?
+  </p>
+  <h5>
+   Answer
+  </h5>
+  <p>
+   The work is calculated as
+  </p>
+  <p>
+   $$
+    \begin{aligned}W &amp;= \frac{1}{2} Fs \\&amp;= \frac{1}{2} \times 1000 \times 20 \\&amp;= 10\,000 \text{ J} \\&amp;= \mathbf{10 \text{ kJ}} \text{ (Ans.)}\end{aligned}
+   $$
+  </p>
+  <h4>
+   Example 10
+  </h4>
+  <p>
+   A mass of 50 kg is moved up a frictionless ramp of
+   \(
+    45^\circ
+   \)
+   which is 10 m long. How much work is done?
+  </p>
+  <h5>
+   Answer
+  </h5>
+  <p>
+   First calculate the force required to overcome gravity:
+  </p>
+  <p>
+   $$
+    \begin{aligned}F &amp;= ma \\&amp;= 50 \times 9.81 \\&amp;= 490.5 \text{ N}\end{aligned}
+   $$
+  </p>
+  <p>
+   The vertical distance is determined because of the force of gravity. Using basic geometry, the vertical distance is calculated using Pythagoras' Theorem,
+   \(
+    a^2 + b^2 = c^2
+   \)
+   .
+  </p>
+  <p>
+   For a
+   \(
+    45^\circ
+   \)
+   angle, the two sides are equal and with
+   \(
+    c = 10
+   \)
+   , the vertical distance
+   \(
+    a
+   \)
+   is:
+  </p>
+  <p>
+   $$
+    \begin{aligned} a^2 &amp;= \frac{c^2}{2} \\ a^2 &amp;= \frac{10^2}{2} \\ a &amp;= \sqrt{\frac{100}{2}} \\ a &amp;= 7.07 \text{ m} \end{aligned}
+   $$
+  </p>
+  <p>
+   The work done is calculated as:
+  </p>
+  <p>
+   $$
+    \begin{aligned} W &amp;= Fs \\ &amp;= 490.5 \times 7.07 \\ &amp;= 3468 \text{ J} \\ &amp;= \mathbf{3.468 \text{ kJ}} \text{ (Ans.)} \end{aligned}
+   $$
+  </p>
+  <h2>
+   Objective 5
+  </h2>
+  <p>
+   <b>
+    Define and calculate the kinetic energy of moving objects.
+   </b>
+  </p>
+  <h3>
+   WORK AND ENERGY
+  </h3>
+  <p>
+   <b>
+    Energy
+   </b>
+   is the ability to do work. There are different types of energy such as electrical, chemical and heat but the type of energy discussed here is mechanical energy. One type of mechanical energy is kinetic, which is energy due to motion.
+  </p>
+  <h3>
+   KINETIC ENERGY
+  </h3>
+  <p>
+   Kinetic energy is the ability to do work due to the motion of a body. It can be derived from the formula for work
+   \(
+    W = Fs
+   \)
+   and substituting formula
+   \(
+    F = ma
+   \)
+   as follows:
+  </p>
+  <p>
+   $$
+    W = Fs
+   $$
+  </p>
+  <p>
+   $$
+    W = mas
+   $$
+  </p>
+  <p>
+   Because acceleration can be expressed in terms of velocity, from formula
+   \(
+    a = \frac{v-u}{t}
+   \)
+   , the formula becomes:
+  </p>
+  <p>
+   $$
+    W = mas
+   $$
+  </p>
+  <p>
+   $$
+    W = ms \frac{v-u}{t}
+   $$
+  </p>
+  <p>
+   The distance can be replaced by formula
+   \(
+    s = \left(\frac{u+v}{2}\right) \times t
+   \)
+   :
+  </p>
+  <p>
+   $$
+    \begin{aligned} W &amp;= ms \frac{v-u}{t} \\ &amp;= m \left(\frac{v+u}{2}\right) t \frac{v-u}{t} \\ &amp;= \frac{1}{2} mv^2 - \frac{1}{2} mu^2 \\ &amp;= \frac{1}{2} m(v^2 - u^2) \end{aligned}
+   $$
+  </p>
+  <p>
+   Work done by a moving body can also be determined by calculating the change in kinetic energy from the initial to the final position.
+  </p>
+  <p>
+   The kinetic energy
+   \(
+    E_K
+   \)
+   is calculated using the formula:
+  </p>
+  <p>
+   $$
+    E_K (J) = \frac{1}{2} m v^2
+   $$
+  </p>
+  <p>
+   The units of measure are the same as those for work, Joules.
+  </p>
+  <h4>
+   Example 11
+  </h4>
+  <p>
+   What is the kinetic energy of a vehicle of mass 1500 kg travelling at 50 km/h?
+  </p>
+  <h5>
+   Answer
+  </h5>
+  <p>
+   The first step is to convert the speed to m/s:
+  </p>
+  <p>
+   $$
+    \begin{aligned} v &amp;= \frac{50 \text{ km} \times 1000 \text{ m/km}}{\text{h} \times 60 \text{ min/h} \times 60 \text{ sec/min}} \\ &amp;= 13.89 \text{ m/s} \end{aligned}
+   $$
+  </p>
+  <p>
+   The kinetic energy is then calculated from formula
+   \(
+    E_K (J) = \frac{1}{2} m v^2
+   \)
+   as:
+  </p>
+  <p>
+   $$
+    \begin{aligned} E_K &amp;= \frac{1}{2} m v^2 \\ &amp;= \frac{1}{2} \times 1500 \times 13.89^2 \\ &amp;= 144\,699 \text{ J} \\ &amp;= 144.7 \text{ kJ (Ans.)} \end{aligned}
+   $$
+  </p>
+  <h2>
+   Objective 6
+  </h2>
+  <p>
+   <b>
+    <i>
+     Define and calculate the potential energy of stationary objects.
+    </i>
+   </b>
+  </p>
+  <h3>
+   POTENTIAL ENERGY
+  </h3>
+  <p>
+   Another type of mechanical energy is potential energy. Potential energy is the ability to do work as a result of the position or state of a body.
+  </p>
+  <p>
+   Examples of potential energy are:
+  </p>
+  <ul style="list-style-type: none">
+   <li>
+    • The hammer of a pile driver. Maximum potential energy exists at the top position and decreases to zero as the hammer reaches its lowest position.
+   </li>
+   <li>
+    • Steam in a boiler where the pressure is capable of doing work.
+   </li>
+   <li>
+    • A piston at top dead centre after the compression stroke where the potential energy is due to pressure. Additional potential energy is supplied when fuel is oxidized to provide additional pressure.
+   </li>
+   <li>
+    • A spring that has been compressed or extended.
+   </li>
+   <li>
+    • Water behind a dam which has a potential energy equal to the vertical distance it can drop.
+   </li>
+  </ul>
+  <p>
+   To calculate potential energy, use the same formula
+   \(
+    W = Fs
+   \)
+   as that for work. The potential energy is the amount of work that the object is capable of performing due to its current state.
+  </p>
+  <p>
+   The formula for potential energy is therefore:
+  </p>
+  <p>
+   $$
+    E_p = Fs
+   $$
+  </p>
+  <p>
+   A standard example is the potential energy due to the elevation of an object. The potential energy of the object is equal to its distance above a reference point, multiplied by the force of gravity.
+  </p>
+  <h4>
+   Example 12
+  </h4>
+  <p>
+   What is the potential energy of an object with a mass of 100 kg that is 10 m above the ground?
+  </p>
+  <h5>
+   Answer
+  </h5>
+  <p>
+   It is first necessary to calculate the force of gravity. Using formula
+   \(
+    F = ma
+   \)
+   :
+  </p>
+  <p>
+   $$
+    \begin{aligned} F &amp;= ma \\ &amp;= 100 \times 9.81 \\ &amp;= 981 \text{ N} \end{aligned}
+   $$
+  </p>
+  <p>
+   The potential energy is calculated from formula
+   \(
+    E_p = Fs
+   \)
+   as
+  </p>
+  <p>
+   $$
+    \begin{aligned} E_p &amp;= Fs \\ &amp;= 981 \times 10 \\ &amp;= 9810 \text{ J} \\ &amp;= \mathbf{9.81 \text{ kJ}} \text{ (Ans.)} \end{aligned}
+   $$
+  </p>
+  <h2>
+   Objective 7
+  </h2>
+  <p>
+   <b>
+    Explain the Law of Conservation of Energy.
+   </b>
+  </p>
+  <h3>
+   LAW OF CONSERVATION OF ENERGY
+  </h3>
+  <p>
+   The Law of Conservation of Energy states that for any process the total energy before and after the process is the same. Another way of saying this is that energy cannot be created or destroyed. It can only be converted from one form to another.
+  </p>
+  <p>
+   A falling mass is again a good example. Before the object drops from a height, its potential energy is dependent upon its height and the force of gravity. At this point it does not have any kinetic energy. As it falls, the potential energy decreases while the kinetic energy increases by the same amount.
+  </p>
+  <p>
+   In this situation the formula for the Law of Conservation of Energy can be stated as:
+  </p>
+  <p>
+   Loss of Potential Energy = Gain in Kinetic Energy
+  </p>
+  <p>
+   $$
+    Fs = \frac{1}{2}mv^2
+   $$
+  </p>
+  <p>
+   When the object hits the ground, this kinetic energy is converted into another form. The nature of the remaining energy is dependant on a number of variable factors, including the nature of the material that the object strikes.
+  </p>
+  <h4>
+   Example 13
+  </h4>
+  <p>
+   What is the velocity of an object with a mass of 100 kg that is allowed to fall from rest from a height of 10 m above the ground?
+  </p>
+  <h5>
+   Answer
+  </h5>
+  <p>
+   Using formula
+   \(
+    F = ma
+   \)
+   to determine the force and substituting in formula
+   \(
+    Fs = \frac{1}{2}mv^2
+   \)
+   , the velocity is determined as:
+  </p>
+  <p>
+   $$
+    \begin{aligned}Fs &amp;= \frac{1}{2}mv^2 \\ma_s &amp;= \frac{1}{2}mv^2 \\100 \times 9.81 \times 10 &amp;= \frac{1}{2} \times 100 \times v^2 \\v^2 &amp;= 196.2 \\v &amp;= 14.01 \text{ m/s (Ans.)}\end{aligned}
+   $$
+  </p>
+  <h2>
+   Objective 8
+  </h2>
+  <p>
+   <b>
+    Define and calculate indicated power.
+   </b>
+  </p>
+  <h3>
+   POWER
+  </h3>
+  <p>
+   <b>
+    Power
+   </b>
+   is the rate at which work is done. The formula for power is:
+  </p>
+  <p>
+   $$
+    \text{Power} = \frac{\text{Work}}{\text{time}} \text{ or}
+   $$
+  </p>
+  <p>
+   $$
+    P = \frac{W}{t}
+   $$
+  </p>
+  <p>
+   Since the power produced is dependent on time as well as work done, two machines may do the same amount of work over different periods of time and consequently have different power outputs. For this reason, most machines are rated according to their power output and not the amount of work that they can perform.
+  </p>
+  <p>
+   The unit of measure for power is J/s (Joules/second) which is called a Watt or:
+  </p>
+  <p>
+   $$
+    1 \text{ J/s} = 1 \text{ Watt}
+   $$
+  </p>
+  <p>
+   Watt are small units, therefore, power is often measured as follows:
+  </p>
+  <p>
+   $$
+    1 \text{ kilowatt (kW)} = 10^3 \text{ Watts}
+   $$
+  </p>
+  <p>
+   $$
+    1 \text{ megawatt (MW)} = 10^6 \text{ Watts}
+   $$
+  </p>
+  <p>
+   $$
+    1 \text{ gigawatt (GW)} = 10^9 \text{ Watts}
+   $$
+  </p>
+  <h4>
+   Example 14
+  </h4>
+  <p>
+   A constant force of 1000 N moves an object a distance of 1 km in 50 seconds. What is the power required to do this?
+  </p>
+  <h5>
+   Answer
+  </h5>
+  <p>
+   The work done is determined from formula
+   \(
+    W = Fs
+   \)
+   :
+  </p>
+  <p>
+   $$
+    \begin{aligned}W &amp;= Fs \\&amp;= 1000 \text{ N} \times 1000 \text{ m} \\&amp;= 1 \, 000 \, 000 \text{ J}\end{aligned}
+   $$
+  </p>
+  <p>
+   The power is calculated from formula
+   \(
+    P = \frac{W}{t}
+   \)
+   :
+  </p>
+  <p>
+   $$
+    \begin{aligned}P &amp;= \frac{W}{t} \\&amp;= \frac{1 \, 000 \, 000 \text{ J}}{50 \text{ s}} \\&amp;= 20 \, 000 \text{ Watts} \\&amp;= 20 \text{ kW (Ans.)}\end{aligned}
+   $$
+  </p>
+  <h3>
+   INDICATED POWER
+  </h3>
+  <p>
+   Indicated power is produced in a reciprocating engine as a result of pressure acting on a piston that moves linearly in a cylinder. The formulas for work and power can be used to determine the amount of power produced by the engine.
+  </p>
+  <p>
+   The pressure times the area of the piston determines the force applied and the stroke of the piston is the distance over which work is done. The pressure in this calculation is called the mean effective pressure. It is the net pressure on the piston because there may be an opposing back pressure on the other side of the piston that has to be subtracted from the pressure in the cylinder. The mean effective pressure is also an average pressure since the pressure may vary with the stroke as the fluid expands.
+  </p>
+  <p>
+   The force on the piston is calculated by:
+  </p>
+  <p>
+   $$
+    \begin{aligned}\text{Force} &amp;= \text{Mean effective pressure} \times \text{area or} \\F &amp;= p \times A\end{aligned}
+   $$
+  </p>
+  <p>
+   The work done per stroke, where
+   \(
+    L
+   \)
+   the length of the stroke is, is:
+  </p>
+  <p>
+   $$
+    \begin{aligned}\text{Work} &amp;= \text{Force} \times \text{distance} \\W &amp;= pAL\end{aligned}
+   $$
+  </p>
+  <p>
+   The indicated power
+   \(
+    P_i
+   \)
+   is calculated using the number of power strokes per second
+   \(
+    N
+   \)
+   so that the final formula is:
+  </p>
+  <p>
+   $$
+    P_i = pLAN
+   $$
+  </p>
+  <p>
+   The number of power strokes per revolution is added to the calculation. For a typical internal combustion engine, the possibilities are:
+  </p>
+  <ul style="list-style-type: none">
+   <li>
+    • A single acting two stroke cycle which provides 1 power stroke per revolution
+   </li>
+   <li>
+    • A single acting four stroke cycle which provides 1 power stroke per two revolutions.
+   </li>
+  </ul>
+  <p>
+   For a steam engine:
+  </p>
+  <ul style="list-style-type: none">
+   <li>
+    • A double acting two stroke cycle which provides 2 power strokes per revolution.
+   </li>
+  </ul>
+  <p>
+   Note that this calculation can also be used in reciprocating compressor calculations to determine the amount of power needed to drive the compressor.
+  </p>
+  <h4>
+   Example 15
+  </h4>
+  <p>
+   A four cylinder two stroke diesel engine runs at 150 rpm and has a mean effective pressure of 1200 kPa. The diameter of each cylinder is 750 mm and the stroke is 1200 mm. What is the indicated power of the engine?
+  </p>
+  <h5>
+   Answer
+  </h5>
+  <p>
+   The area of each piston is:
+  </p>
+  <p>
+   $$
+    \begin{aligned} A &amp;= \pi r^2 \\ &amp;= 3.1416 \times \left( \frac{0.75}{2} \right)^2 \\ &amp;= 0.442 \text{ m}^2 \end{aligned}
+   $$
+  </p>
+  <p>
+   With a two stroke engine, there is one power stroke per revolution so the number of strokes per second is:
+  </p>
+  <p>
+   $$
+    \begin{aligned} N &amp;= \frac{1 \text{ power stroke/rev} \times 150 \text{ rpm}}{60 \text{ sec/min}} \\ &amp;= 2.5 \text{ power strokes per second} \end{aligned}
+   $$
+  </p>
+  <p>
+   Because a Pa (Pascal) is equivalent to a N/m
+   <sup>
+    2
+   </sup>
+   (Newton/metre squared), the indicated power produced by each cylinder is calculated using formula
+   \(
+    P_i = pLAN
+   \)
+   :
+  </p>
+  <p>
+   $$
+    \begin{aligned} P_i &amp;= pLAN \\ &amp;= 1200 \times 1.2 \times 0.442 \times 2.5 \\ &amp;= 1591.2 \text{ kW} \end{aligned}
+   $$
+  </p>
+  <p>
+   The total power produced for all four cylinders is:
+  </p>
+  <p>
+   $$
+    \begin{aligned} \text{Total } P_i &amp;= 4 \times 1591.2 \\ &amp;= \mathbf{6364.8 \text{ kW}} \text{ (Ans.)} \end{aligned}
+   $$
+  </p>
+  <h2>
+   Chapter Questions
+  </h2>
+  <p>
+   A1.8
+  </p>
+  <ol style="list-style-type: none">
+   <li>
+    1. A body moving at 10 m/s accelerates uniformly at
+    \(
+     5 \text{ m/s}^2
+    \)
+    for 20 seconds. What is the final velocity and the total distance traveled?
+   </li>
+   <li>
+    2. What force is required to accelerate a 10 kg mass at
+    \(
+     5 \text{ m/s}^2
+    \)
+    ?
+   </li>
+   <li>
+    3. (a) Define momentum.
+    <br/>
+    (b) Calculate the momentum of a 50 kg mass moving at a velocity of 10 m/s.
+   </li>
+   <li>
+    4. What is the kinetic energy of a vehicle of mass 1000 kg travelling at 36 km/h?
+   </li>
+  </ol>
+  <p>
+   A four cylinder 2 stroke diesel engine runs at 200 rpm and has a mean effective pressure of 1000 kPa. The stroke of each cylinder is 1200 mm. The total indicated power for the engine is 6000
+  </p>
+ </body>
+</html>

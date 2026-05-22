@@ -1,0 +1,2292 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+ 
+    <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['\\(', '\\)']],
+        displayMath: [['$$', '$$']]
+      }
+    };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+</head>
+ <body>
+    <div id="nav-header" style="padding: 15px 20px; background: #2c3e50; color: white; display: flex; align-items: center; gap: 20px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+        <a href="../index.html" style="color: white; text-decoration: none; background: #34495e; padding: 8px 16px; border-radius: 4px; font-weight: 600; font-size: 0.9rem; transition: background 0.2s;">← Back to Index</a>
+        <h1 style="margin: 0; font-size: 1.2rem; font-weight: 500; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Power Engineering Series</h1>
+    </div>
+    
+  <h1>
+   Thermodynamics of Steam
+  </h1>
+  <h2>
+   2
+  </h2>
+  <h2>
+   Learning Outcome
+  </h2>
+  <p>
+   <i>
+    When you complete this learning material, you will be able to
+   </i>
+  </p>
+  <p>
+   Perform calculations related to properties of steam.
+  </p>
+  <h2>
+   Learning Objectives
+  </h2>
+  <p>
+   <i>
+    You will specifically be able to complete the following tasks:
+   </i>
+  </p>
+  <ol style="list-style-type: none">
+   <li>
+    1. Describe the basic properties of water and steam.
+   </li>
+   <li>
+    2. Perform calculations involving specific enthalpy, dryness fraction, specific heat and specific volume using steam tables.
+   </li>
+   <li>
+    3. Explain the principles and use of calorimeters to measure the dryness fraction of wet steam.
+   </li>
+   <li>
+    4. Calculate the dryness fraction of steam based on calorimeter data.
+   </li>
+   <li>
+    5. Calculate the internal energy of steam under given conditions.
+   </li>
+   <li>
+    6. Explain the concept of entropy and the use of the temperature-entropy diagram. Calculate the change in entropy for a particular change in enthalpy at a constant temperature.
+   </li>
+   <li>
+    7. Determine steam properties using a Mollier Chart.
+   </li>
+   <li>
+    8. Calculate boiler thermal efficiency using test data provided
+   </li>
+  </ol>
+  <p>
+   <!-- The page is blank. -->
+  </p>
+  <h2>
+   Objective 1
+  </h2>
+  <p>
+   <b>
+    <i>
+     Describe the basic properties of water and steam.
+    </i>
+   </b>
+  </p>
+  <h3>
+   INTRODUCTION
+  </h3>
+  <p>
+   Steam is an important working fluid for power generation and other industrial processes. Understanding its behaviour and properties is critical to the successful operation of steam-related equipment and processes.
+  </p>
+  <p>
+   The widespread use of steam is due to the availability of water and the relative safety of steam compared to other fluids. There are some disadvantages to using water and steam but they are minor compared to using thermodynamically superior fluids, such as ammonia, that are much more hazardous.
+  </p>
+  <h3>
+   WATER TO STEAM
+  </h3>
+  <p>
+   The transition from water to steam as heat is added is dependent on pressure and temperature conditions. The three steps to the transition, illustrated in Fig. 1, show the behaviour of water and steam in terms of temperature and pressure as heat is added (on the x-axis). Enthalpy is a thermodynamic quantity equal to the internal energy of a system plus the product of its volume and pressure. Enthalpy is the amount of energy in a system capable of doing mechanical work.
+  </p>
+  <p>
+   Specific enthalpy refers to the amount of heat in a unit mass of one kg. The amount of heat added to water and steam begins at starting point A shown with an enthalpy of zero at 0°C.
+  </p>
+  <img alt="Temperature-Enthalpy Chart for Steam. The y-axis is Temperature, Deg. Celsius (0 to 400) and the x-axis is Heat added per kg = Kilojoules (0 to 3500). The chart shows the heating of water from point A to point D. Point A is at (0, 0). Point B is at (419.04, 100) and labeled '101.3 kPa Pressure'. The segment AB is labeled 'Heat of Liquid h_f = 419.04'. Point C is at (2676.04, 100) and labeled 'Latent Heat = h_fg = 2257'. The segment BC is horizontal. Point D is on the superheated vapor curve. The critical point is at (2099.3, 374.136) labeled 'Critical Temperature = 374.136 Deg. C.' and 'h_f = 2099.3'. A horizontal line at 200°C is labeled '1553.8 kPa Pressure' and 'h_f = 852.45' and 'h_fg = 1940.7'." src="5d92d5c9cc01a262b0389d138caa9aea_img.jpg"/>
+  <div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+   <div class="img-alt">
+    Temperature-Enthalpy Chart for Steam. The y-axis is Temperature, Deg. Celsius (0 to 400) and the x-axis is Heat added per kg = Kilojoules (0 to 3500). The chart shows the heating of water from point A to point D. Point A is at (0, 0). Point B is at (419.04, 100) and labeled '101.3 kPa Pressure'. The segment AB is labeled 'Heat of Liquid h_f = 419.04'. Point C is at (2676.04, 100) and labeled 'Latent Heat = h_fg = 2257'. The segment BC is horizontal. Point D is on the superheated vapor curve. The critical point is at (2099.3, 374.136) labeled 'Critical Temperature = 374.136 Deg. C.' and 'h_f = 2099.3'. A horizontal line at 200°C is labeled '1553.8 kPa Pressure' and 'h_f = 852.45' and 'h_fg = 1940.7'.
+   </div>
+  </div>
+  <p>
+   Figure 1
+   <br/>
+   Temperature-Enthalpy Chart for Steam
+  </p>
+  <p>
+   The first step starts at point A as water is heated. The process follows the line AB and applies to a situation where the pressure is atmospheric (101.325 kPa). At point B, 419.04 kJ has been added to the water, which is still in liquid form, and the temperature is now 100°C. The added heat is called
+   <b>
+    sensible heat
+   </b>
+   because it causes an increase in the temperature of the water which can be “sensed” and measured. This term sensible heat is now replaced with the terms liquid enthalpy or enthalpy of water.
+  </p>
+  <p>
+   In the next stage, shown as BC in Fig. 1, the water is progressively turned into steam. This occurs at the
+   <b>
+    saturation temperature
+   </b>
+   or the boiling point. The heat added is called latent heat because it does not produce a change in temperature. For water at atmospheric pressure, the amount of latent heat required to go from B to C is 2257 kJ/kg. Although the term
+   <b>
+    latent heat
+   </b>
+   is still used, it is more commonly called
+   <b>
+    enthalpy of evaporation
+   </b>
+   .
+  </p>
+  <p>
+   At point C, all of the water has been transformed to steam and, since there is no more liquid, the steam is now
+   <b>
+    dry and saturated
+   </b>
+   and is called
+   <b>
+    dry steam
+   </b>
+   . In between points B and C, the mixture of water and steam is called
+   <b>
+    wet steam
+   </b>
+   . The proportion of water and steam is called the
+   <b>
+    dryness fraction
+   </b>
+   which increases from 0 (or 0% steam) at point B to 1 (or 100% steam) at point C.
+  </p>
+  <p>
+   Once point C is reached, the addition of further heat again causes an increase in temperature. The steam is now
+   <b>
+    superheated and dry
+   </b>
+   .
+  </p>
+  <p>
+   Referring to Fig. 1, at increased pressures, the saturation (or boiling) temperature also increases and more sensible heat is needed to reach the higher saturation temperature. If water is at a pressure of 1553.8 kPa, boiling occurs at 200°C and 852.45 kJ/kg of sensible heat is required. However, less latent heat (1940.7 kJ/kg) is required to reach the dry saturated temperature.
+  </p>
+  <p>
+   As the pressure is increased, a point is reached where no latent heat is required to go from water to steam. This point is called the
+   <b>
+    critical pressure
+   </b>
+   and occurs at a pressure of 22 090 kPa and a temperature of 374.136°C.
+  </p>
+  <h3>
+   STEAM TABLES
+  </h3>
+  <p>
+   The properties of steam are fully described in Steam Tables. Because there is no theoretical equation for calculating the properties of steam directly, they are determined experimentally. As the importance of steam grew both for power generation and steam uses in industrial processing, it became crucial that accurate tables were available for both design and operational purposes. Early tables were adequate for low pressures and temperatures but the tables were extended as pressures and temperatures increased substantially in the early to middle 1900s.
+  </p>
+  <p>
+   Although there are a variety of steam table sets available, in this course tables extracted from Keenan, Keyes, Hill and Moore published by John Wiley and Sons Inc. are used. Tables I and II cover the properties of steam in the saturated region and are basically the same except that Table I begins with pressure as the starting point and Table II begins with temperature. Table III covers the properties for superheated steam and is laid out differently because the temperature increases again with the addition of heat. A specialized chart called a Mollier chart which is based on enthalpy and entropy is also included at the end of the tables.
+  </p>
+  <p>
+   Interpolation is used to estimate intermediate values from the tables. Because the table cannot show all values, the same proportion is applied from one part of the table to another to obtain intermediate values.
+  </p>
+  <p>
+   For example, Table I does not provide any values between 100 kPa and 125 kPa. To find the enthalpy
+   \(
+    h_f
+   \)
+   for a pressure of 115 kPa, the following interpolation is required:
+  </p>
+  <p>
+   $$
+    \begin{aligned} h_f \text{ at } 115 \text{ kPa} &amp;= h_f \text{ at } 100 \text{ kPa} + \frac{15}{25} (h_f \text{ at } 125 \text{ kPa} - h_f \text{ at } 100 \text{ kPa}) \\ &amp;= 417.46 \text{ kJ/kg} + \frac{15}{25} (444.32 - 417.46) \text{ kJ/kg} \\ &amp;= 417.46 \text{ kJ/kg} + \frac{15}{25} (26.86) \text{ kJ/kg} \\ &amp;= 417.46 \text{ kJ/kg} + 16.12 \text{ kJ/kg} \\ &amp;= \mathbf{433.58 \text{ kJ/kg}} \text{ (Ans.)} \end{aligned}
+   $$
+  </p>
+  <h2>
+   Objective 2
+  </h2>
+  <p>
+   <b>
+    Perform calculations involving specific enthalpy, dryness fraction, specific heat and specific volume using steam tables.
+   </b>
+  </p>
+  <h3>
+   SPECIFIC ENTHALPY
+  </h3>
+  <p>
+   Enthalpy is the quantity of heat, in kilojoules (kJ), contained in a substance. The enthalpy at any given time depends on the temperature and pressure of the substance. For water and steam, enthalpy is measured from a standard starting point of 0°C, therefore, water at 0°C has an enthalpy of zero.
+  </p>
+  <p>
+   Steam tables record specific enthalpy for saturated or superheated steam and the units of measure are kJ/kg. In Tables I and II, the first specific enthalpy shown,
+   \(
+    h_f
+   \)
+   or sensible heat, is for saturated liquid (for example, point B in Fig. 1) or the boiling point where there is 100% water and no steam.
+  </p>
+  <p>
+   The second specific enthalpy is the enthalpy of evaporation or the latent heat,
+   \(
+    h_{fg}
+   \)
+   . It is the amount of heat required to go from point B to point C in Fig. 1. At the saturated vapour stage,
+   \(
+    h_g
+   \)
+   , the specific enthalpy is the sum of the sensible and latent heats so that:
+  </p>
+  <p>
+   $$
+    h_g = h_f + h_{fg}
+   $$
+  </p>
+  <p>
+   In Table III, the specific enthalpy for superheated steam is shown for combinations of pressure and temperature. Taking a pressure and temperature from Table I or II and finding the equivalent (or close to it) in Table III, the value
+   \(
+    h_g
+   \)
+   shows that the enthalpy increases.
+  </p>
+  <h4>
+   Example 1
+  </h4>
+  <p>
+   Find the heat required to convert 10 kg of water at 15°C to saturated steam at 1400 kPa. What is the final temperature?
+  </p>
+  <h5>
+   Answer
+  </h5>
+  <p>
+   From the Steam Tables, the specific enthalpies at the two conditions are:
+  </p>
+  <p>
+   $$
+    h_f \text{ at } 1400 \text{ kPa} = 830.30 \text{ kJ/kg}
+   $$
+  </p>
+  <p>
+   $$
+    h_f \text{ at } 15^\circ\text{C} = 62.99 \text{ kJ/kg}
+   $$
+  </p>
+  <p>
+   Therefore, the difference in specific enthalpy is:
+  </p>
+  <p>
+   $$
+    \begin{aligned}h_f \text{ at } 1400 \text{ kPa} - h_f \text{ at } 15^\circ\text{C} &amp;= 830.30 \text{ kJ/kg} - 62.99 \text{ kJ/kg} \\&amp;= 767.31 \text{ kJ/kg}\end{aligned}
+   $$
+  </p>
+  <p>
+   The latent heat (
+   \(
+    h_{fg}
+   \)
+   ) at 1400 kPa is 1959.7 kJ/kg. Applying equation
+   \(
+    h_g = h_f + h_{fg}
+   \)
+   and multiplying by the total mass, the heat required is:
+  </p>
+  <p>
+   $$
+    \begin{aligned}h_g &amp;= h_f + h_{fg} \\h_g &amp;= 767.31 \text{ kJ/kg} + 1959.7 \text{ kJ/kg} \\&amp;= 2727.01 \text{ kJ/kg} \times 10 \text{ kg} \\&amp;= \mathbf{27270 \text{ kJ}} \text{ (Ans.)}\end{aligned}
+   $$
+  </p>
+  <p>
+   The final temperature is the saturation temperature
+   \(
+    195.07^\circ\text{C}
+   \)
+   which is found in Table I.
+  </p>
+  <h4>
+   Example 2
+  </h4>
+  <p>
+   What is the enthalpy of 1 kg of steam at 3000 kPa when it is dry and saturated and when it is superheated by
+   \(
+    55^\circ\text{C}
+   \)
+   ?
+  </p>
+  <h5>
+   Answer
+  </h5>
+  <p>
+   The specific enthalpy (
+   \(
+    h_g
+   \)
+   ) of steam at 3000 kPa when it is dry and saturated is 2804.2 kJ/kg, found in Table I.
+  </p>
+  <p>
+   The saturation temperature, at 3000 kPa, is
+   \(
+    233.9^\circ\text{C}
+   \)
+   . With
+   \(
+    55^\circ\text{C}
+   \)
+   of superheat, the final temperature is
+   \(
+    288.9^\circ\text{C}
+   \)
+   . To obtain the specific enthalpy at this temperature, interpolate between the values given in Table III for
+   \(
+    250^\circ\text{C}
+   \)
+   and
+   \(
+    300^\circ\text{C}
+   \)
+   at 3000 kPa.
+  </p>
+  <p>
+   $$
+    \begin{aligned}h \text{ at } 288.9^\circ\text{C} &amp;= h \text{ at } 250^\circ\text{C} + \frac{38.9}{50} (h \text{ at } 300^\circ\text{C} - h \text{ at } 250^\circ\text{C}) \\h \text{ at } 288.9^\circ\text{C} &amp;= 2855.8 \text{ kJ/kg} + \frac{38.9}{50} (2993.5 - 2855.8) \\&amp;= 2855.8 \text{ kJ/kg} + \frac{38.9}{50} (137.70) \\&amp;= 2855.8 \text{ kJ/kg} + 107.13 \\&amp;= \mathbf{2962.93 \text{ kJ/kg}} \text{ (Ans.)}\end{aligned}
+   $$
+  </p>
+  <h3>
+   DRYNESS FRACTION
+  </h3>
+  <p>
+   When there is a mixture of water and steam, or wet steam, the relative amounts of water and steam are described in terms of a dryness fraction, called the steam quality. The symbol
+   \(
+    x
+   \)
+   is used for steam quality and it is the fraction of the water and steam mixture that is in the vapour (or steam) phase. It is used in wet steam calculations for specific volume, enthalpy and entropy. Therefore, for any point in the wet steam phase, the specific enthalpy is calculated using the equation:
+  </p>
+  <p>
+   $$
+    h = h_f + xh_{fg}
+   $$
+  </p>
+  <h4>
+   Example 3
+  </h4>
+  <p>
+   What is the specific enthalpy of 1 kg of steam at 2500 kPa with a dryness fraction of 0.8?
+  </p>
+  <h5>
+   Answer
+  </h5>
+  <p>
+   Using the values from Table I in the Steam Tables and the equation
+   \(
+    h = h_f + xh_{fg}
+   \)
+   , the specific enthalpy is calculated as:
+  </p>
+  <p>
+   $$
+    \begin{aligned}h &amp;= h_f + xh_{fg} \\h &amp;= 962.11 \text{ kJ/kg} + (0.8 \times 1841.0) \text{ kJ/kg} \\h &amp;= 962.11 \text{ kJ/kg} + 1472.8 \text{ kJ/kg} \\&amp;= 2434.91 \text{ kJ/kg (Ans.)}\end{aligned}
+   $$
+  </p>
+  <h3>
+   SPECIFIC HEAT
+  </h3>
+  <p>
+   The specific heat of water (the amount of heat in J (Joules) needed to raise the temperature of 1 g of water by 1°C) is 4.1894 kJ/kg/°C. This can be verified by looking at the value for 100°C, which is 418.94 kJ/kg at atmospheric pressure, and then it dividing by 100.
+  </p>
+  <p>
+   At 2000 kPa, the sensible heat (
+   \(
+    h_f
+   \)
+   ) is 908.79 kJ/kg. Dividing 908.79 kJ/kg by the saturation temperature (212.42°C), the specific heat is 4.2783 kJ/kg/°C. The difference increases with pressure and temperature.
+  </p>
+  <p>
+   The specific heat of steam varies even more although it is possible to estimate the specific heat in a narrow range of temperature and pressure. For example, to determine the specific heat of superheated steam at 6000 kPa between 400°C and 500°C, the specific heat is calculated to be:
+  </p>
+  <p>
+   $$
+    h \text{ at } 6000 \text{ kPa and } 400^\circ\text{C} = 3177.2 \text{ kJ/kg}
+   $$
+  </p>
+  <p>
+   $$
+    h \text{ at } 6000 \text{ kPa and } 500^\circ\text{C} = 3422.2 \text{ kJ/kg}
+   $$
+  </p>
+  <p>
+   $$
+    \begin{aligned}\text{Specific heat} &amp;= \frac{3422.2 - 3177.2 \text{ kJ/kg}}{100^\circ\text{C}} \\ &amp;= 2.45 \text{ kJ/kg/}^\circ\text{C}\end{aligned}
+   $$
+  </p>
+  <h3>
+   SPECIFIC VOLUME
+  </h3>
+  <p>
+   The specific volume is the volume per unit of mass of any substance. In the steam tables, the specific volume
+   \(
+    v
+   \)
+   is measured in
+   \(
+    \text{cm}^3/\text{g}
+   \)
+   .
+  </p>
+  <p>
+   Referring to the steam tables, for wet steam, the specific volume of the liquid portion is very small compared to the specific volume for the steam component at lower pressures and temperatures. As pressures and temperatures rise to the critical pressure and temperature, their specific volumes eventually become equal. For many calculations, the specific volume of the water can be ignored without significant loss of accuracy.
+  </p>
+  <p>
+   To calculate the specific volume for wet steam, the dryness fraction is used in the same way as it is for enthalpy (taking into account that the tables only show
+   \(
+    v_f
+   \)
+   and
+   \(
+    v_g
+   \)
+   ) using the equation:
+  </p>
+  <p>
+   $$
+    v = v_f + x(v_g - v_f)
+   $$
+  </p>
+  <h4>
+   Example 4
+  </h4>
+  <p>
+   What is the specific volume of 1 kg of steam at 2500 kPa with a dryness fraction of 0.8?
+  </p>
+  <h5>
+   Answer
+  </h5>
+  <p>
+   Using the values from Table I in the Steam Tables and equation
+   \(
+    v = v_f + x(v_g - v_f)
+   \)
+   , the specific volume is calculated as:
+  </p>
+  <p>
+   $$
+    \begin{aligned}v &amp;= v_f + x(v_g - v_f) \\ v &amp;= 1.1973 \text{ cm}^3/\text{g} + 0.8(79.98 - 1.1973) \text{ cm}^3/\text{g} \\ v &amp;= 1.1973 \text{ cm}^3/\text{g} + 0.8(78.78) \text{ cm}^3/\text{g} \\ v &amp;= 1.1973 \text{ cm}^3/\text{g} + 63.02 \text{ cm}^3/\text{g} \\ v &amp;= 64.22 \text{ cm}^3/\text{g} \\ v &amp;= 0.06422 \text{ m}^3/\text{kg} \text{ (Ans.)}\end{aligned}
+   $$
+  </p>
+  <h2>
+   Objective 3
+  </h2>
+  <p>
+   <b>
+    Explain the principles and use of calorimeters to measure the dryness fraction of wet steam.
+   </b>
+  </p>
+  <h3>
+   MEASURING THE DRYNESS FRACTION OF STEAM
+  </h3>
+  <p>
+   In steam plants it is frequently necessary to measure the dryness fraction of steam, if saturated steam is used. Steam that is overly wet (too much moisture content) causes corrosion and erosion in equipment. Wet steam also reduces plant thermal efficiencies and increases the risk of water hammer in piping.
+  </p>
+  <p>
+   A calorimeter measures the dryness fraction of wet steam and determines the amount of heat in the steam. There are three types of calorimeter used:
+  </p>
+  <ul style="list-style-type: none">
+   <li>
+    • Throttling
+   </li>
+   <li>
+    • Separating
+   </li>
+   <li>
+    • Electric
+   </li>
+  </ul>
+  <h4>
+   THROTTLING CALORIMETERS
+  </h4>
+  <p>
+   Throttling calorimeters, used for steam with low moisture content, are based on the principle that when steam pressure is reduced through an orifice or constriction, the enthalpy remains the same because there is no opportunity for the heat to be removed. If the steam contains a moderate amount of moisture, the wet steam is converted, or flashed, to superheated steam at a lower pressure, as shown in Fig. 2. The process is isenthalpic, which means that there is no change in enthalpy. The pressure and temperature at point 2 are used to determine the enthalpy from the Steam Tables. Since the enthalpy at points 1 and 2 are the same, it can be used to calculate the dryness fraction at the higher pressure.
+  </p>
+  <img alt="Figure 2: A Pressure-Temperature (P-T) diagram showing the effect of throttling on wet steam. A saturation curve is shown with pressure (P) on the vertical axis and temperature (T) on the horizontal axis. Point 1 is on the saturation curve, representing the initial state. A dashed line labeled P1 passes through point 1. Point 2 is to the right of the saturation curve, representing the final state after throttling. A dashed line labeled 'P CALORIMETER = P2' passes through point 2. A solid line connects point 1 to point 2, with the text 'process 1 → 2 is isenthalpic (h1 = h2)' written next to it." src="36ac3e730a00d3f42d3400f5709f641a_img.jpg"/>
+  <div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+   <div class="img-alt">
+    Figure 2: A Pressure-Temperature (P-T) diagram showing the effect of throttling on wet steam. A saturation curve is shown with pressure (P) on the vertical axis and temperature (T) on the horizontal axis. Point 1 is on the saturation curve, representing the initial state. A dashed line labeled P1 passes through point 1. Point 2 is to the right of the saturation curve, representing the final state after throttling. A dashed line labeled 'P CALORIMETER = P2' passes through point 2. A solid line connects point 1 to point 2, with the text 'process 1 → 2 is isenthalpic (h1 = h2)' written next to it.
+   </div>
+  </div>
+  <p>
+   Figure 2
+   <br/>
+   <i>
+    Effect of Throttling on Wet Steam
+   </i>
+  </p>
+  <p>
+   Throttling calorimeters are applicable to wet steam conditions that range approximately from 0.965 dryness fraction at 700 kPa to 0.93 at 2700 kPa. For wetter steam, a separating calorimeter must be inserted upstream of the throttling calorimeter.
+  </p>
+  <p>
+   The steam sample is taken from a vertical pipe as close as possible to the engine, turbine, or boiler tested. An example of a good sampling method is shown in Fig. 3.
+  </p>
+  <img alt="Figure 3: A diagram showing a sampling tube for steam. A horizontal tube is inserted into a vertical pipe. The tube has several small holes facing the flow of steam, indicated by arrows. The tube exits the pipe and is connected to a valve assembly with a handle." src="4d2624b1b2871a23382b647cd71e1c1c_img.jpg"/>
+  <div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+   <div class="img-alt">
+    Figure 3: A diagram showing a sampling tube for steam. A horizontal tube is inserted into a vertical pipe. The tube has several small holes facing the flow of steam, indicated by arrows. The tube exits the pipe and is connected to a valve assembly with a handle.
+   </div>
+  </div>
+  <p>
+   Figure 3
+   <br/>
+   <i>
+    Example of Sampling Tube
+   </i>
+  </p>
+  <p>
+   A simple throttling calorimeter that is easy to construct is illustrated in Fig. 4. The steam is throttled through the orifice O into a chamber C. The temperature is measured with a thermometer T and the pressure is measured with a manometer connected to valve V
+   <sub>
+    2
+   </sub>
+   . The steam is allowed to escape to a vent through valve V
+   <sub>
+    1
+   </sub>
+   . To ensure that no heat is lost to the surroundings, all parts of the calorimeter are insulated from the steam main.
+  </p>
+  <p>
+   If the orifice is sized correctly, the steam is at atmospheric pressure after throttling and the operation can be simplified. When taking the measurement, wait until the temperature has reached a maximum value and then decreased slightly.
+  </p>
+  <img alt="Diagram of a simple throttling calorimeter." src="5f8af0cfcf796986f40e70571bb950f5_img.jpg"/>
+  <div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+   <p>
+    The diagram shows a steam pipe on the left with an arrow pointing downwards, labeled 'Steam Pipe'. This pipe connects to a valve assembly. The assembly includes a valve with a handle, an orifice labeled 'O', and a chamber containing a thermometer labeled 'T'. A side connection labeled 'Connection for Manometer' is also present. Below the chamber is another valve with a handle, labeled 'V1'. To the right of the chamber is a valve labeled 'V2'. The steam exits from the bottom of the assembly through an opening with a downward-pointing arrow.
+   </p>
+   <div class="img-alt">
+    Diagram of a simple throttling calorimeter.
+   </div>
+  </div>
+  <p>
+   Figure 4
+   <br/>
+   <i>
+    Example of Simple Throttling Calorimeter
+   </i>
+  </p>
+  <h4>
+   SEPARATING CALORIMETERS
+  </h4>
+  <p>
+   A separating calorimeter, used for steam with high moisture content, is inserted upstream of the throttling calorimeter to reduce the amount of moisture so that the throttling calorimeter can be used effectively. If the moisture content in the steam is too high (for example, a dryness fraction of less than 96.5% at 700 kPa,) then a separating calorimeter is used to separate most of the moisture before the steam is passed to a throttling calorimeter. An example of a simple separating calorimeter is shown in Fig. 5. The steam enters at point A, exits at point D, and condenses in a container. The change in direction required as it passes through the tube with holes produces inertial forces that cause the moisture to collect in the cavity V. The amount of liquid collected is measured in the sight glass G.
+  </p>
+  <img alt="Diagram of a Simple Separating Calorimeter. Steam enters from the top through inlet A into a chamber P. The chamber has a vertical section V. A side arm contains a sight glass G with a drain at the bottom. The exit is at point D on the left side of the top chamber." src="0dd5ee731e9d7e34e498b5c926110773_img.jpg"/>
+  <div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+   <p>
+    The diagram shows a vertical cylindrical vessel labeled 'V' at its base. Above this vessel is a chamber labeled 'P'. An inlet pipe, labeled 'A', enters from the top and curves into the chamber 'P'. An outlet pipe, labeled 'D', exits from the left side of chamber 'P'. A vertical sight glass, labeled 'G', is connected to the side of the main vessel 'V' via two pipes. The lower pipe of the sight glass assembly has a 'Drain' at its bottom end. Inside the chamber 'P', there are small circles representing water droplets, indicating the separation of liquid from the steam.
+   </p>
+   <div class="img-alt">
+    Diagram of a Simple Separating Calorimeter. Steam enters from the top through inlet A into a chamber P. The chamber has a vertical section V. A side arm contains a sight glass G with a drain at the bottom. The exit is at point D on the left side of the top chamber.
+   </div>
+  </div>
+  <p>
+   Figure 5
+   <br/>
+   Example of Simple Separating Calorimeter
+  </p>
+  <p>
+   A separating calorimeter can also be used to calculate the dryness fraction without the use of a throttling calorimeter. In this case, the steam exiting at point D is condensed and the mass of liquid at point D and in sight glass G is recorded for comparison.
+  </p>
+  <p>
+   A disadvantage of a separating calorimeter is that the resulting calculation tends to underestimate the wetness of the steam because some of the moisture carries over with the steam.
+  </p>
+  <h4>
+   ELECTRIC CALORIMETERS
+  </h4>
+  <p>
+   Electric calorimeters are also used to measure the dryness fraction of wet steam. A measured amount of steam is heated with a known amount of electric heat until the steam becomes superheated. The enthalpy is computed from the resultant pressure and temperature from the Steam Tables and the enthalpy of the wet steam is calculated by subtracting the electric heat added. This requires an accurate measurement of the steam flow and the flow may be difficult to measure.
+  </p>
+  <h2>
+   Objective 4
+  </h2>
+  <p>
+   <b>
+    Calculate the dryness fraction of steam based on calorimeter data.
+   </b>
+  </p>
+  <h3>
+   MEASURING DRYNESS USING A THROTTLING CALORIMETER
+  </h3>
+  <p>
+   The dryness of the wet steam is calculated on the basis that the enthalpy of the wet steam is equal to the enthalpy of the throttled steam which is now superheated. Using the equation developed for determining the dryness of wet steam,
+   \(
+    h = h_f + xh_{fg}
+   \)
+   , and substituting the enthalpy of the superheated steam
+   \(
+    h_{sup}
+   \)
+   , the following equation is derived:
+  </p>
+  <p>
+   $$
+    \begin{aligned}h_{sup} &amp;= h_f + xh_{fg} \\h_f + xh_{fg} &amp;= h_{sup} - h_f \\xh_{fg} &amp;= \frac{h_{sup} - h_f}{h_{fg}} \\x &amp;= \frac{h_{sup} - h_f}{h_{fg}}\end{aligned}
+   $$
+  </p>
+  <h4>
+   Example 5
+  </h4>
+  <p>
+   Wet steam at a pressure of 1000 kPa is sampled in a throttling calorimeter. If the temperature is measured at 100°C and the pressure is 100 kPa, what is the quality of the steam?
+  </p>
+  <h5>
+   Answer
+  </h5>
+  <p>
+   From Table III in the Steam Tables, the specific enthalpy of the superheated steam is 2676.2 kJ/kg. From Table I for a pressure of 1000 kPa, the enthalpy for the saturated liquid
+   \(
+    h_f
+   \)
+   is 762.81 kJ/kg and the latent heat
+   \(
+    h_{fg}
+   \)
+   is 2015.3 kJ/kg. The dryness of the wet
+  </p>
+  <p>
+   steam is found using the equation
+   \(
+    x = \frac{h_{sup} - h_f}{h_{fg}}
+   \)
+   :
+  </p>
+  <p>
+   $$
+    x = \frac{h_{sup} - h_f}{h_{fg}}
+   $$
+  </p>
+  <p>
+   $$
+    x = \frac{2676.2 \text{ kJ/kg} - 762.81 \text{ kJ/kg}}{2015.3 \text{ kJ/kg}}
+   $$
+  </p>
+  <p>
+   $$
+    x = \frac{1913.39 \text{ kJ/kg}}{2015.3 \text{ kJ/kg}}
+   $$
+  </p>
+  <p>
+   $$
+    \begin{aligned} x &amp;= 0.949 \\ &amp;= 94.9\% \text{ (Ans.)} \end{aligned}
+   $$
+  </p>
+  <h3>
+   MEASURING DRYNESS USING A SEPARATING CALORIMETER
+  </h3>
+  <p>
+   Using a separating calorimeter, a rough estimate of the dryness is made for steam that is too wet for a throttling calorimeter. If the mass of the water collected in the calorimeter is
+   \(
+    m_1
+   \)
+   and the mass of the condensed steam is
+   \(
+    m_2
+   \)
+   , the dryness is calculated using the equation:
+  </p>
+  <p>
+   $$
+    x = \frac{m_2}{m_2 + m_1}
+   $$
+  </p>
+  <p>
+   This calculation tends to underestimate the wetness of the steam because some of the moisture carries over with the steam.
+  </p>
+  <h3>
+   MEASURING DRYNESS USING A SEPARATING AND THROTTLING CALORIMETER
+  </h3>
+  <p>
+   A more accurate method of measuring dryness is to sample the steam in a throttling calorimeter after it goes through the separating calorimeter to determine the remaining moisture in the steam.
+  </p>
+  <p>
+   Fig. 6 illustrates a combined separating and throttling calorimeter.
+  </p>
+  <img alt="Diagram of a Combined Separating and Throttling Calorimeter. Steam is drawn from a source through a 'SAMPLING TUBE' into a 'SEPARATING CALORIMETER'. The 'Steam pressure' is indicated at the inlet and within the separating calorimeter. Water, labeled 'Mass m1', is collected at the bottom of the separating calorimeter. The remaining steam passes through a 'THROTLING ORIFICE' into a 'THROTLING CALORIMETER'. The mass of steam entering the throttling calorimeter is labeled 'm2'. Inside the throttling calorimeter, 'Temperature' and 'Pressure' are measured. Condensate, labeled 'Mass m2', is collected at the bottom of the throttling calorimeter." src="8fbdfc3d17fb1dae7b2d8f5a287fa9fc_img.jpg"/>
+  <div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+   <div class="img-alt">
+    Diagram of a Combined Separating and Throttling Calorimeter. Steam is drawn from a source through a 'SAMPLING TUBE' into a 'SEPARATING CALORIMETER'. The 'Steam pressure' is indicated at the inlet and within the separating calorimeter. Water, labeled 'Mass m1', is collected at the bottom of the separating calorimeter. The remaining steam passes through a 'THROTLING ORIFICE' into a 'THROTLING CALORIMETER'. The mass of steam entering the throttling calorimeter is labeled 'm2'. Inside the throttling calorimeter, 'Temperature' and 'Pressure' are measured. Condensate, labeled 'Mass m2', is collected at the bottom of the throttling calorimeter.
+   </div>
+  </div>
+  <p>
+   Figure 6
+   <br/>
+   Combined Separating and Throttling Calorimeter
+  </p>
+  <p>
+   If
+   \(
+    x_2
+   \)
+   is the dryness of the steam entering the throttling calorimeter, then the amount of dry steam is
+   \(
+    x_2 m_2
+   \)
+   kg. The total mass of the sample is
+   \(
+    m_1 + m_2
+   \)
+   so the dryness of the sample
+   \(
+    x
+   \)
+   is:
+  </p>
+  <p>
+   $$
+    x = \frac{x_2 m_2}{m_1 + m_2}
+   $$
+  </p>
+  <p>
+   In this equation, the apparent dryness of the separating calorimeter as defined in equation
+   \(
+    x = \frac{m_2}{m_2 + m_1}
+   \)
+   , is
+   \(
+    x_1
+   \)
+   so that the equation is:
+  </p>
+  <p>
+   $$
+    x = x_1 \times x_2
+   $$
+  </p>
+  <h4>
+   Example 6
+  </h4>
+  <p>
+   Wet steam at a pressure of 1400 kPa is sampled by a separating and throttling calorimeter. The amount of water obtained from the separating calorimeter is 0.4 kg. In the throttling calorimeter, the temperature is measured at 140°C and the pressure is 100 kPa. The mass of the condensate collected from the throttling calorimeter is 9 kg. What is the dryness fraction of the steam?
+  </p>
+  <h5>
+   Answer
+  </h5>
+  <p>
+   The dryness of steam from the separating calorimeter is obtained using the equation
+  </p>
+  <p>
+   $$
+    x_1 = \frac{m_2}{m_2 + m_1} :
+   $$
+  </p>
+  <p>
+   $$
+    x_1 = \frac{m_2}{m_2 + m_1}
+   $$
+  </p>
+  <p>
+   $$
+    x_1 = \frac{9 \text{ kg}}{9 \text{ kg} + 0.4 \text{ kg}}
+   $$
+  </p>
+  <p>
+   $$
+    x_1 = 0.9574
+   $$
+  </p>
+  <p>
+   From Table III in the Steam Tables, the specific enthalpy of the superheated steam in the throttling calorimeter is calculated by interpolation:
+  </p>
+  <p>
+   $$
+    h \text{ at } 140^\circ\text{C} = h \text{ at } 100^\circ\text{C} + \frac{40}{50} (h \text{ at } 150^\circ\text{C} - h \text{ at } 100^\circ\text{C})
+   $$
+  </p>
+  <p>
+   $$
+    h \text{ at } 140^\circ\text{C} = 2676.2 \text{ kJ/kg} + \frac{40}{50} (2776.4 - 2676.2) \text{ kJ/kg}
+   $$
+  </p>
+  <p>
+   $$
+    h \text{ at } 140^\circ\text{C} = 2676.2 \text{ kJ/kg} + \frac{40}{50} (100.20) \text{ kJ/kg}
+   $$
+  </p>
+  <p>
+   $$
+    h \text{ at } 140^\circ\text{C} = 2676.2 \text{ kJ/kg} + 80.16 \text{ kJ/kg}
+   $$
+  </p>
+  <p>
+   $$
+    h \text{ at } 140^\circ\text{C} = 2756.36 \text{ kJ/kg}
+   $$
+  </p>
+  <p>
+   From Table I for a pressure of 1400 kPa, the enthalpy for the saturated liquid
+   \(
+    h_f
+   \)
+   is 830.3 kJ/kg and the latent heat
+   \(
+    h_{fg}
+   \)
+   is 1959.7 kJ/kg. The dryness of the wet steam is found using
+  </p>
+  <p>
+   <p>
+    the equation
+    \(
+     x = \frac{h_{sup} - h_f}{h_{fg}}
+    \)
+    :
+   </p>
+  </p>
+  <p>
+   $$
+    x = \frac{h_{sup} - h_f}{h_{fg}}
+   $$
+  </p>
+  <p>
+   $$
+    x = \frac{2756.36 - 830.3}{1959.7}
+   $$
+  </p>
+  <p>
+   $$
+    x = 0.9828 \text{ or } 98.28\%
+   $$
+  </p>
+  <p>
+   The total dryness is the product of the two dryness calculations using the equation
+   \(
+    x = x_1 \times x_2
+   \)
+   :
+  </p>
+  <p>
+   $$
+    x = x_1 \times x_2
+   $$
+  </p>
+  <p>
+   $$
+    x = 0.9574 \times 0.9828
+   $$
+  </p>
+  <p>
+   $$
+    x = 0.941
+   $$
+  </p>
+  <p>
+   $$
+    = 94.1\% \text{ (Ans.)}
+   $$
+  </p>
+  <h2>
+   Objective 5
+  </h2>
+  <p>
+   <b>
+    Calculate the internal energy of steam under given conditions.
+   </b>
+  </p>
+  <h3>
+   INTERNAL ENERGY
+  </h3>
+  <p>
+   Internal energy is another property of steam that is found in the Steam Tables. Internal energy follows the First Law of Thermodynamics which states that work and heat are equivalent and interchangeable. The equation associated with the First Law of Thermodynamics states that heat added to a system causes either a change in the internal energy or work done on the system:
+  </p>
+  <p>
+   $$
+    Q = \Delta U + W
+   $$
+  </p>
+  <p>
+   In this equation,
+   \(
+    U
+   \)
+   represents internal energy.
+   \(
+    Q
+   \)
+   represents enthalpy, with a scale beginning at an enthalpy of zero at
+   \(
+    0^{\circ}\text{C}
+   \)
+   . In other words,
+   \(
+    Q = h
+   \)
+   .
+  </p>
+  <p>
+   The above equation applies to any non-flow process. For flow processes, factors such as velocity and elevation have to be considered and the production of steam in a boiler is a common example. The work done on the fluid causes changes in pressure and temperature. Therefore, the work
+   \(
+    W
+   \)
+   can be expressed as
+   \(
+    p v
+   \)
+   (pressure in kPa
+   \(
+    \times
+   \)
+   specific volume in
+   \(
+    \text{m}^3/\text{kg}
+   \)
+   ).
+  </p>
+  <p>
+   Equation
+   \(
+    Q = \Delta U + W
+   \)
+   can thus be rewritten as:
+  </p>
+  <p>
+   $$
+    h = \Delta u + p v
+   $$
+  </p>
+  <p>
+   Note how this equation applies to a boiler. The feedwater enters the boiler at a pressure of
+   \(
+    P
+   \)
+   kPa and a specific volume
+   \(
+    v_1
+   \)
+   so that the flow energy is
+   \(
+    P v_1
+   \)
+   . Its internal energy at this point is
+   \(
+    u_1
+   \)
+   . Thus the enthalpy is:
+  </p>
+  <p>
+   $$
+    h_1 = u_1 + p_1 v_1
+   $$
+  </p>
+  <p>
+   Heat is added until the boiling point is reached. Most of the heat goes into increasing the internal energy through an increase in temperature. The pressure is constant and there is only a minor increase in the specific volume.
+  </p>
+  <p>
+   The enthalpy at the boiling point is:
+  </p>
+  <p>
+   $$
+    h_f = u_f + p_1 v_f
+   $$
+  </p>
+  <p>
+   This can be verified from the Steam Tables. Taking a pressure of 2000 kPa in Table I at the boiling point:
+  </p>
+  <p>
+   $$
+    \begin{aligned} h_f &amp;= U_f + p_1 v_f \\ 908.79 &amp;= 906.44 + 2000 \times \frac{1.1767}{1000} \\ 908.79 &amp;= 906.44 + 2.35 \\ 908.79 &amp;= 908.79 \end{aligned}
+   $$
+  </p>
+  <p>
+   During the next phase, the water is transformed from a liquid to a vapour. The pressure and temperature remain constant while the specific volume increases to
+   \(
+    v_g
+   \)
+   as the liquid is turned into a vapour. Some of the heat is used to increase the internal energy to free the molecules so that the water can be changed to a vapour and the remaining heat increases the volume. The equation is now written as:
+  </p>
+  <p>
+   $$
+    h_{fg} = (u_g - u_f) + p(v_g - v_f)
+   $$
+  </p>
+  <h4>
+   Example 7
+  </h4>
+  <p>
+   Calculate the change in internal energy experienced in a boiler as 1 kg of feedwater at 40°C and 500 kPa is heated to produce steam with a dryness fraction of 0.97. Verify with the internal energy column in the table.
+  </p>
+  <h5>
+   Answer
+  </h5>
+  <p>
+   The enthalpy of the feedwater, at 40°C, from the Steam Tables is 167.57 kJ/kg and the specific volume is 1.0078 cm
+   <sup>
+    3
+   </sup>
+   /kg. The internal energy at 500 kPa, using the equation
+   \(
+    h_f = u_f + p_1 v_f
+   \)
+   , is:
+  </p>
+  <p>
+   $$
+    \begin{aligned} h_f &amp;= u_f + p_1 v_f \\ u_f &amp;= h_f - p_1 v_f \\ u_f &amp;= 167.57 \text{ kJ/kg} - 500 \times \frac{1.0078 \text{ cm}^3/\text{kg}}{1000 \text{ cm}^3/\text{kg}} \\ u_f &amp;= 167.57 \text{ kJ/kg} - 500 \times 0.0010078 \text{ cm}^3/\text{kg} \\ u_f &amp;= 167.57 \text{ kJ/kg} - 500 \times 0.0010078 \text{ cm}^3/\text{kg} \\ u_f &amp;= 167.57 \text{ kJ/kg} - 0.5039 \text{ cm}^3/\text{kg} \\ u_f &amp;= 167.07 \text{ kJ/kg} \end{aligned}
+   $$
+  </p>
+  <p>
+   The enthalpy of the steam, at 500 kPa, is found using the equation
+   \(
+    h = h_f + xh_{fg}
+   \)
+   :
+  </p>
+  <p>
+   $$
+    \begin{aligned}h &amp;= h_f + xh_{fg} \\h &amp;= 640.23 \text{ kJ/kg} + 0.97 \times 2108.5 \text{ kJ/kg} \\h &amp;= 640.23 \text{ kJ/kg} + 2045.25 \text{ kJ/kg} \\h &amp;= 2685.48 \text{ kJ/kg}\end{aligned}
+   $$
+  </p>
+  <p>
+   The specific volume is calculated using the equation
+   \(
+    v = v_f + x(v_g - v_f)
+   \)
+   :
+  </p>
+  <p>
+   $$
+    \begin{aligned}v &amp;= v_f + x(v_g - v_f) \\v &amp;= 1.0926 \text{ cm}^3/\text{g} + 0.97(374.9 - 1.0926) \text{ cm}^3/\text{g} \\v &amp;= 1.0926 \text{ cm}^3/\text{g} + 0.97(373.8074) \text{ cm}^3/\text{g} \\v &amp;= 1.0926 \text{ cm}^3/\text{g} + 362.5932 \text{ cm}^3/\text{g} \\v &amp;= 363.69 \text{ cm}^3/\text{g} \\v &amp;= 0.36369 \text{ m}^3/\text{kg}\end{aligned}
+   $$
+  </p>
+  <p>
+   The internal energy is:
+  </p>
+  <p>
+   $$
+    \begin{aligned}u_g &amp;= h_2 - p_2 v_2 \\u_g &amp;= h_2 - p_2 v_2 \\u_g &amp;= 2685.48 \text{ kJ/kg} - 500 \text{ kPa} \times 0.36369 \text{ m}^3/\text{kg} \\u_g &amp;= 2685.48 \text{ kJ/kg} - 181.85 \text{ m}^3/\text{kg} \\u_g &amp;= 2503.63 \text{ kJ/kg}\end{aligned}
+   $$
+  </p>
+  <p>
+   Therefore, the change of internal energy is:
+  </p>
+  <p>
+   $$
+    \begin{aligned}\Delta u &amp;= u_g - u_f \\ \Delta u &amp;= 2503.63 \text{ kJ/kg} - 167.07 \text{ kJ/kg} \\ \Delta u &amp;= 2336.56 \text{ kJ/kg}\end{aligned}
+   $$
+  </p>
+  <p>
+   The initial internal energy is read directly from the tables and is equivalent to the calculated internal energy. The final internal energy is obtained from the tables with allowance for the dryness fraction.
+  </p>
+  <p>
+   $$
+    u_g = u_f + xu_{fg}
+   $$
+  </p>
+  <p>
+   $$
+    u_g = 639.68 \text{ kJ/kg} + 0.97 \times 1921.6 \text{ kJ/kg}
+   $$
+  </p>
+  <p>
+   $$
+    u_g = 639.68 \text{ kJ/kg} + 1863.95 \text{ kJ/kg}
+   $$
+  </p>
+  <p>
+   $$
+    u_g = 2503.63 \text{ kJ/kg (Ans.)}
+   $$
+  </p>
+  <h2>
+   Objective 6
+  </h2>
+  <p>
+   <b>
+    Explain the concept of entropy and the use of the temperature-entropy diagram. Calculate the change in entropy for a particular change in enthalpy at a constant temperature.
+   </b>
+  </p>
+  <h3>
+   ENTROPY
+  </h3>
+  <p>
+   A derived property called
+   <b>
+    entropy
+   </b>
+   is useful in calculating the effects of thermodynamic processes. Entropy is derived from the measurable properties of heat and temperature and can be defined as follows.
+  </p>
+  <p>
+   <i>
+    The entropy of a substance is calculated from the sum of all of the small quantities of heat given to the substance, each divided by the absolute temperature at which it was given.
+   </i>
+  </p>
+  <p>
+   Entropy is a property of steam that is derived from the Second Law of Thermodynamics. This law states that work must be done to transfer heat from one system to another and that it is impossible for heat to flow from a colder system to a hotter one without expending energy in the form of work.
+  </p>
+  <p>
+   From the Second Law, the transfer of heat is a process that is dependent on the temperature of the working fluid. Entropy is a function of the heat transferred during parts of a thermodynamic cycle and the absolute temperature, and it serves to define the relationship between heat flow and absolute temperature.
+  </p>
+  <p>
+   The symbol used for entropy is
+   \(
+    S
+   \)
+   . Change of entropy is
+   \(
+    \Delta S
+   \)
+   and the units used are kilojoule per kelvin (kJ/K). Specific entropy, which is entropy per unit mass, is represented by the symbol
+   \(
+    s
+   \)
+   and the units used are kilojoule per kilogram kelvin (kJ/kgK). Thus, for any small addition of heat
+   \(
+    \Delta Q
+   \)
+   kJ, the increase in entropy
+   \(
+    \Delta S
+   \)
+   will be
+  </p>
+  <p>
+   $$
+    \Delta S = \frac{\Delta Q}{T}
+   $$
+  </p>
+  <p>
+   The symbol
+   \(
+    \Delta
+   \)
+   (Delta) indicates a small change.
+  </p>
+  <h3>
+   TEMPERATURE –ENTROPY DIAGRAM
+  </h3>
+  <p>
+   A temperature-entropy diagram is shown in Fig. 7. The temperature is plotted on the y-axis and the entropy is on the x-axis. The line illustrates the conversion of water to steam at constant pressure through the stages of water, wet steam, and superheated steam. Notice that the areas under the curve are equal to the sensible heat
+   \(
+    h_f
+   \)
+   and the latent heat
+   \(
+    h_{fg}
+   \)
+   .
+  </p>
+  <img alt="Figure 7: Temperature-Entropy Diagram. The y-axis is Absolute Temperature (T) and the x-axis is Entropy (s). The diagram shows a process from point A (273K, s_f) to point B (T_sat, s_f) via a 'Water curve', then to point C (T_sat, s_g) via 'Evaporation', and finally to point D (T, s) via 'Superheating'. The area under the curve from A to B is labeled 'AREA = h_f'. The area under the curve from B to C is labeled 'AREA = h_fg'. The entropy axis is marked with s_f, s_fg, and s_g." src="485c57a6add7e0bd7898009db1179ee6_img.jpg"/>
+  <div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+   <p>
+    The diagram illustrates the relationship between Absolute Temperature (T) on the y-axis and Entropy (s) on the x-axis. The process starts at point A (273K, s_f) and proceeds through three stages:
+    <ul style="list-style-type: none">
+     <li>
+      <b>
+       Water curve:
+      </b>
+      From A to B (T_sat, s_f), the area under the curve represents sensible heat
+      \(
+       h_f
+      \)
+      .
+     </li>
+     <li>
+      <b>
+       Evaporation:
+      </b>
+      From B to C (T_sat, s_g), the area under the curve represents latent heat
+      \(
+       h_{fg}
+      \)
+      .
+     </li>
+     <li>
+      <b>
+       Superheating:
+      </b>
+      From C to D (T, s), the area under the curve represents the heat added during superheating.
+     </li>
+    </ul>
+    The entropy axis is marked with
+    \(
+     s_f
+    \)
+    ,
+    \(
+     s_{fg}
+    \)
+    , and
+    \(
+     s_g
+    \)
+    . The temperature axis is marked with 273K,
+    \(
+     T_{sat}
+    \)
+    , and T.
+   </p>
+   <div class="img-alt">
+    Figure 7: Temperature-Entropy Diagram. The y-axis is Absolute Temperature (T) and the x-axis is Entropy (s). The diagram shows a process from point A (273K, s_f) to point B (T_sat, s_f) via a 'Water curve', then to point C (T_sat, s_g) via 'Evaporation', and finally to point D (T, s) via 'Superheating'. The area under the curve from A to B is labeled 'AREA = h_f'. The area under the curve from B to C is labeled 'AREA = h_fg'. The entropy axis is marked with s_f, s_fg, and s_g.
+   </div>
+  </div>
+  <p>
+   Figure 7
+   <br/>
+   Temperature-Entropy Diagram
+  </p>
+  <p>
+   An isothermal process is depicted as a straight horizontal line on this diagram. The most important area of constant temperature is the wet steam phase. The calculation of entropy for various dryness fractions is done using the familiar equation:
+  </p>
+  <p>
+   $$
+    s = s_f + x s_{fg}
+   $$
+  </p>
+  <h4>
+   Example 8
+  </h4>
+  <p>
+   Calculate the specific entropy of wet steam at a pressure of 1400 kPa and a dryness of 0.96.
+  </p>
+  <h5>
+   Answer
+  </h5>
+  <p>
+   From the Steam Tables, the specific entropy of the saturated liquid is 2.2842 kJ/kgK and the latent entropy is 4.1850 kJ/kgK. Using the equation
+   \(
+    s = s_f + xs_{fg}
+   \)
+   , the entropy is:
+  </p>
+  <p>
+   $$
+    \begin{aligned}s &amp;= s_f + xs_{fg} \\s &amp;= 2.2842 \text{ kJ/kgK} + 0.96 \times 4.1850 \text{ kJ/kgK} \\s &amp;= 2.2842 \text{ kJ/kgK} + 4.0176 \text{ kJ/kgK} \\s &amp;= 6.3018 \text{ kJ/kgK (Ans.)}\end{aligned}
+   $$
+  </p>
+  <h3>
+   CHANGE IN ENTROPY
+  </h3>
+  <h4>
+   Example 9
+  </h4>
+  <p>
+   One kilogram of dry saturated steam at a pressure of 3000 kPa is throttled to a pressure of 1000 kPa and then expanded at constant entropy. Calculate the increase in entropy.
+  </p>
+  <h5>
+   Answer
+  </h5>
+  <p>
+   <table border="0">
+    <tr>
+     <td>
+      3000 kPa
+     </td>
+     <td>
+      \(
+       h_g = 2804.2 \text{ kJ/kgK}
+      \)
+     </td>
+     <td>
+      \(
+       s_g = 6.1869 \text{ kJ/kgK}
+      \)
+     </td>
+    </tr>
+    <tr>
+     <td>
+      1000 kPa
+     </td>
+     <td>
+      \(
+       h_g = 2778.1 \text{ kJ/kgK}
+      \)
+     </td>
+     <td>
+     </td>
+    </tr>
+   </table>
+  </p>
+  <p>
+   Throttling process:
+  </p>
+  <p>
+   $$
+    \begin{aligned}\text{Enthalpy after} &amp;= \text{Enthalpy before} \\ \text{Enthalpy at 1000 kPa} &amp;= 2804.2 \text{ kJ/kgK}\end{aligned}
+   $$
+  </p>
+  <p>
+   Since the steam is superheated:
+  </p>
+  <p>
+   $$
+    \begin{aligned}\text{Enthalpy of superheat} &amp;= 2804.2 \text{ kJ/kgK} - 2778.1 \text{ kJ/kgK} \\ &amp;= 26.10 \text{ kJ/kgK}\end{aligned}
+   $$
+  </p>
+  <p>
+   $$
+    \text{At } 1000 \text{ kPa, } h = 2827.9 \text{ kJ/kgK for } 200^\circ\text{C}
+   $$
+  </p>
+  <p>
+   $$
+    h = 2778.1 \text{ kJ/kgK for } 179.91^\circ\text{C} \text{ (Saturation temperature)}
+   $$
+  </p>
+  <p>
+   $$
+    \text{Increase } h = (2827.9 \text{ kJ/kgK} - 2778.1 \text{ kJ/kgK}) \text{ for } 20.09^\circ\text{C}
+   $$
+  </p>
+  <p>
+   $$
+    \text{Increase } h = 49.8 \text{ kJ/kgK for } 20.09^\circ\text{C}
+   $$
+  </p>
+  <p>
+   $$
+    \text{Difference in temperature for } h = 2804.2 \text{ kJ/kgK} - 2778.1 \text{ kJ/kgK}
+   $$
+  </p>
+  <p>
+   $$
+    h = 26.10 \text{ kJ/kgK}
+   $$
+  </p>
+  <p>
+   $$
+    h = \frac{26.10 \text{ kJ/kgK}}{49.8 \text{ kJ/kgK}} \times 20.09^\circ\text{C}
+   $$
+  </p>
+  <p>
+   $$
+    h = 0.5241 \text{ kJ/kgK} \times 20.09^\circ\text{C}
+   $$
+  </p>
+  <p>
+   $$
+    h = 10.53^\circ\text{C}
+   $$
+  </p>
+  <p>
+   $$
+    \text{Degree of superheat at } 1000 \text{ kPa} = 10.53^\circ\text{C}
+   $$
+  </p>
+  <p>
+   Entropy at 1000 kPa, 10.5291°C superheat:
+  </p>
+  <p>
+   $$
+    T_{sat} = 179.91^\circ\text{C} \quad T_{Sup} = 179.91^\circ\text{C} + 10.53^\circ\text{C}
+   $$
+  </p>
+  <p>
+   $$
+    T_{Sup} = 190.44^\circ\text{C}
+   $$
+  </p>
+  <p>
+   Saturation:
+  </p>
+  <p>
+   $$
+    1000 \text{ kPa} \quad T = 179.91^\circ\text{C} \quad s = 6.5865
+   $$
+  </p>
+  <p>
+   $$
+    T = 200^\circ\text{C} \quad s = 6.6940
+   $$
+  </p>
+  <p>
+   $$
+    \text{Change in entropy } s = \frac{6.6940 \text{ kJ/kgK} - 6.5865 \text{ kJ/kgK}}{200^\circ\text{C} - 179.91^\circ\text{C}} \times (190.44^\circ\text{C} - 179.91^\circ\text{C}) + 6.5865 \text{ kJ/kgK}
+   $$
+  </p>
+  <p>
+   $$
+    s = \frac{0.1075 \text{ kJ/kgK}}{20.09^\circ\text{C}} \times 10.53^\circ\text{C} + 6.5865 \text{ kJ/kgK}
+   $$
+  </p>
+  <p>
+   $$
+    s = 0.0054 \times 10.53^\circ\text{C} + 6.5865 \text{ kJ/kgK}
+   $$
+  </p>
+  <p>
+   $$
+    s = 0.0569 + 6.5865 \text{ kJ/kgK}
+   $$
+  </p>
+  <p>
+   $$
+    s = 6.6428 \text{ kJ/kgK}
+   $$
+  </p>
+  <p>
+   $$
+    \text{Increase in entropy} = \text{Change in entropy} - \text{Entropy of } 3000 \text{ kPa steam}
+   $$
+  </p>
+  <p>
+   $$
+    \text{Increase in entropy} = 6.6428 \text{ kJ/kgK} - 6.1869 \text{ kJ/kgK}
+   $$
+  </p>
+  <p>
+   $$
+    \text{Increase in entropy} = \mathbf{0.4559 \text{ kJ/kgK}} \text{ (Ans.)}
+   $$
+  </p>
+  <h2>
+   Objective 7
+  </h2>
+  <p>
+   <b>
+    Determine steam properties using a Mollier Chart.
+   </b>
+  </p>
+  <h3>
+   MOLLIER CHART
+  </h3>
+  <p>
+   A Mollier chart, useful for analyzing steam cycles, is provided at the end of this chapter and can be downloaded from the Second Class Companion Website. Specific enthalpy is on the y-axis and specific entropy is on the x-axis. The saturation line which separates wet steam from superheated steam is shown on the chart along with lines for constant pressure, constant temperature and constant dryness.
+  </p>
+  <p>
+   It is possible to use the entropy values in the Steam Tables to analyze steam conditions, but the Mollier Chart is valuable for analyzing cycles. Throttling, which is a constant enthalpy process, is represented by a straight horizontal line from the initial pressure and condition to the final pressure.
+  </p>
+  <p>
+   During an adiabatic process, no heat transfer takes place to and from the surroundings. If the process is reversible, it is then also isentropic (no change in entropy) and the process is represented on the Mollier Chart by a straight vertical line.
+  </p>
+  <h4>
+   Example 9
+  </h4>
+  <p>
+   Steam, with a dryness of 0.96, is throttled from a pressure of 500 kPa. Using the Mollier Chart, what is the final pressure required for the steam to be dry and saturated? What are the enthalpies and entropies for these two points?
+  </p>
+  <h5>
+   Answer
+  </h5>
+  <p>
+   The starting point is found at the intersection of the pressure of 500 kPa and dryness of 0.96. From the Mollier Chart, the enthalpy is estimated as 2660 kJ/kg and the entropy as 6.61 kJ/kgK. Follow a horizontal line to the saturation line. The pressure is approximately 70 kPa with the same enthalpy and an entropy of 7.48 kJ/kgK. These values can be verified using Table I and finding that the enthalpy of 2660 matches that given for a pressure close to 75 kPa.
+  </p>
+  <h4>
+   Example 10
+  </h4>
+  <p>
+   Superheated steam at a pressure of 10 000 kPa and a temperature of 700°C is expanded isentropically to a pressure of 100 kPa. Using the Mollier Chart, what is the change in enthalpy and the dryness fraction after expansion?
+  </p>
+  <h5>
+   Answer
+  </h5>
+  <p>
+   The starting point is found at the intersection of a pressure of 10 000 kPa and a temperature of 700°C. From the Mollier Chart, the enthalpy is estimated as 3870 kJ/kg. Follow a vertical line to a pressure of 100 kPa. The enthalpy is approximately 2610 with a dryness of 0.97. The change in enthalpy is thus 1260 kJ/kg. These values can be verified from the tables.
+  </p>
+  <h2>
+   Objective 8
+  </h2>
+  <p>
+   <b>
+    Calculate boiler thermal efficiency using test data provided.
+   </b>
+  </p>
+  <h3>
+   BOILER EFFICIENCY
+  </h3>
+  <p>
+   When using a boiler, it is important to know the thermal efficiency at which it is operating. A high efficiency boiler is economical and contributes to a high overall efficiency for the whole plant. Many factors contribute to the thermal efficiency, including the type of fuel used, the variation in the load factor of the boiler, the boiler design and maintenance practices. Therefore, it is valuable to be able to calculate the efficiency of a boiler to ensure economical operation.
+  </p>
+  <p>
+   The efficiency of a boiler is determined by taking the ratio of the heat transferred to produce steam and the energy released by the fuel supplied to the boiler or:
+  </p>
+  <p>
+   $$
+    \text{Boiler efficiency} = \frac{\text{Heat transferred to water and steam}}{\text{Heat supplied by fuel}}
+   $$
+  </p>
+  <p>
+   The heat energy transferred to the steam is found by taking the difference in the specific enthalpies of the feedwater (
+   \(
+    h_w
+   \)
+   ) and the steam produced (
+   \(
+    h_1
+   \)
+   ) and then multiplying this difference by the amount of steam produced (
+   \(
+    m_s
+   \)
+   ) per unit time. The heat supplied by the fuel is the amount of fuel used (
+   \(
+    m_f
+   \)
+   ) per unit time multiplied by the heating value of the fuel (
+   \(
+    HV_f
+   \)
+   ). The efficiency is calculated using the equation:
+  </p>
+  <p>
+   $$
+    E_b = \frac{m_s(h_1 - h_w)}{m_f HV_f}
+   $$
+  </p>
+  <p>
+   If the mass of the steam and fuel are added, a variable that represents the mass of steam produced/mass of fuel burned is obtained and the equation becomes:
+  </p>
+  <p>
+   $$
+    E_b = \frac{m_{sf}(h_1 - h_w)}{HV_f}
+   $$
+  </p>
+  <h4>
+   Example 11
+  </h4>
+  <p>
+   A small boiler generates 10.2 kg of steam per kg of fuel oil burned. The fuel oil has a heating value of 30 200 kJ/kg. The feedwater is at 50°C and 1400 kPa. If steam is generated with a dryness of 0.941, what is the boiler efficiency?
+  </p>
+  <h5>
+   Answer
+  </h5>
+  <p>
+   The enthalpy of the feedwater, at 50°C, is found in the Steam Tables, Table II (part of the Academic Supplement) as 209.33 kJ/kg. The enthalpy of the steam, using the equation
+   \(
+    h = h_f + xh_{fg}
+   \)
+   , is:
+  </p>
+  <p>
+   $$
+    h = h_f + xh_{fg}
+   $$
+  </p>
+  <p>
+   $$
+    h = 830.30 \text{ kJ/kg} + 0.941 \times 1959.7 \text{ kJ/kg}
+   $$
+  </p>
+  <p>
+   $$
+    h = 830.30 \text{ kJ/kg} + 1844.08 \text{ kJ/kg}
+   $$
+  </p>
+  <p>
+   $$
+    h = 2674.38 \text{ kJ/kg}
+   $$
+  </p>
+  <p>
+   The boiler efficiency is calculated using the equation
+   \(
+    E_b = \frac{m_{sf}(h_1 - h_w)}{HV_f}
+   \)
+   :
+  </p>
+  <p>
+   $$
+    E_b = \frac{m_{sf}(h_1 - h_w)}{HV_f}
+   $$
+  </p>
+  <p>
+   $$
+    E_b = \frac{10.2(2674.38 - 209.33)}{30\,200}
+   $$
+  </p>
+  <p>
+   $$
+    E_b = \frac{10.2(2465.05)}{30\,200}
+   $$
+  </p>
+  <p>
+   $$
+    E_b = \frac{25143.51}{30\,200}
+   $$
+  </p>
+  <p>
+   $$
+    E_b = 0.8326
+   $$
+  </p>
+  <p>
+   $$
+    E_b = 83.26\% \text{ (Ans.)}
+   $$
+  </p>
+  <h2>
+   Chapter Questions
+  </h2>
+  <h1>
+   A2.2
+  </h1>
+  <ol style="list-style-type: none">
+   <li>
+    1. Define the following:
+    <ol style="list-style-type: none">
+     <li>
+      a) Sensible heat
+     </li>
+     <li>
+      b) Latent heat
+     </li>
+     <li>
+      c) Superheat
+     </li>
+    </ol>
+   </li>
+   <li>
+    2. What is the enthalpy of 1 kg of steam at 2000 kPa:
+    <ol style="list-style-type: none">
+     <li>
+      a) when dry and saturated
+     </li>
+     <li>
+      b) when 0.96 dry
+     </li>
+     <li>
+      c) when superheated by 85°C
+     </li>
+    </ol>
+   </li>
+   <li>
+    3. Describe the principle of a throttling calorimeter and explain why a separating calorimeter sometimes has to be added.
+   </li>
+   <li>
+    4. A combination separating and throttling calorimeter is connected to a main steam header. The following data was collected:
+    <ul style="list-style-type: none">
+     <li>
+      • Steam pressure – 2410 kPa
+     </li>
+     <li>
+      • Amount of water collected in the separating calorimeter – 0.87 kg
+     </li>
+     <li>
+      • Amount of condensate after the throttling separator – 12.5 kg
+     </li>
+     <li>
+      • Pressure of the steam in throttling calorimeter – 185 kPa
+     </li>
+     <li>
+      • Temperature of steam in throttling calorimeter - 135°C
+     </li>
+    </ul>
+   </li>
+  </ol>
+  <p>
+   Taking the specific heat of the throttled superheated steam as 2.25 kJ/kgK, calculate the main steam line dryness fraction.
+  </p>
+  <ol style="list-style-type: none">
+   <li>
+    5. One kilogram of steam at a pressure of 100 kPa and 50 percent dry, receives heat under constant volume raising the pressure to 300 kPa absolute. Calculate the following:
+    <ol style="list-style-type: none">
+     <li>
+      a) volume of the steam
+     </li>
+     <li>
+      b) quality of the steam at the end of the process
+     </li>
+     <li>
+      c) work done
+     </li>
+     <li>
+      d) change in internal energy
+     </li>
+    </ol>
+   </li>
+   <li>
+    6. 0.6 m
+    <sup>
+     3
+    </sup>
+    of nitrogen is contained in a cylinder at 105 kPa and 22°C. The gas is then compressed isothermally until the pressure is 3600 kPa. Calculate the change in entropy. (
+    \(
+     R
+    \)
+    for nitrogen = 297 Nm/kgK)
+   </li>
+  </ol>
+  <ol style="list-style-type: none">
+   <li data-bbox="227 186 1406 304">
+    7. Steam with a dryness of 0.97 is throttled from a pressure of 800 kPa. Using the Mollier Chart, what is the final pressure required for the steam to be dry and saturated? What are the enthalpies and entropies for these two points?
+   </li>
+   <li data-bbox="227 336 1406 493">
+    8. A boiler is fed with water at a temperature of 40°C and produces 2360 kg of dry steam per hour at a pressure of 1750 kPa and a temperature of 250°C. Heat losses are 40% of the heat supplied and the heating value of the fuel is 31 400 kJ/kg. What is the fuel flow required?
+   </li>
+  </ol>
+  <h3>
+   A MOLLIER CHART FOR STEAM
+  </h3>
+  <p>
+   Modified and greatly reduced from Keenan and Keyes's Thermodynamic Properties of Steam, published (1936) by John Wiley and Sons, Inc. Reproduced by permission of the publishers.
+  </p>
+  <table border="1">
+   <thead>
+    <tr data-bbox="152 279 544 346">
+     <th>
+      Abs. press., in. Hg.
+     </th>
+     <th>
+      Sat. temp., °F
+     </th>
+     <th>
+      Abs. press., lb. per sq. in.
+     </th>
+     <th>
+      Sat. temp., °F
+     </th>
+     <th>
+      Abs. press., lb. per sq. in.
+     </th>
+     <th>
+      Sat. temp., °F
+     </th>
+    </tr>
+   </thead>
+   <tbody>
+    <tr data-bbox="152 346 544 367">
+     <td>
+      0.20
+     </td>
+     <td>
+      34.56
+     </td>
+     <td>
+      1.0
+     </td>
+     <td>
+      101.74
+     </td>
+     <td>
+      120
+     </td>
+     <td>
+      341.25
+     </td>
+    </tr>
+    <tr data-bbox="152 367 544 388">
+     <td>
+      0.25
+     </td>
+     <td>
+      40.23
+     </td>
+     <td>
+      2
+     </td>
+     <td>
+      126.08
+     </td>
+     <td>
+      140
+     </td>
+     <td>
+      353.02
+     </td>
+    </tr>
+    <tr data-bbox="152 388 544 409">
+     <td>
+      0.30
+     </td>
+     <td>
+      44.96
+     </td>
+     <td>
+      3
+     </td>
+     <td>
+      141.18
+     </td>
+     <td>
+      160
+     </td>
+     <td>
+      363.53
+     </td>
+    </tr>
+    <tr data-bbox="152 409 544 430">
+     <td>
+      0.33
+     </td>
+     <td>
+      49.06
+     </td>
+     <td>
+      4
+     </td>
+     <td>
+      152.97
+     </td>
+     <td>
+      180
+     </td>
+     <td>
+      373.06
+     </td>
+    </tr>
+    <tr data-bbox="152 430 544 451">
+     <td>
+      0.40
+     </td>
+     <td>
+      52.64
+     </td>
+     <td>
+      5
+     </td>
+     <td>
+      162.24
+     </td>
+     <td>
+      200
+     </td>
+     <td>
+      381.79
+     </td>
+    </tr>
+    <tr data-bbox="152 451 544 472">
+     <td>
+      0.45
+     </td>
+     <td>
+      55.87
+     </td>
+     <td>
+      6
+     </td>
+     <td>
+      170.06
+     </td>
+     <td>
+      220
+     </td>
+     <td>
+      389.86
+     </td>
+    </tr>
+    <tr data-bbox="152 472 544 493">
+     <td>
+      0.50
+     </td>
+     <td>
+      58.80
+     </td>
+     <td>
+      7
+     </td>
+     <td>
+      176.83
+     </td>
+     <td>
+      240
+     </td>
+     <td>
+      397.37
+     </td>
+    </tr>
+    <tr data-bbox="152 493 544 514">
+     <td>
+      0.55
+     </td>
+     <td>
+      61.48
+     </td>
+     <td>
+      8
+     </td>
+     <td>
+      182.86
+     </td>
+     <td>
+      260
+     </td>
+     <td>
+      404.42
+     </td>
+    </tr>
+    <tr data-bbox="152 514 544 535">
+     <td>
+      0.60
+     </td>
+     <td>
+      63.95
+     </td>
+     <td>
+      9
+     </td>
+     <td>
+      188.28
+     </td>
+     <td>
+      280
+     </td>
+     <td>
+      411.05
+     </td>
+    </tr>
+    <tr data-bbox="152 535 544 556">
+     <td>
+      0.65
+     </td>
+     <td>
+      66.26
+     </td>
+     <td>
+      10
+     </td>
+     <td>
+      193.21
+     </td>
+     <td>
+      300
+     </td>
+     <td>
+      417.33
+     </td>
+    </tr>
+    <tr data-bbox="152 556 544 577">
+     <td>
+      0.70
+     </td>
+     <td>
+      68.40
+     </td>
+     <td>
+      12
+     </td>
+     <td>
+      201.96
+     </td>
+     <td>
+      400
+     </td>
+     <td>
+      444.59
+     </td>
+    </tr>
+    <tr data-bbox="152 577 544 598">
+     <td>
+      0.75
+     </td>
+     <td>
+      70.43
+     </td>
+     <td>
+      14
+     </td>
+     <td>
+      209.56
+     </td>
+     <td>
+      500
+     </td>
+     <td>
+      467.01
+     </td>
+    </tr>
+    <tr data-bbox="152 598 544 619">
+     <td>
+      0.80
+     </td>
+     <td>
+      72.32
+     </td>
+     <td>
+      14.696
+     </td>
+     <td>
+      212.00
+     </td>
+     <td>
+      600
+     </td>
+     <td>
+      486.21
+     </td>
+    </tr>
+    <tr data-bbox="152 619 544 640">
+     <td>
+      0.85
+     </td>
+     <td>
+      74.18
+     </td>
+     <td>
+      16
+     </td>
+     <td>
+      216.32
+     </td>
+     <td>
+      700
+     </td>
+     <td>
+      503.10
+     </td>
+    </tr>
+    <tr data-bbox="152 640 544 661">
+     <td>
+      0.90
+     </td>
+     <td>
+      75.84
+     </td>
+     <td>
+      18
+     </td>
+     <td>
+      222.41
+     </td>
+     <td>
+      800
+     </td>
+     <td>
+      518.23
+     </td>
+    </tr>
+    <tr data-bbox="152 661 544 682">
+     <td>
+      0.95
+     </td>
+     <td>
+      77.47
+     </td>
+     <td>
+      20
+     </td>
+     <td>
+      227.96
+     </td>
+     <td>
+      1000
+     </td>
+     <td>
+      544.61
+     </td>
+    </tr>
+    <tr data-bbox="152 682 544 703">
+     <td>
+      1.00
+     </td>
+     <td>
+      79.03
+     </td>
+     <td>
+      25
+     </td>
+     <td>
+      240.07
+     </td>
+     <td>
+      1200
+     </td>
+     <td>
+      567.22
+     </td>
+    </tr>
+    <tr data-bbox="152 703 544 724">
+     <td>
+      1.10
+     </td>
+     <td>
+      81.95
+     </td>
+     <td>
+      30
+     </td>
+     <td>
+      250.33
+     </td>
+     <td>
+      1400
+     </td>
+     <td>
+      587.10
+     </td>
+    </tr>
+    <tr data-bbox="152 724 544 745">
+     <td>
+      1.20
+     </td>
+     <td>
+      84.65
+     </td>
+     <td>
+      35
+     </td>
+     <td>
+      259.28
+     </td>
+     <td>
+      1600
+     </td>
+     <td>
+      604.90
+     </td>
+    </tr>
+    <tr data-bbox="152 745 544 766">
+     <td>
+      1.30
+     </td>
+     <td>
+      87.17
+     </td>
+     <td>
+      40
+     </td>
+     <td>
+      267.25
+     </td>
+     <td>
+      1800
+     </td>
+     <td>
+      621.03
+     </td>
+    </tr>
+    <tr data-bbox="152 766 544 787">
+     <td>
+      1.40
+     </td>
+     <td>
+      89.51
+     </td>
+     <td>
+      45
+     </td>
+     <td>
+      274.44
+     </td>
+     <td>
+      2000
+     </td>
+     <td>
+      635.82
+     </td>
+    </tr>
+    <tr data-bbox="152 787 544 808">
+     <td>
+      1.50
+     </td>
+     <td>
+      91.72
+     </td>
+     <td>
+      50
+     </td>
+     <td>
+      281.01
+     </td>
+     <td>
+      2200
+     </td>
+     <td>
+      649.46
+     </td>
+    </tr>
+    <tr data-bbox="152 808 544 829">
+     <td>
+      1.60
+     </td>
+     <td>
+      93.80
+     </td>
+     <td>
+      60
+     </td>
+     <td>
+      292.71
+     </td>
+     <td>
+      2400
+     </td>
+     <td>
+      662.12
+     </td>
+    </tr>
+    <tr data-bbox="152 829 544 850">
+     <td>
+      1.70
+     </td>
+     <td>
+      95.77
+     </td>
+     <td>
+      70
+     </td>
+     <td>
+      302.92
+     </td>
+     <td>
+      2600
+     </td>
+     <td>
+      673.94
+     </td>
+    </tr>
+    <tr data-bbox="152 850 544 871">
+     <td>
+      1.80
+     </td>
+     <td>
+      97.65
+     </td>
+     <td>
+      80
+     </td>
+     <td>
+      312.03
+     </td>
+     <td>
+      2800
+     </td>
+     <td>
+      684.99
+     </td>
+    </tr>
+    <tr data-bbox="152 871 544 892">
+     <td>
+      1.90
+     </td>
+     <td>
+      99.43
+     </td>
+     <td>
+      90
+     </td>
+     <td>
+      320.27
+     </td>
+     <td>
+      3000
+     </td>
+     <td>
+      695.36
+     </td>
+    </tr>
+    <tr data-bbox="152 892 544 913">
+     <td>
+      2.00
+     </td>
+     <td>
+      101.14
+     </td>
+     <td>
+      100
+     </td>
+     <td>
+      327.81
+     </td>
+     <td>
+      3206.2
+     </td>
+     <td>
+      705.40
+     </td>
+    </tr>
+   </tbody>
+  </table>
+  <p>
+   TABLE A.4
+   <br/>
+   Enthalpy-Entropy Diagram for Steam
+  </p>
+  <img alt="A Mollier chart for steam showing Enthalpy (Btu per Lb.) on the y-axis versus Entropy on the x-axis. The chart includes a saturation dome, constant temperature lines, constant pressure lines, constant moisture lines, and constant superheat lines. The critical state is marked at the top of the saturation dome." src="5dc5581cd2aad0e683c73b959f637b31_img.jpg"/>
+  <div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+   <p>
+    The figure is a Mollier chart for steam, plotting Enthalpy (Btu per Lb.) on the vertical axis against Entropy on the horizontal axis. The vertical axis ranges from 800 to 1600 Btu per Lb., and the horizontal axis ranges from 1.0 to 2.2. The chart features a saturation dome with a 'Saturation Line' and a 'Critical State' at its peak. Numerous 'Constant Temperature, deg. F.' lines are shown, ranging from 100° to 1200°. 'Constant Pressure, Lb. per Sq. in. Abs.' lines are also present, ranging from 1 to 100. 'Constant Moisture, Percent' lines are indicated by values such as 100, 90, 80, 70, 60, 50, 40, 30, 20, and 10. 'Constant Superheat, deg. F.' lines are shown for values like 100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200, 1300, 1400, 1500, and 1600. A 'Standard Atmosphere' line is also marked.
+   </p>
+   <div class="img-alt">
+    A Mollier chart for steam showing Enthalpy (Btu per Lb.) on the y-axis versus Entropy on the x-axis. The chart includes a saturation dome, constant temperature lines, constant pressure lines, constant moisture lines, and constant superheat lines. The critical state is marked at the top of the saturation dome.
+   </div>
+  </div>
+  <p>
+   Copyright, 1940, by
+   <br/>
+   Frank O. Ellenwood, William N. Barnard
+   <br/>
+   and Charles O. Mackey
+  </p>
+ </body>
+</html>

@@ -1,0 +1,3467 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="utf-8"/>
+<script>
+    MathJax = {
+      tex: {
+        inlineMath: [['\\(', '\\)']],
+        displayMath: [['$$', '$$']]
+      }
+    };
+    </script>
+<script async="" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+<div id="nav-header" style="padding: 15px 20px; background: #2c3e50; color: white; display: flex; align-items: center; gap: 20px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+<a href="../index.html" style="color: white; text-decoration: none; background: #34495e; padding: 8px 16px; border-radius: 4px; font-weight: 600; font-size: 0.9rem; transition: background 0.2s;">← Back to Index</a>
+<h1 style="margin: 0; font-size: 1.2rem; font-weight: 500; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Power Engineering Series</h1>
+</div>
+<h1>
+   Gas Turbine Design and Auxiliaries
+  </h1>
+<h2>
+   7
+  </h2>
+<h2>
+   Learning Outcome
+  </h2>
+<p>
+<i>
+    When you complete this learning material, you will be able to:
+   </i>
+</p>
+<p>
+   Explain the design and components of a gas turbine and related auxiliaries.
+  </p>
+<h2>
+   Learning Objectives
+  </h2>
+<p>
+<i>
+    You will specifically be able to complete the following tasks:
+   </i>
+</p>
+<ol style="list-style-type: none">
+<li>
+    1. Explain applications and selection criteria for the different types of gas turbine engines.
+   </li>
+<li>
+    2. Describe the principles and design of open and closed cycle gas turbine systems.
+   </li>
+<li>
+    3. Describe the principles and design of combined cycle and cogeneration systems using gas turbines.
+   </li>
+<li>
+    4. Describe the principles and design of gas turbine regeneration, intercooling, and reheating.
+   </li>
+<li>
+    5. Describe the principles and design of gas turbine shaft arrangements.
+   </li>
+<li>
+    6. Describe the design and components of gas turbine compressors, combustors (combustion chambers) and turbines.
+   </li>
+<li>
+    7. Describe the design and operation of gas turbine air intake and exhaust systems.
+   </li>
+<li>
+    8. Describe the design and operation of a gas turbine lubricating oil system.
+   </li>
+<li>
+    9. Describe the design and operation of a gas turbine fuel system.
+   </li>
+<li>
+    10. Describe the design and operation of a gas turbine steam or water injection system and a dry low NO
+    <sub>
+     x
+    </sub>
+    system.
+   </li>
+</ol>
+<h2>
+   Objective 1
+  </h2>
+<p>
+<b>
+<i>
+     Explain applications and selection criteria for the different types of gas turbine engines.
+    </i>
+</b>
+</p>
+<h3>
+   INTRODUCTION
+  </h3>
+<p>
+   Gas turbine engines are becoming a major source of power for many industrial applications. There are a wide range of designs and configurations available to meet the varied needs of industry. The simple cycle gas turbine provides a very efficient and capable solution which can be further improved when combined with exhaust heat recovery and other methods.
+  </p>
+<h3>
+   APPLICATIONS
+  </h3>
+<p>
+   Industrial gas turbines are used for a very wide range of applications, including:
+  </p>
+<ul style="list-style-type: none">
+<li>
+    • Base load power generation (ranging from small 30kW microturbines to large (250MW – 650MW) turbines used in combined cycle power plants)
+   </li>
+<li>
+    • Backup power generation and peak loading
+   </li>
+<li>
+    • Natural gas compression (from the wellhead to gas transmission and distribution)
+   </li>
+<li>
+    • Combined cycle applications (produce power from the prime load and from steam recovered from the exhaust gas by means of a heat exchanger)
+   </li>
+<li>
+    • Cogeneration (of power and heat for use in steam, heating, and other applications)
+   </li>
+<li>
+    • Various process plant applications (such as a mechanical drive, usually used for compression)
+   </li>
+<li>
+    • Offshore power generation and compression
+   </li>
+<li>
+    • Ship propulsion
+   </li>
+<li>
+    • Vehicle propulsion (particularly heavy-duty trucks)
+   </li>
+<li>
+    • Fast trains
+   </li>
+</ul>
+<h3>
+   TYPES OF GAS TURBINES
+  </h3>
+<p>
+   There are two basic types of gas turbines used in industrial applications:
+  </p>
+<ul style="list-style-type: none">
+<li>
+    • Aero-derivative gas turbines (derived from aircraft engines)
+   </li>
+<li>
+    • Heavy-duty gas turbines (designed for industrial applications)
+   </li>
+</ul>
+<h4>
+   Aero-Derivative Gas Turbines
+  </h4>
+<p>
+   Aero-derivative gas turbines are aircraft engines adapted for industrial use, either by:
+  </p>
+<ul style="list-style-type: none">
+<li>
+    • Adding a power turbine to drive the load
+   </li>
+<li>
+    • Converting a turboprop engine which already has a power turbine
+   </li>
+</ul>
+<p>
+   An example of the first type, a Rolls Royce RB211-24C, is shown in Fig. 1. It was introduced in 1974 and is still in production, although many changes have been made. Like most aero-derivatives, the design is simple, compact, and lightweight.
+  </p>
+<img alt="A detailed cutaway diagram of a Rolls Royce RB211 gas turbine engine, showing its internal mechanical structure. Labels with leader lines point to various components: 'Turbine' at the top left, 'Compressor' at the top right, 'Combustion Section' in the center, 'Exhaust' at the bottom left, 'Bleed Valves' at the bottom center, and 'Air Intake' at the bottom right." src="dc1e692e5b7efd8e5a2a790c458646d9_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    A detailed cutaway diagram of a Rolls Royce RB211 gas turbine engine, showing its internal mechanical structure. Labels with leader lines point to various components: 'Turbine' at the top left, 'Compressor' at the top right, 'Combustion Section' in the center, 'Exhaust' at the bottom left, 'Bleed Valves' at the bottom center, and 'Air Intake' at the bottom right.
+   </div>
+</div>
+<p>
+<i>
+    Figure 1
+   </i>
+<br/>
+<i>
+    Rolls Royce RB211 Gas Turbine (26.1 MW)
+   </i>
+<br/>
+<i>
+    (Courtesy of Tom Van Hardevelde)
+   </i>
+</p>
+<p>
+   In general, aero-derivative gas turbines are:
+  </p>
+<ul style="list-style-type: none">
+<li>
+    • Suitable for locations such as offshore platforms, ships, trains, and vehicles where
+    <b>
+     high power to weight ratio
+    </b>
+    is critical
+   </li>
+<li>
+    • Easily maintained and can be removed and replaced quite quickly which maximizes on-line time and availability
+   </li>
+<li>
+    • Fast startup and loading capability, which is critical for backup power generation and certain process applications
+   </li>
+<li>
+    • Less durable than heavy-duty industrial type gas turbines and, under the same conditions, will usually have a shorter life span
+   </li>
+<li>
+    • High efficiency and power output
+   </li>
+<li>
+    • Able to use a variety of gaseous and liquid fuels and can be designed to operate on mixed fuels if required
+   </li>
+</ul>
+<h4>
+   Heavy Duty Gas Turbines
+  </h4>
+<p>
+   Heavy duty gas turbines have many of the same basic design features as steam turbines, compressors and axial and radial air and gas compressors. Since the overall equipment size and weight is not as much of an issue with industrial type gas turbines, the layout is more flexible and they will be designed using heavier and more rugged materials than aero-derivatives. An example of an industrial type gas turbine is the General Electric 6FA (107 MW) shown in Fig. 2.
+  </p>
+<img alt="A black and white photograph of a GE Frame 6FA Heavy-Duty Gas Turbine. The image shows the internal components of the turbine with labels and arrows pointing to them: 'Air Intake' at the top right, 'Compressor' at the bottom right, 'Combustion Section' in the center, 'Turbine' at the top left, and 'Exhaust' at the bottom left." src="bb08c83fc8939517c6803d65c69dd06b_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    A black and white photograph of a GE Frame 6FA Heavy-Duty Gas Turbine. The image shows the internal components of the turbine with labels and arrows pointing to them: 'Air Intake' at the top right, 'Compressor' at the bottom right, 'Combustion Section' in the center, 'Turbine' at the top left, and 'Exhaust' at the bottom left.
+   </div>
+</div>
+<p style="text-align: center;">
+<i>
+    Figure 2
+    <br/>
+    GE Frame 6FA Heavy-Duty Gas Turbine
+    <br/>
+    (Courtesy of GE Power Systems)
+   </i>
+</p>
+<p>
+   Heavy-duty or industrial type gas turbines have the following general characteristics:
+  </p>
+<ul style="list-style-type: none">
+<li>
+    • Physically larger, more rugged and heavier than aero-derivatives
+   </li>
+<li>
+    • More durable than aero-derivatives which allows long intervals between overhauls and gives a longer life cycle with increased on-line time
+   </li>
+<li>
+    • Very efficient with quick start-up and loading capabilities
+   </li>
+<li>
+    • Able to use a wide variety of gas and liquid fuels
+   </li>
+<li>
+    • Design and layout of compressor, combustors, turbine and load is more flexible than aero-derivatives
+   </li>
+<li>
+    • Potential for inter-cooling, regeneration, reheat and other custom options that increase cycle efficiency and allow for combined cycle and cogeneration operation
+   </li>
+</ul>
+<p>
+   However, heavy-duty designs do vary, and some, such as those manufactured by Solar Turbines (4.57MW), are a hybrid of aero-derivative and heavy-duty gas turbines, as shown in Fig. 3.
+  </p>
+<img alt="A detailed cutaway technical drawing of the Solar Centaur 50 Gas Turbine engine, showing its internal mechanical structure. Labels with leader lines point to various components: Air Inlet Assembly, Accessory Drive Assembly, Compressor Rotor Assembly, Compressor Case Assembly, Compressor Diffuser Assembly, Fuel Injector, Bleed Air Valve, Nozzle Case Assembly, Gas Fuel Manifold, Compressor Variable Vane Assemblies, Combustor Housing Assembly, Gas Generator Turbine Rotor Assembly, Power Turbine Rotor Assembly, Output Drive Shaft Assembly, Turbine Exhaust Diffuser, and Exhaust Collector." src="440e59dae4772c0152116a3abd34331a_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    A detailed cutaway technical drawing of the Solar Centaur 50 Gas Turbine engine, showing its internal mechanical structure. Labels with leader lines point to various components: Air Inlet Assembly, Accessory Drive Assembly, Compressor Rotor Assembly, Compressor Case Assembly, Compressor Diffuser Assembly, Fuel Injector, Bleed Air Valve, Nozzle Case Assembly, Gas Fuel Manifold, Compressor Variable Vane Assemblies, Combustor Housing Assembly, Gas Generator Turbine Rotor Assembly, Power Turbine Rotor Assembly, Output Drive Shaft Assembly, Turbine Exhaust Diffuser, and Exhaust Collector.
+   </div>
+</div>
+<p>
+   Figure 3
+   <br/>
+   Solar Centaur 50 Gas Turbine
+   <br/>
+   (Courtesy of Solar Turbines)
+  </p>
+<h3>
+   SELECTION
+  </h3>
+<p>
+   The successful application of any engine depends on satisfying requirements related to desired performance, cost-effective operation, and expected engine life. This requires a thorough understanding of the designs available and engine rating systems, as well as knowledge of tradeoffs that might need to be made. A trade off may be, for example, a more robust turbine (higher cost) but with a longer engine life.
+  </p>
+<p>
+   The selection of a gas turbine engine for a specific application depends on factors such as:
+  </p>
+<ul style="list-style-type: none">
+<li>
+    • Performance ratings
+   </li>
+<li>
+    • Weight and size restrictions
+   </li>
+<li>
+    • Type of fuel available
+   </li>
+<li>
+    • Maintenance support resources
+   </li>
+<li>
+    • Life cycle costs
+   </li>
+</ul>
+<h4>
+   Performance Ratings
+  </h4>
+<p>
+   The performance rating and required range of power output are important factors to consider when choosing a specific gas turbine. Gas turbines operate most efficiently when running full loaded. Although they can operate down to 50% of full load rating, the lower operating ranges will cause the turbine output efficiency to drop substantially, down into the 30% to 40% range.
+  </p>
+<p>
+   This makes it important to choose a gas turbine that operates at, or near, its maximum power capabilities. Smaller gas turbines are less efficient, although waste heat recovery or combined cycle applications can be very efficient. For short-term peak power applications, a gas turbine can sometimes be run at higher than rated power output, but this practice will reduce the life cycle of the turbine and cause an increase in maintenance and repair costs.
+  </p>
+<h4>
+   Weight and Size Restrictions
+  </h4>
+<p>
+   Weight and size restrictions usually favour gas turbines over other types of engines, such as reciprocating internal combustion engines, especially for higher power applications. Aero-derivative engines normally provide the lowest-weight solution.
+  </p>
+<h4>
+   Type of Fuel Available
+  </h4>
+<p>
+   The type of fuel available needs to be considered. The cleanest and most accessible fuel should be used. Pipeline quality natural gas is desirable because it delivers the most efficient, cost-effective, and environmentally acceptable solution. Lower quality gaseous fuels such as landfill or sewage gas require special handling and delivery systems and, due to their lower kJ values, will result in lower power output and turbine efficiencies. Liquid fuel, such as kerosene, provides reliable operation but may be unsuitable where emissions are an issue, or where fuel sources are not easily accessible. Lower grade liquid fuels may be cost-effective, but require fuel treatment and could result in higher maintenance costs.
+  </p>
+<h4>
+   Maintenance Support Resources
+  </h4>
+<p>
+   Maintenance has to be taken into consideration before a final selection is made. This includes the availability of skilled personnel, spare parts, and other support requirements.
+  </p>
+<h4>
+   Life Cycle Costs
+  </h4>
+<p>
+   Life cycle costs include not only the initial capital investment, but also fuel, operating, and maintenance costs. Simple cycle gas turbines are now efficient enough to compete with other types of engines on a cost basis. The use of gas turbines in combined cycle applications provides an efficient solution over the life cycle of the engine.
+  </p>
+<p>
+   When selecting a gas turbine engine, it is important to consult with manufacturers on recommendations for proper application, engine rating, and equipment configuration.
+  </p>
+<h2>
+   Objective 2
+  </h2>
+<p>
+<b>
+    Describe the principle and design of open and closed cycle gas turbine systems.
+   </b>
+</p>
+<h3>
+   THE GAS TURBINE CYCLE
+  </h3>
+<p>
+   A knowledge of thermodynamic principles helps to understand the operation of gas turbines. Gas turbines can use one of two basic cycles — the open cycle or the closed cycle. This objective presents the simple versions of the open and closed cycle. A detailed description of the simple gas turbine cycle will be given here to allow the reader to grasp the key concepts and operating principles involved. Combined and cogeneration cycles will be covered further in the module.
+  </p>
+<p>
+   The gas turbine thermodynamic cycle, called the Brayton cycle, is shown in Fig. 4. It consists of four steps:
+  </p>
+<ol style="list-style-type: none">
+<li>
+    1. The air is compressed, which increases the pressure and temperature and decreases the volume (from stage 1 to stage 2).
+   </li>
+<li>
+    2. Heat is added, which results in a major increase in temperature and a small increase in volume, but almost no change in pressure (from stage 2 to stage 3).
+   </li>
+<li>
+    3. Then, the air is expanded through the turbine and produces mechanical work. Pressure decreases to near atmospheric level. The temperature also decreases, although the air is still quite hot when it exits (from stage 3 to stage 4).
+   </li>
+<li>
+    4. The air is cooled to ambient conditions and returns to its original volume and density (from stage 4 to stage 1).
+   </li>
+</ol>
+<p>
+<b>
+    Note:
+   </b>
+   a significant part of the work of the turbine (
+   \(
+    W_{33'}
+   \)
+   ) is used to run the compressor. The remaining energy extracted (
+   \(
+    W_{3'4}
+   \)
+   ) is available to drive the load.
+  </p>
+<img alt="P-V diagram of the Brayton Cycle showing compression, combustion, expansion, and exhaust processes." src="adb1f42239329fa8283d1a40005f989f_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<p>
+    The diagram is a Pressure (P) versus Volume (V) plot. The vertical axis is labeled 'P' at the top and 'Pressure' along the side. The horizontal axis is labeled 'Volume of Air' and 'V' at the right. The cycle starts at point 'START 1' at the bottom left. A compression curve goes from point 1 to point 2, with an arrow labeled
+    \(
+     W_{12}
+    \)
+    pointing right. A horizontal line goes from point 2 to point 3, with a downward arrow labeled
+    \(
+     Q_{23}
+    \)
+    and the text 'Heat added through combustion'. An expansion curve goes from point 3 to point 4, with an arrow labeled
+    \(
+     W_{33'}
+    \)
+    pointing right. A horizontal line goes from point 4 back to point 1, with a downward arrow labeled
+    \(
+     Q_{41}
+    \)
+    and the text 'Exhaust heat'. A dashed horizontal line connects point 3' to point 1. Another dashed horizontal line connects point 2 to point 3'. A dashed curve connects point 1 to point 3'. Text labels include: 'Pressure is increased through compressor as Volume is reduced' (pointing to the compression curve), 'Output work to run compressor' (pointing to
+    \(
+     W_{33'}
+    \)
+    ), and 'Useful Work available for shaft power or thrust' (pointing to the area between the expansion curve and the dashed curve).
+   </p>
+<div class="img-alt">
+    P-V diagram of the Brayton Cycle showing compression, combustion, expansion, and exhaust processes.
+   </div>
+</div>
+<p>
+   Figure 4
+   <br/>
+   The Brayton Cycle
+  </p>
+<h4>
+   Open Cycle
+  </h4>
+<p>
+   Gas turbines almost always use the open cycle. Air is drawn from the atmosphere into the turbine, and then exhausted back to the atmosphere at the end of the cycle. Fuel is added to the air in the combustor section and combustion occurs inside the gas turbine.
+  </p>
+<p>
+   An open cycle model of the Brayton cycle is shown in Fig. 5 and consists of four steps:
+  </p>
+<ol style="list-style-type: none">
+<li>
+    1. The air is compressed in a compressor (stage 1 to stage 2)
+   </li>
+<li>
+    2. Fuel is added and combusted in a combustor (from stage 2 to stage 3).
+   </li>
+<li>
+    3. The air expands, first through a turbine that runs the compressor, and then through a separate turbine that drives the load (from stage 3 to stage 4).
+   </li>
+<li>
+    4. The air is exhausted to the atmosphere where it cools to ambient conditions and returns to its original volume and density (stage 4).
+   </li>
+</ol>
+<img alt="Schematic diagram of an open cycle gas turbine. The cycle consists of a Compressor, a Combustor, a Turbine, and a Power Turbine. Air enters the Compressor at state 1 (Inlet), is compressed to state 2, and then enters the Combustor where Fuel is added. The gas at state 3 expands through the Turbine, which is connected to the Compressor. The gas then enters the Power Turbine at state 31, expands to state 4, and is exhausted. The Power Turbine produces Shaft Power." src="cfef993dcc8fb513de79eb1f93cf26ae_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    Schematic diagram of an open cycle gas turbine. The cycle consists of a Compressor, a Combustor, a Turbine, and a Power Turbine. Air enters the Compressor at state 1 (Inlet), is compressed to state 2, and then enters the Combustor where Fuel is added. The gas at state 3 expands through the Turbine, which is connected to the Compressor. The gas then enters the Power Turbine at state 31, expands to state 4, and is exhausted. The Power Turbine produces Shaft Power.
+   </div>
+</div>
+<p>
+   Figure 5
+   <br/>
+   The Open Cycle Gas Turbine
+  </p>
+<h4>
+   Closed Cycle
+  </h4>
+<p>
+   The closed cycle is similar to the open cycle except that the working fluid (air) remains in the cycle instead of being exhausted to the atmosphere. This offers a number of thermodynamic advantages but at the expense of a more complicated configuration. This means that:
+  </p>
+<ul style="list-style-type: none">
+<li>
+    • The fluid has to be heated by a heat exchanger that will have the combustion process separate from the cycle fluid
+   </li>
+<li>
+    • The fluid needs to be cooled after expanding through the turbine
+   </li>
+</ul>
+<p>
+   Closed cycle systems are used less often than open cycle systems. Open cycle gas turbines are more efficient and combined cycle applications offer a better solution than closed cycle systems.
+  </p>
+<p>
+   The simple closed cycle (Fig. 6) consists of the following steps:
+  </p>
+<ol style="list-style-type: none">
+<li>
+    1. The fluid is compressed in a compressor.
+   </li>
+<li>
+    2. The fluid is heated in a heat exchanger. Since it passes through tubes which are surrounded by combustion gases, the fluid and the burning fuel do not come in direct contact with each other.
+   </li>
+<li>
+    3. The fluid expands, first through a turbine that runs the compressor, and then through a separate turbine that drives the load.
+   </li>
+<li>
+    4. The fluid is cooled in a heat exchanger before being compressed again.
+   </li>
+</ol>
+<img alt="Schematic diagram of a closed cycle gas turbine. The cycle consists of a Compressor (1), a Heat Exchanger (2), a Turbine (3), and a Heat Exchanger (4) labeled '(to cool exhaust gases)'. The Compressor is connected to the Turbine via a central Shaft. The Turbine is also connected to a Power Turbine (3') which produces Shaft Power. The exhaust from the Power Turbine is cooled in the Heat Exchanger (4) before being returned to the Compressor. The inlet to the Compressor is labeled 'Inlet'." src="d4af765160d04ecef538e5066006dc77_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    Schematic diagram of a closed cycle gas turbine. The cycle consists of a Compressor (1), a Heat Exchanger (2), a Turbine (3), and a Heat Exchanger (4) labeled '(to cool exhaust gases)'. The Compressor is connected to the Turbine via a central Shaft. The Turbine is also connected to a Power Turbine (3') which produces Shaft Power. The exhaust from the Power Turbine is cooled in the Heat Exchanger (4) before being returned to the Compressor. The inlet to the Compressor is labeled 'Inlet'.
+   </div>
+</div>
+<p>
+   Figure 6
+   <br/>
+   The Closed Cycle Gas Turbine
+  </p>
+<p>
+   Advantages of the closed cycle are:
+  </p>
+<ul style="list-style-type: none">
+<li>
+    • The working fluid pressure can be much higher than open cycle system pressure. Higher pressure means that the working fluid has a higher density. Therefore, a greater mass of the fluid expands through the turbine producing more power.
+   </li>
+<li>
+    • Combustion products do not mix with the working fluid. Thus, there is no fouling of turbine blades or heat exchanger surfaces, and therefore a wider variety of fuels can be used.
+   </li>
+<li>
+    • A working fluid with a greater heat transfer coefficient than air can be used, such as helium which has approximately twice the heat transfer coefficient of air. This reduces the amount of heating surface required in the heat exchangers.
+   </li>
+</ul>
+<p>
+   Disadvantages of the closed cycle are:
+  </p>
+<ul style="list-style-type: none">
+<li>
+    • The initial cost is higher than that of an open cycle system because of the heat exchangers (air cooler and air heater).
+   </li>
+<li>
+    • More space is required because the unit is larger due to the extra components.
+   </li>
+<li>
+    • A steady supply of cooling water is required.
+   </li>
+</ul>
+<h2>
+   Objective 3
+  </h2>
+<p>
+<b>
+<i>
+     Describe the principles and design of combined cycle and cogeneration systems using gas turbines.
+    </i>
+</b>
+</p>
+<h3>
+   INTRODUCTION
+  </h3>
+<p>
+   The exhaust gases from gas turbines contain a large amount of heat energy that is available for use to generate steam or to heat process fluids throughout the facility. Utilizing this waste energy can greatly increase the overall efficiency of the system and make the selection of a gas turbine much more advantageous to the engineer.
+  </p>
+<p>
+   Exhaust temperatures can range from 400°C to 600°C. This heat can be partially recovered by a waste heat recovery system. Thermal efficiency can be increased from a simple cycle efficiency of 30%-40% to a total plant efficiency of 60%-70%. To avoid corrosion, the final temperature should not be reduced below the dew point.
+  </p>
+<p>
+   A combined cycle uses the waste heat energy in the exhaust gases to provide additional steam generating capability for the facility. The combined cycle approach is ideal for use in large base load power generation applications that can exceed 1000 MW of total power. If the waste heat produces steam or hot water that is used for heating, cooling, or general steam applications, it is called a cogeneration or combined heat and power (CHP) system.
+  </p>
+<h4>
+   Combined Cycle Design
+  </h4>
+<p>
+   In a combined cycle design, the exhaust gases are routed to a Heat Recovery Steam Generator (HRSG) that supplies steam to a steam turbine. The steam turbine can be used to drive a separate generator (Fig. 7) or, in some cases, it can be attached directly to the same generator as the gas turbine (Fig. 8).
+  </p>
+<img alt="Figure 7: Schematic diagram of a dual-shaft gas turbine system with two separate generators and a common steam turbine." src="4801720824e4b5e2361a5564f91cfb70_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<p>
+    This schematic diagram illustrates a dual-shaft gas turbine system. The system consists of two identical gas turbine units. Each unit includes an inlet, a compressor, a combustor (labeled 'Combuster' in the top unit and 'Combustion' in the bottom unit) with a fuel input, a turbine, and a power turbine. The exhaust from each power turbine is directed to a separate Heat Recovery Steam Generator (HRSG). Both HRSGs have their own exhaust stacks. The steam generated in both HRSGs is fed into a single, common steam turbine. This steam turbine is connected to a generator. The exhaust from the steam turbine is then directed to a condenser. The condenser is connected to both HRSGs, indicating a shared cooling system.
+   </p>
+<div class="img-alt">
+    Figure 7: Schematic diagram of a dual-shaft gas turbine system with two separate generators and a common steam turbine.
+   </div>
+</div>
+<p>
+<i>
+    Figure 7
+    <br/>
+    Separate Generators with Common Steam Turbine
+   </i>
+</p>
+<img alt="Figure 8: Schematic diagram of a gas turbine system with a single generator on a common shaft, including a steam turbine." src="4ee27dbf5ef12e7b58b0ef0937bc5a5e_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<p>
+    This schematic diagram shows a gas turbine system where a single generator is shared between a power turbine and a steam turbine. The gas turbine section includes an inlet, a compressor, a combustor (labeled 'Combustor'), and a turbine with a fuel input. The turbine is connected to a power turbine, which is in turn connected to a generator. The exhaust from the power turbine is directed to a Heat Recovery Steam Generator (HRSG), which has its own exhaust stack. The steam generated in the HRSG is fed into a steam turbine. This steam turbine is connected to the same generator as the power turbine, meaning they all share a common shaft. The exhaust from the steam turbine is directed to a condenser, which is also connected to the HRSG.
+   </p>
+<div class="img-alt">
+    Figure 8: Schematic diagram of a gas turbine system with a single generator on a common shaft, including a steam turbine.
+   </div>
+</div>
+<p>
+<i>
+    Figure 8
+    <br/>
+    Single Generator with Steam Turbine on Common Shaft
+   </i>
+</p>
+<p>
+   The HRSG may be unfired (no extra heat is added), or it may be fired. In the fired type, an additional burner, or multiples of burners, will be installed in the ducting just upstream of the HRSG to increase the temperature of the exhaust gases.
+  </p>
+<p>
+   The advantages of the fired system are that it:
+  </p>
+<ul style="list-style-type: none">
+<li>
+    • Compensates for changes in gas turbine output to give constant steam production
+   </li>
+<li>
+    • Can be used when the turbine is at low loads or not on at all to generate steam for the facility
+   </li>
+</ul>
+<p>
+   Early combined cycle installations used a single-pressure HRSG. Now HRSGs often use a double-pressure or triple-pressure configuration, such as the one shown in Fig. 9. This extracts the greatest amount of heat and results in a more efficient operation. The choice of HRSG depends on the temperature of the exhaust. A triple-pressure HRSG is the best option for gas turbines with a high firing temperature (above 550°C).
+  </p>
+<img alt="A detailed 3D cutaway diagram of a triple-pressure Heat Recovery Steam Generator (HRSG). The diagram shows the flow of exhaust gas from left to right through three distinct pressure sections: a Superheater Section, an Evaporator Section, and an Economizer Section. On the left, two 'Inlet Ducts' lead into the Superheater Section, which is supported by 'Integral Structural Steel'. Above the Superheater is a 'Steam Drum' connected by a series of pipes. The gas then flows into the 'Evaporator Section', which contains a 'Manway' and 'Downcomer' pipes. Finally, the gas passes through the 'Economizer Section' and exits via an 'Outlet Duct' into a 'Stack'. 'Expansion Joints' are shown at the inlet and between the sections. The entire unit is covered in 'Internal Insulation and Lagging'." src="0e240e8e4783e664047fbdb5fbd0989f_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    A detailed 3D cutaway diagram of a triple-pressure Heat Recovery Steam Generator (HRSG). The diagram shows the flow of exhaust gas from left to right through three distinct pressure sections: a Superheater Section, an Evaporator Section, and an Economizer Section. On the left, two 'Inlet Ducts' lead into the Superheater Section, which is supported by 'Integral Structural Steel'. Above the Superheater is a 'Steam Drum' connected by a series of pipes. The gas then flows into the 'Evaporator Section', which contains a 'Manway' and 'Downcomer' pipes. Finally, the gas passes through the 'Economizer Section' and exits via an 'Outlet Duct' into a 'Stack'. 'Expansion Joints' are shown at the inlet and between the sections. The entire unit is covered in 'Internal Insulation and Lagging'.
+   </div>
+</div>
+<p>
+   Figure 9
+   <br/>
+   Triple-pressure HRSG
+   <br/>
+   (Courtesy of GE Power Systems)
+  </p>
+<h4>
+   Cogeneration Design
+  </h4>
+<p>
+   Cogeneration designs are used in distributed power applications. An example is shown in Fig. 10. The two gas turbines (GT) each produce 1 550kW of electrical power. Their exhaust is fed to a common HRSG, which has supplementary firing, so that the amount of steam can be varied. Each engine has a diverter valve in case steam is not required.
+  </p>
+<img alt="Schematic diagram of a cogeneration exhaust and steam system. Two gas turbines, labeled GTA and GTB, are shown on the left. Each turbine has an exhaust duct leading to a silencer. The exhaust from the silencers is directed into a common 'Transition' duct. This duct leads to a 'Perforated Plate'. Above the plate, the exhaust is split into two circular components labeled 'Left Steam Drum' and 'Right Steam Drum'. From each steam drum, a pipe leads to a vertical 'Economizer' unit. Arrows indicate the flow of exhaust gas from the turbines, through the silencers, transition, and into the steam drums and economizers. Another arrow indicates the final exhaust flow out of the top of the economizers." src="fa859e4e468bfb2710a94527f2c504af_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    Schematic diagram of a cogeneration exhaust and steam system. Two gas turbines, labeled GTA and GTB, are shown on the left. Each turbine has an exhaust duct leading to a silencer. The exhaust from the silencers is directed into a common 'Transition' duct. This duct leads to a 'Perforated Plate'. Above the plate, the exhaust is split into two circular components labeled 'Left Steam Drum' and 'Right Steam Drum'. From each steam drum, a pipe leads to a vertical 'Economizer' unit. Arrows indicate the flow of exhaust gas from the turbines, through the silencers, transition, and into the steam drums and economizers. Another arrow indicates the final exhaust flow out of the top of the economizers.
+   </div>
+</div>
+<p>
+   Figure 10
+   <br/>
+   Cogeneration Exhaust and Steam System
+  </p>
+<h2>
+   Objective 4
+  </h2>
+<p>
+<b>
+    Describe the principles and design of gas turbine regeneration, intercooling, and reheating.
+   </b>
+</p>
+<h3>
+   CYCLE IMPROVEMENTS
+  </h3>
+<p>
+   Three approaches —
+   <b>
+    regeneration, intercooling, reheat
+   </b>
+   — can be used to improve the efficiency of the basic gas turbine cycle. For various compatibility reasons, these are normally used independently and, at the moment, no gas turbine exists that uses all three methods. Aero-derivative engines are designed to be as light as possible to allow them to function efficiently as airplane engines. Therefore, they will not have the extra equipment included with them to allow for cycle improvements like industrial type turbines do. As simple cycle gas turbines are becoming more efficient, these cycle improvements are becoming less necessary. Furthermore, combined cycle designs, which use waste heat for other purposes, are becoming more prevalent.
+  </p>
+<h4>
+   Regeneration
+  </h4>
+<p>
+   The most common cycle improvement was the regenerative cycle, or regeneration. A heat exchanger installed in the exhaust preheats the air between the compressor and the combustors, as shown in Fig. 11. Thus, exhaust heat is used to increase the temperature of the compressed air prior to combustion. This approach was quite common since it improved the efficiency of the gas turbine by 15% to 20%.
+  </p>
+<img alt="Schematic diagram of a gas turbine cycle with regeneration." src="21ad58fee90f2be50708ff541d225507_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<p>
+    The diagram illustrates a gas turbine cycle with regeneration. Air enters the system through an 'Inlet' at the bottom left and is compressed by a 'Compressor'. The compressed air then passes through a 'Regenerator', which is represented by a box containing a zigzag heat exchanger symbol. From the regenerator, the air flows into a 'Combustor'. The high-temperature gas from the combustor expands through a 'Turbine'. The turbine is mechanically coupled to a 'Power Turbine', which in turn is connected to a 'Load'. The exhaust from the power turbine is directed back into the 'Regenerator' to preheat the incoming compressed air. Finally, the air exits the system through an 'Exhaust' at the top left.
+   </p>
+<div class="img-alt">
+    Schematic diagram of a gas turbine cycle with regeneration.
+   </div>
+</div>
+<p>
+   Figure 11
+   <br/>
+   Regeneration
+  </p>
+<p>
+   Disadvantages of regeneration include increased capital costs and pressure losses due to the high pressure ratio compressors. Instead of regeneration, many installations use the exhaust heat for combined cycle or cogeneration applications.
+  </p>
+<h4>
+   Intercooling
+  </h4>
+<p>
+   In some gas turbines, inlet air is compressed in two stages using a dual shaft arrangement. The air is cooled between the stages in a heat exchanger, or intercooler (Fig. 12). Since isothermal compression (compression without an increase in air temperature) takes less work than adiabatic compression (compression without removing heat which increases the air temperature), more turbine power is available for the output load. Another advantage of intercooling is that the total mass of air that needs to be circulated through the cycle per kW of energy produced is reduced.
+  </p>
+<img alt="Schematic diagram of a gas turbine cycle with intercooling." src="dfe556fea00682b09a59427aaf72051c_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<p>
+    The diagram illustrates a gas turbine cycle with intercooling. Air enters the system through an 'Inlet' and is first compressed by a 'Low pressure compressor'. It then passes through an 'Intercooler', represented by a heat exchanger symbol, where it is cooled. The air is then compressed further by a 'High pressure compressor'. The compressed air enters a 'Combustor', where fuel is added and combustion occurs. The high-temperature gas then expands through a 'High pressure turbine', which is mechanically coupled to the 'Low pressure compressor'. The gas then expands further through a 'Low pressure turbine', which is coupled to a 'Power turbine'. The 'Power turbine' is connected to a 'Load', producing the final output. The gas finally exits through an 'Exhaust'.
+   </p>
+<div class="img-alt">
+    Schematic diagram of a gas turbine cycle with intercooling.
+   </div>
+</div>
+<p>
+   Figure 12
+   <br/>
+   Intercooling
+  </p>
+<p>
+   However, the beneficial effects of intercooling decrease as the pressure ratio increases. A high pressure ratio means that losses through the intercooler become significant. Using an intercooler makes more sense when combined with regeneration because more exhaust heat can be recovered. This improves the overall cycle efficiency.
+  </p>
+<p>
+   Intercoolers are shell and tube heat exchangers similar in construction to regenerators. Cooling water passes through the tubes while air passes on the shell side. In some cases, air passes through tubes surrounded by water. The General Electric LM6000 has an innovative intercooling option, shown in Fig. 13, which introduces an atomized water spray between the low pressure and high pressure compressors. This provides a 9% power boost at 15°C and 20% at 32°C, without requiring a separate heat exchanger. A second water spray is injected into the air intake to reduce the temperature, and thus increase the power output.
+  </p>
+<img alt="Figure 13: Intercooling Using Water Spray. A detailed cross-sectional diagram of a gas turbine engine. It shows the internal components including the compressor, combustion chamber, and turbine. Labels point to various parts: 'Air Manifold' at the top, 'Water Metering Valve' and 'Orifice' for water injection, 'Water Manifold' inside the combustion chamber, and 'Spray Nozzels' on both sides. The diagram illustrates the path of air and water within the engine casing." src="3267a096e9ca525744d8cd820f12eb59_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    Figure 13: Intercooling Using Water Spray. A detailed cross-sectional diagram of a gas turbine engine. It shows the internal components including the compressor, combustion chamber, and turbine. Labels point to various parts: 'Air Manifold' at the top, 'Water Metering Valve' and 'Orifice' for water injection, 'Water Manifold' inside the combustion chamber, and 'Spray Nozzels' on both sides. The diagram illustrates the path of air and water within the engine casing.
+   </div>
+</div>
+<p>
+   Figure 13
+   <br/>
+   Intercooling Using Water Spray
+   <br/>
+   (Courtesy of GE Power Systems)
+  </p>
+<h4>
+   Reheat
+  </h4>
+<p>
+   Reheat cycles are fairly rare, but some gas turbines still use them. The hot gas is expanded in two stages and reheated between stages. After leaving the first set of combustion chambers, the gas is expanded through a high pressure turbine. Then, it passes through a second set of combustion chambers before entering a low pressure turbine where it is expanded a second time (see Fig. 14). The second set of combustion chambers uses the excess oxygen content of the gas exiting the high pressure turbine for combustion.
+  </p>
+<p>
+   Reheating increases the energy content of the gas and improves the thermal efficiency of the cycle. As a result, less air has to be compressed in order to do the same amount of work.
+  </p>
+<img alt="Figure 14: Reheat. A schematic block diagram of a gas turbine engine with a reheat cycle. The flow starts at 'Inlet', goes through a 'Compressor', then a 'Combustor', then a 'Turbine'. After the first turbine, the gas goes through a second 'Combustor', then a second 'Turbine', and finally to 'Exhaust'. The second turbine is connected to a 'Load'. The diagram shows the sequential components and the reheat stage between the two turbines." src="898fb89a50d9ec1dfb4e425c816976a7_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    Figure 14: Reheat. A schematic block diagram of a gas turbine engine with a reheat cycle. The flow starts at 'Inlet', goes through a 'Compressor', then a 'Combustor', then a 'Turbine'. After the first turbine, the gas goes through a second 'Combustor', then a second 'Turbine', and finally to 'Exhaust'. The second turbine is connected to a 'Load'. The diagram shows the sequential components and the reheat stage between the two turbines.
+   </div>
+</div>
+<p>
+   Figure 14
+   <br/>
+   Reheat
+  </p>
+<h2>
+   Objective 5
+  </h2>
+<p>
+<b>
+    Describe the principles and design of gas turbine shaft arrangements.
+   </b>
+</p>
+<h3>
+   SHAFT ARRANGEMENTS
+  </h3>
+<p>
+   Gas turbines are designed with a number of different shaft arrangements including:
+  </p>
+<ul style="list-style-type: none">
+<li>
+    • Single shaft
+   </li>
+<li>
+    • Dual shaft
+   </li>
+<li>
+    • Multi-shaft arrangements
+   </li>
+</ul>
+<h4>
+   Single Shaft
+  </h4>
+<p>
+   In the single shaft arrangement, the compressor, turbine, and load are connected and rotate at the same speed (see Fig. 15). This arrangement is used for power generation where a constant speed is required, but is rarely used for other applications because the power output is not flexible. Mechanically, it is simpler than a two-shaft arrangement, but requires a larger starting motor because it must also rotate the generator (load) up to ignition speed. The hot end drive arrangement, Fig. 15(a), is more common than the cold end drive that is shown in Fig. 15(b).
+  </p>
+<img alt="Figure 15: Shaft Layouts – Single Shaft. (a) Hot End Drive: Compressor, Turbine, Load. (b) Cold End Drive: Load, Compressor, Turbine." src="73dff6b45b2b9ffd384bab3235f869af_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<p>
+    The diagram illustrates two single-shaft gas turbine configurations. In (a) Hot End Drive, the components are connected in series: a trapezoidal Compressor, a trapezoidal Turbine, and a rectangular Load. In (b) Cold End Drive, the components are connected in series: a rectangular Load, a trapezoidal Compressor, and a trapezoidal Turbine. Both diagrams show a single continuous shaft connecting all three components.
+   </p>
+<div class="img-alt">
+    Figure 15: Shaft Layouts – Single Shaft. (a) Hot End Drive: Compressor, Turbine, Load. (b) Cold End Drive: Load, Compressor, Turbine.
+   </div>
+</div>
+<p>
+   Figure 15
+   <br/>
+<i>
+    Shaft Layouts – Single Shaft
+   </i>
+</p>
+<p>
+   The General Electric 6001, shown in Fig. 16, is an example of a hot end drive (the load is connected to the turbine).
+  </p>
+<img alt="Photograph of a General Electric 6001 single shaft gas turbine with hot end drive." src="ef96fcba3a34e9e35ff8ee3cc8cb7b20_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<p>
+    A black and white photograph showing a large industrial gas turbine unit. The unit is mounted on a base and features various components including a compressor at the front, a combustion chamber in the middle, and a turbine section at the rear. The GE monogram is visible on the side of the casing.
+   </p>
+<div class="img-alt">
+    Photograph of a General Electric 6001 single shaft gas turbine with hot end drive.
+   </div>
+</div>
+<p>
+   Figure 16
+   <br/>
+<i>
+    General Electric 6001 –Single Shaft Gas Turbine with Hot End Drive
+    <br/>
+    (Courtesy of GE Power Systems)
+   </i>
+</p>
+<p>
+   The Alstom Typhoon, shown in Fig. 17, is an example of a cold end drive arrangement.
+  </p>
+<table border="1">
+<tbody>
+<tr data-bbox="380 716 1092 770">
+<td rowspan="2">
+      Typhoon (ISO) 4.85MW
+      <sub>
+       e
+      </sub>
+</td>
+<td>
+      PRESSURE
+     </td>
+<td>
+      BAR
+     </td>
+<td>
+      14.7
+     </td>
+<td>
+      13.6
+     </td>
+<td>
+      12.6
+     </td>
+<td>
+      11.7
+     </td>
+</tr>
+<tr data-bbox="380 770 1092 825">
+<td>
+      TEMPERATURE
+     </td>
+<td>
+      °C
+     </td>
+<td>
+      35
+     </td>
+<td>
+      37
+     </td>
+<td>
+      39
+     </td>
+<td>
+      41
+     </td>
+</tr>
+<tr data-bbox="380 825 1092 879">
+<td rowspan="2">
+      Typhoon (ISO) 4.70MW
+      <sub>
+       e
+      </sub>
+</td>
+<td>
+      PRESSURE
+     </td>
+<td>
+      BAR
+     </td>
+<td>
+      14.7
+     </td>
+<td>
+      13.6
+     </td>
+<td>
+      12.6
+     </td>
+<td>
+      11.7
+     </td>
+</tr>
+<tr data-bbox="380 879 1092 934">
+<td>
+      TEMPERATURE
+     </td>
+<td>
+      °C
+     </td>
+<td>
+      35
+     </td>
+<td>
+      37
+     </td>
+<td>
+      39
+     </td>
+<td>
+      41
+     </td>
+</tr>
+<tr data-bbox="380 934 1092 989">
+<td rowspan="2">
+      Typhoon (ISO) 5.05MW
+      <sub>
+       e
+      </sub>
+</td>
+<td>
+      PRESSURE
+     </td>
+<td>
+      BAR
+     </td>
+<td>
+      14.7
+     </td>
+<td>
+      13.6
+     </td>
+<td>
+      12.6
+     </td>
+<td>
+      11.7
+     </td>
+</tr>
+<tr data-bbox="380 989 1092 1035">
+<td>
+      TEMPERATURE
+     </td>
+<td>
+      °C
+     </td>
+<td>
+      35
+     </td>
+<td>
+      37
+     </td>
+<td>
+      39
+     </td>
+<td>
+      41
+     </td>
+</tr>
+<tr data-bbox="380 1035 1092 1089">
+<td rowspan="2">
+      Typhoon (ISO) 5.25MW
+      <sub>
+       e
+      </sub>
+</td>
+<td>
+      PRESSURE
+     </td>
+<td>
+      BAR
+     </td>
+<td>
+      14.7
+     </td>
+<td>
+      13.6
+     </td>
+<td>
+      12.6
+     </td>
+<td>
+      11.7
+     </td>
+</tr>
+<tr data-bbox="380 1089 1092 1136">
+<td>
+      TEMPERATURE
+     </td>
+<td>
+      °C
+     </td>
+<td>
+      35
+     </td>
+<td>
+      37
+     </td>
+<td>
+      39
+     </td>
+<td>
+      41
+     </td>
+</tr>
+</tbody>
+</table>
+<img alt="Flow diagram of the Alstom Typhoon single shaft gas turbine." src="09955ff8214ffb6947951fc0f60eb6ab_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<p>
+    A schematic flow diagram of the Alstom Typhoon gas turbine. It shows the air intake, compressor, combustion chamber, turbine, and exhaust. The turbine is connected to a generator at the cold end (rear). The diagram is labeled 'Typhoon single shaft - Flow Diagram'.
+   </p>
+<div class="img-alt">
+    Flow diagram of the Alstom Typhoon single shaft gas turbine.
+   </div>
+</div>
+<p>
+   Figure 17
+   <br/>
+<i>
+    Alstom Typhoon – Single Shaft Gas Turbine with Cold End Drive
+    <br/>
+    (Courtesy of Alstom)
+   </i>
+</p>
+<h4>
+   Dual Shaft
+  </h4>
+<p>
+   The dual shaft (twin-shaft) arrangement, shown in Fig. 18, is the most common design. The compressor and turbine are connected by a shaft, but the power turbine (also called the free turbine) is coupled on a second shaft with the load. This layout provides more operational flexibility with respect to speed and load, especially for compressors.
+  </p>
+<p>
+   Many gas turbines use dual shaft designs with the load coupled to the gas turbine (hot end) such those shown in Fig. 18 (a) and Fig. 19.
+  </p>
+<p>
+   A cold end drive (the load is coupled to the compressor) positions the power turbine and load shaft inside the compressor turbine shaft as shown in Fig. 18 (b). This arrangement is much less common, although it does exist.
+  </p>
+<img alt="Figure 18: Shaft Layouts – Dual Shaft. (a) Hot End Drive: A schematic showing a Compressor connected to a Turbine, which is connected to a Load. A Power Turbine is also connected to the Load. (b) Cold End Drive: A schematic showing a Load connected to a Compressor, which is connected to a Turbine, which is connected to a Power Turbine." src="844077b3034f0030b404207db0ad76b4_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<p>
+    Figure 18 consists of two schematic diagrams labeled (a) and (b). Diagram (a), titled 'Hot End Drive', shows a linear arrangement of four components: a Compressor, a Turbine, a Power Turbine, and a Load. The Compressor is connected to the Turbine, which is connected to the Power Turbine, which is in turn connected to the Load. Diagram (b), titled 'Cold End Drive', shows a similar linear arrangement but with a different configuration: a Load, a Compressor, a Turbine, and a Power Turbine. In this case, the Load is connected to the Compressor, which is connected to the Turbine, which is connected to the Power Turbine.
+   </p>
+<div class="img-alt">
+    Figure 18: Shaft Layouts – Dual Shaft. (a) Hot End Drive: A schematic showing a Compressor connected to a Turbine, which is connected to a Load. A Power Turbine is also connected to the Load. (b) Cold End Drive: A schematic showing a Load connected to a Compressor, which is connected to a Turbine, which is connected to a Power Turbine.
+   </div>
+</div>
+<p>
+   Figure 18
+   <br/>
+   Shaft Layouts – Dual Shaft
+  </p>
+<img alt="Figure 19: General Electric LM2500 – Dual Shaft Gas Turbine with Hot End Drive. A detailed cutaway illustration of the engine showing internal components including the compressor, turbine, and power turbine." src="c2749f79dd1fc9bd2dce52bcbb2fb3ef_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<p>
+    Figure 19 is a detailed cutaway illustration of a General Electric LM2500 gas turbine engine. It shows the internal mechanical structure, including the multi-stage axial compressor, the combustion chamber, the gas turbine section, and the power turbine section. The engine is mounted on a base, and various external components like the exhaust duct and intake are visible.
+   </p>
+<div class="img-alt">
+    Figure 19: General Electric LM2500 – Dual Shaft Gas Turbine with Hot End Drive. A detailed cutaway illustration of the engine showing internal components including the compressor, turbine, and power turbine.
+   </div>
+</div>
+<p>
+   Figure 19
+   <br/>
+   General Electric LM2500 – Dual Shaft Gas Turbine with Hot End Drive
+   <br/>
+   (Courtesy of GE Power Systems)
+  </p>
+<h4>
+   Multi-Shaft
+  </h4>
+<p>
+   Fig. 20 (a) shows a fairly common aero-derivative design that uses a two-shaft arrangement for the engine, and a third shaft for the power turbine. The low-pressure compressor and turbine are connected by a shaft fitted inside the hollow shaft connecting the high-pressure compressor and turbine. Mechanically, this design is more complicated (especially for the bearings), but offers greater efficiency and operational flexibility.
+  </p>
+<p>
+   An even more complicated layout positions the load at the cold end, which requires three shafts on the same centerline, as shown in Fig. 20 (b).
+  </p>
+<img alt="Figure 20: Shaft Layouts – Triple Shaft. (a) Hot End Drive: A schematic showing a High Pressure Compressor and Low Pressure Compressor on the left, connected to a High Pressure Turbine and Low Pressure Turbine. The High Pressure Turbine is connected to a Load, and the Low Pressure Turbine is connected to a Power Turbine. (b) Cold End Drive: A schematic showing a High Pressure Compressor and Low Pressure Compressor on the right, connected to a High Pressure Turbine and Low Pressure Turbine. The High Pressure Turbine is connected to a Load, and the Low Pressure Turbine is connected to a Power Turbine." src="73b5cce955ba9415a98791db7b0080ad_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    Figure 20: Shaft Layouts – Triple Shaft. (a) Hot End Drive: A schematic showing a High Pressure Compressor and Low Pressure Compressor on the left, connected to a High Pressure Turbine and Low Pressure Turbine. The High Pressure Turbine is connected to a Load, and the Low Pressure Turbine is connected to a Power Turbine. (b) Cold End Drive: A schematic showing a High Pressure Compressor and Low Pressure Compressor on the right, connected to a High Pressure Turbine and Low Pressure Turbine. The High Pressure Turbine is connected to a Load, and the Low Pressure Turbine is connected to a Power Turbine.
+   </div>
+</div>
+<p>
+   (a) Hot End Drive
+  </p>
+<p>
+   (b) Cold End Drive
+  </p>
+<p>
+   Figure 20
+   <br/>
+   Shaft Layouts – Triple Shaft
+  </p>
+<p>
+   An example of this design, the Rolls Royce RB211 shown in Fig. 21; is widely used for both power generation and mechanical drive applications, such as compressors.
+  </p>
+<img alt="Figure 21: Rolls Royce RB211 – Triple Shaft Gas Turbine with Hot End Drive. A detailed cross-sectional diagram of the engine showing the internal components: Low pressure compressor, High pressure compressor, Combustor, High pressure turbine, Low pressure turbine, and Power turbine. The diagram illustrates the complex internal arrangement of the triple-shaft gas turbine." src="a95bbb7c401e0f3ee7e6c1a870f4917c_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    Figure 21: Rolls Royce RB211 – Triple Shaft Gas Turbine with Hot End Drive. A detailed cross-sectional diagram of the engine showing the internal components: Low pressure compressor, High pressure compressor, Combustor, High pressure turbine, Low pressure turbine, and Power turbine. The diagram illustrates the complex internal arrangement of the triple-shaft gas turbine.
+   </div>
+</div>
+<p>
+   Figure 21
+   <br/>
+   Rolls Royce RB211 – Triple Shaft Gas Turbine with Hot End Drive
+   <br/>
+   (Courtesy of Rolls Royce)
+  </p>
+<p>
+   The General Electric LM6000, shown in Fig. 22, uses a unique design. It is similar to the triple shaft arrangement shown above, but the load is directly connected to either the low-pressure compressor, or the low-pressure turbine.
+  </p>
+<img alt="Schematic diagram of a direct dual shaft gas turbine engine layout." src="7133ccf78043568ca62ecbcd43628a4a_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<p>
+    A schematic diagram of a gas turbine engine layout. It shows a central engine core with a High Pressure Compressor and a High Pressure Turbine. A shaft connects the High Pressure Turbine to a Low Pressure Turbine. The Low Pressure Turbine is connected to a Load. Another shaft connects the High Pressure Compressor to a Low Pressure Compressor, which is also connected to a Load.
+   </p>
+<div class="img-alt">
+    Schematic diagram of a direct dual shaft gas turbine engine layout.
+   </div>
+</div>
+<p>
+   Figure 22
+   <br/>
+   Shaft Layouts – Direct Dual Shaft
+  </p>
+<p>
+   This engine, with optional cold end or hot end drive, is used exclusively for power generation and is shown in Fig. 23.
+  </p>
+<img alt="Cutaway diagram of the General Electric LM6000 Dual Shaft Gas Turbine." src="a8807f349e4e4d1d425fe4148f81741d_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<p>
+    A detailed cutaway diagram of the General Electric LM6000 Dual Shaft Gas Turbine. The diagram shows the internal components of the engine, including the 14-Stage High Pressure Compressor (HPC), the 5-Stage Low Pressure Compressor (LPC), the Combustor, the 2-Stage High Pressure Turbine (HPT), and the 5-Stage Low Pressure Turbine (LPT). Other labeled parts include the Variable Inlet Guide Vanes (VIGV) [Option], Bypass Air Collector, Drive Flange, Fuel Manifolds, and Auxiliary Gearbox.
+   </p>
+<div class="img-alt">
+    Cutaway diagram of the General Electric LM6000 Dual Shaft Gas Turbine.
+   </div>
+</div>
+<p>
+   Figure 23
+   <br/>
+   General Electric LM6000 –Dual Shaft Gas Turbine
+   <br/>
+   (Courtesy of GE Power Systems)
+  </p>
+
+
+<h1>
+   Objective 6
+  </h1>
+<p>
+<b>
+    Describe the design and components of gas turbine compressors, combustors (combustion chambers) and turbines.
+   </b>
+</p>
+<h2>
+   COMPRESSOR DESIGN
+  </h2>
+<p>
+   Highly efficient and effective compressors are essential for efficient gas turbine operation. Two types of compressors are used: axial and centrifugal (or radial). Small gas turbines often use centrifugal compressors, sometimes in combination with several axial stages. Large gas turbines almost always use multi-stage axial compressors.
+  </p>
+<p>
+   To increase compressor efficiency, especially at lower speeds, multi-shaft arrangements may be used so that the initial stages can operate at lower speeds than the later stages.
+  </p>
+<p>
+   Compressor designs often use a combination of inlet guide vanes (IGV's), variable stator vanes (VSV's), and bleed valves to counteract the effects of surge, which happens at lower speeds. This is described later in this module.
+  </p>
+<h3>
+   Axial Compressors
+  </h3>
+<p>
+   Axial compressors are similar to propellers; the air moves parallel to the axis of rotation. Since the mass flow through the compressor is constant, the area must decrease from the inlet to the outlet of the compressor. This means that the blades are largest in the first stage, and then get progressively smaller.
+  </p>
+<p>
+   An axial compressor has multiple stages. An initial row of stationary blades, called the inlet guide vanes, is used to direct the air (at the correct angle) into the first stage of rotor blades. In each stage, a row of moving blades (rotors) is followed by a row of stationary blades (stators). Each stage has a small compression ratio, usually between 1.1:1 and 1.4:1. A compression ratio of between 10:1 and 40:1 can be achieved by all stages in combination.
+  </p>
+<p>
+   Due to the diverging shape of the rotating and stationary blades in an axial compressor, the pressure of the fluid is increased across both sections of blades. Each row of rotor blades increases the velocity and the pressure of the air. The subsequent row of stator blades act as a diffuser which further increases pressure and decreases velocity.
+  </p>
+<p>
+   The axial compressor rotor blade, shown in Fig. 24, shows the slender shape compressor blades need to maximize efficiency. Notice the twist in the blade which produces the optimum aerodynamic angle when the air enters into each compressor stage. The angle
+  </p>
+<p>
+   increases with the radius because velocity is higher at the tip of the blade than at the root.
+  </p>
+<img alt="A black and white photograph of a single gas turbine blade, showing its airfoil shape and the root section." src="c803f6f6e2c49429d2951832bd0f208d_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    A black and white photograph of a single gas turbine blade, showing its airfoil shape and the root section.
+   </div>
+</div>
+<p>
+<i>
+    Figure 24
+    <br/>
+    Rolls Royce RB211 Gas Turbine
+    <br/>
+    (Courtesy of Tom Van Hardevelde)
+   </i>
+</p>
+<p>
+   A cross-section of the axial compressor from a General Electric LM2500 is shown in Fig. 25. Note that the cooling flow from the 9th stage of the compressor is fed back through the intake strut to cool and pressurize the inside of the shaft, and the front, centre, and rear bearings. A bleed valve, coming off the 13
+   <sup>
+    th
+   </sup>
+   stage, cools the high pressure turbine nozzles.
+  </p>
+<img alt="A detailed cross-sectional diagram of a gas turbine engine, showing the axial compressor, combustion chamber, turbine, and exhaust system." src="d5fc881e4328d6a2e76c9576408ced49_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    A detailed cross-sectional diagram of a gas turbine engine, showing the axial compressor, combustion chamber, turbine, and exhaust system.
+   </div>
+</div>
+<p>
+<i>
+    Figure 25
+    <br/>
+    General Electric LM2500 Gas Turbine
+    <br/>
+    (Courtesy of GE Power Systems)
+   </i>
+</p>
+<h3>
+   Centrifugal Compressors
+  </h3>
+<p>
+   Centrifugal compressors were initially widely used in gas turbines because they were more efficient and rugged than axial compressors. They are similar in basic design to the centrifugal compressors used throughout the various processes to compress fluids like air and natural gas vapours. Centrifugal compressors can achieve a higher per stage compression ratio, up to 9:1, than axial compressors.
+  </p>
+<p>
+   A centrifugal compressor uses an impeller to accelerate the air and partially increase the pressure. A diffuser, which follows the impeller, further increases the pressure. Multiple impellers may be used (sometimes designed back-to-back), or they may be combined with several axial stages.
+  </p>
+<p>
+   The Kawasaki M1A-13A gas turbine, shown in Fig. 26, has two centrifugal compressors mounted on a single shaft with the turbine and a gearbox connected to a generator.
+  </p>
+<img alt="Cross-sectional diagram of the Kawasaki M1A-13A Gas Turbine." src="48f188337e3ba41df38fab9ac0afb1bd_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<p>
+    A detailed cross-sectional diagram of the Kawasaki M1A-13A gas turbine. The diagram shows the internal components and airflow path. On the left, an 'Accessory Gearbox' is connected to an 'Output Shaft' which rotates counter-clockwise ('CCW'). A 'Reduction Gearbox' is also shown on the output shaft. The main engine section includes an 'Inlet Housing' leading to 'Compressor Impellers' and 'Diffusers'. The first compressor stage is supported by 'No. 1 Bearing'. The compressed air then enters the 'Combustion Liner' via a 'Fuel Nozzle'. The high-temperature gas expands through 'Turbine Nozzles' and 'Turbine Wheels', which are connected to the main shaft. The turbine section is supported by 'No. 2 Bearing'. Finally, the gas passes through an 'Exhaust Diffuser'. The 'Main Shaft' connects the turbine wheels to the reduction gearbox.
+   </p>
+<div class="img-alt">
+    Cross-sectional diagram of the Kawasaki M1A-13A Gas Turbine.
+   </div>
+</div>
+<p>
+   Figure 26
+   <br/>
+<i>
+    Kawasaki M1A-13A Gas Turbine
+   </i>
+</p>
+<h3>
+   Compressor Surge
+  </h3>
+<p>
+   At lower speeds, since the blades are not at the optimum angle, air flow separation can occur. This is similar to an aircraft wing stalling or losing lift. When starting a gas turbine, the pressure rise is very low, and the compressor is trying to push the air into a much smaller area, designed for a larger compression ratio, at the back of the compressor. This can cause the air to choke. The result is called surge or rotating stall. It is a very complicated aerodynamic phenomenon that is not fully understood.
+  </p>
+<p>
+   However, the methods required to counteract it are well developed. Two basic options used for countering surge are
+   <b>
+    bleed valves
+   </b>
+   and
+   <b>
+    variable compressor geometry
+   </b>
+   , but surge can still occur if the blades become dirty or fouled.
+  </p>
+<h3>
+   Bleed Valves
+  </h3>
+<p>
+   A bleed valve reduces the likelihood of surge by dumping air to increase air flow through the compressor during startup. When the blades reach a predetermined speed, the valve closes. The Rolls Royce RB211 Gas Turbine, shown in Fig. 1, has one bleed valve at the exit of the first compressor rotor, and one at exit of the second compressor rotor, which activate at different speeds.
+  </p>
+<p>
+   The Solar Centaur 50 Gas Turbine, shown in Fig.3, has one bleed valve at the end of the compressor which feeds into the exhaust. Sometimes, multiple bleed valves are used.
+  </p>
+<h3>
+   Variable Compressor Geometry
+  </h3>
+<p>
+   Variable compressor geometry is used on many gas turbines to improve efficiency at part load and reduce the likelihood of surge during startup. One or more stages of stator vanes, either inlet guide vanes (IGVs) or variable stator vanes (VSVs), are rotated to optimize the airflow through the compressor according to the operating conditions — speed and temperature.
+  </p>
+<p>
+   Most gas turbines have variable IGVs, such as the ones shown in Fig. 27. They are held in place by a ring around the outside of the compressor stage and actuated by hydraulics (see Fig. 28). During startup, the blades rotate to a closed position and restrict the flow of air. At a specified speed, they begin to open until they reach a predetermined angle.
+  </p>
+<img alt="Close-up photograph of the inlet guide vanes (IGVs) of a Rolls Royce RB211 Gas Turbine. The image shows several curved, metallic blades arranged in a circular pattern, with a dark, textured background." src="451417078c55730b2f3f9ea924407f78_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    Close-up photograph of the inlet guide vanes (IGVs) of a Rolls Royce RB211 Gas Turbine. The image shows several curved, metallic blades arranged in a circular pattern, with a dark, textured background.
+   </div>
+</div>
+<p>
+   Figure 27
+   <br/>
+   Rolls Royce RB211 Gas Turbine Inlet Guide Vanes
+   <br/>
+   (Courtesy of Tom Van Hardevelde)
+  </p>
+<img alt="A detailed black and white photograph of the internal mechanism of a gas turbine engine's inlet guide vane (IGV) linkage. The image shows a complex assembly of metal parts, including a central ring and various linkages. Three labels with leader lines point to specific components: 'Hydraulic Actuators' on the left, 'IGV Linkages' at the top right, and 'Actuating Ring' on the right." src="bb08c83fc8939517c6803d65c69dd06b_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    A detailed black and white photograph of the internal mechanism of a gas turbine engine's inlet guide vane (IGV) linkage. The image shows a complex assembly of metal parts, including a central ring and various linkages. Three labels with leader lines point to specific components: 'Hydraulic Actuators' on the left, 'IGV Linkages' at the top right, and 'Actuating Ring' on the right.
+   </div>
+</div>
+<p>
+   Figure 28
+   <br/>
+<i>
+    Rolls Royce RB211 Gas Turbine Inlet Guide Vane Linkage
+    <br/>
+    (Courtesy of Tom Van Hardevelde)
+   </i>
+</p>
+<p>
+   Some engines use multiple stages of VSVs downstream of the IGV. The Solar Centaur 50 Gas Turbine, in Fig. 3, has three additional VSVs in addition to the IGV. They actuate from closed to the open position between 80% and 92.5% speed.
+  </p>
+<p>
+   The General Electric LM2500, shown in Fig. 29, uses an IGV plus a very extensive set of VSVs on seven stages. Hence, it does not require bleed valves.
+  </p>
+<img alt="A black and white photograph showing the internal linkage mechanism of a General Electric LM2500 gas turbine. The image displays a complex assembly of metal rods, levers, and pivot points, which are part of the IGV/VSV (Inlet Guide Vanes/Variable Stator Vanes) system. The components are densely packed and show signs of mechanical wear and lubrication." src="440e59dae4772c0152116a3abd34331a_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    A black and white photograph showing the internal linkage mechanism of a General Electric LM2500 gas turbine. The image displays a complex assembly of metal rods, levers, and pivot points, which are part of the IGV/VSV (Inlet Guide Vanes/Variable Stator Vanes) system. The components are densely packed and show signs of mechanical wear and lubrication.
+   </div>
+</div>
+<p>
+   Figure 29
+   <br/>
+<i>
+    General Electric LM2500 Gas Turbine IGV/VSV Linkage
+    <br/>
+    (Courtesy of Tom Van Hardevel)
+   </i>
+</p>
+<h3>
+   Compressor Blade Materials
+  </h3>
+<p>
+   Compressor blades operate at low or moderately high temperatures but are subject to high rotational stresses. Stator vanes and blades are often made from stainless or high alloy steel, or sometimes from titanium. They need to resist corrosion and erosion from external contaminants. Coatings are applied to increase compressor efficiency and reduce corrosion.
+  </p>
+<h2>
+   COMBUSTOR DESIGN
+  </h2>
+<p>
+   Combustors are designed to burn a wide variety of fuels — from natural gas to liquids, or even low energy gases. Some engines can use both natural gas and liquid fuel and switch from one to the other during operation. These systems require special fuel nozzles and more complicated fuel gas and control systems.
+  </p>
+<p>
+   The combustion section must be able to burn a variety of fuels efficiently with low emissions, high reliability, and long life. Each fuel has an optimum set of combustion characteristics that must be met to give complete and efficient chemical reactions between the reactive elements in the fuel and oxygen in the air. The atmosphere in the combustor is very aggressive with combustion temperatures ranging from 900°C to 1850°C. The presence of oxides of sulphur and nitrogen creates a high potential for corrosion and erosion of the internal components. This requires the use of exotic alloys, ceramic coatings and sleeve cooling mechanisms to handle these conditions.
+  </p>
+<p>
+   The temperature of combustion can reach 1850°C, but the temperature limit of most metals is closer to 1200°C. As a result, only about 20% of the air that flows through the combustion section is directly involved in combustion. The remaining 80%, called secondary air, is used to cool the combustion liner and dilute the air leaving the combustor to reduce its temperature before it reaches the turbine section.
+  </p>
+<p>
+   Since combustion can only be sustained at fairly low velocities, combustion air is diffused at the inlet of the combustion section. This also helps increase air pressure. A vortex is maintained downstream from the fuel nozzles to provide the required velocity for sustained combustion. Then, the two air streams (combustion and secondary air) are mixed before leaving the combustor. This process is shown in Fig. 30. This is an example of a straight-through combustor design commonly used on aero-derivative engines because it minimizes the frontal area to reduce drag.
+  </p>
+<img alt="Figure 30: Air Flow in a Straight-Through Combustor. The diagram consists of two parts: a longitudinal cross-section (top) and a transverse cross-section (bottom). The longitudinal section shows air entering from the left, with 80% being diffused (50% to the top wall, 30% to the bottom wall). 20% of the air enters the PRIMARY ZONE. In this zone, 12% is used for combustion and 8% is used for cooling. The remaining 40% of the total air is used for COOLING in the DILUTION ZONE. Finally, 20% of the air is used for DILUTION before exiting. The transverse section shows the internal structure, including fuel nozzles, a vortex region, and the mixing of air streams." src="a738993919a50143787084ee7ce6e2f2_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    Figure 30: Air Flow in a Straight-Through Combustor. The diagram consists of two parts: a longitudinal cross-section (top) and a transverse cross-section (bottom). The longitudinal section shows air entering from the left, with 80% being diffused (50% to the top wall, 30% to the bottom wall). 20% of the air enters the PRIMARY ZONE. In this zone, 12% is used for combustion and 8% is used for cooling. The remaining 40% of the total air is used for COOLING in the DILUTION ZONE. Finally, 20% of the air is used for DILUTION before exiting. The transverse section shows the internal structure, including fuel nozzles, a vortex region, and the mixing of air streams.
+   </div>
+</div>
+<p>
+   Figure 30
+   <br/>
+   Air Flow in a Straight-Through Combustor
+   <br/>
+   (Courtesy of Rolls Royce)
+  </p>
+<p>
+   Many heavy-duty gas turbines use a reverse flow combustor, as shown in Fig. 31, to make the combustors more accessible. On startup, an igniter provides an electric spark to start the combustion process. Once started, combustion is self-sustaining. If the gas turbine has several combustors, more than one igniter may be installed. A crossfire tube, shown in Fig. 31, is used to ignite the other combustors and distribute the pressure evenly between combustors.
+  </p>
+<img alt="Diagram of a reverse-flow combustor showing air flow and components." src="892f25e3d71d8e315a2a51092a8a8da7_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<p>
+    A detailed cross-sectional diagram of a reverse-flow combustor. The diagram shows the internal components and the path of the gas flow. On the left, a 'Retractable spark plug' is positioned at the top. Below it, a 'Fuel nozzle' enters the combustion chamber. A 'Crossfire tube' is shown at the bottom left, connecting to the main chamber. The chamber itself is divided into sections for 'Combustion air', 'Cooling air', and 'Diluting air'. The flow of gas is indicated by arrows, moving from left to right through the combustion section, then reversing direction to flow from right to left through the turbine section. The turbine section contains a 'Transition piece' and a 'Turbine nozzle'. Finally, the gas exits as 'Compressor discharge air' at the bottom right.
+   </p>
+<div class="img-alt">
+    Diagram of a reverse-flow combustor showing air flow and components.
+   </div>
+</div>
+<p>
+<i>
+    Figure 31
+   </i>
+<br/>
+<i>
+    Air Flow through a Reverse-Flow Combustor
+   </i>
+<br/>
+<i>
+    (Courtesy of GE Power Systems)
+   </i>
+</p>
+<h3>
+   Types of Combustors
+  </h3>
+<p>
+   There are three basic combustor designs:
+  </p>
+<ul style="list-style-type: none">
+<li>
+    • Single-can (external)
+   </li>
+<li>
+    • Annular
+   </li>
+<li>
+    • Can-annular (turbo-annular)
+   </li>
+</ul>
+<h4>
+   Single-Can (External)
+  </h4>
+<p>
+   The single-can (Fig. 32) or external design combustor, often used on heavy-duty gas turbines, is usually reverse-flow combustors. Fig. 16 and Fig. 17 show gas turbines with external combustors.
+  </p>
+<p>
+   Some gas turbines have only one, or sometimes two, main combustors (usually the reverse-flow type) mounted vertically above the turbine. This design can be seen in small gas turbines, such as the Kawasaki M1A-13A shown in Fig. 26.
+  </p>
+<img alt="A detailed cutaway diagram of a single can (external) gas turbine combustor. The diagram shows the internal components of the combustor, including the combustion chamber, air casing, and fuel manifolds. Labels with leader lines point to various parts: COMPRESSOR OUTLET ELBOW FLANGE JOINT, PRIMARY AIR SCOOP, PRIMARY FUEL MANIFOLD, MAIN FUEL MANIFOLD, ENGINE FIRESEAL, COMBUSTION CHAMBER, AIR CASING, DRAIN TUBE, and INTERCONNECTOR. The diagram is rendered in a shaded, 3D perspective view." src="fd955384881fd240be5518d3050588d9_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    A detailed cutaway diagram of a single can (external) gas turbine combustor. The diagram shows the internal components of the combustor, including the combustion chamber, air casing, and fuel manifolds. Labels with leader lines point to various parts: COMPRESSOR OUTLET ELBOW FLANGE JOINT, PRIMARY AIR SCOOP, PRIMARY FUEL MANIFOLD, MAIN FUEL MANIFOLD, ENGINE FIRESEAL, COMBUSTION CHAMBER, AIR CASING, DRAIN TUBE, and INTERCONNECTOR. The diagram is rendered in a shaded, 3D perspective view.
+   </div>
+</div>
+<p>
+   Figure 32
+   <br/>
+   Single Can (External) Gas Turbine Combustor
+  </p>
+<h4>
+   Annular
+  </h4>
+<p>
+   The annular combustor (Fig. 33), a more modern concept, consists of a singular flame tube in an annular shape. It is smaller in size than the can burner and does not have the problem of combustion propagation between chambers. Combustion takes place in a single combustion liner, with an inner and outer casing, that encircles the centerline of the gas turbine. Fuel nozzles are evenly spaced around the ring. This is a very simple design that minimizes the complexity of the combustion and dilution air flows.
+  </p>
+<img alt="A detailed cross-sectional diagram of an annular combustor. The diagram shows a central combustion chamber with an inner casing and an outer casing. At the top, a flame tube is shown. On the left, H.P. Compressor Outlet Guide Vanes lead into the combustor. At the bottom left, a fuel manifold feeds into fuel spray nozzles. The combustor casing has dilution air holes. On the right, turbine nozzle guide vanes are positioned. The entire assembly is mounted on a compressor casing mounting flange at the bottom left and a turbine casing mounting flange at the bottom right." src="e7cb11f042fc58088dff4b6d9306845e_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    A detailed cross-sectional diagram of an annular combustor. The diagram shows a central combustion chamber with an inner casing and an outer casing. At the top, a flame tube is shown. On the left, H.P. Compressor Outlet Guide Vanes lead into the combustor. At the bottom left, a fuel manifold feeds into fuel spray nozzles. The combustor casing has dilution air holes. On the right, turbine nozzle guide vanes are positioned. The entire assembly is mounted on a compressor casing mounting flange at the bottom left and a turbine casing mounting flange at the bottom right.
+   </div>
+</div>
+<p>
+   Figure 33
+   <br/>
+<i>
+    Annular Combustor
+   </i>
+</p>
+<p>
+   Fig. 34 shows the combustion and turbine sections of the General Electric LM2500. This engine uses an annular combustor design. Compressor air flows around the combustor to cool the liner and then the turbine discs downstream.
+  </p>
+<p>
+   At the top is an optional design for dry low NO
+   <sub>
+    x
+   </sub>
+   emission (discussed in Objective 10). This requires a different and larger combustor design with more fuel nozzles to reduce emissions.
+  </p>
+<img alt="A detailed cross-sectional diagram of a General Electric LM2500 gas turbine engine. The diagram shows the internal components including the compressor, combustor, and turbine sections. The engine is shown in a cutaway view to reveal the internal structure, including the shafts and various casing components." src="967c30813761a8952ecc5e16bf42ea45_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    A detailed cross-sectional diagram of a General Electric LM2500 gas turbine engine. The diagram shows the internal components including the compressor, combustor, and turbine sections. The engine is shown in a cutaway view to reveal the internal structure, including the shafts and various casing components.
+   </div>
+</div>
+<p>
+<i>
+    Figure 34
+    <br/>
+    General Electric LM2500 Engine
+    <br/>
+    (Courtesy of GE Power Systems)
+   </i>
+</p>
+<h4>
+<b>
+    Can-Annular (Turbo-annular)
+   </b>
+</h4>
+<p>
+   In the can-annular or turbo-annular design combustor (Fig. 35), combustion takes place in multiple combustors (also called combustion cans) placed around the centerline of the gas turbine. Some aero-derivative gas turbines use this straight-through combustor design since it minimizes the front area of the turbine.
+  </p>
+<img alt="A detailed cutaway diagram of a can-annular combustor. The diagram shows the internal components of the combustion chamber. Labels with leader lines point to various parts: 'Outer Air Casing' (the outermost shell), 'Dilution Air Holes' (small holes in the casing), 'Turbine Mounting Flange' (at the top rear), 'Inner Air Casing' (the inner shell), 'Nozzle Guide Vanes' (curved blades at the exit), 'Flame Tube' (the central combustion area), 'Interconnector' (between flame tubes), 'Igniter Plug' (on the bottom), 'Diffuser Case' (the bottom section), 'Primary Air Scoop' (at the bottom inlet), and 'Swirl Vanes' (at the inlet)." src="d5a837fa4f4675e5ee596003cf55985c_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    A detailed cutaway diagram of a can-annular combustor. The diagram shows the internal components of the combustion chamber. Labels with leader lines point to various parts: 'Outer Air Casing' (the outermost shell), 'Dilution Air Holes' (small holes in the casing), 'Turbine Mounting Flange' (at the top rear), 'Inner Air Casing' (the inner shell), 'Nozzle Guide Vanes' (curved blades at the exit), 'Flame Tube' (the central combustion area), 'Interconnector' (between flame tubes), 'Igniter Plug' (on the bottom), 'Diffuser Case' (the bottom section), 'Primary Air Scoop' (at the bottom inlet), and 'Swirl Vanes' (at the inlet).
+   </div>
+</div>
+<p>
+   Figure 35
+   <br/>
+   Can-Annular Combustor
+  </p>
+<h3>
+   Combustor Liner Materials
+  </h3>
+<p>
+   Combustor liners are made from high-temperature nickel or cobalt-based alloys such as Hastelloy® X and Marloy® X. These will usually be coated with ceramic coatings or tiles to improve their heat handling capacities. Some engines have combustors that are entirely ceramic, or ceramic mixed with high-temperature alloys. Special laser drilling techniques are used to precisely position the correct number and size of holes throughout the liner to allow for cooling air to flow in and give
+   <b>
+    film cooling
+   </b>
+   to the liner. As well, slots will be machined in the liner to allow the secondary air to enter the primary and dilution zones at just the right positions to:
+  </p>
+<ul style="list-style-type: none">
+<li>
+    • Stabilize the flame
+   </li>
+<li>
+    • Assist in complete combustion
+   </li>
+<li>
+    • Cool the combustion by-products
+   </li>
+</ul>
+<h2>
+   TURBINE DESIGN
+  </h2>
+<p>
+   After leaving the combustor, the hot gases are sent to the turbine section. Turbines operate at very high temperatures, high blade loading, and large rotational stresses. Like compressors, turbines can use either an axial-flow or a radial-inflow design, although axial-flow turbines are much more common.
+  </p>
+<p>
+   In the reaction turbine, power is extracted from the hot gases exhausting from the combustors by experiencing an enthalpy reduction (pressure and temperature) through both the stationary and rotating blades which increases the velocity of the rotor. This power is first used to drive the internal compressor to make the gas turbine “self sustaining”. The remaining energy is then used to drive process loads such as compressors, pumps or electrical power generators. As discussed in Objective 5, the hot gases may be passed through one or more turbine cylinders to extract all the available power. The turbine may use a number of different shaft arrangements to drive the various process loads.
+  </p>
+<h3>
+   Axial-flow Turbines
+  </h3>
+<p>
+   Because energy can be extracted more efficiently than it can be added, fewer stages are needed in the turbine than in the compressor. In axial flow turbines, a stage consists of a row of stationary blades (also called nozzle guide vanes or nozzles) followed by one or more rows of rotating blades depending on the type and design of the turbine. Nozzles increase the velocity of the hot gases with a partial pressure drop. Then, the moving blades extract power with a further drop in pressure and temperature.
+  </p>
+<p>
+   The turbine section of the General Electric LM2500 is shown in Fig. 34. Note that a separate turbine drives the compressor, and a power turbine drives the generator, or other process loads. Cooling for the 2
+   <sup>
+    nd
+   </sup>
+   stage turbine nozzles is supplied from the 13
+   <sup>
+    th
+   </sup>
+   stage bleed valve. Cooling for the power turbine discs is supplied from the 9
+   <sup>
+    th
+   </sup>
+   stage bleed valve.
+  </p>
+<h3>
+   Blade Cooling
+  </h3>
+<p>
+   The current trend in gas turbine technology is to increase the inlet temperature of the gases, up to about 1370°C. This will increase the turbine power output as well as the turbine cycle efficiency. This increase has been achieved through advanced metallurgy and the use of special cooling systems for the turbine blades. Many gas turbines use air-cooled (or sometimes water-cooled) blades to reduce metal temperature and increase blade life. Air is supplied from the compressor discharge, circulated through the blade, and then extracted through holes in the leading edge, trailing edge, and surface of each blade. The designs that are used for gas turbine cooling are:
+  </p>
+<ul style="list-style-type: none">
+<li>
+    • Film
+   </li>
+<li>
+    • Transpiration
+   </li>
+<li>
+    • Convection
+   </li>
+<li>
+    • Impingement
+   </li>
+<li>
+    • Water
+   </li>
+</ul>
+<h3>
+   Film
+  </h3>
+<p>
+   Cooling air is introduced through ports at the base of the blades where it then circulates through a series of vertical channels. The air passes out through a series of small holes bored in the blades leading edge. Slots are provided in the trailing edge to allow the escaping air to cool this part of the blade by convection. Film cooling is also used to protect the liners of the combustors from hot gases.
+  </p>
+<h3>
+   Transpiration
+  </h3>
+<p>
+   This type of cooling is achieved by passing air through the porous wall of the blades. At very high operating temperatures, this method is effective since the entire blade is covered with coolant flow. During normal operation, some of the pores are closed by oxidation. Consequently, this can cause uneven cooling and high thermal stresses. There can be a higher probability of blade failure when using this design.
+  </p>
+<h3>
+   Convection
+  </h3>
+<p>
+   Coolant air makes multiple passes through a serpentine channel from the hub to the tip, inside the turbine blade, to remove heat across the wall. This flow of air is in a radial direction. This is the most common type of cooling used in gas turbines.
+  </p>
+<h4>
+   Impingement
+  </h4>
+<p>
+   Jets of high velocity cooling air are blasted on the inner surface of the airfoil of the turbine blades. Heat transfer from the blade metal surface to the cooling air is increased. Since the leading edge of the blade requires more cooling than the midchord or trailing edge, the flow of cooling air is impinged at the leading edge.
+  </p>
+<h3>
+   Water
+  </h3>
+<p>
+   Preheated cooling water flows through a series of tubes that are embedded in the blade. The water absorbs heat and lowers the blade temperature below 540°C. It then discharges from the blade tip as steam into the gas stream.
+  </p>
+<p>
+   An example of blade cooling is shown in Fig. 36. Air from the compressor section flows through the inside of the shaft into the nozzles and 1
+   <sup>
+    st
+   </sup>
+   stage rotor blades, which are hollow, and then escapes through the many cooling holes in the blades.
+  </p>
+<img alt="A detailed cross-sectional diagram of a Rolls Royce Avon gas turbine engine, focusing on the turbine section. The diagram shows the flow of gas from left to right through various stages. Key components labeled include: H. P. Nozzle Guide Vane, Turbine Shroud Rings, I. P. Nozzle Guide Vane, Front Interstage Seal, Outer Air Seal, Inner Air Seal, I. P. Cooling Air (indicated in two places), Rear Interstage Seal, Turbine Shaft, Rear Bearing Front Oil Seal, Rear Bearing Rear Oil Seal, H. P. Turbine Disc, I. P. Turbine Disc, and L. P. Turbine Disc. Arrows indicate the direction of gas flow and cooling air paths." src="5f2c99ae08864cf2d5c949947bac2b98_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    A detailed cross-sectional diagram of a Rolls Royce Avon gas turbine engine, focusing on the turbine section. The diagram shows the flow of gas from left to right through various stages. Key components labeled include: H. P. Nozzle Guide Vane, Turbine Shroud Rings, I. P. Nozzle Guide Vane, Front Interstage Seal, Outer Air Seal, Inner Air Seal, I. P. Cooling Air (indicated in two places), Rear Interstage Seal, Turbine Shaft, Rear Bearing Front Oil Seal, Rear Bearing Rear Oil Seal, H. P. Turbine Disc, I. P. Turbine Disc, and L. P. Turbine Disc. Arrows indicate the direction of gas flow and cooling air paths.
+   </div>
+</div>
+<p>
+   Figure 36
+   <br/>
+   Rolls Royce Avon Turbine Nozzle and Blade Cooling
+   <br/>
+   (Courtesy of Rolls Royce)
+  </p>
+<h3>
+   Turbine Materials
+  </h3>
+<p>
+   One of the greatest challenges in gas turbine construction is selecting the materials to use in the turbine nozzles and blades, particularly for the first stage. Conventional nozzles and blades are cast from special nickel-based super alloys such as INCONEL®, UDIMET®, WASPALLOY™, and HASTELLOY® X. Special casting techniques are used to manufacture blades with superior strength and temperature resistance. Ceramic components will allow a significant increase in firing temperatures.
+  </p>
+<p>
+   At very high temperatures and stresses, materials suffer from a phenomenon called creep. The material stretches over time which causes voids to open up. This can ultimately lead to catastrophic rupture and failure of the turbine blades.
+  </p>
+<p>
+   Turbine blade life depends on the following items:
+  </p>
+<ul style="list-style-type: none">
+<li>
+    • Type of fuel burned
+   </li>
+<li>
+    • Blade materials
+   </li>
+<li>
+    • Operating conditions (number of stops and starts, loading percentages and temperature control)
+   </li>
+<li>
+    • Ambient and environmental conditions
+   </li>
+</ul>
+<p>
+   The first stage blade materials are the most important as they will experience the highest temperatures and the most corrosive conditions. These blades will last from 20 000 hours when burning residual oils to 100 000 hours when burning natural gas. Metallurgy used for the first stage blading is usually INCONEL (IN) 738 and their expected “life cycle” can be extended by coating the bladed with composite plasma or RT22. The second stage blades are made from precipitation-hardened nickel based alloys like U500 or nimonic. Nimonic is a nickel-chromium-cobalt alloy being precipitation hardenable, having high stress-rupture strength and creep resistance at high temperatures (up to about 950°C). It is a widely used and well proven alloy in high temperature conditions. The turbine wheels are made from Cr-Mo-V, 12 Cr alloys or M152.
+  </p>
+<h1>
+   Objective 7
+  </h1>
+<p>
+<b>
+    Describe the design and operation of gas turbine air intake and exhaust systems.
+   </b>
+</p>
+<h2>
+   AIR INTAKE SYSTEMS
+  </h2>
+<p>
+   The air intake system provides clean air to the gas turbine. To achieve this, air filters are installed in the intake. The type of air intake system used depends on the environmental conditions where the gas turbine is installed. Some environmental conditions that can greatly impact the type of air intake filtering systems installation are:
+  </p>
+<ul style="list-style-type: none">
+<li>
+    • Off-shore platform and ocean area installations
+   </li>
+<li>
+    • Desert or high dust installations
+   </li>
+<li>
+    • Cold climate and arctic installations
+   </li>
+<li>
+    • High rain and wind conditions
+   </li>
+<li>
+    • Industrial installations where there are a number of sulphur compounds and corrosive materials in the local atmosphere
+   </li>
+</ul>
+<p>
+   The intake system becomes more complicated if intake cooling (to increase power at high ambient temperatures) is required, or if icing conditions may occur.
+  </p>
+<p>
+   An intake system is shown in Fig. 37. Note that the air intake is positioned above the enclosure to save space and to place the intake in a higher position where the air may be cleaner. The intake is designed to allow the installation of intake cooling or anti-icing.
+  </p>
+<p>
+   The first stage of filtration is a stainless steel screen which prevents entry of major debris. The second stage is a series of cylindrical filters mounted inside the air intake which remove the bulk of the debris.
+  </p>
+<img alt="Schematic diagram of the Air Intake System (GE LM6000) showing the flow of air from the inlet through the filter house, generator, and turbine to the exhaust." src="76b0cd79baaedd942af4dc42f2e764b8_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<p>
+    The diagram illustrates the air intake and exhaust system of a GE LM6000 gas turbine. Air enters from the left through a
+    <b>
+     FILTER HOUSE
+    </b>
+    containing
+    <b>
+     BARRIER FILTERS WITH PRE-FILTER LINER (158 CANISTERS TOTAL)
+    </b>
+    , a
+    <b>
+     CLEAN AIR PLENUM
+    </b>
+    , a
+    <b>
+     GUARD FILTER*
+    </b>
+    ,
+    <b>
+     COOLING/ANTI-ICING COILS*
+    </b>
+    , a
+    <b>
+     DRIFT ELIMINATOR*
+    </b>
+    , and a
+    <b>
+     STAINLESS STEEL MESH SCREEN
+    </b>
+    . The air then passes through an
+    <b>
+     INLET VOLUTE
+    </b>
+    into the
+    <b>
+     GENERATOR
+    </b>
+    . A
+    <b>
+     GENERATOR COOLING DUCT
+    </b>
+    and
+    <b>
+     GENERATOR EXHAUST
+    </b>
+    are shown above the generator. Two
+    <b>
+     FAN (2)
+    </b>
+    units are located in the generator section. Combustion air is introduced from the top into the
+    <b>
+     TURBINE
+    </b>
+    . A
+    <b>
+     VARIABLE BYPASS VENT
+    </b>
+    and a
+    <b>
+     TURBINE ENCLOSURE VENT
+    </b>
+    with another
+    <b>
+     FAN (2)
+    </b>
+    unit are also present. The turbine exhausts to the right. A legend indicates that components marked with an asterisk (*) are optional. The diagram is labeled 102111 CDR.
+   </p>
+<div class="img-alt">
+    Schematic diagram of the Air Intake System (GE LM6000) showing the flow of air from the inlet through the filter house, generator, and turbine to the exhaust.
+   </div>
+</div>
+<p>
+   Figure 37
+   <br/>
+   Air Intake System (GE LM6000)
+   <br/>
+   (Courtesy of GE Power Systems)
+  </p>
+<p>
+   Some filter systems use inertial filtering which consists of a series of vanes that deflect the air and separate the contaminants using centrifugal force. A more effective approach is to use many small cylindrical filters, such as the ones shown in Fig. 38. Compressed air is used to backflow individual filters and to dislodge dust that has been collected and deposited into a hopper or other type of removal system.
+  </p>
+<p>
+   These pulse cleaning systems are commonly called
+   <b>
+    huff and puff
+   </b>
+   and operate automatically based on pressure differential. They work well in both dusty and cold weather conditions.
+  </p>
+<img alt="A black and white photograph showing a close-up of a pulse cleaning filter. The filter consists of a dense grid of vertical and horizontal metal ribs, creating a series of rectangular compartments. The surface appears slightly reflective and has some texture. The lighting is somewhat harsh, creating strong shadows and highlights on the metallic components." src="3267a096e9ca525744d8cd820f12eb59_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    A black and white photograph showing a close-up of a pulse cleaning filter. The filter consists of a dense grid of vertical and horizontal metal ribs, creating a series of rectangular compartments. The surface appears slightly reflective and has some texture. The lighting is somewhat harsh, creating strong shadows and highlights on the metallic components.
+   </div>
+</div>
+<p>
+<i>
+    Figure 38
+    <br/>
+    Pulse Cleaning Filter
+    <br/>
+    (Courtesy of Donaldson)
+   </i>
+</p>
+<h3>
+<b>
+    Inlet Cooling
+   </b>
+</h3>
+<p>
+   Inlet cooling systems decrease intake air temperature, and thereby increase power output, as shown in Fig. 39. A 0.5% decrease in power can result from a 1°C temperature increase. In hot climates, this variation in power output can be significant and costly. They are based on the principle of evaporative cooling. When moisture evaporates, it requires a large amount of heat to overcome the latent heat of vaporization. The result is a drop in air temperature.
+  </p>
+<img alt="Figure 39: Typical Gas Turbine Performance. A line graph showing Turbine Rating (%) on the y-axis (70 to 120) versus Inlet Air Temperature (°C) on the x-axis (0 to 50). Two lines are plotted: one increasing from approximately 98% at 0°C to 118% at 50°C, and another decreasing from approximately 118% at 0°C to 78% at 50°C." src="3102c32204f998dba666e1e915d5babf_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<table border="1">
+<caption>
+     Data for Figure 39: Typical Gas Turbine Performance
+    </caption>
+<thead>
+<tr>
+<th>
+       Inlet Air Temperature (°C)
+      </th>
+<th>
+       Turbine Rating (%) - Increasing Line
+      </th>
+<th>
+       Turbine Rating (%) - Decreasing Line
+      </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+       0
+      </td>
+<td>
+       98
+      </td>
+<td>
+       118
+      </td>
+</tr>
+<tr>
+<td>
+       10
+      </td>
+<td>
+       102
+      </td>
+<td>
+       112
+      </td>
+</tr>
+<tr>
+<td>
+       20
+      </td>
+<td>
+       106
+      </td>
+<td>
+       106
+      </td>
+</tr>
+<tr>
+<td>
+       30
+      </td>
+<td>
+       110
+      </td>
+<td>
+       100
+      </td>
+</tr>
+<tr>
+<td>
+       40
+      </td>
+<td>
+       114
+      </td>
+<td>
+       94
+      </td>
+</tr>
+<tr>
+<td>
+       50
+      </td>
+<td>
+       118
+      </td>
+<td>
+       78
+      </td>
+</tr>
+</tbody>
+</table>
+<div class="img-alt">
+    Figure 39: Typical Gas Turbine Performance. A line graph showing Turbine Rating (%) on the y-axis (70 to 120) versus Inlet Air Temperature (°C) on the x-axis (0 to 50). Two lines are plotted: one increasing from approximately 98% at 0°C to 118% at 50°C, and another decreasing from approximately 118% at 0°C to 78% at 50°C.
+   </div>
+</div>
+<p>
+   Figure 39
+   <br/>
+   Typical Gas Turbine Performance
+  </p>
+<p>
+   Various inlet cooling methods are used:
+  </p>
+<ul style="list-style-type: none">
+<li>
+    • Evaporative cooling
+   </li>
+<li>
+    • Fog cooling
+   </li>
+<li>
+    • Chillers
+   </li>
+</ul>
+<h3>
+   Evaporative Cooling
+  </h3>
+<p>
+   This system (Fig. 40) consists of a wetted media which is located downstream of the inlet air filter. This arrangement protects the wetted media from any airborne particles in the ambient air. Evaporative cooling enhances engine efficiency by increasing the density of the air. Increased air density raises the specific mass flow through the engine which improves the fuel efficiency and power output. This system operates as an air washer, thereby cleaning the air. Another advantage to this system is a reduction in the emissions of oxides of nitrogen.
+  </p>
+<img alt="Figure 40: Evaporative Cooling system diagram. It shows a Water Tank connected to an Air Filter and a Wetted Media. Combustion Air enters from the right, passes through the Wetted Media, then the Air Filter, and then the Combustion Turbine. Fuel is added to the Combustion Turbine, and Exhaust Gas exits from the left. A Blow Down line is connected to the bottom of the Wetted Media." src="2eb23c2210154279f8013a1594fbcc5a_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<pre>
+graph LR
+    WaterTank[Water Tank] --&gt; AirFilter[Air Filter]
+    WaterTank --&gt; WettedMedia[Wetted Media]
+    CombustionAir[Combustion Air] --&gt; WettedMedia
+    WettedMedia --&gt; AirFilter
+    AirFilter --&gt; CombustionTurbine[Combustion Turbine]
+    Fuel --&gt; CombustionTurbine
+    CombustionTurbine --&gt; ExhaustGas[Exhaust Gas]
+    WettedMedia -- Blow Down --&gt; BlowDown[Blow Down]
+  </pre>
+<div class="img-alt">
+    Figure 40: Evaporative Cooling system diagram. It shows a Water Tank connected to an Air Filter and a Wetted Media. Combustion Air enters from the right, passes through the Wetted Media, then the Air Filter, and then the Combustion Turbine. Fuel is added to the Combustion Turbine, and Exhaust Gas exits from the left. A Blow Down line is connected to the bottom of the Wetted Media.
+   </div>
+</div>
+<p>
+   Figure 40
+   <br/>
+   Evaporative Cooling
+  </p>
+<h3>
+   Fog Cooling
+  </h3>
+<p>
+   Atomized demineralized water under high pressure (7 000 to 20 000 kPa), is sprayed into an air stream (Fig. 41). Small fog droplets of approximately 10 microns (
+   \(
+    \mu\text{m}
+   \)
+   ) diameter are desired as they have a faster evaporation rate. Fogging systems offer a very small pressure drop to the flow of inlet air to the gas turbine.
+  </p>
+<img alt="Diagram of a Fog Inlet Air Cooling System (Figure 41)." src="c5655e700cc3e9aac7e9f4f07f30264d_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<p>
+    This schematic diagram illustrates a fog cooling system for a gas turbine. At the top, a 'Demineralised Water Tank' is connected to a 'Fog Spray System'. The 'Fog Spray System' is positioned to spray water into the 'Combustion Air' stream. The 'Combustion Air' stream passes through an 'Air Filter' before entering the 'Combustion Turbine'. 'Fuel' is introduced into the 'Combustion Turbine', and 'Exhaust Gas' is shown exiting from it.
+   </p>
+<div class="img-alt">
+    Diagram of a Fog Inlet Air Cooling System (Figure 41).
+   </div>
+</div>
+<p>
+   Figure 41
+   <br/>
+   Fog Inlet Air Cooling System
+  </p>
+<h3>
+   Chillers
+  </h3>
+<p>
+   Inlet air to the gas turbine is cooled by passing it through a finned coil of tubes (Fig. 42) which uses either
+   \(
+    \text{NH}_3
+   \)
+   (Ammonia) or HFC-134a refrigerant as the cooling medium. The air temperature must not be less than
+   \(
+    5^\circ\text{C}
+   \)
+   to prevent the formation of ice on the coils. Refrigeration will always provide the design inlet temperature regardless of the ambient conditions, unlike the evaporative systems which lose effectiveness in high humidity conditions.
+  </p>
+<img alt="Diagram of a Refrigeration Air Cooling System (Figure 42)." src="4cc7cdce3d498d8b0ba033a9be24ade5_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<p>
+    This schematic diagram shows a refrigeration air cooling system. A 'Mechanical Refrigeration Machine' is connected to a condenser at the top left and an evaporator coil in the center. The 'Mechanical Refrigeration Machine' is linked to an 'Ammonia Suction Line' and an 'Ammonia Liquid Line'. The 'Ammonia Liquid Line' passes through the evaporator coil, where 'Combustion Air' is cooled. The 'Combustion Air' stream passes through an 'Air Filter' before entering the 'Combustion Turbine'. 'Fuel' is introduced into the 'Combustion Turbine', and 'Exhaust Gas' is shown exiting from it. A 'Condensate Drip Pan' is located below the evaporator coil to collect condensed water.
+   </p>
+<div class="img-alt">
+    Diagram of a Refrigeration Air Cooling System (Figure 42).
+   </div>
+</div>
+<p>
+   Figure 42
+   <br/>
+   Refrigeration Air Cooling System
+  </p>
+<h3>
+   Anti-Icing Systems
+  </h3>
+<p>
+   Ice can form in the air intake, or on the first few stages of the compressor, when low temperatures combine with humidity. If chunks of ice are drawn into the compressor, they can cause major damage, such as catastrophic destruction of the compressor section blading.
+  </p>
+<p>
+   Various anti-icing systems are used:
+  </p>
+<ul style="list-style-type: none">
+<li>
+    • Air is bled from the hot end of the compressor and injected into the front of the compressor through the nose cone and the first few stator vanes (see Fig. 43)
+   </li>
+<li>
+    • Heating coils are installed in the air intake
+   </li>
+<li>
+    • Heated air is fed from the exhaust (or another source) into the air intake
+   </li>
+</ul>
+<p>
+   These systems are activated only when icing conditions are present because they reduce the efficiency and power output of the gas turbine.
+  </p>
+<img alt="Diagram of the Rolls Royce Avon Anti-Icing System showing the intake guide vanes, starter fairing, anti-icing hot air manifold, and stator blades." src="4b0f6b9fffe1f9b12f0db27b76e617ca_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<p>
+    The diagram illustrates a cross-section of a gas turbine engine's intake and compressor section. Key components are labeled: 'STARTER FAIRING' at the bottom left, 'INTAKE GUIDE VANES' in the center, 'ANTI-ICING HOT AIR MANIFOLD' above the intake, and 'ANTI-ICING HOT AIR FROM COMPRESSOR' entering from the top right. 'STATOR BLADES' are shown in the compressor section. The diagram shows the flow of air and the placement of the anti-icing system components.
+   </p>
+<div class="img-alt">
+    Diagram of the Rolls Royce Avon Anti-Icing System showing the intake guide vanes, starter fairing, anti-icing hot air manifold, and stator blades.
+   </div>
+</div>
+<p>
+   Figure 43
+   <br/>
+   Rolls Royce Avon Anti-Icing System
+   <br/>
+   (Courtesy of Rolls Royce)
+  </p>
+<h2>
+   EXHAUST SYSTEMS
+  </h2>
+<p>
+   The exhaust system directs the hot turbine exhaust, with as low a pressure loss as possible, to a location that is safe for employees and equipment. It has to be structurally sound and designed for high exhaust temperatures. Care should be taken to ensure that exhaust air does not re-circulate into the air intake since this will result in a loss of maximum power, unless this is part of an anti-icing system.
+  </p>
+<p>
+   Noise attenuators and silencers are often added to the exhaust in accordance with local requirements.
+  </p>
+
+
+<h1>
+   Objective 8
+  </h1>
+<p>
+<b>
+<i>
+     Describe the design and operation of a gas turbine lubricating oil system.
+    </i>
+</b>
+</p>
+<h2>
+   INTRODUCTION
+  </h2>
+<p>
+   Most gas turbines have lube oil systems that lubricate the bearings supporting the rotor or rotors. Aero-derivative gas turbines use antifriction bearings which require small lube oil systems. Heavy-duty gas turbines use journal bearings which require larger lube oil systems. Microturbines are the exception; because of their small size, they are able to operate with air cooled bearings that do not require a lube oil system.
+  </p>
+<p>
+   All lube oil systems perform the following basic functions:
+  </p>
+<ul style="list-style-type: none">
+<li>
+    • Lubricate and/or separate the rotating surfaces from the stationary surfaces
+   </li>
+<li>
+    • Cool the bearings and other critical components
+   </li>
+<li>
+    • Assist in controlling radial and axial thrust
+   </li>
+</ul>
+<p>
+   All lube oil systems include these basic components:
+  </p>
+<ul style="list-style-type: none">
+<li>
+    • An oil reservoir to ensure an adequate supply of oil
+   </li>
+<li>
+    • Oil heaters in the reservoirs to maintain a certain start-up temperature and reduce the potential for moisture to collect in and contaminate the oil
+   </li>
+<li>
+    • Filters to ensure the oil is clean
+   </li>
+<li>
+    • Pumps to provide pressure
+   </li>
+<li>
+    • Coolers to ensure oil temperatures are kept within operating limits
+   </li>
+<li>
+    • Start-up permissives for oil pressure, oil temperature and oil flow rates
+   </li>
+<li>
+    • Protective, monitoring, and control devices (e.g. gauges and safety valves)
+   </li>
+</ul>
+<p>
+   Gas turbine installations may have one or more lube oil system. These are the major configurations:
+  </p>
+<ul style="list-style-type: none">
+<li>
+    • One integrated lube oil system that serves the gas turbine, power turbine, gearbox and driven equipment (compressor or generator), incorporated in heavy-duty gas turbines such as those manufactured by Solar Turbines.
+   </li>
+<li>
+    • Two lube oil systems: one for the gas turbine and power turbine, one for the load device. This design is also used in heavy-duty gas turbines.
+   </li>
+<li>
+    • Three separate lube oil systems: one for the engine, one for the power turbine, and one for the load. Used in some aero-derivative gas turbines.
+   </li>
+</ul>
+<h2>
+   Bearings
+  </h2>
+<p>
+   Gas turbines use two different types of bearings:
+  </p>
+<ul style="list-style-type: none">
+<li>
+    • Antifriction (roller and/or ball) bearings - common in aero-derivative gas turbines that have lighter rotors
+   </li>
+<li>
+    • Radial (journal or tilt-pad) bearings - common in heavy-duty gas turbines that have heavier rotors
+   </li>
+</ul>
+<p>
+   Fig. 44 shows an antifriction (roller) bearing for a Rolls Royce RB211. It features a separate oil squeeze film to dampen the bearing and increase its life. This engine also uses ball bearings (not shown) to counter and control thrust.
+  </p>
+<img alt="Cross-sectional diagram of a Rolls Royce RB211 antifriction bearing." src="d5fc881e4328d6a2e76c9576408ced49_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<p>
+    A cross-sectional diagram of a roller bearing assembly. At the top, a nozzle labeled 'Oil Feed' directs a stream of oil towards the bearing. The oil forms a 'Squeeze Oil Film' between the bearing's outer race and the housing. The 'Bearing Outer Race' is shown as a thick, dark ring. To the right, a label 'To Bearing Lubrication' points to a series of small circles representing oil droplets or a flow path. The bearing is mounted within a housing, and the inner ring is visible on the left, showing its connection to a shaft.
+   </p>
+<div class="img-alt">
+    Cross-sectional diagram of a Rolls Royce RB211 antifriction bearing.
+   </div>
+</div>
+<p>
+<i>
+    Figure 44
+    <br/>
+    Rolls Royce RB211 Antifriction Bearing
+    <br/>
+    (Courtesy of Rolls Royce)
+   </i>
+</p>
+<p>
+   The bearing configuration for the Rolls Royce RB211 is shown in Fig. 45. The two rotors shown require a more complicated arrangement using five bearings: two thrust (ball) bearings, and three roller bearings for the radial loads.
+  </p>
+<img alt="Figure 45: Rolls Royce RB211 Bearing Configuration. A schematic cross-section of a gas turbine engine showing the arrangement of bearings. Labels from left to right are: IP Compressor Bearing, IP Thrust Bearing, HP Thrust Bearing, HP Turbine Bearing, and IP Turbine Bearing. A dashed line indicates the engine's central axis. Below the diagram, a legend defines IP as Intermediate Pressure and HP as High Pressure." src="1df14e8a75f3f3fcf750749dbbd2c3f1_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<p>
+    IP = Intermediate Pressure      HP = High Pressure
+   </p>
+<div class="img-alt">
+    Figure 45: Rolls Royce RB211 Bearing Configuration. A schematic cross-section of a gas turbine engine showing the arrangement of bearings. Labels from left to right are: IP Compressor Bearing, IP Thrust Bearing, HP Thrust Bearing, HP Turbine Bearing, and IP Turbine Bearing. A dashed line indicates the engine's central axis. Below the diagram, a legend defines IP as Intermediate Pressure and HP as High Pressure.
+   </div>
+</div>
+<p>
+<i>
+    Figure 45
+    <br/>
+    Rolls Royce RB211 Bearing Configuration
+    <br/>
+    (Courtesy of Rolls Royce)
+   </i>
+</p>
+<p>
+   Heavy-duty gas turbines require radial bearings which can take higher loads. Although standard journal bearings are used, tilt-pad bearings are more common. Fig. 46 shows a Solar bearing with five tilting pads on individual pivot pins.
+  </p>
+<img alt="Figure 46: Radial Tilt-Pad Bearing. A cross-sectional view of a radial tilt-pad bearing. It shows five individual tilting pads, each mounted on a pivot pin. The pads are held in place by a steel shoe. Labels point to a 'Tilting Pad', a 'Pivot Pin', and the 'Steel Shoe'." src="de5063b406eb787334c453b07b7dcc52_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    Figure 46: Radial Tilt-Pad Bearing. A cross-sectional view of a radial tilt-pad bearing. It shows five individual tilting pads, each mounted on a pivot pin. The pads are held in place by a steel shoe. Labels point to a 'Tilting Pad', a 'Pivot Pin', and the 'Steel Shoe'.
+   </div>
+</div>
+<p>
+<i>
+    Figure 46
+    <br/>
+    Radial Tilt-Pad Bearing
+    <br/>
+    (Courtesy of Solar Turbines)
+   </i>
+</p>
+<p>
+   Fig. 47 shows a tilt-pad thrust bearing.
+  </p>
+<img alt="Figure 47: Tilt-Pad Thrust Bearing. The top part is a circular cross-section showing the internal structure with labels 'BASE RING' and 'THRUST PAD'. The bottom part is a longitudinal cross-section showing the bearing assembly with labels: 'THRUST PAD', 'THRUST DIRECTION' (indicated by a downward arrow), 'ROTATION' (indicated by a rightward arrow), 'THRUST COLLAR', 'LOWER LINK', 'LEVELING DISK (Upper Link)', 'OIL FEED HOLE', 'PIVOT PIN', and 'BASE RING'." src="5f18c728fc511750ffcaa626716b920e_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    Figure 47: Tilt-Pad Thrust Bearing. The top part is a circular cross-section showing the internal structure with labels 'BASE RING' and 'THRUST PAD'. The bottom part is a longitudinal cross-section showing the bearing assembly with labels: 'THRUST PAD', 'THRUST DIRECTION' (indicated by a downward arrow), 'ROTATION' (indicated by a rightward arrow), 'THRUST COLLAR', 'LOWER LINK', 'LEVELING DISK (Upper Link)', 'OIL FEED HOLE', 'PIVOT PIN', and 'BASE RING'.
+   </div>
+</div>
+<p>
+   Figure 47
+   <br/>
+   Tilt-Pad Thrust Bearing
+   <br/>
+   (Courtesy of Solar Turbines)
+  </p>
+<p>
+   On a dual-shaft heavy-duty gas turbine, thrust bearings are located on the front end of the compressor, at the back end of the compressor, before the gas turbine, and after the power turbine. Thrust bearings are positioned at the front end of the compressor and next to the power turbine bearings (one for each shaft).
+  </p>
+<h3>
+   AERO-DERIVATIVE GAS TURBINE LUBE OIL SYSTEM
+  </h3>
+<p>
+   Fig. 48 shows the lube oil system for an aero-derivative gas turbine — the General Electric LM6000 (used for power generation). It lubricates the gas turbine and power turbine bearings. The driven equipment is handled by a separate system.
+  </p>
+<img alt="Schematic diagram of the General Electric LM6000 Lube Oil System, divided into Supply and Scavenge sections." src="f9a14fbfecbd7d059226cc93677d721b_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<p>
+    The diagram illustrates the lube oil system for the General Electric LM6000, organized into two primary sections: the
+    <b>
+     SUPPLY SYSTEM
+    </b>
+    on the left and the
+    <b>
+     SCAVENGE SYSTEM
+    </b>
+    on the right.
+   </p>
+<ul style="list-style-type: none">
+<li>
+<b>
+      Supply System:
+     </b>
+     This section begins with a
+     <b>
+      supply pump
+     </b>
+     driven by an
+     <b>
+      Auxiliary Gearbox Mechanical Drive
+     </b>
+     . The oil is pumped through a
+     <b>
+      Duplex Supply Filters
+     </b>
+     unit. Various monitoring instruments are connected to the supply lines, including temperature elements (
+     <b>
+      TE
+     </b>
+     ), pressure indicators (
+     <b>
+      PI
+     </b>
+     ), pressure transmitters (
+     <b>
+      PT
+     </b>
+     ), and differential pressure sensors (
+     <b>
+      PDI
+     </b>
+     ,
+     <b>
+      PD SH
+     </b>
+     ). The oil then enters the main engine components.
+    </li>
+<li>
+<b>
+      Engine Components:
+     </b>
+     The central part of the diagram shows the engine's internal components, including a compressor and turbine section. Multiple
+     <b>
+      TE
+     </b>
+     (temperature element) sensors are positioned throughout this section to monitor oil temperatures.
+    </li>
+<li>
+<b>
+      Scavenge System:
+     </b>
+     Oil is collected from the engine components and sent to an
+     <b>
+      Air/Oil Separator
+     </b>
+     , which vents
+     <b>
+      AIR
+     </b>
+     . The separated oil is then pumped by a
+     <b>
+      Scavenge Pump Element (5)
+     </b>
+     . The oil passes through a
+     <b>
+      Duplex Scavenge Filters
+     </b>
+     unit, monitored by
+     <b>
+      PD SH
+     </b>
+     and
+     <b>
+      PDI
+     </b>
+     sensors. It then flows through
+     <b>
+      Duplex Shell &amp; Tube Coolers
+     </b>
+     , which are cooled by
+     <b>
+      Cooling Water In
+     </b>
+     and
+     <b>
+      Cooling Water Out
+     </b>
+     lines. A
+     <b>
+      TCV
+     </b>
+     (temperature control valve) is also shown in this section.
+    </li>
+<li>
+<b>
+      Reservoir:
+     </b>
+     The cooled oil is returned to the
+     <b>
+      LUBE OIL RESERVOIR (568L)
+     </b>
+     . This tank is equipped with a low oil level sensor (
+     <b>
+      LSL
+     </b>
+     ), a temperature indicator (
+     <b>
+      TI
+     </b>
+     ), a low oil temperature sensor (
+     <b>
+      TSL
+     </b>
+     ), and a level gauge (
+     <b>
+      LG
+     </b>
+     ).
+    </li>
+</ul>
+<div class="img-alt">
+    Schematic diagram of the General Electric LM6000 Lube Oil System, divided into Supply and Scavenge sections.
+   </div>
+</div>
+<p>
+   Figure 48
+   <br/>
+   General Electric LM6000 Lube Oil System
+   <br/>
+   (Courtesy of GE Power Systems)
+  </p>
+<p>
+   This lube oil system is divided into two sections: a supply system and a scavenge system. To prevent corrosion, all piping, fittings, and the reservoir are Type 304 stainless steel. The lube oil used is synthetic type oil suitable for high temperatures.
+  </p>
+<p>
+   The oil reservoir contains approximately 500L in a 568L tank. It is fitted with protective devices to guard against low oil level and low oil temperature. A thermostatically controlled heater in the lube oil tank reservoir ensures that a minimum oil temperature is maintained to reduce the stresses on the turbine on startup and to keep moisture from condensing in the reservoir and contaminating the oil.
+  </p>
+<p>
+   An electric motor driven auxiliary lube oil pump is used to initially pressurize the system and satisfy the permissives to allow the turbine to start.
+  </p>
+<p>
+   A positive displacement pump, driven by an auxiliary gearbox on the engine, provides the required pressure to the bearings. After it leaves the pump, the oil is filtered through a duplex full-flow filter.
+  </p>
+<p>
+   The oil supply is protected by switches for:
+  </p>
+<ul style="list-style-type: none">
+<li>
+    • High oil temperature
+   </li>
+<li>
+    • Low oil pressure
+   </li>
+<li>
+    • High filter differential pressure
+   </li>
+</ul>
+<p>
+   Then, the oil flows through the bearings and accumulates in the bearing sumps. The oil temperature is measured at each scavenge line in case of bearing problems.
+  </p>
+<p>
+   Chip detectors are often located in the sumps to detect metal particles. If a bearing becomes damaged, metal particles break away and become entrained in the oil. Chip detectors are basically magnets that attract metal particles and detect when they accumulate. When the chip detector alarms, the detector will be removed and the particles that have been captured by the detector will be analyzed. The quantity and type of material collected will indicate:
+  </p>
+<ul style="list-style-type: none">
+<li>
+    • Where the problem is
+   </li>
+<li>
+    • How severe the problem has become
+   </li>
+</ul>
+<p>
+   Scavenge pumps (also driven by the auxiliary gearbox) provide pressure to flow the oil from the bearing sumps through another set of filters, and then through duplex thermostatically controlled water-cooled coolers. Then, the oil flows back into the reservoir.
+  </p>
+<h3>
+   HEAVY-DUTY GAS TURBINE LUBE OIL SYSTEM
+  </h3>
+<p>
+   Fig. 49 shows the lube oil system for a heavy-duty gas turbine with a single integrated oil system serving the gas turbine, gearbox, and driven equipment.
+  </p>
+<p>
+   The oil reservoir is much larger than aero-derivative gas turbine lube oil reservoirs. It normally contains mineral oil, which does not have as high a temperature range as synthetic oil, but is more cost-effective. Oil temperatures are not as high in heavy-duty gas turbines since the oil flow is greater. If necessary, equipment may be installed to heat the oil supply.
+  </p>
+<p>
+   During normal operation, oil pressure is supplied by a main lube oil pump which is driven from an accessory drive mounted on the front of the compressor shaft. Prior to startup and on shutdown, oil pressure is supplied by an AC-driven pre/post lube oil pump. This pump runs for a period of time after shutdown to cool and lubricate the bearings and prevent damage. In case of power loss or pre/post lube oil pump failure, a third pump — using another source of energy, for example, a DC pump driven from batteries — is available as backup.
+  </p>
+<p>
+   The cooled oil is cleaned by duplex filters that can be replaced during operation. Duplex filter systems consist of two filters in parallel to allow one to be serviced while the other is on line. It is monitored by a differential pressure alarm and pressure gauge. At the lube oil header, protection systems guard against high oil temperature and low oil pressure.
+  </p>
+<p>
+   After leaving the bearings, the oil drains back into the oil reservoir using gravity. Oil temperature is usually measured in the drains to monitor bearing condition.
+  </p>
+<p>
+   A hydraulic pump is sometimes installed after the main lube oil pump to supply high pressure oil to control the variable inlet and stator vanes, the fuel control valve, and bleed valves.
+  </p>
+<img alt="Schematic diagram of a Lube Oil System for a Solar Gas Turbine. The diagram shows the flow of oil from a reservoir tank through various components including pumps, filters, coolers, and sensors to a gas turbine and gearbox. A legend defines symbols for drains, oil, electrical components, vents, and the main oil path." src="a738993919a50143787084ee7ce6e2f2_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<p>
+    The diagram illustrates a complex lube oil system. At the bottom, an oil reservoir tank is shown with a vent/ALSD pressure transmitter, a sight glass, and a tank drain. The main oil path (solid line) starts from the tank, passes through a strainer, and is driven by a 'MAIN LUBE PUMP TURBINE DRIVEN'. The oil then flows through a series of components: a 'RELIEF VALVE', a 'TEMP VALVE', a 'HEADER PRESSURE REGULATOR', a 'CHECK VALVE', a 'FILTER', another 'CHECK VALVE', a 'TRANSFER VALVE', a 'TEMP RTD', a 'PRESSURE GAUGE', and a 'PRESSURE TRANSMITTER'. The oil then enters the 'GAS TURBINE' and 'GEARBOX' which are connected to 'DRIVEN EQUIPMENT'. Various monitoring and control components are integrated into the system, including 'OIL COOLER', 'ALARM SWITCH', 'AP GAUGE', 'TEMPERATURE GAUGE', 'FLAME ARRESTOR (Optional)', 'FILTER COALESCER (Optional)', 'AC PRE/POST LUBE PUMP', 'DC POST LUBE BACKUP PUMP', 'SIGHT FLOW GAUGES', 'TEMP RTDS (Optional)', and a 'HEATER (Optional)'. A legend in the top right corner defines the symbols: dashed line for 'Drain', triangle with a dot for 'Oil', 'E' for 'Electrical', triangle with a cross for 'Vent', and solid line for 'Main Oil Path'.
+   </p>
+<div class="img-alt">
+    Schematic diagram of a Lube Oil System for a Solar Gas Turbine. The diagram shows the flow of oil from a reservoir tank through various components including pumps, filters, coolers, and sensors to a gas turbine and gearbox. A legend defines symbols for drains, oil, electrical components, vents, and the main oil path.
+   </div>
+</div>
+<p>
+   * To guide vane, bleed valve and fuel actuators
+  </p>
+<p>
+   Figure 49
+   <br/>
+   Lube Oil System for a Solar Gas Turbine
+   <br/>
+   (Courtesy of Solar Turbines)
+  </p>
+<h1>
+   Objective 9
+  </h1>
+<p>
+<b>
+    Describe the design and operation of a gas turbine fuel system.
+   </b>
+</p>
+<h2>
+   NATURAL GAS FUEL
+  </h2>
+<p>
+   Natural gas is the best fuel for gas turbines since it:
+  </p>
+<ul style="list-style-type: none">
+<li>
+    • Promotes the most efficient combustion
+   </li>
+<li>
+    • Produces the lowest environmental emissions
+   </li>
+<li>
+    • Delivers the longest engine life
+   </li>
+</ul>
+<p>
+   It has to operate within a specified range of heating values and be free of liquid contaminants and sulphur compounds. The pressure of the turbine fuel gas system is usually much lower than the supply pipeline operating pressure. When the pressure is reduced across a throttling valve, the gas temperature will drop due to the natural refrigerating effect. This will tend to allow the heavier constituents in the gas to condense. For this reason, line heaters are usually installed just downstream of the pressure reducing valves to increase the gas temperature above the dew point of the heavier constituents in the gas.
+  </p>
+<p>
+   If low energy fuel is used, special fuel nozzles and combustors must be installed. As well, the fuel gas system has to be adapted to accommodate the higher flow rates required to deliver the same fuel energy.
+  </p>
+<h3>
+   FUEL GAS SYSTEM
+  </h3>
+<p>
+   The General Electric LM6000 fuel gas system, shown in Fig.50, is representative of most gas turbines.
+  </p>
+<p>
+   A fuel gas compressor is installed in case extra compression is required to boost a low pressure fuel source. The pressure of the fuel gas has to be higher than the pressure of the compressed air delivered to the combustion section. A pressure regulator and relief valve is installed to ensure that the fuel gas supply is maintained at the correct pressure. Low and high pressure switches protect against over or under pressure conditions.
+  </p>
+<p>
+   A fuel filter ensures that contaminants do not enter the fuel system. Some systems use heat exchangers to raise the fuel gas to its optimum temperature to ensure that:
+  </p>
+<ul style="list-style-type: none">
+<li>
+    • Complete combustion occurs in the combustor
+   </li>
+<li>
+    • The gas always remains above the dew point temperatures of the heaviest constituents in the fuel gas
+   </li>
+</ul>
+<p>
+   A fuel gas flow meter monitors fuel consumption, but is not used for fuel control. Fuel is metered and controlled by the fuel metering valve, one of the most important components of the fuel gas system. It is also an essential component of the startup and shutdown sequence. Fuel valves are normally electrically controlled with hydraulic actuation, but electrically actuated valves are becoming more common. The fuel metering valve ensures that the correct amount of fuel is provided according to the operating conditions. It precisely controls the flow of fuel to ensure that maximum turbine temperature is not exceeded. The rate at which the fuel valve is opened and closed is limited to prevent temperature increases that might damage the turbine. Additional shutoff valves are provided for emergency purposes.
+  </p>
+<img alt="Schematic diagram of the General Electric LM6000 Fuel Gas System. The diagram shows the flow of fuel gas from the Fuel Gas Compressor through various components to the Fuel Gas Manifold and then to 30 Fuel Gas Nozzles. The components include a Duplex Filter Separator, Pressure Regulator, FSD Valve, Bypass Valve, Fuel Gas Scrubber, 100 mesh (149 micron) strainer, Fuel Gas Flow Meter, Primary Shut Off Valve, Fuel Metering Valve, and Secondary Shut Off Valve. Instrumentation includes PDH, PT, PSL, PS, PI, and TE sensors connected to the Unit Control Panel." src="f4fdd410cdb84df81274da55721e56fb_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<p>
+    The diagram illustrates the fuel gas system for the General Electric LM6000. The fuel gas is supplied from a Fuel Gas Compressor. It passes through a Fuel Gas Scrubber, then a Bypass Valve, an FSD Valve, and a Pressure Regulator. The next component is a Duplex Filter Separator, which is connected to the unit control panel via a PDH (Pressure Differential High) sensor. The fuel gas then flows through a 100 mesh (149 micron) strainer, followed by a Fuel Gas Flow Meter. The flow meter is connected to the unit control panel via FT (Flow Transmitter) and TE (Temperature Element) sensors. The fuel gas then passes through a Primary Shut Off Valve, which is connected to the unit control panel via PT (Pressure Transmitter), PSL (Pressure Switch Low), PS (Pressure Switch), and PI (Pressure Indicator) sensors. A Vent line is also connected to the unit control panel. The fuel gas then passes through a Fuel Metering Valve, which is connected to the unit control panel via an E/M (Electro-Mechanical) converter. The fuel gas then passes through a Secondary Shut Off Valve, which is connected to the unit control panel via a PT (Pressure Transmitter) sensor. The fuel gas then flows to the Fuel Gas Manifold, which is connected to 30 Fuel Gas Nozzles.
+   </p>
+<div class="img-alt">
+    Schematic diagram of the General Electric LM6000 Fuel Gas System. The diagram shows the flow of fuel gas from the Fuel Gas Compressor through various components to the Fuel Gas Manifold and then to 30 Fuel Gas Nozzles. The components include a Duplex Filter Separator, Pressure Regulator, FSD Valve, Bypass Valve, Fuel Gas Scrubber, 100 mesh (149 micron) strainer, Fuel Gas Flow Meter, Primary Shut Off Valve, Fuel Metering Valve, and Secondary Shut Off Valve. Instrumentation includes PDH, PT, PSL, PS, PI, and TE sensors connected to the Unit Control Panel.
+   </div>
+</div>
+<p>
+   Figure 50
+   <br/>
+   General Electric LM6000 Fuel Gas System
+   <br/>
+   (Courtesy of GE Power Systems)
+  </p>
+<h3>
+   LIQUID FUELS
+  </h3>
+<p>
+   Gas turbines can burn a wide range of liquid fuels including:
+  </p>
+<ul style="list-style-type: none">
+<li>
+    • Distillates, such as kerosene, which do not require fuel treatment
+   </li>
+<li>
+    • Blended heavy distillates and low ash crudes which require some treatment
+   </li>
+<li>
+    • Residuals and heavy ash crudes which require considerable cleaning and treatment
+   </li>
+</ul>
+<p>
+   Fuel quality affects gas turbine availability. As fuel quality decreases, maintenance actions and overhauls are needed more frequently and maintenance costs increase.
+  </p>
+<h3>
+   FUEL OIL SYSTEM
+  </h3>
+<p>
+   An example of a fuel oil system is shown in Fig. 51. The system starts with a fuel storage tank and fuel treatment.
+  </p>
+<p>
+   Treatment varies with the type of fuel and may include centrifuges, filters, de-watering, and chemical treatment. Chemicals that are especially harmful to the turbine section are sodium, potassium, and vanadium since they cause rapid corrosion. Gas turbines burn mainly natural gas and light oil. Crude oil, residual, and some distillates contain corrosive components and as such require fuel treatment equipment. In addition, ash deposits from these fuels result in gas turbine deratings of up to 15 percent. However, they may still be economically attractive fuels, particularly in combined-cycle plants.
+  </p>
+<p>
+   Sodium and potassium are removed from residual, crude and heavy distillates by a water washing procedure. A simpler and less expensive purification system will do the same job for light crude and light distillates. A magnesium additive system may also be needed to reduce the corrosive effects if vanadium is present. Fuels requiring such treatment must have a separate fuel-treatment plant and a system of accurate fuel monitoring to assure reliable, low-maintenance operation of gas turbines.
+  </p>
+<p>
+   Then, the cleaned and treated oil is filtered and pumped to the gas turbine where it is filtered once more. Similar to fuel gas systems, there is a main metering valve with a primary and secondary shutoff valve. The liquid fuel must be supplied to the nozzles at a specific pressure to ensure proper and efficient atomization and combustion. To handle load changes the pressure controlled bypass valve directs the excess flow back to the storage tank to maintain a set operating pressure on the system. Drains are provided on the fuel manifolds.
+  </p>
+<img alt="Schematic diagram of a Liquid Fuel System (General Electric LM6000)." src="d4af765160d04ecef538e5066006dc77_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<p>
+    The diagram illustrates the liquid fuel system for a General Electric LM6000 gas turbine. The system begins with a 'FUEL OIL STORAGE' tank on the right, which feeds a 'TRANSFER PUMP'. This pump draws fuel through a 'FLOATING SUCTION' line into a 'CLEAN OIL STORAGE' tank. From there, the fuel is pumped through a 'FILTER' and into a 'DUPLEX HIGH PRESSURE PUMP MODULE'. This module contains two parallel pump paths, each with its own pressure indicator (PI) and pressure transmitter (PT). The output of the pump module passes through a series of components: a 'DUPLEX FILTERS' unit, a 'FUEL OIL FLOWMETER', a 'PRIMARY SHUT OFF VALVE', a 'FUEL METERING VALVE', and another 'FUEL OIL FLOWMETER'. These components are connected to a 'To unit control panel' via various sensors including pressure indicators (PI), pressure differentials (PDI), pressure transmitters (PT), and temperature indicators (TE). The fuel then passes through a 'SECONDARY SHUT OFF VALVE' and a 'PRESSURIZING VALVE' before entering the 'Primary Liquid Fuel Manifold' and 'Secondary Liquid Fuel Manifold'. These manifolds supply '30 Liquid Fuel Nozzles'. Excess fuel from the nozzles is directed 'TO DRAIN' through a return line labeled 'Liquid Fuel Return'.
+   </p>
+<div class="img-alt">
+    Schematic diagram of a Liquid Fuel System (General Electric LM6000).
+   </div>
+</div>
+<p>
+   Figure 51
+   <br/>
+   Liquid Fuel System (General Electric LM6000)
+   <br/>
+   (Courtesy of GE Power Systems)
+  </p>
+<p>
+   Protective instrumentation is installed on the fuel gas system to monitor, control, alarm and/or completely shutdown the unit for specific conditions of pressure, temperature and flow rates.
+  </p>
+<h3>
+   Dual Fuel Systems
+  </h3>
+<p>
+   Some gas turbines have dual fuel capability so that the operator can switch to a less expensive fuel, or use the alternative fuel as a backup. An example of a dual fuel system (gas and liquid), shown in Fig. 52, requires a special fuel nozzle. The control system design is more complex to manage the two types of fuels and to accommodate the switchover between them. Some systems can burn a mixture of gaseous and liquid fuels simultaneously.
+  </p>
+<img alt="Schematic diagram of a Dual Fuel System (Rolls Royce Avon) showing liquid and gas fuel paths, control units, and sensors." src="af7916c89a458fdab6c3f443217388ae_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<p>
+    The diagram illustrates the Dual Fuel System (Rolls Royce Avon) architecture. It is divided into two main fuel supply paths: Liquid and Gas.
+   </p>
+<ul style="list-style-type: none">
+<li>
+<b>
+      Liquid Fuel Path:
+     </b>
+<ul style="list-style-type: none">
+<li>
+       Starts at
+       <b>
+        LIQUID SUPPLY
+       </b>
+       .
+      </li>
+<li>
+       Passes through an
+       <b>
+        LP FILTER
+       </b>
+       .
+      </li>
+<li>
+       Then through an
+       <b>
+        HP FUEL PUMP
+       </b>
+       .
+      </li>
+<li>
+       From the pump, the path splits: one branch goes through a
+       <b>
+        PRESSURIZING RELIEF VALVE
+       </b>
+       to an
+       <b>
+        HP FILTER
+       </b>
+       , and another branch goes to a
+       <b>
+        SERVO SOLENOID VALVE
+       </b>
+       which leads to
+       <b>
+        SPILL
+       </b>
+       .
+      </li>
+<li>
+       From the
+       <b>
+        HP FILTER
+       </b>
+       , the fuel goes through a
+       <b>
+        PRESSURIZING VALVE
+       </b>
+       and a
+       <b>
+        LIQUID SHUT-OFF COCK
+       </b>
+       to
+       <b>
+        TO BURNERS
+       </b>
+       .
+      </li>
+<li>
+       There is also a bypass line from the
+       <b>
+        LIQUID SUPPLY
+       </b>
+       that goes directly to the
+       <b>
+        LIQUID FLOW CONTROL UNIT
+       </b>
+       .
+      </li>
+</ul>
+</li>
+<li>
+<b>
+      Gas Fuel Path:
+     </b>
+<ul style="list-style-type: none">
+<li>
+       Starts at
+       <b>
+        GAS SUPPLY
+       </b>
+       .
+      </li>
+<li>
+       Passes through a
+       <b>
+        GAS REGULATING VALVE
+       </b>
+       .
+      </li>
+<li>
+       Then through a
+       <b>
+        3 WAY SOLENOID VALVE
+       </b>
+       which can divert flow
+       <b>
+        TO ATMOSPHERE
+       </b>
+       or to the
+       <b>
+        GAS FILTER
+       </b>
+       .
+      </li>
+<li>
+       From the
+       <b>
+        GAS FILTER
+       </b>
+       , the fuel goes through a
+       <b>
+        GAS SHUT-OFF COCK
+       </b>
+       to
+       <b>
+        TO BURNERS
+       </b>
+       .
+      </li>
+<li>
+       A
+       <b>
+        VENT VALVE TO ATMOSPHERE
+       </b>
+       is connected to the line between the
+       <b>
+        3 WAY SOLENOID VALVE
+       </b>
+       and the
+       <b>
+        GAS FILTER
+       </b>
+       .
+      </li>
+</ul>
+</li>
+<li>
+<b>
+      Control Systems:
+     </b>
+<ul style="list-style-type: none">
+<li>
+       The
+       <b>
+        LIQUID FLOW CONTROL UNIT
+       </b>
+       (containing a
+       <b>
+        LIQUID METERING VALVE
+       </b>
+       and an
+       <b>
+        ACTUATOR
+       </b>
+       ) receives inputs from
+       <b>
+        LP COMPRESSOR SPEED (N1)
+       </b>
+       and
+       <b>
+        POWER TURBINE SPEED (N3)
+       </b>
+       . It is controlled by an
+       <b>
+        ELECTRIC CONTROL UNIT
+       </b>
+       and a
+       <b>
+        HYDRAULIC POWER PACK
+       </b>
+       .
+      </li>
+<li>
+       The
+       <b>
+        GAS FLOW CONTROL UNIT
+       </b>
+       (containing a
+       <b>
+        GAS METERING VALVE
+       </b>
+       and an
+       <b>
+        ACTUATOR
+       </b>
+       ) receives inputs from
+       <b>
+        COMPRESSOR DELIVERY AIR (P2)
+       </b>
+       ,
+       <b>
+        EXHAUST GAS TEMPERATURE (Tec)
+       </b>
+       , and
+       <b>
+        AMBIENT TEMPERATURE SENSOR (Tt1)
+       </b>
+       . It is also controlled by the
+       <b>
+        ELECTRIC CONTROL UNIT
+       </b>
+       and the
+       <b>
+        HYDRAULIC POWER PACK
+       </b>
+       .
+      </li>
+<li>
+       The
+       <b>
+        ELECTRIC CONTROL UNIT
+       </b>
+       receives
+       <b>
+        POWER INPUT
+       </b>
+       and sends control signals to the
+       <b>
+        LIQUID FLOW CONTROL UNIT
+       </b>
+       ,
+       <b>
+        GAS FLOW CONTROL UNIT
+       </b>
+       , and
+       <b>
+        SERVO SOLENOID VALVE
+       </b>
+       .
+      </li>
+<li>
+       The
+       <b>
+        HYDRAULIC POWER PACK
+       </b>
+       receives
+       <b>
+        POWER INPUT
+       </b>
+       and provides hydraulic power to the actuators in both flow control units.
+      </li>
+</ul>
+</li>
+</ul>
+<div class="img-alt">
+    Schematic diagram of a Dual Fuel System (Rolls Royce Avon) showing liquid and gas fuel paths, control units, and sensors.
+   </div>
+</div>
+<p>
+   Figure 52
+   <br/>
+   Dual Fuel System (Rolls Royce Avon)
+   <br/>
+   (Courtesy of Rolls Royce)
+  </p>
+<h1>
+   Objective 10
+  </h1>
+<p>
+<b>
+    Describe the design and operation of a gas turbine steam or water injection system and a dry low NO
+    <sub>
+     x
+    </sub>
+    system.
+   </b>
+</p>
+<h2>
+   INTRODUCTION
+  </h2>
+<p>
+   Gas turbines are required to produce low levels of emissions since the levels and types of emission are legislated and enforced in many areas. These increasingly stringent requirements have resulted in major changes to gas turbine design, particularly the combustion section.
+  </p>
+<p>
+   Gas turbine emissions are summarized in Table 1. They are divided into two groups, major species, and minor species. Major species are measured in percent (%), while minor species are measured in parts per million (ppm). The specific pollutants produced depend on the operating conditions of the gas turbine, especially the combustion characteristics, and the type of fuel used.
+  </p>
+<p>
+<i>
+    Table 1
+    <br/>
+    Gas Turbine Emissions
+    <br/>
+    (Courtesy of GE Power Systems)
+   </i>
+</p>
+<table border="1">
+<thead>
+<tr data-bbox="207 1188 1317 1245">
+<th>
+      Major Species
+     </th>
+<th>
+      Typical Concentration
+      <br/>
+      (% Volume)
+     </th>
+<th>
+      Source
+     </th>
+</tr>
+</thead>
+<tbody>
+<tr data-bbox="207 1245 1317 1276">
+<td>
+      Nitrogen (N
+      <sub>
+       2
+      </sub>
+      )
+     </td>
+<td>
+      66 - 72
+     </td>
+<td>
+      Inlet Air
+     </td>
+</tr>
+<tr data-bbox="207 1276 1317 1308">
+<td>
+      Oxygen (O
+      <sub>
+       2
+      </sub>
+      )
+     </td>
+<td>
+      12 - 18
+     </td>
+<td>
+      Inlet Air
+     </td>
+</tr>
+<tr data-bbox="207 1308 1317 1339">
+<td>
+      Carbon Dioxide (CO
+      <sub>
+       2
+      </sub>
+      )
+     </td>
+<td>
+      1 - 5
+     </td>
+<td>
+      Oxidation of Fuel Carbon
+     </td>
+</tr>
+<tr data-bbox="207 1339 1317 1371">
+<td>
+      Water Vapor (H
+      <sub>
+       2
+      </sub>
+      O)
+     </td>
+<td>
+      1 - 5
+     </td>
+<td>
+      Oxidation of Fuel Hydrogen
+     </td>
+</tr>
+<tr data-bbox="207 1388 1317 1444">
+<th>
+      Minor Species Pollutants
+     </th>
+<th>
+      Typical Concentration
+      <br/>
+      (PPMV)
+     </th>
+<th>
+      Source
+     </th>
+</tr>
+<tr data-bbox="207 1444 1317 1476">
+<td>
+      Nitric Oxide (NO)
+     </td>
+<td>
+      20 - 220
+     </td>
+<td>
+      Oxidation of Atmosphere Nitrogen
+     </td>
+</tr>
+<tr data-bbox="207 1476 1317 1507">
+<td>
+      Nitrogen Dioxide (NO
+      <sub>
+       2
+      </sub>
+      )
+     </td>
+<td>
+      2 - 20
+     </td>
+<td>
+      Oxidation of Fuel-Bound Organic Nitrogen
+     </td>
+</tr>
+<tr data-bbox="207 1507 1317 1539">
+<td>
+      Carbon Monoxide (CO)
+     </td>
+<td>
+      5 - 330
+     </td>
+<td>
+      Incomplete Oxidation of Fuel Carbon
+     </td>
+</tr>
+<tr data-bbox="207 1539 1317 1570">
+<td>
+      Sulfur Dioxide (SO
+      <sub>
+       2
+      </sub>
+      )
+     </td>
+<td>
+      Trace - 100
+     </td>
+<td>
+      Oxidation of Fuel-Bound Organic Sulfur
+     </td>
+</tr>
+<tr data-bbox="207 1570 1317 1602">
+<td>
+      Sulfur Trioxide (SO
+      <sub>
+       3
+      </sub>
+      )
+     </td>
+<td>
+      Trace - 4
+     </td>
+<td>
+      Oxidation of Fuel-Bound Organic Sulfur
+     </td>
+</tr>
+<tr data-bbox="207 1602 1317 1633">
+<td>
+      Unburned Hydrocarbons (UHC)
+     </td>
+<td>
+      5 - 300
+     </td>
+<td>
+      Incomplete Oxidation of Fuel or Intermediates
+     </td>
+</tr>
+<tr data-bbox="207 1633 1317 1665">
+<td>
+      Particulate Matter Smoke
+     </td>
+<td>
+      Trace - 25
+     </td>
+<td>
+      Inlet Ingestion, Fuel Ash, Hot-Gas-Path
+     </td>
+</tr>
+<tr data-bbox="207 1665 1317 1738">
+<td>
+</td>
+<td>
+</td>
+<td>
+      Attrition, Incomplete Oxidation of Fuel or Intermediates
+     </td>
+</tr>
+</tbody>
+</table>
+<p>
+   The focus of emission control efforts has been sulphur dioxides (SO
+   <sub>
+    x
+   </sub>
+   ) and nitrogen oxides (NO
+   <sub>
+    x
+   </sub>
+   ). Sulphur dioxides are formed from the burning of fossil fuels.
+  </p>
+<p>
+   Nitrogen oxides are formed from the:
+  </p>
+<ul style="list-style-type: none">
+<li>
+    • Oxidation of free nitrogen already in the air by the high temperature of combustion
+   </li>
+<li>
+    • Partial combustion of fossil fuels
+   </li>
+</ul>
+<p>
+   In general, the formation of NO
+   <sub>
+    x
+   </sub>
+   can be managed by reducing flame temperature. The four methods of NO
+   <sub>
+    x
+   </sub>
+   control are:
+  </p>
+<ul style="list-style-type: none">
+<li>
+    • Water injection
+   </li>
+<li>
+    • Dry low NO
+    <sub>
+     x
+    </sub>
+    emission combustor design
+   </li>
+<li>
+    • Catalytic reduction
+   </li>
+<li>
+    • Lean pre-mixed combustion
+   </li>
+</ul>
+<h3>
+<b>
+    WATER INJECTION SYSTEMS
+   </b>
+</h3>
+<p>
+   The earliest methods to reduce NO
+   <sub>
+    x
+   </sub>
+   emissions involved the injection of water or steam into the combustor. This approach has been applied mainly to heavy-duty gas turbines and less frequently to aero-derivative gas turbines. Water or steam injection can reduce NO
+   <sub>
+    x
+   </sub>
+   levels to 25 ppm
+   <sub>
+    v
+   </sub>
+   (parts per million per volume) for natural gas fuels from normal levels of 150 - 200 ppm
+   <sub>
+    v
+   </sub>
+   without emission control.
+  </p>
+<p>
+   Water is also used to reduce NO
+   <sub>
+    x
+   </sub>
+   emissions from oil-fired combustion systems. It is mixed with the oil before being sprayed into the burner. Water decreases the combustion temperature and can reduce NO
+   <sub>
+    x
+   </sub>
+   emissions from burning light weight oils by as much as 15%. A significant added advantage in using these emulsions is that they reduce the emission of particulate matter. When water is mixed in the oil, each oil droplet sprayed into the firebox has several tiny water droplets inside. The heat existing in the firebox makes these water droplets flash into steam and explode the oil droplet. Increasing the surface area of the oil enables it to burn faster and more completely. A reduction in particulate emissions can be achieved regardless of whether light or heavy oils are being burned.
+  </p>
+<p>
+   Emissions are reduced by introducing a heat sink to limit flame temperature. An additional benefit is that power output is increased due to an increase in the mass flow. Water is more effective than steam, not only because it is at a lower temperature, but also due to the latent heat of vaporization. In fact, about 1.6 times the amount of steam is required to produce the same effect.
+  </p>
+<p>
+   The major limitation is that the quality of the water must be very high, similar to boiler feed water, to reduce deposits and corrosion in the downstream hot gas path components. Since a substantial amount of water is required, this method is not suitable for many situations.
+  </p>
+<p>
+   Water is injected directly into the combustor by one of two methods:
+  </p>
+<ul style="list-style-type: none">
+<li>
+    • Water injection fuel nozzle
+   </li>
+<li>
+    • Breech-load fuel nozzle
+   </li>
+</ul>
+<h3>
+   Water Injection Fuel Nozzle
+  </h3>
+<p>
+   Water is injected using water spray nozzles (Fig. 53) installed close to each fuel injector. Water injection systems require a water pump and filters, flow meters, water stop, and flow control valves, in addition to a more complicated control system. Steam injection systems require a steam flow meter, steam control valve, steam stop valve, and steam blowdown valves.
+  </p>
+<img alt="Cross-sectional diagram of a Water Injection Fuel Nozzle showing internal components and external connections." src="41245ac07db266bea228735b9e8c8b73_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<p>
+    The diagram shows a cross-sectional view of a fuel nozzle assembly. At the top, a flange is labeled 'Fuel Gas Connection'. Below it, another flange has four small holes and a central opening, labeled 'Atomizing Air Connection'. On the left side, a pipe is labeled 'Oil Connection'. At the bottom, an inlet is labeled 'Water Injection Inlet'. The internal structure of the nozzle is shown in detail, including various internal passages and a complex internal assembly at the bottom right.
+   </p>
+<div class="img-alt">
+    Cross-sectional diagram of a Water Injection Fuel Nozzle showing internal components and external connections.
+   </div>
+</div>
+<p>
+<i>
+    Figure 53
+    <br/>
+    Water Injection Fuel Nozzle
+    <br/>
+    (Courtesy of GE Power Systems)
+   </i>
+</p>
+<h3>
+   Breech-Load Fuel Nozzle
+  </h3>
+<p>
+   Fig. 54 shows a breech-load fuel nozzle where the water is injected in one spot upstream of the combustors to allow for premixing with the fuel before combustion.
+  </p>
+<img alt="Diagram of a Breech-load Fuel Nozzle showing its various connections and internal structure." src="fbfaa723129f8b8e3be651c6fe7cfab7_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<p>
+    A technical diagram of a breech-load fuel nozzle. The nozzle is shown in a cross-sectional view, revealing its internal components. On the left side, there are three inlets: a 'Distillate Fuel Inlet' at the top, a 'Water Injection Inlet' in the middle, and an 'Atomizing Air Connection' at the bottom. The nozzle body is connected to a 'Fuel Gas Connection' at the top. The internal structure shows a complex arrangement of passages and a nozzle tip on the right side.
+   </p>
+<div class="img-alt">
+    Diagram of a Breech-load Fuel Nozzle showing its various connections and internal structure.
+   </div>
+</div>
+<p>
+   Figure 54
+   <br/>
+   Breech-load Fuel Nozzle
+   <br/>
+   (Courtesy of GE Power Systems)
+  </p>
+<h3>
+   DRY LOW NO
+   <sub>
+    x
+   </sub>
+   EMISSION COMBUSTOR DESIGN
+  </h3>
+<p>
+   Development started in the 1970's to produce an emission control system that did not use water or steam and could also achieve lower emission levels. This method is usually known as either dry low NO
+   <sub>
+    x
+   </sub>
+   (DLN) or dry low emission (DLE) depending on the manufacturer. Levels, as low as 7ppm
+   <sub>
+    v
+   </sub>
+   , are now being achieved in large industrial gas turbines.
+  </p>
+<p>
+   Dry emission systems are based on the fact that emission of NO
+   <sub>
+    x
+   </sub>
+   is drastically reduced if the air-fuel mixture is lean or less than stoichiometric (the correct proportion of air to fuel required to achieve total combustion). The disadvantage with lean mixtures is that combustion becomes unstable, especially at part load.
+  </p>
+<p>
+   Various designs have been developed to provide stable operation, some of which use a series of staged fuel nozzles. An example of this design, used in heavy-duty gas turbines, is shown in Fig. 55. It features two sets of fuel nozzles:
+  </p>
+<ul style="list-style-type: none">
+<li>
+    • Primary fuel nozzle for startup and part load operation
+   </li>
+<li>
+    • Secondary nozzle for lean operation and lowest emissions at full load
+   </li>
+</ul>
+<img alt="Figure 55: Dry Low NOx Combustor schematic diagram." src="3267a096e9ca525744d8cd820f12eb59_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<p>
+    A schematic diagram of a Dry Low NOx Combustor. The diagram shows a cross-section of the combustor housing, which includes an Outer Casing, a Flow Sleeve, and an End Cover. Inside, there is a Centerbody and a Venturi. The combustion chamber is divided into three main zones: a Primary Zone, a Secondary Zone, and a Dilution Zone. Fuel is introduced through Primary Fuel Nozzles and a Secondary Fuel Nozzle. The Primary Zone is further divided into a Lean and Premixing Primary Zone.
+   </p>
+<div class="img-alt">
+    Figure 55: Dry Low NOx Combustor schematic diagram.
+   </div>
+</div>
+<p>
+   Figure 55
+   <br/>
+   Dry Low NOx Combustor
+   <br/>
+   (Courtesy of GE Power Systems)
+  </p>
+<p>
+   The staging of these nozzles is shown in Fig. 56.
+  </p>
+<img alt="Figure 56: Fuel-Staged Dry Low NOx Operating Modes diagram." src="8fa679f79a1bb1f527cba9f29e784e89_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<p>
+    A diagram illustrating four operating modes of the fuel-staged Dry Low NOx combustor. Each mode is shown in a cross-sectional view of the combustor with fuel flow indicated by arrows and percentages.
+   </p>
+<ul style="list-style-type: none">
+<li>
+<b>
+      1 Primary Operation Ignition to 20% Load:
+     </b>
+     Fuel is 100% and is directed to the primary fuel nozzles. The flame is shown in the primary zone.
+    </li>
+<li>
+<b>
+      2 Lean - Lean Operation 20 to 50% Load:
+     </b>
+     Fuel is 70% and is directed to the primary fuel nozzles. A portion (30%) is also directed to the secondary fuel nozzle. The flame is shown in the primary zone.
+    </li>
+<li>
+<b>
+      3 Second-Stage Burning Transient During Transfer to Premixed:
+     </b>
+     Fuel is 100% and is directed to the primary fuel nozzles. The flame is shown in the primary zone, with a smaller flame visible in the secondary zone.
+    </li>
+<li>
+<b>
+      4 Premixed Operation 50 to 100% Load:
+     </b>
+     Fuel is 100% and is directed to the secondary fuel nozzle. The flame is shown in the secondary zone.
+    </li>
+</ul>
+<div class="img-alt">
+    Figure 56: Fuel-Staged Dry Low NOx Operating Modes diagram.
+   </div>
+</div>
+<p>
+   Figure 56
+   <br/>
+   Fuel-Staged Dry Low NOx Operating Modes
+   <br/>
+   (Courtesy of GE Power Systems)
+  </p>
+<h3>
+   CATALYTIC REDUCTION
+  </h3>
+<p>
+   NO
+   <sub>
+    x
+   </sub>
+   emissions are removed from the burner exhaust gases through the use of a catalyst. In one process, ammonia is added to the flue gas prior to the gas passing over a catalyst. The catalyst enables the ammonia to react chemically with the NO
+   <sub>
+    x
+   </sub>
+   converting it to molecular nitrogen and water. The catalyst used is a combination of titanium and vanadium oxides. This system promotes the removal of up to 90% of nitrogen oxides from the flue gases.
+  </p>
+<p>
+   The ammonia reacts with both the nitrogen monoxide (NO) and nitrogen dioxide (NO
+   <sub>
+    2
+   </sub>
+   )
+  </p>
+<p>
+   Reaction with NO:
+  </p>
+<img alt="" src="1b850c691145a193ef32df25378d95e7_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+   $$
+    4\text{NO} + 4\text{NH}_3 + \text{O}_2 = 4\text{N}_2 + 6\text{H}_2\text{O}
+   $$
+  </div>
+<p>
+   Reaction with NO
+   <sub>
+    2
+   </sub>
+   :
+  </p>
+<img alt="" src="f3fc8af0e5daf1440a0f7ab09ff429aa_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+   $$
+    2\text{NO}_2 + 4\text{NH}_3 + \text{O}_2 = 3\text{N}_2 + 6\text{H}_2\text{O}
+   $$
+  </div>
+<p>
+   The NO and NO
+   <sub>
+    2
+   </sub>
+   react with the ammonia to form nitrogen and water. The nitrogen is harmless and can be released back into the atmosphere.
+  </p>
+<p>
+   In a second process, both NO
+   <sub>
+    x
+   </sub>
+   and SO
+   <sub>
+    x
+   </sub>
+   are removed. The combustion gases are passed across a bed of copper oxide, which reacts with the sulphur oxide to form copper sulphate. The copper sulphate acts as a catalyst for reducing NO
+   <sub>
+    x
+   </sub>
+   to ammonia. Approximately 90% of the NO
+   <sub>
+    x
+   </sub>
+   and SO
+   <sub>
+    x
+   </sub>
+   can be removed from the flue gases through this process.
+  </p>
+<h3>
+   LEAN PRE-MIXED COMBUSTION
+  </h3>
+<p>
+   Another method of reducing the formation of NO
+   <sub>
+    x
+   </sub>
+   is to reduce the flame temperature by thoroughly premixing the fuel with large quantities of air prior to combustion. Referring to Fig. 57, in a conventional gas turbine combustor, 30% of the total air flow is mixed with the fuel supply to the burner. The remaining 70% of the required air flow is added at later stages to the burner. This results in a burner temperature of approximately 2260°C.
+  </p>
+<p>
+   With the Solar Turbine SoLoNOx® type of burner, 60% of the total air flow is mixed with the fuel supply to the burner. The remaining 40% is added at later stages. This results in a burner temperature of 1590°C. This lean-premixed combustion technology ensures a uniform air/fuel mixture and prevention of the formation of NO
+   <sub>
+    x
+   </sub>
+   .
+  </p>
+<img alt="Diagram comparing Conventional and SoLoNOx combustion designs from Solar Turbines." src="5b8a756d9a71c35f17db8bcb90b438a3_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<p>
+    The diagram compares two combustion chamber designs.
+    <br/>
+    1.
+    <b>
+     Conventional:
+    </b>
+    Shows a single fuel injector at the front of a combustion chamber. Airflow enters from the top and bottom (labeled 70% and 30% respectively). The combustion zone is labeled '2500°F+'.
+    <br/>
+    2.
+    <b>
+     SoLoNOx:
+    </b>
+    Shows a lean pre-mixed design with multiple fuel injectors (labeled 'FUEL' and 'PILOT') and a more complex air intake system. Airflow is distributed differently (labeled 60% and 40%). The combustion zone is labeled '2500°F'.
+    <br/>
+    Both designs lead to an exhaust labeled 'Same Turbine Inlet Temp'.
+   </p>
+<div class="img-alt">
+    Diagram comparing Conventional and SoLoNOx combustion designs from Solar Turbines.
+   </div>
+</div>
+<p>
+<i>
+    Figure 57
+   </i>
+<br/>
+<i>
+    Lean Pre-Mixed Combustion Design
+   </i>
+<br/>
+<i>
+    (Courtesy of Solar Turbines)
+   </i>
+</p>
+<h2>
+   Chapter Questions
+  </h2>
+<p>
+   B1.7
+  </p>
+<ol style="list-style-type: none">
+<li>
+    1. What factors influence the selection of the type of gas turbine engine for a specific application?
+   </li>
+<li>
+    2. With the aid of a simple sketch, describe the gas turbine thermodynamic cycle.
+   </li>
+<li>
+    3. Explain the advantages of a fired HRSG system over an unfired unit
+   </li>
+<li>
+    4. Explain the advantages for using intercooling to improve the efficiency of the basic gas turbine cycle.
+   </li>
+<li>
+    5. Using simple sketches, describe the hot end and cold end drives that are used in multi-shaft arrangements for gas turbines.
+   </li>
+<li>
+    6. Give a brief explanation of the following types of combustors that are used for gas turbines:
+    <ol style="list-style-type: none">
+<li>
+      a) Annular
+     </li>
+<li>
+      b) Can-annular
+     </li>
+</ol>
+</li>
+<li>
+    7. With the aid of a simple sketch, describe how a refrigeration chiller is used to increase the power output of a gas turbine.
+   </li>
+<li>
+    8.
+    <ol style="list-style-type: none">
+<li>
+      a) Using a simple sketch, describe an aero-derivative gas turbine lube oil system.
+     </li>
+<li>
+      b) Discuss the use of chip detectors to detect metal particles in the oil.
+     </li>
+</ol>
+</li>
+<li>
+    9. Explain, with the aid of a simple sketch, a type of fuel gas system for a gas turbine.
+   </li>
+<li>
+    10. With the use of simple equations, describe how ammonia is used in the catalytic reduction of NO
+    <sub>
+     x
+    </sub>
+    emissions from the exhaust gases of a gas turbine.
+   </li>
+</ol>
+</body>
+</html>

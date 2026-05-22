@@ -1,0 +1,5241 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+ 
+    <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['\\(', '\\)']],
+        displayMath: [['$$', '$$']]
+      }
+    };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+</head>
+ <body>
+    <div id="nav-header" style="padding: 15px 20px; background: #2c3e50; color: white; display: flex; align-items: center; gap: 20px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+        <a href="../index.html" style="color: white; text-decoration: none; background: #34495e; padding: 8px 16px; border-radius: 4px; font-weight: 600; font-size: 0.9rem; transition: background 0.2s;">← Back to Index</a>
+        <h1 style="margin: 0; font-size: 1.2rem; font-weight: 500; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Power Engineering Series</h1>
+    </div>
+    
+  <h1>
+   Fuels and Combustion Calculations
+  </h1>
+  <h2>
+   5
+  </h2>
+  <h2>
+   Learning Outcome
+  </h2>
+  <p>
+   <i>
+    When you complete this learning material, you will be able to:
+   </i>
+  </p>
+  <p>
+   Perform combustion and furnace draft calculations and explain flue gas analysis.
+  </p>
+  <h2>
+   Learning Objectives
+  </h2>
+  <p>
+   <i>
+    You will specifically be able to complete the following tasks:
+   </i>
+  </p>
+  <ol style="list-style-type: none">
+   <li>
+    1. Describe the nature of combustion and the different types of fuels.
+   </li>
+   <li>
+    2. Calculate the mass and volumetric analysis of a fuel.
+   </li>
+   <li>
+    3. Describe the proximate and ultimate analysis and calculate the heating value of fuel.
+   </li>
+   <li>
+    4. Given the results of a bomb calorimeter test, calculate the heating value of a fuel.
+   </li>
+   <li>
+    5. Calculate the amount of air and excess air required for combustion of fuel.
+   </li>
+   <li>
+    6. Explain flue gas analysis parameters and their significance.
+   </li>
+   <li>
+    7. Calculate theoretical draft, flue gas velocity, and stack diameter.
+   </li>
+   <li>
+    8. Calculate draft fan power and efficiency.
+   </li>
+  </ol>
+  <p>
+   <!-- This page is blank except for three punch holes on the right margin. -->
+  </p>
+  <h2>
+   Objective 1
+  </h2>
+  <p>
+   <b>
+    Describe the nature of combustion and the different types of fuels.
+   </b>
+  </p>
+  <h3>
+   COMBUSTION CHEMISTRY
+  </h3>
+  <p>
+   Combustion of a fuel is the chemical combination (usually at high temperatures) of all the combustible elements in the fuel with oxygen. The combustion process is exothermic which means heat is given off as a by-product of the chemical reactions. Extracting this heat energy as effectively and efficiently as possible is the objective of a Power Engineer. It is important to understand the basic theories associated with combustion so the maximum amount of heat energy possible can be recovered from the combustion process in a safe and economically efficient manner.
+  </p>
+  <p>
+   All fuels, whether in a solid, liquid or gaseous state consist of combustible and non-combustible components. The combustible components consist of the elements hydrogen, carbon and sulphur while the non-combustible components include moisture, ash, carbon dioxide, and other trace elements.
+  </p>
+  <p>
+   To generate the maximum release of heat energy from the combustion process, all the combustible elements or constituents in the fuel must fully combine with oxygen. If incomplete combustion occurs, then the combustion process will become inefficient and a percentage of the available heat will be lost. An example of incomplete combustion is when carbon (C) combines with insufficient oxygen and produces carbon monoxide (CO). The following formulas are basic examples of complete and incomplete combustion.
+  </p>
+  <img alt="" src="03cdef648d5e38f01b47a79c10224b36_img.jpg"/>
+  <div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+   $$
+    \text{C} + \text{O}_2 \rightarrow \text{CO}_2 + \text{Energy}
+   $$
+  </div>
+  <img alt="" src="080dc57d2a52bfaf7111a9b578800507_img.jpg"/>
+  <div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+   $$
+    2\text{C} + \text{O}_2 \rightarrow 2\text{CO} + \text{Energy}
+   $$
+  </div>
+  <img alt="" src="18a7da8c09c7db01e629e633db91328c_img.jpg"/>
+  <div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+   $$
+    2\text{CO} + \text{O}_2 \rightarrow 2\text{CO}_2 + \text{Energy}
+   $$
+  </div>
+  <p>
+   Carbon reacts with oxygen to produce either carbon dioxide (
+   \(
+    \text{CO}_2
+   \)
+   ) in equation (1) or carbon monoxide (CO) in equation (2) plus energy. The reaction in equation (2) is called incomplete combustion because the CO reacts again with the oxygen to produce
+   \(
+    \text{CO}_2
+   \)
+   plus more energy as seen in equation (3).
+  </p>
+  <p>
+   Each element has its own atomic mass. The values of these masses were arbitrarily chosen and indicate the relative masses of each element based on the carbon-12 isotope. Hydrogen, as the lightest known element, was given an atomic mass of 1.008. Carbon (including all isotopes) has an atomic mass of 12.011, oxygen 15.999, and sulphur 32.06. For the purposes of this module, the nearest whole number equivalent will be used for the atomic masses of the elements. Thus the atomic mass of hydrogen is 1, oxygen is 16 and sulphur is 32.
+  </p>
+  <p>
+   The molecular mass of any substance is the sum of the masses of the atoms that make up a molecule of the substance. For example, the hydrogen
+   \(
+    H_2
+   \)
+   molecule is made up of two atoms each having an atomic mass of 1. Therefore the molecular mass of the hydrogen is
+   \(
+    1 + 1 = 2
+   \)
+   . The carbon (C) molecule, made up of 1 atom having a mass of 12, has a molecular mass of 12. An oxygen (
+   \(
+    O_2
+   \)
+   ) molecule is made up of 2 atoms, each having an atomic mass of 16, so the molecular mass of oxygen is 32. Molecular masses of various combustion-related elements and compounds are listed in Table 1.
+  </p>
+  <p>
+   Molecular masses, like atomic masses, are relative values and may be expressed in a number of different units depending on the type of calculations being done and the final answer that is desired. However, with chemical reactions, it is frequently necessary to calculate the amount of a substance required to combine with a given amount of another substance. The amounts involved are expressed in actual mass units such as grams or kilograms. However, the equations representing these reactions are expressed by molecular symbols and molecular masses. Therefore, it is necessary to link the molecular masses to definite mass units. For this purpose, the term mole (mol) is used.
+   <b>
+    A mole of a substance is the amount of the substance having a mass equal to the substance's molecular mass expressed in grams.
+   </b>
+   For combustion calculations where large masses are required, it is more convenient to express the mass in kilograms and the unit as kmol.
+  </p>
+  <h4>
+   <p>
+    <i>
+     Elements and Compounds Related to Combustion
+    </i>
+   </p>
+  </h4>
+  <p>
+   <i>
+    Table 1
+   </i>
+  </p>
+  <table border="1">
+   <thead>
+    <tr data-bbox="232 315 1299 434">
+     <th>
+      Substance
+     </th>
+     <th>
+      Molecular Formula
+     </th>
+     <th>
+      Atomic Mass
+     </th>
+     <th>
+      Molecular Mass (grams)
+     </th>
+     <th>
+      Form at 15°C
+     </th>
+    </tr>
+   </thead>
+   <tbody>
+    <tr data-bbox="232 434 1299 464">
+     <td>
+      Hydrogen
+     </td>
+     <td>
+      H
+      <sub>
+       2
+      </sub>
+     </td>
+     <td>
+      1
+     </td>
+     <td>
+      \(
+       1 \times 2 = 2
+      \)
+     </td>
+     <td>
+      Gas
+     </td>
+    </tr>
+    <tr data-bbox="232 464 1299 493">
+     <td>
+      Oxygen
+     </td>
+     <td>
+      O
+      <sub>
+       2
+      </sub>
+     </td>
+     <td>
+      16
+     </td>
+     <td>
+      \(
+       16 \times 2 = 32
+      \)
+     </td>
+     <td>
+      Gas
+     </td>
+    </tr>
+    <tr data-bbox="232 493 1299 522">
+     <td>
+      Carbon
+     </td>
+     <td>
+      C
+     </td>
+     <td>
+      12
+     </td>
+     <td>
+      \(
+       12 \times 1 = 12
+      \)
+     </td>
+     <td>
+      Solid
+     </td>
+    </tr>
+    <tr data-bbox="232 522 1299 552">
+     <td>
+      Sulphur
+     </td>
+     <td>
+      S
+     </td>
+     <td>
+      32
+     </td>
+     <td>
+      \(
+       32 \times 1 = 32
+      \)
+     </td>
+     <td>
+      Solid
+     </td>
+    </tr>
+    <tr data-bbox="232 552 1299 581">
+     <td>
+      Nitrogen
+     </td>
+     <td>
+      N
+      <sub>
+       2
+      </sub>
+     </td>
+     <td>
+      14
+     </td>
+     <td>
+      \(
+       14 \times 2 = 28
+      \)
+     </td>
+     <td>
+      Gas
+     </td>
+    </tr>
+    <tr data-bbox="232 581 1299 611">
+     <td>
+      Carbon Monoxide
+     </td>
+     <td>
+      CO
+     </td>
+     <td>
+      --
+     </td>
+     <td>
+      \(
+       12 + 16 = 28
+      \)
+     </td>
+     <td>
+      Gas
+     </td>
+    </tr>
+    <tr data-bbox="232 611 1299 640">
+     <td>
+      Carbon Dioxide
+     </td>
+     <td>
+      CO
+      <sub>
+       2
+      </sub>
+     </td>
+     <td>
+      --
+     </td>
+     <td>
+      \(
+       12 + 16 \times 2 = 44
+      \)
+     </td>
+     <td>
+      Gas
+     </td>
+    </tr>
+    <tr data-bbox="232 640 1299 669">
+     <td>
+      Methane
+     </td>
+     <td>
+      CH
+      <sub>
+       4
+      </sub>
+     </td>
+     <td>
+      --
+     </td>
+     <td>
+      \(
+       12 + 1 \times 4 = 16
+      \)
+     </td>
+     <td>
+      Gas
+     </td>
+    </tr>
+    <tr data-bbox="232 669 1299 699">
+     <td>
+      Ethane
+     </td>
+     <td>
+      C
+      <sub>
+       2
+      </sub>
+      H
+      <sub>
+       6
+      </sub>
+     </td>
+     <td>
+      --
+     </td>
+     <td>
+      \(
+       12 \times 2 + 1 \times 6 = 30
+      \)
+     </td>
+     <td>
+      Gas
+     </td>
+    </tr>
+    <tr data-bbox="232 699 1299 728">
+     <td>
+      Propane
+     </td>
+     <td>
+      C
+      <sub>
+       3
+      </sub>
+      H
+      <sub>
+       8
+      </sub>
+     </td>
+     <td>
+      --
+     </td>
+     <td>
+      \(
+       12 \times 3 + 1 \times 8 = 44
+      \)
+     </td>
+     <td>
+      Gas
+     </td>
+    </tr>
+    <tr data-bbox="232 728 1299 758">
+     <td>
+      Butane
+     </td>
+     <td>
+      C
+      <sub>
+       4
+      </sub>
+      H
+      <sub>
+       10
+      </sub>
+     </td>
+     <td>
+      --
+     </td>
+     <td>
+      \(
+       12 \times 4 + 1 \times 10 = 58
+      \)
+     </td>
+     <td>
+      Gas
+     </td>
+    </tr>
+    <tr data-bbox="232 758 1299 787">
+     <td>
+      Octane
+     </td>
+     <td>
+      C
+      <sub>
+       8
+      </sub>
+      H
+      <sub>
+       18
+      </sub>
+     </td>
+     <td>
+      --
+     </td>
+     <td>
+      \(
+       12 \times 8 + 1 \times 18 = 114
+      \)
+     </td>
+     <td>
+      Liquid
+     </td>
+    </tr>
+    <tr data-bbox="232 787 1299 816">
+     <td>
+      Benzene
+     </td>
+     <td>
+      C
+      <sub>
+       6
+      </sub>
+      H
+      <sub>
+       6
+      </sub>
+     </td>
+     <td>
+      --
+     </td>
+     <td>
+      \(
+       12 \times 6 + 1 \times 6 = 78
+      \)
+     </td>
+     <td>
+      Liquid
+     </td>
+    </tr>
+    <tr data-bbox="232 816 1299 846">
+     <td>
+      Acetylene
+     </td>
+     <td>
+      C
+      <sub>
+       2
+      </sub>
+      H
+      <sub>
+       2
+      </sub>
+     </td>
+     <td>
+      --
+     </td>
+     <td>
+      \(
+       12 \times 2 + 1 \times 2 = 26
+      \)
+     </td>
+     <td>
+      Gas
+     </td>
+    </tr>
+    <tr data-bbox="232 846 1299 875">
+     <td>
+      Sulphur Dioxide
+     </td>
+     <td>
+      SO
+      <sub>
+       2
+      </sub>
+     </td>
+     <td>
+      --
+     </td>
+     <td>
+      \(
+       32 + 16 \times 2 = 64
+      \)
+     </td>
+     <td>
+      Gas
+     </td>
+    </tr>
+    <tr data-bbox="232 875 1299 905">
+     <td>
+      Hydrogen Sulphide
+     </td>
+     <td>
+      H
+      <sub>
+       2
+      </sub>
+      S
+     </td>
+     <td>
+      --
+     </td>
+     <td>
+      \(
+       1 \times 2 + 32 = 34
+      \)
+     </td>
+     <td>
+      Gas
+     </td>
+    </tr>
+    <tr data-bbox="232 905 1299 934">
+     <td>
+      Water Vapour
+     </td>
+     <td>
+      H
+      <sub>
+       2
+      </sub>
+      O
+     </td>
+     <td>
+      --
+     </td>
+     <td>
+      \(
+       1 \times 2 + 16 = 18
+      \)
+     </td>
+     <td>
+      Vapour
+     </td>
+    </tr>
+    <tr data-bbox="232 934 1299 976">
+     <td>
+      Air
+     </td>
+     <td colspan="2">
+      Mixture of Oxygen, Nitrogen and trace Elements
+     </td>
+     <td>
+      29
+     </td>
+     <td>
+      Gas
+     </td>
+    </tr>
+   </tbody>
+  </table>
+  <p>
+   As seen in Table 1, oxygen has a molecular mass of 32 g; therefore, 1 kmol of oxygen has a mass of 32 kg. Similarly, 2 kg of hydrogen is the mass of 1 kmol of hydrogen because the molecular mass of hydrogen is 2.
+  </p>
+  <p>
+   It is important for Power Engineers to understand the various relationships between molecular mass, weight and volume and be able to calculate the theoretical amounts of flue gases generated from various types and amounts of fuels burned. A basic principle called “Avogadro’s Hypothesis” states that the volume of one mol of any gas under a given pressure and temperature will be the same as the volume of 1 mol of any other gas at the same conditions.
+  </p>
+  <p>
+   The standard conditions of temperature and pressure are usually given as 101 kPa and 0°C which results in a volume of 22.4 for one Kmol of the gas. The actual pressure is 101.325 kPa, but for calculation purposes, taking the pressure as 101 kPa provides a sufficiently accurate result.
+  </p>
+  <p>
+   If “V” = the volume of a gas and “n” the amount of the substance, then
+   \(
+    V/n
+   \)
+   is the same for all gases at the constant values of temperature and pressure. The quantity
+   \(
+    pV/nT
+   \)
+   is also a constant for all gases. This is called the molar gas constant and is given the symbol “R”. From this formula, the equation
+   \(
+    pV = mRT
+   \)
+   is derived and will be used for a number of gas and energy calculations.
+  </p>
+  <p>
+   To illustrate, one Kmol of oxygen (32 kg) occupies 22.4 m
+   <sup>
+    3
+   </sup>
+   at 101 kPa and 0°C. One Kmol of hydrogen (2 kg) also occupies 22.4 m
+   <sup>
+    3
+   </sup>
+   at 101 kPa and 0°C. Similarly, one Kmol of nitrogen (28 kg) occupies 22.4 m
+   <sup>
+    3
+   </sup>
+   at 101 kPa and 0°C. Using the above property, (Avogadro's Hypothesis), mixtures of gases have volume proportions in the same amount as their mol ratios.
+  </p>
+  <p>
+   Air supplies the oxygen required for combustion. The proportions by volume of the major components of air at 101 kPa are as follows:
+  </p>
+  <table>
+   <tr data-bbox="370 478 875 514">
+    <td>
+     Nitrogen (N
+     <sub>
+      2
+     </sub>
+     )
+    </td>
+    <td>
+     78.09%
+    </td>
+   </tr>
+   <tr data-bbox="370 514 875 550">
+    <td>
+     Oxygen (O
+     <sub>
+      2
+     </sub>
+     )
+    </td>
+    <td>
+     20.90%
+    </td>
+   </tr>
+   <tr data-bbox="370 550 875 585">
+    <td>
+     Argon (Ar)
+    </td>
+    <td>
+     0.93%
+    </td>
+   </tr>
+   <tr data-bbox="370 585 875 621">
+    <td>
+     Carbon Dioxide (CO
+     <sub>
+      2
+     </sub>
+     )
+    </td>
+    <td>
+     0.03%
+    </td>
+   </tr>
+   <tr data-bbox="370 621 875 657">
+    <td>
+     Other Trace Gases
+    </td>
+    <td>
+     <u>
+      0.01%
+     </u>
+    </td>
+   </tr>
+   <tr data-bbox="370 657 875 699">
+    <td>
+     Total
+    </td>
+    <td>
+     100.00%
+    </td>
+   </tr>
+  </table>
+  <p>
+   The equivalent mass ratios take into account the masses of each major component as shown below.
+  </p>
+  <table>
+   <thead>
+    <tr data-bbox="274 846 1455 919">
+     <th>
+     </th>
+     <th>
+      Volume %
+      <br/>
+      (V%)
+     </th>
+     <th>
+      Molecular Mass
+      <br/>
+      (MM)
+     </th>
+     <th>
+      Mass
+      <br/>
+      (V% * MM)
+     </th>
+     <th>
+      Mass %
+     </th>
+    </tr>
+   </thead>
+   <tbody>
+    <tr data-bbox="274 919 1455 953">
+     <td>
+      Nitrogen (N
+      <sub>
+       2
+      </sub>
+      )
+     </td>
+     <td>
+      78.10%
+     </td>
+     <td>
+      28
+     </td>
+     <td>
+      21.90
+     </td>
+     <td>
+      76.09%
+     </td>
+    </tr>
+    <tr data-bbox="274 953 1455 987">
+     <td>
+      Oxygen (O
+      <sub>
+       2
+      </sub>
+      )
+     </td>
+     <td>
+      20.90%
+     </td>
+     <td>
+      32
+     </td>
+     <td>
+      6.69
+     </td>
+     <td>
+      23.24%
+     </td>
+    </tr>
+    <tr data-bbox="274 987 1455 1020">
+     <td>
+      Argon (Ar)
+     </td>
+     <td>
+      0.95%
+     </td>
+     <td>
+      18
+     </td>
+     <td>
+      0.17
+     </td>
+     <td>
+      0.60%
+     </td>
+    </tr>
+    <tr data-bbox="274 1020 1455 1054">
+     <td>
+      Carbon Dioxide (CO
+      <sub>
+       2
+      </sub>
+      )
+     </td>
+     <td>
+      0.04%
+     </td>
+     <td>
+      44
+     </td>
+     <td>
+      0.02
+     </td>
+     <td>
+      0.07%
+     </td>
+    </tr>
+    <tr data-bbox="274 1054 1455 1087">
+     <td>
+      Other Trace Gases
+     </td>
+     <td>
+      <u>
+       0.01%
+      </u>
+     </td>
+     <td>
+     </td>
+     <td>
+      not included
+     </td>
+     <td>
+     </td>
+    </tr>
+    <tr data-bbox="274 1087 1455 1119">
+     <td>
+      Total
+     </td>
+     <td>
+      100.00%
+     </td>
+     <td>
+     </td>
+     <td>
+      28.78
+     </td>
+     <td>
+      100.00%
+     </td>
+    </tr>
+   </tbody>
+  </table>
+  <p>
+   Because the oxygen is only used in combustion, the Ar, CO
+   <sub>
+    2
+   </sub>
+   and trace gases are combined with the nitrogen to create a final mass ratio of 23.2% O
+   <sub>
+    2
+   </sub>
+   and 76.8% N
+   <sub>
+    2
+   </sub>
+   . Therefore, to supply 1 kg of oxygen requires
+   \(
+    1/0.232 = 4.31
+   \)
+   kg of Air. The remaining 3.31 kg of the air is composed of nitrogen and some trace gases.
+  </p>
+  <h3>
+   LAWS OF COMBUSTION
+  </h3>
+  <p>
+   Combustion calculations depend upon four fundamental laws:
+  </p>
+  <ol style="list-style-type: none">
+   <li>
+    1. Conservation of Matter - Matter cannot be destroyed or created but can be converted to other forms of matter.
+   </li>
+   <li>
+    2. Conservation of Energy - Energy cannot be destroyed or created but can be converted to other forms of energy.
+   </li>
+   <li>
+    3. General Gas Law - The volume of a gas is directly proportional to its absolute temperature and inversely proportional to its absolute pressure.
+   </li>
+   <li>
+    4. Law of Combining Masses - All substances combine only in accordance with a definite, simple relationship as to relative masses based on their chemical composition.
+   </li>
+  </ol>
+  <h3>
+   COMBUSTION REACTIONS
+  </h3>
+  <p>
+   Combustion is a chemical reaction where certain elements are combined with oxygen (oxidized) to form different elements or compounds.
+  </p>
+  <p>
+   The equations representing the reactions are formed in accordance with the following fixed rules:
+  </p>
+  <p>
+   THE TOTAL MASS OF ALL SUBSTANCES BEFORE COMBUSTION MUST BE EQUAL TO THE TOTAL MASS AFTER COMBUSTION.
+  </p>
+  <p>
+   and
+  </p>
+  <p>
+   THE NUMBER OF ATOMS OF EACH ELEMENT MUST BE THE SAME ON BOTH SIDES OF THE EQUATION.
+  </p>
+  <p>
+   Table 2 shows how the combustibles in a fuel react with the oxygen in the air to produce CO
+   <sub>
+    2
+   </sub>
+   and H
+   <sub>
+    2
+   </sub>
+   O or, in the case of incomplete combustion, CO.
+  </p>
+  <p>
+   <i>
+    Combustion Reactions
+   </i>
+  </p>
+  <p>
+   <i>
+    Table 2
+   </i>
+  </p>
+  <table border="1">
+   <thead>
+    <tr data-bbox="181 989 1364 1024">
+     <th>
+      Substance
+     </th>
+     <th>
+      Symbol
+     </th>
+     <th>
+      Reaction
+     </th>
+    </tr>
+   </thead>
+   <tbody>
+    <tr data-bbox="181 1024 1364 1052">
+     <td>
+      Carbon (to CO)
+     </td>
+     <td>
+      C
+     </td>
+     <td>
+      \(
+       2\text{C} + \text{O}_2 \longrightarrow 2\text{CO}
+      \)
+     </td>
+    </tr>
+    <tr data-bbox="181 1052 1364 1079">
+     <td>
+      Carbon (to CO
+      <sub>
+       2
+      </sub>
+      )
+     </td>
+     <td>
+      C
+     </td>
+     <td>
+      \(
+       \text{C} + \text{O}_2 \longrightarrow \text{CO}_2
+      \)
+     </td>
+    </tr>
+    <tr data-bbox="181 1079 1364 1106">
+     <td>
+      Carbon Monoxide
+     </td>
+     <td>
+      CO
+     </td>
+     <td>
+      \(
+       2\text{CO} + \text{O}_2 \longrightarrow 2\text{CO}_2
+      \)
+     </td>
+    </tr>
+    <tr data-bbox="181 1106 1364 1134">
+     <td>
+      Hydrogen
+     </td>
+     <td>
+      H
+      <sub>
+       2
+      </sub>
+     </td>
+     <td>
+      \(
+       2\text{H}_2 + \text{O}_2 \longrightarrow 2\text{H}_2\text{O}
+      \)
+     </td>
+    </tr>
+    <tr data-bbox="181 1134 1364 1161">
+     <td>
+      Sulphur (to SO
+      <sub>
+       2
+      </sub>
+      )
+     </td>
+     <td>
+      S
+     </td>
+     <td>
+      \(
+       \text{S} + \text{O}_2 \longrightarrow \text{SO}_2
+      \)
+     </td>
+    </tr>
+    <tr data-bbox="181 1161 1364 1188">
+     <td>
+      Sulphur (to SO
+      <sub>
+       3
+      </sub>
+      )
+     </td>
+     <td>
+      S
+     </td>
+     <td>
+      \(
+       2\text{S} + 3\text{O}_2 \longrightarrow 2\text{SO}_3
+      \)
+     </td>
+    </tr>
+    <tr data-bbox="181 1188 1364 1215">
+     <td>
+      Methane
+     </td>
+     <td>
+      CH
+      <sub>
+       4
+      </sub>
+     </td>
+     <td>
+      \(
+       \text{CH}_4 + 2\text{O}_2 \longrightarrow \text{CO}_2 + 2\text{H}_2\text{O}
+      \)
+     </td>
+    </tr>
+    <tr data-bbox="181 1215 1364 1243">
+     <td>
+      Ethane
+     </td>
+     <td>
+      C
+      <sub>
+       2
+      </sub>
+      H
+      <sub>
+       6
+      </sub>
+     </td>
+     <td>
+      \(
+       2\text{C}_2\text{H}_6 + 7\text{O}_2 \longrightarrow 4\text{CO}_2 + 6\text{H}_2\text{O}
+      \)
+     </td>
+    </tr>
+    <tr data-bbox="181 1243 1364 1270">
+     <td>
+      Propane
+     </td>
+     <td>
+      C
+      <sub>
+       3
+      </sub>
+      H
+      <sub>
+       8
+      </sub>
+     </td>
+     <td>
+      \(
+       \text{C}_3\text{H}_8 + 5\text{O}_2 \longrightarrow 3\text{CO}_2 + 4\text{H}_2\text{O}
+      \)
+     </td>
+    </tr>
+    <tr data-bbox="181 1270 1364 1297">
+     <td>
+      Butane
+     </td>
+     <td>
+      C
+      <sub>
+       4
+      </sub>
+      H
+      <sub>
+       10
+      </sub>
+     </td>
+     <td>
+      \(
+       \text{C}_4\text{H}_{10} + 6\frac{1}{2}\text{O}_2 \longrightarrow 4\text{CO}_2 + 5\text{H}_2\text{O}
+      \)
+     </td>
+    </tr>
+    <tr data-bbox="181 1297 1364 1325">
+     <td>
+      Octane
+     </td>
+     <td>
+      C
+      <sub>
+       8
+      </sub>
+      H
+      <sub>
+       18
+      </sub>
+     </td>
+     <td>
+      \(
+       \text{C}_8\text{H}_{18} + 12\frac{1}{2}\text{O}_2 \longrightarrow 8\text{CO}_2 + 9\text{H}_2\text{O}
+      \)
+     </td>
+    </tr>
+    <tr data-bbox="181 1325 1364 1352">
+     <td>
+      Benzene
+     </td>
+     <td>
+      C
+      <sub>
+       6
+      </sub>
+      H
+      <sub>
+       6
+      </sub>
+     </td>
+     <td>
+      \(
+       \text{C}_6\text{H}_6 + 7\frac{1}{2}\text{O}_2 \longrightarrow 6\text{CO}_2 + 3\text{H}_2\text{O}
+      \)
+     </td>
+    </tr>
+    <tr data-bbox="181 1352 1364 1379">
+     <td>
+      Acetylene
+     </td>
+     <td>
+      C
+      <sub>
+       2
+      </sub>
+      H
+      <sub>
+       2
+      </sub>
+     </td>
+     <td>
+      \(
+       \text{C}_2\text{H}_2 + 2\frac{1}{2}\text{O}_2 \longrightarrow 2\text{CO}_2 + \text{H}_2\text{O}
+      \)
+     </td>
+    </tr>
+    <tr data-bbox="181 1379 1364 1444">
+     <td>
+      Hydrogen Sulphide
+     </td>
+     <td>
+      H
+      <sub>
+       2
+      </sub>
+      S
+     </td>
+     <td>
+      \(
+       2\text{H}_2\text{S} + 3\text{O}_2 \longrightarrow 2\text{H}_2\text{O} + 2\text{SO}_2
+      \)
+     </td>
+    </tr>
+   </tbody>
+  </table>
+  <p>
+   The three basic combustibles are carbon, hydrogen and sulphur. They are combined with oxygen in various ways in all fuels, depending on the type of fuel.
+  </p>
+  <h4>
+   Combustion of Carbon
+  </h4>
+  <p>
+   An atom of carbon may combine with:
+  </p>
+  <ol style="list-style-type: none">
+   <li>
+    (1) two atoms of oxygen to form carbon dioxide (
+    \(
+     \text{CO}_2
+    \)
+    ) , or
+   </li>
+   <li>
+    (2) with one atom of oxygen to form carbon monoxide (
+    \(
+     \text{CO}
+    \)
+    ).
+   </li>
+  </ol>
+  <p>
+   Expressing these as formulas:
+  </p>
+  <img alt="" src="305abb82d18975d81cc95061b66705fb_img.jpg"/>
+  <div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+   $$
+    \begin{array}{rcl} \text{In Kmol} &amp; \text{C} + \text{O}_2 &amp; = \text{CO}_2 \\ \text{In Mass} &amp; 12 + 2 \times 16 &amp; = 12 + 32 \\ &amp; 12 + 32 &amp; = 44 \\ \text{or} &amp; &amp; \\ &amp; 1 + 2 \frac{2}{3} &amp; = 3\frac{2}{3} \end{array}
+   $$
+  </div>
+  <p>
+   Therefore, when 1 kg of carbon is completely burned with
+   \(
+    2 \frac{2}{3}
+   \)
+   kg of oxygen it produces
+   \(
+    3\frac{2}{3}
+   \)
+   kg of
+   \(
+    \text{CO}_2
+   \)
+   . This reaction also releases 33 890 kJ of heat. Any mass of
+   \(
+    \text{CO}_2
+   \)
+   must be composed of
+   \(
+    \frac{12}{44} \times 100 = 27.27\%
+   \)
+   by mass of carbon and 72.73% by mass of oxygen, or
+  </p>
+  <p>
+   $$
+    1 \text{ kg CO}_2 = 0.2727 \text{ kg C} + 0.7273 \text{ kg O}_2
+   $$
+  </p>
+  <p>
+   that is, a mass ratio of carbon to
+   \(
+    \text{O}_2
+   \)
+   of 1 : 2.67.
+  </p>
+  <p>
+   If 1 kg of
+   \(
+    \text{O}_2
+   \)
+   is contained in 4.31 kg air, it is necessary to supply, for complete combustion, 1 kg of carbon:
+  </p>
+  <p>
+   $$
+    2.67 \times 4.31 = 11.51 \text{ kg of air.}
+   $$
+  </p>
+  <p>
+   This amount contains
+   \(
+    \text{N}_2
+   \)
+  </p>
+  <p>
+   $$
+    2.67 \times 3.31 = 8.84 \text{ kg N}_2
+   $$
+  </p>
+  <p>
+   Thus, in the complete combustion of 1 kg of carbon, the resulting products of combustion are:
+  </p>
+  <p>
+   $$
+    \begin{array}{rcl} 1 \text{ kg C} + 2.67 \text{ kg O}_2 &amp; = &amp; 3.67 \text{ kg CO}_2 \\ \text{and } 2.67 \times 3.31 \text{ kg N}_2 &amp; = &amp; \underline{8.84 \text{ kg N}_2} \\ \text{Total mass of flue gas} &amp; = &amp; 12.51 \text{ kg} \end{array}
+   $$
+  </p>
+  <img alt="" src="f6e63d1e60d17cf49914fd1691e87d2d_img.jpg"/>
+  <div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+   $$
+    \begin{array}{rcl} \text{Similarly } 2\text{C} + \text{O}_2 &amp; = &amp; 2\text{CO} \\ \text{C} + \text{O} &amp; = &amp; \text{CO} \\ 12 + 16 &amp; = &amp; 28 \\ 1 + 1\frac{1}{3} &amp; = &amp; 2\frac{2}{3} \end{array}
+   $$
+  </div>
+  <p>
+   When 1 kg of carbon burns incompletely with only
+   \(
+    1\frac{1}{3}
+   \)
+   kg (too little) of
+   \(
+    \text{O}_2
+   \)
+   , it produces
+   \(
+    2\frac{2}{3}
+   \)
+   kg of
+   \(
+    \text{CO}
+   \)
+   and liberates 10 305 kJ of heat.
+  </p>
+  <p>
+   If the CO formed goes up the stack, it carries away with it
+   \(
+    33\,890 - 10\,305 = 23\,585
+   \)
+   kJ of heat which is all wasted.
+  </p>
+  <p>
+   Any mass of CO must be composed of
+   \(
+    \frac{12}{28} \times 100 = 42.86\%
+   \)
+   by mass of carbon and
+   \(
+    57.14\%
+   \)
+   by mass of oxygen, or
+  </p>
+  <p>
+   $$
+    1 \text{ kg CO} = 0.4286 \text{ kg C} + 0.5714 \text{ kg O}_2
+   $$
+  </p>
+  <p>
+   that is, a ratio of carbon to
+   \(
+    \text{O}_2
+   \)
+   of 1 : 1.333
+  </p>
+  <p>
+   Air required to burn 1 kg of C to CO
+  </p>
+  <p>
+   $$
+    1.333 \times 4.31 = 5.745 \text{ kg of air}
+   $$
+  </p>
+  <p>
+   Thus in the incomplete combustion of 1 kg of carbon to CO, the resulting products of combustion will be:
+  </p>
+  <p>
+   $$
+    \begin{array}{rcl} 1 \text{ kg C} + 1.333 \text{ kg O}_2 &amp; = &amp; 2.333 \text{ kg CO} \\ \text{and } 1.333 \times 3.31 \text{ kg N}_2 &amp; = &amp; \underline{4.412 \text{ kg N}_2} \\ \text{Total mass of flue gas} &amp; = &amp; 6.745 \text{ kg} \end{array}
+   $$
+  </p>
+  <h3>
+   COMBUSTION OF HYDROGEN
+  </h3>
+  <p>
+   Two molecules of hydrogen (four atoms) combine with one molecule of oxygen (two atoms) to form two molecules of water.
+  </p>
+  <img alt="" src="48558930427101cb4574f5b4415ad02a_img.jpg"/>
+  <div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+   $$
+    \begin{array}{rcl} 2\text{H}_2 &amp; + &amp; \text{O}_2 &amp; = &amp; 2\text{H}_2\text{O} \\ 2 \times 2 &amp; + &amp; 2 \times 16 &amp; = &amp; 2 \times 18 \\ 4 &amp; + &amp; 32 &amp; = &amp; 36 \\ 1 &amp; + &amp; 8 &amp; = &amp; 9 \end{array}
+   $$
+  </div>
+  <p>
+   When 1 kg of
+   \(
+    \text{H}_2
+   \)
+   is burned with 8 kg of
+   \(
+    \text{O}_2
+   \)
+   , it produces 9 kg of
+   \(
+    \text{H}_2\text{O}
+   \)
+   and liberates 143 900 kJ of heat.
+  </p>
+  <p>
+   Any mass of
+   \(
+    \text{H}_2\text{O}
+   \)
+   must be composed of
+   \(
+    \frac{4}{36} \times 100 = 11.1\%
+   \)
+   by mass of
+   \(
+    \text{H}_2
+   \)
+   and
+   \(
+    88.9\%
+   \)
+   by mass of
+   \(
+    \text{O}_2
+   \)
+  </p>
+  <p>
+   $$
+    \text{or } 1 \text{ kg H}_2\text{O} = 0.111 \text{ kg H}_2 + 0.889 \text{ kg O}_2
+   $$
+  </p>
+  <p>
+   that is a ratio of
+   \(
+    \text{H}_2
+   \)
+   to
+   \(
+    \text{O}_2
+   \)
+   of 1 : 8.
+  </p>
+  <p>
+   The air required to burn 1 kg of
+   \(
+    \text{H}_2
+   \)
+   to
+   \(
+    \text{H}_2\text{O}
+   \)
+   is
+  </p>
+  <p>
+   $$
+    8 \times 4.31 = 34.48 \text{ kg of air}
+   $$
+  </p>
+  <p>
+   Thus in the combustion of 1 kg of H
+   <sub>
+    2
+   </sub>
+   to H
+   <sub>
+    2
+   </sub>
+   O, the resulting products of combustion are:
+  </p>
+  <img alt="" src="b0a74353d8701d86ee4929643eef3b00_img.jpg"/>
+  <div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+   <table>
+    <tr data-bbox="378 216 937 254">
+     <td>
+      1 kg H
+      <sub>
+       2
+      </sub>
+      + 8 kg O
+      <sub>
+       2
+      </sub>
+     </td>
+     <td>
+      =
+     </td>
+     <td>
+      9 kg H
+      <sub>
+       2
+      </sub>
+      O
+     </td>
+    </tr>
+    <tr data-bbox="378 254 937 291">
+     <td>
+      and 8 × 3.31 kg N
+      <sub>
+       2
+      </sub>
+     </td>
+     <td>
+      =
+     </td>
+     <td>
+      <u>
+       26.48 kg N
+       <sub>
+        2
+       </sub>
+      </u>
+     </td>
+    </tr>
+    <tr data-bbox="378 291 937 329">
+     <td>
+      Total mass of flue gas
+     </td>
+     <td>
+      =
+     </td>
+     <td>
+      35.48 kg
+     </td>
+    </tr>
+   </table>
+  </div>
+  <h4>
+   COMBUSTION OF SULPHUR
+  </h4>
+  <p>
+   One molecule of sulphur will combine with one molecule of oxygen (containing two atoms) to form one molecule of sulphur dioxide.
+  </p>
+  <img alt="" src="08668d4fc8be720161f2395971707ea6_img.jpg"/>
+  <div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+   <table>
+    <tr data-bbox="565 562 831 598">
+     <td>
+      S + O
+      <sub>
+       2
+      </sub>
+     </td>
+     <td>
+      =
+     </td>
+     <td>
+      SO
+      <sub>
+       2
+      </sub>
+     </td>
+    </tr>
+    <tr data-bbox="565 598 831 634">
+     <td>
+      32 + 32
+     </td>
+     <td>
+      =
+     </td>
+     <td>
+      64
+     </td>
+    </tr>
+    <tr data-bbox="565 634 831 669">
+     <td>
+      1+1
+     </td>
+     <td>
+      =
+     </td>
+     <td>
+      2
+     </td>
+    </tr>
+   </table>
+  </div>
+  <p>
+   When 1 kg of S is burned with 1 kg of O
+   <sub>
+    2
+   </sub>
+   , it produces 2 kg of SO
+   <sub>
+    2
+   </sub>
+   and liberates 9290 kJ of heat.
+  </p>
+  <p>
+   Any mass of SO
+   <sub>
+    2
+   </sub>
+   must be composed of
+   \(
+    \frac{32}{64} \times 100 = 50\%
+   \)
+   by mass of S and 50% by mass of O
+   <sub>
+    2
+   </sub>
+   , or
+  </p>
+  <img alt="" src="70ee002de486ab8ef92bc50ed1089c8d_img.jpg"/>
+  <div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+   $$
+    1\text{kg SO}_2 = 0.5\text{ kg S} + 0.5\text{ kg O}_2 \text{ (a ratio of S to O}_2 \text{ of 1 : 1)}
+   $$
+  </div>
+  <p>
+   The air required to burn 1 kg of S to SO
+   <sub>
+    2
+   </sub>
+   is
+  </p>
+  <p>
+   $$
+    1 \times 4.31 = 4.31 \text{ kg of air.}
+   $$
+  </p>
+  <p>
+   Thus in the complete combustion of 1 kg of S to SO
+   <sub>
+    2
+   </sub>
+   , the resulting products of combustion are:
+  </p>
+  <img alt="" src="226da61f5d1439ba1b5bbf9ad880f849_img.jpg"/>
+  <div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+   <table>
+    <tr data-bbox="378 1272 915 1310">
+     <td>
+      1 kg S + 1 kg O
+      <sub>
+       2
+      </sub>
+     </td>
+     <td>
+      =
+     </td>
+     <td>
+      2 kg SO
+      <sub>
+       2
+      </sub>
+     </td>
+    </tr>
+    <tr data-bbox="378 1310 915 1348">
+     <td>
+      and 1 × 3.31 kg N
+      <sub>
+       2
+      </sub>
+     </td>
+     <td>
+      =
+     </td>
+     <td>
+      <u>
+       3.31 kg N
+       <sub>
+        2
+       </sub>
+      </u>
+     </td>
+    </tr>
+    <tr data-bbox="378 1348 915 1386">
+     <td>
+      Total mass of flue gas
+     </td>
+     <td>
+      =
+     </td>
+     <td>
+      5.31 kg
+     </td>
+    </tr>
+   </table>
+  </div>
+  <h2>
+   Objective 2
+  </h2>
+  <p>
+   <b>
+    Calculate the mass and volumetric analysis of a fuel.
+   </b>
+  </p>
+  <h3>
+   MASS ANALYSIS OF FUELS
+  </h3>
+  <p>
+   Applying the Law of Combining Masses, the proportions required for the combustion of any hydrocarbon can be calculated because the ratio of C to H
+   <sub>
+    2
+   </sub>
+   is known and each mass can be calculated separately as a fraction of the whole (assumed as 1 kg).
+  </p>
+  <p>
+   Table 3 summarizes the mass analysis data for the main reactive or combustible constituents for a number of fuels.
+  </p>
+  <p>
+   <i>
+    Mass Analysis Data Tabulated in kg/kg of Fuel
+    <br/>
+    Table 3
+   </i>
+  </p>
+  <table border="1">
+   <thead>
+    <tr data-bbox="165 995 1346 1150">
+     <th rowspan="2">
+      Combustible Component of Fuel
+     </th>
+     <th rowspan="2">
+      Molecular Formula
+     </th>
+     <th colspan="2">
+      Theoretically required kg/kg of Combustible Component
+     </th>
+     <th colspan="5">
+      Products of Combustion kg
+     </th>
+    </tr>
+    <tr data-bbox="165 1150 1346 1192">
+     <th>
+      O
+      <sub>
+       2
+      </sub>
+     </th>
+     <th>
+      Air
+     </th>
+     <th>
+      CO
+      <sub>
+       2
+      </sub>
+     </th>
+     <th>
+      H
+      <sub>
+       2
+      </sub>
+      O
+     </th>
+     <th>
+      N
+      <sub>
+       2
+      </sub>
+     </th>
+     <th>
+      CO
+     </th>
+     <th>
+      SO
+      <sub>
+       2
+      </sub>
+     </th>
+    </tr>
+   </thead>
+   <tbody>
+    <tr data-bbox="165 1199 1346 1234">
+     <td>
+      Carbon (to CO
+      <sub>
+       2
+      </sub>
+      )
+     </td>
+     <td>
+      C
+     </td>
+     <td>
+      2.67
+     </td>
+     <td>
+      11.49
+     </td>
+     <td>
+      3.67
+     </td>
+     <td>
+      --
+     </td>
+     <td>
+      8.82
+     </td>
+     <td>
+      --
+     </td>
+     <td>
+      --
+     </td>
+    </tr>
+    <tr data-bbox="165 1234 1346 1270">
+     <td>
+      Carbon (to CO)
+     </td>
+     <td>
+      C
+     </td>
+     <td>
+      1.33
+     </td>
+     <td>
+      5.75
+     </td>
+     <td>
+      --
+     </td>
+     <td>
+      --
+     </td>
+     <td>
+      4.42
+     </td>
+     <td>
+      2.33
+     </td>
+     <td>
+      --
+     </td>
+    </tr>
+    <tr data-bbox="165 1270 1346 1306">
+     <td>
+      Carbon Monoxide
+     </td>
+     <td>
+      CO
+     </td>
+     <td>
+      0.57
+     </td>
+     <td>
+      2.46
+     </td>
+     <td>
+      1.57
+     </td>
+     <td>
+      --
+     </td>
+     <td>
+      1.89
+     </td>
+     <td>
+      --
+     </td>
+     <td>
+      --
+     </td>
+    </tr>
+    <tr data-bbox="165 1306 1346 1341">
+     <td>
+      Hydrogen
+     </td>
+     <td>
+      H
+      <sub>
+       2
+      </sub>
+     </td>
+     <td>
+      8.00
+     </td>
+     <td>
+      34.48
+     </td>
+     <td>
+      --
+     </td>
+     <td>
+      9.00
+     </td>
+     <td>
+      26.48
+     </td>
+     <td>
+      --
+     </td>
+     <td>
+      --
+     </td>
+    </tr>
+    <tr data-bbox="165 1341 1346 1377">
+     <td>
+      Sulphur
+     </td>
+     <td>
+      S
+     </td>
+     <td>
+      1.00
+     </td>
+     <td>
+      4.31
+     </td>
+     <td>
+      --
+     </td>
+     <td>
+      --
+     </td>
+     <td>
+      3.31
+     </td>
+     <td>
+      --
+     </td>
+     <td>
+      2.00
+     </td>
+    </tr>
+    <tr data-bbox="165 1377 1346 1413">
+     <td>
+      Methane
+     </td>
+     <td>
+      CH
+      <sub>
+       4
+      </sub>
+     </td>
+     <td>
+      4.00
+     </td>
+     <td>
+      17.24
+     </td>
+     <td>
+      2.75
+     </td>
+     <td>
+      2.25
+     </td>
+     <td>
+      13.24
+     </td>
+     <td>
+      --
+     </td>
+     <td>
+      --
+     </td>
+    </tr>
+    <tr data-bbox="165 1413 1346 1455">
+     <td>
+      Ethane
+     </td>
+     <td>
+      C
+      <sub>
+       2
+      </sub>
+      H
+      <sub>
+       6
+      </sub>
+     </td>
+     <td>
+      3.73
+     </td>
+     <td>
+      16.09
+     </td>
+     <td>
+      2.93
+     </td>
+     <td>
+      1.80
+     </td>
+     <td>
+      12.36
+     </td>
+     <td>
+      --
+     </td>
+     <td>
+      --
+     </td>
+    </tr>
+   </tbody>
+  </table>
+  <h3>
+   VOLUME ANALYSIS OF FUELS
+  </h3>
+  <p>
+   Sometimes it is necessary to convert between the mass and volume of a fuel. This happens when the fuel is gaseous. Some examples are shown in Table 4.
+  </p>
+  <p align="center">
+   <i>
+    Mass Analysis Data Tabulated in m
+    <sup>
+     3
+    </sup>
+    /m
+    <sup>
+     3
+    </sup>
+    of Fuel
+   </i>
+   <br/>
+   <i>
+    Table 4
+   </i>
+  </p>
+  <table border="1">
+   <thead>
+    <tr data-bbox="259 266 1429 483">
+     <th rowspan="2">
+      Gaseous Combustible Component
+     </th>
+     <th rowspan="2">
+      Molecular Formula
+     </th>
+     <th colspan="2">
+      Theoretically Required m
+      <sup>
+       3
+      </sup>
+      /m
+      <sup>
+       3
+      </sup>
+      of Combustible Component
+     </th>
+     <th colspan="5">
+      Products of Combustion m
+      <sup>
+       3
+      </sup>
+     </th>
+    </tr>
+    <tr data-bbox="259 483 1429 522">
+     <th>
+      O
+      <sub>
+       2
+      </sub>
+     </th>
+     <th>
+      Air
+     </th>
+     <th>
+      CO
+      <sub>
+       2
+      </sub>
+     </th>
+     <th>
+      H
+      <sub>
+       2
+      </sub>
+      O
+     </th>
+     <th>
+      N
+      <sub>
+       2
+      </sub>
+     </th>
+     <th>
+      CO
+     </th>
+     <th>
+      SO
+      <sub>
+       2
+      </sub>
+     </th>
+    </tr>
+   </thead>
+   <tbody>
+    <tr data-bbox="259 522 1429 554">
+     <td>
+      Carbon Monoxide
+     </td>
+     <td>
+      CO
+     </td>
+     <td>
+      0.5
+     </td>
+     <td>
+      2.38
+     </td>
+     <td>
+      1
+     </td>
+     <td>
+      --
+     </td>
+     <td>
+      1.88
+     </td>
+     <td>
+      --
+     </td>
+     <td>
+      --
+     </td>
+    </tr>
+    <tr data-bbox="259 554 1429 585">
+     <td>
+      Hydrogen
+     </td>
+     <td>
+      H
+      <sub>
+       2
+      </sub>
+     </td>
+     <td>
+      0.5
+     </td>
+     <td>
+      2.38
+     </td>
+     <td>
+      --
+     </td>
+     <td>
+      1
+     </td>
+     <td>
+      1.88
+     </td>
+     <td>
+      --
+     </td>
+     <td>
+      --
+     </td>
+    </tr>
+    <tr data-bbox="259 585 1429 615">
+     <td>
+      Methane
+     </td>
+     <td>
+      CH
+      <sub>
+       4
+      </sub>
+     </td>
+     <td>
+      2.0
+     </td>
+     <td>
+      9.52
+     </td>
+     <td>
+      1
+     </td>
+     <td>
+      2
+     </td>
+     <td>
+      7.52
+     </td>
+     <td>
+      --
+     </td>
+     <td>
+      --
+     </td>
+    </tr>
+    <tr data-bbox="259 615 1429 644">
+     <td>
+      Ethane
+     </td>
+     <td>
+      C
+      <sub>
+       2
+      </sub>
+      H
+      <sub>
+       6
+      </sub>
+     </td>
+     <td>
+      3.5
+     </td>
+     <td>
+      16.67
+     </td>
+     <td>
+      2
+     </td>
+     <td>
+      3
+     </td>
+     <td>
+      13.17
+     </td>
+     <td>
+      --
+     </td>
+     <td>
+      --
+     </td>
+    </tr>
+   </tbody>
+  </table>
+  <p>
+   The derivation of Table 4 requires the application of “Avogadro’s Hypothesis” which states:
+  </p>
+  <p align="center">
+   EQUAL VOLUMES OF DIFFERENT GASES AT THE SAME
+   <br/>
+   TEMPERATURE AND PRESSURE WILL CONTAIN EQUAL NUMBERS OF
+   <br/>
+   MOLECULES.
+  </p>
+  <p>
+   A standard volume can be chosen which just contains the molecular mass of each gas. For example, hydrogen has a molecular mass 2.016 at standard temperature and pressure (101.3 kPa and 0°C). Thus, 2.016 kg of H
+   <sub>
+    2
+   </sub>
+   occupies
+   \(
+    V
+   \)
+   m
+   <sup>
+    3
+   </sup>
+   .
+  </p>
+  <p>
+   <p>
+    where
+   </p>
+   $$
+    V = \frac{wRT}{P} \text{ m}^3
+   $$
+   <p>
+    and
+    \(
+     m = 2.016 \text{ kg}
+    \)
+    <br/>
+    \(
+     R = 4124 \text{ J/kg K}
+    \)
+    (The Characteristic Constant for Hydrogen)
+    <br/>
+    \(
+     T = 0 + 273 \text{ K}
+    \)
+    <br/>
+    \(
+     P = 101.3 \times 1000 \text{ Pa}
+    \)
+   </p>
+   $$
+    V = \frac{2.016 \times 4124 \times 273}{101.3 \times 1000}
+   $$
+   $$
+    = 22.4 \text{ m}^3
+   $$
+  </p>
+  <p>
+   All gases of a similar molecular mass, when under the same conditions of temperature and pressure, will occupy the same volume of 22.4 m
+   <sup>
+    3
+   </sup>
+   .
+  </p>
+  <p>
+   In the case of hydrogen, Table 3 states that 1 kg of H
+   <sub>
+    2
+   </sub>
+   requires 8 kg of O
+   <sub>
+    2
+   </sub>
+   for complete combustion.
+  </p>
+  <p>
+   Since 1 kg of any gas occupies:
+  </p>
+  <p>
+   $$
+    M \times \frac{22.4}{\text{mol wt}} \text{ m}^3 \text{ where } M = \text{mass of gas in kg}
+   $$
+  </p>
+  <p>
+   $$
+    1 \text{ kg of H}_2 \text{ will occupy } \frac{1 \times 22.4}{2} = 11.2 \text{ m}^3
+   $$
+  </p>
+  <p>
+   $$
+    8 \text{ kg of O}_2 \text{ will occupy } \frac{8 \times 22.4}{32} = 5.6 \text{ m}^3
+   $$
+  </p>
+  <p>
+   $$
+    \text{Checking with Table 4, } 1 \text{ m}^3 \text{ of H}_2 \text{ requires } \frac{5.6}{11.2} = 0.5 \text{ m}^3 \text{ of O}_2
+   $$
+  </p>
+  <p>
+   To find the volume of a gas at a different temperature or pressure, application of the General Gas Law gives the desired results.
+  </p>
+  <h2>
+   Objective 3
+  </h2>
+  <p>
+   <b>
+    Describe proximate and ultimate analysis and calculate the heating value of fuel.
+   </b>
+  </p>
+  <h3>
+   FUEL ANALYSES
+  </h3>
+  <p>
+   To determine the properties of a fuel, such as its burning characteristics, constituents, heating value, and the amount of air required for combustion, it is necessary to analyse the fuel. Two methods of analysis are used to determine the composition of fuel:
+  </p>
+  <ul style="list-style-type: none">
+   <li>
+    • Proximate analysis - determines the composition of the fuel by mechanical means
+   </li>
+   <li>
+    • Ultimate analysis - separates the fuel into its chemical constituents by chemical processes
+   </li>
+  </ul>
+  <h4>
+   Proximate Analysis
+  </h4>
+  <p>
+   Proximate analysis on a solid fuel such as coal or hog fuel determines the percentage of moisture, volatile material, fixed carbon and ash in the fuel. This indicates the behaviour of the fuel in the furnace and the best method to be used for firing. Three samples are taken and weighed, one for each part of the analysis.
+  </p>
+  <p>
+   The first sample is dried for one hour in an oven, at 105°C, and then weighed again. The percentage of moisture will be the loss of mass divided by the original mass of the sample, times 100.
+  </p>
+  <p>
+   The second sample is heated for seven minutes in a covered oxygen free container, to 954°C. The loss of mass represents both moisture and volatile material. The percentage of volatile material is obtained by subtracting the percentage of moisture that was determined from the analysis of the first sample.
+  </p>
+  <p>
+   The third sample is then heated for two hours, at 760°C, to achieve complete combustion. The remaining residue is the ash content.
+  </p>
+  <p>
+   The percentage of fixed carbon is the difference between 100 and the sum of the ash, volatiles and moisture percentages. Percentages can vary significantly with different fuels.
+  </p>
+  <p>
+   Table 5 shows examples of the proximate analysis of a coal and a hog fuel (wood product waste) sample:
+  </p>
+  <p>
+   <i>
+    Proximate Analysis
+    <br/>
+    Table 5
+   </i>
+  </p>
+  <table border="1">
+   <thead>
+    <tr data-bbox="311 403 1346 441">
+     <th>
+      CONSTITUENT
+     </th>
+     <th>
+      COAL
+     </th>
+     <th>
+      HOG FUEL
+     </th>
+    </tr>
+   </thead>
+   <tbody>
+    <tr data-bbox="311 441 1346 474">
+     <td>
+      Fixed carbon
+     </td>
+     <td>
+      57.43%
+     </td>
+     <td>
+      52.56%
+     </td>
+    </tr>
+    <tr data-bbox="311 474 1346 508">
+     <td>
+      Volatile material
+     </td>
+     <td>
+      34.67%
+     </td>
+     <td>
+      11.02%
+     </td>
+    </tr>
+    <tr data-bbox="311 508 1346 539">
+     <td>
+      Moisture
+     </td>
+     <td>
+      2.71%
+     </td>
+     <td>
+      35.91%
+     </td>
+    </tr>
+    <tr data-bbox="311 539 1346 571">
+     <td>
+      Ash
+     </td>
+     <td>
+      5.19%
+     </td>
+     <td>
+      0.51%
+     </td>
+    </tr>
+   </tbody>
+  </table>
+  <h4>
+   Ultimate Analysis
+  </h4>
+  <p>
+   While the proximate analysis is sufficient to determine the burning qualities of a fuel, a more detailed analysis is required to carry out combustion calculations. This more detailed analysis, called the
+   <b>
+    ultimate analysis
+   </b>
+   , breaks down the fuel chemically into all its elements such as carbon, nitrogen, oxygen, hydrogen and sulphur. A qualified chemist does this analysis in a chemical laboratory. A chemical analysis of the elements in a coal includes the following:
+  </p>
+  <ul style="list-style-type: none">
+   <li>
+    • Carbon
+   </li>
+   <li>
+    • Hydrogen
+   </li>
+   <li>
+    • Sulphur
+   </li>
+   <li>
+    • Oxygen
+   </li>
+   <li>
+    • Nitrogen
+   </li>
+   <li>
+    • Ash
+   </li>
+  </ul>
+  <p>
+   Table 6 gives the ultimate analysis of the same type of coal used for the proximate analysis. The values are in percentages by mass.
+  </p>
+  <p>
+   <i>
+    Ultimate Analysis
+    <br/>
+    Table 6
+   </i>
+  </p>
+  <table border="1">
+   <thead>
+    <tr data-bbox="360 1367 1317 1407">
+     <th>
+      CONSTITUENT
+     </th>
+     <th>
+      PERCENTAGE
+     </th>
+    </tr>
+   </thead>
+   <tbody>
+    <tr data-bbox="360 1407 1317 1440">
+     <td>
+      Carbon
+     </td>
+     <td>
+      79.71
+     </td>
+    </tr>
+    <tr data-bbox="360 1440 1317 1474">
+     <td>
+      Hydrogen
+     </td>
+     <td>
+      5.29
+     </td>
+    </tr>
+    <tr data-bbox="360 1474 1317 1507">
+     <td>
+      Sulphur
+     </td>
+     <td>
+      1.26
+     </td>
+    </tr>
+    <tr data-bbox="360 1507 1317 1541">
+     <td>
+      Oxygen
+     </td>
+     <td>
+      7.13
+     </td>
+    </tr>
+    <tr data-bbox="360 1541 1317 1575">
+     <td>
+      Nitrogen
+     </td>
+     <td>
+      1.42
+     </td>
+    </tr>
+    <tr data-bbox="360 1575 1317 1598">
+     <td>
+      Ash
+     </td>
+     <td>
+      5.19
+     </td>
+    </tr>
+   </tbody>
+  </table>
+  <p>
+   Note that the ash content is the same for both types of analysis. The amount of carbon in the ultimate analysis is greater than that in the proximate analysis because it includes both the fixed carbon and the carbon contained in the volatile material.
+  </p>
+  <p>
+   The analyses may be expressed in various ways:
+  </p>
+  <ul style="list-style-type: none">
+   <li>
+    • As received or as fired
+   </li>
+   <li>
+    • Dry or moisture free
+   </li>
+   <li>
+    • Moisture and ash free
+   </li>
+  </ul>
+  <h4>
+   As Received or As Fired
+  </h4>
+  <p>
+   The “as received or as fired” method lists the constituents of the fuel as it is received at the plant or as it is fed to the boiler furnace. In this case, the moisture content is included as part of the hydrogen and oxygen. This is the method used for ultimate analysis.
+  </p>
+  <h6>
+   Dry or Moisture Free
+  </h6>
+  <p>
+   In the “dry or moisture free” method, the mass of the moisture is deducted and the constituents are listed as percentages of the remaining mass of fuel.
+  </p>
+  <h5>
+   Moisture or Ash Free
+  </h5>
+  <p>
+   In the “moisture or ash free” method, the mass of the moisture plus the mass of the ash is deducted and the constituents are listed as percentages of the remaining mass of fuel.
+  </p>
+  <h3>
+   HIGHER AND LOWER HEATING VALUES
+  </h3>
+  <p>
+   When the hydrogen in the fuel combines with oxygen in the combustion process, it produces
+   \(
+    \text{H}_2\text{O}
+   \)
+   . Since that water cannot stay in the liquid form in the high temperature zones of the furnace or flue gas passages, it turns to steam. It passes out of the furnace with the waste gases carrying with it the enthalpy of evaporation. This heat energy is lost in the waste gases and therefore not available to the boiler or heat engine.
+  </p>
+  <p>
+   The higher heating value (HHV) is the total amount of heat produced including the latent heat of vaporization of any water vapour formed.
+  </p>
+  <p>
+   The lower heating value (LHV) is the total amount of heat produced minus the latent heat of vaporization of any water vapour formed. This latent heat of vaporization is in the amount of 2257 kJ/kg water.
+  </p>
+  <h4>
+   Converting Between HHV and LHV
+  </h4>
+  <p>
+   The relationship between the lower heating value and the higher heating value can be written as an equation as follows:
+  </p>
+  <p>
+   $$
+    \text{LHV} = \text{HHV} - 2257(m + 9 h)
+   $$
+  </p>
+  <p>
+   where
+   \(
+    m
+   \)
+   = mass of moisture in fuel/kg
+  </p>
+  <p>
+   \(
+    h
+   \)
+   = mass of hydrogen in fuel/kg
+  </p>
+  <p>
+   When the fuel is hydrogen this gives:
+  </p>
+  <p>
+   $$
+    \begin{aligned}\text{LHV} &amp;= 144\,200 - 2257(0 + 9 \times 1) \\ &amp;= 144\,200 - 20\,313 \\ &amp;= \mathbf{123\,887\ kJ/kg\ (Ans.)}\end{aligned}
+   $$
+  </p>
+  <p>
+   When firing coal, oil, hog fuel, municipal wastes or any fuel that contains water, allowance is made for the inherent moisture in the fuel as well as the moisture produced in the burning of hydrogen. This is why the “mass of moisture in fuel/kg” is added to the equation when determining heating values.
+  </p>
+  <p>
+   Power engineers in North America follow the recommendations of the ASME and use the HHV. European practice is to use the LHV.
+  </p>
+  <p>
+   Usually a statement of heating value determined experimentally using a calorimeter, accompanies the lab's report on the fuel analysis.
+  </p>
+  <h4>
+   Heating Value from an Ultimate Analysis
+  </h4>
+  <p>
+   A calculation of the heating value of the fuel can be made from the Ultimate Analysis using the known heating values of each of the combustible materials, as shown in Table 7.
+  </p>
+  <p>
+   Any given fuel liberates heat in proportion to the mass of each of these elements it contains. The heating value can be calculated if the ultimate analysis is known.
+  </p>
+  <p>
+   The higher heat value of a coal can also be found using Dulong's Formula as follows:
+  </p>
+  <p>
+   $$
+    \text{Heating Value kJ/kg} = 33\,700\ C + 144\,000 \left( H_2 - \frac{O_2}{8} \right) + 9\,300\ S
+   $$
+  </p>
+  <p>
+   C = Mass of carbon/kg of fuel
+   <br/>
+   \(
+    H_2
+   \)
+   = Mass of hydrogen/kg of fuel
+   <br/>
+   \(
+    O_2
+   \)
+   = Mass of oxygen/kg of fuel
+   <br/>
+   S = Mass of sulphur/kg of fuel
+  </p>
+  <p align="center">
+   <i>
+    Table of Heating Values
+   </i>
+   <br/>
+   <i>
+    Table 7
+   </i>
+  </p>
+  <table border="1">
+   <thead>
+    <tr data-bbox="177 357 1382 405">
+     <th rowspan="3">
+      Combustible
+     </th>
+     <th rowspan="3">
+      Symbol
+     </th>
+     <th colspan="2">
+      Heating Values
+     </th>
+     <th rowspan="3">
+      kJ/m
+      <sup>
+       3
+      </sup>
+      <br/>
+      (at 101 kPa
+      <br/>
+      and 0°C)
+     </th>
+    </tr>
+    <tr data-bbox="177 405 1382 516">
+     <th colspan="3">
+      MJ/kg
+     </th>
+    </tr>
+    <tr data-bbox="177 516 1382 567">
+     <th>
+      Higher
+     </th>
+     <th>
+      Lower
+     </th>
+    </tr>
+   </thead>
+   <tbody>
+    <tr data-bbox="177 567 1382 604">
+     <td>
+      Hydrogen
+     </td>
+     <td>
+      H
+      <sub>
+       2
+      </sub>
+     </td>
+     <td>
+      144.2
+     </td>
+     <td>
+      122.1
+     </td>
+     <td>
+      12 817
+     </td>
+    </tr>
+    <tr data-bbox="177 604 1382 642">
+     <td>
+      Carbon (to CO)
+     </td>
+     <td>
+      C
+     </td>
+     <td>
+      10.1
+     </td>
+     <td>
+      ---
+     </td>
+     <td>
+      --
+     </td>
+    </tr>
+    <tr data-bbox="177 642 1382 680">
+     <td>
+      Carbon (to CO
+      <sub>
+       2
+      </sub>
+      )
+     </td>
+     <td>
+      C
+     </td>
+     <td>
+      33.7
+     </td>
+     <td>
+      ---
+     </td>
+     <td>
+      --
+     </td>
+    </tr>
+    <tr data-bbox="177 680 1382 718">
+     <td>
+      Carbon Monoxide
+     </td>
+     <td>
+      CO
+     </td>
+     <td>
+      10.2
+     </td>
+     <td>
+      ---
+     </td>
+     <td>
+      12 780
+     </td>
+    </tr>
+    <tr data-bbox="177 718 1382 756">
+     <td>
+      Sulphur (to SO
+      <sub>
+       2
+      </sub>
+      )
+     </td>
+     <td>
+      S
+     </td>
+     <td>
+      9.3
+     </td>
+     <td>
+      ---
+     </td>
+     <td>
+      --
+     </td>
+    </tr>
+    <tr data-bbox="177 756 1382 793">
+     <td>
+      Sulphur (to SO
+      <sub>
+       3
+      </sub>
+      )
+     </td>
+     <td>
+      S
+     </td>
+     <td>
+      13.4
+     </td>
+     <td>
+      ---
+     </td>
+     <td>
+      --
+     </td>
+    </tr>
+    <tr data-bbox="177 793 1382 831">
+     <td>
+      Methane
+     </td>
+     <td>
+      CH
+      <sub>
+       4
+      </sub>
+     </td>
+     <td>
+      55.5
+     </td>
+     <td>
+      50
+     </td>
+     <td>
+      39 793
+     </td>
+    </tr>
+    <tr data-bbox="177 831 1382 869">
+     <td>
+      Ethane
+     </td>
+     <td>
+      C
+      <sub>
+       2
+      </sub>
+      H
+      <sub>
+       6
+      </sub>
+     </td>
+     <td>
+      51.7
+     </td>
+     <td>
+      47.3
+     </td>
+     <td>
+      71 780
+     </td>
+    </tr>
+    <tr data-bbox="177 869 1382 907">
+     <td>
+      Propane
+     </td>
+     <td>
+      C
+      <sub>
+       3
+      </sub>
+      H
+      <sub>
+       8
+      </sub>
+     </td>
+     <td>
+      50.3
+     </td>
+     <td>
+      46.4
+     </td>
+     <td>
+      --
+     </td>
+    </tr>
+    <tr data-bbox="177 907 1382 945">
+     <td>
+      Butane
+     </td>
+     <td>
+      C
+      <sub>
+       4
+      </sub>
+      H
+      <sub>
+       10
+      </sub>
+     </td>
+     <td>
+      49.5
+     </td>
+     <td>
+      45.7
+     </td>
+     <td>
+      132 642
+     </td>
+    </tr>
+    <tr data-bbox="177 945 1382 982">
+     <td>
+      Octane
+     </td>
+     <td>
+      C
+      <sub>
+       8
+      </sub>
+      H
+      <sub>
+       18
+      </sub>
+     </td>
+     <td>
+      47.9
+     </td>
+     <td>
+      44.4
+     </td>
+     <td>
+      --
+     </td>
+    </tr>
+    <tr data-bbox="177 982 1382 1020">
+     <td>
+      Benzene
+     </td>
+     <td>
+      C
+      <sub>
+       6
+      </sub>
+      H
+      <sub>
+       6
+      </sub>
+     </td>
+     <td>
+      41.8
+     </td>
+     <td>
+      40.1
+     </td>
+     <td>
+      --
+     </td>
+    </tr>
+    <tr data-bbox="177 1020 1382 1058">
+     <td>
+      Acetylene
+     </td>
+     <td>
+      C
+      <sub>
+       2
+      </sub>
+      H
+      <sub>
+       2
+      </sub>
+     </td>
+     <td>
+      49.9
+     </td>
+     <td>
+      48.2
+     </td>
+     <td>
+      58 683
+     </td>
+    </tr>
+    <tr data-bbox="177 1058 1382 1096">
+     <td>
+      Hydrogen Sulphide
+     </td>
+     <td>
+      H
+      <sub>
+       2
+      </sub>
+      S
+     </td>
+     <td>
+      16.5
+     </td>
+     <td>
+      15.2
+     </td>
+     <td>
+      24 107
+     </td>
+    </tr>
+   </tbody>
+  </table>
+  <p>
+   Part of the hydrogen will combine with the oxygen in the coal and form water. Therefore, the hydrogen associated with this combination will not be available for the combustion process. The hydrogen that is available for producing heat is the total hydrogen, minus that which readily combines with the oxygen to form water. This has been proven
+  </p>
+  <p>
+   through testing to equal one-eighth of the oxygen present or
+   \(
+    \frac{O_2}{8}
+   \)
+   . The available or free
+  </p>
+  <p>
+   hydrogen is then
+   \(
+    \left( H_2 - \frac{O_2}{8} \right)
+   \)
+   .
+  </p>
+  <h4>
+   Example 1:
+  </h4>
+  <p>
+   The ultimate analysis of a sample of coal shows the following percentages by mass: carbon 84.50, hydrogen 4.20, oxygen 3.04, nitrogen 1.28, sulphur 0.91, and ash 6.07. Find the higher heating value per kg of coal using Dulong's Formula.
+  </p>
+  <p>
+   <b>
+    Solution:
+   </b>
+  </p>
+  <p>
+   $$
+    \begin{aligned}\text{Heating Value kJ/kg} &amp;= 33\,700\,C + 144\,000\left(H_2 - \frac{O_2}{8}\right) + 9\,300\,S \\ &amp;= 33\,700 \times 0.845 + 144\,000\left(0.042 - \frac{0.0304}{8}\right) + 9\,300 \times 0.0091 \\ &amp;= 28\,476.5 + 5\,500.8 + 84.63 \\ &amp;= \mathbf{34\,061.93\,kJ/kg\ (Ans.)}\end{aligned}
+   $$
+  </p>
+  <p>
+   Dulong's formula can be applied as shown above to give an approximate heating value of coal. The same formula can be used for an oil fuel but gives less accurate results. Gaseous fuel heating values are best calculated from the individual constituents on a volumetric basis.
+  </p>
+  <h2>
+   Objective 4
+  </h2>
+  <p>
+   <b>
+    Given the results of a bomb calorimeter test, calculate the heating value of a fuel.
+   </b>
+  </p>
+  <h3>
+   CALCULATION OF FUEL HEATING VALUE
+  </h3>
+  <p>
+   One of the best methods for accurately determining the heating value of a fuel is to use a device called a bomb calorimeter. A calorimeter takes a carefully measured amount of a fuel and combusts it under controlled conditions to measure the amount of heat energy produced during complete combustion.
+  </p>
+  <p>
+   As the fuel burns, it releases heat energy which is absorbed by the known mass of water in the bucket and by the metal parts that make up the calorimeter. To make calculating the heating value of the fuel easy, the metal parts of the calorimeter are first converted into a “known water equivalent value”. Therefore, the total heat energy given off by the fuel is calculated using the following equation:
+  </p>
+  <p>
+   Heat energy given up by the fuel = (Mass of water + water equivalent of the metal parts) × (change in temperature of the water) × specific heat of the water or 4.2 kJ/kg K)
+  </p>
+  <h3>
+   BOMB CALORIMETER
+  </h3>
+  <p>
+   A measured amount of fuel is placed inside the bomb or crucible of the oxygen bomb calorimeter shown in Fig.1. A fuse wire is connected to the igniter terminals and suspended immediately above the fuel sample. The bomb is closed and filled with oxygen to a pressure of about 2 070 kPa and placed in the water bucket. A motor driven stirrer continuously circulates the water in the bucket. Passing an electric current through the fuse wire ignites the fuel.
+  </p>
+  <p>
+   The heat that the combustion of the fuel liberates is calculated from the temperature rise of the water and the known mass of the water plus the water equivalent of the metal parts. The water equivalent is simply the mass of the metal multiplied by the specific heat of the material.
+  </p>
+  <img alt="Diagram of an Oxygen Bomb Calorimeter. The setup includes a central 'Bomb' submerged in a 'Water Bucket'. The bucket is surrounded by an outer jacket. A 'Thermometer' is inserted through the top lid. 'Igniter Terminals' are connected to the bomb. An 'Oxygen Inlet' is shown on the left side of the lid. A 'Stirring Motor' is attached to the right side, with a stirrer shaft extending into the water bucket." src="ef96fcba3a34e9e35ff8ee3cc8cb7b20_img.jpg"/>
+  <div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+   <div class="img-alt">
+    Diagram of an Oxygen Bomb Calorimeter. The setup includes a central 'Bomb' submerged in a 'Water Bucket'. The bucket is surrounded by an outer jacket. A 'Thermometer' is inserted through the top lid. 'Igniter Terminals' are connected to the bomb. An 'Oxygen Inlet' is shown on the left side of the lid. A 'Stirring Motor' is attached to the right side, with a stirrer shaft extending into the water bucket.
+   </div>
+  </div>
+  <p>
+   Figure 1
+   <br/>
+   Oxygen Bomb Calorimeter
+  </p>
+  <h4>
+   Example 2:
+  </h4>
+  <p>
+   A 0.78 gram sample of coal was burned in a bomb calorimeter with a water equivalent of 460 grams. The bomb is immersed in a water bucket containing 2 400 grams of water. The temperature of the water increased a total of 2.21°C. Calculate the heating value of this coal in kJ/kg.
+  </p>
+  <h5>
+   Solution:
+  </h5>
+  <p>
+   $$
+    \begin{aligned} \text{Heat given out by coal} &amp;= \text{Heat absorbed by water and metal} \\ \text{Mass of coal} \times \text{Heating Value of coal} &amp;= \text{Specific Heat of Water (4.183 kJ/kg } ^\circ\text{C)} \times \text{Mass} \\ &amp;\quad (\text{Water} + \text{Water Equivalent}) \times \text{Temp. Change} \end{aligned}
+   $$
+  </p>
+  <p>
+   $$
+    \begin{aligned} 0.78\text{g} \times \text{Heating Value} &amp;= 4.183 \text{ J/g } ^\circ\text{C} (2400 \text{ g} + 460 \text{ g}) \times 2.21^\circ\text{C} \\ \text{Heating value} &amp;= \frac{11\,963.38 \times 2.21}{0.78} \text{ J/g or kJ/kg} \\ &amp;= 33\,896.24 \text{ kJ/kg (Ans.)} \end{aligned}
+   $$
+  </p>
+  <p>
+   These results represent the higher heating value because the water vapour formed during combustion condenses inside the bomb, and gives up its latent heat of vaporization to the surrounding water.
+  </p>
+  <h2>
+   Objective 5
+  </h2>
+  <p>
+   <b>
+    Calculate the amount of air and excess air required for combustion of fuel.
+   </b>
+  </p>
+  <h3>
+   AIR REQUIRED FOR COMBUSTION
+  </h3>
+  <p>
+   The “theoretical air” required for complete combustion is the exact amount of air required to satisfy all the chemical equations associated with the complete combustion of a specific fuel. Using values from Table 3, a simple formula may be derived for the amount of theoretically air required for complete combustion of any fuel. A mixture that contains just enough (theoretical) air to supply sufficient oxygen for complete combustion of the fuel is called a “stoichiometric mixture”. This is expressed in terms of kg of air per kg of fuel as follows:
+  </p>
+  <p>
+   $$
+    \text{Theoretical air (kg per kg of fuel)} = \left[ \frac{8}{3} C + 8 \left( H_2 - \frac{O_2}{8} \right) + S \right] \frac{100}{23}
+   $$
+  </p>
+  <p>
+   The terms C, H
+   <sub>
+    2
+   </sub>
+   , O
+   <sub>
+    2
+   </sub>
+   and S represent the mass % of carbon, hydrogen, oxygen and sulphur in the fuel. The respective coefficients are taken from Table 3.
+  </p>
+  <h4>
+   Example 3
+  </h4>
+  <p>
+   Calculate the air theoretically required for complete combustion of coal of the following analysis (dry):
+  </p>
+  <table>
+   <tr data-bbox="375 1297 688 1335">
+    <td>
+     Carbon
+    </td>
+    <td>
+     69.3%
+    </td>
+   </tr>
+   <tr data-bbox="375 1335 688 1373">
+    <td>
+     Hydrogen
+    </td>
+    <td>
+     4.2%
+    </td>
+   </tr>
+   <tr data-bbox="375 1373 688 1411">
+    <td>
+     Oxygen
+    </td>
+    <td>
+     7.5%
+    </td>
+   </tr>
+   <tr data-bbox="375 1411 688 1449">
+    <td>
+     Nitrogen
+    </td>
+    <td>
+     1.1%
+    </td>
+   </tr>
+   <tr data-bbox="375 1449 688 1486">
+    <td>
+     Sulphur
+    </td>
+    <td>
+     0.6%
+    </td>
+   </tr>
+   <tr data-bbox="375 1486 688 1524">
+    <td>
+     Ash
+    </td>
+    <td>
+     <u>
+      17.3%
+     </u>
+    </td>
+   </tr>
+   <tr data-bbox="375 1524 688 1556">
+    <td>
+    </td>
+    <td>
+     100.0%
+    </td>
+   </tr>
+  </table>
+  <p>
+   Moisture (not included in the analysis) was found to be 2.1%.
+  </p>
+  <h5>
+   Solution
+  </h5>
+  <p>
+   $$
+    \begin{aligned}\text{Theoretical air (kg per kg of fuel)} &amp;= \left[ \frac{8}{3} C + 8 \left( H_2 - \frac{O_2}{8} \right) + S \right] \frac{100}{23} \\&amp;= \left[ \frac{8}{3} \times 0.693 + 8 \left( 0.042 - \frac{0.075}{8} \right) + 0.006 \right] 4.348 \\&amp;= [1.848 + 8(0.042 - 0.0094) + 0.006] 4.348 \\&amp;= [1.848 + 8(0.0326) + 0.006] 4.348 \\&amp;= [1.848 + 0.2608 + 0.006] 4.348 \\&amp;= [2.1148] 4.348 \\&amp;= \mathbf{9.195} \text{ kg of air /kg of coal}\end{aligned}
+   $$
+  </p>
+  <p>
+   This formula is accurate enough for most purposes. Calculating each of the component parts of a fuel, gives a more accurate and clear picture of the processes involved in the combustion process. Examples of these calculations are: These results are also shown tabulated in Table 8.
+  </p>
+  <table>
+   <tbody>
+    <tr data-bbox="337 896 1068 930">
+     <td>
+      C - 0.693
+     </td>
+     <td>
+      O
+      <sub>
+       2
+      </sub>
+     </td>
+     <td>
+      =
+     </td>
+     <td>
+      2.67
+     </td>
+     <td>
+      ×
+     </td>
+     <td>
+      0.693
+     </td>
+     <td>
+      =
+     </td>
+     <td>
+      1.850
+     </td>
+    </tr>
+    <tr data-bbox="337 930 1068 963">
+     <td>
+     </td>
+     <td>
+      Air
+     </td>
+     <td>
+      =
+     </td>
+     <td>
+      11.49
+     </td>
+     <td>
+      ×
+     </td>
+     <td>
+      0.693
+     </td>
+     <td>
+      =
+     </td>
+     <td>
+      7.963
+     </td>
+    </tr>
+    <tr data-bbox="337 963 1068 997">
+     <td>
+     </td>
+     <td>
+      CO
+      <sub>
+       2
+      </sub>
+     </td>
+     <td>
+      =
+     </td>
+     <td>
+      3.67
+     </td>
+     <td>
+      ×
+     </td>
+     <td>
+      0.693
+     </td>
+     <td>
+      =
+     </td>
+     <td>
+      2.543
+     </td>
+    </tr>
+    <tr data-bbox="337 997 1068 1031">
+     <td>
+     </td>
+     <td>
+      N
+      <sub>
+       2
+      </sub>
+     </td>
+     <td>
+      =
+     </td>
+     <td>
+      8.82
+     </td>
+     <td>
+      ×
+     </td>
+     <td>
+      0.693
+     </td>
+     <td>
+      =
+     </td>
+     <td>
+      6.112
+     </td>
+    </tr>
+    <tr data-bbox="337 1075 1068 1108">
+     <td>
+      H
+      <sub>
+       2
+      </sub>
+      - 0.042
+     </td>
+     <td>
+      O
+      <sub>
+       2
+      </sub>
+     </td>
+     <td>
+      =
+     </td>
+     <td>
+      8
+     </td>
+     <td>
+      ×
+     </td>
+     <td>
+      0.042
+     </td>
+     <td>
+      =
+     </td>
+     <td>
+      0.336
+     </td>
+    </tr>
+    <tr data-bbox="337 1108 1068 1142">
+     <td>
+     </td>
+     <td>
+      Air
+     </td>
+     <td>
+      =
+     </td>
+     <td>
+      34.48
+     </td>
+     <td>
+      ×
+     </td>
+     <td>
+      0.042
+     </td>
+     <td>
+      =
+     </td>
+     <td>
+      1.448
+     </td>
+    </tr>
+    <tr data-bbox="337 1142 1068 1176">
+     <td>
+     </td>
+     <td>
+      N
+      <sub>
+       2
+      </sub>
+     </td>
+     <td>
+      =
+     </td>
+     <td>
+      26.48
+     </td>
+     <td>
+      ×
+     </td>
+     <td>
+      0.042
+     </td>
+     <td>
+      =
+     </td>
+     <td>
+      1.112
+     </td>
+    </tr>
+    <tr data-bbox="337 1176 1068 1209">
+     <td>
+     </td>
+     <td>
+      H
+      <sub>
+       2
+      </sub>
+      O
+     </td>
+     <td>
+      =
+     </td>
+     <td>
+      9
+     </td>
+     <td>
+      ×
+     </td>
+     <td>
+      0.042
+     </td>
+     <td>
+      =
+     </td>
+     <td>
+      0.378
+     </td>
+    </tr>
+    <tr data-bbox="337 1253 1068 1287">
+     <td>
+      S - 0.006
+     </td>
+     <td>
+      O
+      <sub>
+       2
+      </sub>
+     </td>
+     <td>
+      =
+     </td>
+     <td>
+      1
+     </td>
+     <td>
+      ×
+     </td>
+     <td>
+      0.006
+     </td>
+     <td>
+      =
+     </td>
+     <td>
+      0.006
+     </td>
+    </tr>
+    <tr data-bbox="337 1287 1068 1320">
+     <td>
+     </td>
+     <td>
+      Air
+     </td>
+     <td>
+      =
+     </td>
+     <td>
+      4.31
+     </td>
+     <td>
+      ×
+     </td>
+     <td>
+      0.006
+     </td>
+     <td>
+      =
+     </td>
+     <td>
+      0.026
+     </td>
+    </tr>
+    <tr data-bbox="337 1320 1068 1354">
+     <td>
+     </td>
+     <td>
+      N
+      <sub>
+       2
+      </sub>
+     </td>
+     <td>
+      =
+     </td>
+     <td>
+      3.31
+     </td>
+     <td>
+      ×
+     </td>
+     <td>
+      0.006
+     </td>
+     <td>
+      =
+     </td>
+     <td>
+      0.020
+     </td>
+    </tr>
+    <tr data-bbox="337 1354 1068 1388">
+     <td>
+     </td>
+     <td>
+      SO
+      <sub>
+       2
+      </sub>
+     </td>
+     <td>
+      =
+     </td>
+     <td>
+      2
+     </td>
+     <td>
+      ×
+     </td>
+     <td>
+      0.006
+     </td>
+     <td>
+      =
+     </td>
+     <td>
+      0.012
+     </td>
+    </tr>
+   </tbody>
+  </table>
+  <p style="text-align: center;">
+   <i>
+    Tabulated Form
+   </i>
+   <br/>
+   <i>
+    Table 8
+   </i>
+  </p>
+  <table border="1">
+   <thead>
+    <tr data-bbox="185 350 1346 407">
+     <th rowspan="2">
+     </th>
+     <th rowspan="2">
+      Mass/kg of Coal kg
+     </th>
+     <th colspan="2">
+      Required-kg
+     </th>
+     <th colspan="5">
+      Products of Combustion - kg/kg Coal
+     </th>
+    </tr>
+    <tr data-bbox="185 407 1346 443">
+     <th>
+      O
+      <sub>
+       2
+      </sub>
+     </th>
+     <th>
+      Air
+     </th>
+     <th>
+      CO
+      <sub>
+       2
+      </sub>
+     </th>
+     <th>
+      O
+      <sub>
+       2
+      </sub>
+     </th>
+     <th>
+      N
+      <sub>
+       2
+      </sub>
+     </th>
+     <th>
+      H
+      <sub>
+       2
+      </sub>
+      O
+     </th>
+     <th>
+      SO
+      <sub>
+       2
+      </sub>
+     </th>
+    </tr>
+   </thead>
+   <tbody>
+    <tr data-bbox="185 443 1346 499">
+     <td>
+      C
+     </td>
+     <td>
+      0.693
+     </td>
+     <td>
+      1.850
+     </td>
+     <td>
+      7.963
+     </td>
+     <td>
+      2.543
+     </td>
+     <td>
+      --
+     </td>
+     <td>
+      6.112
+     </td>
+     <td>
+      --
+     </td>
+     <td>
+      --
+     </td>
+    </tr>
+    <tr data-bbox="185 499 1346 556">
+     <td>
+      H
+      <sub>
+       2
+      </sub>
+     </td>
+     <td>
+      0.042
+     </td>
+     <td>
+      0.336
+     </td>
+     <td>
+      1.448
+     </td>
+     <td>
+      --
+     </td>
+     <td>
+      --
+     </td>
+     <td>
+      1.112
+     </td>
+     <td>
+      0.378
+     </td>
+     <td>
+      --
+     </td>
+    </tr>
+    <tr data-bbox="185 556 1346 613">
+     <td>
+      O
+      <sub>
+       2
+      </sub>
+     </td>
+     <td>
+      0.075
+     </td>
+     <td>
+      --
+     </td>
+     <td>
+      --
+     </td>
+     <td>
+      --
+     </td>
+     <td>
+      0.075
+     </td>
+     <td>
+      --
+     </td>
+     <td>
+      --
+     </td>
+     <td>
+      --
+     </td>
+    </tr>
+    <tr data-bbox="185 613 1346 669">
+     <td>
+      N
+      <sub>
+       2
+      </sub>
+     </td>
+     <td>
+      0.011
+     </td>
+     <td>
+      --
+     </td>
+     <td>
+      --
+     </td>
+     <td>
+      --
+     </td>
+     <td>
+      --
+     </td>
+     <td>
+      0.011
+     </td>
+     <td>
+      --
+     </td>
+     <td>
+      --
+     </td>
+    </tr>
+    <tr data-bbox="185 669 1346 726">
+     <td>
+      S
+     </td>
+     <td>
+      0.006
+     </td>
+     <td>
+      0.006
+     </td>
+     <td>
+      0.026
+     </td>
+     <td>
+      --
+     </td>
+     <td>
+      --
+     </td>
+     <td>
+      0.020
+     </td>
+     <td>
+      --
+     </td>
+     <td>
+      0.012
+     </td>
+    </tr>
+    <tr data-bbox="185 726 1346 783">
+     <td>
+      Ash
+     </td>
+     <td>
+      0.173
+     </td>
+     <td>
+      --
+     </td>
+     <td>
+      --
+     </td>
+     <td>
+      --
+     </td>
+     <td>
+      --
+     </td>
+     <td>
+      --
+     </td>
+     <td>
+      --
+     </td>
+     <td>
+      --
+     </td>
+    </tr>
+    <tr data-bbox="185 783 1346 840">
+     <td>
+      Totals
+     </td>
+     <td>
+     </td>
+     <td>
+      2.192
+     </td>
+     <td>
+      9.437
+     </td>
+     <td>
+      2.543
+     </td>
+     <td>
+      0.075
+     </td>
+     <td>
+      7.255
+     </td>
+     <td>
+      0.378
+     </td>
+     <td>
+      0.012
+     </td>
+    </tr>
+    <tr data-bbox="185 840 1346 896">
+     <td>
+      O
+      <sub>
+       2
+      </sub>
+      in coal
+     </td>
+     <td>
+     </td>
+     <td>
+      0.075
+     </td>
+     <td>
+      0.323
+     </td>
+     <td>
+      --
+     </td>
+     <td>
+      0.075
+     </td>
+     <td>
+      0.248
+     </td>
+     <td>
+      --
+     </td>
+     <td>
+      --
+     </td>
+    </tr>
+    <tr data-bbox="185 896 1346 953">
+     <td>
+      Totals
+     </td>
+     <td>
+     </td>
+     <td>
+      2.117
+     </td>
+     <td>
+      9.114
+     </td>
+     <td>
+      2.543
+     </td>
+     <td>
+      0.000
+     </td>
+     <td>
+      7.017
+     </td>
+     <td>
+      0.378
+     </td>
+     <td>
+      0.012
+     </td>
+    </tr>
+    <tr data-bbox="185 953 1346 1010">
+     <td>
+      SO
+      <sub>
+       2
+      </sub>
+      as CO
+      <sub>
+       2
+      </sub>
+     </td>
+     <td>
+     </td>
+     <td>
+      --
+     </td>
+     <td>
+      --
+     </td>
+     <td>
+      0.012
+     </td>
+     <td>
+      --
+     </td>
+     <td>
+      --
+     </td>
+     <td>
+      --
+     </td>
+     <td>
+      0.012
+     </td>
+    </tr>
+    <tr data-bbox="185 1010 1346 1081">
+     <td>
+      Total
+     </td>
+     <td>
+     </td>
+     <td>
+      2.115
+     </td>
+     <td>
+      9.114
+     </td>
+     <td>
+      2.555
+     </td>
+     <td>
+      0.000
+     </td>
+     <td>
+      7.017
+     </td>
+     <td>
+      0.378
+     </td>
+     <td>
+      0.000
+     </td>
+    </tr>
+   </tbody>
+  </table>
+  <p>
+   From the totals it is now necessary to subtract the O
+   <sub>
+    2
+   </sub>
+   originally in the coal as well as the air and the N
+   <sub>
+    2
+   </sub>
+   equivalent of this oxygen.
+  </p>
+  <p>
+   The SO
+   <sub>
+    2
+   </sub>
+   in the flue gas appears as CO
+   <sub>
+    2
+   </sub>
+   in the analysis (as will be explained in the following material) so therefore is next added to the CO
+   <sub>
+    2
+   </sub>
+   .
+  </p>
+  <p>
+   The last line gives the final totals. Note that the total air required is now 9.114 kg/kg of fuel compared to 9.195 kg as given by the formula which is a negligible error.
+  </p>
+  <h3>
+   EXCESS AIR CALCULATIONS
+  </h3>
+  <p>
+   If an insufficient amount of air is supplied to the burner, unburned fuel, soot, smoke, and carbon monoxide exhausts from the boiler. This causes:
+  </p>
+  <ul style="list-style-type: none">
+   <li>
+    • Heat transfer surface fouling
+   </li>
+   <li>
+    • Pollution
+   </li>
+   <li>
+    • Lower combustion efficiency
+   </li>
+   <li>
+    • Flame instability and a potential for explosions.
+   </li>
+  </ul>
+  <p>
+   To avoid inefficient and unsafe conditions, boilers operate at a level of air in excess of that required for theoretical complete combustion. Too much excess air can also have a detrimental effect because it dilutes the hot combustion gases with cooler feed air causing a reduction in the combustion temperature or a higher requirement for preheating.
+  </p>
+  <p>
+   In the operation of a boiler, theoretical conditions are never attained, it is important that the foregoing calculations be tied in with practical conditions. Depending on the type of fuel, varying amounts of air in excess of the theoretical amount are used to achieve complete combustion. Incomplete combustion of carbon to carbon monoxide can result in appreciable losses of heat because only about 30% of the available heat in the carbon is released forming CO instead of CO
+   <sub>
+    2
+   </sub>
+   .
+  </p>
+  <p>
+   The mass of air theoretically required for the combustion of one kg of dry coal is (from the above tabulation) 9.195 kg. For each 20% in excess of this amount (that is, each 1.839 kg above 9.195), there appears in the products of combustion:
+  </p>
+  <p>
+   $$
+    1.839 \times 0.232 = 0.427 \text{ kg O}_2
+   $$
+  </p>
+  <p>
+   $$
+    1.839 \times 0.768 = 1.412 \text{ kg N}_2
+   $$
+  </p>
+  <p>
+   Table 9 shows values for varying amounts of excess air:
+  </p>
+  <p style="text-align: center;">
+   <i>
+    Mass of Products of Combustion for Varying Amounts of Air
+   </i>
+   <br/>
+   <i>
+    Table 9
+   </i>
+  </p>
+  <table border="1">
+   <thead>
+    <tr data-bbox="272 800 1461 896">
+     <th rowspan="2">
+     </th>
+     <th rowspan="2">
+      Mass of Products of Combustion kg
+     </th>
+     <th colspan="5">
+      Mass of Products for Varying Amounts of Excess Air - kg
+     </th>
+    </tr>
+    <tr data-bbox="272 896 1461 947">
+     <th>
+      20%
+     </th>
+     <th>
+      40%
+     </th>
+     <th>
+      60%
+     </th>
+     <th>
+      80%
+     </th>
+     <th>
+      100%
+     </th>
+    </tr>
+   </thead>
+   <tbody>
+    <tr data-bbox="272 947 1461 997">
+     <td>
+      CO
+      <sub>
+       2
+      </sub>
+     </td>
+     <td>
+      2.548
+     </td>
+     <td>
+      2.548
+     </td>
+     <td>
+      2.548
+     </td>
+     <td>
+      2.548
+     </td>
+     <td>
+      2.548
+     </td>
+     <td>
+      2.548
+     </td>
+    </tr>
+    <tr data-bbox="272 997 1461 1047">
+     <td>
+      O
+      <sub>
+       2
+      </sub>
+     </td>
+     <td>
+      0.000
+     </td>
+     <td>
+      0.423
+     </td>
+     <td>
+      0.846
+     </td>
+     <td>
+      1.269
+     </td>
+     <td>
+      1.692
+     </td>
+     <td>
+      2.115
+     </td>
+    </tr>
+    <tr data-bbox="272 1047 1461 1098">
+     <td>
+      N
+      <sub>
+       2
+      </sub>
+     </td>
+     <td>
+      7.012
+     </td>
+     <td>
+      8.414
+     </td>
+     <td>
+      9.816
+     </td>
+     <td>
+      11.218
+     </td>
+     <td>
+      12.620
+     </td>
+     <td>
+      14.022
+     </td>
+    </tr>
+    <tr data-bbox="272 1098 1461 1148">
+     <td>
+      H
+      <sub>
+       2
+      </sub>
+      O
+     </td>
+     <td>
+      0.378
+     </td>
+     <td>
+      0.378
+     </td>
+     <td>
+      0.378
+     </td>
+     <td>
+      0.378
+     </td>
+     <td>
+      0.378
+     </td>
+     <td>
+      0.378
+     </td>
+    </tr>
+    <tr data-bbox="272 1148 1461 1224">
+     <td>
+      Total
+     </td>
+     <td>
+      9.938
+     </td>
+     <td>
+      11.763
+     </td>
+     <td>
+      13.588
+     </td>
+     <td>
+      15.413
+     </td>
+     <td>
+      17.238
+     </td>
+     <td>
+      19.063
+     </td>
+    </tr>
+   </tbody>
+  </table>
+  <p>
+   In order to be of practical value it is necessary to calculate for percentage volume of dry products of combustion, since in furnace efficiency tests the content of the flue gases is given in percentage volume. The water content cannot be measured because the analysis is made at room temperature, thus the water will have condensed.
+  </p>
+  <p>
+   By analyzing flue gas composition, the excess air concentration can be determined. This can be done either directly or by using combustion tables similar to the ones in Table 9. The amount of CO
+   <sub>
+    2
+   </sub>
+   in the flue gas remains constant regardless of the excess air. Conversely, the O
+   <sub>
+    2
+   </sub>
+   and N
+   <sub>
+    2
+   </sub>
+   from the air continue to increase. This causes a decrease in the percentage of observed CO
+   <sub>
+    2
+   </sub>
+   and a rise in O
+   <sub>
+    2
+   </sub>
+   and N
+   <sub>
+    2
+   </sub>
+   percentage.
+  </p>
+  <h2>
+   Objective 6
+  </h2>
+  <p>
+   <b>
+    Explain flue gas analysis parameters and their significance.
+   </b>
+  </p>
+  <h3>
+   FLUE GAS ANALYSIS
+  </h3>
+  <p>
+   One of the key tools that the operator uses to maintain the operation of the boiler or steam generator in the most safe and efficient range possible is by analysing the flue gases exiting the stack. The volume of each constituent in the flue gas, as well as the stack opacity (emissions) and flue gas temperatures indicate how efficiently the combustion process is occurring in the furnace. This information is used to adjust and control the various operating parameters to achieve optimum efficiencies.
+  </p>
+  <h3>
+   Composition of Flue Gas
+  </h3>
+  <p>
+   Flue gas should be analysed for:
+  </p>
+  <ol style="list-style-type: none">
+   <li>
+    1.
+    \(
+     \text{CO}_2
+    \)
+    , the product of complete combustion corresponding to a maximum liberation of heat.
+   </li>
+   <li>
+    2.
+    \(
+     \text{CO}
+    \)
+    , the product of incomplete combustion as an indicator of the quantity of undeveloped heat escaping to the stack.
+   </li>
+   <li>
+    3.
+    \(
+     \text{O}_2
+    \)
+    , as an indicator of the excess air being used.
+   </li>
+  </ol>
+  <p>
+   The best operation is that which produces a maximum of
+   \(
+    \text{CO}_2
+   \)
+   with a minimum of
+   \(
+    \text{O}_2
+   \)
+   and no
+   \(
+    \text{CO}
+   \)
+   .
+  </p>
+  <h4>
+   Collecting a Sample
+  </h4>
+  <p>
+   The sample must be a true average of all the gas flowing and it is never easy to obtain a truly representative sample. The composition of the gas may vary considerably between the outer edge and the centre of the gas passage. This affects both the sampling method and placement of any batch or continuous sampling apparatus or analyzer.
+  </p>
+  <p>
+   The sample pipe normally extends either half way or completely across the diameter of the boiler ductwork. It is installed in an area of relatively straight ducting reducing the effect of flue gas turbulence. The sample pipe has a number of inlet holes allowing a representative sample to be collected. Due to the potential for ash, slag and soot to build up and block the inlet holes, there is normally a method of purging the sample pipe. Purging mediums include high-pressure air and nitrogen.
+  </p>
+  <p>
+   The sample collection pipe or nozzle is installed through the ducting or casing of the boiler at the most effective location possible. It is very important that, once installed, the pipe is sealed to prevent air leakage into the ducting or the sample tube itself. Either of these actions will contaminate the sample and give inaccurate readings to the operator. It is important to keep the sample piping clean and making sure there is no in-leakage or contamination of the flue gas sample.
+  </p>
+  <h3>
+   Interpreting the Analysis
+  </h3>
+  <p>
+   The excess air used is calculated, and this figure is compared with the excess air considered appropriate for the method of firing. From this analysis, an opinion can be formed of the efficiency of operation.
+  </p>
+  <p>
+   Tables are available showing CO
+   <sub>
+    2
+   </sub>
+   analyses but these have little value unless complete details are known regarding:
+  </p>
+  <ol style="list-style-type: none">
+   <li>
+    (1) Kind of coal or other fuel and its analysis.
+   </li>
+   <li>
+    (2) Method of stoking: hand, stoker or pulverized fuel.
+   </li>
+   <li>
+    (3) Method of causing draft: natural, forced or induced.
+   </li>
+   <li>
+    (4) Furnace volume compared with the grate area.
+   </li>
+   <li>
+    (5) Rating at which the boiler is being operated which controls the rate at which fuel is being burned.
+   </li>
+  </ol>
+  <p>
+   A six to eight hour test is run under steady load taking CO
+   <sub>
+    2
+   </sub>
+   analyses every 10 or 15 minutes. At the same time, the air supply is reduced until smoke or CO just appears in the flue gas. This gives the maximum CO
+   <sub>
+    2
+   </sub>
+   percentage and the minimum excess air that can be used economically.
+  </p>
+  <p>
+   If these tests are run at different loads or ratings, a valuable set of data is obtained giving the best CO
+   <sub>
+    2
+   </sub>
+   % for different loads. The data indicates:
+  </p>
+  <ol style="list-style-type: none">
+   <li>
+    (1) The relative efficiency of the combustion process.
+   </li>
+   <li>
+    (2) The cleanliness of the boiler surfaces (soot and scale).
+   </li>
+   <li>
+    (3) The condition of the baffles.
+   </li>
+   <li>
+    (4) The tightness of the boiler settings.
+   </li>
+  </ol>
+  <p>
+   Flue gas analyzers give percentage by volume of the flue gases, whereas analysis of fuels and efficiency calculations are based on percentage by weight. The following formula correlates the two values. The symbols represent volumetric percentages of the constituents of the gas analyzed. The result is the dry gas per kg of carbon:
+  </p>
+  <p>
+   $$
+    \text{Dry gas per kg carbon} = \frac{11 \text{ CO}_2 + 8 \text{ O}_2 + 7(\text{CO} + \text{N}_2)}{3(\text{CO}_2 + \text{CO})}
+   $$
+  </p>
+  <p>
+   An assumption is made that the combustion of any fuel is due to the oxidization of carbon, either free or combined. The only gases that can exist are carbon dioxide, carbon monoxide, oxygen and nitrogen. All the carbon comes from the fuel and the oxygen and nitrogen are introduced from the combustion air.
+  </p>
+  <p>
+   The principal assumption of this formula is that the analysis is of dry gas, but in practice there will be a negligible amount of moisture from the air, and a varying amount of moisture due to the hydrogen content of the fuel.
+  </p>
+  <p>
+   Sulphur is present in varying amounts in most fuels. This sulphur burns to
+   \(
+    \text{SO}_2
+   \)
+   . The error in the calculations caused by the presence of sulphur is rectified by modifying the formula.
+  </p>
+  <p>
+   From Table 3, one kg of carbon resulted in 3.67 kg
+   \(
+    \text{CO}_2
+   \)
+   while the mass of
+   \(
+    \text{SO}_2
+   \)
+   from 1 kg of sulphur is 2.00 kg. A correction factor is added to the previous formula (which is based upon the relative density of the gases present), giving the following:
+  </p>
+  <p>
+   $$
+    \text{Dry gas per kg as fired fuel burned} = \frac{11\text{CO}_2 + 8\text{O}_2 + 7(\text{CO} + \text{N}_2)}{3(\text{CO}_2 + \text{CO})} \times \left( \text{C} + \frac{3}{8}\text{S} \right) + \frac{5}{8}\text{S}
+   $$
+  </p>
+  <h4>
+   Example 4
+  </h4>
+  <p>
+   Calculate the mass of dry flue gas from the following analysis:
+  </p>
+  <table>
+   <tr data-bbox="373 995 665 1035">
+    <td>
+     \(
+      \text{CO}_2
+     \)
+    </td>
+    <td>
+     13.1%
+    </td>
+   </tr>
+   <tr data-bbox="373 1035 665 1071">
+    <td>
+     O
+    </td>
+    <td>
+     6.1%
+    </td>
+   </tr>
+   <tr data-bbox="373 1071 665 1106">
+    <td>
+     \(
+      \text{N}_2
+     \)
+    </td>
+    <td>
+     80.8%
+    </td>
+   </tr>
+  </table>
+  <p>
+   Composition of coal showed 80% C and 1.2% S.
+  </p>
+  <h5>
+   Solution
+  </h5>
+  <p>
+   Dry gas per kg as fired fuel burned:
+  </p>
+  <p>
+   $$
+    \begin{aligned} &amp;= \frac{11\text{CO}_2 + 8\text{O}_2 + 7(\text{N}_2 + \text{CO})}{3(\text{CO}_2 + \text{CO})} \times \left( \text{C} + \frac{3}{8}\text{S} \right) + \frac{5}{8}\text{S} \\ &amp;= \frac{11 \times 13.1 + 8 \times 6.1 + 7(80.8 + 0)}{3(13.1 + 0)} \times \left( 0.80 + \frac{3}{8} \times 0.012 \right) + \frac{5}{8} \times 0.012 \\ &amp;= \frac{144.10 + 48.78 + 565.60}{39.3} \times (0.80 + 0.375 \times 0.012) + 0.625 \times 0.012 \\ &amp;= \frac{758.48}{39.30} \times 0.8045 + 0.0075 \\ &amp;= 19.2997 \times 0.8045 + 0.0075 \\ &amp;= \mathbf{15.534 \text{ kg}} \end{aligned}
+   $$
+  </p>
+  <h3>
+   Flue Gas Analysis
+  </h3>
+  <p>
+   Without an analysis of the fuel and a complete analysis of the flue gases to identify any CO
+   <sub>
+    2
+   </sub>
+   , O
+   <sub>
+    2
+   </sub>
+   and oxides of sulphur calculations of the exact volumes of O
+   <sub>
+    2
+   </sub>
+   in the furnace cannot be completed.
+  </p>
+  <p>
+   The maximum CO
+   <sub>
+    2
+   </sub>
+   percentages attainable when burning oil or gas are considerably lower than those that can be attained from the combustion of coal. This is because of the different ratios between the carbon and hydrogen constituents.
+  </p>
+  <p>
+   The perfect combustion of
+   <b>
+    crude oil
+   </b>
+   with no excess air results in about 16% CO
+   <sub>
+    2
+   </sub>
+   in the flue gas. The combustion of
+   <b>
+    natural gas
+   </b>
+   under the same conditions results in about 12% CO
+   <sub>
+    2
+   </sub>
+   .
+  </p>
+  <p>
+   Table 10 gives a comparison between the proportions of CO
+   <sub>
+    2
+   </sub>
+   and O
+   <sub>
+    2
+   </sub>
+   in the flue gas for coal, crude oil and natural gas with varying percentages of excess air. Local suppliers or utilities can be consulted to obtain equivalent figures for other fuels.
+  </p>
+  <p>
+   <i>
+    Excess Air for Several Fuels
+   </i>
+   <br/>
+   <i>
+    Table 10
+   </i>
+  </p>
+  <table border="1">
+   <thead>
+    <tr data-bbox="276 913 1380 953">
+     <th rowspan="2">
+      Fuel
+     </th>
+     <th rowspan="2">
+      Products
+     </th>
+     <th colspan="7">
+      Percentages of Excess Air
+     </th>
+    </tr>
+    <tr data-bbox="276 953 1380 993">
+     <th>
+      0
+     </th>
+     <th>
+      10
+     </th>
+     <th>
+      20
+     </th>
+     <th>
+      40
+     </th>
+     <th>
+      60
+     </th>
+     <th>
+      80
+     </th>
+     <th>
+      100
+     </th>
+    </tr>
+   </thead>
+   <tbody>
+    <tr data-bbox="276 993 1380 1033">
+     <td rowspan="2">
+      Coal
+     </td>
+     <td>
+      CO
+      <sub>
+       2
+      </sub>
+     </td>
+     <td>
+      18.6
+     </td>
+     <td>
+      16.9
+     </td>
+     <td>
+      15.5
+     </td>
+     <td>
+      13.2
+     </td>
+     <td>
+      11.3
+     </td>
+     <td>
+      10.2
+     </td>
+     <td>
+      9.2
+     </td>
+    </tr>
+    <tr data-bbox="276 1033 1380 1073">
+     <td>
+      O
+      <sub>
+       2
+      </sub>
+     </td>
+     <td>
+      0.0
+     </td>
+     <td>
+      2.0
+     </td>
+     <td>
+      3.5
+     </td>
+     <td>
+      6.1
+     </td>
+     <td>
+      8.0
+     </td>
+     <td>
+      9.4
+     </td>
+     <td>
+      10.6
+     </td>
+    </tr>
+    <tr data-bbox="276 1073 1380 1113">
+     <td rowspan="2">
+      Crude Oil
+     </td>
+     <td>
+      CO
+      <sub>
+       2
+      </sub>
+     </td>
+     <td>
+      15.8
+     </td>
+     <td>
+      14.2
+     </td>
+     <td>
+      13.0
+     </td>
+     <td>
+      11.1
+     </td>
+     <td>
+      9.6
+     </td>
+     <td>
+      8.5
+     </td>
+     <td>
+      7.6
+     </td>
+    </tr>
+    <tr data-bbox="276 1113 1380 1152">
+     <td>
+      O
+      <sub>
+       2
+      </sub>
+     </td>
+     <td>
+      0.0
+     </td>
+     <td>
+      2.0
+     </td>
+     <td>
+      3.7
+     </td>
+     <td>
+      6.2
+     </td>
+     <td>
+      8.2
+     </td>
+     <td>
+      9.6
+     </td>
+     <td>
+      10.8
+     </td>
+    </tr>
+    <tr data-bbox="276 1152 1380 1192">
+     <td rowspan="2">
+      Natural Gas
+     </td>
+     <td>
+      CO
+      <sub>
+       2
+      </sub>
+     </td>
+     <td>
+      12.0
+     </td>
+     <td>
+      10.8
+     </td>
+     <td>
+      9.8
+     </td>
+     <td>
+      8.3
+     </td>
+     <td>
+      7.2
+     </td>
+     <td>
+      6.3
+     </td>
+     <td>
+      5.7
+     </td>
+    </tr>
+    <tr data-bbox="276 1192 1380 1232">
+     <td>
+      O
+      <sub>
+       2
+      </sub>
+     </td>
+     <td>
+      0.0
+     </td>
+     <td>
+      2.1
+     </td>
+     <td>
+      3.8
+     </td>
+     <td>
+      6.4
+     </td>
+     <td>
+      8.3
+     </td>
+     <td>
+      9.8
+     </td>
+     <td>
+      11.0
+     </td>
+    </tr>
+   </tbody>
+  </table>
+  <h2>
+   Objective 7
+  </h2>
+  <p>
+   <b>
+    Calculate theoretical draft, flue gas velocity, and stack diameter.
+   </b>
+  </p>
+  <h3>
+   THEORETICAL DRAFT
+  </h3>
+  <p>
+   Large boilers and steam generators use mechanical draft equipment (induced draft fans) to overcome the pressure drops and losses associated with economizers, superheaters and air heaters that are installed in the path of the combustion gases. Boilers of smaller size with fewer heating elements other than the boiler tubes can use the natural draft created by the exhaust stack to power air and gas movement. The size of stack required to produce this draft must be determined.
+  </p>
+  <p>
+   The amount of draft a stack produces depends upon the height and the difference in temperature between the outside air and gas within the stack. Using the following formula, the theoretical draft a stack produces can be calculated:
+  </p>
+  <p>
+   $$
+    D = 34.06 \times HP \left( \frac{1}{T_1} - \frac{1}{T_2} \right)
+   $$
+  </p>
+  <p>
+   where
+   \(
+    D
+   \)
+   = draft at base of stack, Pa
+   <br/>
+   \(
+    H
+   \)
+   = height of stack, m
+   <br/>
+   \(
+    P
+   \)
+   = atmospheric pressure, kPa
+   <br/>
+   \(
+    T_1
+   \)
+   = absolute temperature of outside air, K
+   <br/>
+   \(
+    T_2
+   \)
+   = absolute temperature of flue gas, K
+  </p>
+  <p>
+   This calculated theoretical draft is reduced due to friction and cooling of the gases in the stack. The actual available draft is taken as 80 percent of the theoretical draft.
+  </p>
+  <h4>
+   Example 5
+  </h4>
+  <p>
+   A stack is 60 m high and the temperature of the gases entering the chimney is 316°C. The plant is located at sea level and the ambient air temperature is 27°C. Calculate the theoretical draft produced in Pascals.
+  </p>
+  <h5>
+   Solution
+  </h5>
+  <p>
+   From the above equation, the draft is calculated as:
+  </p>
+  <p>
+   $$
+    \begin{aligned}
+ D &amp;= 34.06 \times HP \left( \frac{1}{T_1} - \frac{1}{T_2} \right) \\
+ &amp;= 34.06 \times 60 \times 101 \left( \frac{1}{300} - \frac{1}{589} \right) \\
+ &amp;= 337.5 \text{ Pa (Ans.)}
+ \end{aligned}
+   $$
+  </p>
+  <h3>
+   FLUE GAS VELOCITY
+  </h3>
+  <p>
+   The theoretical flue gas velocity can be calculated if the stack height and the air and gas temperatures are known using the following formula:
+  </p>
+  <p>
+   $$
+    V = 4.4278 \sqrt{H \left( \frac{T_2}{T_1} - 1 \right)}
+   $$
+  </p>
+  <p>
+   where
+   \(
+    V
+   \)
+   = theoretical gas velocity, m/s
+   <br/>
+   \(
+    H
+   \)
+   = height of stack, m
+   <br/>
+   \(
+    T_2
+   \)
+   = absolute temperature of flue gas, K
+   <br/>
+   \(
+    T_1
+   \)
+   = absolute temperature of outside air, K
+  </p>
+  <h4>
+   STACK DIAMETER
+  </h4>
+  <p>
+   The cross sectional area of a stack, in
+   \(
+    \text{m}^2
+   \)
+   , is found from the volume of gases and the gas velocity using the equation
+  </p>
+  <p>
+   $$
+    A = \frac{Q}{KV}
+   $$
+  </p>
+  <p>
+   where
+   \(
+    A
+   \)
+   = stack cross sectional area,
+   \(
+    \text{m}^2
+   \)
+   <br/>
+   \(
+    Q
+   \)
+   = volume of gases handled,
+   \(
+    \text{m}^3/\text{s}
+   \)
+   <br/>
+   \(
+    K
+   \)
+   = coefficient of velocity, 0.3 to 0.5
+   <br/>
+   \(
+    V
+   \)
+   = theoretical gas velocity, m/s
+  </p>
+  <p>
+   The coefficient of velocity is needed because the distribution of velocity is not constant across the stack.
+  </p>
+  <h4>
+   Example 6
+  </h4>
+  <p>
+   The required height of a stack is calculated to be 54 m. The stack gas flow is 200 000 kg/h and the gas temperature is 340°C. The density of the gas at this temperature is 0.575 kg/m
+   <sup>
+    3
+   </sup>
+   . The velocity coefficient is taken as 0.4 and the outside air temperature is 35°C. Calculate the gas velocity and the required diameter of the stack.
+  </p>
+  <h5>
+   Solution
+  </h5>
+  <p>
+   Find the theoretical gas velocity:
+  </p>
+  <p>
+   $$
+    \begin{aligned}
+ V &amp;= 4.4278 \sqrt{H \left( \frac{T_2}{T_1} - 1 \right)} \\
+ &amp;= 4.4278 \sqrt{54 \left( \frac{613}{308} - 1 \right)} \\
+ &amp;= 4.4278 \sqrt{54 (1.9903 - 1)} \\
+ &amp;= 4.4278 \sqrt{54 (0.9903)} \\
+ &amp;= 4.4278 \sqrt{53.476} \\
+ &amp;= 4.4278 \times 7.313
+ \end{aligned}
+   $$
+  </p>
+  <p>
+   Gas Velocity (V) =
+   <b>
+    32.38 m/s
+   </b>
+   (Ans.)
+  </p>
+  <p>
+   To calculate the stack diameter, convert the stack flow to
+   \(
+    \text{m}^3/\text{s}
+   \)
+   with the equation:
+  </p>
+  <p>
+   $$
+    \begin{aligned}
+ Q &amp;= \frac{\text{Stack Gas Flow (kg/h)}}{\text{Time(s)} \times \text{Density (kg/m}^3\text{)}} \\
+ &amp;= \frac{200\,000}{60 \times 60 \times 0.575} \\
+ Q &amp;= 96.62 \text{ m}^3/\text{s}
+ \end{aligned}
+   $$
+  </p>
+  <p>
+   Stack area is:
+  </p>
+  <p>
+   $$
+    \begin{aligned}
+ A &amp;= \frac{Q}{KV} \\
+ &amp;= \frac{96.62}{0.4 \times 32.38} \\
+ &amp;= 7.46 \text{ m}^2
+ \end{aligned}
+   $$
+  </p>
+  <p>
+   Diameter is:
+  </p>
+  <p>
+   $$
+    \begin{aligned}
+ \text{Stack diameter} &amp;= \sqrt{\frac{7.46}{0.7854}} \\
+ &amp;= \mathbf{3.082 \text{ m}} \text{ (Ans.)}
+ \end{aligned}
+   $$
+  </p>
+  <h2>
+   <h2 style="background-color: #cccccc; padding: 10px;">
+    Objective 8
+   </h2>
+  </h2>
+  <p>
+   <b>
+    Calculate draft fan power and efficiency.
+   </b>
+  </p>
+  <h3>
+   DRAFT FAN CALCULATIONS
+  </h3>
+  <p>
+   An induced draft (ID) fan is used to keep the furnace of the boiler or steam generator operating at a slightly negative pressure. The ID fan does this by forcing the flue gases out of the stack at a slightly higher velocity than the forced draft (FD) fan can push the air required for complete combustion into the furnace. To accomplish this, the ID fan must overcome the pressure drops and draft losses associated with the superheater, air heater, economizer, precipitators and/or other filter systems and the many changes of direction the ducting makes. Changes in ambient air and boiler outlet gas temperatures impact the amount of mechanical energy required to move the flue gases from the boiler at the desired velocity.
+  </p>
+  <p>
+   A method of measuring these pressures is shown in Fig. 2. Equipment for measuring draft must be sensitive enough to measure small pressure differences. A manometers is shown in this exapmple.
+  </p>
+  <p>
+   <b>
+    Static pressure
+   </b>
+   is the undisturbed pressure of the air or the pressure measured if moving with the air flow. The static pressure
+   \(
+    P_s
+   \)
+   , Fig. 2(A), is measured with a manometer attached to the side of the duct at right angles to the flow of gas.
+  </p>
+  <p>
+   The
+   <b>
+    total pressure
+   </b>
+   any point in the stack is made up of static pressure and velocity pressure. The total pressure
+   \(
+    P_t
+   \)
+   , Fig. 2(B), is measured with a manometer with a tube (called a Pitot Tube) facing the flow of gas.
+  </p>
+  <p>
+   <b>
+    Velocity pressure
+   </b>
+   (also called dynamic pressure) is the pressure produced as a result of the velocity of the gas flow. The velocity pressure
+   \(
+    P_v
+   \)
+   , Fig. 2(C), is found with a manometer that combines both the static and total pressure readings. The velocity pressure is the difference between the total pressure and the static pressure and is used to determine the velocity of the flow.
+  </p>
+  <img alt="Diagram showing three U-tube manometers (A, B, and C) measuring different types of pressure in a duct. Manometer (A) measures static pressure (P_s) through a static tap on the duct wall. Manometer (B) measures total pressure (P_t) using a Pitot tube (Impact Tube) facing the airflow. Manometer (C) measures velocity pressure (P_v), which is the difference between total and static pressure. Arrows indicate the direction of airflow within the duct." src="120c189a42da51cf5266d4e50ca4d12a_img.jpg"/>
+  <div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+   <div class="img-alt">
+    Diagram showing three U-tube manometers (A, B, and C) measuring different types of pressure in a duct. Manometer (A) measures static pressure (P_s) through a static tap on the duct wall. Manometer (B) measures total pressure (P_t) using a Pitot tube (Impact Tube) facing the airflow. Manometer (C) measures velocity pressure (P_v), which is the difference between total and static pressure. Arrows indicate the direction of airflow within the duct.
+   </div>
+  </div>
+  <p>
+   Figure 2
+   <br/>
+   Total, Static and Velocity Pressures
+  </p>
+  <h3>
+   FAN POWER AND EFFICIENCY
+  </h3>
+  <p>
+   The power of a fan can be determined if the quantity of air handled and the pressure developed is known.
+  </p>
+  <p>
+   $$
+    \text{Fan Power in kW} = Q \times P
+   $$
+  </p>
+  <p>
+   where
+  </p>
+  <p>
+   \(
+    Q
+   \)
+   = Quantity of air handled,
+   \(
+    \text{m}^3/\text{s}
+   \)
+  </p>
+  <p>
+   \(
+    P
+   \)
+   = Developed pressure, kPa.
+  </p>
+  <p>
+   It is customary to specify pressure the fan develops as static pressure. Therefore, the power requirement calculated is called
+   <b>
+    static air kW power
+   </b>
+   .
+  </p>
+  <p>
+   $$
+    \text{Static Air Power in kW} = Q \times P_s
+   $$
+  </p>
+  <p>
+   If the air rating is based on total pressure, then it is called
+   <b>
+    power output
+   </b>
+   .
+  </p>
+  <p>
+   $$
+    \text{Power output in kW} = Q \times P_t
+   $$
+  </p>
+  <p>
+   The efficiency of a fan is the ratio of the output power to the input power delivered to the fan shaft. If the power output is static air power and input power is shaft power, then the calculated efficiency is called
+   <b>
+    static efficiency
+   </b>
+   ,
+   \(
+    \eta_s
+   \)
+   .
+  </p>
+  <p>
+   $$
+    \eta_s = \frac{\text{static air power}}{\text{shaft power}}
+   $$
+  </p>
+  <p>
+   If the efficiency is based on power output found by using the total pressure then the efficiency is known as
+   <b>
+    mechanical efficiency
+   </b>
+   ,
+   \(
+    \eta_h
+   \)
+   .
+  </p>
+  <p>
+   $$
+    \eta_h = \frac{\text{power output}}{\text{shaft power}}
+   $$
+  </p>
+  <h4>
+   Example 7
+  </h4>
+  <p>
+   A fan develops 1245 Pa static pressure and 174.4 Pa velocity pressure at a capacity of 2265 m
+   <sup>
+    3
+   </sup>
+   /min. The input or shaft kW is 57. Calculate the static and mechanical efficiencies.
+  </p>
+  <h5>
+   Solution
+  </h5>
+  <p>
+   $$
+    \begin{aligned} &amp;= V \times P_s \\ \text{Static air power:} \quad &amp;= \frac{2265 \times 1.245}{60} \\ &amp;= 47 \text{ kW} \end{aligned}
+   $$
+  </p>
+  <p>
+   $$
+    \begin{aligned} \text{Static efficiency:} \quad \eta_s &amp;= \frac{\text{static air power}}{\text{shaft power}} \\ &amp;= \frac{47}{57} \times 100 \\ &amp;= \mathbf{82.5\%} \text{ (Ans.)} \end{aligned}
+   $$
+  </p>
+  <p>
+   Total pressure:
+  </p>
+  <p>
+   $$
+    \text{Total pressure} = 1245 + 174.4 = 1419.4 \text{ Pa}
+   $$
+  </p>
+  <p>
+   Power output:
+  </p>
+  <p>
+   $$
+    \begin{aligned} &amp;= Q \times P \\ &amp;= \frac{2265 \times 1.4194}{60} \\ &amp;= 53.6 \text{ kW} \end{aligned}
+   $$
+  </p>
+  <p>
+   Mechanical efficiency:
+  </p>
+  <p>
+   $$
+    \begin{aligned} \eta_t &amp;= \frac{\text{power output}}{\text{shaft power}} \\ &amp;= \frac{53.6}{57} \times 100 \\ &amp;= \mathbf{94\%} \text{ (Ans.)} \end{aligned}
+   $$
+  </p>
+  <p>
+  </p>
+  <h2>
+   Chapter Questions
+  </h2>
+  <b>
+   B2.5
+  </b>
+  <ol style="list-style-type: none">
+   <li>
+    Complete the following chemical reaction equation for methane by filling in the required number of molecules needed to balance the reaction. Determine the mass of oxygen, carbon dioxide and water required for complete combustion of 1 kg of methane. The molecular weight of carbon is 12, hydrogen is 2 and oxygen is 16.
+   </li>
+  </ol>
+  <img alt="" src="59bf988b833a3c8394f7d7fbcf0859e9_img.jpg"/>
+  <div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+   $$
+    ?CH_4 + ?O_2 \rightarrow ?CO_2 + ?H_2O
+   $$
+  </div>
+  <ol style="list-style-type: none">
+   <li>
+    Define proximate and ultimate analysis of fuels and provide a brief description of how they are carried out. Indicate which one is more accurate and explain why.
+   </li>
+   <li>
+    The following is the ultimate analysis of a sample of coal. Using Dulong's formula, calculate the heating value.
+   </li>
+  </ol>
+  <table>
+   <tr data-bbox="279 911 974 949">
+    <td>
+     Carbon.....
+    </td>
+    <td>
+     82.15%
+    </td>
+   </tr>
+   <tr data-bbox="279 949 974 987">
+    <td>
+     Hydrogen .....
+    </td>
+    <td>
+     5.09%
+    </td>
+   </tr>
+   <tr data-bbox="279 987 974 1024">
+    <td>
+     Sulphur .....
+    </td>
+    <td>
+     0.82%
+    </td>
+   </tr>
+   <tr data-bbox="279 1024 974 1062">
+    <td>
+     Oxygen .....
+    </td>
+    <td>
+     7.32%
+    </td>
+   </tr>
+   <tr data-bbox="279 1062 974 1100">
+    <td>
+     Nitrogen .....
+    </td>
+    <td>
+     1.48%
+    </td>
+   </tr>
+   <tr data-bbox="279 1100 974 1134">
+    <td>
+     Ash .....
+    </td>
+    <td>
+     3.14%
+    </td>
+   </tr>
+  </table>
+  <ol style="list-style-type: none">
+   <li>
+    Describe how the heating value of a fuel may be found by using a bomb calorimeter.
+   </li>
+   <li>
+    Calculate the theoretical air required to combust the coal described in question 3.
+   </li>
+   <li>
+    What are the three major components of flue gas that are normally analyzed? Explain what each one indicates.
+   </li>
+   <li>
+    A chimney is 50 m high and the temperature of the gases entering the chimney is 326°C. The plant is located at sea level and the ambient air temperature is 30°C. Calculate the theoretical draft produced in Pa.
+   </li>
+  </ol>
+  <ol style="list-style-type: none">
+   <li>
+    8. A fan develops 1300 Pa static pressure and 150 Pa velocity pressure when delivering 2 300 m
+    <sup>
+     3
+    </sup>
+    /min of air. The static efficiency is 77%. Calculate the following:
+   </li>
+   <li>
+    <ul style="list-style-type: none">
+     <li>
+      (a) Static air power
+     </li>
+     <li>
+      (b) Power output
+     </li>
+     <li>
+      (c) Shaft power
+     </li>
+     <li>
+      (d) Mechanical efficiency
+     </li>
+    </ul>
+   </li>
+  </ol>
+ </body>
+</html>

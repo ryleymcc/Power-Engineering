@@ -1,0 +1,1932 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="utf-8"/>
+<script>
+    MathJax = {
+      tex: {
+        inlineMath: [['\\(', '\\)']],
+        displayMath: [['$$', '$$']]
+      }
+    };
+    </script>
+<script async="" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+<div id="nav-header" style="padding: 15px 20px; background: #2c3e50; color: white; display: flex; align-items: center; gap: 20px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+<a href="../index.html" style="color: white; text-decoration: none; background: #34495e; padding: 8px 16px; border-radius: 4px; font-weight: 600; font-size: 0.9rem; transition: background 0.2s;">← Back to Index</a>
+<h1 style="margin: 0; font-size: 1.2rem; font-weight: 500; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Power Engineering Series</h1>
+</div>
+<p>
+   Because the power input to the field coils varies as the square of the field current, this power input is now 5% of 5% of 100 watts or 0.25 watt. Thus, a field power input of 0.25 watts results in the production of a field
+   \(
+    Qa
+   \)
+   as powerful as the field produced directly by a field input of 100 watts. If this flux is used to generate a voltage and this voltage is applied to some external load, the overall power amplification is 400 times that of an ordinary DC generator, that is, a power amplification of 40 000 : 1.
+  </p>
+<p>
+   The flux
+   \(
+    Qa
+   \)
+   can be utilized by placing two brushes midway between the short-circuited brushes, as shown in Fig. 25 and connecting these to the external load circuit.
+  </p>
+<img alt="Diagram of an Amplitdyne generator showing the armature, stator windings, and electrical connections. The armature is a circle with four brushes. Two brushes on the left are connected together by a short-circuiting wire. Two brushes on the right are connected to an external 'To Load' circuit. The armature is surrounded by stator windings. Vertical arrows represent the main flux Qa. Horizontal arrows represent the control flux Qc. A 'To Control Field' input is shown at the bottom with '+' and '-' terminals." src="52218820ae0a5a10bb2d604859f803e7_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    Diagram of an Amplitdyne generator showing the armature, stator windings, and electrical connections. The armature is a circle with four brushes. Two brushes on the left are connected together by a short-circuiting wire. Two brushes on the right are connected to an external 'To Load' circuit. The armature is surrounded by stator windings. Vertical arrows represent the main flux Qa. Horizontal arrows represent the control flux Qc. A 'To Control Field' input is shown at the bottom with '+' and '-' terminals.
+   </div>
+</div>
+<p>
+<i>
+    Figure 25
+    <br/>
+    Amplitdyne Generator Showing Load
+    <br/>
+    Circuit and Control-Field Circuit
+   </i>
+</p>
+<p>
+   The
+   \(
+    E
+   \)
+   applied across the load is produced by the conductors cutting the vertical flux
+   \(
+    Qa
+   \)
+   ; the cutting of
+   \(
+    Qc
+   \)
+   does not contribute anything to this
+   \(
+    E
+   \)
+   . A generator excited in this way is called an armature reaction excited machine.
+  </p>
+<p>
+   It is necessary to provide a compensating winding, placed in slots in the stator iron and connected in series with the load, to neutralize the armature reaction of the load current because this armature reaction is in direct opposition to
+   \(
+    Qc
+   \)
+   .
+  </p>
+<p>
+   The wiring diagram of the Amplitdyne then becomes as shown in Fig. 26.
+  </p>
+<p>
+   The high-speed response of the amplitdyne is made possible by the fact that its control field requires only about 1 or 2% of the number of ampere turns used on the field of an ordinary DC generator. Consequently, the inductance of its field winding is much smaller and the rate of change of the field current much more rapid.
+  </p>
+<img alt="Figure 26: Amplitdyne Circuit Showing the Compensating Winding. The diagram shows a central circular armature with a clockwise rotation arrow. It is flanked by two rectangular magnetic cores. The left core has a 'Control Field' winding and a 'Compensating Winding'. The right core also has a 'Compensating Winding'. A 'Load' is connected across the armature terminals. At the bottom, 'Control field Connections' are shown with '+' and '-' terminals connected to the control field windings." src="68ac34ff111db52afaa786afcb8346c3_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    Figure 26: Amplitdyne Circuit Showing the Compensating Winding. The diagram shows a central circular armature with a clockwise rotation arrow. It is flanked by two rectangular magnetic cores. The left core has a 'Control Field' winding and a 'Compensating Winding'. The right core also has a 'Compensating Winding'. A 'Load' is connected across the armature terminals. At the bottom, 'Control field Connections' are shown with '+' and '-' terminals connected to the control field windings.
+   </div>
+</div>
+<p>
+   Figure 26
+   <br/>
+   Amplitdyne Circuit Showing
+   <br/>
+   the Compensating Winding
+  </p>
+<p>
+   Fig. 27 shows two typical field connections using amplidynes.
+  </p>
+<img alt="Figure 27: Amplitdyne Field Control Circuits. The figure contains two main circuit diagrams. The left diagram shows a 'Main Exciter' connected to a 'Main Exciter Field' winding, which is in turn connected to an 'Amplitdyne'. Below this, two 'Control Fields' are shown with currents I+ and I- entering them. The right diagram shows a 'Main Exciter' connected to a 'Main Exciter Field' winding and an 'Amplitdyne'. Below this, two 'Control Fields' are shown with currents I+ and I- entering them." src="4792a2ccd62226861fadc22117edb7b1_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    Figure 27: Amplitdyne Field Control Circuits. The figure contains two main circuit diagrams. The left diagram shows a 'Main Exciter' connected to a 'Main Exciter Field' winding, which is in turn connected to an 'Amplitdyne'. Below this, two 'Control Fields' are shown with currents I+ and I- entering them. The right diagram shows a 'Main Exciter' connected to a 'Main Exciter Field' winding and an 'Amplitdyne'. Below this, two 'Control Fields' are shown with currents I+ and I- entering them.
+   </div>
+</div>
+<p>
+   Figure 27
+   <br/>
+   Amplitdyne Field Control Circuits
+  </p>
+<h3>
+   Magnetic Amplifier Regulator
+  </h3>
+<p>
+   To understand this type of regulator, it is necessary to be familiar with the mode of operation of a magnetic amplifier. It consists of windings on a core, the magnetic characteristics of which are very important. The permeability must be high and must be almost constant up to the saturation point. The ideal
+   \(
+    B
+   \)
+   -
+   \(
+    H
+   \)
+   characteristic (
+   \(
+    B
+   \)
+   is flux density -
+   \(
+    H
+   \)
+   is magnetizing force) is illustrated in Fig. 28.
+  </p>
+<img alt="Figure 28: Ideal B-H characteristic for a Magnetic Amplifier Core. The graph shows Flux Density (B) on the vertical axis and Ampere Turns (H) on the horizontal axis. The curve is a straight line passing through the origin with a constant positive slope until it reaches a horizontal saturation region in both the first and third quadrants." src="ad04aa6cb9e7fb36bb7a91e817e2d314_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    Figure 28: Ideal B-H characteristic for a Magnetic Amplifier Core. The graph shows Flux Density (B) on the vertical axis and Ampere Turns (H) on the horizontal axis. The curve is a straight line passing through the origin with a constant positive slope until it reaches a horizontal saturation region in both the first and third quadrants.
+   </div>
+</div>
+<p>
+<i>
+    Figure 28
+   </i>
+<br/>
+<i>
+    Ideal B-H characteristic for a Magnetic Amplifier Core
+   </i>
+</p>
+<p>
+   If two coils are wound on a core of this material, with one coil as a series impedance in an AC circuit and the other carrying direct current, impedance of the AC circuit can be varied by altering the current flowing in the DC coil. Consequently, by careful design, small variations in the
+   <b>
+    control current
+   </b>
+   (the name for direct current) can produce large changes of current in the a-c circuit. If the alternating current is rectified after passing through the amplifier windings, it becomes possible to produce large changes in direct current from small changes in another current.
+  </p>
+<p>
+   The control winding of the magnetic amplifier is supplied by a voltage transformer connected to the generator terminals. The supply for exciting the machine is taken as a three-phase supply from a shaft alternator, which is connected in series with the AC windings of the magnetic amplifier, rectified, and connected in series with the main exciter field winding. Thus, changes in output voltage directly control the main field current.
+  </p>
+<p>
+   The great advantages of this scheme are that there is a minimum of moving parts, no electronic components, the regulator is built entirely of static components, the time response is very rapid, and there is no dead band.
+  </p>
+<p>
+   The regulator works from the difference between the generator terminal voltage and a fixed reference voltage derived from the pilot generator. The difference between these two voltages is amplified by magnetic amplifiers in cascade and is fed directly to correct the main exciter field current.
+  </p>
+<p>
+   The normal DC pilot exciter is replaced by a 400 Hz self-excited pilot generator, the output being subsequently rectified to feed the main exciter winding. The higher frequency enables the magnetic amplifiers to give a much faster response and reduces the dimensions of the magnetic components. The output of the pilot generator is controlled by an induction regulator working in conjunction with magnetic amplifiers and the rectified output of the combination is fed into the field circuit of the generator. The induction regulator in this design replaces the conventional field rheostat.
+  </p>
+<h3>
+   Static Excitation System
+  </h3>
+<p>
+   An automatic voltage regulator (AVR) is a device that causes the excitation of the generator to be automatically increased or decreased so that the terminal voltage can be maintained within acceptable limits. The device must be able to detect a change in voltage and quickly respond to difference between the measured voltage and the desired voltage. Voltage regulation is expressed in percent by the following formula:
+  </p>
+<p>
+   $$
+    \frac{(\text{No-load volts}) - (\text{Full-load volts})}{\text{Full-load volts}} \times 100
+   $$
+  </p>
+<p>
+   Modern voltage regulators maintain voltage within
+   \(
+    \pm 1.5\%
+   \)
+   . Generator voltage regulators are classified by the means of operation.
+  </p>
+<p>
+   Direct-acting rheostatic regulators adjust the field strength of a generator directly. This type of AVR was common in older generators. The rheostat varied the resistance and therefore the current, in the exciter circuit. By varying the current, the field strength in the generator is varied. The rheostat was manually operated but automated by using an electromagnet that varied the resistance based on the generator voltage.
+  </p>
+<p>
+   The indirect acting rheostatic regulators use an auxiliary device, such as a motor, to operate the field rheostat.
+  </p>
+<p>
+   Many older voltage regulators have been replaced by static excitation systems and digital voltage regulators.
+  </p>
+<p>
+   As the name suggests, there are no moving parts in a static voltage regulator system. Fig. 29 shows a block diagram for a static excitation system and automatic voltage regulator. Initial voltage buildup in the generator is due to residual magnetism in the field. As voltage builds, a transformer is used to provide power from the generator output terminals to an automatic voltage regulator. Power from the generator terminals is also provided to a thyristor rectifier bridge. The AVR provides a signal to the gates on the thyristors, which modulate the DC voltage to the generator field.
+  </p>
+<img alt="Schematic diagram of a static excitation system for a generator. A generator is connected to a three-phase transformer. The secondary of the transformer is connected to an Automatic Voltage Regulator (AVR). The AVR output is connected to the gate of a Thyristor Rectifier Bridge. The input of the bridge is connected to the three phases of the transformer. The output of the bridge is connected to the field winding of the generator. The field winding is also connected to the AVR." src="f9a14fbfecbd7d059226cc93677d721b_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    Schematic diagram of a static excitation system for a generator. A generator is connected to a three-phase transformer. The secondary of the transformer is connected to an Automatic Voltage Regulator (AVR). The AVR output is connected to the gate of a Thyristor Rectifier Bridge. The input of the bridge is connected to the three phases of the transformer. The output of the bridge is connected to the field winding of the generator. The field winding is also connected to the AVR.
+   </div>
+</div>
+<p>
+   Figure 29
+   <br/>
+   Static Excitation System
+  </p>
+<p>
+   Thyristors are similar to diodes but are designed with a gate that allows the amount of rectified DC voltage to be varied. This is shown in Fig. 30.
+  </p>
+<img alt="Timing diagram for a thyristor. It shows three waveforms: A.C. Voltage (a sine wave), + Gate Signal (a rectangular pulse), and D.C. Voltage (the output voltage). The D.C. Voltage is shown as a series of pulses, where each pulse starts at the beginning of an A.C. cycle and continues until the next gate signal pulse. The thyristor symbol is shown on the left with labels for Gate, Anode, and Cathode." src="6de7dcb072cef2388026fb0f504084b2_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    Timing diagram for a thyristor. It shows three waveforms: A.C. Voltage (a sine wave), + Gate Signal (a rectangular pulse), and D.C. Voltage (the output voltage). The D.C. Voltage is shown as a series of pulses, where each pulse starts at the beginning of an A.C. cycle and continues until the next gate signal pulse. The thyristor symbol is shown on the left with labels for Gate, Anode, and Cathode.
+   </div>
+</div>
+<p>
+   Figure 30
+   <br/>
+   Thyristors
+  </p>
+<div data-bbox="974 247 1367 323" data-label="Section-Header">
+<h2>
+    Objective 5
+   </h2>
+</div>
+<div data-bbox="178 357 1341 506" data-label="Text">
+<p>
+<b>
+     Describe the cooling systems used for an alternator including circulating air cooling, hydrogen cooling, and stator winding cooling water systems.
+    </b>
+</p>
+</div>
+<h3>
+   ALTERNATOR COOLING SYSTEMS
+  </h3>
+<p>
+   Cooling systems for alternators fall into the following fours types depending on the volt-amp output of the unit:
+  </p>
+<ul style="list-style-type: none">
+<li>
+    • direct air
+   </li>
+<li>
+    • enclosed air
+   </li>
+<li>
+    • hydrogen
+   </li>
+<li>
+    • water
+   </li>
+</ul>
+<h3>
+   Direct Air Cooling
+  </h3>
+<p>
+   Small alternators use fans mounted on the rotor shaft. Ambient air is drawn in through one end of the frame and discharged out the opposite end. This type of cooling is not well suited for dusty environments. Fig. 31 shows a photograph of a small alternator. Notice the ventilation slots on each end of the frame.
+  </p>
+<img alt="A black and white photograph of a small alternator with a control box on top. The main body is cylindrical with vertical ventilation slots visible on the left side. The control box has a meter and buttons on its front face." src="1408b3d336e1d80c7a1abd0682f4f687_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    A black and white photograph of a small alternator with a control box on top. The main body is cylindrical with vertical ventilation slots visible on the left side. The control box has a meter and buttons on its front face.
+   </div>
+</div>
+<p>
+<i>
+    Figure 31
+    <br/>
+    Small Alternator
+   </i>
+</p>
+<p>
+   In larger alternators, there are considerably higher
+   \(
+    I^{2}R
+   \)
+   losses and magnetic losses. These types of losses produce heat that must be properly dissipated. The physical size and structure of alternators are determined by the manner in which the machine is cooled.
+  </p>
+<p>
+   Fig. 32 shows a side view of a generator with direct-cooling fans on both ends of the rotor. The top part of the drawing shows an end view of the two fans. The arrows on the drawing show the paths the cooling air takes.
+  </p>
+<img alt="Figure 32: Generator with Direct Cooling Fans. This technical diagram shows a side view of a generator with a cross-section at the top. The cross-section displays two 'Cooling Fans' at the ends of the rotor. Arrows indicate the flow of cooling air from these fans, through the 'Stator' and 'Rotor' windings, and out through side ducts. The main side view shows the 'Rotor' mounted on a 'Rotor Shaft', with 'Cooling Fan' units at each end. The entire assembly is housed within a rectangular frame." src="892f25e3d71d8e315a2a51092a8a8da7_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    Figure 32: Generator with Direct Cooling Fans. This technical diagram shows a side view of a generator with a cross-section at the top. The cross-section displays two 'Cooling Fans' at the ends of the rotor. Arrows indicate the flow of cooling air from these fans, through the 'Stator' and 'Rotor' windings, and out through side ducts. The main side view shows the 'Rotor' mounted on a 'Rotor Shaft', with 'Cooling Fan' units at each end. The entire assembly is housed within a rectangular frame.
+   </div>
+</div>
+<p>
+   Figure 32
+   <br/>
+<i>
+    Generator with Direct Cooling Fans
+   </i>
+</p>
+<h4>
+   Enclosed Air Cooling
+  </h4>
+<p>
+   Air-cooled alternators are limited in size due to the inability of air to cool the rotor and stator to acceptable ranges. For larger generators, in the range of 25 to 325 MVA (mega-volt-amps), the generator is totally enclosed with separate fans supplying cooling air. Fig. 33 shows a side and end views of a typical air-cooled arrangement.
+  </p>
+<p>
+   The air is filtered before it is supplied to the generator. Air from two fans is blown through air coolers into the stator and field windings and the exciter cabinet. Air return ducts are provided to guide the exhaust air back to the inlet of the fans.
+  </p>
+<p>
+   The air coolers consist of finned tubes through which cooling water is circulated. The air is cooled as it is blown through channels between the finned tubes.
+  </p>
+<img alt="Longitudinal Section Through Alternators, Exciters &amp; Foundation Block. This technical diagram shows the internal air-cooling system of a generator. It features two main horizontal slots for the alternator and exciter windings. Air is drawn in through 'Emergency Air Inlet Doors' at the bottom right, passing through 'Cable Ducts' and an 'Air Cooler'. A 'Fan' is positioned at the bottom center to force air upwards. The air then exits through 'Emergency Air Outlet Doors' on the left side. Above the windings, 'Slipring Filters Viscous Type' and 'Exciter Filters Viscous Type' are shown. An 'Access Door' is located on the far left. The entire assembly is supported by a 'Foundation Block'." src="fd955384881fd240be5518d3050588d9_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    Longitudinal Section Through Alternators, Exciters &amp; Foundation Block. This technical diagram shows the internal air-cooling system of a generator. It features two main horizontal slots for the alternator and exciter windings. Air is drawn in through 'Emergency Air Inlet Doors' at the bottom right, passing through 'Cable Ducts' and an 'Air Cooler'. A 'Fan' is positioned at the bottom center to force air upwards. The air then exits through 'Emergency Air Outlet Doors' on the left side. Above the windings, 'Slipring Filters Viscous Type' and 'Exciter Filters Viscous Type' are shown. An 'Access Door' is located on the far left. The entire assembly is supported by a 'Foundation Block'.
+   </div>
+</div>
+<p>
+   Figure 33
+   <br/>
+   Arrangement of Alternator, Exciter and Sliprings Air-cooling System
+  </p>
+<h3>
+   Hydrogen Cooling
+  </h3>
+<p>
+   Hydrogen has properties that allow it to be a better coolant for larger alternators. Hydrogen is used on units that have a capacity in the range of 200 - 1000 MVA. The greater cooling ability of hydrogen vs. air allows for smaller physical dimensions of alternators. But, there is a greater cost associated with hydrogen cooling. Fig. 34 is a photograph of 1120 MVA hydrogen cooled generator manufactured by Toshiba Corporation.
+  </p>
+<p>
+   The increase in rated output obtained with hydrogen gas can be 20% - 30% based on a hydrogen pressure of 3.5 kPa. Further increases can be realized with greater hydrogen pressure. Alternators are commonly operated at pressures of 100 kPa.
+  </p>
+<p>
+   Hydrogen gas has several advantages over air:
+  </p>
+<ul style="list-style-type: none">
+<li>
+    • High heat transfer coefficient, absorbs heat rapidly as it is flows through the generator windings
+   </li>
+<li>
+    • Rejects this same heat more rapidly in the cooling stages of the ventilation circuit
+   </li>
+<li>
+    • Less dense than air and requires less energy to drive it through the different generator components
+   </li>
+<li>
+    • Offers less braking effect (windage) to the rotating parts of the alternator.
+   </li>
+</ul>
+<img alt="A black and white photograph showing the internal components of a large industrial generator. The image displays a series of parallel, metallic bars or conductors, likely part of the stator or rotor assembly, arranged in a regular pattern. The lighting is somewhat dim, and the focus is on the mechanical structure." src="e7cb11f042fc58088dff4b6d9306845e_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    A black and white photograph showing the internal components of a large industrial generator. The image displays a series of parallel, metallic bars or conductors, likely part of the stator or rotor assembly, arranged in a regular pattern. The lighting is somewhat dim, and the focus is on the mechanical structure.
+   </div>
+</div>
+<p style="text-align: center;">
+<i>
+    Figure 34
+    <br/>
+    1120 MVA Hydrogen Cooled Generator
+    <br/>
+    (Toshiba Corporation)
+   </i>
+</p>
+<p>
+   Overheating in generators can cause fires. This can be a serious problem with air ventilation systems since air supports combustion. The fire hazard with hydrogen is reduced. The airtight system prevents buildup of dirt that may cause fires.
+  </p>
+<p>
+   The absence of air in the ventilation system also prevents the formation of acids that otherwise may attack the insulation on the rotor and stator windings.
+  </p>
+<p>
+   However, there is a risk of explosion if hydrogen is mixed in the proper proportions with air. This is prevented by air tight casings and proper seals around the rotor shaft.
+  </p>
+<p>
+   Hydrogen must be kept free from moisture because it increases the viscosity of the hydrogen and decreases its ability to carry away excess heat. Moisture also deteriorates the seals on the rotating shaft.
+  </p>
+<p>
+   Normally, the hydrogen gas circulates in a closed loop through a water-cooled heat exchanger and a molecular sieve or desiccant dryer before returning to the generator enclosure.
+  </p>
+<p>
+   Fig. 35 shows a schematic diagram of the equipment layout and piping diagram for a hydrogen cooling system.
+  </p>
+<table border="1">
+<thead>
+<tr data-bbox="196 195 526 226">
+<th>
+      Symbol
+     </th>
+<th>
+      Key to Symbols
+     </th>
+</tr>
+</thead>
+<tbody>
+<tr data-bbox="196 226 526 258">
+<td>
+<p>
+       Image: Symbol for Shut-Off Valve: a circle with a diagonal line and a crossbar.
+      </p>
+</td>
+<td>
+      Shut-Off Valve
+     </td>
+</tr>
+<tr data-bbox="196 258 526 291">
+<td>
+<p>
+       Image: Symbol for Non-Return Valve: a circle with a diagonal line and a triangle.
+      </p>
+</td>
+<td>
+      Non-Return Valve
+     </td>
+</tr>
+<tr data-bbox="196 291 526 327">
+<td>
+<p>
+       Image: Symbol for Electrical Connections: a dashed line.
+      </p>
+</td>
+<td>
+      Electrical Connections
+     </td>
+</tr>
+</tbody>
+</table>
+<img alt="Schematic diagram of a Hydrogen Cooled Generator System. The diagram shows the internal components of a generator and its external support systems. At the top, the generator housing contains a Perforated Hydrogen Admission Pipe, Gas Cooler, Alternator, Fan Pressure Chamber, and Seals. External to the housing are Sight Flow Gauges and Pressure Gauges. The oil system includes a Bearing Oil Supply Line, Thermometer, Oil Pressure Switch, Oil Filter, Starter Oil Pump, Emergency Oil Supply Line, and a Turbine Oil Tank with a Drain Valve. A Hydrogen Deaerating Tank is shown on the right with a float valve. The control system includes an Air Inlet Valve, Pressure Switch, Differential Pressure Gauge with Purity Scale, 30 inch Mercury 'U' Tube, Solenoid Valve, and Manually Operated By-Pass Valve. Gas supply lines from Hydrogen Cylinders and Carbon Dioxide Cylinders are connected to a Pressure Release Valve and lead To Atmosphere Outside of Building. Various other components like Liquid Alarm Devices and Relief Valves are also indicated." src="5b4e774d63e0e0ed73801a9247755e5f_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    Schematic diagram of a Hydrogen Cooled Generator System. The diagram shows the internal components of a generator and its external support systems. At the top, the generator housing contains a Perforated Hydrogen Admission Pipe, Gas Cooler, Alternator, Fan Pressure Chamber, and Seals. External to the housing are Sight Flow Gauges and Pressure Gauges. The oil system includes a Bearing Oil Supply Line, Thermometer, Oil Pressure Switch, Oil Filter, Starter Oil Pump, Emergency Oil Supply Line, and a Turbine Oil Tank with a Drain Valve. A Hydrogen Deaerating Tank is shown on the right with a float valve. The control system includes an Air Inlet Valve, Pressure Switch, Differential Pressure Gauge with Purity Scale, 30 inch Mercury 'U' Tube, Solenoid Valve, and Manually Operated By-Pass Valve. Gas supply lines from Hydrogen Cylinders and Carbon Dioxide Cylinders are connected to a Pressure Release Valve and lead To Atmosphere Outside of Building. Various other components like Liquid Alarm Devices and Relief Valves are also indicated.
+   </div>
+</div>
+<p>
+   Figure 35A
+   <br/>
+   Hydrogen Cooled Generator System
+  </p>
+<img alt="Diagram of a hydrogen-cooled generator system showing water cooling loops. On the left, an 'End View' shows 'Gas Coolers' connected to 'Inlet Manifold' and 'Outlet Manifold'. The 'Inlet Manifold' connects to 'Distilled Water In' which goes to 'Heat Exchangers'. 'Heat Exchangers' have 'River Water In' from a 'Duplex Strainer' and 'River Water Out' to a 'Water Head Tank'. 'Distilled Water Out' from the heat exchangers goes to the 'Outlet Manifold'. 'Automatic Distilled Water Make-Up' feeds the 'Water Head Tank'. 'Overflow' from the tank goes to 'Distilled Water In' before the heat exchangers. Two pumps, 'Distilled Water Pump' and 'Make-Up Water Pump', are shown in the 'Distilled Water In' line." src="d4af765160d04ecef538e5066006dc77_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    Diagram of a hydrogen-cooled generator system showing water cooling loops. On the left, an 'End View' shows 'Gas Coolers' connected to 'Inlet Manifold' and 'Outlet Manifold'. The 'Inlet Manifold' connects to 'Distilled Water In' which goes to 'Heat Exchangers'. 'Heat Exchangers' have 'River Water In' from a 'Duplex Strainer' and 'River Water Out' to a 'Water Head Tank'. 'Distilled Water Out' from the heat exchangers goes to the 'Outlet Manifold'. 'Automatic Distilled Water Make-Up' feeds the 'Water Head Tank'. 'Overflow' from the tank goes to 'Distilled Water In' before the heat exchangers. Two pumps, 'Distilled Water Pump' and 'Make-Up Water Pump', are shown in the 'Distilled Water In' line.
+   </div>
+</div>
+<p>
+<i>
+    Figure 35B
+    <br/>
+    End View of Hydrogen Cooled Generator System
+   </i>
+</p>
+<p>
+   The gas flow paths for hydrogen cooling vary with manufacturers' designs. In some cases, the gas enters at each end of the rotor and leaves at the centre. Other designs have the gas enter one end and exit at the opposite end. Some manufacturers allow the gas to enter special rotor ventilation slots and then escape radially through slotted conductors.
+  </p>
+<h4>
+   Water Cooling
+  </h4>
+<p>
+   Some alternator designs use water to cool the stator windings. In this design the water is circulated through hollow conductors. Usually pure water such as deionized water is used. The cool water enters the winding through a distribution header at one end of the generator and the warm water is discharged at the opposite end.
+  </p>
+<p>
+   Cooling water cooling systems are more complex and more costly than conventional systems. However, at higher ratings, this cost is offset by a significantly smaller physical size.
+  </p>
+<p>
+   Fig. 36 shows the water-cooling ducts around the stator frame and stator windings in a generator manufactured by Alsaldio Energia of Italy.
+  </p>
+<img alt="A close-up, black and white photograph showing a circular cross-section of a generator stator winding. The central part is a dark, solid-looking circle, surrounded by a lighter, textured ring that appears to be the hollow conductor material. The overall image has a grainy, halftone-like appearance." src="0f2a1e4a7b12fe5b8749882ecd636f5c_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    A close-up, black and white photograph showing a circular cross-section of a generator stator winding. The central part is a dark, solid-looking circle, surrounded by a lighter, textured ring that appears to be the hollow conductor material. The overall image has a grainy, halftone-like appearance.
+   </div>
+</div>
+<p>
+<i>
+    Figure 36
+    <br/>
+    Generator Water-Cooling Ducts
+    <br/>
+    (Alsaldo Energia-Italy)
+   </i>
+</p>
+<p>
+   The stator windings, shown in Fig. 36, are made up of hollow non-magnetic stainless steel conductors that carry the cooling water. These hollow conductors are manufactured from solid conductor material to make the bars that carry the stator current.
+  </p>
+<h2>
+   Objective 6
+  </h2>
+<p>
+<b>
+    Describe shaft sealing arrangements for an alternator.
+   </b>
+</p>
+<h2>
+   SHAFT SEALING ARRANGEMENTS
+  </h2>
+<p>
+   Hydrogen cooled machines must have seals on the rotor shaft to prevent gas from leaking outwards. Fig. 37 shows a radial clearance type that prevents gas from escaping along the radial circumference of the shaft. Note how it is fitted with the shaft journal.
+  </p>
+<img alt="Cross-sectional diagram of a radial clearance type shaft seal (Figure 37)." src="33809b11cc711711ebb7be1282fcd4b7_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<p>
+    This cross-sectional diagram illustrates a radial clearance type shaft seal. A central shaft journal is shown at the bottom. A sealing ring is mounted on the journal, held in place by a helical garter spring. The sealing ring is in contact with lapped surfaces on a stationary seal housing. An oil feed line is shown entering the seal housing to provide lubrication.
+   </p>
+<div class="img-alt">
+    Cross-sectional diagram of a radial clearance type shaft seal (Figure 37).
+   </div>
+</div>
+<p>
+<i>
+    Figure 37
+    <br/>
+    Radial Clearance Type Shaft Seal
+   </i>
+</p>
+<p>
+   Fig. 38 shows an axial clearance type that fits against the shaft. This type of seal prevents gases from escaping radially from the shaft.
+  </p>
+<img alt="Cross-sectional diagram of an axial clearance type shaft seal (Figure 38)." src="0a5acc4b370bb711096e04f25b8b3feb_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<p>
+    This cross-sectional diagram shows an axial clearance type shaft seal. A shaft collar is mounted on the shaft. A sealing ring is positioned against the collar, held by helical springs. The sealing ring has a white-metal face that creates a seal against the seal housing. An oil feed is provided to the sealing area.
+   </p>
+<div class="img-alt">
+    Cross-sectional diagram of an axial clearance type shaft seal (Figure 38).
+   </div>
+</div>
+<p>
+<i>
+    Figure 38
+    <br/>
+    Axial Clearance Type Shaft Seal
+   </i>
+</p>
+<p>
+   Fig. 39 shows a thrust ring type. These seals are designed to move slightly to compensate for the radial and axial forces (thrust) that the shaft experiences as it rotates from stopped to a full-load speed.
+  </p>
+<img alt="Cross-sectional diagram of a thrust ring type shaft seal for a hydrogen-cooled alternator. The diagram shows the rotor shaft, stator end cover, and various seal components. On the left, the hydrogen-filled stator cavity is separated from the external environment by a series of seals: an expansion element, a wiper, and a cup packing seal ring. The main seal assembly on the right consists of a seal housing, a seal retaining pin, a spherical seat, a cup packing seal ring, an oil seal pad, an oil seal collar, and a seal ring. The seal housing is mounted on the bearing housing. Labels include: Stator End Cover, Gas Tight Joint, Hydrogen, Expansion Element, Wiper, Rotor Shaft, Cup Packing Seal Ring, Seal Housing, Seal Retaining Pin, Spherical Seat, Cup Packing Seal Ring, Oil Seal Pad, Oil Seal Collar, and Seal Ring." src="662933fe00899933b36b5a214ac6095c_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    Cross-sectional diagram of a thrust ring type shaft seal for a hydrogen-cooled alternator. The diagram shows the rotor shaft, stator end cover, and various seal components. On the left, the hydrogen-filled stator cavity is separated from the external environment by a series of seals: an expansion element, a wiper, and a cup packing seal ring. The main seal assembly on the right consists of a seal housing, a seal retaining pin, a spherical seat, a cup packing seal ring, an oil seal pad, an oil seal collar, and a seal ring. The seal housing is mounted on the bearing housing. Labels include: Stator End Cover, Gas Tight Joint, Hydrogen, Expansion Element, Wiper, Rotor Shaft, Cup Packing Seal Ring, Seal Housing, Seal Retaining Pin, Spherical Seat, Cup Packing Seal Ring, Oil Seal Pad, Oil Seal Collar, and Seal Ring.
+   </div>
+</div>
+<p>
+<i>
+    Figure 39
+    <br/>
+    Thrust Ring Type Shaft Seal
+   </i>
+</p>
+<p>
+   The seals prevent hydrogen from escaping outwards by forcing oil inwards against the seal. Seal oil is circulated from the main machine lubricating oil system, through the seals, to the hydrogen detraining tanks and then back to the main oil tank. The hydrogen detraining tanks allow any gas that may become entrained with the circulated oil to be removed before it is returned to the main storage tank. Fig. 40 shows the equipment and piping layout for a seal-oil system for a hydrogen cooled alternator.
+  </p>
+<img alt="Schematic diagram of a Seal Oil System for H2 Cooled Alternator. The diagram shows the flow of oil from a Turbine Oil Tank through various components including a Seal Oil Filter, Seal Oil Cooler, and pumps (D.C. and A.C.) to the Generator. It also includes a Hydrogen Detaining Tank and a legend for valve types. X symbol checkmark symbol two parallel lines symbol" src="8fbdfc3d17fb1dae7b2d8f5a287fa9fc_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<p>
+    The diagram illustrates the seal oil system for an H
+    <sub>
+     2
+    </sub>
+    cooled alternator. At the top, the
+    <b>
+     Generator
+    </b>
+    is shown with oil lines entering from the bottom. The oil flows through a series of components: a
+    <b>
+     Seal Oil Cooler
+    </b>
+    (connected to a
+    <b>
+     To Water System
+    </b>
+    ), a
+    <b>
+     Seal Oil Filter
+    </b>
+    , and then splits into two pumps: a
+    <b>
+     D.C. Seal Oil Pump
+    </b>
+    and an
+    <b>
+     A.C. Seal Oil Pump
+    </b>
+    . Both pumps are connected to a
+    <b>
+     Starter
+    </b>
+    . The oil from the pumps returns to the
+    <b>
+     Turbine Oil Tank
+    </b>
+    . A line labeled
+    <b>
+     Main Power Oil
+    </b>
+    also connects to the Turbine Oil Tank. On the right side, there are two
+    <b>
+     Hydrogen Detaining Tanks
+    </b>
+    connected to the system. Various valves are indicated with symbols:
+    <b>
+     NC
+    </b>
+    (Normally Closed),
+    <b>
+     Shut off Valve
+    </b>
+    (X symbol),
+    <b>
+     Non Return Valve
+    </b>
+    (checkmark symbol), and
+    <b>
+     Adjustable Orifice
+    </b>
+    (two parallel lines symbol). Electrical connections are shown with dashed lines.
+   </p>
+<table border="1">
+<tbody>
+<tr data-bbox="878 1087 1261 1115">
+<td>
+       NC
+      </td>
+<td>
+       Indicates Normally Closed
+      </td>
+</tr>
+<tr data-bbox="878 1115 1261 1142">
+<td>
+</td>
+<td>
+       Indicates Shut off Valve
+      </td>
+</tr>
+<tr data-bbox="878 1142 1261 1169">
+<td>
+</td>
+<td>
+       Indicates Non Return Valve
+      </td>
+</tr>
+<tr data-bbox="878 1169 1261 1194">
+<td>
+</td>
+<td>
+       Indicates Adjustable Orifice
+      </td>
+</tr>
+<tr data-bbox="878 1194 1261 1220">
+<td>
+       - - -
+      </td>
+<td>
+       Indicates Electrical Connection
+      </td>
+</tr>
+</tbody>
+</table>
+<div class="img-alt">
+    Schematic diagram of a Seal Oil System for H2 Cooled Alternator. The diagram shows the flow of oil from a Turbine Oil Tank through various components including a Seal Oil Filter, Seal Oil Cooler, and pumps (D.C. and A.C.) to the Generator. It also includes a Hydrogen Detaining Tank and a legend for valve types. X symbol checkmark symbol two parallel lines symbol
+   </div>
+</div>
+<p>
+   Figure 40
+   <br/>
+   Seal Oil System for H
+   <sub>
+    2
+   </sub>
+   Cooled Alternator
+  </p>
+<h2>
+   Objective 7
+  </h2>
+<p>
+<b>
+    Explain the theory and significance of alternator synchronization and parallel operation including the impact on power factor.
+   </b>
+</p>
+<h3>
+   POWER FACTOR
+  </h3>
+<p>
+   The power factor (pf) of the system supplied by the generators is determined by the characteristics of the load connected. In the case where one alternator only supplies the load, its power factor is also that of the load.
+  </p>
+<p>
+   Where two or more alternators supply a system (by far the more common case), the pf of each can be controlled individually by altering of its excitation.
+  </p>
+<p>
+   If the generator is under excited, its pf becomes leading and the current output again increases without change in kW output.
+  </p>
+<p>
+   Control of alternator pf is usually carried out by hand operation of a trimming resistance in the voltage regulator circuit.
+  </p>
+<h3>
+   PARALLEL OPERATION
+  </h3>
+<p>
+   If the excitation of a generator operating in parallel with others is increased beyond the amount required to give normal terminal voltage for the load condition, its pf will change in the lagging direction. Its current output increases without appreciable change in kW load output.
+  </p>
+<h3>
+   Synchronizing
+  </h3>
+<p>
+   Alternating-current power systems consist of several generating machines connected in parallel to common bus bars which supply the system load. Moreover it is common to have interconnection between local systems through transmission lines. Thus, any generator which is to be switched into the system must fulfill the following synchronizing conditions.
+  </p>
+<h4>
+   Condition 1
+  </h4>
+<p>
+   The alternator terminal voltage must equal that of the system. This condition is fulfilled by adjusting the alternator-field rheostat after running the machine up to approximately full speed, until the terminal voltage matches the system voltage. Implicit in this condition is also a demand that the shape of the incoming machine voltage wave will correspond closely with that of the system.
+  </p>
+<h4>
+   Condition 2
+  </h4>
+<p>
+   The alternator frequency must approach that of the system within close limits. The alternator frequency is controlled by adjusting the speed of the prime mover. In most cases this means control of steam supply to the turbine.
+  </p>
+<h4>
+   Condition 3
+  </h4>
+<p>
+   Phase rotations of alternator and system must be the same. That is, if the system bus bars are designated red, white and blue and the maximum of the voltage waves of these three phases occur in the sequence red, white, blue, then the incoming machine (which is to be connected red to red, blue to blue, etc.) must also have voltage maximums occurring in the phase sequence red, white, blue.
+  </p>
+<p>
+   This condition can be checked by lamps or a phase rotation meter. This condition can only be altered by disconnection so that once the phase rotation of a generator is proved correct with relation to the system, it will not be necessary to repeat the test. Normal switching on and off load is carried out without changing the generator phase rotation.
+  </p>
+<p>
+   The series of operations required to bring about the above conditions and to close the switch are known as
+   <b>
+    synchronizing
+   </b>
+   . The process of synchronizing may be illustrated by the following diagrams of the incoming machine and the system voltage waves, as shown on Fig. 41.
+  </p>
+<p>
+   Fig. 41(a) shows the existing system voltage wave (one phase only shown).
+  </p>
+<p>
+   Referring to Fig. 41(b), the machine voltage wave is shown dotted and is out of phase and frequency.
+  </p>
+<p>
+   The generator's output voltage is slowly increased to equal the system's maximum voltage. This is accomplished by adjusting the field rheostat.
+  </p>
+<p>
+   Fig. 41(c) shows that the machine and system voltages are now equal. The voltages are out of phase but the frequency is being increased by increasing the speed of the prime mover.
+  </p>
+<p>
+   In Fig. 41(d), the machine and system:
+  </p>
+<ul style="list-style-type: none">
+<li>
+    • voltages are equal
+   </li>
+<li>
+    • frequencies are equal
+   </li>
+<li>
+    • are both in phase
+   </li>
+</ul>
+<p>
+   The synchroscope shows 12 o'clock and the switch can now be closed.
+  </p>
+<img alt="Four graphs (a, b, c, d) illustrating the steps to synchronize an incoming AC generator to a supply system. (a) shows the existing system voltage wave. (b) shows the machine voltage wave (dotted) out of phase and frequency, being built up to equal system max. volts. (c) shows the machine voltage now equal to system, but out of phase, with frequency being increased. (d) shows the machine voltage now equal to system, in phase and with equal frequency, indicating the switch can now be closed." src="5ed9189841659dfb01f809b8e3b21f74_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<p>
+    (a) Existing system voltage wave. (One phase only shown.)
+   </p>
+<p>
+    (b) Machine voltage wave shown dotted. Out of phase and frequency. Being built up to equal the system max. volts by adjustment of field rheostat.
+   </p>
+<p>
+    (c) Machine voltage now equal to system. Voltage waves out of phase but frequency being increased by increasing speed of prime mover.
+   </p>
+<p>
+    (d) Machine voltage now equal to system, in phase and with equal frequency. Synchroscope shows 12 o'clock. Switch can now be closed.
+   </p>
+<div class="img-alt">
+    Four graphs (a, b, c, d) illustrating the steps to synchronize an incoming AC generator to a supply system. (a) shows the existing system voltage wave. (b) shows the machine voltage wave (dotted) out of phase and frequency, being built up to equal system max. volts. (c) shows the machine voltage now equal to system, but out of phase, with frequency being increased. (d) shows the machine voltage now equal to system, in phase and with equal frequency, indicating the switch can now be closed.
+   </div>
+</div>
+<p>
+<i>
+    Figure 41
+   </i>
+<br/>
+<i>
+    Steps Taken to Synchronize an Incoming A-C Generator to the Supply System
+   </i>
+</p>
+<p>
+   Fig. 42 shows one method of phasing out polyphase alternators. If the phase rotation is correct on the incoming alternator, the lights will all be dark or bright simultaneously. If the phase rotation is wrong, the lights will never all be bright or dark at the same time.
+  </p>
+<p>
+   The phase rotation may also be checked with a small polyphase induction motor, connected alternately to the system and the incoming machine, as shown in Fig. 43. If the direction of rotation of the motor is the same for both incoming alternator and system, then the phase rotation is the same.
+  </p>
+<img alt="Diagram of phasing out polyphase alternators. A three-phase bus is shown at the top. Below it, a switchgear assembly connects the bus to an alternator. The alternator's output is connected to the bus through a set of three switches. The diagram illustrates the process of connecting the alternator to the bus for synchronization." src="e69b9188aa2c14ec6b21c83f711fef65_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    Diagram of phasing out polyphase alternators. A three-phase bus is shown at the top. Below it, a switchgear assembly connects the bus to an alternator. The alternator's output is connected to the bus through a set of three switches. The diagram illustrates the process of connecting the alternator to the bus for synchronization.
+   </div>
+</div>
+<p>
+<i>
+    Figure 42
+   </i>
+<br/>
+<i>
+    Phasing Out Polyphase Alternators
+   </i>
+</p>
+<img alt="Diagram of checking phase rotation. A three-phase bus is shown at the top. Below it, a switchgear assembly connects the bus to a motor and an alternator. The motor's output is connected to the bus through a set of three switches. The alternator's output is also connected to the bus through a set of three switches. The diagram illustrates the process of checking phase rotation by connecting the alternator to the bus and observing the motor's rotation." src="d53cd0fd1cf896a9353fd63de1505ba2_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    Diagram of checking phase rotation. A three-phase bus is shown at the top. Below it, a switchgear assembly connects the bus to a motor and an alternator. The motor's output is connected to the bus through a set of three switches. The alternator's output is also connected to the bus through a set of three switches. The diagram illustrates the process of checking phase rotation by connecting the alternator to the bus and observing the motor's rotation.
+   </div>
+</div>
+<p>
+<i>
+    Figure 43
+   </i>
+<br/>
+<i>
+    Checking of Phase Rotation
+   </i>
+</p>
+<h4>
+   Condition 4
+  </h4>
+<p>
+   The alternator voltage must be in correct phase relationship with the system, that is, both reach maximum at the same instant. Synchronizing the phase relationship of incoming machine and the system requires the use of a synchronizing device such as an indicator, which may be a bank of lamps or a synchroscope. Modern large machines always use the latter because indication by lamps is not accurate enough.
+  </p>
+<p>
+   If lamps are used for synchronizing, they are connected as in Fig. 44.
+  </p>
+<p>
+   Assuming that phase rotation has been checked and is correct and that the machine is at full-volts and close to synchronizing speed, the remaining small difference in frequency between incoming machine and system causes varying displacement between the two sets of voltages.
+  </p>
+<p>
+   If lamp indication is being used on all three phases, all lamps will become bright and dark together. As the voltages of alternator and system become more nearly in step, the
+  </p>
+<p>
+   flickering becomes slower. The main switch may be closed when all lamps are dark. It is always good practice to close the switch at a time when the incoming machine speed is increasing because this machine tends to pick up a little load and is more stable in operation.
+  </p>
+<img alt="Diagram of a three-phase synchronization setup using lamps. A horizontal line at the top is labeled 'Bus'. Below it, three vertical lines represent the phases. On the left, three lamps are connected in series between the bus and the alternator. On the right, a three-phase switch is shown, with its output lines labeled 'To Alternator'. The switch is connected to the bus through three vertical lines. The diagram illustrates the connection of lamps and a switch for synchronizing an alternator with a bus system." src="365b54f616aff249b4e6c0edafdcb9b3_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    Diagram of a three-phase synchronization setup using lamps. A horizontal line at the top is labeled 'Bus'. Below it, three vertical lines represent the phases. On the left, three lamps are connected in series between the bus and the alternator. On the right, a three-phase switch is shown, with its output lines labeled 'To Alternator'. The switch is connected to the bus through three vertical lines. The diagram illustrates the connection of lamps and a switch for synchronizing an alternator with a bus system.
+   </div>
+</div>
+<p>
+<i>
+    Figure 44
+    <br/>
+    Synchronizing With Lamps
+   </i>
+</p>
+<p>
+   The synchroscope gives a much clearer picture of the phase relationship between the two voltages (incoming machine and system). Rotation of the indicating pointer in the direction marked
+   <b>
+    fast
+   </b>
+   shows the incoming machine frequency to be faster than the system and vice versa. If the frequency of the incoming machine is equal to the system frequency, the pointer will not revolve.
+  </p>
+<p>
+   Its position relative to 12 o'clock indicates the angle of phase displacement between incoming machine and system in electrical degrees. The incoming machine should be paralleled at the instant the synchroscope pointer passes the zero (12 o'clock) position while revolving slowly in the fast direction.
+  </p>
+<p>
+   Once paralleled the pointer no longer revolves. So to prevent overheating of its coils, the synchroscope is switched off when not in use.
+  </p>
+<p>
+   The synchroscope operates by the interaction of magnetic fields from two circuits, one connected to the alternator and one to the system upon a soft iron vane or disc with the pointer attached.
+  </p>
+<p>
+   Many modern alternators are fitted with automatic synchronizing equipment. The basic operating principle is that agreement between coils supplied from alternator and system produces sufficient field strength to operate a switch-closing relay.
+  </p>
+<h3>
+   Power Factor Control
+  </h3>
+<p>
+   When two alternators are running in parallel, a transfer of load between them results in a voltage differential. The alternator with the reduced kilowatt loading has its internal voltage increased because of the lessened voltage drops within its stator windings. Hence, the machine is said to be over-excited for the new value of load. The alternator with the increased kW loading has its internal voltage decreased because of the increased voltage drops in the stator. Hence this machine is said to be under-excited for the new value of load.
+  </p>
+<p>
+   If the pf of the system is unity, this voltage differential causes reactive cross-current between the machines. If the system pf is lagging however, the effect is to cause a disproportionate division of reactive power between the alternators. The over-excited machine will supply more
+   <b>
+    Vars
+   </b>
+   (volt-amps reactive) than the under-excited machine. A pf meter would show lagging on the over-excited machine and leading on the under-excited machine.
+  </p>
+<p>
+   The balancing of Vars between the machines is accomplished by adjusting the field excitation of each machine.
+  </p>
+<p>
+   The field rheostat of the under-excited machine is turned in the
+   <b>
+    raise voltage
+   </b>
+   direction, and field rheostat of the over-excited machine is turned in the
+   <b>
+    lower voltage
+   </b>
+   direction until the kVA meter indication or the pf meter indication is the same on each machine.
+  </p>
+<h2>
+   Objective 8
+  </h2>
+<p>
+<b>
+    Explain efficiency and power losses in AC generators.
+   </b>
+</p>
+<h2>
+   AC GENERATOR EFFICIENCY AND LOSSES
+  </h2>
+<p>
+   The voltage at the terminals of an alternator is affected considerably by the pf of the load it is supplying. For this reason the rated voltage, stated on the nameplate, is always given for rated kVA at a specific pf and field current.
+  </p>
+<p>
+   The average-system load includes induction, resistance and some capacitance and is between unity and 0.8 lagging. Alternators for general service usually have the terminal voltage for rated kVA at 0.8 pf lagging stamped upon the nameplate.
+  </p>
+<p>
+   The short-circuit ratio is often included in the nameplate data. This gives an indication of the design of the machine with regard to the quantity of copper and iron in the electrical and magnetic parts. The machine with high short-circuit ratio will contain more materials.
+  </p>
+<p>
+   Short-circuit ratio is defined as the ratio of the field current required to produce rated voltage at rated speed and no-load to the field current required to circulate rated stator current when operating at rated speed under sustained short-circuit conditions. The standard figure quoted for a turbo-alternator is between 0.8 and 1.0.
+  </p>
+<p>
+   The affect of high short-circuit ratio in the design of an alternator gives it improved stability at times of load changes.
+  </p>
+<p>
+   Alternator efficiency is dependent upon the losses in the machine. Not all of the power input to a generator does useful work. Some of the energy input is lost as:
+  </p>
+<ul style="list-style-type: none">
+<li>
+    • friction
+   </li>
+<li>
+    • windage
+   </li>
+<li>
+    •
+    \(
+     I^2R
+    \)
+    losses in the stator and field windings
+   </li>
+<li>
+    • hysteresis and eddy current losses in the iron of the stator and rotor field circuits
+   </li>
+</ul>
+<p>
+   The efficiency of an alternator operating at 0.8 lagging pf can be expected to reach 98%.
+  </p>
+<h2>
+   Chapter Questions
+  </h2>
+<p>
+   B3.3
+  </p>
+<ol style="list-style-type: none">
+<li>
+    1. With the aid of simple sketches, explain the differences between AC and DC generators.
+   </li>
+<li>
+    2. Explain the relationship between alternator speed, frequency, and number of pole pairs.
+   </li>
+<li>
+    3. With the aid of a simple sketch, explain the sequence of operation for a brushless excitation system for a modern alternator.
+   </li>
+<li>
+    4. With the aid of a simple sketch, explain the operating principle of a direct-acting type of regulator with rolling contacts.
+   </li>
+<li>
+    5. Explain the advantages hydrogen cooling has over air cooling for alternators.
+   </li>
+<li>
+    6. With the aid of a simple sketch, describe the seal oil system that is used for a hydrogen cooled alternator.
+   </li>
+<li>
+    7. With the aid of a simple sketch, explain the steps that are taken to synchronize an incoming AC generator to the supply system.
+   </li>
+</ol>
+
+
+<p>
+   Because the power input to the field coils varies as the square of the field current, this power input is now 5% of 5% of 100 watts or 0.25 watt. Thus, a field power input of 0.25 watts results in the production of a field
+   \(
+    Qa
+   \)
+   as powerful as the field produced directly by a field input of 100 watts. If this flux is used to generate a voltage and this voltage is applied to some external load, the overall power amplification is 400 times that of an ordinary DC generator, that is, a power amplification of 40 000 : 1.
+  </p>
+<p>
+   The flux
+   \(
+    Qa
+   \)
+   can be utilized by placing two brushes midway between the short-circuited brushes, as shown in Fig. 25 and connecting these to the external load circuit.
+  </p>
+<img alt="Diagram of an Amplitdyne generator showing the armature, stator windings, and electrical connections. The armature is a circle with four brushes. Two brushes on the left are connected together by a short-circuiting wire. Two brushes on the right are connected to an external 'To Load' circuit. The armature is surrounded by stator windings. Vertical arrows represent the main flux Qa. Horizontal arrows represent the control flux Qc. A 'To Control Field' input is shown at the bottom with '+' and '-' terminals." src="52218820ae0a5a10bb2d604859f803e7_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    Diagram of an Amplitdyne generator showing the armature, stator windings, and electrical connections. The armature is a circle with four brushes. Two brushes on the left are connected together by a short-circuiting wire. Two brushes on the right are connected to an external 'To Load' circuit. The armature is surrounded by stator windings. Vertical arrows represent the main flux Qa. Horizontal arrows represent the control flux Qc. A 'To Control Field' input is shown at the bottom with '+' and '-' terminals.
+   </div>
+</div>
+<p>
+<i>
+    Figure 25
+    <br/>
+    Amplitdyne Generator Showing Load
+    <br/>
+    Circuit and Control-Field Circuit
+   </i>
+</p>
+<p>
+   The
+   \(
+    E
+   \)
+   applied across the load is produced by the conductors cutting the vertical flux
+   \(
+    Qa
+   \)
+   ; the cutting of
+   \(
+    Qc
+   \)
+   does not contribute anything to this
+   \(
+    E
+   \)
+   . A generator excited in this way is called an armature reaction excited machine.
+  </p>
+<p>
+   It is necessary to provide a compensating winding, placed in slots in the stator iron and connected in series with the load, to neutralize the armature reaction of the load current because this armature reaction is in direct opposition to
+   \(
+    Qc
+   \)
+   .
+  </p>
+<p>
+   The wiring diagram of the Amplitdyne then becomes as shown in Fig. 26.
+  </p>
+<p>
+   The high-speed response of the amplitdyne is made possible by the fact that its control field requires only about 1 or 2% of the number of ampere turns used on the field of an ordinary DC generator. Consequently, the inductance of its field winding is much smaller and the rate of change of the field current much more rapid.
+  </p>
+<img alt="Figure 26: Amplitdyne Circuit Showing the Compensating Winding. The diagram shows a central circular armature with a clockwise rotation arrow. It is flanked by two rectangular magnetic cores. The left core has a 'Control Field' winding and a 'Compensating Winding'. The right core also has a 'Compensating Winding'. A 'Load' is connected across the armature terminals. At the bottom, 'Control field Connections' are shown with '+' and '-' terminals connected to the control field windings." src="68ac34ff111db52afaa786afcb8346c3_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    Figure 26: Amplitdyne Circuit Showing the Compensating Winding. The diagram shows a central circular armature with a clockwise rotation arrow. It is flanked by two rectangular magnetic cores. The left core has a 'Control Field' winding and a 'Compensating Winding'. The right core also has a 'Compensating Winding'. A 'Load' is connected across the armature terminals. At the bottom, 'Control field Connections' are shown with '+' and '-' terminals connected to the control field windings.
+   </div>
+</div>
+<p>
+   Figure 26
+   <br/>
+   Amplitdyne Circuit Showing
+   <br/>
+   the Compensating Winding
+  </p>
+<p>
+   Fig. 27 shows two typical field connections using amplidynes.
+  </p>
+<img alt="Figure 27: Amplitdyne Field Control Circuits. The figure contains two main circuit diagrams. The left diagram shows a 'Main Exciter' connected to a 'Main Exciter Field' winding, which is in turn connected to an 'Amplitdyne'. Below this, two 'Control Fields' are shown with currents I+ and I- entering them. The right diagram shows a 'Main Exciter' connected to a 'Main Exciter Field' winding and an 'Amplitdyne'. Below this, two 'Control Fields' are shown with currents I+ and I- entering them." src="4792a2ccd62226861fadc22117edb7b1_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    Figure 27: Amplitdyne Field Control Circuits. The figure contains two main circuit diagrams. The left diagram shows a 'Main Exciter' connected to a 'Main Exciter Field' winding, which is in turn connected to an 'Amplitdyne'. Below this, two 'Control Fields' are shown with currents I+ and I- entering them. The right diagram shows a 'Main Exciter' connected to a 'Main Exciter Field' winding and an 'Amplitdyne'. Below this, two 'Control Fields' are shown with currents I+ and I- entering them.
+   </div>
+</div>
+<p>
+   Figure 27
+   <br/>
+   Amplitdyne Field Control Circuits
+  </p>
+<h3>
+   Magnetic Amplifier Regulator
+  </h3>
+<p>
+   To understand this type of regulator, it is necessary to be familiar with the mode of operation of a magnetic amplifier. It consists of windings on a core, the magnetic characteristics of which are very important. The permeability must be high and must be almost constant up to the saturation point. The ideal
+   \(
+    B
+   \)
+   -
+   \(
+    H
+   \)
+   characteristic (
+   \(
+    B
+   \)
+   is flux density -
+   \(
+    H
+   \)
+   is magnetizing force) is illustrated in Fig. 28.
+  </p>
+<img alt="Figure 28: Ideal B-H characteristic for a Magnetic Amplifier Core. The graph shows Flux Density (B) on the vertical axis and Ampere Turns (H) on the horizontal axis. The curve is a straight line passing through the origin with a constant positive slope until it reaches a horizontal saturation region in both the first and third quadrants." src="ad04aa6cb9e7fb36bb7a91e817e2d314_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    Figure 28: Ideal B-H characteristic for a Magnetic Amplifier Core. The graph shows Flux Density (B) on the vertical axis and Ampere Turns (H) on the horizontal axis. The curve is a straight line passing through the origin with a constant positive slope until it reaches a horizontal saturation region in both the first and third quadrants.
+   </div>
+</div>
+<p>
+<i>
+    Figure 28
+   </i>
+<br/>
+<i>
+    Ideal B-H characteristic for a Magnetic Amplifier Core
+   </i>
+</p>
+<p>
+   If two coils are wound on a core of this material, with one coil as a series impedance in an AC circuit and the other carrying direct current, impedance of the AC circuit can be varied by altering the current flowing in the DC coil. Consequently, by careful design, small variations in the
+   <b>
+    control current
+   </b>
+   (the name for direct current) can produce large changes of current in the a-c circuit. If the alternating current is rectified after passing through the amplifier windings, it becomes possible to produce large changes in direct current from small changes in another current.
+  </p>
+<p>
+   The control winding of the magnetic amplifier is supplied by a voltage transformer connected to the generator terminals. The supply for exciting the machine is taken as a three-phase supply from a shaft alternator, which is connected in series with the AC windings of the magnetic amplifier, rectified, and connected in series with the main exciter field winding. Thus, changes in output voltage directly control the main field current.
+  </p>
+<p>
+   The great advantages of this scheme are that there is a minimum of moving parts, no electronic components, the regulator is built entirely of static components, the time response is very rapid, and there is no dead band.
+  </p>
+<p>
+   The regulator works from the difference between the generator terminal voltage and a fixed reference voltage derived from the pilot generator. The difference between these two voltages is amplified by magnetic amplifiers in cascade and is fed directly to correct the main exciter field current.
+  </p>
+<p>
+   The normal DC pilot exciter is replaced by a 400 Hz self-excited pilot generator, the output being subsequently rectified to feed the main exciter winding. The higher frequency enables the magnetic amplifiers to give a much faster response and reduces the dimensions of the magnetic components. The output of the pilot generator is controlled by an induction regulator working in conjunction with magnetic amplifiers and the rectified output of the combination is fed into the field circuit of the generator. The induction regulator in this design replaces the conventional field rheostat.
+  </p>
+<h3>
+   Static Excitation System
+  </h3>
+<p>
+   An automatic voltage regulator (AVR) is a device that causes the excitation of the generator to be automatically increased or decreased so that the terminal voltage can be maintained within acceptable limits. The device must be able to detect a change in voltage and quickly respond to difference between the measured voltage and the desired voltage. Voltage regulation is expressed in percent by the following formula:
+  </p>
+<p>
+   $$
+    \frac{(\text{No-load volts}) - (\text{Full-load volts})}{\text{Full-load volts}} \times 100
+   $$
+  </p>
+<p>
+   Modern voltage regulators maintain voltage within
+   \(
+    \pm 1.5\%
+   \)
+   . Generator voltage regulators are classified by the means of operation.
+  </p>
+<p>
+   Direct-acting rheostatic regulators adjust the field strength of a generator directly. This type of AVR was common in older generators. The rheostat varied the resistance and therefore the current, in the exciter circuit. By varying the current, the field strength in the generator is varied. The rheostat was manually operated but automated by using an electromagnet that varied the resistance based on the generator voltage.
+  </p>
+<p>
+   The indirect acting rheostatic regulators use an auxiliary device, such as a motor, to operate the field rheostat.
+  </p>
+<p>
+   Many older voltage regulators have been replaced by static excitation systems and digital voltage regulators.
+  </p>
+<p>
+   As the name suggests, there are no moving parts in a static voltage regulator system. Fig. 29 shows a block diagram for a static excitation system and automatic voltage regulator. Initial voltage buildup in the generator is due to residual magnetism in the field. As voltage builds, a transformer is used to provide power from the generator output terminals to an automatic voltage regulator. Power from the generator terminals is also provided to a thyristor rectifier bridge. The AVR provides a signal to the gates on the thyristors, which modulate the DC voltage to the generator field.
+  </p>
+<img alt="Schematic diagram of a static excitation system for a generator. A generator is connected to a three-phase transformer. The secondary of the transformer is connected to an Automatic Voltage Regulator (AVR). The AVR output is connected to the gate of a Thyristor Rectifier Bridge. The input of the bridge is connected to the three phases of the transformer. The output of the bridge is connected to the field winding of the generator. The field winding is also connected to the AVR." src="f9a14fbfecbd7d059226cc93677d721b_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    Schematic diagram of a static excitation system for a generator. A generator is connected to a three-phase transformer. The secondary of the transformer is connected to an Automatic Voltage Regulator (AVR). The AVR output is connected to the gate of a Thyristor Rectifier Bridge. The input of the bridge is connected to the three phases of the transformer. The output of the bridge is connected to the field winding of the generator. The field winding is also connected to the AVR.
+   </div>
+</div>
+<p>
+   Figure 29
+   <br/>
+   Static Excitation System
+  </p>
+<p>
+   Thyristors are similar to diodes but are designed with a gate that allows the amount of rectified DC voltage to be varied. This is shown in Fig. 30.
+  </p>
+<img alt="Timing diagram for a thyristor. It shows three waveforms: A.C. Voltage (a sine wave), + Gate Signal (a rectangular pulse), and D.C. Voltage (the output voltage). The D.C. Voltage is shown as a series of pulses, where each pulse starts at the beginning of an A.C. cycle and continues until the next gate signal pulse. The thyristor symbol is shown on the left with labels for Gate, Anode, and Cathode." src="6de7dcb072cef2388026fb0f504084b2_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    Timing diagram for a thyristor. It shows three waveforms: A.C. Voltage (a sine wave), + Gate Signal (a rectangular pulse), and D.C. Voltage (the output voltage). The D.C. Voltage is shown as a series of pulses, where each pulse starts at the beginning of an A.C. cycle and continues until the next gate signal pulse. The thyristor symbol is shown on the left with labels for Gate, Anode, and Cathode.
+   </div>
+</div>
+<p>
+   Figure 30
+   <br/>
+   Thyristors
+  </p>
+<div data-bbox="974 247 1367 323" data-label="Section-Header">
+<h2>
+    Objective 5
+   </h2>
+</div>
+<div data-bbox="178 357 1341 506" data-label="Text">
+<p>
+<b>
+     Describe the cooling systems used for an alternator including circulating air cooling, hydrogen cooling, and stator winding cooling water systems.
+    </b>
+</p>
+</div>
+<h3>
+   ALTERNATOR COOLING SYSTEMS
+  </h3>
+<p>
+   Cooling systems for alternators fall into the following fours types depending on the volt-amp output of the unit:
+  </p>
+<ul style="list-style-type: none">
+<li>
+    • direct air
+   </li>
+<li>
+    • enclosed air
+   </li>
+<li>
+    • hydrogen
+   </li>
+<li>
+    • water
+   </li>
+</ul>
+<h3>
+   Direct Air Cooling
+  </h3>
+<p>
+   Small alternators use fans mounted on the rotor shaft. Ambient air is drawn in through one end of the frame and discharged out the opposite end. This type of cooling is not well suited for dusty environments. Fig. 31 shows a photograph of a small alternator. Notice the ventilation slots on each end of the frame.
+  </p>
+<img alt="A black and white photograph of a small alternator with a control box on top. The main body is cylindrical with vertical ventilation slots visible on the left side. The control box has a meter and buttons on its front face." src="1408b3d336e1d80c7a1abd0682f4f687_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    A black and white photograph of a small alternator with a control box on top. The main body is cylindrical with vertical ventilation slots visible on the left side. The control box has a meter and buttons on its front face.
+   </div>
+</div>
+<p>
+<i>
+    Figure 31
+    <br/>
+    Small Alternator
+   </i>
+</p>
+<p>
+   In larger alternators, there are considerably higher
+   \(
+    I^{2}R
+   \)
+   losses and magnetic losses. These types of losses produce heat that must be properly dissipated. The physical size and structure of alternators are determined by the manner in which the machine is cooled.
+  </p>
+<p>
+   Fig. 32 shows a side view of a generator with direct-cooling fans on both ends of the rotor. The top part of the drawing shows an end view of the two fans. The arrows on the drawing show the paths the cooling air takes.
+  </p>
+<img alt="Figure 32: Generator with Direct Cooling Fans. This technical diagram shows a side view of a generator with a cross-section at the top. The cross-section displays two 'Cooling Fans' at the ends of the rotor. Arrows indicate the flow of cooling air from these fans, through the 'Stator' and 'Rotor' windings, and out through side ducts. The main side view shows the 'Rotor' mounted on a 'Rotor Shaft', with 'Cooling Fan' units at each end. The entire assembly is housed within a rectangular frame." src="892f25e3d71d8e315a2a51092a8a8da7_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    Figure 32: Generator with Direct Cooling Fans. This technical diagram shows a side view of a generator with a cross-section at the top. The cross-section displays two 'Cooling Fans' at the ends of the rotor. Arrows indicate the flow of cooling air from these fans, through the 'Stator' and 'Rotor' windings, and out through side ducts. The main side view shows the 'Rotor' mounted on a 'Rotor Shaft', with 'Cooling Fan' units at each end. The entire assembly is housed within a rectangular frame.
+   </div>
+</div>
+<p>
+   Figure 32
+   <br/>
+<i>
+    Generator with Direct Cooling Fans
+   </i>
+</p>
+<h4>
+   Enclosed Air Cooling
+  </h4>
+<p>
+   Air-cooled alternators are limited in size due to the inability of air to cool the rotor and stator to acceptable ranges. For larger generators, in the range of 25 to 325 MVA (mega-volt-amps), the generator is totally enclosed with separate fans supplying cooling air. Fig. 33 shows a side and end views of a typical air-cooled arrangement.
+  </p>
+<p>
+   The air is filtered before it is supplied to the generator. Air from two fans is blown through air coolers into the stator and field windings and the exciter cabinet. Air return ducts are provided to guide the exhaust air back to the inlet of the fans.
+  </p>
+<p>
+   The air coolers consist of finned tubes through which cooling water is circulated. The air is cooled as it is blown through channels between the finned tubes.
+  </p>
+<img alt="Longitudinal Section Through Alternators, Exciters &amp; Foundation Block. This technical diagram shows the internal air-cooling system of a generator. It features two main horizontal slots for the alternator and exciter windings. Air is drawn in through 'Emergency Air Inlet Doors' at the bottom right, passing through 'Cable Ducts' and an 'Air Cooler'. A 'Fan' is positioned at the bottom center to force air upwards. The air then exits through 'Emergency Air Outlet Doors' on the left side. Above the windings, 'Slipring Filters Viscous Type' and 'Exciter Filters Viscous Type' are shown. An 'Access Door' is located on the far left. The entire assembly is supported by a 'Foundation Block'." src="fd955384881fd240be5518d3050588d9_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    Longitudinal Section Through Alternators, Exciters &amp; Foundation Block. This technical diagram shows the internal air-cooling system of a generator. It features two main horizontal slots for the alternator and exciter windings. Air is drawn in through 'Emergency Air Inlet Doors' at the bottom right, passing through 'Cable Ducts' and an 'Air Cooler'. A 'Fan' is positioned at the bottom center to force air upwards. The air then exits through 'Emergency Air Outlet Doors' on the left side. Above the windings, 'Slipring Filters Viscous Type' and 'Exciter Filters Viscous Type' are shown. An 'Access Door' is located on the far left. The entire assembly is supported by a 'Foundation Block'.
+   </div>
+</div>
+<p>
+   Figure 33
+   <br/>
+   Arrangement of Alternator, Exciter and Sliprings Air-cooling System
+  </p>
+<h3>
+   Hydrogen Cooling
+  </h3>
+<p>
+   Hydrogen has properties that allow it to be a better coolant for larger alternators. Hydrogen is used on units that have a capacity in the range of 200 - 1000 MVA. The greater cooling ability of hydrogen vs. air allows for smaller physical dimensions of alternators. But, there is a greater cost associated with hydrogen cooling. Fig. 34 is a photograph of 1120 MVA hydrogen cooled generator manufactured by Toshiba Corporation.
+  </p>
+<p>
+   The increase in rated output obtained with hydrogen gas can be 20% - 30% based on a hydrogen pressure of 3.5 kPa. Further increases can be realized with greater hydrogen pressure. Alternators are commonly operated at pressures of 100 kPa.
+  </p>
+<p>
+   Hydrogen gas has several advantages over air:
+  </p>
+<ul style="list-style-type: none">
+<li>
+    • High heat transfer coefficient, absorbs heat rapidly as it is flows through the generator windings
+   </li>
+<li>
+    • Rejects this same heat more rapidly in the cooling stages of the ventilation circuit
+   </li>
+<li>
+    • Less dense than air and requires less energy to drive it through the different generator components
+   </li>
+<li>
+    • Offers less braking effect (windage) to the rotating parts of the alternator.
+   </li>
+</ul>
+<img alt="A black and white photograph showing the internal components of a large industrial generator. The image displays a series of parallel, metallic bars or conductors, likely part of the stator or rotor assembly, arranged in a regular pattern. The lighting is somewhat dim, and the focus is on the mechanical structure." src="e7cb11f042fc58088dff4b6d9306845e_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    A black and white photograph showing the internal components of a large industrial generator. The image displays a series of parallel, metallic bars or conductors, likely part of the stator or rotor assembly, arranged in a regular pattern. The lighting is somewhat dim, and the focus is on the mechanical structure.
+   </div>
+</div>
+<p style="text-align: center;">
+<i>
+    Figure 34
+    <br/>
+    1120 MVA Hydrogen Cooled Generator
+    <br/>
+    (Toshiba Corporation)
+   </i>
+</p>
+<p>
+   Overheating in generators can cause fires. This can be a serious problem with air ventilation systems since air supports combustion. The fire hazard with hydrogen is reduced. The airtight system prevents buildup of dirt that may cause fires.
+  </p>
+<p>
+   The absence of air in the ventilation system also prevents the formation of acids that otherwise may attack the insulation on the rotor and stator windings.
+  </p>
+<p>
+   However, there is a risk of explosion if hydrogen is mixed in the proper proportions with air. This is prevented by air tight casings and proper seals around the rotor shaft.
+  </p>
+<p>
+   Hydrogen must be kept free from moisture because it increases the viscosity of the hydrogen and decreases its ability to carry away excess heat. Moisture also deteriorates the seals on the rotating shaft.
+  </p>
+<p>
+   Normally, the hydrogen gas circulates in a closed loop through a water-cooled heat exchanger and a molecular sieve or desiccant dryer before returning to the generator enclosure.
+  </p>
+<p>
+   Fig. 35 shows a schematic diagram of the equipment layout and piping diagram for a hydrogen cooling system.
+  </p>
+<table border="1">
+<thead>
+<tr data-bbox="196 195 526 226">
+<th>
+      Symbol
+     </th>
+<th>
+      Key to Symbols
+     </th>
+</tr>
+</thead>
+<tbody>
+<tr data-bbox="196 226 526 258">
+<td>
+<p>
+       Image: Symbol for Shut-Off Valve: a circle with a diagonal line and a crossbar.
+      </p>
+</td>
+<td>
+      Shut-Off Valve
+     </td>
+</tr>
+<tr data-bbox="196 258 526 291">
+<td>
+<p>
+       Image: Symbol for Non-Return Valve: a circle with a diagonal line and a triangle.
+      </p>
+</td>
+<td>
+      Non-Return Valve
+     </td>
+</tr>
+<tr data-bbox="196 291 526 327">
+<td>
+<p>
+       Image: Symbol for Electrical Connections: a dashed line.
+      </p>
+</td>
+<td>
+      Electrical Connections
+     </td>
+</tr>
+</tbody>
+</table>
+<img alt="Schematic diagram of a Hydrogen Cooled Generator System. The diagram shows the internal components of a generator and its external support systems. At the top, the generator housing contains a Perforated Hydrogen Admission Pipe, Gas Cooler, Alternator, Fan Pressure Chamber, and Seals. External to the housing are Sight Flow Gauges and Pressure Gauges. The oil system includes a Bearing Oil Supply Line, Thermometer, Oil Pressure Switch, Oil Filter, Starter Oil Pump, Emergency Oil Supply Line, and a Turbine Oil Tank with a Drain Valve. A Hydrogen Deaerating Tank is shown on the right with a float valve. The control system includes an Air Inlet Valve, Pressure Switch, Differential Pressure Gauge with Purity Scale, 30 inch Mercury 'U' Tube, Solenoid Valve, and Manually Operated By-Pass Valve. Gas supply lines from Hydrogen Cylinders and Carbon Dioxide Cylinders are connected to a Pressure Release Valve and lead To Atmosphere Outside of Building. Various other components like Liquid Alarm Devices and Relief Valves are also indicated." src="5b4e774d63e0e0ed73801a9247755e5f_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    Schematic diagram of a Hydrogen Cooled Generator System. The diagram shows the internal components of a generator and its external support systems. At the top, the generator housing contains a Perforated Hydrogen Admission Pipe, Gas Cooler, Alternator, Fan Pressure Chamber, and Seals. External to the housing are Sight Flow Gauges and Pressure Gauges. The oil system includes a Bearing Oil Supply Line, Thermometer, Oil Pressure Switch, Oil Filter, Starter Oil Pump, Emergency Oil Supply Line, and a Turbine Oil Tank with a Drain Valve. A Hydrogen Deaerating Tank is shown on the right with a float valve. The control system includes an Air Inlet Valve, Pressure Switch, Differential Pressure Gauge with Purity Scale, 30 inch Mercury 'U' Tube, Solenoid Valve, and Manually Operated By-Pass Valve. Gas supply lines from Hydrogen Cylinders and Carbon Dioxide Cylinders are connected to a Pressure Release Valve and lead To Atmosphere Outside of Building. Various other components like Liquid Alarm Devices and Relief Valves are also indicated.
+   </div>
+</div>
+<p>
+   Figure 35A
+   <br/>
+   Hydrogen Cooled Generator System
+  </p>
+<img alt="Diagram of a hydrogen-cooled generator system showing water cooling loops. On the left, an 'End View' shows 'Gas Coolers' connected to 'Inlet Manifold' and 'Outlet Manifold'. The 'Inlet Manifold' connects to 'Distilled Water In' which goes to 'Heat Exchangers'. 'Heat Exchangers' have 'River Water In' from a 'Duplex Strainer' and 'River Water Out' to a 'Water Head Tank'. 'Distilled Water Out' from the heat exchangers goes to the 'Outlet Manifold'. 'Automatic Distilled Water Make-Up' feeds the 'Water Head Tank'. 'Overflow' from the tank goes to 'Distilled Water In' before the heat exchangers. Two pumps, 'Distilled Water Pump' and 'Make-Up Water Pump', are shown in the 'Distilled Water In' line." src="d4af765160d04ecef538e5066006dc77_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    Diagram of a hydrogen-cooled generator system showing water cooling loops. On the left, an 'End View' shows 'Gas Coolers' connected to 'Inlet Manifold' and 'Outlet Manifold'. The 'Inlet Manifold' connects to 'Distilled Water In' which goes to 'Heat Exchangers'. 'Heat Exchangers' have 'River Water In' from a 'Duplex Strainer' and 'River Water Out' to a 'Water Head Tank'. 'Distilled Water Out' from the heat exchangers goes to the 'Outlet Manifold'. 'Automatic Distilled Water Make-Up' feeds the 'Water Head Tank'. 'Overflow' from the tank goes to 'Distilled Water In' before the heat exchangers. Two pumps, 'Distilled Water Pump' and 'Make-Up Water Pump', are shown in the 'Distilled Water In' line.
+   </div>
+</div>
+<p>
+<i>
+    Figure 35B
+    <br/>
+    End View of Hydrogen Cooled Generator System
+   </i>
+</p>
+<p>
+   The gas flow paths for hydrogen cooling vary with manufacturers' designs. In some cases, the gas enters at each end of the rotor and leaves at the centre. Other designs have the gas enter one end and exit at the opposite end. Some manufacturers allow the gas to enter special rotor ventilation slots and then escape radially through slotted conductors.
+  </p>
+<h4>
+   Water Cooling
+  </h4>
+<p>
+   Some alternator designs use water to cool the stator windings. In this design the water is circulated through hollow conductors. Usually pure water such as deionized water is used. The cool water enters the winding through a distribution header at one end of the generator and the warm water is discharged at the opposite end.
+  </p>
+<p>
+   Cooling water cooling systems are more complex and more costly than conventional systems. However, at higher ratings, this cost is offset by a significantly smaller physical size.
+  </p>
+<p>
+   Fig. 36 shows the water-cooling ducts around the stator frame and stator windings in a generator manufactured by Alsaldio Energia of Italy.
+  </p>
+<img alt="A close-up, black and white photograph showing a circular cross-section of a generator stator winding. The central part is a dark, solid-looking circle, surrounded by a lighter, textured ring that appears to be the hollow conductor material. The overall image has a grainy, halftone-like appearance." src="0f2a1e4a7b12fe5b8749882ecd636f5c_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    A close-up, black and white photograph showing a circular cross-section of a generator stator winding. The central part is a dark, solid-looking circle, surrounded by a lighter, textured ring that appears to be the hollow conductor material. The overall image has a grainy, halftone-like appearance.
+   </div>
+</div>
+<p>
+<i>
+    Figure 36
+    <br/>
+    Generator Water-Cooling Ducts
+    <br/>
+    (Alsaldo Energia-Italy)
+   </i>
+</p>
+<p>
+   The stator windings, shown in Fig. 36, are made up of hollow non-magnetic stainless steel conductors that carry the cooling water. These hollow conductors are manufactured from solid conductor material to make the bars that carry the stator current.
+  </p>
+<h2>
+   Objective 6
+  </h2>
+<p>
+<b>
+    Describe shaft sealing arrangements for an alternator.
+   </b>
+</p>
+<h2>
+   SHAFT SEALING ARRANGEMENTS
+  </h2>
+<p>
+   Hydrogen cooled machines must have seals on the rotor shaft to prevent gas from leaking outwards. Fig. 37 shows a radial clearance type that prevents gas from escaping along the radial circumference of the shaft. Note how it is fitted with the shaft journal.
+  </p>
+<img alt="Cross-sectional diagram of a radial clearance type shaft seal (Figure 37)." src="33809b11cc711711ebb7be1282fcd4b7_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<p>
+    This cross-sectional diagram illustrates a radial clearance type shaft seal. A central shaft journal is shown at the bottom. A sealing ring is mounted on the journal, held in place by a helical garter spring. The sealing ring is in contact with lapped surfaces on a stationary seal housing. An oil feed line is shown entering the seal housing to provide lubrication.
+   </p>
+<div class="img-alt">
+    Cross-sectional diagram of a radial clearance type shaft seal (Figure 37).
+   </div>
+</div>
+<p>
+<i>
+    Figure 37
+    <br/>
+    Radial Clearance Type Shaft Seal
+   </i>
+</p>
+<p>
+   Fig. 38 shows an axial clearance type that fits against the shaft. This type of seal prevents gases from escaping radially from the shaft.
+  </p>
+<img alt="Cross-sectional diagram of an axial clearance type shaft seal (Figure 38)." src="0a5acc4b370bb711096e04f25b8b3feb_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<p>
+    This cross-sectional diagram shows an axial clearance type shaft seal. A shaft collar is mounted on the shaft. A sealing ring is positioned against the collar, held by helical springs. The sealing ring has a white-metal face that creates a seal against the seal housing. An oil feed is provided to the sealing area.
+   </p>
+<div class="img-alt">
+    Cross-sectional diagram of an axial clearance type shaft seal (Figure 38).
+   </div>
+</div>
+<p>
+<i>
+    Figure 38
+    <br/>
+    Axial Clearance Type Shaft Seal
+   </i>
+</p>
+<p>
+   Fig. 39 shows a thrust ring type. These seals are designed to move slightly to compensate for the radial and axial forces (thrust) that the shaft experiences as it rotates from stopped to a full-load speed.
+  </p>
+<img alt="Cross-sectional diagram of a thrust ring type shaft seal for a hydrogen-cooled alternator. The diagram shows the rotor shaft, stator end cover, and various seal components. On the left, the hydrogen-filled stator cavity is separated from the external environment by a series of seals: an expansion element, a wiper, and a cup packing seal ring. The main seal assembly on the right consists of a seal housing, a seal retaining pin, a spherical seat, a cup packing seal ring, an oil seal pad, an oil seal collar, and a seal ring. The seal housing is mounted on the bearing housing. Labels include: Stator End Cover, Gas Tight Joint, Hydrogen, Expansion Element, Wiper, Rotor Shaft, Cup Packing Seal Ring, Seal Housing, Seal Retaining Pin, Spherical Seat, Cup Packing Seal Ring, Oil Seal Pad, Oil Seal Collar, and Seal Ring." src="662933fe00899933b36b5a214ac6095c_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    Cross-sectional diagram of a thrust ring type shaft seal for a hydrogen-cooled alternator. The diagram shows the rotor shaft, stator end cover, and various seal components. On the left, the hydrogen-filled stator cavity is separated from the external environment by a series of seals: an expansion element, a wiper, and a cup packing seal ring. The main seal assembly on the right consists of a seal housing, a seal retaining pin, a spherical seat, a cup packing seal ring, an oil seal pad, an oil seal collar, and a seal ring. The seal housing is mounted on the bearing housing. Labels include: Stator End Cover, Gas Tight Joint, Hydrogen, Expansion Element, Wiper, Rotor Shaft, Cup Packing Seal Ring, Seal Housing, Seal Retaining Pin, Spherical Seat, Cup Packing Seal Ring, Oil Seal Pad, Oil Seal Collar, and Seal Ring.
+   </div>
+</div>
+<p>
+<i>
+    Figure 39
+    <br/>
+    Thrust Ring Type Shaft Seal
+   </i>
+</p>
+<p>
+   The seals prevent hydrogen from escaping outwards by forcing oil inwards against the seal. Seal oil is circulated from the main machine lubricating oil system, through the seals, to the hydrogen detraining tanks and then back to the main oil tank. The hydrogen detraining tanks allow any gas that may become entrained with the circulated oil to be removed before it is returned to the main storage tank. Fig. 40 shows the equipment and piping layout for a seal-oil system for a hydrogen cooled alternator.
+  </p>
+<img alt="Schematic diagram of a Seal Oil System for H2 Cooled Alternator. The diagram shows the flow of oil from a Turbine Oil Tank through various components including a Seal Oil Filter, Seal Oil Cooler, and pumps (D.C. and A.C.) to the Generator. It also includes a Hydrogen Detaining Tank and a legend for valve types. X symbol checkmark symbol two parallel lines symbol" src="8fbdfc3d17fb1dae7b2d8f5a287fa9fc_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<p>
+    The diagram illustrates the seal oil system for an H
+    <sub>
+     2
+    </sub>
+    cooled alternator. At the top, the
+    <b>
+     Generator
+    </b>
+    is shown with oil lines entering from the bottom. The oil flows through a series of components: a
+    <b>
+     Seal Oil Cooler
+    </b>
+    (connected to a
+    <b>
+     To Water System
+    </b>
+    ), a
+    <b>
+     Seal Oil Filter
+    </b>
+    , and then splits into two pumps: a
+    <b>
+     D.C. Seal Oil Pump
+    </b>
+    and an
+    <b>
+     A.C. Seal Oil Pump
+    </b>
+    . Both pumps are connected to a
+    <b>
+     Starter
+    </b>
+    . The oil from the pumps returns to the
+    <b>
+     Turbine Oil Tank
+    </b>
+    . A line labeled
+    <b>
+     Main Power Oil
+    </b>
+    also connects to the Turbine Oil Tank. On the right side, there are two
+    <b>
+     Hydrogen Detaining Tanks
+    </b>
+    connected to the system. Various valves are indicated with symbols:
+    <b>
+     NC
+    </b>
+    (Normally Closed),
+    <b>
+     Shut off Valve
+    </b>
+    (X symbol),
+    <b>
+     Non Return Valve
+    </b>
+    (checkmark symbol), and
+    <b>
+     Adjustable Orifice
+    </b>
+    (two parallel lines symbol). Electrical connections are shown with dashed lines.
+   </p>
+<table border="1">
+<tbody>
+<tr data-bbox="878 1087 1261 1115">
+<td>
+       NC
+      </td>
+<td>
+       Indicates Normally Closed
+      </td>
+</tr>
+<tr data-bbox="878 1115 1261 1142">
+<td>
+</td>
+<td>
+       Indicates Shut off Valve
+      </td>
+</tr>
+<tr data-bbox="878 1142 1261 1169">
+<td>
+</td>
+<td>
+       Indicates Non Return Valve
+      </td>
+</tr>
+<tr data-bbox="878 1169 1261 1194">
+<td>
+</td>
+<td>
+       Indicates Adjustable Orifice
+      </td>
+</tr>
+<tr data-bbox="878 1194 1261 1220">
+<td>
+       - - -
+      </td>
+<td>
+       Indicates Electrical Connection
+      </td>
+</tr>
+</tbody>
+</table>
+<div class="img-alt">
+    Schematic diagram of a Seal Oil System for H2 Cooled Alternator. The diagram shows the flow of oil from a Turbine Oil Tank through various components including a Seal Oil Filter, Seal Oil Cooler, and pumps (D.C. and A.C.) to the Generator. It also includes a Hydrogen Detaining Tank and a legend for valve types. X symbol checkmark symbol two parallel lines symbol
+   </div>
+</div>
+<p>
+   Figure 40
+   <br/>
+   Seal Oil System for H
+   <sub>
+    2
+   </sub>
+   Cooled Alternator
+  </p>
+<h2>
+   Objective 7
+  </h2>
+<p>
+<b>
+    Explain the theory and significance of alternator synchronization and parallel operation including the impact on power factor.
+   </b>
+</p>
+<h3>
+   POWER FACTOR
+  </h3>
+<p>
+   The power factor (pf) of the system supplied by the generators is determined by the characteristics of the load connected. In the case where one alternator only supplies the load, its power factor is also that of the load.
+  </p>
+<p>
+   Where two or more alternators supply a system (by far the more common case), the pf of each can be controlled individually by altering of its excitation.
+  </p>
+<p>
+   If the generator is under excited, its pf becomes leading and the current output again increases without change in kW output.
+  </p>
+<p>
+   Control of alternator pf is usually carried out by hand operation of a trimming resistance in the voltage regulator circuit.
+  </p>
+<h3>
+   PARALLEL OPERATION
+  </h3>
+<p>
+   If the excitation of a generator operating in parallel with others is increased beyond the amount required to give normal terminal voltage for the load condition, its pf will change in the lagging direction. Its current output increases without appreciable change in kW load output.
+  </p>
+<h3>
+   Synchronizing
+  </h3>
+<p>
+   Alternating-current power systems consist of several generating machines connected in parallel to common bus bars which supply the system load. Moreover it is common to have interconnection between local systems through transmission lines. Thus, any generator which is to be switched into the system must fulfill the following synchronizing conditions.
+  </p>
+<h4>
+   Condition 1
+  </h4>
+<p>
+   The alternator terminal voltage must equal that of the system. This condition is fulfilled by adjusting the alternator-field rheostat after running the machine up to approximately full speed, until the terminal voltage matches the system voltage. Implicit in this condition is also a demand that the shape of the incoming machine voltage wave will correspond closely with that of the system.
+  </p>
+<h4>
+   Condition 2
+  </h4>
+<p>
+   The alternator frequency must approach that of the system within close limits. The alternator frequency is controlled by adjusting the speed of the prime mover. In most cases this means control of steam supply to the turbine.
+  </p>
+<h4>
+   Condition 3
+  </h4>
+<p>
+   Phase rotations of alternator and system must be the same. That is, if the system bus bars are designated red, white and blue and the maximum of the voltage waves of these three phases occur in the sequence red, white, blue, then the incoming machine (which is to be connected red to red, blue to blue, etc.) must also have voltage maximums occurring in the phase sequence red, white, blue.
+  </p>
+<p>
+   This condition can be checked by lamps or a phase rotation meter. This condition can only be altered by disconnection so that once the phase rotation of a generator is proved correct with relation to the system, it will not be necessary to repeat the test. Normal switching on and off load is carried out without changing the generator phase rotation.
+  </p>
+<p>
+   The series of operations required to bring about the above conditions and to close the switch are known as
+   <b>
+    synchronizing
+   </b>
+   . The process of synchronizing may be illustrated by the following diagrams of the incoming machine and the system voltage waves, as shown on Fig. 41.
+  </p>
+<p>
+   Fig. 41(a) shows the existing system voltage wave (one phase only shown).
+  </p>
+<p>
+   Referring to Fig. 41(b), the machine voltage wave is shown dotted and is out of phase and frequency.
+  </p>
+<p>
+   The generator's output voltage is slowly increased to equal the system's maximum voltage. This is accomplished by adjusting the field rheostat.
+  </p>
+<p>
+   Fig. 41(c) shows that the machine and system voltages are now equal. The voltages are out of phase but the frequency is being increased by increasing the speed of the prime mover.
+  </p>
+<p>
+   In Fig. 41(d), the machine and system:
+  </p>
+<ul style="list-style-type: none">
+<li>
+    • voltages are equal
+   </li>
+<li>
+    • frequencies are equal
+   </li>
+<li>
+    • are both in phase
+   </li>
+</ul>
+<p>
+   The synchroscope shows 12 o'clock and the switch can now be closed.
+  </p>
+<img alt="Four graphs (a, b, c, d) illustrating the steps to synchronize an incoming AC generator to a supply system. (a) shows the existing system voltage wave. (b) shows the machine voltage wave (dotted) out of phase and frequency, being built up to equal system max. volts. (c) shows the machine voltage now equal to system, but out of phase, with frequency being increased. (d) shows the machine voltage now equal to system, in phase and with equal frequency, indicating the switch can now be closed." src="5ed9189841659dfb01f809b8e3b21f74_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<p>
+    (a) Existing system voltage wave. (One phase only shown.)
+   </p>
+<p>
+    (b) Machine voltage wave shown dotted. Out of phase and frequency. Being built up to equal the system max. volts by adjustment of field rheostat.
+   </p>
+<p>
+    (c) Machine voltage now equal to system. Voltage waves out of phase but frequency being increased by increasing speed of prime mover.
+   </p>
+<p>
+    (d) Machine voltage now equal to system, in phase and with equal frequency. Synchroscope shows 12 o'clock. Switch can now be closed.
+   </p>
+<div class="img-alt">
+    Four graphs (a, b, c, d) illustrating the steps to synchronize an incoming AC generator to a supply system. (a) shows the existing system voltage wave. (b) shows the machine voltage wave (dotted) out of phase and frequency, being built up to equal system max. volts. (c) shows the machine voltage now equal to system, but out of phase, with frequency being increased. (d) shows the machine voltage now equal to system, in phase and with equal frequency, indicating the switch can now be closed.
+   </div>
+</div>
+<p>
+<i>
+    Figure 41
+   </i>
+<br/>
+<i>
+    Steps Taken to Synchronize an Incoming A-C Generator to the Supply System
+   </i>
+</p>
+<p>
+   Fig. 42 shows one method of phasing out polyphase alternators. If the phase rotation is correct on the incoming alternator, the lights will all be dark or bright simultaneously. If the phase rotation is wrong, the lights will never all be bright or dark at the same time.
+  </p>
+<p>
+   The phase rotation may also be checked with a small polyphase induction motor, connected alternately to the system and the incoming machine, as shown in Fig. 43. If the direction of rotation of the motor is the same for both incoming alternator and system, then the phase rotation is the same.
+  </p>
+<img alt="Diagram of phasing out polyphase alternators. A three-phase bus is shown at the top. Below it, a switchgear assembly connects the bus to an alternator. The alternator's output is connected to the bus through a set of three switches. The diagram illustrates the process of connecting the alternator to the bus for synchronization." src="e69b9188aa2c14ec6b21c83f711fef65_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    Diagram of phasing out polyphase alternators. A three-phase bus is shown at the top. Below it, a switchgear assembly connects the bus to an alternator. The alternator's output is connected to the bus through a set of three switches. The diagram illustrates the process of connecting the alternator to the bus for synchronization.
+   </div>
+</div>
+<p>
+<i>
+    Figure 42
+   </i>
+<br/>
+<i>
+    Phasing Out Polyphase Alternators
+   </i>
+</p>
+<img alt="Diagram of checking phase rotation. A three-phase bus is shown at the top. Below it, a switchgear assembly connects the bus to a motor and an alternator. The motor's output is connected to the bus through a set of three switches. The alternator's output is also connected to the bus through a set of three switches. The diagram illustrates the process of checking phase rotation by connecting the alternator to the bus and observing the motor's rotation." src="d53cd0fd1cf896a9353fd63de1505ba2_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    Diagram of checking phase rotation. A three-phase bus is shown at the top. Below it, a switchgear assembly connects the bus to a motor and an alternator. The motor's output is connected to the bus through a set of three switches. The alternator's output is also connected to the bus through a set of three switches. The diagram illustrates the process of checking phase rotation by connecting the alternator to the bus and observing the motor's rotation.
+   </div>
+</div>
+<p>
+<i>
+    Figure 43
+   </i>
+<br/>
+<i>
+    Checking of Phase Rotation
+   </i>
+</p>
+<h4>
+   Condition 4
+  </h4>
+<p>
+   The alternator voltage must be in correct phase relationship with the system, that is, both reach maximum at the same instant. Synchronizing the phase relationship of incoming machine and the system requires the use of a synchronizing device such as an indicator, which may be a bank of lamps or a synchroscope. Modern large machines always use the latter because indication by lamps is not accurate enough.
+  </p>
+<p>
+   If lamps are used for synchronizing, they are connected as in Fig. 44.
+  </p>
+<p>
+   Assuming that phase rotation has been checked and is correct and that the machine is at full-volts and close to synchronizing speed, the remaining small difference in frequency between incoming machine and system causes varying displacement between the two sets of voltages.
+  </p>
+<p>
+   If lamp indication is being used on all three phases, all lamps will become bright and dark together. As the voltages of alternator and system become more nearly in step, the
+  </p>
+<p>
+   flickering becomes slower. The main switch may be closed when all lamps are dark. It is always good practice to close the switch at a time when the incoming machine speed is increasing because this machine tends to pick up a little load and is more stable in operation.
+  </p>
+<img alt="Diagram of a three-phase synchronization setup using lamps. A horizontal line at the top is labeled 'Bus'. Below it, three vertical lines represent the phases. On the left, three lamps are connected in series between the bus and the alternator. On the right, a three-phase switch is shown, with its output lines labeled 'To Alternator'. The switch is connected to the bus through three vertical lines. The diagram illustrates the connection of lamps and a switch for synchronizing an alternator with a bus system." src="365b54f616aff249b4e6c0edafdcb9b3_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    Diagram of a three-phase synchronization setup using lamps. A horizontal line at the top is labeled 'Bus'. Below it, three vertical lines represent the phases. On the left, three lamps are connected in series between the bus and the alternator. On the right, a three-phase switch is shown, with its output lines labeled 'To Alternator'. The switch is connected to the bus through three vertical lines. The diagram illustrates the connection of lamps and a switch for synchronizing an alternator with a bus system.
+   </div>
+</div>
+<p>
+<i>
+    Figure 44
+    <br/>
+    Synchronizing With Lamps
+   </i>
+</p>
+<p>
+   The synchroscope gives a much clearer picture of the phase relationship between the two voltages (incoming machine and system). Rotation of the indicating pointer in the direction marked
+   <b>
+    fast
+   </b>
+   shows the incoming machine frequency to be faster than the system and vice versa. If the frequency of the incoming machine is equal to the system frequency, the pointer will not revolve.
+  </p>
+<p>
+   Its position relative to 12 o'clock indicates the angle of phase displacement between incoming machine and system in electrical degrees. The incoming machine should be paralleled at the instant the synchroscope pointer passes the zero (12 o'clock) position while revolving slowly in the fast direction.
+  </p>
+<p>
+   Once paralleled the pointer no longer revolves. So to prevent overheating of its coils, the synchroscope is switched off when not in use.
+  </p>
+<p>
+   The synchroscope operates by the interaction of magnetic fields from two circuits, one connected to the alternator and one to the system upon a soft iron vane or disc with the pointer attached.
+  </p>
+<p>
+   Many modern alternators are fitted with automatic synchronizing equipment. The basic operating principle is that agreement between coils supplied from alternator and system produces sufficient field strength to operate a switch-closing relay.
+  </p>
+<h3>
+   Power Factor Control
+  </h3>
+<p>
+   When two alternators are running in parallel, a transfer of load between them results in a voltage differential. The alternator with the reduced kilowatt loading has its internal voltage increased because of the lessened voltage drops within its stator windings. Hence, the machine is said to be over-excited for the new value of load. The alternator with the increased kW loading has its internal voltage decreased because of the increased voltage drops in the stator. Hence this machine is said to be under-excited for the new value of load.
+  </p>
+<p>
+   If the pf of the system is unity, this voltage differential causes reactive cross-current between the machines. If the system pf is lagging however, the effect is to cause a disproportionate division of reactive power between the alternators. The over-excited machine will supply more
+   <b>
+    Vars
+   </b>
+   (volt-amps reactive) than the under-excited machine. A pf meter would show lagging on the over-excited machine and leading on the under-excited machine.
+  </p>
+<p>
+   The balancing of Vars between the machines is accomplished by adjusting the field excitation of each machine.
+  </p>
+<p>
+   The field rheostat of the under-excited machine is turned in the
+   <b>
+    raise voltage
+   </b>
+   direction, and field rheostat of the over-excited machine is turned in the
+   <b>
+    lower voltage
+   </b>
+   direction until the kVA meter indication or the pf meter indication is the same on each machine.
+  </p>
+<h2>
+   Objective 8
+  </h2>
+<p>
+<b>
+    Explain efficiency and power losses in AC generators.
+   </b>
+</p>
+<h2>
+   AC GENERATOR EFFICIENCY AND LOSSES
+  </h2>
+<p>
+   The voltage at the terminals of an alternator is affected considerably by the pf of the load it is supplying. For this reason the rated voltage, stated on the nameplate, is always given for rated kVA at a specific pf and field current.
+  </p>
+<p>
+   The average-system load includes induction, resistance and some capacitance and is between unity and 0.8 lagging. Alternators for general service usually have the terminal voltage for rated kVA at 0.8 pf lagging stamped upon the nameplate.
+  </p>
+<p>
+   The short-circuit ratio is often included in the nameplate data. This gives an indication of the design of the machine with regard to the quantity of copper and iron in the electrical and magnetic parts. The machine with high short-circuit ratio will contain more materials.
+  </p>
+<p>
+   Short-circuit ratio is defined as the ratio of the field current required to produce rated voltage at rated speed and no-load to the field current required to circulate rated stator current when operating at rated speed under sustained short-circuit conditions. The standard figure quoted for a turbo-alternator is between 0.8 and 1.0.
+  </p>
+<p>
+   The affect of high short-circuit ratio in the design of an alternator gives it improved stability at times of load changes.
+  </p>
+<p>
+   Alternator efficiency is dependent upon the losses in the machine. Not all of the power input to a generator does useful work. Some of the energy input is lost as:
+  </p>
+<ul style="list-style-type: none">
+<li>
+    • friction
+   </li>
+<li>
+    • windage
+   </li>
+<li>
+    •
+    \(
+     I^2R
+    \)
+    losses in the stator and field windings
+   </li>
+<li>
+    • hysteresis and eddy current losses in the iron of the stator and rotor field circuits
+   </li>
+</ul>
+<p>
+   The efficiency of an alternator operating at 0.8 lagging pf can be expected to reach 98%.
+  </p>
+<h2>
+   Chapter Questions
+  </h2>
+<p>
+   B3.3
+  </p>
+<ol style="list-style-type: none">
+<li>
+    1. With the aid of simple sketches, explain the differences between AC and DC generators.
+   </li>
+<li>
+    2. Explain the relationship between alternator speed, frequency, and number of pole pairs.
+   </li>
+<li>
+    3. With the aid of a simple sketch, explain the sequence of operation for a brushless excitation system for a modern alternator.
+   </li>
+<li>
+    4. With the aid of a simple sketch, explain the operating principle of a direct-acting type of regulator with rolling contacts.
+   </li>
+<li>
+    5. Explain the advantages hydrogen cooling has over air cooling for alternators.
+   </li>
+<li>
+    6. With the aid of a simple sketch, describe the seal oil system that is used for a hydrogen cooled alternator.
+   </li>
+<li>
+    7. With the aid of a simple sketch, explain the steps that are taken to synchronize an incoming AC generator to the supply system.
+   </li>
+</ol>
+</body>
+</html>

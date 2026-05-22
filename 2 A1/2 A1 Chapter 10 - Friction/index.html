@@ -1,0 +1,1324 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+ 
+    <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['\\(', '\\)']],
+        displayMath: [['$$', '$$']]
+      }
+    };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+</head>
+ <body>
+    <div id="nav-header" style="padding: 15px 20px; background: #2c3e50; color: white; display: flex; align-items: center; gap: 20px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+        <a href="../index.html" style="color: white; text-decoration: none; background: #34495e; padding: 8px 16px; border-radius: 4px; font-weight: 600; font-size: 0.9rem; transition: background 0.2s;">← Back to Index</a>
+        <h1 style="margin: 0; font-size: 1.2rem; font-weight: 500; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Power Engineering Series</h1>
+    </div>
+    
+  <h1>
+   Friction 10
+  </h1>
+  <h2>
+   Learning Outcome
+  </h2>
+  <p>
+   <i>
+    When you complete this learning material, you will be able to:
+   </i>
+  </p>
+  <p>
+   Perform calculations related to frictional force.
+  </p>
+  <h2>
+   Learning Objectives
+  </h2>
+  <p>
+   <i>
+    You will specifically be able to complete the following tasks:
+   </i>
+  </p>
+  <ol style="list-style-type: none">
+   <li>
+    1. Describe the concept, types and laws of friction.
+   </li>
+   <li>
+    2. Define and calculate the coefficient of friction and applied forces for objects moved on a horizontal surface by forces parallel to the inclined plane.
+   </li>
+   <li>
+    3. Define and calculate the applied forces for objects moved on a horizontal surface by forces not parallel to the inclined plane.
+   </li>
+   <li>
+    4. Define and calculate the applied forces for objects moved on an inclined plane.
+   </li>
+   <li>
+    5. Define and calculate the frictional forces on a screw jack.
+   </li>
+   <li>
+    6. Define and calculate maximum torque on a belt drive.
+   </li>
+  </ol>
+  <h2>
+   Objective 1
+  </h2>
+  <p>
+   <b>
+    <i>
+     Describe the concept, types and laws of friction.
+    </i>
+   </b>
+  </p>
+  <h3>
+   CONCEPT OF FRICTION
+  </h3>
+  <p>
+   Whenever the surface of one body is in contact with the surface of another, there is a force that prevents or inhibits relative motion. This force is called friction, and it acts in a direction opposite to motion and parallel to the contacting surfaces.
+  </p>
+  <p>
+   Friction is important in all types of machinery because it absorbs power that is not recoverable. For example, in an automobile, around 20% of the power is used to counteract friction forces in the engine, power train and wheels. The work that friction forces do is normally dissipated as heat.
+  </p>
+  <p>
+   Friction keeps a belt from slipping on a pulley so that power can be transmitted. Without friction between wheels and the road, a vehicle would not be able to move. It also prevents objects from moving on surfaces where the angle is not excessive.
+  </p>
+  <p>
+   When forces are removed from a sliding object, friction ensures that it will come to a stop. However, this does mean that a force has to be applied to get an object moving on a surface.
+  </p>
+  <h3>
+   TYPES OF FRICTION
+  </h3>
+  <p>
+   Friction is the resistance to motion and exists whether or not the surfaces are moving relative to each other.
+  </p>
+  <p>
+   <b>
+    Static friction
+   </b>
+   is the force exerted between two bodies that are not moving relative to each other.
+  </p>
+  <p>
+   <b>
+    Sliding (or kinetic) friction
+   </b>
+   is the force acting against the direction of motion and parallel to the two surfaces while they are moving relative to each other. The coefficient of kinetic friction is less than the coefficient of static friction. This means that it takes more force to start a body sliding than it does to keep the body sliding.
+  </p>
+  <p>
+   <b>
+    Limiting friction
+   </b>
+   is the maximum force that has to be applied to overcome static friction and to cause sliding motion.
+  </p>
+  <p>
+   <b>
+    Rolling friction
+   </b>
+   is the resistance to motion when a wheel rolls along a surface. The coefficient of rolling friction is usually about
+   \(
+    \frac{1}{100}
+   \)
+   that of sliding friction. Wheels and other round objects will roll along the ground much more easily than they will slide along it.
+  </p>
+  <p>
+   <b>
+    Fluid friction
+   </b>
+   occurs when there is resistance to motion in a fluid. This is evident in situations such as lubrication of bearings.
+  </p>
+  <p>
+   <b>
+    Internal friction
+   </b>
+   can also occur in solids, such as rubber, that are easily deformable. It causes an increase in the temperature of the object.
+  </p>
+  <h3>
+   LAWS OF FRICTION
+  </h3>
+  <p>
+   A number of laws govern the behaviour of friction.
+  </p>
+  <ol style="list-style-type: none">
+   <li>
+    1. Both sliding and limiting friction are proportional to the normal (or perpendicular) force which presses the two surfaces together.
+   </li>
+   <li>
+    2. The force of friction depends on the type and roughness of the two surfaces.
+   </li>
+   <li>
+    3. The amount of friction is independent of the area of contact.
+   </li>
+   <li>
+    4. Friction is essentially independent of sliding speed at low speeds. At higher speeds, the surface temperature increases due to heating and a decrease in friction may occur.
+   </li>
+  </ol>
+  <h2>
+   Objective 2
+  </h2>
+  <p>
+   <b>
+    Define and calculate the coefficient of friction and applied forces for objects moved on a horizontal surface by forces parallel to the inclined plane.
+   </b>
+  </p>
+  <h3>
+   PARALLEL FORCES
+  </h3>
+  <h4>
+   Coefficients Of Friction
+  </h4>
+  <p>
+   Since friction is a result of the normal (also called loading) force and any resultant forces acting parallel to the surfaces, it is possible to define a coefficient of friction that is the ratio of these two forces.
+  </p>
+  <p>
+   The
+   <b>
+    coefficient of sliding friction
+   </b>
+   \(
+    \mu
+   \)
+   (mu) is found experimentally and applies to a specific set of surfaces. It is defined as:
+  </p>
+  <p>
+   $$
+    \mu = \frac{F}{N}
+   $$
+  </p>
+  <p>
+   where
+   \(
+    F
+   \)
+   is the friction force that balances the force acting on an object while it slides at a constant velocity, and
+   \(
+    N
+   \)
+   is the normal force that presses the two surfaces together. The forces for a simple block moving on a horizontal surface are shown in Fig. 1.
+  </p>
+  <p>
+   The same equation defines
+   <b>
+    coefficient of static friction
+   </b>
+   except that the friction force
+   \(
+    F
+   \)
+   is the limiting force or the maximum static friction force just before sliding motion commences. It is also determined experimentally.
+  </p>
+  <p>
+   Because the units for
+   \(
+    F
+   \)
+   and
+   \(
+    N
+   \)
+   are the same (newtons), the coefficient of friction has no units.
+  </p>
+  <img alt="Diagram illustrating the forces related to friction on a horizontal surface. A horizontal line represents the surface. A vertical line represents the Normal Force (N) acting downwards from a point on the surface. A horizontal line represents the Friction Force (F) acting to the left from the same point. A dashed line extends from the point at an angle phi (φ) below the normal force. A horizontal arrow pointing to the right, labeled 'Force Required to Move Object at Constant Velocity', is shown above the surface line, indicating the force needed to overcome friction." src="01141eb99b707de5aead56f84afe3b1f_img.jpg"/>
+  <div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+   <p>
+    The diagram shows a block on a horizontal surface. A vertical arrow pointing down from the block is labeled 'Normal Force N'. A horizontal arrow pointing to the left from the block is labeled 'Friction Force F'. A dashed line extends from the block at an angle labeled 'φ' (Angle of Friction) relative to the vertical normal force line. A horizontal arrow pointing to the right, labeled 'Force Required to Move Object at Constant Velocity', is shown above the surface, indicating the force needed to overcome friction.
+   </p>
+   <div class="img-alt">
+    Diagram illustrating the forces related to friction on a horizontal surface. A horizontal line represents the surface. A vertical line represents the Normal Force (N) acting downwards from a point on the surface. A horizontal line represents the Friction Force (F) acting to the left from the same point. A dashed line extends from the point at an angle phi (φ) below the normal force. A horizontal arrow pointing to the right, labeled 'Force Required to Move Object at Constant Velocity', is shown above the surface line, indicating the force needed to overcome friction.
+   </div>
+  </div>
+  <p>
+   Figure 1
+   <br/>
+   Forces Related to Friction
+  </p>
+  <p>
+   The vector that results from the two forces produces an angle that is called the angle of friction. From Fig. 1, it can be seen that:
+  </p>
+  <p>
+   $$
+    \tan \varphi = \frac{F}{N}
+   $$
+  </p>
+  <p>
+   From equation
+   \(
+    \mu = \frac{F}{N}
+   \)
+   , it can be seen that the
+   \(
+    \tan \varphi
+   \)
+   is equal to the coefficient of friction or:
+  </p>
+  <p>
+   $$
+    \tan \varphi = \mu
+   $$
+  </p>
+  <h4>
+   Example 1
+  </h4>
+  <p>
+   A mass of 50 kg slides along a horizontal plane at uniform velocity. If the coefficient of friction is 0.2, what are the forces required to move the mass and the friction angle?
+  </p>
+  <h5>
+   Solution
+  </h5>
+  <p>
+   The normal force is calculated using the equation:
+  </p>
+  <p>
+   $$
+    \begin{aligned} F &amp;= mg \\ &amp;= 50 \text{ kg} \times 9.81 \text{ N/kg} \\ &amp;= 490.5 \text{ N} \end{aligned}
+   $$
+  </p>
+  <p>
+   From equation
+   \(
+    \mu = \frac{F}{N}
+   \)
+   , the force required to move the object at constant velocity is the same as the friction force so that:
+  </p>
+  <p>
+   $$
+    \begin{aligned} F &amp;= \mu N \\ &amp;= 0.2 \times 490.5 \text{ N} \\ &amp;= 98.1 \text{ N (Ans.)} \end{aligned}
+   $$
+  </p>
+  <p>
+   The angle of friction is found from equation
+   \(
+    \tan \varphi = \mu
+   \)
+   :
+  </p>
+  <p>
+   $$
+    \begin{aligned} \tan \varphi &amp;= \mu \\ \tan \varphi &amp;= 0.2 \\ \varphi &amp;= \tan^{-1} 0.2 \\ &amp;= 11.31^\circ \text{ (Ans.)} \end{aligned}
+   $$
+  </p>
+  <h4>
+   Example 2
+  </h4>
+  <p>
+   An object of mass 100 kg is to slide on a horizontal plane. If the coefficient of static friction is 0.3 and the coefficient of sliding friction is 0.2, what are the forces required to start the object moving and the forces needed to keep it sliding at a constant velocity?
+  </p>
+  <h5>
+   Solution
+  </h5>
+  <p>
+   The normal force is calculated using the equation:
+  </p>
+  <p>
+   $$
+    \begin{aligned} N &amp;= mg \\ &amp;= 100 \text{ kg} \times 9.81 \text{ N/kg} \\ &amp;= 981 \text{ N} \end{aligned}
+   $$
+  </p>
+  <p>
+   From equation
+   \(
+    \mu = \frac{F}{N}
+   \)
+   the force required to start the object moving is:
+  </p>
+  <p>
+   $$
+    \begin{aligned} F &amp;= \mu N \\ &amp;= 0.3 \times 981 \text{ N} \\ &amp;= 294.3 \text{ N (Ans.)} \end{aligned}
+   $$
+  </p>
+  <p>
+   From equation
+   \(
+    \mu = \frac{F}{N}
+   \)
+   the force required to move the object at constant velocity is:
+  </p>
+  <p>
+   $$
+    \begin{aligned} F &amp;= \mu N \\ &amp;= 0.2 \times 981 \text{ N} \\ &amp;= 196.2 \text{ N (Ans.)} \end{aligned}
+   $$
+  </p>
+  <h2>
+   Objective 3
+  </h2>
+  <p>
+   <b>
+    <i>
+     Define and calculate the applied forces for objects moved on a horizontal surface by forces not parallel to the inclined plane.
+    </i>
+   </b>
+  </p>
+  <h3>
+   NON-PARALLEL FORCES
+  </h3>
+  <h4>
+   Applied Forces
+  </h4>
+  <p>
+   The force applied to move an object may not be parallel to the surfaces, so additional calculations have to be done to resolve the vectors.
+  </p>
+  <p>
+   If a force is applied as shown in Fig. 2, the normal force will include not only the gravitational force due to the mass of the object, but also the vertical component of the applied force. The force available to overcome friction is the horizontal component of the applied force.
+  </p>
+  <img alt="Diagram of a non-parallel force acting on an object on a horizontal surface." src="3e513f3d2635342934cf8ad226cfa879_img.jpg"/>
+  <div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+   <p>
+    A diagram showing a horizontal surface represented by a thick line. An object is represented by a small circle on this surface. A force vector
+   </p>
+   \(
+    F
+   \)
+   <p>
+    is applied to the object, pointing downwards and to the left at an angle
+   </p>
+   \(
+    \theta
+   \)
+   <p>
+    below the horizontal. The horizontal component of this force is labeled
+   </p>
+   \(
+    F_x
+   \)
+   <p>
+    and the vertical component is labeled
+   </p>
+   \(
+    F_y
+   \)
+   <p>
+    . A dashed rectangle is drawn with the force vector
+   </p>
+   \(
+    F
+   \)
+   <p>
+    as the hypotenuse, with dashed lines indicating the components
+   </p>
+   \(
+    F_x
+   \)
+   <p>
+    and
+   </p>
+   \(
+    F_y
+   \)
+   <p>
+    . A normal force vector
+   </p>
+   \(
+    N
+   \)
+   <p>
+    is shown as a dashed line pointing vertically upwards from the object.
+   </p>
+   <div class="img-alt">
+    Diagram of a non-parallel force acting on an object on a horizontal surface.
+   </div>
+  </div>
+  <p>
+   <i>
+    Figure 2
+    <br/>
+    Non-parallel Force Acting Downwards
+   </i>
+  </p>
+  <p>
+   The vector equations for the applied force become:
+  </p>
+  <p>
+   $$
+    \sin \theta = \frac{F_y}{F}
+   $$
+   $$
+    F_y = F \sin \theta
+   $$
+   $$
+    F_x = F \cos \theta
+   $$
+  </p>
+  <p>
+   The applicable version of equation
+   \(
+    F = \mu N
+   \)
+   becomes:
+  </p>
+  <p>
+   $$
+    F_x = \mu(N + F_y)
+   $$
+  </p>
+  <p>
+   Substituting equations
+   \(
+    F_y = F \sin \theta
+   \)
+   into equation
+   \(
+    F_x = F \cos \theta
+   \)
+   , the force required to overcome friction and move an object at a constant velocity becomes:
+  </p>
+  <p>
+   $$
+    F_x = \mu(N + F_y)
+   $$
+  </p>
+  <p>
+   $$
+    F \cos \theta = \mu(N + F \sin \theta)
+   $$
+  </p>
+  <p>
+   $$
+    F \cos \theta = \mu N + \mu F \sin \theta
+   $$
+  </p>
+  <p>
+   $$
+    F \cos \theta - \mu F \sin \theta = \mu N
+   $$
+  </p>
+  <p>
+   $$
+    F = \frac{\mu N}{(\cos \theta - \mu \sin \theta)}
+   $$
+  </p>
+  <p>
+   If an upwards force is applied as shown in Fig. 3, the vertical component of the applied force decreases the normal force. The force available to overcome friction is still the horizontal component of the applied force.
+  </p>
+  <img alt="Diagram of a block on a horizontal surface with an applied force F at an angle theta. The force F is resolved into horizontal (Fx) and vertical (Fy) components. The normal force N is shown acting downwards from the block." src="0a90113d6c8989e8b3c89c5cf9f926d7_img.jpg"/>
+  <div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+   <p>
+    The diagram shows a rectangular block on a horizontal surface. A force vector
+    \(
+     F
+    \)
+    is applied to the block at an angle
+    \(
+     \theta
+    \)
+    above the horizontal. The horizontal component of this force is labeled
+    \(
+     F_x
+    \)
+    and the vertical component is labeled
+    \(
+     F_y
+    \)
+    . A normal force vector
+    \(
+     N
+    \)
+    is shown acting vertically downwards from the bottom of the block. A dashed rectangle indicates the original position of the block before the force was applied.
+   </p>
+   <div class="img-alt">
+    Diagram of a block on a horizontal surface with an applied force F at an angle theta. The force F is resolved into horizontal (Fx) and vertical (Fy) components. The normal force N is shown acting downwards from the block.
+   </div>
+  </div>
+  <p>
+   Figure 3
+   <br/>
+   Non-parallel Force Acting Upwards
+  </p>
+  <p>
+   The vector equations for the applied force are the same as those shown in equations
+   \(
+    F_y = F \sin \theta
+   \)
+   and
+   \(
+    F_x = F \cos \theta
+   \)
+  </p>
+  <p>
+   In this case, the applicable version of equation
+   \(
+    F = \mu N
+   \)
+   becomes:
+  </p>
+  <p>
+   $$
+    F_x = \mu(N - F_y)
+   $$
+  </p>
+  <p>
+   The force required to overcome friction and move an object at a constant velocity becomes:
+  </p>
+  <p>
+   $$
+    F = \frac{\mu N}{(\cos \theta + \mu \sin \theta)}
+   $$
+  </p>
+  <h4>
+   Example 3
+  </h4>
+  <p>
+   A force is applied at an angle of
+   \(
+    30^\circ
+   \)
+   downwards on an object of mass 40 kg. If the coefficient of sliding friction is 0.5, what is the force required to keep it sliding at a constant velocity?
+  </p>
+  <h5>
+   Solution
+  </h5>
+  <p>
+   The normal force due to the mass is calculated using the equation:
+  </p>
+  <p>
+   $$
+    \begin{aligned} N &amp;= mg \\ &amp;= 40 \text{ kg} \times 9.81 \text{ N/kg} \\ &amp;= 392.4 \text{ N} \end{aligned}
+   $$
+  </p>
+  <p>
+   The required force is obtained from equation
+   \(
+    F = \frac{\mu N}{(\cos \theta + \mu \sin \theta)}
+   \)
+  </p>
+  <p>
+   $$
+    \begin{aligned} F &amp;= \frac{\mu N}{(\cos \theta - \mu \sin \theta)} \\ &amp;= \frac{0.5 \times 392.4 \text{ N}}{\cos 30^\circ - 0.5 \sin 30^\circ} \\ &amp;= \frac{196.2 \text{ N}}{0.866 - 0.25} \\ &amp;= 318.5 \text{ N (Ans.)} \end{aligned}
+   $$
+  </p>
+  <h4>
+   Example 4
+  </h4>
+  <p>
+   A force is applied at an angle of
+   \(
+    30^\circ
+   \)
+   upwards on an object of mass 40 kg. If the coefficient of sliding friction is 0.5, what is the force required to keep it sliding at a constant velocity?
+  </p>
+  <h5>
+   Solution
+  </h5>
+  <p>
+   The normal force due to the mass is calculated using the equation
+  </p>
+  <p>
+   $$
+    \begin{aligned} N &amp;= mg \\ &amp;= 40 \text{ kg} \times 9.81 \text{ N/kg} \\ &amp;= 392.4 \text{ N} \end{aligned}
+   $$
+  </p>
+  <p>
+   The required force is obtained from equation
+   \(
+    F = \frac{\mu N}{(\cos \theta + \mu \sin \theta)}
+   \)
+  </p>
+  <p>
+   $$
+    \begin{aligned} F &amp;= \frac{\mu N}{(\cos \theta + \mu \sin \theta)} \\ &amp;= \frac{0.5 \times 392.4 \text{ N}}{\cos 30^\circ + 0.5 \sin 30^\circ} \\ &amp;= \frac{196.2 \text{ N}}{0.866 + 0.25} \\ &amp;= 175.8 \text{ N (Ans.)} \end{aligned}
+   $$
+  </p>
+  <h2>
+   Objective 4
+  </h2>
+  <p>
+   <b>
+    Define and calculate the applied forces for objects moved on an inclined plane.
+   </b>
+  </p>
+  <h3>
+   INCLINED PLANE FORCES
+  </h3>
+  <p>
+   When an object rests on an inclined plane, the force of static friction counteracts the force of gravity. As long as the angle of the incline is not too great, the object remains at rest. If the incline is slowly increased, the object starts to slide at a certain angle called the
+   <i>
+    angle of repose
+   </i>
+   . From Fig. 4, it can be seen that, at the point of initial motion, the limiting friction force must equal the force gravity imposes on the object so that:
+  </p>
+  <p>
+   $$
+    \mu W \cos \alpha = W \sin \alpha
+   $$
+  </p>
+  <p>
+   $$
+    \mu = \frac{\sin \alpha}{\cos \alpha}
+   $$
+  </p>
+  <p>
+   $$
+    \mu = \tan \alpha
+   $$
+  </p>
+  <p>
+   The coefficient of static friction can be determined using the angle of repose. The coefficient of static friction is independent of the mass of the object.
+  </p>
+  <img alt="Diagram of an object on an inclined plane in equilibrium." src="34fccc54a5930cbdf0f07e02c3745e35_img.jpg"/>
+  <div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+   <p>
+    A diagram showing a rectangular block on a plane inclined at an angle
+   </p>
+   \(
+    \alpha
+   \)
+   <p>
+    to the horizontal. The block is shown in two positions: a solid outline for its initial position and a dashed outline for its position after being moved up the incline. A vector diagram is drawn from the center of the block, representing the forces acting on it. The weight
+   </p>
+   \(
+    W
+   \)
+   <p>
+    acts vertically downwards. This weight is resolved into two components:
+   </p>
+   \(
+    W \sin \alpha
+   \)
+   <p>
+    acting parallel to the incline, pointing downwards, and
+   </p>
+   \(
+    N = W \cos \alpha
+   \)
+   <p>
+    acting perpendicular to the incline, pointing outwards. The angle
+   </p>
+   \(
+    \alpha
+   \)
+   <p>
+    is also indicated between the vertical weight vector and the normal force vector.
+   </p>
+   <div class="img-alt">
+    Diagram of an object on an inclined plane in equilibrium.
+   </div>
+  </div>
+  <p>
+   Figure 4
+   <br/>
+   <i>
+    Object on Incline in Equilibrium
+   </i>
+  </p>
+  <p>
+   Raising the incline can also determine the coefficient of sliding friction except that the object needs to be tapped lightly to overcome the limiting force. The incline is increased until the object keeps on sliding.
+  </p>
+  <h4>
+   Forces While Sliding Up an Inclined Plane
+  </h4>
+  <p>
+   If the object is required to slide up an inclined plane, the total force applied must overcome both the force of friction and the force of gravity. Fig. 5 illustrates the forces applied.
+  </p>
+  <p>
+   $$
+    \begin{aligned}\text{Force of friction} &amp;= \mu \times N \\ &amp;= \mu W \cos \alpha \\ \text{Force of gravity} &amp;= W \sin \alpha\end{aligned}
+   $$
+  </p>
+  <p>
+   The total force required to move the object up the plane is the sum of the two forces so that:
+  </p>
+  <p>
+   $$
+    F = W \sin \alpha + \mu W \cos \alpha
+   $$
+  </p>
+  <img alt="Diagram of an object on an inclined plane showing forces." src="472b4b1952940f919fbd8584e83daa36_img.jpg"/>
+  <div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+   <p>
+    A diagram showing a rectangular block on a plane inclined at an angle
+   </p>
+   \(
+    \alpha
+   \)
+   <p>
+    to the horizontal. The weight
+   </p>
+   \(
+    W
+   \)
+   <p>
+    of the block is represented by a vertical vector. This weight is resolved into two components:
+   </p>
+   \(
+    W \sin \alpha
+   \)
+   <p>
+    acting down the incline and
+   </p>
+   \(
+    W \cos \alpha
+   \)
+   <p>
+    acting perpendicular to the incline. The normal force
+   </p>
+   \(
+    N
+   \)
+   <p>
+    is shown as a vector perpendicular to the incline, equal in magnitude to
+   </p>
+   \(
+    W \cos \alpha
+   \)
+   <p>
+    . The force of friction is shown as a vector acting up the incline, labeled
+   </p>
+   \(
+    \mu W \cos \alpha
+   \)
+   <p>
+    . An angle
+   </p>
+   \(
+    \phi
+   \)
+   <p>
+    is indicated between the weight vector
+   </p>
+   \(
+    W
+   \)
+   <p>
+    and its component
+   </p>
+   \(
+    W \cos \alpha
+   \)
+   <p>
+    . A dashed rectangle shows the block's position if it were moved further up the incline.
+   </p>
+   <div class="img-alt">
+    Diagram of an object on an inclined plane showing forces.
+   </div>
+  </div>
+  <p>
+   Figure 5
+   <br/>
+   <i>
+    Forces Applied to an Object on an Incline
+   </i>
+  </p>
+  <h4>
+   Forces While Sliding Down an Inclined Plane
+  </h4>
+  <p>
+   If the object is to slide down the plane at a uniform velocity, the force of gravity will assist in overcoming the frictional force and a smaller force is needed to move the object. The equation for the required force becomes:
+  </p>
+  <p>
+   $$
+    F = \mu W \cos \alpha - W \sin \alpha
+   $$
+  </p>
+  <p>
+   A force is required only if the angle of incline is less than the angle of repose.
+  </p>
+  <h4>
+   Keeping an Object from Sliding Down an Inclined Plane
+  </h4>
+  <p>
+   If the angle of incline is greater than the angle of repose, a force is required to keep it stationary. This force can be calculated from the equation:
+  </p>
+  <p>
+   $$
+    F = W \sin \alpha - \mu W \cos \alpha
+   $$
+  </p>
+  <h4>
+   Example 5
+  </h4>
+  <p>
+   A rope parallel to the plane draws a 90 kg object up an inclined plane 12 m long and 6 m high (Fig. 6). If the coefficient of sliding friction is 0.3, what is the force required to move it at a constant velocity?
+  </p>
+  <img alt="Diagram of an inclined plane. The plane is 12 m long and 6 m high. A rectangular block is on the plane, with a rope parallel to the plane attached to it. The angle of inclination is labeled alpha." src="d25a962fde4b3171879749757440c3c5_img.jpg"/>
+  <div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+   <p>
+    A diagram of an inclined plane. The plane is represented by a solid line sloping upwards from left to right. A dashed line forms a right-angled triangle with the plane, showing the vertical height and horizontal base. The hypotenuse (the plane) is labeled '12 m'. The vertical side is labeled '6 m'. A rectangular block sits on the plane. A dashed line representing a rope is attached to the block and runs parallel to the plane. The angle between the horizontal base and the plane is labeled with the Greek letter alpha (α).
+   </p>
+   <div class="img-alt">
+    Diagram of an inclined plane. The plane is 12 m long and 6 m high. A rectangular block is on the plane, with a rope parallel to the plane attached to it. The angle of inclination is labeled alpha.
+   </div>
+  </div>
+  <p>
+   Figure 6
+   <br/>
+   Inclined Plane
+  </p>
+  <h5>
+   Solution
+  </h5>
+  <p>
+   The angle of the incline is:
+  </p>
+  <p>
+   $$
+    \begin{aligned}\sin \alpha &amp;= \frac{6}{12} \\ \alpha &amp;= 30^\circ\end{aligned}
+   $$
+  </p>
+  <p>
+   The force gravity imposes is calculated as:
+  </p>
+  <p>
+   $$
+    \begin{aligned}W &amp;= mg \\ &amp;= 90 \text{ kg} \times 9.81 \text{ N/kg} \\ &amp;= 882.9 \text{ N}\end{aligned}
+   $$
+  </p>
+  <p>
+   The force to move the object up the plane is found using equation
+  </p>
+  <p>
+   $$
+    F = W \sin \alpha + \mu W \cos \alpha :
+   $$
+  </p>
+  <p>
+   $$
+    \begin{aligned}F &amp;= W \sin \alpha + \mu W \cos \alpha \\ &amp;= 882.9 \text{ N} \times \sin 30^\circ + 0.3 \times 882.9 \text{ N} \times \cos 30^\circ \\ &amp;= 670.83 \text{ N (Ans.)}\end{aligned}
+   $$
+  </p>
+  <h4>
+   Example 6
+  </h4>
+  <p>
+   A mass of 100 kg rests on a plane inclined at
+   \(
+    12^\circ
+   \)
+   to the horizontal. If the coefficient of sliding friction is 0.32, what is the force required to move it at a constant velocity up the plane and down the plane. What is the angle of repose?
+  </p>
+  <h5>
+   Solution
+  </h5>
+  <p>
+   The force gravity imposes is calculated as:
+  </p>
+  <p>
+   $$
+    \begin{aligned} W &amp;= mg \\ &amp;= 100 \text{ kg} \times 9.81 \text{ N/kg} \\ &amp;= 981 \text{ N} \end{aligned}
+   $$
+  </p>
+  <p>
+   The force to move the object up the plane is found using equation
+  </p>
+  <p>
+   $$
+    F = W \sin \alpha + \mu W \cos \alpha :
+   $$
+  </p>
+  <p>
+   $$
+    \begin{aligned} F &amp;= W \sin \alpha + \mu W \cos \alpha \\ &amp;= 981 \text{ N} \times \sin 12^\circ + 0.32 \times 981 \text{ N} \times \cos 12^\circ \\ &amp;= \mathbf{511.0 \text{ N}} \text{ (Ans.)} \end{aligned}
+   $$
+  </p>
+  <p>
+   The force to move the object down the plane is found using equation
+  </p>
+  <p>
+   $$
+    F = W \sin \alpha - \mu W \cos \alpha :
+   $$
+  </p>
+  <p>
+   :
+  </p>
+  <p>
+   $$
+    \begin{aligned} F &amp;= \mu W \cos \alpha - W \sin \alpha \\ &amp;= 0.32 \times 981 \text{ N} \times \cos 12^\circ - 981 \text{ N} \times \sin 12^\circ \\ &amp;= \mathbf{103.1 \text{ N}} \text{ (Ans.)} \end{aligned}
+   $$
+  </p>
+  <p>
+   The angle of repose is found using equation
+   \(
+    \mu = \tan \alpha
+   \)
+   :
+  </p>
+  <p>
+   $$
+    \begin{aligned} \mu &amp;= \tan \alpha \\ &amp;= 0.32 \\ \alpha &amp;= \mathbf{17.75^\circ} \text{ (Ans.)} \end{aligned}
+   $$
+  </p>
+  <h4>
+   Example 7
+  </h4>
+  <p>
+   A mass of 50 kg rests on a plane inclined at
+   \(
+    15^\circ
+   \)
+   to the horizontal. If the coefficient of sliding friction is 0.25, will the mass move down the plane without any additional force? If it does move, what force is required to prevent it from sliding?
+  </p>
+  <h5>
+   Solution
+  </h5>
+  <p>
+   The force gravity imposes is calculated as:
+  </p>
+  <p>
+   $$
+    \begin{aligned} W &amp;= mg \\ &amp;= 50 \text{ kg} \times 9.81 \text{ N/kg} \\ &amp;= 490.5 \text{ N} \end{aligned}
+   $$
+  </p>
+  <p>
+   The force of gravity acting on the object is:
+  </p>
+  <p>
+   $$
+    \begin{aligned} F &amp;= W \sin \alpha \\ &amp;= 490.5 \text{ N} \times \sin 15^\circ \\ &amp;= 126.94 \text{ N} \end{aligned}
+   $$
+  </p>
+  <p>
+   The friction force is
+  </p>
+  <p>
+   $$
+    \begin{aligned} F &amp;= \mu W \cos \alpha \\ &amp;= 0.25 \times 490.5 \text{ N} \times \cos 15^\circ \\ &amp;= 118.45 \text{ N} \end{aligned}
+   $$
+  </p>
+  <p>
+   Because the force of gravity is greater than the friction force, the object will slide downwards if unrestrained. The force required to hold the object is:
+  </p>
+  <p>
+   $$
+    \begin{aligned} F &amp;= \text{force of gravity} - \text{friction force} \\ &amp;= 126.94 - 118.45 \\ &amp;= \mathbf{8.49 \text{ N}} \text{ (Ans.)} \end{aligned}
+   $$
+  </p>
+  <h2>
+   Objective 5
+  </h2>
+  <p>
+   <b>
+    Define and calculate the frictional forces on a screw jack.
+   </b>
+  </p>
+  <h3>
+   FORCES ON A SCREW JACK
+  </h3>
+  <p>
+   One application for forces on an inclined plane involves a screw jack (Fig. 7). This consists of a screw-operated jack for lifting, exerting pressure, or adjusting position (as of a machine part).
+  </p>
+  <img alt="Diagram of a screw jack with labeled parts." src="8935d7297fc189503125ecbbd7c41f27_img.jpg"/>
+  <div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+   <p>
+    A technical line drawing of a screw jack. The jack consists of a central screw threaded through a housing. At the top is a load cap. On the side is a handle with a four-way head. The base of the housing has a welded stop. Labels with leader lines point to various parts: 'Drop-forged steel load cap is serrated to prevent load slippage' points to the top cap; 'Sinige chrome-moly ball reduces operating friction' points to the top of the screw; 'Four-way head permits lever bar insertion at four angles' points to the handle head; 'Ductile-iron housing' points to the main body; and 'Welded Stop' points to the base.
+   </p>
+   <div class="img-alt">
+    Diagram of a screw jack with labeled parts.
+   </div>
+  </div>
+  <p>
+   Figure 7
+   <br/>
+   Screw Jack
+   <br/>
+   (Courtesy of L. K. Goodwin Co.)
+  </p>
+  <p>
+   The screw is the inclined plane against which a force is applied. It is assumed here that the screw jack is vertical so that the force of gravity acts as shown in Fig. 8. The difference between the screw jack and the previous discussion of objects moving up a plane is that the force on a screw jack is applied horizontally, usually by a handle at a radius to gain mechanical advantage.
+  </p>
+  <img alt="Figure 8: Forces Applicable to a Screw Jack. A diagram showing a screw jack on an inclined plane. The incline angle is labeled alpha. A right-angled triangle is drawn with a vertical side labeled W (weight), a horizontal side labeled F (horizontal force), and a hypotenuse labeled L (length of the incline). The angle between the vertical side and the hypotenuse is alpha. A normal force N is shown acting perpendicular to the incline." src="cd91fd97c6e4da454b42f4fde13f7e44_img.jpg"/>
+  <div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+   <p>
+    Horizontal Force Needed to Move Object up the Plane
+   </p>
+   <div class="img-alt">
+    Figure 8: Forces Applicable to a Screw Jack. A diagram showing a screw jack on an inclined plane. The incline angle is labeled alpha. A right-angled triangle is drawn with a vertical side labeled W (weight), a horizontal side labeled F (horizontal force), and a hypotenuse labeled L (length of the incline). The angle between the vertical side and the hypotenuse is alpha. A normal force N is shown acting perpendicular to the incline.
+   </div>
+  </div>
+  <p>
+   Figure 8
+   <br/>
+   Forces Applicable to a Screw Jack
+  </p>
+  <p>
+   The angle of the incline can be determined from the thread pitch and the mean circumference (see Fig. 9) using the equation:
+  </p>
+  <p>
+   $$
+    \alpha = \tan^{-1} \frac{P}{2\pi r}
+   $$
+  </p>
+  <img alt="Figure 9: Calculating Thread Pitch Angle. A diagram showing a screw thread on an inclined plane. The horizontal distance for one full turn is labeled 'Mean Circumference 2πr'. The vertical distance for one full turn is labeled 'Thread Pitch P'. The angle of the incline is labeled alpha." src="715cc21be1e312bb659bf6de41740408_img.jpg"/>
+  <div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+   <div class="img-alt">
+    Figure 9: Calculating Thread Pitch Angle. A diagram showing a screw thread on an inclined plane. The horizontal distance for one full turn is labeled 'Mean Circumference 2πr'. The vertical distance for one full turn is labeled 'Thread Pitch P'. The angle of the incline is labeled alpha.
+   </div>
+  </div>
+  <p>
+   Figure 9
+   <br/>
+   Calculating Thread Pitch Angle
+  </p>
+  <p>
+   The horizontal force to move the screw jack upwards is the sum of the gravitational and friction forces, which can be seen from Fig. 8, to result in the equation:
+  </p>
+  <p>
+   $$
+    F = W \tan(\alpha + \phi)
+   $$
+  </p>
+  <p>
+   Subtracting the force of gravity from the force of friction gives the horizontal force to move the screw jack downwards, so the equation becomes:
+  </p>
+  <p>
+   $$
+    F = W \tan(\phi - \alpha)
+   $$
+  </p>
+  <p>
+   A small pitch thread makes the angle of the thread smaller than the angle of friction and thus a safer screw jack. It also makes it easier to turn due to the lower required force, but more turns are needed to raise it.
+  </p>
+  <h4>
+   Example 8
+  </h4>
+  <p>
+   A screw jack is used to lift a mass of 2 tonnes. The pitch of the thread is 10 mm with a mean diameter of 5 cm and the coefficient of friction is 0.2. What horizontal force is required with a lever of 0.75 m to lift the load?
+  </p>
+  <h5>
+   Solution
+  </h5>
+  <p>
+   The force of the mass due to gravity is:
+  </p>
+  <p>
+   $$
+    \begin{aligned} W &amp;= mg \\ &amp;= 2000 \text{ kg} \times 9.81 \text{ N/kg} \\ &amp;= 19\,620 \text{ N} \end{aligned}
+   $$
+  </p>
+  <p>
+   The angle of the thread is calculated from equation
+   \(
+    \alpha = \tan^{-1} \frac{P}{2\pi r}
+   \)
+   as:
+  </p>
+  <p>
+   $$
+    \begin{aligned} \alpha &amp;= \tan^{-1} \frac{P}{2\pi r} \\ &amp;= \tan^{-1} \frac{10 \text{ mm}}{2\pi \times 25 \text{ mm}} \\ &amp;= 3.64^\circ \end{aligned}
+   $$
+  </p>
+  <p>
+   The angle of friction comes from equation
+   \(
+    \mu = \tan \alpha
+   \)
+   :
+  </p>
+  <p>
+   $$
+    \begin{aligned} \mu &amp;= \tan \alpha \\ \alpha &amp;= \tan^{-1} \mu \\ &amp;= \tan^{-1} 0.2 \\ &amp;= 11.3^\circ \end{aligned}
+   $$
+  </p>
+  <p>
+   The force needed at the mean radius is computed using equation
+   \(
+    F = W \tan(\alpha + \phi)
+   \)
+   :
+  </p>
+  <p>
+   $$
+    \begin{aligned} F &amp;= W \tan(\alpha + \phi) \\ &amp;= 19\,620 \text{ N} \times \tan(3.64 + 11.3) \\ &amp;= 5235 \text{ N} \end{aligned}
+   $$
+  </p>
+  <p>
+   Taking the ratio between the mean radius and the radius of the lever calculates the force with a lever. This means that the actual force required is:
+  </p>
+  <p>
+   $$
+    \begin{aligned} F &amp;= 5235 \text{ N} \times \frac{25 \text{ mm}}{750 \text{ mm}} \\ &amp;= 174.5 \text{ N (Ans.)} \end{aligned}
+   $$
+  </p>
+  <h2>
+   Objective 6
+  </h2>
+  <p>
+   <b>
+    Define and calculate maximum torque on a belt drive.
+   </b>
+  </p>
+  <h3>
+   BELT DRIVES AND FRICTION
+  </h3>
+  <p>
+   Belt drives depend on friction to prevent slippage so that power can be transmitted. It is possible to calculate the maximum torque before the belt starts to slip. Fig. 10 shows the geometry of a belt and pulley system.
+  </p>
+  <img alt="Diagram of a belt and pulley system showing forces and geometry." src="893f3e40a8607bd256b676392d228f2a_img.jpg"/>
+  <div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+   <p>
+    The diagram illustrates a belt drive system with two pulleys. The left pulley is labeled 'Driving pulley' and the right one is 'Driven pulley'. The belt is shown in two states: a solid line representing the tight side and a dashed line representing the slack side. The top part of the belt is the slack side, labeled 'A Slack side', with a force
+    \(
+     F_2
+    \)
+    indicated. The bottom part is the tight side, labeled 'Tight side', with a force
+    \(
+     F_1
+    \)
+    indicated. Arrows show the clockwise rotation of both pulleys. On the driving pulley, a small shaded segment is shown with arrows pointing to it labeled 'Normal force' and 'Friction force'. Points I and J are marked on the driving pulley's circumference, while points A, B, C, D, E, F, G, and H are marked along the belt's path.
+   </p>
+   <div class="img-alt">
+    Diagram of a belt and pulley system showing forces and geometry.
+   </div>
+  </div>
+  <p>
+   Figure 10
+   <br/>
+   Belt and Pulley Forces
+  </p>
+  <p>
+   The force on the tight side is higher than on the slack side. The difference between the two forces,
+   \(
+    F_1 - F_2
+   \)
+   , is the torque transmitted from the driving wheel and also determines the friction forces applied. Putting tension on the belt prior to operation assists with increasing the normal force available for friction. However, excessive pre-tension decreases the life of the belt because it is continually stretched and released as it passes around the pulleys.
+  </p>
+  <p>
+   It is interesting to note the change in the forces on the belt. Fig. 11 shows how the force varies as the belt moves from the tight side to the driving pulley and then to the slack side. There are sharp jumps in the tension as the belt moves onto each pulley and frictional force is applied. When the belt leaves the pulley, there is a corresponding drop in tension.
+  </p>
+  <img alt="Figure 11: Forces on a Belt. A graph showing the force on a belt as a function of distance along the belt. The vertical axis is labeled 'Force on belt' and the horizontal axis is labeled 'Distance along belt'. The graph shows a step-like function with two horizontal segments at different force levels, labeled 'Force F2' and 'Force F1'. The belt wraps around two pulleys: a 'Driven pulley' and a 'Driving pulley'. The points on the graph are labeled A, B, C, D, E, F, G, H, I, J, and A again at the end. The force F1 is the higher force level, and F2 is the lower force level." src="9ce50bc10864dc86e1cdee4be08f1897_img.jpg"/>
+  <div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+   <div class="img-alt">
+    Figure 11: Forces on a Belt. A graph showing the force on a belt as a function of distance along the belt. The vertical axis is labeled 'Force on belt' and the horizontal axis is labeled 'Distance along belt'. The graph shows a step-like function with two horizontal segments at different force levels, labeled 'Force F2' and 'Force F1'. The belt wraps around two pulleys: a 'Driven pulley' and a 'Driving pulley'. The points on the graph are labeled A, B, C, D, E, F, G, H, I, J, and A again at the end. The force F1 is the higher force level, and F2 is the lower force level.
+   </div>
+  </div>
+  <p>
+   Figure 11
+   <br/>
+   Forces on a Belt
+  </p>
+  <p>
+   The maximum force allowed before slippage occurs is defined using the equation:
+  </p>
+  <p>
+   $$
+    F_1 = F_2 e^{\mu\alpha}
+   $$
+  </p>
+  <p>
+   where
+   \(
+    F_1
+   \)
+   = tension of tight side, N
+  </p>
+  <p>
+   \(
+    F_2
+   \)
+   = tension of slack side, N
+  </p>
+  <p>
+   \(
+    \mu
+   \)
+   = coefficient of friction
+  </p>
+  <p>
+   \(
+    \alpha
+   \)
+   = angle of wrap, radians
+  </p>
+  <p>
+   \(
+    e = 2.718
+   \)
+   (base of natural logarithm)
+  </p>
+  <h4>
+   Example 9
+  </h4>
+  <p>
+   A belt with a 0.5 coefficient of friction drives a pulley with a diameter of 50 cm. The force on the tight side is 1000 N. Assuming that the belt wraps around half of the pulley, what is the maximum torque allowed?
+  </p>
+  <h5>
+   Solution
+  </h5>
+  <p>
+   Since there are
+   \(
+    2\pi
+   \)
+   radians in a circle, the wrap angle is
+   \(
+    \pi
+   \)
+   radians. The slack side is determined using equation
+   \(
+    F_1 = F_2 e^{\mu\alpha}
+   \)
+   :
+  </p>
+  <p>
+   $$
+    \begin{aligned} F_1 &amp;= F_2 e^{\mu\alpha} \\ F_2 &amp;= \frac{F_1}{e^{\mu\alpha}} \\ &amp;= \frac{1000 \text{ N}}{e^{0.5 \times \pi}} \\ &amp;= \frac{1000 \text{ N}}{2.718^{0.5 \times \pi}} \\ &amp;= \frac{1000 \text{ N}}{4.8097} \\ &amp;= 207.91 \text{ N} \end{aligned}
+   $$
+  </p>
+  <p>
+   Therefore, the maximum torque before slippage is:
+  </p>
+  <p>
+   $$
+    \begin{aligned} F_1 - F_2 &amp;= 1000 \text{ N} - 207.91 \text{ N} \\ &amp;= 792.09 \text{ N (Ans.)} \end{aligned}
+   $$
+  </p>
+  <h4>
+   Example Problems
+  </h4>
+  <p>
+   A1.10
+  </p>
+  <ol style="list-style-type: none">
+   <li>
+    1. Define static and sliding friction and indicate which is greater.
+   </li>
+   <li>
+    2. Define the coefficient of friction by stating the equation. Illustrate the forces with a diagram for a simple block moving on a horizontal surface.
+   </li>
+   <li>
+    3. A mass of 100 kg slides along a horizontal plane at uniform velocity. If the coefficient of friction is 0.1, what is the force required to move the mass?
+   </li>
+   <li>
+    4. Using the standard equation for the coefficient of friction, derive the equation for an upwards force acting on a sliding object as shown in the diagram below. Illustrate the forces on the diagram.
+   </li>
+  </ol>
+  <img alt="Diagram of a block on a horizontal surface with non-parallel forces." src="8f931bb1d65d0ee4ccafab751ee61282_img.jpg"/>
+  <div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+   <p>
+    The diagram shows a rectangular block on a horizontal surface. A vertical line with a downward-pointing arrow from the center of the block is labeled 'N', representing the normal force. A diagonal line with an arrow pointing upwards and to the right from the center of the block is labeled 'F', representing an applied force at an angle. The surface is represented by a horizontal line.
+   </p>
+   <div class="img-alt">
+    Diagram of a block on a horizontal surface with non-parallel forces.
+   </div>
+  </div>
+  <p>
+   <i>
+    Non-Parallel Forces
+   </i>
+  </p>
+  <ol style="list-style-type: none">
+   <li>
+    5. Define the angle of repose and state the equation that relates it to the coefficient of friction.
+   </li>
+  </ol>
+  <ol style="list-style-type: none">
+   <li>
+    6. Using the diagram below, derive the equation for the horizontal force required to move a jack screw upwards.
+   </li>
+  </ol>
+  <img alt="Diagram of a screw jack represented as an inclined plane. The plane is at an angle alpha to the horizontal. A block is on the plane. A force triangle is shown with a vertical weight W, a horizontal force F, and a normal force N. The angle between the vertical weight vector and the normal force vector is phi. The angle between the normal force vector and the horizontal force vector is alpha + phi." src="d17aa1fcc3b86503ad1dd0717a6c34c2_img.jpg"/>
+  <div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+   <p>
+    Horizontal Force Needed to
+    <br/>
+    Move Object up the Plane
+   </p>
+   <div class="img-alt">
+    Diagram of a screw jack represented as an inclined plane. The plane is at an angle alpha to the horizontal. A block is on the plane. A force triangle is shown with a vertical weight W, a horizontal force F, and a normal force N. The angle between the vertical weight vector and the normal force vector is phi. The angle between the normal force vector and the horizontal force vector is alpha + phi.
+   </div>
+  </div>
+  <p>
+   <i>
+    Forces Applicable to a Screw Jack
+   </i>
+  </p>
+ </body>
+</html>

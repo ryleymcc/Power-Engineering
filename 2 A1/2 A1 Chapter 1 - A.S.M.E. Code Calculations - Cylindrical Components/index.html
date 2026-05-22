@@ -1,0 +1,4485 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+ 
+    <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['\\(', '\\)']],
+        displayMath: [['$$', '$$']]
+      }
+    };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+</head>
+ <body>
+    <div id="nav-header" style="padding: 15px 20px; background: #2c3e50; color: white; display: flex; align-items: center; gap: 20px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+        <a href="../index.html" style="color: white; text-decoration: none; background: #34495e; padding: 8px 16px; border-radius: 4px; font-weight: 600; font-size: 0.9rem; transition: background 0.2s;">← Back to Index</a>
+        <h1 style="margin: 0; font-size: 1.2rem; font-weight: 500; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Power Engineering Series</h1>
+    </div>
+    
+  <h1>
+   Power Engineering
+   <br/>
+   Second Class (A1):
+   <br/>
+   Code Calculations &amp; Legislation
+  </h1>
+  <h2>
+   <u>
+    Table of Contents
+   </u>
+  </h2>
+  <table>
+   <thead>
+    <tr data-bbox="217 623 1330 665">
+     <th>
+      <u>
+       Chapter
+      </u>
+     </th>
+     <th>
+      <u>
+       Page
+      </u>
+     </th>
+    </tr>
+   </thead>
+   <tbody>
+    <tr data-bbox="217 665 1330 707">
+     <td>
+      1. A.S.M.E. Code Calculations - Cylindrical Components
+     </td>
+     <td>
+      1
+     </td>
+    </tr>
+    <tr data-bbox="217 707 1330 783">
+     <td>
+      2. A.S.M.E. Code Calculations - Stayed Surfaces, Safety Valves, Furnaces
+     </td>
+     <td>
+      51
+     </td>
+    </tr>
+    <tr data-bbox="217 783 1330 825">
+     <td>
+      3. Boiler and Pressure Vessel Legislation
+     </td>
+     <td>
+      77
+     </td>
+    </tr>
+    <tr data-bbox="217 825 1330 867">
+     <td>
+      4. Plant Design and Installation
+     </td>
+     <td>
+      113
+     </td>
+    </tr>
+    <tr data-bbox="217 867 1330 909">
+     <td>
+      5. Management and Supervision
+     </td>
+     <td>
+      137
+     </td>
+    </tr>
+    <tr data-bbox="217 909 1330 951">
+     <td>
+      6. Plant Maintenance
+     </td>
+     <td>
+      175
+     </td>
+    </tr>
+    <tr data-bbox="217 951 1330 993">
+     <td>
+      7. Safety
+     </td>
+     <td>
+      219
+     </td>
+    </tr>
+    <tr data-bbox="217 993 1330 1035">
+     <td>
+      8. Linear Motion
+     </td>
+     <td>
+      257
+     </td>
+    </tr>
+    <tr data-bbox="217 1035 1330 1077">
+     <td>
+      9. Angular Motion
+     </td>
+     <td>
+      287
+     </td>
+    </tr>
+    <tr data-bbox="217 1077 1330 1119">
+     <td>
+      10. Friction
+     </td>
+     <td>
+      323
+     </td>
+    </tr>
+    <tr data-bbox="217 1119 1330 1161">
+     <td>
+      11. Static and Dynamic Forces
+     </td>
+     <td>
+      351
+     </td>
+    </tr>
+    <tr data-bbox="217 1161 1330 1203">
+     <td>
+      12. Fluid Mechanics
+     </td>
+     <td>
+      405
+     </td>
+    </tr>
+    <tr data-bbox="217 1203 1330 1245">
+     <td>
+      End of Chapter Question Solutions
+     </td>
+     <td>
+      445
+     </td>
+    </tr>
+   </tbody>
+  </table>
+  <h2>
+   ASME Code Calculations:
+   <br/>
+   Cylindrical Components
+  </h2>
+  <h1>
+   1
+  </h1>
+  <h3>
+   Learning Outcome
+  </h3>
+  <p>
+   <i>
+    When you complete this learning material, you will be able to:
+   </i>
+  </p>
+  <p>
+   Apply the appropriate formulae from ASME Sections I and VIII to calculations involving cylindrical components, openings, and compensations in boilers and pressure vessels.
+  </p>
+  <h3>
+   Learning Objectives
+  </h3>
+  <p>
+   <i>
+    You will specifically be able to complete the following tasks:
+   </i>
+  </p>
+  <ol style="list-style-type: none">
+   <li>
+    1. Calculate the required minimum thickness or the maximum allowable working pressure of piping, tubes, drums, and headers of ferrous tubing up to and including 127 mm O.D.
+   </li>
+   <li>
+    2. Calculate the required minimum thickness or the maximum allowable working pressure of ferrous piping, drums, and headers.
+   </li>
+   <li>
+    3. Calculate the required thickness or maximum allowable working pressure of a seamless, unstayed dished head.
+   </li>
+   <li>
+    4. Calculate the minimum required thickness or maximum allowable working pressure of unstayed flat heads, covers, and blind flanges.
+   </li>
+   <li>
+    5. Calculate the acceptability of openings in a cylindrical shell, header, or head.
+   </li>
+   <li>
+    6. Calculate the compensation required to reinforce an opening in a cylindrical shell, header, or head.
+   </li>
+  </ol>
+  <h3>
+   INTRODUCTION
+  </h3>
+  <p>
+   As power engineers acquire their second and first class power engineering certification, they find that their roles and areas of responsibility require them to have a more detailed working knowledge of the key engineering codes and standards with which their facility must comply. Power engineers often work on teams or lead teams that are responsible for upgrades within their facilities and/or for making changes to major pressure piping or equipment. Although power engineers are not required to design a boiler or pressure vessel, they often work as team members for equipment design, upgrade, process change, commissioning, operation, or repair. These activities require work to be done in accordance with applicable codes. As well, when you become chief engineer of a facility, you may be called upon to lead teams and give approval for various projects that must comply with specific engineering codes and standards.
+  </p>
+  <p>
+   In the early 1900's, the American Society of Mechanical Engineers (ASME) appointed various committees to draw up standards for the construction of boilers and pressure vessels together with standards for welding and guidelines for the care of boilers in service. These standards and guidelines have been improved over the years with the improvement in materials and technology.
+  </p>
+  <p>
+   One important component of the standards for pressure vessels is the use of a
+   <b>
+    safety factor
+   </b>
+   . The measured physical properties of a material, including ultimate tensile strength, are divided by a defined safety factor to derive the maximum allowable stress. In this way, allowance is made for limitations in the testing technology, unusual stress concentrations, non-uniform materials, and material flaws. Technological improvements, especially in materials testing, have reduced the safety factor from its original value of 5. ASME Section I (2001) rules are based on a safety factor of 4. The safety factor will be reduced to 3.5 in future editions of Section I; this is the same factor used in Sections VIII-1 and VIII-2.
+  </p>
+  <p>
+   Pressures calculated or given in this module refer to gauge pressure unless otherwise indicated.
+  </p>
+  <p>
+   Consult the latest ASME Codes—Section I and Section VIII, Division 1—while studying this module. Figures referenced with a Code section prefix, such as “Fig. PG-32” or “Fig. UG-34,” can be found in the ASME Codes and are generally not reproduced here.
+  </p>
+  <p>
+   <b>
+    Note:
+   </b>
+   Material and formulae used in this module refer to the
+   <b>
+    2001
+   </b>
+   edition of the ASME Codes.
+  </p>
+  <p>
+   <b>
+    Note:
+   </b>
+   Correct units of measure are very important to accurate calculations, and students should be well versed in their use. However, due to the size and complexity of Code calculations, it is common practice to omit the units until the final answer is derived. This convention has been used throughout this module.
+  </p>
+  <h3>
+   ASME SECTION I - POWER BOILERS
+  </h3>
+  <p>
+   Paragraphs PG-1, PG-2: This Code covers rules for construction of power boilers, electric boilers, miniature boilers, and high temperature water boilers. The scope of jurisdiction of Section I applies to the boiler proper and the boiler external piping. Superheaters, economizers, and other pressure parts connected directly to the boiler, without intervening valves, are considered to be parts of the boiler proper and their construction shall conform to Section I rules.
+  </p>
+  <h4>
+   Materials
+  </h4>
+  <p>
+   Paragraph PG-6 states that steel plates for any part of a boiler subject to pressure, whether or not exposed to the fire or products of combustion, shall be in accordance with specifications listed in paragraph PG-6.1. Paragraph PG-9 states that pipes, tubes, and pressure containing parts used in boilers shall conform to one of the specifications listed in paragraph PG-9.1.
+  </p>
+  <h4>
+   Design
+  </h4>
+  <p>
+   Paragraph PG-16.3 states that the minimum thickness of any boiler plate under pressure shall be 6.4 mm. The minimum thickness of plates to which stays may be attached (in other than cylindrical outer shell plates) shall be 8 mm. When pipe over 127 mm O.D. is used in lieu of plate for the shell of cylindrical components under pressure, its minimum wall thickness shall be 6.4 mm.
+  </p>
+  <p>
+   Paragraph PG-16.4 states that plate material not more than 0.25 mm thinner than the required thickness calculated by Code formula may be used provided the manufacturing process is such that the plate will not be more than 0.25 mm thinner than that specified in the order.
+  </p>
+  <p>
+   Paragraph PG-16.5 states that pipe or tube material shall not be ordered thinner than the required thickness calculated by Code formula. Also, the ordered thickness shall include provisions for manufacturing tolerance.
+  </p>
+  <p>
+   Paragraph PG-21 states that the term
+   <b>
+    maximum allowable working pressure
+   </b>
+   (MAWP) refers to gauge pressure, except when noted otherwise in the calculation formula of PG-27.2.
+  </p>
+  <h5>
+   Paragraph PG-27 Cylindrical Components Under Internal Pressure
+  </h5>
+  <p>
+   The formulae in this section are used to determine the minimum required thickness of piping, tubes, drums, and headers, when the maximum allowable working pressure is known. These formulae can be transposed to determine the maximum allowable working pressure if the minimum required thickness is given.
+  </p>
+  <p>
+   The symbols used in the formulae are found in paragraph PG-27.3 and are defined as follows:
+  </p>
+  <table>
+   <tr data-bbox="272 302 1395 333">
+    <td>
+     \(
+      t
+     \)
+    </td>
+    <td>
+     =
+    </td>
+    <td>
+     minimum required thickness (mm) (see PG-27.4, note 7)
+    </td>
+   </tr>
+   <tr data-bbox="272 333 1395 405">
+    <td>
+     \(
+      P
+     \)
+    </td>
+    <td>
+     =
+    </td>
+    <td>
+     maximum allowable working pressure (MPa). (see PG-21, refers to gauge pressure)
+    </td>
+   </tr>
+   <tr data-bbox="272 405 1395 438">
+    <td>
+     \(
+      D
+     \)
+    </td>
+    <td>
+     =
+    </td>
+    <td>
+     outside diameter of cylinder (mm)
+    </td>
+   </tr>
+   <tr data-bbox="272 438 1395 472">
+    <td>
+     \(
+      R
+     \)
+    </td>
+    <td>
+     =
+    </td>
+    <td>
+     inside radius of cylinder (mm)
+    </td>
+   </tr>
+   <tr data-bbox="272 472 1395 554">
+    <td>
+     \(
+      E
+     \)
+    </td>
+    <td>
+     =
+    </td>
+    <td>
+     efficiency of longitudinal welded joints or of ligaments between openings, whichever is lower (the values allowed for
+     \(
+      E
+     \)
+     are listed in PG-27.4, note 1)
+    </td>
+   </tr>
+   <tr data-bbox="272 554 1395 630">
+    <td>
+     \(
+      S
+     \)
+    </td>
+    <td>
+     =
+    </td>
+    <td>
+     maximum allowable stress value at the operating temperature of the metal (Table 1 or Section II, Part D, Table A1. See PG-27.4, note 2)
+    </td>
+   </tr>
+   <tr data-bbox="272 630 1395 701">
+    <td>
+     \(
+      C
+     \)
+    </td>
+    <td>
+     =
+    </td>
+    <td>
+     minimum allowance for threading and structural stability (mm) (see PG-27.4, note 3)
+    </td>
+   </tr>
+   <tr data-bbox="272 701 1395 741">
+    <td>
+     \(
+      e
+     \)
+    </td>
+    <td>
+     =
+    </td>
+    <td>
+     thickness factor for expanded tube ends (mm) (see PG-27.4, note 4)
+    </td>
+   </tr>
+   <tr data-bbox="272 741 1395 774">
+    <td>
+     \(
+      Y
+     \)
+    </td>
+    <td>
+     =
+    </td>
+    <td>
+     temperature coefficient (see PG-27.4, note 6)
+    </td>
+   </tr>
+  </table>
+  <h3>
+   ASME SECTION VIII, DIVISION 1 - PRESSURE VESSELS
+  </h3>
+  <h3>
+   Foreword
+  </h3>
+  <p>
+   The Boiler and Pressure Vessel Committee established rules for new construction of pressure vessels that ensure safe and reliable performance. The Code is not a handbook and cannot replace education, experience, and the use of good engineering judgement. This can be seen in that Section VIII-1 applies to small compressed-air receivers sold commercially to the general public as well as to very large pressure vessels used by the petrochemical industry. The Code contains mandatory requirements, specific prohibitions, and non-mandatory guidance for pressure vessel construction activities.
+  </p>
+  <h4>
+   Materials
+  </h4>
+  <p>
+   Paragraph UG-4 states that materials subject to stress due to pressure are to conform to the specifications given in Section II, except as otherwise permitted in paragraphs UG-9, UG-10, UG-11, UG-15 and the mandatory Appendices. Paragraph UG-23 (a) lists the tables in Section II, D for various materials.
+  </p>
+  <h4>
+   Design
+  </h4>
+  <p>
+   ASME Boiler Code Section I, as well as Section VIII, Division 2 (VIII-2), requires all major longitudinal and circumferential butt joints to be examined by full radiograph. Section VIII-1 lists various levels of examination for these major joints. A fully radiographed major longitudinal butt-welded joint in a cylindrical shell would have a
+   <b>
+    joint efficiency factor
+   </b>
+   (
+   \(
+    E
+   \)
+   ) of 1.0. This factor corresponds to a safety factor (or material quality factor) of 3.5 in the parent metal. Non-radiographed longitudinal butt-welded joints have a joint efficiency factor (
+   \(
+    E
+   \)
+   ) of 0.7, which corresponds to a safety factor of 0.5 in plates. This results in an increase of 43% in the thickness of the plates required.
+  </p>
+  <h5>
+   Paragraph UG-20: Design temperature
+  </h5>
+  <p>
+   With pressure vessels, the maximum temperature used in the design is important, as is the minimum temperature.
+  </p>
+  <p>
+   The minimum temperature used in design shall be the lowest temperature that the vessel will experience from any factor, including normal operation, upset condition, or environmental conditions.
+  </p>
+  <h5>
+   Paragraph UG-27: Thickness of shells under internal pressure
+  </h5>
+  <p>
+   The formulae in this section are used to determine the minimum required thickness of shells when the maximum allowable working pressure is known. These formulae can be transposed to determine the maximum allowable working pressure if the minimum required thickness is given.
+  </p>
+  <p>
+   The symbols used in the formulae are found in paragraph UG-27 (b) and are defined as follows:
+  </p>
+  <ol style="list-style-type: none">
+   <li>
+    <table border="0">
+     <tr data-bbox="264 804 1372 842">
+      <td>
+       \(
+        t
+       \)
+      </td>
+      <td>
+       =
+      </td>
+      <td>
+       minimum required thickness (mm)
+      </td>
+     </tr>
+     <tr data-bbox="264 842 1372 879">
+      <td>
+       \(
+        P
+       \)
+      </td>
+      <td>
+       =
+      </td>
+      <td>
+       internal design pressure (MPa) (see UG-21. refers to gauge pressure)
+      </td>
+     </tr>
+     <tr data-bbox="264 879 1372 917">
+      <td>
+       \(
+        D
+       \)
+      </td>
+      <td>
+       =
+      </td>
+      <td>
+       outside diameter of cylinder (mm)
+      </td>
+     </tr>
+     <tr data-bbox="264 917 1372 955">
+      <td>
+       \(
+        R
+       \)
+      </td>
+      <td>
+       =
+      </td>
+      <td>
+       inside radius of shell course under consideration (mm)
+      </td>
+     </tr>
+     <tr data-bbox="264 955 1372 1136">
+      <td>
+       \(
+        E
+       \)
+      </td>
+      <td>
+       =
+      </td>
+      <td>
+       joint efficiency for, or the efficiency of, appropriate joint in cylindrical or spherical shells, or the efficiency of ligaments between openings, whichever is less
+       <br/>
+       (use UW-12 for welded vessels. Use UW-53 for ligaments between openings)
+      </td>
+     </tr>
+     <tr data-bbox="264 1136 1372 1218">
+      <td>
+       \(
+        S
+       \)
+      </td>
+      <td>
+       =
+      </td>
+      <td>
+       maximum allowable stress value (see UG-23 and the stress limitations specified in UG-24)
+      </td>
+     </tr>
+    </table>
+   </li>
+  </ol>
+  <h3>
+   Objective 1
+  </h3>
+  <p>
+   <b>
+    Calculate the required minimum thickness or the maximum allowable working pressure of piping, tubes, drums and headers of ferrous tubing up to and including 127 mm O.D.
+   </b>
+  </p>
+  <h4>
+   SECTION I
+  </h4>
+  <p>
+   The following formulae are found in ASME Section I, paragraph PG-27.2.1.
+  </p>
+  <p>
+   Formula for minimum required thickness
+  </p>
+  <p>
+   $$
+    t = \frac{PD}{2S + P} + 0.005D + e \quad 1.1
+   $$
+  </p>
+  <p>
+   Formula for MAWP
+  </p>
+  <p>
+   $$
+    P = S \left[ \frac{2t - 0.01D - 2e}{D - (t - 0.005D - e)} \right] \quad 1.2
+   $$
+  </p>
+  <h5>
+   Example 1: boiler tube
+  </h5>
+  <p>
+   Calculate the minimum required wall thickness of a watertube boiler tube 70 mm O.D. that is strength welded into place in a boiler. The tube is located in the furnace area of the boiler and has an average wall temperature of 350°C. The maximum allowable working pressure is 4000 kPa gauge. The tube material is carbon steel SA-192.
+  </p>
+  <p>
+   <b>
+    Note:
+   </b>
+   Check PG-6 for plate materials and PG-9 for boiler tube materials before starting calculations; the information will direct you to the correct stress table in ASME Section II, Part D by indicating if the metal is carbon steel or an alloy steel.
+  </p>
+  <h6>
+   Solution
+  </h6>
+  <p>
+   For tubing up to and including 127 mm O.D. use equation 1.1.
+   <br/>
+   (See paragraph PG-27.2.1 (2001.))
+  </p>
+  <p>
+   $$
+    t = \frac{PD}{2S + P} + 0.005D + e
+   $$
+  </p>
+  <p>
+   Where
+  </p>
+  <p>
+   $$
+    P = 4000 \text{ kPa} = 4.0 \text{ MPa}
+   $$
+  </p>
+  <p>
+   $$
+    D = 70 \text{ mm}
+   $$
+  </p>
+  <p>
+   $$
+    e = 0 \text{ (see PG-27.4, note 4, strength welded)}
+   $$
+  </p>
+  <p>
+   $$
+    S = 88.3 \text{ MPa (see Table 1 or Section II, Part D, Table A1, SA-192 at } 350^\circ\text{C)}
+   $$
+  </p>
+  <p>
+   $$
+    \begin{aligned} t &amp;= \frac{4 \times 70}{2(88.3) + 4} + 0.005(70) + 0 \\ &amp;= \frac{280}{180.6} + 0.35 \\ &amp;= 1.55 + 0.35 \\ &amp;= \mathbf{1.9 \text{ mm (Ans.)}} \end{aligned}
+   $$
+  </p>
+  <p>
+   <b>
+    Note:
+   </b>
+   This value is exclusive of the manufacturer's tolerance allowance (see PG-16.5). The manufacturing process does not produce absolutely uniform wall thickness; add an allowance of approximately 12.5% to the minimum thickness calculated.
+  </p>
+  <p>
+   The formula for minimum thickness may be transposed to solve for the maximum allowable working pressure if the tube size and thickness are known.
+  </p>
+  <h5>
+   Example 2: superheater tube
+  </h5>
+  <p>
+   Calculate the maximum allowable working pressure, in kPa, for a 75 mm O.D. and 4.75 mm minimum thickness superheater tube connected to a header by strength welding. The average tube temperature is
+   \(
+    400^\circ\text{C}
+   \)
+   . The tube material is SA-213-T11.
+  </p>
+  <p>
+   <b>
+    Note:
+   </b>
+   Check PG-9 for boiler tube materials before starting calculations; the information will direct you to the correct stress table in ASME Section II, Part D. SA-213-T11 is alloy steel.
+  </p>
+  <h6>
+   Solution
+  </h6>
+  <p>
+   For tubing up to and including 127 mm O.D. Use equation 1.2.
+   <br/>
+   (See paragraph PG-27.2.1.)
+  </p>
+  <p>
+   $$
+    P = S \left[ \frac{2t - 0.01D - 2e}{D - (t - 0.005D - e)} \right]
+   $$
+  </p>
+  <p>
+   Where
+  </p>
+  <p>
+   $$
+    t = 4.75 \text{ mm}
+   $$
+  </p>
+  <p>
+   $$
+    D = 75 \text{ mm}
+   $$
+  </p>
+  <p>
+   $$
+    e = 0 \text{ (see PG-27.4, note 4, strength welded.)}
+   $$
+  </p>
+  <p>
+   $$
+    S = 102 \text{ MPa (Table 1 or Section II, Part D, Table A1, SA-213-T11 at } 400^\circ\text{C)}
+   $$
+  </p>
+  <p>
+   $$
+    \begin{aligned} P &amp;= 102 \times \left[ \frac{(2 \times 4.75) - (0.01 \times 75) - (2 \times 0)}{75 - (4.75 - (0.005 \times 75) - 0)} \right] \\ &amp;= 102 \times \left[ \frac{9.5 - 0.75}{75 - (4.75 - 0.375)} \right] \\ &amp;= 102 \times \frac{8.75}{70.625} \\ &amp;= 12.64 \text{ MPa} = \mathbf{12\,640\ kPa\ (Ans.)} \end{aligned}
+   $$
+  </p>
+  <p>
+   The tubes were strength welded in Example 1 and Example 2. For calculations involving tubes expanded into place, the appropriate value of
+   \(
+    e
+   \)
+   is found in paragraph PG-27.4, note 4.
+  </p>
+  <h4>
+   SECTION VIII
+  </h4>
+  <p>
+   The following formulae (found in ASME Section VIII-1, paragraph UG-27(c) 2001) are used for calculating wall thickness and design pressure. Paragraph UG-31(a) states that these calculations are used for tubes and pipes under internal pressure.
+  </p>
+  <h5>
+   Thin Cylindrical Shells
+  </h5>
+  <p>
+   (1) Circumferential stress (longitudinal joints)
+  </p>
+  <p>
+   $$
+    t = \frac{PR}{(SE - 0.6P)} \qquad 1.3
+   $$
+  </p>
+  <p>
+   Or
+  </p>
+  <p>
+   $$
+    P = \frac{SEt}{(R + 0.6t)} \qquad 1.4
+   $$
+  </p>
+  <p>
+   When
+   \(
+    t &lt; 0.5R
+   \)
+   or
+   \(
+    P &lt; 0.385SE
+   \)
+  </p>
+  <p>
+   (2) Longitudinal stress (circumferential joints)
+  </p>
+  <p>
+   $$
+    t = \frac{PR}{(2SE - 0.4P)} \qquad 1.5
+   $$
+  </p>
+  <p>
+   Or
+  </p>
+  <p>
+   $$
+    P = \frac{2SEt}{(R + 0.4t)} \qquad 1.6
+   $$
+  </p>
+  <p>
+   When
+   \(
+    t &lt; 0.5 R
+   \)
+   or
+   \(
+    P &lt; 1.25SE
+   \)
+  </p>
+  <h5>
+   Thick Cylindrical Shells
+  </h5>
+  <p>
+   As internal pressures increase higher than 20.6 MPa, special considerations must be given to the construction of the vessel as specified in paragraph U-1 (d). As the ratio of
+   \(
+    t/R
+   \)
+   increases beyond 0.5, a more accurate equation is required to determine the thickness. The formulae for thick walled vessels are listed in Appendix 1, Supplementary Design Formulas 1.1 to 1.3.
+  </p>
+  <p>
+   $$
+    SE = \frac{P(R_0^2 + R^2)}{(R_0^2 - R^2)}
+   $$
+  </p>
+  <p>
+   Where
+   \(
+    R_0
+   \)
+   and
+   \(
+    R
+   \)
+   are outside and inside radii, respectively. By substituting
+   \(
+    R_0 = R + t
+   \)
+  </p>
+  <p>
+   $$
+    t = R \left( Z^{\frac{1}{2}} - 1 \right) \quad \text{Where} \quad Z = \frac{(SE + P)}{(SE - P)} \quad 1.7
+   $$
+   <p>
+    Where
+    \(
+     t &gt; 0.5 R
+    \)
+    or
+    \(
+     P &gt; 0.385SE
+    \)
+   </p>
+  </p>
+  <p>
+   And
+  </p>
+  <p>
+   $$
+    P = SE \left[ \frac{(Z - 1)}{(Z + 1)} \right] \quad \text{Where} \quad Z = \left[ \frac{(R + t)}{R} \right]^2 \quad 1.8
+   $$
+  </p>
+  <p>
+   For longitudinal stress with
+   \(
+    t &gt; 0.5R
+   \)
+   or
+   \(
+    P &gt; 1.25SE
+   \)
+  </p>
+  <p>
+   $$
+    t = R \left( Z^{\frac{1}{2}} - 1 \right) \quad \text{Where} \quad Z = \left( \frac{P}{SE} \right) + 1 \quad 1.9
+   $$
+  </p>
+  <p>
+   And
+  </p>
+  <p>
+   $$
+    P = SE(Z - 1) \quad \text{Where} \quad Z = \left[ \frac{(R + t)}{R} \right]^2 \quad 1.10
+   $$
+  </p>
+  <p>
+   <b>
+    Note:
+   </b>
+   Formulae 1.3 to 1.10 are for internal pressure only.
+  </p>
+  <h6>
+   Example 3: thin shell thickness
+  </h6>
+  <p>
+   A vertical boiler is constructed of SA-515-60 material in accordance with the requirements of Section VIII-1. It has an inside diameter of 2440 mm and an internal design pressure of 690 kPa at 230°C. The corrosion allowance is 3 mm, and joint efficiency is 0.85. Calculate the required thickness of the shell if the allowable stress is 138 MPa.
+  </p>
+  <h6>
+   Solution
+  </h6>
+  <p>
+   The quantity
+   \(
+    0.385SE = 45.16
+   \)
+   MPa; since this is greater than the design pressure
+   \(
+    P = 690
+   \)
+   kPa, use equation 1.3. (See Section VIII-1, UG-27.)
+  </p>
+  <p>
+   The inside radius in a corroded condition is
+   \(
+    1220 + 3
+   \)
+   mm = 1223 mm
+  </p>
+  <p>
+   $$
+    \begin{aligned} t &amp;= \frac{PR}{(SE - 0.6P)} + \text{corrosion allowance} \\ &amp;= \frac{0.69 \times 1223}{(138 \times 0.85) - 0.6(0.69)} + 3 \\ &amp;= \frac{843.87}{116.886} + 3 \\ &amp;= 7.22 + 3 \\ &amp;= \mathbf{10.22 \text{ mm (Ans.)}} \end{aligned}
+   $$
+  </p>
+  <p>
+   The calculated thickness is less than
+   \(
+    0.5R
+   \)
+   ; therefore, equation 1.3 is acceptable.
+  </p>
+  <h5>
+   Example 4: thick shell thickness
+  </h5>
+  <p>
+   Calculate the required shell thickness of an accumulator with
+   \(
+    P = 69
+   \)
+   MPa,
+   \(
+    R = 45.7
+   \)
+   cm,
+   \(
+    S = 138
+   \)
+   MPa, and
+   \(
+    E = 1.0
+   \)
+   . Assume a corrosion allowance of 6 mm.
+  </p>
+  <h6>
+   Solution
+  </h6>
+  <p>
+   The quantity
+   \(
+    0.385SE = 53.13
+   \)
+   MPa; since this is less than the design pressure
+   \(
+    P = 69
+   \)
+   MPa, use equation 1.7.
+  </p>
+  <p>
+   $$
+    \begin{aligned} t &amp;= R \left( Z^{\frac{1}{2}} - 1 \right) \quad \text{Where} \quad Z = \frac{SE + P}{SE - P} \\ Z &amp;= \frac{(138 \times 1) + 69}{(138 \times 1) - 69} \\ &amp;= \frac{207}{69} \\ &amp;= 3 \\ t &amp;= (457 + 6) \left( 3^{\frac{1}{2}} - 1 \right) \\ &amp;= 463 \times 0.732 \\ &amp;= 338.92 \text{ mm} \end{aligned}
+   $$
+  </p>
+  <p>
+   Total including corrosion allowance
+  </p>
+  <p>
+   $$
+    \begin{aligned}
+ t &amp;= 338.92 + 6 \\
+ &amp;= 344.92 \text{ mm (Ans.)}
+ \end{aligned}
+   $$
+  </p>
+  <h5>
+   Example 5
+  </h5>
+  <p>
+   Calculate the required shell thickness of an accumulator with
+   \(
+    P = 52.75 \text{ MPa}
+   \)
+   ,
+   \(
+    R = 45.7 \text{ cm}
+   \)
+   ,
+   \(
+    S = 138 \text{ MPa}
+   \)
+   , and
+   \(
+    E = 1.0
+   \)
+   . Assume corrosion allowance = 0.
+  </p>
+  <h6>
+   Solution
+  </h6>
+  <p>
+   The quantity
+   \(
+    0.385SE = 53.13 \text{ MPa}
+   \)
+   ; since this is greater than the design pressure
+   \(
+    P = 52.75 \text{ MPa}
+   \)
+   , use equation 1.3.
+  </p>
+  <p>
+   $$
+    \begin{aligned}
+ t &amp;= \frac{PR}{SE - 0.6P} + \text{corrosion allowance} \\
+ &amp;= \frac{52.75 \times 457}{(138 \times 1) - 0.6(52.75)} + 0 \\
+ &amp;= \frac{24106.75}{106.35} \\
+ &amp;= 226.67 \text{ mm (Ans.)}
+ \end{aligned}
+   $$
+  </p>
+  <p>
+   This example used equation 1.3; compare the answer using equation 1.7
+  </p>
+  <p>
+   $$
+    \begin{aligned}
+ t &amp;= R \left( Z^{\frac{1}{2}} - 1 \right) \quad \text{Where} \quad Z = \frac{SE + P}{SE - P} \\
+ Z &amp;= \frac{(138 \times 1) + 52.75}{(138 \times 1) - 52.75} \\
+ &amp;= \frac{190.75}{85.25} \\
+ &amp;= 2.2375 \\
+ t &amp;= 457 \left( 2.2375^{\frac{1}{2}} - 1 \right) \\
+ &amp;= 457 \times 0.4958 \\
+ &amp;= 226.59 \text{ mm (Ans.)}
+ \end{aligned}
+   $$
+  </p>
+  <p>
+   This shows that the 'simple to use' equation (1.3) is accurate over a wide range of
+   \(
+    R/t
+   \)
+   ratios.
+  </p>
+  <h3>
+   Objective 2
+  </h3>
+  <p>
+   <b>
+    Calculate the required minimum thickness or the maximum allowable working pressure of ferrous piping, drums, and headers.
+   </b>
+  </p>
+  <p>
+   In cylindrical vessels, the stress set up by the pressure on the longitudinal joints is equal to twice the stress on the circumferential joints.
+  </p>
+  <h4>
+   SECTION I
+  </h4>
+  <p>
+   The following formulae are found in ASME Section I, paragraph PG-27.2.2.
+  </p>
+  <p>
+   The information for piping, drums, or headers may be given with either the inside (R) or outside (D) measurement.
+  </p>
+  <p>
+   Using the outside diameter
+  </p>
+  <p>
+   $$
+    t = \frac{PD}{2SE + 2yP} + C \quad 2.1
+   $$
+  </p>
+  <p>
+   $$
+    P = \frac{2SE(t - C)}{D - (2y)(t - C)} \quad 2.2
+   $$
+  </p>
+  <p>
+   Using the inside radius
+  </p>
+  <p>
+   $$
+    t = \frac{PR}{SE - (1 - y)P} + C \quad 2.3
+   $$
+  </p>
+  <p>
+   $$
+    P = \frac{SE(t - C)}{R + (1 - y)(t - C)} \quad 2.4
+   $$
+  </p>
+  <h5>
+   Example 6: steam piping
+  </h5>
+  <p>
+   Calculate the required minimum thickness of seamless steam piping which carries steam at a pressure of 6200 kPa gauge and a temperature of 375°C. The piping is plain end, 273.1 mm O.D. (nominal pipe size of 10 inches) and the material is SA-335-P11. Allow a manufacturer's tolerance allowance of 12.5%.
+  </p>
+  <p>
+   <b>
+    Note:
+   </b>
+   Check PG-6 and PG-9 for materials before starting calculations; the information will direct you to the correct stress table in ASME Section II, Part D. The material SA-335-P11 is alloy steel.
+  </p>
+  <img alt="Logo of the organization, featuring a stylized 'P' and 'C' intertwined." src="90120cdfd5dc10df8e675ecd61f26db5_img.jpg"/>
+  <div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+   <div class="img-alt">
+    Logo of the organization, featuring a stylized 'P' and 'C' intertwined.
+   </div>
+  </div>
+  <p>
+   <b>
+    Note:
+   </b>
+   Plain-end pipe does not have its wall thickness reduced when joining to another pipe. For example, lengths of pipe welded together, rather than being joined by threading, are classed as plain-end pipes.
+  </p>
+  <h6>
+   Solution
+  </h6>
+  <p>
+   Use equation 2.1 (See PG-27.2.2.)
+  </p>
+  <p>
+   $$
+    t = \frac{PD}{2SE + 2yP} + C
+   $$
+  </p>
+  <p>
+   Where
+  </p>
+  <p>
+   $$
+    P = 6200 \text{ kPa} = 6.2 \text{ MPa}
+   $$
+  </p>
+  <p>
+   $$
+    D = 273.1 \text{ mm}
+   $$
+  </p>
+  <p>
+   $$
+    C = 0 \text{ (see PG-27.4, note 3, 4-inch nominal and larger)}
+   $$
+  </p>
+  <p>
+   $$
+    S = 104.1 \text{ MPa (see Table 1 or Section II, Part D, Table A1, SA-335-P11 at } 375^\circ\text{C)}
+   $$
+  </p>
+  <p>
+   $$
+    E = 1.0 \text{ (see PG-27.4, note 1, seamless pipe as per PG-9.1)}
+   $$
+  </p>
+  <p>
+   $$
+    y = 0.4 \text{ (see PG-27.4, note 6, ferritic steel less than } 475^\circ\text{C)}
+   $$
+  </p>
+  <p>
+   $$
+    \begin{aligned} t &amp;= \frac{6.2 \times 273.1}{2(104.1 \times 1) + 2(0.4 \times 6.2)} + 0 \\ &amp;= \frac{1693.22}{208.2 + 4.96} \\ &amp;= \frac{1693.22}{213.16} \\ &amp;= 7.943 \text{ mm} \end{aligned}
+   $$
+  </p>
+  <p>
+   This value does not include a manufacturer's tolerance allowance of 12.5%.
+  </p>
+  <p>
+   Therefore
+  </p>
+  <p>
+   $$
+    7.943 \times 1.125 = 8.936 \text{ mm (Ans.)}
+   $$
+  </p>
+  <h5>
+   Example 7: steam piping using outside diameter
+  </h5>
+  <p>
+   Calculate the maximum allowable working pressure in kPa for a seamless steel pipe of material SA-209-T1. The nominal pipe size is 323.9 mm (12 in. pipe) with a wall thickness of 11.85 mm. The operating temperature is
+   \(
+    450^\circ\text{C}
+   \)
+   . The pipe is plain ended. Assume that the material is austenitic steel.
+  </p>
+  <p>
+   <b>
+    Note:
+   </b>
+   Check PG-6 and PG-9 for materials before starting calculations; the information will direct you to the correct stress table in ASME Section II, Part D. The material SA-209-T1 is alloy steel.
+  </p>
+  <h6>
+   Solution
+  </h6>
+  <p>
+   Use equation 2.2. (See PG-27.2.)
+  </p>
+  <p>
+   $$
+    P = \frac{2SE(t - C)}{D - (2y)(t - C)}
+   $$
+  </p>
+  <p>
+   Where
+  </p>
+  <p>
+   $$
+    D = 323.9 \text{ mm (see } \textit{Handbook of Formulae and Physical Constants}, \text{ "Table of Actual Pipe Dimensions.")}
+   $$
+  </p>
+  <p>
+   $$
+    t = 11.85 \text{ mm}
+   $$
+  </p>
+  <p>
+   $$
+    C = 0 \text{ (see PG-27.4, note 3, 4-inch (102 mm) nominal and larger)}
+   $$
+  </p>
+  <p>
+   $$
+    S = 100 \text{ MPa (Table 1 or Section II, Part D, Table A1, SA-209-T1 at } 450^\circ\text{C)}
+   $$
+  </p>
+  <p>
+   $$
+    E = 1.0 \text{ (see PG-27.4, note 1, seamless pipe as per PG-9.1)}
+   $$
+  </p>
+  <p>
+   $$
+    y = 0.4 \text{ (see PG-27.4, note 6, austenitic steel at } 500^\circ\text{C)}
+   $$
+  </p>
+  <p>
+   $$
+    \begin{aligned} P &amp;= \frac{2(100 \times 1) \times (11.85 - 0)}{323.9 - (2 \times 0.4) \times (11.85 - 0)} \\ &amp;= \frac{200 \times 11.85}{323.9 - 9.48} \\ &amp;= \frac{2370}{314.42} \\ &amp;= 7.538 \text{ MPa} \\ &amp;= 7538 \text{ kPa (Ans.)} \end{aligned}
+   $$
+  </p>
+  <h5>
+   Example 8: drum using inside radius
+  </h5>
+  <p>
+   A welded watertube boiler drum of SA-515-60 material is fabricated to an inside radius of 475 mm on the tubesheet and 500 mm on the drum. The plate thickness of the tubesheet and drum are 59.5 mm and 38 mm respectively. The longitudinal joint efficiency is 100%, and the ligament efficiencies are 56% horizontal and 30% circumferential. The operating temperature is not to exceed
+   \(
+    300^\circ\text{C}
+   \)
+   . Determine the maximum allowable working pressure based on:
+  </p>
+  <ul style="list-style-type: none">
+   <li>
+    (a) the drum
+   </li>
+   <li>
+    (b) the tubesheet
+   </li>
+  </ul>
+  <img alt="Diagram of a welded watertube boiler drum. It shows a circular cross-section with a thick outer wall labeled 'DRUM' and a series of small rectangular segments along the inner circumference labeled 'TUBESHEET'. Arrows point from the labels to their respective parts of the drum." src="fbfaa723129f8b8e3be651c6fe7cfab7_img.jpg"/>
+  <div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+   <div class="img-alt">
+    Diagram of a welded watertube boiler drum. It shows a circular cross-section with a thick outer wall labeled 'DRUM' and a series of small rectangular segments along the inner circumference labeled 'TUBESHEET'. Arrows point from the labels to their respective parts of the drum.
+   </div>
+  </div>
+  <p>
+   Figure 1
+   <br/>
+   Welded Watertube Boiler Drum
+  </p>
+  <p>
+   <b>
+    Note:
+   </b>
+   This is a common example of a watertube drum fabricated from two plates of different thickness. Greater material thickness is required where the boiler tubes enter the drum than is required for a plain drum. For economy, the drum is designed to meet the pressure requirements for each situation.
+  </p>
+  <p>
+   <b>
+    Note:
+   </b>
+   Check PG-6 and PG-9 for materials before starting calculations; the information will direct you to the correct stress table in ASME Section II, Part D. The material SA-515-60 is carbon steel plate.
+  </p>
+  <h6>
+   Solution
+  </h6>
+  <p>
+   This example has two parts:
+  </p>
+  <ol style="list-style-type: none">
+   <li>
+    The drum - consider the drum to be plain with no penetrations.
+   </li>
+   <li>
+    The tubesheet - consider the drum to have penetrations for boiler tubes.
+   </li>
+  </ol>
+  <p>
+   (a) Use equation 2.4 (inside radius
+   \(
+    R
+   \)
+   ). (See PG-27.2.2.)
+  </p>
+  <p>
+   $$
+    \text{Drum } P = \frac{SE(t - C)}{R + (1 - y)(t - C)}
+   $$
+  </p>
+  <p>
+   Where
+  </p>
+  <p>
+   \(
+    S = 113.1 \text{ MPa}
+   \)
+   (see Table 1 or Section II, Part D, Table A1, SA-515-60 at
+   \(
+    300^\circ\text{C}
+   \)
+   )
+  </p>
+  <p>
+   \(
+    E = 1
+   \)
+   (see PG-27.4, note 1)
+  </p>
+  <p>
+   \(
+    t = 38 \text{ mm}
+   \)
+  </p>
+  <p>
+   \(
+    C = 0
+   \)
+   (see PG-27.4, note 3, 4-inch (102 mm) nominal and larger)
+  </p>
+  <p>
+   \(
+    R = 500 \text{ mm}
+   \)
+   (for the drum)
+  </p>
+  <p>
+   \(
+    y = 0.4
+   \)
+   (see PG-27.4, note 6, ferritic steel less than
+   \(
+    475^\circ\text{C}
+   \)
+   )
+  </p>
+  <p>
+   $$
+    \begin{aligned}
+ \text{Drum } P &amp;= \frac{(113.1 \times 1)(38 - 0)}{500 + (1 - 0.4)(38 - 0)} \\
+ &amp;= \frac{4297.8}{500 + 22.8} \\
+ &amp;= 8.22 \text{ MPa (Ans.)}
+ \end{aligned}
+   $$
+  </p>
+  <p>
+   <b>
+    Note:
+   </b>
+   In cylindrical vessels, the stress set up by the pressure on the longitudinal joints is equal to twice the stress on the circumferential joints.
+  </p>
+  <p>
+   (b) Use equation 2.4 (inside radius
+   \(
+    R
+   \)
+   ). (See PG-27.2.2.)
+  </p>
+  <p>
+   $$
+    \text{Tubesheet } P = \frac{SE(t - C)}{R + (1 - y)(t - C)}
+   $$
+  </p>
+  <p>
+   Where
+  </p>
+  <p>
+   $$
+    \begin{aligned}
+ S &amp;= 113.1 \text{ MPa (see Table 1 or Section II, Part D, Table A1, SA-515-60 at } 300^\circ\text{C)} \\
+ E &amp;= 0.56 \text{ (circumferential stress} = 30\% \text{ and longitudinal stress} = 56\%; \text{ therefore, } 0.56 &lt; 2 \times 0.30) \\
+ T &amp;= 59.5 \text{ mm} \\
+ C &amp;= 0 \text{ (see PG-27.4, note 3, 4-inch (102 mm) nominal and larger)} \\
+ R &amp;= 475 \text{ mm (for the tubesheet)} \\
+ y &amp;= 0.4 \text{ (see PG-27.4, note 6, ferritic steel less than } 475^\circ\text{C)}
+ \end{aligned}
+   $$
+  </p>
+  <p>
+   $$
+    \begin{aligned}
+ \text{Tubesheet } P &amp;= \frac{(113.1 \times 0.56)(59.5 - 0)}{475 + (1 - 0.4)(59.5 - 0)} \\
+ &amp;= \frac{3768.49}{475 + 35.7} \\
+ &amp;= 7.379 \text{ MPa (Ans.)}
+ \end{aligned}
+   $$
+  </p>
+  <p>
+   <b>
+    Note:
+   </b>
+   The maximum allowable working pressure is based on the lowest number.
+  </p>
+  <h4>
+   SECTION VIII-1
+  </h4>
+  <p>
+   Section VIII-1 does not contain separate formulae for small and large bore cylinders. The formulae given in paragraph UG-27 are used as set out in Objective 1.
+  </p>
+  <p>
+  </p>
+  <h3>
+   Objective 3
+  </h3>
+  <p>
+   <b>
+    <i>
+     Calculate the required thickness or maximum allowable working pressure of a seamless, unstayed dished head.
+    </i>
+   </b>
+  </p>
+  <h4>
+   SECTION I: DISHED HEAD CALCULATIONS
+  </h4>
+  <p>
+   The paragraphs from PG-29 must be considered when performing calculations on dished heads.
+  </p>
+  <p>
+   Paragraph PG-29.1 states that the thickness of a blank, unstayed dished head with the pressure on the concave side, when it is a segment of a sphere, shall be calculated by the following formula:
+  </p>
+  <p>
+   $$
+    t = \frac{5PL}{4.8S} \qquad 3.1
+   $$
+  </p>
+  <p>
+   Where:
+  </p>
+  <ul style="list-style-type: none">
+   <li>
+    \(
+     t
+    \)
+    = minimum thickness of head (mm).
+   </li>
+   <li>
+    \(
+     P
+    \)
+    = maximum allowable working pressure (MPa).
+   </li>
+   <li>
+    \(
+     L
+    \)
+    = radius (mm) to which the head is dished, measured on the concave side
+   </li>
+   <li>
+    \(
+     S
+    \)
+    = maximum allowable working stress (MPa) (see Table 1 or ASME Section II, Part D, Table 1A).
+   </li>
+  </ul>
+  <p>
+   Paragraph PG-29.2 states: "The radius to which the head is dished shall be not greater than the outside diameter of the flanged portion of the head. Where two radii are used, the longer shall be taken as the value of
+   \(
+    L
+   \)
+   in the formula."
+  </p>
+  <h5>
+   Example 9: the segment of a spherical dished head
+  </h5>
+  <p>
+   Calculate the thickness of a seamless, blank unstayed dished head having pressure on the concave side. The head has a diameter of 1085 mm and is a segment of a sphere with a dish radius of 918 mm. The maximum allowable working pressure is 2500 kPa and the material is SA-285 A. The metal temperature does not exceed 250°C. State if this thickness meets Code.
+  </p>
+  <h6>
+   Solution
+  </h6>
+  <p>
+   Use equation 3.1. (See paragraph PG-29.1 for segment of a spherical dished head.)
+  </p>
+  <p>
+   $$
+    t = \frac{5PL}{4.8S}
+   $$
+  </p>
+  <p>
+   Where
+  </p>
+  <p>
+   $$
+    P = 2.5 \text{ MPa}
+   $$
+  </p>
+  <p>
+   $$
+    L = 918 \text{ mm}
+   $$
+  </p>
+  <p>
+   $$
+    S = 88.9 \text{ MPa (see Table 1 or ASME Section II, Part D, Table 1A)}
+   $$
+  </p>
+  <p>
+   $$
+    \begin{aligned} t &amp;= \frac{5(2.5 \times 918)}{4.8 \times 88.9} \\ &amp;= 26.89 \text{ mm (Ans.)} \end{aligned}
+   $$
+  </p>
+  <p>
+   <b>
+    Note:
+   </b>
+   PG-29.6 states "No head, except a full-hemispherical head, shall be of a lesser thickness than that required for a seamless shell of the same diameter."
+  </p>
+  <p>
+   Therefore, to determine if this head thickness meets Code, the thickness of the shell must be calculated.
+  </p>
+  <p>
+   Use equation 2.1 (See paragraph PG-27.2.2.)
+  </p>
+  <p>
+   $$
+    t = \frac{PD}{2SE + 2yP} + C
+   $$
+  </p>
+  <p>
+   Where
+  </p>
+  <p>
+   $$
+    D = 1085 \text{ mm}
+   $$
+  </p>
+  <p>
+   $$
+    y = 0.4 \text{ (see PG-27.4, note 6, ferritic steel less than } 475^\circ\text{C)}
+   $$
+  </p>
+  <p>
+   $$
+    E = 1 \text{ (welded)}
+   $$
+  </p>
+  <p>
+   $$
+    \begin{aligned} t &amp;= \frac{2.5 \times 1085}{2(88.9 \times 1) + 2(0.4 \times 2.5)} \\ &amp;= \frac{2712.5}{177.8 + 2} \\ &amp;= 15.086 \text{ mm} \end{aligned}
+   $$
+  </p>
+  <p>
+   Therefore, the head thickness of 26.89 mm meets Code requirements.
+  </p>
+  <p>
+   Paragraph PG-29.3 states
+  </p>
+  <p>
+   When a head, dished to a segment of a sphere, has a flanged-in manhole or access opening that exceeds 152 mm in any dimension, the thickness shall be increased by 15% of the required thickness for a blank head computed by the above formula, but in no case less than 3.2 mm additional thickness over a blank head. Where such a dished head has a flanged opening supported by an attached flue, an increase in thickness over that for a blank head is not required. If more than one manhole is inserted in a head, the thickness of which is calculated by this rule, the minimum distance between the openings shall be not less than one-fourth of the outside diameter of the head.
+  </p>
+  <p>
+   <b>
+    Note:
+   </b>
+   This applies to the manhole found on the end of a boiler drum.
+  </p>
+  <h5>
+   <b>
+    Example 10: the segment of a spherical dished head with a flanged-in manhole
+   </b>
+  </h5>
+  <p>
+   Calculate the thickness of a seamless, unstayed dished head with pressure on the concave side, having a flanged-in manhole 154 mm by 406 mm. The head has a diameter of 1206.5 mm and is a segment of a sphere with a dish radius of 1143 mm. The maximum allowable working pressure is 1550 kPa, the material is SA-285-C, and the metal temperature does not exceed 220°C.
+  </p>
+  <p>
+   <b>
+    Note:
+   </b>
+   Check paragraph PG-44, "Inspection Openings" to see if this manhole size is acceptable.
+  </p>
+  <h6>
+   <b>
+    Solution
+   </b>
+  </h6>
+  <p>
+   First thing to check: is the radius of the dish at least 80% of the radius of the shell? (per paragraph PG-29.5)
+  </p>
+  <p>
+   $$
+    \begin{aligned}\frac{\text{dish radius}}{\text{shell radius}} &amp;= \frac{1143}{1206.5} \\ &amp;= 0.9473\end{aligned}
+   $$
+  </p>
+  <p>
+   $$
+    0.9473 &gt; 0.8
+   $$
+  </p>
+  <p>
+   Therefore, the radius of this dish meets the criteria.
+  </p>
+  <p>
+   Use equation 3.1. (See paragraph PG-29.1.)
+  </p>
+  <p>
+   $$
+    t = \frac{5PL}{4.8S}
+   $$
+  </p>
+  <p>
+   Where
+  </p>
+  <p>
+   $$
+    P = 1.55 \text{ MPa}
+   $$
+  </p>
+  <p>
+   $$
+    L = 1143 \text{ mm}
+   $$
+  </p>
+  <p>
+   $$
+    S = 108.2 \text{ MPa (see Table 1 or ASME Section II, Part}
+   $$
+  </p>
+  <p>
+   D, Table 1A: use 225°C since 220°C is not listed; therefore, use the next higher temperature)
+  </p>
+  <p>
+   $$
+    \begin{aligned} t &amp;= \frac{5(1.55 \times 1143)}{4.8(108.2)} \\ &amp;= 17.056 \text{ mm} \end{aligned}
+   $$
+  </p>
+  <p>
+   This thickness is for a blank head. PG-29.3 requires this thickness to be increased by 15% or 3.2 mm, whichever is greater.
+  </p>
+  <p>
+   Therefore
+  </p>
+  <p>
+   $$
+    17.056 \times 0.15 = 2.558 \text{ mm}
+   $$
+  </p>
+  <p>
+   This is less than 3.2 mm, so the thickness must be increased by 3.2 mm
+  </p>
+  <p>
+   Therefore
+  </p>
+  <p>
+   $$
+    \begin{aligned} \text{Required head thickness} &amp;= 17.056 + 3.2 \\ &amp;= 20.256 \text{ mm (Ans.)} \end{aligned}
+   $$
+  </p>
+  <h5>
+   Semi-ellipsoidal head
+  </h5>
+  <p>
+   Paragraph PG-29.7 A blank head of a semi-ellipsoidal form in which half the minor axis or the depth of the head is at least equal to one-quarter of the inside diameter of the head shall be made at least as thick as the required thickness of a seamless shell of the same diameter as provided in PG-27.2.2. If a flanged-in manhole that meets the Code requirements is placed in an ellipsoidal head, the thickness of the head shall be the same as for a head dished to a segment of a sphere (see PG29.1 and PG-29.5) with a dish radius equal to eight-tenths the diameter of the shell and with the added thickness for the manhole as specified in PG-29.3.
+  </p>
+  <p>
+   This rule combines two rules:
+  </p>
+  <ol style="list-style-type: none">
+   <li>
+    1. blank head rule
+   </li>
+   <li>
+    2. flanged-in manhole rule
+   </li>
+  </ol>
+  <p>
+   A semi-ellipsoidal head is shown in Fig. 2.
+  </p>
+  <img alt="Diagram of a semi-ellipsoidal head. The diagram shows a cross-section of a head with a diameter D and a radius r. The height of the head is labeled h. Above the head, the formula h = 1/4 D is given. To the right, the formula 1/2 r = 1/4 D is given. The radius L is shown as a line from the center of the head to the base." src="ae02603e9e4b46477222bf72c1c7c7f6_img.jpg"/>
+  <div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+   <div class="img-alt">
+    Diagram of a semi-ellipsoidal head. The diagram shows a cross-section of a head with a diameter D and a radius r. The height of the head is labeled h. Above the head, the formula h = 1/4 D is given. To the right, the formula 1/2 r = 1/4 D is given. The radius L is shown as a line from the center of the head to the base.
+   </div>
+  </div>
+  <p>
+   Figure 2
+   <br/>
+   Semi-ellipsoidal Head
+  </p>
+  <h5>
+   Full-hemispherical head
+  </h5>
+  <p>
+   The following rule applies to drums or headers with a full-hemispherical end.
+  </p>
+  <p>
+   Paragraph PG-29.11: The thickness of a blank, unstayed, full-hemispherical head with the pressure on the concave side shall be calculated by the following formula:
+  </p>
+  <p>
+   $$
+    t = \frac{PL}{2S - 0.2P} \quad 3.2
+   $$
+  </p>
+  <p>
+   Where
+  </p>
+  <p>
+   \(
+    t
+   \)
+   = minimum thickness of head (mm).
+  </p>
+  <p>
+   \(
+    P
+   \)
+   = maximum allowable working pressure (MPa).
+  </p>
+  <p>
+   \(
+    L
+   \)
+   = radius to which the head was formed (mm) (measured on the concave side of the head).
+  </p>
+  <p>
+   \(
+    S
+   \)
+   = maximum allowable working stress (MPa) (Table IA, Section II, Part D).
+  </p>
+  <p>
+   The above formula shall not be used when the required thickness of the head given by the formula exceeds 35.6% of the inside radius. Instead, use the following formula:
+  </p>
+  <p>
+   $$
+    t = L \left( Y^{\frac{1}{3}} - 1 \right) \quad \text{where } Y = \frac{2(S + P)}{2S - P} \quad 3.3
+   $$
+  </p>
+  <h6>
+   Example 11: full-hemispherical head
+  </h6>
+  <p>
+   Calculate the minimum required thickness (mm) for a blank, unstayed, full-hemispherical head with the pressure on the concave side. The radius to which the head is dished is 190.5 mm. Maximum allowable working pressure is 6205 kPa, and the head material is SA-285-C. The average temperature of the header is 300°C.
+  </p>
+  <h6>
+   Solution
+  </h6>
+  <p>
+   Use equation 3.2. (See PG-29.11.)
+  </p>
+  <p>
+   $$
+    t = \frac{PL}{2S - 0.2P}
+   $$
+  </p>
+  <p>
+   Where
+  </p>
+  <p>
+   $$
+    P = 6.205 \text{ MPa}
+   $$
+  </p>
+  <p>
+   $$
+    L = 190.5 \text{ mm}
+   $$
+  </p>
+  <p>
+   $$
+    S = 105.5 \text{ MPa (see Table 1 or ASME Section II, Part D, Table 1A)}
+   $$
+  </p>
+  <p>
+   $$
+    \begin{aligned} t &amp;= \frac{6.205 \times 190.5}{2(105.5) - 0.2(6.205)} \\ &amp;= \frac{1182.05}{211 - 1.241} \\ &amp;= \frac{1182.05}{209.759} \\ &amp;= 5.635 \text{ mm (Ans.)} \end{aligned}
+   $$
+  </p>
+  <p>
+   Check if this thickness exceeds 35.6% of the inside radius:
+  </p>
+  <p>
+   $$
+    190.5 \times 0.356 = 67.8 \text{ mm}
+   $$
+  </p>
+  <p>
+   Therefore
+  </p>
+  <p>
+   The thickness of the head meets Code requirements.
+  </p>
+  <p>
+   Paragraph PG-29.12: If a flanged-in manhole that meets the Code requirements (see PG-44) is placed in a full-hemispherical head, the thickness of the head shall be the same as for a head dished to a segment of a sphere (see PG-29.1 and PG-29.5), with a dish radius equal to eight-tenths the diameter of the shell and with the added thickness for the manhole as specified in PG-29.3.
+  </p>
+  <h4>
+   SECTION VIII-1: DISHED HEAD CALCULATIONS
+  </h4>
+  <p>
+   Sections VIII-1 and VIII-2 each contain rules for the design of spherical shells, heads, and transition sections. There are significant differences in the equations due to the different design approaches used. This module uses only Section VIII-1 equations.
+  </p>
+  <p>
+   Section VIII-1 has rules for head configurations including spherical, hemispherical, ellipsoidal, and torispherical shapes.
+  </p>
+  <h5>
+   Spherical Shells and Hemispherical Heads
+  </h5>
+  <p>
+   Paragraph UG-27 (d) gives the required thickness of a thin spherical shell due to internal pressure.
+  </p>
+  <p>
+   $$
+    t = \frac{PR}{2SE - 0.2P} \quad 3.4
+   $$
+  </p>
+  <p>
+   Or
+  </p>
+  <p>
+   $$
+    P = \frac{2SEt}{R + 0.2t} \quad 3.5
+   $$
+  </p>
+  <p>
+   Where
+   \(
+    t &lt; 0.356
+   \)
+   or
+   \(
+    P &lt; 0.665SE
+   \)
+  </p>
+  <p>
+   For thick shells, where
+   \(
+    t &gt; 0.356R
+   \)
+   or
+   \(
+    P &gt; 0.665SE
+   \)
+   , use Appendix 1-3.
+  </p>
+  <p>
+   As the ratio
+   \(
+    t/R
+   \)
+   increases beyond 0.356, use the following equations
+  </p>
+  <p>
+   $$
+    t = R \left( Y^{\frac{1}{3}} - 1 \right) \text{ where } Y = \frac{2(SE + P)}{2SE - P} \quad 3.6
+   $$
+  </p>
+  <p>
+   Or
+  </p>
+  <p>
+   $$
+    P = 2SE \left( \frac{Y - 1}{Y + 2} \right) \text{ where } Y = \left( \frac{R + t}{R} \right)^3 \quad 3.7
+   $$
+  </p>
+  <p>
+   Where
+   \(
+    t &gt; 0.356R
+   \)
+   or
+   \(
+    P &gt; 0.665SE
+   \)
+  </p>
+  <h6>
+   Example 12: hemispherical head
+  </h6>
+  <p>
+   A pressure vessel is built of SA-515-55 material and has an inside diameter of 2440 mm. The internal design pressure is 690 kPa at 232°C. The corrosion allowance is 3 mm, and the joint efficiency is 0.85. What is the required thickness of the hemispherical heads if the allowable stress is 138 MPa?
+  </p>
+  <h6>
+   Solution
+  </h6>
+  <p>
+   The quantity
+   \(
+    0.665SE = 78
+   \)
+   MPa; since this is greater than the design pressure of 690 kPa, use equation 3.4. (See paragraph UG-32 (f).)
+  </p>
+  <p>
+   $$
+    R = 1220 + 3
+   $$
+  </p>
+  <p>
+   $$
+    = 1223 \text{ mm}
+   $$
+  </p>
+  <p>
+   $$
+    \begin{aligned} t &amp;= \frac{PR}{2SE - 0.2P} + \text{corrosion allowance} \\ &amp;= \frac{0.69 \times 1223}{2(138 \times 0.85) - 0.2(0.69)} + 3 \\ &amp;= \frac{843.87}{234.46} + 3 \\ &amp;= 3.6 + 3 \\ &amp;= 6.6 \text{ mm (Ans.)} \end{aligned}
+   $$
+  </p>
+  <p>
+   The calculated thickness is less than
+   \(
+    0.356R
+   \)
+   ; therefore, equation 3.3 is acceptable.
+  </p>
+  <h6>
+   Example 13: spherical head
+  </h6>
+  <p>
+   A spherical pressure vessel with an internal diameter of 3048 mm has a head thickness of 25.4 mm. Determine the design pressure if the allowable stress is 138 MPa. Assume joint efficiency
+   \(
+    E = 0.85
+   \)
+   .
+  </p>
+  <h6>
+   Solution
+  </h6>
+  <p>
+   Use equation 3.5 since
+   \(
+    t
+   \)
+   is less than
+   \(
+    0.356R
+   \)
+   .
+  </p>
+  <p>
+   $$
+    \begin{aligned} P &amp;= \frac{2SEt}{R + 0.2t} \\ &amp;= \frac{2(138 \times 0.85 \times 25.4)}{1524 + 0.2(25.4)} \\ &amp;= \frac{5958.84}{1529.08} \\ &amp;= 3.897 \text{ MPa (Ans.)} \end{aligned}
+   $$
+  </p>
+  <p>
+   The calculated pressure is less than
+   \(
+    0.665SE
+   \)
+   ; therefore, equation 3.4 is acceptable.
+  </p>
+  <h6>
+   Example 14: thick hemispherical head
+  </h6>
+  <p>
+   Calculate the required hemispherical head thickness of an accumulator with
+   \(
+    P = 69 \text{ MPa}
+   \)
+   ,
+   \(
+    R = 460 \text{ mm}
+   \)
+   ,
+   \(
+    S = 103 \text{ MPa}
+   \)
+   , and
+   \(
+    E = 1.0
+   \)
+   . Assume a corrosion allowance of 6 mm.
+  </p>
+  <h6>
+   Solution
+  </h6>
+  <p>
+   The quantity
+   \(
+    0.665SE = 68.495 \text{ MPa}
+   \)
+   ; since this is less than the design pressure of 69 MPa, use equation 3.6.
+  </p>
+  <p>
+   $$
+    t = R \left( Y^{\frac{1}{3}} - 1 \right) \text{ where } Y = \frac{2(SE + P)}{2SE - P}
+   $$
+  </p>
+  <p>
+   $$
+    Y = \frac{2(103 \times 1 + 69)}{2(103 \times 1) - 69}
+   $$
+  </p>
+  <p>
+   $$
+    = \frac{344}{137}
+   $$
+  </p>
+  <p>
+   $$
+    = 2.51
+   $$
+  </p>
+  <p>
+   $$
+    t = R \left( Y^{\frac{1}{3}} - 1 \right)
+   $$
+  </p>
+  <p>
+   $$
+    = 460 + 6 \left( 2.51^{\frac{1}{3}} - 1 \right)
+   $$
+  </p>
+  <p>
+   $$
+    = 466(0.359)
+   $$
+  </p>
+  <p>
+   $$
+    = 167.3 \text{ mm}
+   $$
+  </p>
+  <p>
+   Total head thickness is
+   \(
+    167.3 + 6 \text{ mm}
+   \)
+   (corrosion allowance) =
+   <b>
+    173.3 mm
+   </b>
+   (Ans.).
+  </p>
+  <p>
+   Connecting this head to the accumulator shell would require special treatment, which is outside of the scope of this module.
+  </p>
+  <h5>
+   Ellipsoidal Heads
+  </h5>
+  <p>
+   The commonly used ellipsoidal head has a ratio of base radius to depth of 2:1 (shown in Fig. 3a). The actual shape can be approximated by a spherical radius of
+   \(
+    0.9D
+   \)
+   and a
+   <b>
+    knuckle
+   </b>
+   radius of
+   \(
+    0.17D
+   \)
+   (shown in Fig. 3b.) The required thickness of 2:1 heads with pressure on the concave side is given in paragraph UG-32 (d).
+  </p>
+  <p>
+   $$
+    t = \frac{PD}{2SE - 0.2 P} \quad 3.8
+   $$
+  </p>
+  <p>
+   Or
+  </p>
+  <p>
+   $$
+    P = \frac{2SEt}{D + 0.2t} \quad 3.9
+   $$
+  </p>
+  <p>
+   Where
+  </p>
+  <p>
+   \(
+    D
+   \)
+   = inside base diameter
+  </p>
+  <p>
+   \(
+    E
+   \)
+   = joint efficiency factor
+  </p>
+  <p>
+   \(
+    P
+   \)
+   = pressure on the concave side of the head
+  </p>
+  <p>
+   \(
+    S
+   \)
+   = allowable stress for the material
+  </p>
+  <p>
+   \(
+    t
+   \)
+   = thickness of the head
+  </p>
+  <img alt="Figure 3: Ellipsoidal Head diagrams. (a) shows a 2:1 ellipsoidal head with diameter D and height h. (b) shows an ellipsoidal head with diameter D, height h, knuckle radius V = 0.17D, and spherical radius 0.9D." src="60ee3da582d29b56f1d2e705f6fc4588_img.jpg"/>
+  <div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+   <p>
+    Figure 3 consists of two diagrams, (a) and (b), illustrating ellipsoidal heads. Diagram (a) shows a shallow ellipsoidal head with a diameter
+    \(
+     D
+    \)
+    and a height
+    \(
+     h
+    \)
+    . The ratio
+    \(
+     D/2h = 2:1
+    \)
+    is indicated. Diagram (b) shows a deeper ellipsoidal head with a diameter
+    \(
+     D
+    \)
+    and a height
+    \(
+     h
+    \)
+    . The knuckle radius is labeled
+    \(
+     V = 0.17D
+    \)
+    and the spherical radius is labeled
+    \(
+     0.9D
+    \)
+    .
+   </p>
+   <div class="img-alt">
+    Figure 3: Ellipsoidal Head diagrams. (a) shows a 2:1 ellipsoidal head with diameter D and height h. (b) shows an ellipsoidal head with diameter D, height h, knuckle radius V = 0.17D, and spherical radius 0.9D.
+   </div>
+  </div>
+  <p>
+   Figure 3
+   <br/>
+   <i>
+    Ellipsoidal Head
+   </i>
+  </p>
+  <p>
+   Section VIII-1 does not give any
+   \(
+    P/S
+   \)
+   limitations or rules for ellipsoidal heads when the ratio of
+   \(
+    P/S
+   \)
+   is large.
+  </p>
+  <h5>
+   Torispherical Heads
+  </h5>
+  <p>
+   Shallow heads, commonly referred to as flanged and dished heads (F&amp;D heads), can be built according to paragraph UG-32 (e). A spherical radius
+   \(
+    L
+   \)
+   of
+   \(
+    1.0D
+   \)
+   and a knuckle radius
+   \(
+    r
+   \)
+   of
+   \(
+    0.06D
+   \)
+   , as shown in Fig. 4, approximates the most common F&amp;D heads.
+  </p>
+  <img alt="Diagram of a torispherical head. It shows a cross-section of a head with a diameter D. The head has a spherical portion with radius L = D and a knuckle radius of 0.06 D. A line labeled 'A' points to the knuckle area." src="008b6e24fa6aef654a11223efed035dd_img.jpg"/>
+  <div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+   <div class="img-alt">
+    Diagram of a torispherical head. It shows a cross-section of a head with a diameter D. The head has a spherical portion with radius L = D and a knuckle radius of 0.06 D. A line labeled 'A' points to the knuckle area.
+   </div>
+  </div>
+  <p>
+   Figure 4
+   <br/>
+   Torispherical Head
+  </p>
+  <p>
+   The required thickness of an F&amp;D head is
+  </p>
+  <p>
+   $$
+    t = \frac{0.885PL}{SE - 0.1P} \quad 3.10
+   $$
+  </p>
+  <p>
+   Or
+  </p>
+  <p>
+   $$
+    P = \frac{SEt}{0.885L + 0.1t} \quad 3.11
+   $$
+  </p>
+  <p>
+   Where
+  </p>
+  <ul style="list-style-type: none">
+   <li>
+    \(
+     E
+    \)
+    = joint efficiency factor
+   </li>
+   <li>
+    \(
+     L
+    \)
+    = inside spherical radius
+   </li>
+   <li>
+    \(
+     P
+    \)
+    = pressure on the concave side of the head
+   </li>
+   <li>
+    \(
+     S
+    \)
+    = allowable stress
+   </li>
+   <li>
+    \(
+     t
+    \)
+    = thickness of the head
+   </li>
+  </ul>
+  <p>
+   Shallow heads with internal pressure are subjected to a stress reversal at the knuckle. This stress reversal could cause buckling of the shallow head as the ratio
+   \(
+    D/t
+   \)
+   increases. Paragraph UG-32(e) states that the maximum allowable stress used to calculate the required thickness cannot exceed 138 MPa, regardless of the strength of the material.
+  </p>
+  <h3>
+   Objective 4
+  </h3>
+  <p>
+   <b>
+    Calculate the minimum required thickness or maximum allowable working pressure of unstayed flat heads, covers, and blind flanges.
+   </b>
+  </p>
+  <h3>
+   UNSTAYED FLAT HEADS, COVERS, AND BLIND FLANGES
+  </h3>
+  <p>
+   Flat plates, covers, and flanges are used extensively in boilers and pressure vessels. When a flat plate or cover is used as an end closure or head of a pressure vessel, it may be designed as an integral part of the vessel (having been formed with the cylindrical shell) or welded to it. Alternately, it may be a separate component that is attached by bolts or some quick-opening mechanism utilizing a gasket joint attached to a companion flange on the end of the shell. Bolted flanges are not covered in the scope of this module.
+  </p>
+  <p>
+   The concepts of unstayed flat heads, covers, and especially blind flanges are often misunderstood and can be challenging to anyone learning and working on this type of equipment. It is very important for power engineers to have good working knowledge of thickness requirements as this allows them to work safely and provide sound and safe advice.
+  </p>
+  <h4>
+   SECTION 1
+  </h4>
+  <p>
+   Paragraph PG-31.1 states that the minimum thickness of unstayed flat heads, cover plates, and blind flanges shall conform to the requirements. Paragraph PG-31.2 defines the notations used in this paragraph and in Fig. PG31. Paragraph PG-31.3 states two formulae for calculating the minimum thickness of flat, unstayed circular heads, covers, and blind flanges.
+  </p>
+  <p>
+   When the circular head, cover, or blind flange is attached by welding
+  </p>
+  <p>
+   $$
+    t = d \sqrt{\frac{CP}{S}} \quad 4.1
+   $$
+  </p>
+  <p>
+   When the circular head, cover, or blind flange is attached by bolts (Fig. PG-31 (j), (k))
+  </p>
+  <p>
+   $$
+    t = d \sqrt{\frac{CP}{S} + \frac{1.9Wh_g}{Sd^3}} \quad 4.2
+   $$
+  </p>
+  <p>
+   <b>
+    Note:
+   </b>
+   \(
+    W
+   \)
+   = the total bolt loading and
+   \(
+    h_g
+   \)
+   = the gasket moment arm. The gasket moment arm is the radial distance from the centre line of the bolts to the line of the gasket reaction force (Fig. PG-31 (j), (k)).
+  </p>
+  <p>
+   When using equation 4.2, the thickness
+   \(
+    t
+   \)
+   shall be calculated for both design conditions (flange sketches j and k) and the greater value used.
+  </p>
+  <p>
+   <b>
+    Note:
+   </b>
+   The formulae used to determine thickness may be transposed to solve for
+   \(
+    P
+   \)
+   and find the maximum allowable working pressure for a flat head or cover of known thickness.
+  </p>
+  <p>
+   Paragraph PG-31.3.3 states two formulae for the required thickness of flat unstayed heads, covers, or blind flanges that are square, rectangular, elliptical, obround, or segmental in design and attached by welding.
+  </p>
+  <p>
+   $$
+    t = d \sqrt{\frac{ZCP}{S}} \quad 4.3
+   $$
+  </p>
+  <p>
+   Where
+   \(
+    Z
+   \)
+   is a factor from the ratio of the short and long spans
+  </p>
+  <p>
+   $$
+    Z = 3.4 - \frac{2.4d}{D} \text{ to a maximum of } 2.5
+   $$
+  </p>
+  <p>
+   When the non-circular head, cover, or blind flange is attached by bolts (Fig. PG-31. (j), (k))
+  </p>
+  <p>
+   $$
+    t = d \sqrt{\frac{ZCP}{S} + \frac{6Wh_g}{SLd^2}} \quad 4.4
+   $$
+  </p>
+  <p>
+   Paragraph PG-31.4 lists the values for
+   \(
+    C
+   \)
+   to be used in the formulae 4.1, 4.2, 4.3, and 4.4.
+  </p>
+  <h5>
+   Example 15: circular flat head welded to a shell
+  </h5>
+  <p>
+   (Illustrated by Fig. PG-31 (e) and Fig. 5.)
+  </p>
+  <img alt="Diagram of a circular flat head welded to a shell. The shell has a thickness labeled t_s. The head has a thickness labeled t and a diameter labeled d. The head is shown in cross-section, with a weld line at the junction. Two arrows point to the head's edge with a label 0.7 t_s, indicating a reinforcement or transition zone." src="bfbb7c9ea51b575feb18a64b41d162c1_img.jpg"/>
+  <div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+   <div class="img-alt">
+    Diagram of a circular flat head welded to a shell. The shell has a thickness labeled t_s. The head has a thickness labeled t and a diameter labeled d. The head is shown in cross-section, with a weld line at the junction. Two arrows point to the head's edge with a label 0.7 t_s, indicating a reinforcement or transition zone.
+   </div>
+  </div>
+  <p style="text-align: center;">
+   <i>
+    Figure 5
+   </i>
+   <br/>
+   <i>
+    Circular Flat Head
+   </i>
+  </p>
+  <p>
+   Calculate the minimum thickness for the circular head and the depth of the fillet welds required. The material for head and shell is SA-285-A. The shell is seamless. Thickness
+   \(
+    t
+   \)
+   is 15 mm. Maximum allowable working pressure is 2500 kPa. Shell diameter
+   \(
+    d
+   \)
+   is 762 mm. Head joint welding meets Code requirements.
+  </p>
+  <h6>
+   Solution
+  </h6>
+  <p>
+   Use equation 4.1
+  </p>
+  <p>
+   $$
+    t = d \sqrt{\frac{CP}{S}}
+   $$
+  </p>
+  <p>
+   Where
+  </p>
+  <p>
+   $$
+    P = 2.5 \text{ MPa}
+   $$
+  </p>
+  <p>
+   $$
+    d = 762 \text{ mm}
+   $$
+  </p>
+  <p>
+   $$
+    S = 88.9 \text{ MPa (Table 1 or ASME Section II, Part D, Table 1A)}
+   $$
+  </p>
+  <p>
+   As no temperature is given, the saturation temperature of steam (224°C at 2500 kPa) may be used; therefore, use the value for 250°C.
+  </p>
+  <p>
+   $$
+    C = 0.33 \text{ m (see PG-31.4, Fig PG-31 sketch (e), where } m \text{ is defined as the ratio of } t_r/t_s \text{ from paragraph PG-31.2)}
+   $$
+  </p>
+  <p>
+   $$
+    t_r = \text{required minimum thickness of the shell}
+   $$
+  </p>
+  <p>
+   $$
+    t_s = \text{actual thickness of the shell as given}
+   $$
+  </p>
+  <p>
+   Use equation 2.3 to find the value of
+   \(
+    t_r
+   \)
+   (see paragraph PG-27.2.2).
+  </p>
+  <p>
+   $$
+    t = \frac{PR}{SE - (1 - y)P} + C
+   $$
+  </p>
+  <p>
+   Where
+  </p>
+  <p>
+   $$
+    R = d/2 = 381 \text{ mm}
+   $$
+  </p>
+  <p>
+   $$
+    E = 1 \text{ (see PG-27.4, note 1)}
+   $$
+  </p>
+  <p>
+   $$
+    y = 0.4 \text{ (see PG-27.4, note 6)}
+   $$
+  </p>
+  <p>
+   $$
+    C = 0 \text{ (see PG-27.4, note 3)}
+   $$
+  </p>
+  <p>
+   $$
+    \begin{aligned} t_r &amp;= \frac{2.5 \times 381}{(88.9 \times 1) - (1 - 0.4) \times 2.5} + 0 \\ &amp;= \frac{952.5}{87.4} \\ &amp;= 10.898 \text{ mm} \end{aligned}
+   $$
+  </p>
+  <p>
+   Therefore
+  </p>
+  <p>
+   $$
+    \begin{aligned} m &amp;= \frac{t_r}{t_s} \\ &amp;= \frac{10.898}{19} \\ &amp;= 0.574 \end{aligned}
+   $$
+  </p>
+  <p>
+   $$
+    \begin{aligned} C &amp;= 0.33 \text{ m (from PG-31.4)} \\ &amp;= 0.33 \times 0.574 \\ &amp;= 0.19 \end{aligned}
+   $$
+  </p>
+  <p>
+   As this value is less than 0.2, use 0.2 in the formula from PG-31.4 or in equation 4.1.
+  </p>
+  <p>
+   $$
+    \begin{aligned} t &amp;= d \sqrt{\frac{CP}{S}} \\ &amp;= 762 \sqrt{\frac{0.20 \times 2.5}{88.9}} \\ &amp;= 762 \times 0.0750 \\ &amp;= 57.15 \text{ mm (Ans.)} \end{aligned}
+   $$
+  </p>
+  <p>
+   For a welded circular flat head (Fig PG-31 (e)), a minimum thickness of 57.15 mm is required.
+  </p>
+  <p>
+   The depth of each weld would be
+   \(
+    0.7 t_s
+   \)
+   (see Fig PG-31 (e)).
+  </p>
+  <p>
+   $$
+    \begin{aligned} t_s &amp;= 15 \text{ mm (given)} \\ &amp;= 0.7 \times 15 \\ &amp;= 10.5 \text{ mm} \end{aligned}
+   $$
+  </p>
+  <p>
+   It is interesting to note that the required minimum shell thickness is 10.898 mm, yet the required minimum thickness of the blank head is approximately 5.2 times thicker at 57.15 mm.
+  </p>
+  <h5>
+   Example 16: circular flat head maximum allowable working pressure
+  </h5>
+  <p>
+   Calculate the maximum allowable working pressure for a circular flat head with the following specifications. Head design to Fig. PG-31, sketch (d). Shell and head thickness of 30.5 mm. Material is SA-285-B. Head joint weld meets Code requirements. Shell diameter is 610 mm. Operating temperature not to exceed 300°C.
+  </p>
+  <h6>
+   Solution
+  </h6>
+  <p>
+   $$
+    t = 30.5 \text{ mm}
+   $$
+  </p>
+  <p>
+   $$
+    S = 95.1 \text{ MPa (see Table 1 or ASME Section II, Part D, Table 1A)}
+   $$
+  </p>
+  <p>
+   $$
+    d = 610 \text{ mm}
+   $$
+  </p>
+  <p>
+   $$
+    C = 0.13 \text{ (see Fig. PG-31 (d))}
+   $$
+  </p>
+  <p>
+   Use equation 4.6. (See PG-32.3.2.)
+  </p>
+  <p>
+   $$
+    P = \frac{t^2 S}{d^2 C} \quad 4.6
+   $$
+  </p>
+  <p>
+   $$
+    \begin{aligned} P &amp;= \frac{30.5^2 \times 95.1}{610^2 \times 0.13} \\ &amp;= 1.829 \text{ MPa (Ans.)} \end{aligned}
+   $$
+  </p>
+  <p>
+   The maximum allowable working pressure for this flat, unstayed head is 1829 kPa.
+  </p>
+  <h4>
+   SECTION VIII-1
+  </h4>
+  <p>
+   The equations for the design of unstayed plates and covers are found in paragraph UG-34.
+  </p>
+  <p>
+   $$
+    t = d \sqrt{\frac{CP}{SE}} \quad 4.7
+   $$
+  </p>
+  <p>
+   Where
+  </p>
+  <p>
+   $$
+    d = \text{effective diameter of the flat plate (mm)}
+   $$
+  </p>
+  <p>
+   $$
+    C = \text{coefficient between 0.1 and 0.33 (depending on the corner details as shown in Fig. UG-34)}
+   $$
+  </p>
+  <p>
+   $$
+    P = \text{design pressure}
+   $$
+  </p>
+  <p>
+   $$
+    S = \text{allowable stress at design temperature}
+   $$
+  </p>
+  <p>
+   $$
+    E = \text{butt-welded joint efficiency of the joint within the flat plate}
+   $$
+  </p>
+  <p>
+   $$
+    t = \text{minimum required thickness of the flat plate}
+   $$
+  </p>
+  <p>
+   The value of E depends on the degree of non-destructive examination performed. E is not a weld efficiency value of the head to shell corner joint.
+  </p>
+  <h5>
+   Example 17: integral flat plate
+  </h5>
+  <p>
+   Using the rules of paragraph UG-34, determine the minimum required thickness of an integral flat plate with an internal pressure
+   \(
+    P = 17 \text{ MPa}
+   \)
+   , an allowable stress
+   \(
+    S = 120 \text{ MPa}
+   \)
+   , and a plate diameter
+   \(
+    d = 610 \text{ mm}
+   \)
+   . There are no butt weld joints within the head. There is a corrosion allowance of 4 mm. The corner detail conforms to Fig. UG-34 (b-2) (assume that
+   \(
+    m = 1
+   \)
+   ).
+  </p>
+  <h6>
+   Solution
+  </h6>
+  <p>
+   Use equation 4.7. (See Fig UG-34 (b-2))
+  </p>
+  <p>
+   Where
+  </p>
+  <p>
+   $$
+    C = 0.33(m) = 0.33(1) = 0.33
+   $$
+  </p>
+  <p>
+   $$
+    d = 610 \text{ mm}
+   $$
+  </p>
+  <p>
+   $$
+    d_c = 610 + 4 \text{ (corrosion allowance)} = 614 \text{ mm}
+   $$
+  </p>
+  <p>
+   $$
+    t = d_c \sqrt{\frac{CP}{SE}} + \text{corrosion allowance}
+   $$
+  </p>
+  <p>
+   $$
+    = 614 \times \sqrt{\frac{0.33 \times 17}{120 \times 1}} + 4
+   $$
+  </p>
+  <p>
+   $$
+    = 132.76 + 4
+   $$
+  </p>
+  <p>
+   $$
+    = \mathbf{136.76 \text{ mm}} \quad (\text{Ans.})
+   $$
+  </p>
+  <h3>
+   Objective 5
+  </h3>
+  <p>
+   <b>
+    <i>
+     Calculate the acceptability of openings in a cylindrical shell, header, or head.
+    </i>
+   </b>
+  </p>
+  <p>
+   Openings through the pressure boundary of a vessel require extra care to keep loading and stresses at acceptable levels. An examination of the pressure boundary may indicate that extra material is needed near the opening to keep stresses at acceptable levels. This extra material may be provided by increasing the wall thickness of the shell or nozzle or by adding a reinforcement plate around the opening.
+  </p>
+  <p>
+   The stress analysis basis used in the ASME Codes to analyze nozzle reinforcement is called
+   <i>
+    Beams on Elastic Foundation
+   </i>
+   (Hetenyi, 1946). Although the methods used are a simplified application of the
+   <b>
+    elastic foundation theory
+   </b>
+   , experience has shown that they are acceptable.
+  </p>
+  <p>
+   ASME Codes Section I and Section VIII give two methods for examining the acceptability of openings in the pressure boundary for pressure loads only. The first method, called the
+   <b>
+    reinforced opening
+   </b>
+   or
+   <b>
+    area replacement
+   </b>
+   method is used when nearby substitute areas replace the area removed by the opening. The second method is the ligament efficiency method. This method determines the effectiveness of the material between adjacent openings to carry the stress compared with the area of metal that was there before the openings existed. Curves have been developed to simplify this examination. For single openings, only the area replacement method is used. For multiple openings, either method may be used.
+  </p>
+  <p>
+   Since stress is related to load and cross-sectional area, areas are substituted when making calculations. Placement and location of the replacement area are very important. Equations have been developed to set the limits for reinforcement.
+  </p>
+  <p>
+   Reinforcement limits are developed parallel and perpendicular to the shell surface from the opening.
+  </p>
+  <img alt="Figure 6: Reinforcement Limits. A cross-sectional diagram of a vessel wall with an opening for a nozzle. The vessel wall thickness is labeled 't'. The nozzle wall thickness is labeled 't_n'. The required thickness is labeled 't_r'. The inner radius of the nozzle is labeled 'R_n'. The distance from the inner wall of the nozzle to the edge of the opening is labeled 'WL_1'. The limits of reinforcement are indicated by a dashed rectangle ABCD. The horizontal distance from the centerline of the nozzle to the limits of reinforcement is labeled 'd' or 'R_n + t_n + t', with a note 'Use larger value'. The vertical distance from the inner wall of the vessel to the limits of reinforcement is labeled 'smaller of 2.5t or 2.5t_n + t_e' above the wall and 'smaller of 2.5t or 2.5t_n' below the wall. The hatched area represents the cross-sectional area of the nozzle wall within the reinforcement limits." src="5eb69662cc4fa7d0d49b4eb22951c204_img.jpg"/>
+  <div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+   <div class="img-alt">
+    Figure 6: Reinforcement Limits. A cross-sectional diagram of a vessel wall with an opening for a nozzle. The vessel wall thickness is labeled 't'. The nozzle wall thickness is labeled 't_n'. The required thickness is labeled 't_r'. The inner radius of the nozzle is labeled 'R_n'. The distance from the inner wall of the nozzle to the edge of the opening is labeled 'WL_1'. The limits of reinforcement are indicated by a dashed rectangle ABCD. The horizontal distance from the centerline of the nozzle to the limits of reinforcement is labeled 'd' or 'R_n + t_n + t', with a note 'Use larger value'. The vertical distance from the inner wall of the vessel to the limits of reinforcement is labeled 'smaller of 2.5t or 2.5t_n + t_e' above the wall and 'smaller of 2.5t or 2.5t_n' below the wall. The hatched area represents the cross-sectional area of the nozzle wall within the reinforcement limits.
+   </div>
+  </div>
+  <p align="center">
+   <i>
+    Figure 6
+   </i>
+   <br/>
+   <i>
+    Reinforcement Limits
+   </i>
+  </p>
+  <p>
+   When an opening is cut into a vessel wall for the attachment of a nozzle with diameter
+   \(
+    d
+   \)
+   (as in
+   <i>
+    Fig. 6
+   </i>
+   ), the vessel wall thickness
+   \(
+    t
+   \)
+   is usually thicker than the minimum thickness required
+   \(
+    t_r
+   \)
+   . The area (
+   \(
+    t_r \times d
+   \)
+   ) is the cross-sectional area that is removed and has to be compensated for. ASME Section I, paragraph PG-36 (2001) (ASME Section VIII, paragraph UG-40) gives the rules for the "Limits of Metal Available for Compensation." The limit is shown by box ABCD in
+   <i>
+    Fig. 6
+   </i>
+   .
+  </p>
+  <p>
+   If greater than the cross-sectional area removed, the additional material in the shell wall and the additional material in the nozzle wall (the hatched cross-sectional area shown in
+   <i>
+    Fig. 6
+   </i>
+   within the limit of compensation boundary) may provide adequate compensation.
+  </p>
+  <h4>
+   SECTION I
+  </h4>
+  <p>
+   ASME Section I, paragraph PG-32 "Openings in Shells, Headers and Heads" contains rules to be applied to maintain the vessel pressure boundary. Paragraph PG-32.1.1 states that paragraphs PG-32 to PG-39 shall apply to all openings (except for flanged-in manholes as stated in paragraph PG-29) and to tube holes in a definite pattern that are designed according to paragraph PG-52. Paragraph PG-32.1.2 provides the rules for openings that do not require reinforcement calculations, providing the diameter of the opening does not exceed that permitted by the chart in
+   <i>
+    Fig. PG-32
+   </i>
+   .
+  </p>
+  <p>
+   To determine if compensation is required, the value
+   \(
+    K
+   \)
+   is calculated from the formula
+  </p>
+  <p>
+   $$
+    K = \frac{PD}{1.82St} \qquad 5.1
+   $$
+  </p>
+  <p>
+   Using the chart in Fig. PG-32, the value for the x-axis is calculated from the shell diameter times the shell thickness. The point where the x-axis value meets the K value curve is read from the y-axis and gives the maximum diameter of the opening, up to an opening of 203.2 mm.
+  </p>
+  <h5>
+   Example 18: reinforcement of nozzle abutting vessel
+  </h5>
+  <p>
+   Determine the reinforcement requirements for a 100 mm I.D. nozzle located in a cylindrical boiler shell. The nozzle abuts the vessel wall and is attached by a full-penetration weld. The O.D. of the shell is 1000 mm. The thickness of the shell wall is 25.4 mm. The thickness of the nozzle wall is 10 mm. The shell material is SA-516-55 and the nozzle material is SA-192. The maximum allowable working pressure is 4500 kPa, and the design temperature is not to exceed 200°C. All joint efficiencies
+   \(
+    E = 1.0
+   \)
+   .
+  </p>
+  <h6>
+   Solution
+  </h6>
+  <p>
+   As this is a boiler shell, ASME Section I rules apply. (See PG-32.1.2.)
+   <br/>
+   Use equation 5.1 to calculate the K value.
+  </p>
+  <p>
+   $$
+    K = \frac{PD}{1.82St}
+   $$
+  </p>
+  <p>
+   Where
+  </p>
+  <p>
+   $$
+    \begin{aligned} P &amp;= 4.5 \text{ MPa} \\ D &amp;= 1000 \text{ mm} \\ S &amp;= 108.2 \text{ MPa} \\ t &amp;= 25.4 \text{ mm} \end{aligned}
+   $$
+  </p>
+  <p>
+   $$
+    \begin{aligned} K &amp;= \frac{PD}{1.82St} \\ &amp;= \frac{4.5 \times 1000}{1.82(108.2 \times 25.4)} \\ &amp;= 0.8997 \end{aligned}
+   $$
+  </p>
+  <p>
+   Using Fig. PG-32, calculate the x-axis value. ASME Section I (2001) values are in inches, and these must be converted to mm as follows:
+  </p>
+  <p>
+   $$
+    \begin{aligned} \text{Shell diameter} \times \text{shell thickness} &amp;= \frac{1000}{25.4} \times \frac{25.4}{25.4} \\ &amp;= 39.37 \end{aligned}
+   $$
+  </p>
+  <p>
+   The intersection of the x-axis value (39.37) and the
+   \(
+    K
+   \)
+   value curve (0.8997) give a y-axis value of 4.3 inches (101.6 mm).
+  </p>
+  <p>
+   Therefore,
+   <b>
+    no additional reinforcement is required
+   </b>
+   (Ans.) for an opening of 100 mm diameter.
+  </p>
+  <h4>
+   SECTION VIII-1
+  </h4>
+  <p>
+   Section VIII-1 requires all openings in pressure vessels, not subjected to rapid fluctuations, to use reinforcement calculations in paragraph UG-37, unless certain dimensional requirements are met as listed in paragraph UG-36(c)(3).
+  </p>
+  <h5>
+   Example 19: reinforcement of nozzle abutting vessel
+  </h5>
+  <p>
+   Determine the reinforcement requirements for a 60 mm I.D. nozzle located in a cylindrical shell. The nozzle abuts the vessel wall and is attached by a full-penetration weld. The O.D. of the shell is 1000 mm. The thickness of the shell wall is 25.4 mm, and the thickness of the nozzle wall is 10 mm. The shell material is SA-516-55 and the nozzle is SA-192. The maximum allowable working pressure is 4500 kPa, and the design temperature is not to exceed 200°C. All joint efficiencies
+   \(
+    E = 1.0
+   \)
+  </p>
+  <h6>
+   Solution
+  </h6>
+  <p>
+   As this is a not a boiler shell, ASME Section VIII-1 rules apply. (See UG-36(c)(3).)
+  </p>
+  <p>
+   UG-36(c)(3) states that reinforcement is not required if
+  </p>
+  <ul style="list-style-type: none">
+   <li>
+    (a) the opening is not larger than 3.5 inches diameter and the shell is 3/8 inch thick or less; or
+   </li>
+   <li>
+    (b) the opening is not larger than 2.375 inches diameter and the shell thickness is greater than 3/8 inch.
+   </li>
+  </ul>
+  <p>
+   In this example, the nozzle diameter is
+   \(
+    60 \text{ mm} = 60/25.4 = 2.3622 \text{ inches}
+   \)
+   .
+  </p>
+  <p>
+   This falls within the second condition,
+   <i>
+    i.e.
+   </i>
+   not larger than 2.375 inches.
+  </p>
+  <p>
+   Therefore,
+   <b>
+    no reinforcement is required
+   </b>
+   (Ans.).
+  </p>
+  <h1 style="text-align: right;">
+   Objective 6
+  </h1>
+  <p>
+   <b>
+    Calculate the compensation required to reinforce an opening in a cylindrical shell, header, or head.
+   </b>
+  </p>
+  <h3>
+   SECTION I
+  </h3>
+  <p>
+   ASME Section I, paragraph PG-33, "Compensation required for openings in shells and formed heads", states the rules for compensation. Paragraph PG-33.2 states that the total cross-sectional area of compensation required in any given plane for a vessel under internal pressure shall not be less than A as defined in PG-33.1, shown in Fig. 7.
+  </p>
+  <p>
+   For an opening in a shell with a nozzle abutting the shell wall (such as an opening for a safety valve), the requirements are illustrated in Fig. 7.
+  </p>
+  <img alt="Engineering diagram of a nozzle wall abutting a vessel wall showing reinforcement limits. The diagram labels the shell thickness as 't', nozzle thickness as 't_n', and required thickness as 't_r'. It defines the limits of reinforcement ABCD. Horizontal limits are the larger of 'd' or 'R_n + t_n + t'. Vertical limits above the shell are the smaller of '2.5t' or '2.5t_n + t_e'. Vertical limits below the shell are the smaller of '2.5t' or '2.5t_n'." src="b30a71a63c0093c8f54a2a57b1f601bb_img.jpg"/>
+  <div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+   <div style="display: none;">
+    Diagram details:
+        - A cross-section of a vessel wall (thickness t) with a nozzle (thickness t_n) attached.
+        - The opening diameter is 'd'. The nozzle inside radius is 'R_n'.
+        - Reinforcement area 'A' is indicated by cross-hatching.
+        - Weld legs are labeled WL1 and WL2.
+        - Reinforcement limits are defined by a rectangle ABCD.
+        - Upper vertical limit:
+    \(
+     \text{smaller of } 2.5t \text{ or } 2.5t_n + t_e
+    \)
+    - Lower vertical limit:
+    \(
+     \text{smaller of } 2.5t \text{ or } 2.5t_n
+    \)
+    - Horizontal limit from centerline:
+    \(
+     \text{larger of } d \text{ or } R_n + t_n + t
+    \)
+    - Total horizontal limit width is D_p.
+   </div>
+   <div class="img-alt">
+    Engineering diagram of a nozzle wall abutting a vessel wall showing reinforcement limits. The diagram labels the shell thickness as 't', nozzle thickness as 't_n', and required thickness as 't_r'. It defines the limits of reinforcement ABCD. Horizontal limits are the larger of 'd' or 'R_n + t_n + t'. Vertical limits above the shell are the smaller of '2.5t' or '2.5t_n + t_e'. Vertical limits below the shell are the smaller of '2.5t' or '2.5t_n'.
+   </div>
+  </div>
+  <p style="text-align: center;">
+   Figure 7
+   <br/>
+   <i>
+    Nozzle Wall Abutting Vessel Wall
+   </i>
+  </p>
+  <p>
+   Image: Logo
+  </p>
+  <span style="float: right;">
+   Page 41
+  </span>
+  <p>
+   Where
+  </p>
+  <p>
+   $$
+    \begin{aligned} \text{(a) The area to be replaced } A &amp; \text{ (shown as the cross-hatched area)} \\ &amp;= dt_r F \end{aligned}
+   $$
+  </p>
+  <p>
+   where
+   \(
+    F
+   \)
+   is taken from the chart Fig. PG-33
+  </p>
+  <p>
+   $$
+    \begin{aligned} \text{(b) The area in the shell wall thickness available to be used as compensation } A_1 &amp; \text{ (shown as the forward sloped hatched areas on either side of the opening)} \\ &amp;= \text{the larger of } d(t - F_t) \text{ or } 2(t = t_n)(t - F_t) \end{aligned}
+   $$
+  </p>
+  <p>
+   $$
+    \begin{aligned} \text{(c) The area in the nozzle wall thickness available to be used as compensation } A_2 &amp; \text{ (shown as the backward sloped hatched area on either side of the nozzle)} \\ &amp;= \text{the smaller of } 2(t_n - t_m)(2.5f_{r1}) \text{ or } 2(t_n - t_m)(2.5 \times t_n + t_c)f_{r1} \\ &amp; \text{where } f_{r1} \text{ is the ratio of } S_{\text{nozzle}}/S_{\text{shell}} \end{aligned}
+   $$
+  </p>
+  <p>
+   $$
+    \begin{aligned} \text{(d) The area available from the nozzle to the reinforcement plate welds } A_{41} &amp; \\ &amp;= (WL_1)^2 \times f_{r1} \\ &amp; \text{where } f_{r1} \text{ is the ratio of the lesser of } S_{\text{nozzle}} \text{ or } S_{\text{plate}} / S_{\text{shell}} \end{aligned}
+   $$
+  </p>
+  <p>
+   $$
+    \begin{aligned} \text{(e) The area available from the reinforcement plate to shell weld } A_{42} &amp; \\ &amp;= (WL_2)^2 f_{r3} \end{aligned}
+   $$
+  </p>
+  <p>
+   $$
+    \begin{aligned} \text{(f) The area available in the reinforcement plate (shown as herring-bone brick hatch) } A_5 &amp; \\ &amp;= (D_p - d - 2t_n)t f_{r3} \\ &amp; \text{Where } f_{r3} \text{ is } S_{\text{plate}}/S_{\text{shell}} \end{aligned}
+   $$
+  </p>
+  <p>
+   If
+   \(
+    A_1 + A_2 + A_{41} &gt; A
+   \)
+   <br/>
+   The opening is adequately reinforced.
+  </p>
+  <p>
+   If
+   \(
+    A_1 + A_2 + A_{41} &lt; A
+   \)
+   <br/>
+   The opening is not adequately reinforced, and reinforcing elements (reinforcement plate and welds) must be added and/or the thickness must be increased.
+  </p>
+  <p>
+   Therefore, if
+   \(
+    A_1 + A_2 + A_{41} + A_{42} + A_5 &gt; A
+   \)
+   <br/>
+   The opening is adequately reinforced.
+  </p>
+  <h5>
+   Example 20: reinforcement of nozzle abutting vessel
+  </h5>
+  <p>
+   Determine the reinforcement requirements for a 100 mm I.D. nozzle located in a cylindrical boiler shell. The nozzle abuts the vessel wall and is attached by a full-penetration weld. The O.D. of the shell is 1000 mm. The thickness of the shell wall is 22.5 mm and the thickness of the nozzle wall is 8 mm. The nozzle fillet welds are 5 mm wide. The shell material is SA-516-55 and the nozzle is SA-192.
+  </p>
+  <p>
+   The maximum allowable working pressure is 4500 kPa, and the design temperature is not to exceed 200°C. All joint efficiencies
+   \(
+    E = 1.0
+   \)
+   . The reinforcement plate (if required) shall be of SA-192 material and 18 mm thick.
+  </p>
+  <h6>
+   Solution
+  </h6>
+  <p>
+   As this is a boiler shell, ASME Section I rules apply. Use equation 5.1. (See PG-32.1.2.)
+  </p>
+  <p>
+   $$
+    K = \frac{PD}{1.82St}
+   $$
+  </p>
+  <p>
+   Where
+  </p>
+  <p>
+   $$
+    \begin{aligned} P &amp;= 4.5 \text{ MPa} \\ D &amp;= 1000 \text{ mm} \\ S &amp;= 108.2 \text{ MPa} \\ t &amp;= 22.5 \text{ mm} \end{aligned}
+   $$
+  </p>
+  <p>
+   $$
+    \begin{aligned} K &amp;= \frac{4.5 \times 1000}{1.82(108.2 \times 22.5)} \\ &amp;= 1.0156 \end{aligned}
+   $$
+  </p>
+  <p>
+   ASME Section I, Fig. PG-32 (2001), "General Notes," states that
+   \(
+    K
+   \)
+   is limited to a value of 0.99. Therefore PG-32.1.2 cannot be used.
+  </p>
+  <p>
+   Allowable tensile stress for SA-516-55 is 108.2 MPa and for SA-192 is 92.4 MPa.
+  </p>
+  <p>
+   Therefore:
+  </p>
+  <p>
+   $$
+    \begin{aligned} f_{r1} &amp;= \frac{108.2}{92.4} \\ &amp;= 1.17 \end{aligned}
+   $$
+  </p>
+  <p>
+   Use equation 2.3 to determine the minimum required shell thickness (additional thickness may be used towards reinforcement requirements). (See PG-27.2.2)
+  </p>
+  <p>
+   Where
+  </p>
+  <p>
+   $$
+    \begin{aligned} P &amp;= 4.5 \text{ MPa} \\ R &amp;= 500 - 22.5 = 477.5 \text{ mm} \\ S &amp;= 108.2 \text{ MPa} \\ E &amp;= 1 \\ y &amp;= 0.4 \text{ (see PG-27.4, note 6)} \\ C &amp;= 0 \text{ (see PG-27.4, note 3)} \end{aligned}
+   $$
+  </p>
+  <p>
+   $$
+    \begin{aligned}
+ t &amp;= \frac{PR}{SE - (1 - y)P} + C \\
+ &amp;= \frac{4.5 \times 477.5}{(108.2 \times 1) - (1 - 0.4)4.5} + 0 \\
+ &amp;= 20.367 \text{ mm}
+ \end{aligned}
+   $$
+  </p>
+  <p>
+   Therefore
+  </p>
+  <p>
+   $$
+    t_r = 20.367 \text{ mm and } t = 22.5 \text{ mm}
+   $$
+  </p>
+  <p>
+   Use equation 1.1 to determine the minimum required nozzle thickness. (See PG-27.2.1)
+  </p>
+  <p>
+   Where
+  </p>
+  <p>
+   $$
+    \begin{aligned}
+ P &amp;= 4.5 \text{ MPa} \\
+ D &amp;= 100 + (2 \times 8) = 116 \text{ mm} \\
+ S &amp;= 92.4 \text{ MPa} \\
+ e &amp;= 0 \text{ (see PG-27.4, note 4)}
+ \end{aligned}
+   $$
+  </p>
+  <p>
+   $$
+    \begin{aligned}
+ t &amp;= \frac{PD}{2S + P} + 0.005D + e \\
+ &amp;= \frac{4.5 \times 116}{2(92.4) + 4.5} + 0.005(116) + 0 \\
+ &amp;= \frac{522}{189.3} + 0.58 \\
+ &amp;= 3.3375 \text{ mm}
+ \end{aligned}
+   $$
+  </p>
+  <p>
+   Therefore
+  </p>
+  <p>
+   $$
+    t_m = 3.3375 \text{ mm and } t_n = 8 \text{ mm}
+   $$
+  </p>
+  <p>
+   Limit of compensation parallel to shell surface
+  </p>
+  <p>
+   $$
+    X = d \text{ or } X = (0.5d + t_n + t), \text{ whichever is larger}
+   $$
+  </p>
+  <p>
+   $$
+    X = 100 \text{ or } X = (0.5 \times 100 + 8 + 22.5) = 80.5
+   $$
+  </p>
+  <p>
+   Therefore
+  </p>
+  <p>
+   $$
+    X = 100 \text{ mm}
+   $$
+  </p>
+  <p>
+   Limit perpendicular to the shell surface
+  </p>
+  <p>
+   $$
+    Y = 2.5t \text{ or } Y = (2.5t_n + t_c), \text{ whichever is smaller}
+   $$
+  </p>
+  <p>
+   $$
+    Y = 2.5 \times 22.5 = 56.25 \text{ or } Y = (2.5 \times 8 + 18) = 38
+   $$
+  </p>
+  <p>
+   Therefore
+  </p>
+  <p>
+   $$
+    Y = 38 \text{ mm}
+   $$
+  </p>
+  <p>
+   (a) Reinforcement area required
+   \(
+    A
+   \)
+   (according to Fig. PG-33.1)
+  </p>
+  <p>
+   $$
+    A = d_t F \text{ (where } F \text{ is taken from the chart Fig. PG-33.3, } F=1)
+   $$
+  </p>
+  <p>
+   $$
+    A_r = 100 \times 20.367 \times 1 = 2036.7 \text{ mm}^2
+   $$
+  </p>
+  <p>
+   (b) Reinforcement area available in the shell
+  </p>
+  <p>
+   (
+   \(
+    X
+   \)
+   replaces
+   \(
+    d
+   \)
+   in the equation)
+  </p>
+  <p>
+   $$
+    A_1 = X(t - F t_r)
+   $$
+  </p>
+  <p>
+   $$
+    A_1 = 100(22.5 - 1 \times 20.367) = 213.3
+   $$
+  </p>
+  <p>
+   Therefore
+  </p>
+  <p>
+   $$
+    A_1 = 213.3 \text{ mm}^2
+   $$
+  </p>
+  <p>
+   (c) Reinforcement area available in the nozzle
+  </p>
+  <p>
+   \(
+    Y
+   \)
+   replaces
+   \(
+    d
+   \)
+   in the equation
+  </p>
+  <p>
+   $$
+    A_2 = 2(t_n - t_m)(Y)f_{r1}
+   $$
+  </p>
+  <p>
+   $$
+    A_2 = 2(8 - 3.3375)(38) \times 1.17 = 414.59
+   $$
+  </p>
+  <p>
+   Therefore
+  </p>
+  <p>
+   $$
+    A_2 = 414.59 \text{ mm}^2
+   $$
+  </p>
+  <p>
+   (d) Reinforcement area available in the nozzle weld
+  </p>
+  <p>
+   $$
+    A_{41} = (WL_1)^2 f_{r2} \quad \text{where } f_{r2} = S_n/S_s
+   $$
+  </p>
+  <p>
+   $$
+    A_{41} = (5)^2 \times 92.4/108.2 = 21.35
+   $$
+  </p>
+  <p>
+   Therefore
+  </p>
+  <p>
+   $$
+    A_{41} = 21.35 \text{ mm}^2
+   $$
+  </p>
+  <p>
+   Total area available from shell, nozzle, and nozzle weld
+  </p>
+  <p>
+   $$
+    A_r = A_1 + A_2 + A_{41}
+   $$
+  </p>
+  <p>
+   $$
+    A_r = 213.3 + 414.59 + 21.35 = 649.24 \text{ mm}^2
+   $$
+  </p>
+  <p>
+   (e) Area provided by the reinforcement plate weld
+  </p>
+  <p>
+   $$
+    A_{42} = (WL_2)^2 F_{r3}
+   $$
+  </p>
+  <p>
+   $$
+    A_{42} = (5)^2 \times 92.4/108.2 = 21.35
+   $$
+  </p>
+  <p>
+   Therefore
+  </p>
+  <p>
+   $$
+    A_{42} = 21.35
+   $$
+  </p>
+  <p>
+   Area required by reinforcement pad
+  </p>
+  <p>
+   $$
+    A_5 = A - (A_r + A_{42})
+   $$
+  </p>
+  <p>
+   $$
+    A_5 = 2036.7 - (649.24 + 21.35) = 1366.11
+   $$
+  </p>
+  <p>
+   Therefore
+  </p>
+  <p>
+   $$
+    A_5 = 1366.11 \text{ mm}^2
+   $$
+  </p>
+  <p>
+   (f) Diameter of the reinforcement pad
+  </p>
+  <p>
+   $$
+    A_5 = (D_p - d - 2t_m)t_e f_{r3}
+   $$
+  </p>
+  <p>
+   $$
+    1366.11 = (D_p - 100 - 2 \times 8) \times 18 \times \frac{92.4}{108.2}
+   $$
+  </p>
+  <p>
+   $$
+    (D_p - 100 - 16) = \frac{1366.11}{15.37}
+   $$
+  </p>
+  <p>
+   $$
+    D_p = 88.88 + 100 + 16
+   $$
+  </p>
+  <p>
+   $$
+    = 204.88 \text{ (Ans.)}
+   $$
+  </p>
+  <p>
+   Thus, a reinforcing pad 204.88 mm diameter and 18 mm thick is required to carry the tensile stress and maintain the vessel pressure boundary. This pad size falls within the limits of compensation.
+  </p>
+  <h4>
+   SECTION VIII-1
+  </h4>
+  <p>
+   The limits of compensation stated in paragraph UG-40 (b) and (c) are the same used in Section I, except that the vessel shell and nozzle must be treated as being in a corroded condition.
+  </p>
+  <p>
+   Therefore, the limit of compensation parallel to the shell surface
+  </p>
+  <p>
+   \(
+    X
+   \)
+   = diameter of the finished opening in corroded condition
+  </p>
+  <p>
+   Or
+  </p>
+  <p>
+   \(
+    X
+   \)
+   = radius of the finished opening in corroded condition + shell wall thickness
+  </p>
+  <p>
+   + nozzle wall thickness
+  </p>
+  <p>
+   Whichever is larger
+  </p>
+  <p>
+   The limit of compensation normal to the shell surface
+  </p>
+  <p>
+   \(
+    Y = 2.5 \times
+   \)
+   nominal shell thickness less the corrosion allowance
+  </p>
+  <p>
+   Or
+  </p>
+  <p>
+   \(
+    Y = 2.5 \times
+   \)
+   nozzle wall thickness + the thickness of the reinforcing plate (
+   \(
+    t_c
+   \)
+   )
+  </p>
+  <p>
+   Whichever is smaller
+  </p>
+  <p style="text-align: center;">
+   <i>
+    Table 1
+   </i>
+   <br/>
+   <i>
+    Stress Values in MPa
+   </i>
+   <br/>
+   <i>
+    Source 1998 ASME Section II, D converted to SI
+   </i>
+  </p>
+  <table border="1">
+   <thead>
+    <tr data-bbox="194 329 1411 365">
+     <td>
+      Fahrenheit
+     </td>
+     <td>
+      300
+     </td>
+     <td>
+      400
+     </td>
+     <td>
+      500
+     </td>
+     <td>
+      600
+     </td>
+     <td>
+      650
+     </td>
+     <td>
+      700
+     </td>
+     <td>
+      750
+     </td>
+     <td>
+      800
+     </td>
+     <td>
+      850
+     </td>
+     <td>
+      900
+     </td>
+     <td>
+      950
+     </td>
+    </tr>
+    <tr data-bbox="194 365 1411 401">
+     <td>
+      Celsius
+     </td>
+     <td>
+      150
+     </td>
+     <td>
+      204
+     </td>
+     <td>
+      260
+     </td>
+     <td>
+      315
+     </td>
+     <td>
+      343
+     </td>
+     <td>
+      371
+     </td>
+     <td>
+      399
+     </td>
+     <td>
+      426
+     </td>
+     <td>
+      454
+     </td>
+     <td>
+      482
+     </td>
+     <td>
+      510
+     </td>
+    </tr>
+    <tr data-bbox="194 401 1411 470">
+     <td>
+      <b>
+       Approximation
+      </b>
+     </td>
+     <td>
+      <b>
+       150.0
+      </b>
+     </td>
+     <td>
+      <b>
+       200.0
+      </b>
+     </td>
+     <td>
+      <b>
+       250.0
+      </b>
+     </td>
+     <td>
+      <b>
+       300.0
+      </b>
+     </td>
+     <td>
+      <b>
+       350.0
+      </b>
+     </td>
+     <td>
+      <b>
+       375.0
+      </b>
+     </td>
+     <td>
+      <b>
+       400.0
+      </b>
+     </td>
+     <td>
+      <b>
+       425.0
+      </b>
+     </td>
+     <td>
+      <b>
+       450.0
+      </b>
+     </td>
+     <td>
+      <b>
+       475.0
+      </b>
+     </td>
+     <td>
+      <b>
+       500.0
+      </b>
+     </td>
+    </tr>
+   </thead>
+   <tbody>
+    <tr data-bbox="194 470 1411 506">
+     <td rowspan="10">
+      <b>
+       Tube
+      </b>
+     </td>
+     <td>
+      SA-192
+     </td>
+     <td>
+      13.4
+     </td>
+     <td>
+      13.4
+     </td>
+     <td>
+      13.4
+     </td>
+     <td>
+      13.3
+     </td>
+     <td>
+      12.8
+     </td>
+     <td>
+      12.4
+     </td>
+     <td>
+     </td>
+     <td>
+     </td>
+     <td>
+     </td>
+     <td>
+     </td>
+    </tr>
+    <tr data-bbox="194 506 1411 541">
+     <td>
+     </td>
+     <td>
+      92.4
+     </td>
+     <td>
+      92.4
+     </td>
+     <td>
+      92.4
+     </td>
+     <td>
+      91.7
+     </td>
+     <td>
+      88.3
+     </td>
+     <td>
+      85.5
+     </td>
+     <td>
+     </td>
+     <td>
+     </td>
+     <td>
+     </td>
+     <td>
+     </td>
+    </tr>
+    <tr data-bbox="194 541 1411 577">
+     <td>
+      SA-213-T11
+     </td>
+     <td>
+      17.1
+     </td>
+     <td>
+      16.8
+     </td>
+     <td>
+      16.2
+     </td>
+     <td>
+      15.7
+     </td>
+     <td>
+      15.4
+     </td>
+     <td>
+      15.1
+     </td>
+     <td>
+      14.8
+     </td>
+     <td>
+      14.4
+     </td>
+     <td>
+      14.0
+     </td>
+     <td>
+      13.6
+     </td>
+    </tr>
+    <tr data-bbox="194 577 1411 613">
+     <td>
+     </td>
+     <td>
+      117.9
+     </td>
+     <td>
+      115.8
+     </td>
+     <td>
+      111.7
+     </td>
+     <td>
+      108.2
+     </td>
+     <td>
+      106.2
+     </td>
+     <td>
+      104.1
+     </td>
+     <td>
+      102.0
+     </td>
+     <td>
+      99.3
+     </td>
+     <td>
+      96.5
+     </td>
+     <td>
+      93.8
+     </td>
+    </tr>
+    <tr data-bbox="194 613 1411 648">
+     <td>
+      SA-335-P11
+     </td>
+     <td>
+      17.1
+     </td>
+     <td>
+      16.8
+     </td>
+     <td>
+      16.2
+     </td>
+     <td>
+      15.7
+     </td>
+     <td>
+      15.4
+     </td>
+     <td>
+      15.1
+     </td>
+     <td>
+      14.8
+     </td>
+     <td>
+      14.4
+     </td>
+     <td>
+      14.0
+     </td>
+     <td>
+      13.8
+     </td>
+    </tr>
+    <tr data-bbox="194 648 1411 684">
+     <td>
+     </td>
+     <td>
+      117.9
+     </td>
+     <td>
+      115.8
+     </td>
+     <td>
+      111.7
+     </td>
+     <td>
+      108.2
+     </td>
+     <td>
+      106.2
+     </td>
+     <td>
+      104.1
+     </td>
+     <td>
+      102.0
+     </td>
+     <td>
+      99.3
+     </td>
+     <td>
+      96.5
+     </td>
+     <td>
+      95.1
+     </td>
+    </tr>
+    <tr data-bbox="194 684 1411 720">
+     <td>
+      SA-209-T1
+     </td>
+     <td>
+      15.7
+     </td>
+     <td>
+      15.7
+     </td>
+     <td>
+      15.7
+     </td>
+     <td>
+      15.7
+     </td>
+     <td>
+      15.7
+     </td>
+     <td>
+      15.7
+     </td>
+     <td>
+      15.4
+     </td>
+     <td>
+      14.9
+     </td>
+     <td>
+      14.5
+     </td>
+     <td>
+     </td>
+    </tr>
+    <tr data-bbox="194 720 1411 756">
+     <td>
+     </td>
+     <td>
+      108.2
+     </td>
+     <td>
+      108.2
+     </td>
+     <td>
+      108.2
+     </td>
+     <td>
+      108.2
+     </td>
+     <td>
+      108.2
+     </td>
+     <td>
+      108.2
+     </td>
+     <td>
+      106.2
+     </td>
+     <td>
+      102.7
+     </td>
+     <td>
+      100.0
+     </td>
+     <td>
+     </td>
+    </tr>
+    <tr data-bbox="194 756 1411 791">
+     <td>
+      SA-515-60
+     </td>
+     <td>
+      17.1
+     </td>
+     <td>
+      17.1
+     </td>
+     <td>
+      17.1
+     </td>
+     <td>
+      16.4
+     </td>
+     <td>
+      15.8
+     </td>
+     <td>
+      15.3
+     </td>
+     <td>
+     </td>
+     <td>
+     </td>
+     <td>
+     </td>
+     <td>
+     </td>
+    </tr>
+    <tr data-bbox="194 791 1411 827">
+     <td>
+     </td>
+     <td>
+      117.9
+     </td>
+     <td>
+      117.9
+     </td>
+     <td>
+      117.9
+     </td>
+     <td>
+      113.1
+     </td>
+     <td>
+      108.9
+     </td>
+     <td>
+      105.5
+     </td>
+     <td>
+     </td>
+     <td>
+     </td>
+     <td>
+     </td>
+     <td>
+     </td>
+    </tr>
+    <tr data-bbox="194 827 1411 863">
+     <td rowspan="18">
+      <b>
+       Plate
+      </b>
+     </td>
+     <td>
+      SA-53
+     </td>
+     <td>
+      13.7
+     </td>
+     <td>
+      13.7
+     </td>
+     <td>
+      13.7
+     </td>
+     <td>
+      13.7
+     </td>
+     <td>
+      13.7
+     </td>
+     <td>
+      12.5
+     </td>
+     <td>
+     </td>
+     <td>
+     </td>
+     <td>
+     </td>
+     <td>
+     </td>
+    </tr>
+    <tr data-bbox="194 863 1411 898">
+     <td>
+     </td>
+     <td>
+      94.5
+     </td>
+     <td>
+      94.5
+     </td>
+     <td>
+      94.5
+     </td>
+     <td>
+      94.5
+     </td>
+     <td>
+      94.5
+     </td>
+     <td>
+      86.2
+     </td>
+     <td>
+     </td>
+     <td>
+     </td>
+     <td>
+     </td>
+     <td>
+     </td>
+    </tr>
+    <tr data-bbox="194 898 1411 934">
+     <td>
+      SB-407
+     </td>
+     <td>
+      20.0
+     </td>
+     <td>
+      20.0
+     </td>
+     <td>
+      20.0
+     </td>
+     <td>
+      20.0
+     </td>
+     <td>
+      20.0
+     </td>
+     <td>
+      20.0
+     </td>
+     <td>
+      20.0
+     </td>
+     <td>
+      20.0
+     </td>
+     <td>
+      20.0
+     </td>
+     <td>
+      20.0
+     </td>
+    </tr>
+    <tr data-bbox="194 934 1411 970">
+     <td>
+     </td>
+     <td>
+      137.9
+     </td>
+     <td>
+      137.9
+     </td>
+     <td>
+      137.9
+     </td>
+     <td>
+      137.9
+     </td>
+     <td>
+      137.9
+     </td>
+     <td>
+      137.9
+     </td>
+     <td>
+      137.9
+     </td>
+     <td>
+      137.9
+     </td>
+     <td>
+      137.9
+     </td>
+     <td>
+      137.9
+     </td>
+    </tr>
+    <tr data-bbox="194 970 1411 1005">
+     <td>
+      SA-516-55
+     </td>
+     <td>
+      15.7
+     </td>
+     <td>
+      15.7
+     </td>
+     <td>
+      15.7
+     </td>
+     <td>
+      15.3
+     </td>
+     <td>
+      14.8
+     </td>
+     <td>
+      14.3
+     </td>
+     <td>
+     </td>
+     <td>
+     </td>
+     <td>
+     </td>
+     <td>
+     </td>
+    </tr>
+    <tr data-bbox="194 1005 1411 1041">
+     <td>
+     </td>
+     <td>
+      108.2
+     </td>
+     <td>
+      108.2
+     </td>
+     <td>
+      108.2
+     </td>
+     <td>
+      105.5
+     </td>
+     <td>
+      102.0
+     </td>
+     <td>
+      98.6
+     </td>
+     <td>
+     </td>
+     <td>
+     </td>
+     <td>
+     </td>
+     <td>
+     </td>
+    </tr>
+    <tr data-bbox="194 1041 1411 1077">
+     <td>
+      SA-285-A
+     </td>
+     <td>
+      12.9
+     </td>
+     <td>
+      12.9
+     </td>
+     <td>
+      12.9
+     </td>
+     <td>
+      12.3
+     </td>
+     <td>
+      11.9
+     </td>
+     <td>
+      11.5
+     </td>
+     <td>
+     </td>
+     <td>
+     </td>
+     <td>
+     </td>
+     <td>
+     </td>
+    </tr>
+    <tr data-bbox="194 1077 1411 1113">
+     <td>
+     </td>
+     <td>
+      88.9
+     </td>
+     <td>
+      88.9
+     </td>
+     <td>
+      88.9
+     </td>
+     <td>
+      84.8
+     </td>
+     <td>
+      82.0
+     </td>
+     <td>
+      79.3
+     </td>
+     <td>
+     </td>
+     <td>
+     </td>
+     <td>
+     </td>
+     <td>
+     </td>
+    </tr>
+    <tr data-bbox="194 1113 1411 1148">
+     <td>
+      SA-285-B
+     </td>
+     <td>
+      14.3
+     </td>
+     <td>
+      14.3
+     </td>
+     <td>
+      14.3
+     </td>
+     <td>
+      13.8
+     </td>
+     <td>
+      13.3
+     </td>
+     <td>
+      12.5
+     </td>
+     <td>
+      11.0
+     </td>
+     <td>
+     </td>
+     <td>
+     </td>
+     <td>
+     </td>
+    </tr>
+    <tr data-bbox="194 1148 1411 1184">
+     <td>
+     </td>
+     <td>
+      98.6
+     </td>
+     <td>
+      98.6
+     </td>
+     <td>
+      98.6
+     </td>
+     <td>
+      95.1
+     </td>
+     <td>
+      91.7
+     </td>
+     <td>
+      86.2
+     </td>
+     <td>
+      75.8
+     </td>
+     <td>
+     </td>
+     <td>
+     </td>
+     <td>
+     </td>
+    </tr>
+    <tr data-bbox="194 1184 1411 1220">
+     <td>
+      SA-285-C
+     </td>
+     <td>
+      15.7
+     </td>
+     <td>
+      15.7
+     </td>
+     <td>
+      15.7
+     </td>
+     <td>
+      15.3
+     </td>
+     <td>
+      14.8
+     </td>
+     <td>
+      14.3
+     </td>
+     <td>
+     </td>
+     <td>
+     </td>
+     <td>
+     </td>
+     <td>
+     </td>
+    </tr>
+    <tr data-bbox="194 1220 1411 1255">
+     <td>
+     </td>
+     <td>
+      108.2
+     </td>
+     <td>
+      108.2
+     </td>
+     <td>
+      108.2
+     </td>
+     <td>
+      105.5
+     </td>
+     <td>
+      102.0
+     </td>
+     <td>
+      98.6
+     </td>
+     <td>
+     </td>
+     <td>
+     </td>
+     <td>
+     </td>
+     <td>
+     </td>
+    </tr>
+    <tr data-bbox="194 1255 1411 1291">
+     <td>
+      SA-240-405
+     </td>
+     <td>
+      14.8
+     </td>
+     <td>
+      14.5
+     </td>
+     <td>
+      14.3
+     </td>
+     <td>
+      14.0
+     </td>
+     <td>
+      13.8
+     </td>
+     <td>
+      13.5
+     </td>
+     <td>
+      13.1
+     </td>
+     <td>
+      12.6
+     </td>
+     <td>
+      12.0
+     </td>
+     <td>
+      11.3
+     </td>
+    </tr>
+    <tr data-bbox="194 1291 1411 1327">
+     <td>
+     </td>
+     <td>
+      102.0
+     </td>
+     <td>
+      100.0
+     </td>
+     <td>
+      98.6
+     </td>
+     <td>
+      96.5
+     </td>
+     <td>
+      95.1
+     </td>
+     <td>
+      93.1
+     </td>
+     <td>
+      90.3
+     </td>
+     <td>
+      86.9
+     </td>
+     <td>
+      82.7
+     </td>
+     <td>
+      77.9
+     </td>
+    </tr>
+    <tr data-bbox="194 1327 1411 1362">
+     <td>
+      SA-204-A
+     </td>
+     <td>
+      18.6
+     </td>
+     <td>
+      18.6
+     </td>
+     <td>
+      18.6
+     </td>
+     <td>
+      18.6
+     </td>
+     <td>
+      18.6
+     </td>
+     <td>
+      18.6
+     </td>
+     <td>
+      18.6
+     </td>
+     <td>
+      18.4
+     </td>
+     <td>
+      17.9
+     </td>
+     <td>
+     </td>
+    </tr>
+    <tr data-bbox="194 1362 1411 1398">
+     <td>
+     </td>
+     <td>
+      128.2
+     </td>
+     <td>
+      128.2
+     </td>
+     <td>
+      128.2
+     </td>
+     <td>
+      128.2
+     </td>
+     <td>
+      128.2
+     </td>
+     <td>
+      128.2
+     </td>
+     <td>
+      128.2
+     </td>
+     <td>
+      126.9
+     </td>
+     <td>
+      123.4
+     </td>
+     <td>
+     </td>
+    </tr>
+    <tr data-bbox="194 1398 1411 1434">
+     <td>
+      SA-204-C
+     </td>
+     <td>
+      21.4
+     </td>
+     <td>
+      21.4
+     </td>
+     <td>
+      21.4
+     </td>
+     <td>
+      21.4
+     </td>
+     <td>
+      21.4
+     </td>
+     <td>
+      21.4
+     </td>
+     <td>
+      21.4
+     </td>
+     <td>
+      21.4
+     </td>
+     <td>
+      20.7
+     </td>
+     <td>
+     </td>
+    </tr>
+    <tr data-bbox="194 1434 1411 1467">
+     <td>
+     </td>
+     <td>
+      147.5
+     </td>
+     <td>
+      147.5
+     </td>
+     <td>
+      147.5
+     </td>
+     <td>
+      147.5
+     </td>
+     <td>
+      147.5
+     </td>
+     <td>
+      147.5
+     </td>
+     <td>
+      147.5
+     </td>
+     <td>
+      147.5
+     </td>
+     <td>
+      142.7
+     </td>
+     <td>
+     </td>
+    </tr>
+   </tbody>
+  </table>
+  <p>
+   Stress Values (in MPa) from 1998 ASME Section II, D converted to SI and used in this module.
+  </p>
+  <p>
+   The following questions provide candidates with experience using the ASME Codes.
+  </p>
+  <ol style="list-style-type: none">
+   <li>
+    1. Calculate the minimum required wall thickness of a watertube boiler tube 75 mm O.D. that is strength welded in place in a boiler drum. The tube will be in the furnace area of the boiler and have an average wall temperature of 350°C. The maximum allowable working pressure is 3500 kPa. The tube material is SA-192.
+   </li>
+   <li>
+    2. Calculate the required shell thickness for a hydraulic cylinder with a design pressure of 62 000 kPa. The cylinder has an internal diameter of 36 cm,
+    \(
+     S = 142
+    \)
+    MPa, and
+    \(
+     E = 1.0
+    \)
+    . Assume no corrosion allowance for this cylinder.
+   </li>
+   <li>
+    3. Calculate the thickness of a boiler steam header designed with a seamless, unstayed, full hemispherical head, with pressure on the concave side. The inside radius of the header and the radius to which the head is dished is 304 mm, MAWP is 6205 kPa, and the header and head material is SA-204-A. The average temperature of the header is 400°C. The header has a flanged-in circular manhole 100 mm diameter.
+   </li>
+   <li>
+    4. An air receiver pressure vessel is constructed from SA-204-A with an inside diameter of 1830 mm. The design pressure is 1034 kPa at 200°C. The corrosion allowance is 4 mm, and the joint efficiency is 0.85. What is the required thickness of the hemispherical heads if the allowable stress is 147.5 MPa?
+   </li>
+   <li>
+    5. Using the rules in Section VIII-1, determine the minimum required thickness of the flat end plate of a rectangular box header 200 mm by 400 mm with an internal pressure of 2500 kPa. The material used has a stress value of 103 MPa. The plate is integrally welded into place as per Fig UG-34(h). There is no corrosion allowance and no butt-welded joints in the plate.
+   </li>
+   <li>
+    6. Using the rules in Section I, calculate the reinforcement requirements for a 150 mm I.D. nozzle located in a cylindrical boiler drum. The nozzle abuts the vessel wall and is attached by a full-penetration weld. The I.D. of the drum is 780 mm. The thickness of the drum is 28.575 mm. The nozzle wall thickness is 35 mm. The drum material is SA-516-55, and the nozzle material is SA-209-T1. The maximum allowable working pressure is 6000 kPa, and the design temperature is 250°C. All joint efficiencies
+    \(
+     E = 1
+    \)
+    . The reinforcement plate material (if required) is of SA-515-55 and 10 mm thick.
+   </li>
+  </ol>
+ </body>
+</html>

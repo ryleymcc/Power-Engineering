@@ -1,0 +1,1220 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="utf-8"/>
+<script>
+    MathJax = {
+      tex: {
+        inlineMath: [['\\(', '\\)']],
+        displayMath: [['$$', '$$']]
+      }
+    };
+    </script>
+<script async="" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+<div id="nav-header" style="padding: 15px 20px; background: #2c3e50; color: white; display: flex; align-items: center; gap: 20px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+<a href="../index.html" style="color: white; text-decoration: none; background: #34495e; padding: 8px 16px; border-radius: 4px; font-weight: 600; font-size: 0.9rem; transition: background 0.2s;">← Back to Index</a>
+<h1 style="margin: 0; font-size: 1.2rem; font-weight: 500; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Power Engineering Series</h1>
+</div>
+<h1>
+   Non-Boiler Water Treatment
+  </h1>
+<h2>
+   10
+  </h2>
+<h2>
+   Learning Outcome
+  </h2>
+<p>
+<i>
+    When you complete this learning material, you will be able to:
+   </i>
+</p>
+<p>
+   Discuss water treatment applications for cooling water, wastewater, and potable water.
+  </p>
+<h2>
+   Learning Objectives
+  </h2>
+<p>
+<i>
+    You will specifically be able to complete the following tasks:
+   </i>
+</p>
+<ol style="list-style-type: none">
+<li>
+    1. List the water impurities of concern in a cooling water system and the effects caused by each one.
+   </li>
+<li>
+    2. Describe control methods for a cooling water system for control of corrosion, fouling, and microbiological attack including chloride corrosion, and delignification.
+   </li>
+<li>
+    3. Describe the potential effects of wastewater discharge.
+   </li>
+<li>
+    4. Compare and contrast mechanical, chemical, and biological methods of wastewater treatment including the advantages and disadvantages of each.
+   </li>
+<li>
+    5. Specify an appropriate method of wastewater treatment for a particular case study.
+   </li>
+<li>
+    6. Describe the methods used for potable water treatment and analysis.
+   </li>
+</ol>
+<h2>
+   Objective 1
+  </h2>
+<p>
+<b>
+    List the water impurities of concern in a cooling water system and the effects caused by each one.
+   </b>
+</p>
+<h3>
+   TYPES OF COOLING WATER SYSTEMS
+  </h3>
+<p>
+   Cooling water systems are classified into three basic types: once through, closed or recirculating, and open recirculating (evaporative).
+  </p>
+<h4>
+   Once-through Systems
+  </h4>
+<p>
+   In a once-through system, shown in Fig. 1, water is pumped from a lake or river. It is piped through the plant and provides cooling for heat exchangers, condensers, and other heat loads. After removing excess heat energy from processes within the plant, the warmed cooling water is returned to the lake or river to release the heat energy that has been acquired. As the water is passed through the plant only once, use of chemical treatment is kept to a minimum. Typically, the water is screened to remove any large pieces of debris and fish. In some cases, small amounts of corrosion inhibitor may be added. An oxidizing biocide, such as chlorine or sodium hypochlorite, may be added to control microbiological activity.
+  </p>
+<img alt="Diagram of a Closed Recirculating System. A 'C.W. Pump' is connected to a piping system. The piping branches into three parallel units: a 'CONDENSER' and two 'EXCHANGER' units. The piping then splits into two 'Aerial Coolers', each represented by a chevron shape with a fan symbol. The piping from the aerial coolers recombines and returns to the 'C.W. Pump', completing a closed loop." src="b230b8f21d8e82d55c0d311c8c32ef73_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    Diagram of a Closed Recirculating System. A 'C.W. Pump' is connected to a piping system. The piping branches into three parallel units: a 'CONDENSER' and two 'EXCHANGER' units. The piping then splits into two 'Aerial Coolers', each represented by a chevron shape with a fan symbol. The piping from the aerial coolers recombines and returns to the 'C.W. Pump', completing a closed loop.
+   </div>
+</div>
+<p>
+   Figure 2
+   <br/>
+   Closed Recirculating System
+  </p>
+<h4>
+   Open Recirculating Systems
+  </h4>
+<p>
+   An open recirculating system, shown in Fig. 3, uses a cooling tower or evaporation pond to cool the water. The water is pumped from the tower or pond through the plant heat exchangers. The water is recycled through the plant and the cooling tower as many times as is practical, in order to reduce the requirement for water make-up. The heat of evaporation of the evaporated water in the cooling tower is taken from the water that is not evaporated. Evaporative cooling is very efficient in that little make-up water is required. A much smaller stream of water from the lake or river is used compared to once-through systems. Only the water lost to evaporation and blowdown has to be made up. The remaining water becomes more concentrated with minerals as a portion of it is evaporated. A stream of water is removed from the cooling tower as blowdown to keep the concentration within limits. Most recirculating systems are concentrated up to 7–12 times the inlet concentration levels. The term used for concentration is cycles of concentration.
+  </p>
+<p>
+   As open recirculating systems are very common in power and process plants, the remainder of this module on corrosion control and scale control refers to open recirculating systems using cooling towers.
+  </p>
+<p>
+   accumulation of corrosion product. The increasingly high concentrations of corrosive compounds inside the cell create even higher corrosion rates.
+  </p>
+<img alt="Diagram of a corrosion cell showing anode and cathode reactions in water (electrolyte)." src="2fa4a1bf91d0f34e87c689fbc1211fe3_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<p>
+    The diagram illustrates a corrosion cell on a metal surface submerged in water (electrolyte). On the left, an 'Anode' region is shown where iron (Fe) is oxidized to
+    \(
+     Fe^{2+}
+    \)
+    ions, which enter the water. These ions react with
+    \(
+     OH^{-}
+    \)
+    ions to form
+    \(
+     Fe(OH)_2
+    \)
+    , a corrosion product. On the right, a 'Cathode' region is shown where oxygen (
+    \(
+     O_2
+    \)
+    ) from the water is reduced to
+    \(
+     OH^{-}
+    \)
+    ions. Water (
+    \(
+     H_2O
+    \)
+    ) is also present in the cathode area. An arrow labeled 'Electron Flow' points from the anode to the cathode through the metal. Another arrow labeled '
+    \(
+     O_2
+    \)
+    ' points from the water towards the cathode.
+   </p>
+<div class="img-alt">
+    Diagram of a corrosion cell showing anode and cathode reactions in water (electrolyte).
+   </div>
+</div>
+<p>
+   Figure 4
+   <br/>
+   Corrosion Cell
+  </p>
+<h4>
+   Galvanic Corrosion
+  </h4>
+<p>
+   Galvanic corrosion comes about when two dissimilar metals come in contact with each other in the cooling water system. Both metals must be exposed to the same solution, which acts as an electrolyte, and a circuit is formed with the metal which conducts electrical current. When these conditions exist, the corrosion rate of the anodic metal increases and the corrosion rate of the cathodic metal decreases. Sacrificial anodes are installed to help to control galvanic corrosion of the anodic metal in the cooling water system. The anodes are bolted to the steel to protect the area surrounding the anode. This is common for heat exchangers with admiralty brass tubes and carbon steel tubesheets, because the dissimilarity of these metals encourages galvanic corrosion.
+  </p>
+<h4>
+   Crevice Corrosion
+  </h4>
+<p>
+   Crevice corrosion is similar to pitting corrosion. It is localized and occurs in a crevice or any other area that is shielded from the bulk water. Conditions in the crevice are similar to a pit, as the corrosive solutions become concentrated and this accelerates the corrosion process.
+  </p>
+<h4>
+   Stress Corrosion Cracking
+  </h4>
+<p>
+   Stress corrosion cracking results in the cracking of metal under tensile stress in a corrosive environment. More detail is given in the next learning objective.
+  </p>
+<h4>
+   Microbiological Corrosion
+  </h4>
+<p>
+   As cooling water is warm and contains nutrients, microorganisms find it a suitable place to grow. The microorganisms form films on the cooling system surfaces. These films are called biofilms. Many different types of organisms can exist in a biofilm. Some of the products produced in the biofilm are corrosive, such as organic acids and hydrogen
+  </p>
+<p>
+<b>
+    Other Contaminants:
+   </b>
+   Contaminants such as
+   <b>
+    hydrocarbons, glycols, NH
+    <sub>
+     3
+    </sub>
+    , SO
+    <sub>
+     2
+    </sub>
+    , and H
+    <sub>
+     2
+    </sub>
+    S
+   </b>
+   all cause problems in cooling water. They cause fouling, microbiological growth, high chlorine usage, and precipitation of cooling water treatment chemicals. These contaminants are caused by leakage from the exchangers into the bulk cooling water.
+  </p>
+<h2>
+   Objective 2
+  </h2>
+<p>
+<b>
+    Describe control methods for a cooling water system for control of corrosion, fouling, and microbiological attack including chloride corrosion, and delignification.
+   </b>
+</p>
+<h3>
+   CORROSION CONTROL
+  </h3>
+<p>
+   Corrosion control can be accomplished by changing the type of metal that is used, if possible, or by treating the cooling water making it less corrosive. Changing to metals that are more corrosion resistant is very costly. Alloy metals are available that are resistant to generalized corrosion, but they may be more prone to localized corrosion, such as stress corrosion cracking.
+  </p>
+<p>
+   The cooling water system environment can be changed by:
+  </p>
+<ul style="list-style-type: none">
+<li>
+    • Forming a protective film of Calcium Carbonate (
+    \(
+     \text{CaCO}_3
+    \)
+    ) on the metal surface. The source of the film material is the natural calcium and alkalinity in the water.
+   </li>
+<li>
+    • Removing the oxygen from the cooling water. The oxygen is corrosive and can be removed by mechanical or chemical means.
+   </li>
+<li>
+    • Adding corrosion inhibitors.
+   </li>
+</ul>
+<h4>
+   Protective Films
+  </h4>
+<p>
+   A film of calcium carbonate scale can be used to control corrosion. The Langelier Saturation Index (LSI) can be used to predict the tendency of a water to deposit or dissolve calcium carbonate. If the LSI number is positive, the calcium carbonate tends to deposit. A negative LSI means the calcium carbonate tends to dissolve or stay in solution. If the value is 0 the water is in equilibrium.
+  </p>
+<p>
+   A uniform coating of
+   \(
+    \text{CaCO}_3
+   \)
+   separates the heat transfer surfaces from the cooling water. This method of corrosion control, used by itself, is not good enough as excessive scale often forms in the high heat transfer areas. The LSI of the water is a useful tool for selecting types of treatments used for cooling water. The LSI graph with instructions for its use is shown in Fig. 5.
+  </p>
+<p>
+   The LSI is found by
+   \(
+    \text{pH}_a
+   \)
+   (actual pH) minus
+   \(
+    \text{pH}_s
+   \)
+   <br/>
+   \(
+    \text{pH}_s
+   \)
+   is the sum of
+   \(
+    \text{pCa}
+   \)
+   ,
+   \(
+    \text{pALK}
+   \)
+   , and the C scale values read off the chart
+  </p>
+<p>
+   Values for
+   \(
+    \text{pCa}
+   \)
+   ,
+   \(
+    \text{pALK}
+   \)
+   , and a total solids value from the C scale are read off the chart. The values are found by:
+  </p>
+<h3>
+   CORROSION INHIBITOR
+  </h3>
+<p>
+   A corrosion inhibitor is a chemical added to the cooling water that decreases the corrosion rate. Inhibitors function by passivation, precipitation, or adsorption.
+  </p>
+<ul style="list-style-type: none">
+<li>
+    •
+    <b>
+     Passivation inhibitors
+    </b>
+    form a protective oxide film on the metal surface. They are anodic, meaning that they work by forming a film of oxide on the metal which protects it from contacting corrosive ions. These films are tenacious and are rapidly restored if removed. They are very economical as well.
+   </li>
+<li>
+    •
+    <b>
+     Precipitating inhibitors
+    </b>
+    are cathodic, meaning that they form insoluble films that coat the heat exchange surfaces. They are not as tenacious as passivating films and take longer to repair if destroyed.
+   </li>
+<li>
+    •
+    <b>
+     Adsorption inhibitors
+    </b>
+    are adsorbed on the surface of the metal. They are usually organic compounds.
+   </li>
+<li>
+    •
+    <b>
+     Oxygen scavengers
+    </b>
+    are compounds that react with dissolved oxygen in the water so that the oxygen is unable to react corrosively with the metal.
+   </li>
+</ul>
+<h4>
+   Passivation Inhibitors
+  </h4>
+<p>
+   Passivation inhibitors are anodic inhibitors. Examples are nitrite (
+   \(
+    \text{NO}_2
+   \)
+   ), chromate (
+   \(
+    \text{CrO}_4
+   \)
+   ), molybdate (
+   \(
+    \text{MoO}_4
+   \)
+   ), and orthophosphate (
+   \(
+    \text{PO}_4
+   \)
+   ). They are oxidizers and promote passivation by increasing the electrical potential of the iron. Chromate is an excellent inhibitor, but due to environmental and health concerns it is being phased out of use.
+  </p>
+<p>
+   Orthophosphate and molybdate are good passivators that perform in the presence of oxygen. Molybdate is an excellent passivator but finds limited use because of cost. Orthophosphate becomes an excellent passivator in the presence of oxygen. It precipitates with calcium. Chemicals that block the precipitation are added to the treatment.
+  </p>
+<h4>
+   Precipitating Inhibitors
+  </h4>
+<p>
+   These inhibitors are cathodic and form insoluble films that coat the heat exchange surfaces. An example is zinc which precipitates as zinc hydroxide, or zinc phosphate. Calcium carbonate (
+   \(
+    \text{CaCO}_3
+   \)
+   ) and calcium orthophosphate (
+   \(
+    \text{CaHPO}_4
+   \)
+   ) are also common precipitating inhibitors. Orthophosphate is both an anionic passivator and cathodic inhibitor.
+  </p>
+<h4>
+   Adsorption Inhibitors
+  </h4>
+<p>
+   Adsorption inhibitors are usually organic materials that are adsorbed on the metal surface. They are organic compounds, such as amines containing nitrogen groups, or organic compounds containing sulphur or hydroxyl groups. These inhibitors are limited in cooling water applications because they are biodegradable and toxic to fish.
+  </p>
+<h4>
+   Scale
+  </h4>
+<p>
+   Substances that are dissolved in the water can form scale deposits. They precipitate out of the water at the heat transfer surface. Precipitation occurs when solubilities are exceeded in the bulk water or at the heat transfer surface. The most common scale-forming salts are those whose solubility decreases with increasing temperatures. They form scale at the highest temperatures in the system, usually at the heat transfer surfaces. Scale is not always temperature related. Calcium carbonate and calcium sulfate scaling occur when their solubility is exceeded in the bulk water. Keeping the total dissolved solids (TDS), conductivity, pH, and cycles of concentration within limits controls scale formation. Chemicals are included in cooling water treatment programs to keep ions in solution. Examples are
+   <b>
+    polyphosphates
+   </b>
+   , a group of complex inorganic phosphates, that keep iron in solution and
+   <b>
+    EDTA
+   </b>
+   (ethylenediamine tetraacetic acid, a chelating element) which keeps calcium hardness in solution. As concentrations increase, the contaminant solutions reach the saturation point, and the contaminant ions will tend to crystallize and fall out of solution. Threshold inhibitors can be added to prevent crystal formation and allow a degree of supersaturation of ions.
+  </p>
+<img alt="A black and white photograph showing a close-up of a metal surface, likely a tubesheet, covered in numerous dark, irregular, circular deposits of calcium carbonate (CaCO3) scale. The deposits vary in size and density, with some appearing as small spots and others as larger, more confluent patches. The background surface has a fine, grainy texture." src="32a03202e95ff09a974e12e4be687885_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    A black and white photograph showing a close-up of a metal surface, likely a tubesheet, covered in numerous dark, irregular, circular deposits of calcium carbonate (CaCO3) scale. The deposits vary in size and density, with some appearing as small spots and others as larger, more confluent patches. The background surface has a fine, grainy texture.
+   </div>
+</div>
+<p>
+   Figure 6
+   <br/>
+<chem>
+    CaCO3
+   </chem>
+   Fouled Tubesheet
+  </p>
+<h4>
+   Fouling
+  </h4>
+<p>
+   Fouling occurs when insoluble particles in cooling water form deposits on a surface as shown in Fig. 6. Depending on the source, cooling water may contain dissolved solids, organic matter, mollusks and shellfish, and suspended solids. All of these substances can contribute to fouling. The sources of these substances are the makeup water, airborne material picked up in the cooling tower, process leaks and corrosion. Iron and aluminum are troublesome as they also act as coagulants. Fouling is controlled by the following means:
+  </p>
+<ul style="list-style-type: none">
+<li>
+    •
+    <b>
+     Removing Particulate Matter.
+    </b>
+    Removal of particles in the makeup water can be accomplished by filtration or sedimentation. Often, recirculating cooling water
+   </li>
+</ul>
+<h4>
+   CHLORIDE CORROSION
+  </h4>
+<p>
+   Stress corrosion cracking can be induced in cooling water systems by concentrations of chlorides. Chlorides can concentrate in crevices and restricted flow areas to 100 times their concentration in the original water supply. Austenitic stainless steels (300 series) and brasses are examples of metals that are susceptible to chloride induced stress corrosion in cooling water systems. Factors that are necessary for stress corrosion cracking in a cooling water system are:
+  </p>
+<ul style="list-style-type: none">
+<li>
+    • Temperatures above 150°C
+   </li>
+<li>
+    • High chloride content of the cooling water (for stainless steel). The chlorides concentrate under deposits and in crevices. For brass, the ammonium ion is the contributing ion for corrosion.
+   </li>
+<li>
+    • Metal that is under thermal or mechanical stress such as heat exchanger shells or tubes.
+   </li>
+</ul>
+<p>
+   An effective way to control stress corrosion cracking in cooling water systems is to keep the heating surfaces free of deposits. This can be accomplished with a deposit control program and a corrosion inhibitor.
+  </p>
+<h3>
+   DELIGNIFICATION
+  </h3>
+<p>
+   Many cooling towers are constructed of wood. The structural components are often constructed of wood, with the fill containing wood fill or PVC fill. The types of wood used are redwood and pressure treated Douglas fir. Wood is composed of three major components: cellulose, lignin, and natural extractives. Cellulose consists of long fibres that give wood its strength. Lignin is the material that cements, or bonds, the cellulose fibres together. The natural extractives give the wood its colour and make it resistant to decay. Normally, the more highly coloured woods are the most durable. The extractives are water-soluble and are removed by circulating cooling water. This leaching process makes the wood more susceptible to decay but has a minor effect on the strength of the wood.
+  </p>
+<p>
+   Delignification is the removal of the lignin in the wood by chemical attack. The wood looks more white, or bleached, in appearance. Its surface takes on a rougher appearance. As the wood fibres lose the lignin gluing them together, some fibres may wash off in areas of high flow or turbulence. The presence of fibres in screens or filters may indicate high rates of delignification. Oxidizing agents and alkaline materials cause this chemical attack. Fungi in the water will also attack lignin. When the chlorine residual is above 1 mg/L and the pH is above 8.0 simultaneously, deterioration of the wood is particularly severe. Delignification is most prevalent in the wetted areas of the tower and in the fill section. It can occur in areas that are alternately wet and dry, such as the louvers and other wet areas of the plenum chambers.
+  </p>
+<h2>
+   Objective 3
+  </h2>
+<p>
+<b>
+<i>
+     Describe the potential effects of wastewater discharge.
+    </i>
+</b>
+</p>
+<h3>
+<b>
+    WASTEWATER DISCHARGE
+   </b>
+</h3>
+<p>
+   Industrial plants require large volumes of water for cooling and process use. Before water is discharged to any water source, it may need to be treated to minimize effects it may have on the environment. Government approval is required before any wastewater may be discharged. The approval spells out the quantities of the various pollutants that may be discharged to a specific water source, as well as the temperature, pH, and volume of the water that can be discharged. The permitted quantities ensure that other users of the water source will have the water quality needed for their purposes. Examples of other water uses include industrial, municipal, agricultural, or recreational. Wastewater treatment is normally required for both dissolved and suspended solids. Solid and liquid wastes have to be disposed of. Often, treated wastewater can be reused in one of the plant water cycles, such as cooling water.
+  </p>
+<h4>
+<b>
+    Organic Compounds
+   </b>
+</h4>
+<p>
+   The amount of organic compounds that may be discharged depends upon the effect they have upon the oxygen level in the water. Organisms in the water will use the organic compounds for food. These biochemical reactions consume oxygen in the water. The oxygen is replenished at a slow rate from contact with air. When the organisms are consuming more oxygen than is being dissolved from the atmosphere, the level of dissolved oxygen in the water drops off. Low levels of oxygen lead to the death of fish and other aquatic life forms. If the oxygen level reaches near zero, the water turns black and produces sulfurous types of odours. The level of organic compounds is measured as chemical oxygen demand (COD) or biochemical oxygen demand (BOD).
+  </p>
+<h4>
+<b>
+    Nutrients
+   </b>
+</h4>
+<p>
+   Nutrients are food for plants and other organisms. Common nutrients are phosphorous and nitrogen. They have the same effect on water as organic compounds. Some organisms use nitrogen as a food source and consume oxygen. Phosphorous is food for algae that grows in surface waters. Algae produce oxygen in the presence of sunlight but consume oxygen in the dark.
+  </p>
+<h4>
+<b>
+    Suspended Solids
+   </b>
+</h4>
+<p>
+   Suspended solids in a water stream may settle out of the water or stay suspended. They increase the turbidity of the water and inhibit the sunlight. With no light source, some
+  </p>
+
+
+<h1>
+   Objective 4
+  </h1>
+<p>
+<b>
+    Compare and contrast mechanical, chemical, and biological methods of wastewater treatment including the advantages and disadvantages of each.
+   </b>
+</p>
+<h2>
+   MECHANICAL WASTEWATER TREATMENT
+  </h2>
+<p>
+   Wastewater contaminants that are not soluble in water may be removed by physical means. These contaminants include suspended solids, oil, and grease. Some soluble or dissolved contaminants may be chemically converted to insoluble forms. They can then be removed by mechanical means.
+  </p>
+<h3>
+   Gravity Separation
+  </h3>
+<p>
+   Wastewater systems use a gravity separation step to remove suspended solids as well as oil. The equipment used for gravity separation in waste treatment is similar to clarification equipment in water pretreatment. Rectangular tanks are used that have moving scrapers or rakes at the bottom for removing the solids. They are built large enough to reduce the horizontal fluid velocity to approximately 30 cm per minute. Typically, they have a length that is about 3 to 5 times their width. Their depth is usually 1 to 3 metres.
+  </p>
+<p>
+   Circular wastewater clarifiers, such as the one shown in Fig. 8, are designed for a certain surface area. The area is large enough to provide a rise rate of the water of 210-280 litres per day per m
+   <sup>
+    2
+   </sup>
+   . If the rise rate is too high, the force of the rising water will keep small particles in suspension.
+  </p>
+<h2>
+   CHEMICAL WASTEWATER TREATMENT
+  </h2>
+<p>
+   Chemicals are often used to aid in filtration and air flotation. Another chemical treatment method involves raising the pH of the wastewater. This treatment is used on waters that contain metals that are soluble at low pH. Raising the pH causes the metals to precipitate as metal oxides or metal hydroxides. Chemicals commonly used to raise the pH of the wastewater include lime or calcium oxide (
+   \(
+    \text{CaO}
+   \)
+   ), sodium hydroxide (
+   \(
+    \text{NaOH}
+   \)
+   ), and soda ash or sodium carbonate (
+   \(
+    \text{Na}_2\text{CO}_3
+   \)
+   ).
+  </p>
+<h2>
+   BIOLOGICAL WASTEWATER TREATMENT
+  </h2>
+<p>
+   Various types of microorganisms use dissolved and suspended organic compounds as a food source. This naturally occurs in lakes and streams. The natural ability of microorganisms to break down organics is utilized in wastewater plants, helping to make the water safe for discharge.
+  </p>
+<h3>
+   Biochemical Reactions
+  </h3>
+<p>
+   The biodegradable contaminants in water are measured in terms of biochemical oxygen demand (BOD). This is a measure of the oxygen consumed by microorganisms as they consume organics. Fig. 9 illustrates soluble organic waste entering a biological oxidation reaction. The reaction produces clean water plus an insoluble settleable mass. The mass settles out and is removed by mechanical means. The purity of effluent water depends on the amount of food remaining after treatment. Ideally, there will be none or nearly none left. Biological treatment is operated so as to keep the microorganisms as healthy as possible.
+  </p>
+<img alt="" src="e773db1555e5afc510b9d49d2c74574c_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<table>
+<tr data-bbox="193 1127 1338 1165">
+<td>
+      Food (organic compounds)
+     </td>
+<td rowspan="4">
+      ⇒
+     </td>
+<td>
+      Cellular Matter and microorganisms
+     </td>
+</tr>
+<tr data-bbox="193 1165 1338 1203">
+<td>
+      Microorganisms
+     </td>
+<td>
+      Carbon Dioxide
+     </td>
+</tr>
+<tr data-bbox="193 1203 1338 1241">
+<td>
+      Oxygen
+     </td>
+<td>
+      Water
+     </td>
+</tr>
+<tr data-bbox="193 1241 1338 1278">
+<td>
+      Nutrients
+     </td>
+<td>
+      Energy
+     </td>
+</tr>
+</table>
+</div>
+<img alt="Flowchart of the Biological Oxidation Process" src="715219db84ec2a5622d09f9d822b4550_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<p>
+    The diagram illustrates the biological oxidation process. At the top, 'Soluble Organic Waste' is shown with a downward arrow pointing to a central rectangular box labeled 'BIOLOGICAL OXIDATION'. From the right side of this box, an arrow points to 'Insoluble Settleable Biomass'. From the bottom of the box, an arrow points down to 'Clean Water'.
+   </p>
+<div class="img-alt">
+    Flowchart of the Biological Oxidation Process
+   </div>
+</div>
+<p>
+   Figure 9
+   <br/>
+   Biological Oxidation Process
+  </p>
+<h1>
+   Objective 5
+  </h1>
+<p>
+<b>
+    Specify an appropriate method of wastewater treatment for a particular case study.
+   </b>
+</p>
+<h2>
+   PLANT WASTEWATER
+  </h2>
+<p>
+   All types of industrial plants and power plants produce wastewater. The waters come from areas of the plant such as the demineralizers, the cooling tower blowdown, boiler blowdown, sanitary waste, and process waters. The wastewater is normally gathered in storage ponds or tanks and prepared for disposal. In some cases, the water quality is adequate for use in another area of the plant. For example, the boiler blowdown is often used as makeup water for the cooling tower.
+  </p>
+<p>
+   Water quality includes such variables as total dissolved solids, pH, and contaminants like ammonia and heavy metals. A mass balance with detailed water analysis needs to be carried out before wastewater recycling is attempted. The wastewater flows of an industrial plant are shown in Fig. 10. The wastewater streams are collected and sent to the wastewater treatment system, which is a vapour recompression process shown in Figure 11. The treatment system concentrates the dissolved solids into one small volume stream that is sent to a solar evaporation pond. The bulk of the water is sent back to the cooling tower for reuse.
+  </p>
+<p>
+   Some modern plants may be designed to return zero water back to the source stream (river or lake). These plants are termed zero effluent plants. Common ways of achieving zero discharge are:
+  </p>
+<ul style="list-style-type: none">
+<li>
+    • Recycling the best quality (lower conductivity) water. An example of this is discharging boiler blowdown water to the clarifier inlet or cooling tower makeup.
+   </li>
+<li>
+    • Routing makeup water filter backwashes back to the inlet of the clarifier.
+   </li>
+<li>
+    • Reusing some of the regeneration waste from the demineralizer regenerations on the next regeneration.
+   </li>
+<li>
+    • Using the cooling tower blowdown for irrigation of crops.
+   </li>
+</ul>
+<p>
+   conical sump at the bottom of the evaporator. The solution runs down the inside of the tubes (falling film evaporator). The tubes are heated by the vapours on the shell side of the exchanger.
+  </p>
+<p>
+   Solution that boils off the inside of the tubes exits at the top of the tubes and enters the shell side. An electric-driven vapour compressor compresses vapours at the bottom of the shell side. The compressed and heated vapours are piped back to the top of the shell side. This steam supplies the heat for the tubes to evaporate more solution on the inside of the tubes. Vapour condensing on the shell side is quite pure, as it is steam condensate. The water is drawn off the shell side and pumped through the heat exchanger for reuse.
+  </p>
+<img alt="Figure 11: Wastewater Treatment Flows (Vapour Recompression Process). The diagram shows a process flow starting with 'Mixed Wastes (biowdown, etc.)' and 'Acid Feed' entering a 'Feed Tank'. A 'Feed Pump' moves the liquid from the tank to a 'Heat Exchanger'. From the heat exchanger, the liquid enters a 'Deaerator' which has a 'Vent' at the top. The liquid then enters a 'Falling Film Evaporator'. Vapors from the top of the evaporator go to a 'Steam Compressor', which then returns them to the top of the evaporator. Condensate from the shell side of the evaporator goes to a 'Condensate Tank', which is then pumped by a 'Condensate Pump' back through the 'Heat Exchanger' for reuse. Concentrate from the bottom of the evaporator is drawn off by a 'Recirculation Pump' and sent 'to Pond'. A line labeled 'Condensate to Polishing demineralizer for boiler makeup' is also shown." src="9e6062272bbe3ddbb7c0606721d64cf0_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    Figure 11: Wastewater Treatment Flows (Vapour Recompression Process). The diagram shows a process flow starting with 'Mixed Wastes (biowdown, etc.)' and 'Acid Feed' entering a 'Feed Tank'. A 'Feed Pump' moves the liquid from the tank to a 'Heat Exchanger'. From the heat exchanger, the liquid enters a 'Deaerator' which has a 'Vent' at the top. The liquid then enters a 'Falling Film Evaporator'. Vapors from the top of the evaporator go to a 'Steam Compressor', which then returns them to the top of the evaporator. Condensate from the shell side of the evaporator goes to a 'Condensate Tank', which is then pumped by a 'Condensate Pump' back through the 'Heat Exchanger' for reuse. Concentrate from the bottom of the evaporator is drawn off by a 'Recirculation Pump' and sent 'to Pond'. A line labeled 'Condensate to Polishing demineralizer for boiler makeup' is also shown.
+   </div>
+</div>
+<p>
+   Figure 11
+   <br/>
+   Wastewater Treatment Flows (Vapour Recompression Process)
+  </p>
+<p>
+   The evaporator used in Fig. 11 is shown in more detail in Fig. 12. The distribution system at the top of the tubesheet is used to create the falling film inside the tubes. The vapour body provides a chamber for the collection of vapours going to the compressor. Concentrate is drawn off by the recirculation pump to maintain the desired concentration. These evaporators are constructed of exotic metals such as chrome-moly and titanium as the concentrated water is very corrosive.
+  </p>
+<h1>
+   Objective 6
+  </h1>
+<p>
+<b>
+    Describe the methods used for potable water treatment and analysis.
+   </b>
+</p>
+<h2>
+   POTABLE WATER TREATMENT
+  </h2>
+<p>
+   Potable water treatment means the preparation of water to drinking water standards. The water must be safe for human consumption. Groundwater and surface water sources contain impurities. The amount and type of impurities determine the type of treatment needed to bring the water to drinking water standards.
+  </p>
+<h3>
+   Treatment Systems
+  </h3>
+<p>
+   Water treatment systems for potable water are similar to those for industrial water pretreatment. Depending upon the water being treated, processes such as softening, chlorination, and filtration are common. Well waters may require little in the way of treatment as they usually contain no suspended solids. They may, however, contain high levels of dissolved minerals, such as iron, calcium, and magnesium. Waters from lakes and rivers need a process such as filtration to remove the suspended solids. The amount and types of impurities determine the types of treatment needed to bring the water to drinking water standards.
+  </p>
+<img alt="Diagram showing seven different water treatment processes. Each process is shown as a horizontal line with boxes representing treatment steps. 1. Only chlorination (Cl). 2. Filtration (F) then chlorination (Cl). 3. Aeration (A), then Filtration (F), then chlorination (Cl). 4. Fast Mix (FM), then Filtration (F), then chlorination (Cl). 5. Fast Mix (FM), Slow Mix (SM), Sedimentation Basin (SED), Filtration (F), then chlorination (Cl). 6. Filtration (F), Zeolite (Z), then chlorination (Cl). 7. Fast Mix (FM), Slow Mix (SM), Sedimentation Basin (SED), Filtration (F), Zeolite (Z), then chlorination (Cl). A legend at the bottom defines the abbreviations: A - Aerator, F - Filter, FM - Fast Mix, SM - Slow Mix, SED - Sedimentation Basin, Z - Zeolite, Cl - Chlorination." src="ca5566458a134032dd860e88fdaa0d2b_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<p>
+    Legend: A - Aerator, F - Filter, FM - Fast Mix, SM - Slow Mix, SED - Sedimentation Basin, Z - Zeolite, Cl - Chlorination
+   </p>
+<div class="img-alt">
+    Diagram showing seven different water treatment processes. Each process is shown as a horizontal line with boxes representing treatment steps. 1. Only chlorination (Cl). 2. Filtration (F) then chlorination (Cl). 3. Aeration (A), then Filtration (F), then chlorination (Cl). 4. Fast Mix (FM), then Filtration (F), then chlorination (Cl). 5. Fast Mix (FM), Slow Mix (SM), Sedimentation Basin (SED), Filtration (F), then chlorination (Cl). 6. Filtration (F), Zeolite (Z), then chlorination (Cl). 7. Fast Mix (FM), Slow Mix (SM), Sedimentation Basin (SED), Filtration (F), Zeolite (Z), then chlorination (Cl). A legend at the bottom defines the abbreviations: A - Aerator, F - Filter, FM - Fast Mix, SM - Slow Mix, SED - Sedimentation Basin, Z - Zeolite, Cl - Chlorination.
+   </div>
+</div>
+<p>
+   Figure 13
+   <br/>
+   Processes for Treating Potable Water
+  </p>
+<p>
+   If these standards are exceeded, the source of contamination must be eliminated and/or the disinfectant dosage increased immediately. The most common materials used for disinfection are chlorine, sodium hypochlorite, ozone, ultraviolet light, and iodine.
+  </p>
+<h4>
+   Chlorination
+  </h4>
+<p>
+   Chlorination is accomplished using gas, liquid, or solid forms of chlorine.
+  </p>
+<ul style="list-style-type: none">
+<li>
+    •
+    <b>
+     Chlorine gas
+    </b>
+    (
+    \(
+     \text{Cl}_2
+    \)
+    ) is often fed directly into the water.
+   </li>
+<li>
+    •
+    <b>
+     Sodium hypochlorite
+    </b>
+    (
+    \(
+     \text{NaOCl}_{(\text{aq})}
+    \)
+    ) is an aqueous, or liquid, form of chlorination.
+   </li>
+<li>
+    •
+    <b>
+     Calcium hypochlorite
+    </b>
+    (
+    \(
+     \text{Ca}(\text{OCl})_2
+    \)
+    ) is fed as granules (dry) or mixed with water and fed as a liquid.
+   </li>
+</ul>
+<p>
+   Chlorine gas is a respiratory irritant and is toxic. Many systems of all sizes use liquid sodium hypochlorite and other chemicals that are more stable than chlorine gas, and less hazardous to the safety of people in the vicinity. The chlorine solution is fed to the water by a pump designed to give strict control over the amount that it pumps. Diaphragm pumps or plunger pumps with variable speed and stroke can be used to control the chlorine input. Some systems use chlorine gas as the source, and must take appropriate safety precautions to safeguard their staff.
+  </p>
+<p>
+   The reaction of chlorine on microorganisms is usually fatal. Some organisms are more resistant to chlorine than others. Larger organisms generally have a tolerance to increased levels of chlorine (some algae are controlled more easily with an appropriate solution of copper sulphate). A free chlorine residual of 0.3 mg/L may be carried in potable water, which is lethal to most bacteria. Chlorine combines with chemicals in the bacteria, disrupting normal cell function, causing death.
+  </p>
+<h4>
+   Chlorine Dosage
+  </h4>
+<p>
+   Many substances in water react with chlorine. If iron, manganese, nitrites, or hydrogen sulphide is present in the water, they act as reducing agents reacting with the chlorine. The products of these reductions are not useful as a disinfectant so more chlorine must be added. Another group of materials that react with chlorine are organics that form chloro-organic compounds. These are not useful as disinfectants, and are carcinogenic and so dangerous to human health.
+  </p>
+<p>
+   Additional chlorine reacts with ammonia or amines to form chloramines which are useful as disinfectants, although not strong ones. Chloramines have unpleasant odours. If more chlorine is added, the chloramines will be oxidized. The chlorine uses up each of the contaminants referred to by combining with it. The quantity of chlorine used to this point is known as
+   <b>
+    chlorine demand
+   </b>
+   . The chlorine demand of water varies over the year as water conditions change.
+  </p>
+<img alt="Figure 14: Chlorine Breakpoint graph showing Chlorine Residual (mg/L) vs. Chlorine Added (mg/L)." src="4086a572c080354982c11f1de4d6921d_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<p>
+    The graph illustrates the relationship between chlorine added and residual, showing the following phases:
+   </p>
+<ul style="list-style-type: none">
+<li>
+<b>
+      Destruction of Chlorine by Reducing Compounds:
+     </b>
+     From 0 to approximately 1 mg/L of chlorine added, the residual remains at 0.
+    </li>
+<li>
+<b>
+      Formation of Chloro-organics and Chloramines:
+     </b>
+     From 1 to 5 mg/L added, the 'Combined Residual' increases linearly to a peak of about 0.15 mg/L.
+    </li>
+<li>
+<b>
+      Chloramine Destruction:
+     </b>
+     From 5 to 7 mg/L added, the residual decreases until it reaches the 'breakpoint' at 7 mg/L.
+    </li>
+<li>
+<b>
+      Free Residual:
+     </b>
+     Beyond 7 mg/L added, the 'Free Residual' increases linearly.
+    </li>
+</ul>
+<div class="img-alt">
+    Figure 14: Chlorine Breakpoint graph showing Chlorine Residual (mg/L) vs. Chlorine Added (mg/L).
+   </div>
+</div>
+<p>
+<i>
+    Figure 14
+   </i>
+<br/>
+<i>
+    Chlorine Breakpoint
+   </i>
+</p>
+<p>
+   Before using a chlorine test, be sure that the chlorine and water are well mixed and have had at least ten minutes of contact time. The amount of chlorine gas added to a system to reach a desirable level of free residual is straightforward as chlorine gas delivers 100% chlorine. However, solid calcium hypochlorite contains less chlorine (approximately 50%), and only 70% of that chlorine is available for chlorination as 'free chlorine'.
+  </p>
+<h4>
+   Ozonization
+  </h4>
+<p>
+   Ozone is a form of oxygen. Usually, oxygen occurs naturally as
+   \(
+    O_2
+   \)
+   ; two atoms of oxygen pair together to form the oxygen molecule. Ozone is a combination of three oxygen atoms,
+   \(
+    O_3
+   \)
+   . Ozone does occur in nature. It is generated during a lightning flash and is also generated by high-energy radiation from the sun.
+  </p>
+<p>
+   The third oxygen atom in
+   \(
+    O_3
+   \)
+   is loosely held, and ozone will eventually degrade to
+   \(
+    O_2
+   \)
+   . That is why ozone must be generated at the site where it is to be used. The third oxygen atom readily combines with other material making it a useful disinfectant. Ozone will oxidize bacteria (as well as some taste and odour causing materials) in water. Ozone is generated on-site by passing dry air through a chamber containing electrical arcs. Some of the oxygen is converted to
+   \(
+    O_3
+   \)
+   . It is injected into the water and mixed thoroughly to cause disinfection.
+  </p>
+<h4>
+   Ultraviolet Radiation (UV)
+  </h4>
+<p>
+   Ultraviolet light is used to disinfect water. An arc light is used to create the light source. Water is exposed to the light for sufficient time to kill the organisms in the water. UV disinfection of water is normally achieved by passing the water through tubes lined with UV lamps. This gives efficient disinfection after a contact time of a few seconds. A typical power requirement would be within the range of 10–20
+   \(
+    W/m^3h
+   \)
+   . The lamps disinfect using a wavelength of light around 254 nm. The lamps may continue to
+  </p>
+<p>
+<i>
+    Water Quality.
+   </i>
+   These guidelines are developed in collaboration with all provincial and territorial governments.
+  </p>
+<p>
+<i>
+    Table 2
+   </i>
+<br/>
+<i>
+    Drinking Water Standards
+   </i>
+</p>
+<table border="1">
+<thead>
+<tr data-bbox="125 441 1453 499">
+<th rowspan="2">
+      Constituent
+     </th>
+<th colspan="2">
+      US EPA Drinking Water Standards
+     </th>
+<th colspan="2">
+      Guidelines for Canadian Drinking Water Quality
+     </th>
+</tr>
+<tr data-bbox="125 499 1453 594">
+<th>
+      Recommended limit, mg/L
+     </th>
+<th>
+      Federal mandatory limit, mg/L
+     </th>
+<th>
+      Maximum Concentration mg/L
+     </th>
+<th>
+      Aesthetic Objective mg/L
+     </th>
+</tr>
+</thead>
+<tbody>
+<tr data-bbox="125 594 1453 653">
+<td>
+      Arsenic (As)
+     </td>
+<td>
+      0.01
+     </td>
+<td>
+      0.05
+     </td>
+<td>
+      0.025
+     </td>
+<td>
+</td>
+</tr>
+<tr data-bbox="125 653 1453 711">
+<td>
+      Barium (Ba)
+     </td>
+<td>
+      2.0
+     </td>
+<td>
+      2.0
+     </td>
+<td>
+      1.0
+     </td>
+<td>
+</td>
+</tr>
+<tr data-bbox="125 711 1453 770">
+<td>
+      Cadmium (Cd)
+     </td>
+<td>
+      0.005
+     </td>
+<td>
+      0.01
+     </td>
+<td>
+      0.005
+     </td>
+<td>
+</td>
+</tr>
+<tr data-bbox="125 770 1453 829">
+<td>
+      Chloride
+     </td>
+<td>
+      250
+     </td>
+<td>
+</td>
+<td>
+</td>
+<td>
+      250
+     </td>
+</tr>
+<tr data-bbox="125 829 1453 888">
+<td>
+      Chromium (total) (Cr)
+     </td>
+<td>
+      0.1
+     </td>
+<td>
+      0.1
+     </td>
+<td>
+      0.05
+     </td>
+<td>
+</td>
+</tr>
+<tr data-bbox="125 888 1453 968">
+<td>
+      Colour
+     </td>
+<td>
+      15 CU
+      <br/>
+      (color units)
+     </td>
+<td>
+</td>
+<td>
+</td>
+<td>
+      15 CU
+      <br/>
+      (color units)
+     </td>
+</tr>
+<tr data-bbox="125 968 1453 1026">
+<td>
+      Copper (Cu)
+     </td>
+<td>
+      1.0
+     </td>
+<td>
+      1.3
+     </td>
+<td>
+</td>
+<td>
+      1.0
+     </td>
+</tr>
+<tr data-bbox="125 1026 1453 1085">
+<td>
+      Cyanide (CN)
+     </td>
+<td>
+      0.2
+     </td>
+<td>
+      0.2
+     </td>
+<td>
+      0.2
+     </td>
+<td>
+</td>
+</tr>
+<tr data-bbox="125 1085 1453 1144">
+<td>
+      Fluoride (F)
+     </td>
+<td>
+      4.0
+     </td>
+<td>
+      4.0
+     </td>
+<td>
+      1.5
+     </td>
+<td>
+</td>
+</tr>
+<tr data-bbox="125 1144 1453 1203">
+<td>
+      Iron (Fe)
+     </td>
+<td>
+      0.3
+     </td>
+<td>
+      0.3
+     </td>
+<td>
+</td>
+<td>
+      0.3
+     </td>
+</tr>
+<tr data-bbox="125 1203 1453 1262">
+<td>
+      Lead (Pb)
+     </td>
+<td>
+      —
+     </td>
+<td>
+      0.015
+     </td>
+<td>
+      0.010
+     </td>
+<td>
+</td>
+</tr>
+<tr data-bbox="125 1262 1453 1320">
+<td>
+      Manganese (Mn)
+     </td>
+<td>
+      0.05
+     </td>
+<td>
+      —
+     </td>
+<td>
+</td>
+<td>
+      0.05
+     </td>
+</tr>
+<tr data-bbox="125 1320 1453 1379">
+<td>
+      Nitrate (NO
+      <sub>
+       3
+      </sub>
+      )
+     </td>
+<td>
+      10
+     </td>
+<td>
+      10
+     </td>
+<td>
+      10
+     </td>
+<td>
+</td>
+</tr>
+<tr data-bbox="125 1379 1453 1438">
+<td>
+      pH
+     </td>
+<td>
+      6.5 – 8.5
+     </td>
+<td>
+</td>
+<td>
+</td>
+<td>
+      6.5 – 8.5
+     </td>
+</tr>
+<tr data-bbox="125 1438 1453 1497">
+<td>
+      Selenium (Se)
+     </td>
+<td>
+      0.05
+     </td>
+<td>
+      0.05
+     </td>
+<td>
+      0.01
+     </td>
+<td>
+</td>
+</tr>
+<tr data-bbox="125 1497 1453 1556">
+<td>
+      Sulfate (SO
+      <sub>
+       4
+      </sub>
+      )
+     </td>
+<td>
+      250
+     </td>
+<td>
+</td>
+<td>
+</td>
+<td>
+      500
+     </td>
+</tr>
+<tr data-bbox="125 1556 1453 1614">
+<td>
+      Total dissolved solids (TDS)
+     </td>
+<td>
+      500
+     </td>
+<td>
+</td>
+<td>
+</td>
+<td>
+      500
+     </td>
+</tr>
+<tr data-bbox="125 1614 1453 1673">
+<td>
+      Zinc (Zn)
+     </td>
+<td>
+      5.0
+     </td>
+<td>
+</td>
+<td>
+</td>
+<td>
+      5.0
+     </td>
+</tr>
+<tr data-bbox="125 1673 1453 1732">
+<td>
+      Mercury (Hg)
+     </td>
+<td>
+      0.002
+     </td>
+<td>
+      0.002
+     </td>
+<td>
+      0.001
+     </td>
+<td>
+</td>
+</tr>
+<tr data-bbox="125 1732 1453 1866">
+<td>
+      Turbidity NTU (nephelometric procedure)
+     </td>
+<td colspan="4">
+      1 NTU-monthly average
+      <br/>
+      5 NTU – average of two consecutive days
+     </td>
+</tr>
+</tbody>
+</table>
+<h2>
+   Chapter Questions
+  </h2>
+<p>
+   A3.10
+  </p>
+<ol style="list-style-type: none">
+<li>
+    1. Name three factors necessary for stress corrosion cracking in cooling water systems.
+   </li>
+<li>
+    2. Name three types of cooling water systems. Which type is the most common?
+   </li>
+<li>
+    3. How is potable water disinfected? What are the three forms of chlorine used?
+   </li>
+<li>
+    4. How is potable water treatment different from water pretreatment in an industrial plant?
+   </li>
+<li>
+    5. What streams in a power or industrial plant are considered wastewater streams? Explain how some of these streams may be reused or recycled.
+   </li>
+<li>
+    6. Name three basic types of corrosion inhibitors. Explain what is meant by delignification of cooling tower wood.
+   </li>
+<li>
+    7. Explain the significance of organic compounds and suspended solids in wastewater discharge.
+   </li>
+<li>
+    8. Describe the three main types of mechanical wastewater treatment.
+   </li>
+</ol>
+</body>
+</html>

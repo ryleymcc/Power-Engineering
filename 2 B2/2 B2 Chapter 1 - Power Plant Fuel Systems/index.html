@@ -1,0 +1,2247 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+ 
+    <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['\\(', '\\)']],
+        displayMath: [['$$', '$$']]
+      }
+    };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+</head>
+ <body>
+    <div id="nav-header" style="padding: 15px 20px; background: #2c3e50; color: white; display: flex; align-items: center; gap: 20px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+        <a href="../index.html" style="color: white; text-decoration: none; background: #34495e; padding: 8px 16px; border-radius: 4px; font-weight: 600; font-size: 0.9rem; transition: background 0.2s;">← Back to Index</a>
+        <h1 style="margin: 0; font-size: 1.2rem; font-weight: 500; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Power Engineering Series</h1>
+    </div>
+    
+  <h1>
+   <b>
+    Power Engineering
+    <br/>
+    Second Class (B2):
+    <br/>
+    Combustion and Plant Systems
+   </b>
+  </h1>
+  <h2>
+   <b>
+    <u>
+     Table of Contents
+    </u>
+   </b>
+  </h2>
+  <table>
+   <thead>
+    <tr data-bbox="160 571 1291 623">
+     <th>
+      <b>
+       <u>
+        Chapter
+       </u>
+      </b>
+     </th>
+     <th>
+      <b>
+       <u>
+        Page
+       </u>
+      </b>
+     </th>
+    </tr>
+   </thead>
+   <tbody>
+    <tr data-bbox="160 623 1291 665">
+     <td>
+      1. Power Plant Fuel Systems
+     </td>
+     <td>
+      1
+     </td>
+    </tr>
+    <tr data-bbox="160 665 1291 707">
+     <td>
+      2. Power Plant Water and Steam Systems
+     </td>
+     <td>
+      33
+     </td>
+    </tr>
+    <tr data-bbox="160 707 1291 749">
+     <td>
+      3. Measurement and Control Components
+     </td>
+     <td>
+      67
+     </td>
+    </tr>
+    <tr data-bbox="160 749 1291 791">
+     <td>
+      4. Control Instrumentation Systems
+     </td>
+     <td>
+      143
+     </td>
+    </tr>
+    <tr data-bbox="160 791 1291 833">
+     <td>
+      5. Fuels and Combustion Calculations
+     </td>
+     <td>
+      189
+     </td>
+    </tr>
+    <tr data-bbox="160 833 1291 875">
+     <td>
+      6. Firing and Draft Equipment
+     </td>
+     <td>
+      229
+     </td>
+    </tr>
+    <tr data-bbox="160 875 1291 917">
+     <td>
+      7. Combustion Control and Safeguards
+     </td>
+     <td>
+      301
+     </td>
+    </tr>
+    <tr data-bbox="160 917 1291 959">
+     <td>
+      8. Environmental Monitoring
+     </td>
+     <td>
+      339
+     </td>
+    </tr>
+    <tr data-bbox="160 959 1291 1001">
+     <td>
+      9. Environmental Control Methods
+     </td>
+     <td>
+      373
+     </td>
+    </tr>
+    <tr data-bbox="160 1001 1291 1033">
+     <td>
+      End of Chapter Questions and Solutions
+     </td>
+     <td>
+      409
+     </td>
+    </tr>
+   </tbody>
+  </table>
+  <h2>
+   Power Plant Fuel Systems
+  </h2>
+  <h2>
+   1
+  </h2>
+  <h3>
+   Learning Outcome
+  </h3>
+  <p>
+   <i>
+    When you complete this learning material, you will be able to:
+   </i>
+  </p>
+  <p>
+   <i>
+    Describe the design and operation of typical power plant fuel systems.
+   </i>
+  </p>
+  <h3>
+   Learning Objectives
+  </h3>
+  <p>
+   <i>
+    You will specifically be able to complete the following tasks:
+   </i>
+  </p>
+  <ol style="list-style-type: none">
+   <li>
+    1. Describe, using a sketch, the design and operation of fuel oil supply systems.
+   </li>
+   <li>
+    2. Describe, using a sketch, the design and operation of fuel gas supply systems.
+   </li>
+   <li>
+    3. Describe, using a sketch, the design and operation of solid fuel supply systems.
+   </li>
+  </ol>
+  <h3>
+   Objective 1
+  </h3>
+  <p>
+   <b>
+    Describe, using a sketch, the design and operation of fuel oil supply systems.
+   </b>
+  </p>
+  <h4>
+   FUEL OIL PROPERTIES
+  </h4>
+  <p>
+   Fuel oils include most petroleum products which are less volatile than gasoline. The lighter oils are used in internal combustion (diesel) engines and turbines. The heavier oils that require heating are often used to fire boilers.
+  </p>
+  <p>
+   Fuel oil is derived from petroleum (crude oil) and is the residue left after the more volatile constituents have been removed. Commercial fuel oils are refined either by distillation or by cracking.
+  </p>
+  <p>
+   Distillation is the process used to separate oil into its constituent parts. Heat is applied to the crude oil base. The light, more volatile, oil vaporizes and leaves the crude oil. The vapours are captured and condensed. The condensed liquids are termed distillates. The residual oils are the bottoms or crude left after distillation. The residuals can also be blends of residuals and distillates.
+  </p>
+  <p>
+   Cracking is the process used to secure greater gasoline yields from the heavier crude oil fractions. The process of cracking uses heat and pressure to decompose the oil into a new series of hydrocarbons. Cracking, unlike simple distillation, actually changes the hydrocarbon structure and produces more of the valuable lighter hydrocarbons (gasoline) from crude oil. The hydrocarbons are separated according to their boiling range by a distillation process. Commercial fuel oils may be either distillates or residuals and either straight run (distillation) or cracked.
+  </p>
+  <p>
+   The important properties of fuel oil are specific gravity, heating value, viscosity, flash point, fire point, pour point, and sulphur content. Specific gravity is important because oil is sold by volume. Specific gravity in degrees API (American Petroleum Institute) is calculated from the formula:
+  </p>
+  <p>
+   $$
+    \text{Degrees API} = \frac{141.5}{\text{specific gravity at } 15^\circ / 15^\circ} - 131.5
+   $$
+  </p>
+  <p>
+   (Specific gravity at
+   \(
+    15^\circ/15^\circ
+   \)
+   is the specific gravity of the oil at
+   \(
+    15^\circ\text{C}
+   \)
+   referred to the specific gravity of water at
+   \(
+    15^\circ\text{C}
+   \)
+   .) The specific gravity of any petroleum product bears a direct relationship to its heating value. The U.S. Bureau of Standards gives the following equation for the heating value of a fuel oil.
+  </p>
+  <p>
+   Heat of combustion (kJ/kg) = 2.326 [(22,320 - 3,780) x (specific gravity at 15°/15°)]
+  </p>
+  <p>
+   Table 1 shows the relationship between specific gravity and heat values for fuel oil at 15°C.
+  </p>
+  <p>
+   <i>
+    Table 1
+    <br/>
+    Fuel Oil Measurements at 15°
+   </i>
+  </p>
+  <table border="1">
+   <thead>
+    <tr data-bbox="258 434 1383 497">
+     <th>
+      Deg API
+     </th>
+     <th>
+      Specific Gravity
+     </th>
+     <th>
+      kg/L
+     </th>
+     <th>
+      kJ/kg
+     </th>
+     <th>
+      kJ/L
+     </th>
+     <th>
+      kg/barrel
+     </th>
+     <th>
+      kg/m
+      <sup>
+       3
+      </sup>
+     </th>
+    </tr>
+   </thead>
+   <tbody>
+    <tr data-bbox="258 497 1383 527">
+     <td>
+      3
+     </td>
+     <td>
+      1.0520
+     </td>
+     <td>
+      1.0497
+     </td>
+     <td>
+      42 310
+     </td>
+     <td>
+      44 408
+     </td>
+     <td>
+      166.9
+     </td>
+     <td>
+      1049.7
+     </td>
+    </tr>
+    <tr data-bbox="258 527 1383 556">
+     <td>
+      4
+     </td>
+     <td>
+      1.0443
+     </td>
+     <td>
+      1.0413
+     </td>
+     <td>
+      42 426
+     </td>
+     <td>
+      44 174
+     </td>
+     <td>
+      165.7
+     </td>
+     <td>
+      1041.3
+     </td>
+    </tr>
+    <tr data-bbox="258 556 1383 585">
+     <td>
+      5
+     </td>
+     <td>
+      1.0366
+     </td>
+     <td>
+      1.0341
+     </td>
+     <td>
+      42 543
+     </td>
+     <td>
+      43 990
+     </td>
+     <td>
+      164.5
+     </td>
+     <td>
+      1034.1
+     </td>
+    </tr>
+    <tr data-bbox="258 585 1383 615">
+     <td>
+      6
+     </td>
+     <td>
+      1.0291
+     </td>
+     <td>
+      1.0269
+     </td>
+     <td>
+      42 659
+     </td>
+     <td>
+      43 803
+     </td>
+     <td>
+      163.3
+     </td>
+     <td>
+      1026.9
+     </td>
+    </tr>
+    <tr data-bbox="258 615 1383 644">
+     <td>
+      7
+     </td>
+     <td>
+      1.0217
+     </td>
+     <td>
+      1.0185
+     </td>
+     <td>
+      42 775
+     </td>
+     <td>
+      43 566
+     </td>
+     <td>
+      162.1
+     </td>
+     <td>
+      1018.5
+     </td>
+    </tr>
+    <tr data-bbox="258 644 1383 674">
+     <td>
+      8
+     </td>
+     <td>
+      1.0143
+     </td>
+     <td>
+      1.0111
+     </td>
+     <td>
+      42 891
+     </td>
+     <td>
+      43 293
+     </td>
+     <td>
+      160.9
+     </td>
+     <td>
+      1011.1
+     </td>
+    </tr>
+    <tr data-bbox="258 674 1383 703">
+     <td>
+      9
+     </td>
+     <td>
+      1.0071
+     </td>
+     <td>
+      1.0051
+     </td>
+     <td>
+      43 008
+     </td>
+     <td>
+      43 235
+     </td>
+     <td>
+      159.8
+     </td>
+     <td>
+      1005.1
+     </td>
+    </tr>
+    <tr data-bbox="258 703 1383 732">
+     <td>
+      10
+     </td>
+     <td>
+      1.0000
+     </td>
+     <td>
+      0.9979
+     </td>
+     <td>
+      43 124
+     </td>
+     <td>
+      43 093
+     </td>
+     <td>
+      158.8
+     </td>
+     <td>
+      997.9
+     </td>
+    </tr>
+    <tr data-bbox="258 732 1383 762">
+     <td>
+      11
+     </td>
+     <td>
+      0.9930
+     </td>
+     <td>
+      0.9907
+     </td>
+     <td>
+      43 240
+     </td>
+     <td>
+      42 847
+     </td>
+     <td>
+      157.7
+     </td>
+     <td>
+      990.7
+     </td>
+    </tr>
+    <tr data-bbox="258 762 1383 791">
+     <td>
+      12
+     </td>
+     <td>
+      0.9861
+     </td>
+     <td>
+      0.9848
+     </td>
+     <td>
+      43 357
+     </td>
+     <td>
+      42 702
+     </td>
+     <td>
+      156.6
+     </td>
+     <td>
+      984.8
+     </td>
+    </tr>
+    <tr data-bbox="258 791 1383 821">
+     <td>
+      13
+     </td>
+     <td>
+      0.9792
+     </td>
+     <td>
+      0.9776
+     </td>
+     <td>
+      43 473
+     </td>
+     <td>
+      42 504
+     </td>
+     <td>
+      155.5
+     </td>
+     <td>
+      977.6
+     </td>
+    </tr>
+    <tr data-bbox="258 821 1383 850">
+     <td>
+      14
+     </td>
+     <td>
+      0.9725
+     </td>
+     <td>
+      0.9704
+     </td>
+     <td>
+      43 589
+     </td>
+     <td>
+      42 304
+     </td>
+     <td>
+      154.4
+     </td>
+     <td>
+      970.4
+     </td>
+    </tr>
+    <tr data-bbox="258 850 1383 879">
+     <td>
+      15
+     </td>
+     <td>
+      0.9659
+     </td>
+     <td>
+      0.9644
+     </td>
+     <td>
+      43 706
+     </td>
+     <td>
+      42 156
+     </td>
+     <td>
+      153.4
+     </td>
+     <td>
+      964.4
+     </td>
+    </tr>
+    <tr data-bbox="258 879 1383 909">
+     <td>
+      16
+     </td>
+     <td>
+      0.9593
+     </td>
+     <td>
+      0.9572
+     </td>
+     <td>
+      43 822
+     </td>
+     <td>
+      41 953
+     </td>
+     <td>
+      152.3
+     </td>
+     <td>
+      957.2
+     </td>
+    </tr>
+    <tr data-bbox="258 909 1383 938">
+     <td>
+      17
+     </td>
+     <td>
+      0.9529
+     </td>
+     <td>
+      0.9512
+     </td>
+     <td>
+      43 938
+     </td>
+     <td>
+      41 799
+     </td>
+     <td>
+      151.3
+     </td>
+     <td>
+      951.2
+     </td>
+    </tr>
+    <tr data-bbox="258 938 1383 968">
+     <td>
+      18
+     </td>
+     <td>
+      0.9465
+     </td>
+     <td>
+      0.9452
+     </td>
+     <td>
+      44 031
+     </td>
+     <td>
+      41 626
+     </td>
+     <td>
+      150.3
+     </td>
+     <td>
+      945.2
+     </td>
+    </tr>
+    <tr data-bbox="258 968 1383 997">
+     <td>
+      19
+     </td>
+     <td>
+      0.9402
+     </td>
+     <td>
+      0.9380
+     </td>
+     <td>
+      44 147
+     </td>
+     <td>
+      41 418
+     </td>
+     <td>
+      149.3
+     </td>
+     <td>
+      938.0
+     </td>
+    </tr>
+    <tr data-bbox="258 997 1383 1026">
+     <td>
+      20
+     </td>
+     <td>
+      0.9340
+     </td>
+     <td>
+      0.9320
+     </td>
+     <td>
+      44 240
+     </td>
+     <td>
+      41 247
+     </td>
+     <td>
+      148.3
+     </td>
+     <td>
+      932.0
+     </td>
+    </tr>
+    <tr data-bbox="258 1026 1383 1056">
+     <td>
+      21
+     </td>
+     <td>
+      0.9279
+     </td>
+     <td>
+      0.9260
+     </td>
+     <td>
+      44 333
+     </td>
+     <td>
+      41 601
+     </td>
+     <td>
+      147.3
+     </td>
+     <td>
+      926.0
+     </td>
+    </tr>
+    <tr data-bbox="258 1056 1383 1085">
+     <td>
+      22
+     </td>
+     <td>
+      0.9218
+     </td>
+     <td>
+      0.9201
+     </td>
+     <td>
+      44 450
+     </td>
+     <td>
+      40 902
+     </td>
+     <td>
+      146.4
+     </td>
+     <td>
+      920.1
+     </td>
+    </tr>
+    <tr data-bbox="258 1085 1383 1115">
+     <td>
+      23
+     </td>
+     <td>
+      0.9159
+     </td>
+     <td>
+      0.9141
+     </td>
+     <td>
+      44 542
+     </td>
+     <td>
+      40 720
+     </td>
+     <td>
+      145.4
+     </td>
+     <td>
+      914.1
+     </td>
+    </tr>
+    <tr data-bbox="258 1115 1383 1144">
+     <td>
+      24
+     </td>
+     <td>
+      0.9100
+     </td>
+     <td>
+      0.9081
+     </td>
+     <td>
+      44 636
+     </td>
+     <td>
+      40 540
+     </td>
+     <td>
+      144.5
+     </td>
+     <td>
+      908.1
+     </td>
+    </tr>
+    <tr data-bbox="258 1144 1383 1173">
+     <td>
+      25
+     </td>
+     <td>
+      0.9042
+     </td>
+     <td>
+      0.9021
+     </td>
+     <td>
+      44 729
+     </td>
+     <td>
+      40 356
+     </td>
+     <td>
+      143.6
+     </td>
+     <td>
+      902.1
+     </td>
+    </tr>
+    <tr data-bbox="258 1173 1383 1203">
+     <td>
+      26
+     </td>
+     <td>
+      0.8984
+     </td>
+     <td>
+      0.8973
+     </td>
+     <td>
+      44 822
+     </td>
+     <td>
+      40 225
+     </td>
+     <td>
+      142.7
+     </td>
+     <td>
+      897.3
+     </td>
+    </tr>
+    <tr data-bbox="258 1203 1383 1232">
+     <td>
+      27
+     </td>
+     <td>
+      0.8927
+     </td>
+     <td>
+      0.8913
+     </td>
+     <td>
+      44 915
+     </td>
+     <td>
+      40 041
+     </td>
+     <td>
+      141.8
+     </td>
+     <td>
+      891.3
+     </td>
+    </tr>
+    <tr data-bbox="258 1232 1383 1262">
+     <td>
+      28
+     </td>
+     <td>
+      0.8871
+     </td>
+     <td>
+      0.8853
+     </td>
+     <td>
+      45 008
+     </td>
+     <td>
+      39 851
+     </td>
+     <td>
+      140.9
+     </td>
+     <td>
+      885.3
+     </td>
+    </tr>
+    <tr data-bbox="258 1262 1383 1291">
+     <td>
+      29
+     </td>
+     <td>
+      0.8816
+     </td>
+     <td>
+      0.8805
+     </td>
+     <td>
+      45 078
+     </td>
+     <td>
+      39 698
+     </td>
+     <td>
+      140.0
+     </td>
+     <td>
+      880.5
+     </td>
+    </tr>
+    <tr data-bbox="258 1291 1383 1320">
+     <td>
+      30
+     </td>
+     <td>
+      0.8762
+     </td>
+     <td>
+      0.8745
+     </td>
+     <td>
+      45 170
+     </td>
+     <td>
+      39 511
+     </td>
+     <td>
+      139.1
+     </td>
+     <td>
+      874.5
+     </td>
+    </tr>
+    <tr data-bbox="258 1320 1383 1350">
+     <td>
+      31
+     </td>
+     <td>
+      0.8708
+     </td>
+     <td>
+      0.8697
+     </td>
+     <td>
+      45 241
+     </td>
+     <td>
+      39 355
+     </td>
+     <td>
+      138.3
+     </td>
+     <td>
+      869.7
+     </td>
+    </tr>
+    <tr data-bbox="258 1350 1383 1379">
+     <td>
+      32
+     </td>
+     <td>
+      0.8654
+     </td>
+     <td>
+      0.8638
+     </td>
+     <td>
+      45 334
+     </td>
+     <td>
+      39 163
+     </td>
+     <td>
+      137.4
+     </td>
+     <td>
+      863.8
+     </td>
+    </tr>
+    <tr data-bbox="258 1379 1383 1409">
+     <td>
+      33
+     </td>
+     <td>
+      0.8602
+     </td>
+     <td>
+      0.8590
+     </td>
+     <td>
+      45 403
+     </td>
+     <td>
+      39 007
+     </td>
+     <td>
+      136.6
+     </td>
+     <td>
+      859.0
+     </td>
+    </tr>
+    <tr data-bbox="258 1409 1383 1438">
+     <td>
+      34
+     </td>
+     <td>
+      0.8550
+     </td>
+     <td>
+      0.8530
+     </td>
+     <td>
+      45 497
+     </td>
+     <td>
+      38 815
+     </td>
+     <td>
+      135.8
+     </td>
+     <td>
+      853.0
+     </td>
+    </tr>
+    <tr data-bbox="258 1438 1383 1467">
+     <td>
+      35
+     </td>
+     <td>
+      0.8498
+     </td>
+     <td>
+      0.8482
+     </td>
+     <td>
+      45 566
+     </td>
+     <td>
+      38 653
+     </td>
+     <td>
+      134.9
+     </td>
+     <td>
+      848.2
+     </td>
+    </tr>
+    <tr data-bbox="258 1467 1383 1497">
+     <td>
+      36
+     </td>
+     <td>
+      0.8448
+     </td>
+     <td>
+      0.8434
+     </td>
+     <td>
+      45 636
+     </td>
+     <td>
+      38 494
+     </td>
+     <td>
+      134.1
+     </td>
+     <td>
+      843.4
+     </td>
+    </tr>
+    <tr data-bbox="258 1497 1383 1526">
+     <td>
+      37
+     </td>
+     <td>
+      0.8398
+     </td>
+     <td>
+      0.8386
+     </td>
+     <td>
+      45 706
+     </td>
+     <td>
+      38 335
+     </td>
+     <td>
+      133.3
+     </td>
+     <td>
+      838.6
+     </td>
+    </tr>
+    <tr data-bbox="258 1526 1383 1556">
+     <td>
+      38
+     </td>
+     <td>
+      0.8348
+     </td>
+     <td>
+      0.8338
+     </td>
+     <td>
+      45 776
+     </td>
+     <td>
+      38 174
+     </td>
+     <td>
+      132.6
+     </td>
+     <td>
+      833.8
+     </td>
+    </tr>
+    <tr data-bbox="258 1556 1383 1585">
+     <td>
+      39
+     </td>
+     <td>
+      0.8299
+     </td>
+     <td>
+      0.8290
+     </td>
+     <td>
+      45 869
+     </td>
+     <td>
+      38 015
+     </td>
+     <td>
+      131.8
+     </td>
+     <td>
+      829.0
+     </td>
+    </tr>
+    <tr data-bbox="258 1585 1383 1614">
+     <td>
+      40
+     </td>
+     <td>
+      0.8251
+     </td>
+     <td>
+      0.8230
+     </td>
+     <td>
+      45 939
+     </td>
+     <td>
+      37 814
+     </td>
+     <td>
+      131.0
+     </td>
+     <td>
+      823.0
+     </td>
+    </tr>
+    <tr data-bbox="258 1614 1383 1644">
+     <td>
+      41
+     </td>
+     <td>
+      0.8203
+     </td>
+     <td>
+      0.8182
+     </td>
+     <td>
+      46 008
+     </td>
+     <td>
+      37 650
+     </td>
+     <td>
+      130.3
+     </td>
+     <td>
+      818.2
+     </td>
+    </tr>
+    <tr data-bbox="258 1644 1383 1673">
+     <td>
+      42
+     </td>
+     <td>
+      0.8156
+     </td>
+     <td>
+      0.8134
+     </td>
+     <td>
+      46 078
+     </td>
+     <td>
+      37 488
+     </td>
+     <td>
+      129.5
+     </td>
+     <td>
+      813.4
+     </td>
+    </tr>
+   </tbody>
+  </table>
+  <p>
+   Viscosity is measured by the time taken for a standard quantity of oil to flow through a standard orifice. Heavy oils take longer than light oils. Thus, heavy oils have a high viscosity; that is, they are more viscous.
+  </p>
+  <p>
+   There are several standard viscosimeters used for testing oils, such as the Saybolt, Redwood, and Engler. In the U.S. and Canada reference is usually made to the Saybolt reading although conversion tables are available for all scales.
+  </p>
+  <p>
+   Since viscosity varies with temperature, it is necessary to specify the standard viscosimeter used and also the temperature at which the test was done, e.g. Saybolt Universal at 38°C, or Furol at 50°C. Temperature plays a part in the measurement of viscosity. A given oil flows slower at lower temperatures than it does at higher temperatures.
+  </p>
+  <h4>
+   Fuel Oil Grades
+  </h4>
+  <p>
+   ASTM (American Society for Testing and Materials) classifies fuel oils by grade number. The grades range from Grade 1 to Grade 6, with Grade 1 being the lightest and Grade 6 the most viscous. An extract of the standards is shown in Table 2. No. 6 oil is designated as heavy industrial fuel oil or bunker C, often used to fire boilers. An analysis of bunker C oil shows an average composition of carbon 87.3%, hydrogen 10.8%, sulphur 1.2%, nitrogen 0.2%, and oxygen and indeterminate 0.5% with a higher heating value 43 030 kJ/kg.
+  </p>
+  <p>
+   <b>
+    Grade No. 1
+   </b>
+   is a light distillate. It is used in vaporizing type burners. The oil is highly volatile producing a minimum of residue as it evaporates.
+  </p>
+  <p>
+   <b>
+    Grade No. 2
+   </b>
+   is a slightly heavier distillate than No. 1 and is used for atomizing burners. It is easier to handle than the residual oils but is also more costly.
+  </p>
+  <p>
+   <b>
+    Grade No. 4 (light)
+   </b>
+   is a heavy distillate or a distillate and residual blend. It requires pressure to be atomized at the burner. It requires little or no heating to be stored and pumped.
+  </p>
+  <p>
+   <b>
+    Grade No. 4
+   </b>
+   is a heavy distillate or a heavy residual and distillate fuel blend. It requires little heating except for extremely cold weather. It is used with atomizing burners.
+  </p>
+  <p>
+   <b>
+    Grade No. 5 (light)
+   </b>
+   is a residual fuel of mid viscosity. It usually requires some preheating and atomizing types of burners.
+  </p>
+  <p>
+   <b>
+    Grade No. 5 (heavy)
+   </b>
+   is a residual oil heavier than No. 5 (light) and is used in similar applications. Some preheating is required in cold ambient conditions.
+  </p>
+  <p>
+   <b>
+    Grade No. 6
+   </b>
+   is also called bunker C. It is high viscosity oil that requires heating for storage and pumping as well as additional heating for atomizing at the burners.
+  </p>
+  <p style="text-align: center;">
+   <i>
+    Table 2
+   </i>
+   <br/>
+   <i>
+    Commercial Standards for Fuel Oils No's 1 to 6
+   </i>
+  </p>
+  <table border="1">
+   <thead>
+    <tr data-bbox="256 268 1461 331">
+     <th rowspan="2">
+      Number
+     </th>
+     <th rowspan="2">
+      Description
+     </th>
+     <th rowspan="2">
+      Flash Point °C
+     </th>
+     <th rowspan="2">
+      Pour Point °C
+     </th>
+     <th colspan="2">
+      Viscosity Seconds
+     </th>
+    </tr>
+    <tr data-bbox="256 331 1461 426">
+     <th>
+      Saybolt Universal at 38°C
+     </th>
+     <th>
+      Saybolt Furol at 50°C
+     </th>
+    </tr>
+   </thead>
+   <tbody>
+    <tr data-bbox="256 426 1461 510">
+     <td>
+      1
+     </td>
+     <td>
+      Distillate oil (Volatile fuel)
+     </td>
+     <td>
+      74 Max.
+     </td>
+     <td>
+      -18
+     </td>
+     <td>
+      --
+     </td>
+     <td>
+      --
+     </td>
+    </tr>
+    <tr data-bbox="256 510 1461 594">
+     <td>
+      2
+     </td>
+     <td>
+      Distillate oil (Moderately volatile)
+     </td>
+     <td>
+      88 Max.
+     </td>
+     <td>
+      -12
+     </td>
+     <td>
+      --
+     </td>
+     <td>
+      --
+     </td>
+    </tr>
+    <tr data-bbox="256 594 1461 678">
+     <td>
+      4
+     </td>
+     <td>
+      Distillate oil (Low viscosity)
+     </td>
+     <td>
+      110 Max.
+     </td>
+     <td>
+      -7
+     </td>
+     <td>
+      35
+     </td>
+     <td>
+      --
+     </td>
+    </tr>
+    <tr data-bbox="256 678 1461 762">
+     <td>
+      5
+     </td>
+     <td>
+      Medium viscosity (Residual oil)
+     </td>
+     <td>
+      54 Min.
+     </td>
+     <td>
+      --
+     </td>
+     <td>
+      50
+     </td>
+     <td>
+      40
+     </td>
+    </tr>
+    <tr data-bbox="256 762 1461 846">
+     <td>
+      6
+     </td>
+     <td>
+      High viscosity (Residual oil)
+     </td>
+     <td>
+      66 Min.
+     </td>
+     <td>
+      --
+     </td>
+     <td>
+      900
+      <br/>
+      9000
+     </td>
+     <td>
+      Min. 45
+      <br/>
+      Max. 300
+     </td>
+    </tr>
+   </tbody>
+  </table>
+  <p>
+   The flash point is the temperature at which the oil gives off enough vapour to make a flammable mixture with air. The pour point is the temperature below which the oil ceases to flow.
+  </p>
+  <p>
+   The sulphur content varies within each grade of oil. Typically it is the lowest in Grade No. 1 (0.01 % to 0.5% by weight) and increases to the highest in Grade No. 6 (0.7-3.5%). The sulphur content should be kept to a minimum due to corrosion and sulphur dioxide emissions. The U.S. standard for the oils listed in Table 2 gives the maximum allowable sulphur content as follows:
+  </p>
+  <ul style="list-style-type: none">
+   <li>
+    • No. 1: 0.5%
+   </li>
+   <li>
+    • No. 2: 0.5%
+   </li>
+   <li>
+    • No. 4: 0.75%
+   </li>
+   <li>
+    • No. 5: 0.5% - 3.0%
+   </li>
+   <li>
+    • NO. 6: 0.7% - 3.5%
+   </li>
+  </ul>
+  <p>
+   By centrifuging a sample of oil, the amount of water and sediment can be found. These are impurities, and while it is not economical to completely eliminate them, they should not occur in excessive quantities (e.g. more than 2%).
+  </p>
+  <p>
+   Incombustible impurities in oil from natural salts, chemicals used in refining operations, or from rust and scale picked up in transit show up as ash. Ash is abrasive to pumps, valves, and burner parts and may form slag in the furnace and consequently should be held to a minimum.
+  </p>
+  <h4>
+   FUEL OIL SUPPLY SYSTEMS
+  </h4>
+  <p>
+   In order to handle fuel oil from storage tanks to burner nozzles, an interconnected assembly of strainers, oil heaters, and pumps is required along with automatic regulators, auxiliary equipment, and instruments. Fig. 1 shows an oil system for storing and delivering heavy fuel oil to boiler burners.
+  </p>
+  <img alt="Diagram of an oil-handling system showing the flow from storage tanks to burners." src="562f471e8153729557e6a4ee6343c32c_img.jpg"/>
+  <div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+   <p>
+    The diagram illustrates a complex fuel oil supply system. At the bottom left, a large storage tank is shown with a 'Drain Valve' at its base. A 'Suction Box' is located inside the tank, connected to a 'Low Suction' line. A 'Steam Smothering Line' enters the tank from the top, and a 'Trap' is also connected to it. A 'Vent' pipe extends from the top of the tank. The 'Low Suction' line leads to a 'Steam-Driven Fuel-Oil Pump', which has a 'Relief Valve'. Above this pump is an 'Electric Fuel-Oil Pump'. The discharge from the electric pump passes through 'Heaters' and an 'Air Chamber', then through 'Discharge Strainers'. A 'Relief Valve' is also present on this discharge line. The fuel oil then splits into two parallel lines. The upper line contains a 'Constant Flow Cycle Control Valve with Bypass' and an 'Orifice'. The lower line contains an 'Automatic Control Valve'. Both lines lead to a series of 'Burners'. A 'Return' line is shown connecting the burners back to the storage tank.
+   </p>
+   <div class="img-alt">
+    Diagram of an oil-handling system showing the flow from storage tanks to burners.
+   </div>
+  </div>
+  <p>
+   Figure 1
+   <br/>
+   Oil-handling System
+  </p>
+  <h5>
+   Fuel Oil Storage Tanks
+  </h5>
+  <p>
+   The fuel oil storage tank shown in Fig.1 is a carbon steel vessel designed for a maximum pressure of 100 kPa gauge pressure. The tank is vented to atmosphere to prevent over pressurization during filling and vacuum conditions while draining. A flame arrestor is attached to the vent to reduce the possibility of a tank explosion. The purpose of the steam smothering line is to blanket the tank with steam extinguishing fires that may occur in the tank.
+  </p>
+  <p>
+   The fuel oil pumps have a high and a low suction line. Normal operation is through the low suction line. If the water and sludge settling out of the fuel oil get into the pump suction, the pump suction is switched to the high suction line. The water and sludge can be removed through the sludge pump-out connection. Once the water and sludge are removed, it is important to switch back to the low suction line.
+  </p>
+  <p>
+   The fill and return lines terminate in u-tube or trap sections. If the tank level is drawn down below these lines, the liquid in the u-tubes prevent combustible vapours from escaping from the tank and creating a hazardous situation in the operating area.
+  </p>
+  <p>
+   The steam heating coil is used to heat the oil in the suction box area of the tank to a minimum of 38 °C so that it can be pumped from the storage tank to the oil heaters.
+  </p>
+  <h5>
+   Suction Strainers
+  </h5>
+  <p>
+   The basket strainers used to filter the fuel oil upstream of the pumps are in a duplex arrangement; see Fig.2. In the duplex design one filter is in service (oil flows through it) while the other is in standby. The flow can be switched from side to side for cleaning without having to shut down the fuel oil system. There is no loss of pressure when the plug valve is moved from one side to the other (the flow is never completely shut off when switching.) The mesh size of the filtering media depends on the type of fuel oil used. For example, if no. 2 fuel oil is used, a 100-mesh filter is used. If the fuel oil is no. 6, a 10-mesh filter is used.
+  </p>
+  <p>
+   The filter differential pressure switch (pressure difference between inlet and outlet) is set to alarm at a specified pressure (10 to 15 kPa) differential, indicating the need to switch to the other filter and clean the filter taken out of service.
+  </p>
+  <img alt="A black and white photograph of a Kraissl Duplex Strainer. The device is a complex metal assembly with two parallel strainer bodies. A central 'Switching Valve' is visible at the top, which can be rotated to direct the flow of oil into either of the two strainers. The strainer bodies have various pipes, flanges, and a central circular opening. Arrows point from the labels 'Switching Valve' and 'Strainer' to their respective parts in the image." src="61ce9760bffbecba8f5e63310be1ebec_img.jpg"/>
+  <div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+   <div class="img-alt">
+    A black and white photograph of a Kraissl Duplex Strainer. The device is a complex metal assembly with two parallel strainer bodies. A central 'Switching Valve' is visible at the top, which can be rotated to direct the flow of oil into either of the two strainers. The strainer bodies have various pipes, flanges, and a central circular opening. Arrows point from the labels 'Switching Valve' and 'Strainer' to their respective parts in the image.
+   </div>
+  </div>
+  <p>
+   Figure 2
+   <br/>
+   <i>
+    Kraissl Duplex Strainer
+   </i>
+  </p>
+  <h5>
+   Fuel Oil Pumps
+  </h5>
+  <p>
+   A fuel oil system usually uses a positive displacement gear type pump, such as a rotary screw pump or gear pump. The pump must be equipped with a discharge pressure relief valve that directs the oil back to the storage tank if the flow of fuel oil is shut off downstream of the pump. Some installations have a second PSV (Pressure Safety Valve) downstream of the pump, which is set at a lower pressure than the one on the pump. The
+  </p>
+  <p>
+   purpose of this PSV is to keep the pump-mounted PSV from lifting, except in extreme emergencies.
+  </p>
+  <p>
+   In Fig. 1 there are two pumps. The electric driven one is used during plant startup, while the steam driven one is used once the boilers are in service and steam is available. The electric one is also used as a standby when the steam driven one is out of service.
+  </p>
+  <p>
+   The pumps have to be able to deliver sufficient fuel oil pressure to the burners. If the burners use mechanical atomization, then the pressure required ranges from 345 to 1725 kPa. If the burners use steam atomization, then the pressure required ranges from 15 to 860 kPa.
+  </p>
+  <h5>
+   Fuel Oil Heaters
+  </h5>
+  <p>
+   Fuel oil heaters are heat exchangers, usually of shell and tube construction. If the burner uses steam atomization, the exchanger must be sized so that it can heat the oil up to 85 °C from 38 °C (the temperature of the fuel oil coming from the storage tank). If the burner uses mechanical atomization, the oil needs to be heated up to 104 °C. The fuel oil heaters and the pumps can be two separate units, or they can be combined on a steel skid, as shown in Fig. 3.
+  </p>
+  <img alt="A technical line drawing of a duplex fuel oil pump and heater unit. The unit is mounted on a rectangular base. On the left side, there is a large cylindrical component labeled 'Heat Exchanger' with an arrow pointing to it. On the right side, there is a pump assembly labeled 'Pump' with an arrow pointing to it. Various pipes, valves, and fittings connect the components within the unit." src="b5b16a821754dab72447d00e17ee376a_img.jpg"/>
+  <div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+   <div class="img-alt">
+    A technical line drawing of a duplex fuel oil pump and heater unit. The unit is mounted on a rectangular base. On the left side, there is a large cylindrical component labeled 'Heat Exchanger' with an arrow pointing to it. On the right side, there is a pump assembly labeled 'Pump' with an arrow pointing to it. Various pipes, valves, and fittings connect the components within the unit.
+   </div>
+  </div>
+  <p>
+   <i>
+    Figure 3
+    <br/>
+    Duplex Fuel Oil Pump and Heater
+   </i>
+  </p>
+  <h5>
+   Discharge Strainers
+  </h5>
+  <p>
+   These strainers are also a duplex type of filter. They remove any material from the fuel oil that could cause problems with the burner nozzles. As with the suction strainers, the mesh size depends on the type of fuel oil being used. The mesh size of this strainer is usually slightly smaller than the size of the pump suction strainer as the viscosity of the fuel oil leaving the heater is lower than the viscosity of the fuel oil going through the pumps.
+  </p>
+  <h5>
+   Automatic Control Valve
+  </h5>
+  <p>
+   The purpose of this valve is to regulate the supply of oil to the burners. The combustion control system sends a signal to the control valves to supply the required flow of oil to the banks of burners. The oil is fed in proportion to the supply of combustion air required for stable firing. The firing rate is dependent upon the boiler steam output requirements.
+  </p>
+  <h5>
+   Constant Flow Cycle Control Valve
+  </h5>
+  <p>
+   The oil pumps deliver more oil than is required by the burners. The excess oil is returned to the oil storage tank by the constant flow cycle control valve. For mechanical atomizing burners, this valve maintains a pressure sufficient for the oil to be mechanically atomized.
+  </p>
+  <h5>
+   Burners
+  </h5>
+  <p>
+   Oil burners are often designed to burn oil and natural gas. These burners offer the flexibility of firing the boiler on either fuel. This also provides a backup, if one system is out of service. The coen burner in Fig. 4 is a dual fuel burner and also a low NO
+   <sub>
+    x
+   </sub>
+   design. The oil gun and atomizer fits in the burner throat. The nozzle extends past the air swirl plate or distributor. The gas header supplies the gas inner spuds and the outer spuds, which extend beyond the burner throat. The spuds are the gas nozzles that give the flame its location and shape. The pilot burner is positioned to light either the gas inner spuds or the oil atomizer.
+  </p>
+  <img alt="Diagram of a Dual Fuel Low NOx Burner assembly." src="7b4218684dabfd7cc15685f82dbe5faf_img.jpg"/>
+  <div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+   <p>
+    The diagram illustrates the internal components of a dual-fuel burner assembly. On the left, a vertical stack of components is shown: Outer Gas Spuds, Air Distributor, Oil Atomizer, Core Gas, and Burner Throat. These are housed within a Furnace Front Wall. At the bottom, a Gas Header for Spuds is connected. The central part of the assembly features Inner Spuds and a Gas Header. To the right, the assembly is connected to a Windbox via a Burner Front Plate. Combustion Air is shown entering from the top. Various atomizers are labeled: FYR-Lyter Pilot, MV Atomizer, and Oil Atomizer. The diagram uses cross-hatching and shading to differentiate between various parts of the burner.
+   </p>
+   <div class="img-alt">
+    Diagram of a Dual Fuel Low NOx Burner assembly.
+   </div>
+  </div>
+  <p>
+   Figure 4
+   <br/>
+   Dual Fuel Low NO
+   <sub>
+    x
+   </sub>
+   Burner
+  </p>
+  <p>
+   The burner in Fig. 4 uses steam to atomize the oil. A flow of steam mixes with the oil in small passages or nozzles in the atomizer tip. The energy in the steam helps to break the oil into small particles and atomize the oil for combustion. A view of the burner tip is shown in Fig. 5. The steam supply runs down the center of the oil gun. The oil supply tube surrounds the steam supply tube.
+  </p>
+  <img alt="Cross-sectional diagram of a steam atomizing burner tip showing internal flow passages for oil and steam." src="5f8af0cfcf796986f40e70571bb950f5_img.jpg"/>
+  <div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+   <p>
+    A cross-sectional diagram of a burner tip. It shows three main flow channels. The central channel is labeled 'Steam' with an arrow pointing to the right. This central channel is flanked by two outer channels, both labeled 'Oil' with arrows pointing to the right. The channels converge towards the right side of the diagram, leading into a complex, textured region representing the atomizer tip where the steam and oil would mix and be atomized.
+   </p>
+   <div class="img-alt">
+    Cross-sectional diagram of a steam atomizing burner tip showing internal flow passages for oil and steam.
+   </div>
+  </div>
+  <p>
+   <i>
+    Figure 5
+    <br/>
+    Steam Atomizing Burner Tip
+   </i>
+  </p>
+  <h3>
+   Objective 2
+  </h3>
+  <p>
+   <b>
+    Describe, using a sketch, the design and operation of fuel gas supply systems.
+   </b>
+  </p>
+  <h4>
+   GAS PROPERTIES
+  </h4>
+  <p>
+   Natural gas flowing from a well is treated to produce a commercially marketable fuel. Condensates (liquids) are removed and are used to make propane and butane and stabilized gasoline. The natural gas may also contain sand, which is removed close to the wellhead.
+  </p>
+  <p>
+   Methane and ethane constitute the bulk of the combustibles; methane varying in volume from 60% to 90%, with ethane, propane, butane, hexane, etc. following in decreasing percentages.
+  </p>
+  <p>
+   Carbon dioxide and nitrogen form the bulk of the inert portion. Carbon dioxide ranges from trace amounts to 1%, while nitrogen averages about 7.9% by volume. Helium also occurs in natural gas but is usually less than 1% by volume.
+  </p>
+  <p>
+   Some gas fields produce gas containing hydrogen sulphide (
+   \(
+    H_2S
+   \)
+   ), and the various sulphur compounds known as mercaptans. A gas with hydrogen sulphide is known as a sour gas, while one without it is a sweet gas. The process for removing
+   \(
+    H_2S
+   \)
+   from sour gas is known as sweetening. Sweetening removes carbon dioxide as well as sulphur compounds. Other constituents removed are mercaptans (sulphur compounds) and long chain hydrocarbons.
+  </p>
+  <p>
+   When hydrogen sulphide is present in a gas it may occur in trace amounts or up to 25% by volume. For each 1% of
+   \(
+    H_2S
+   \)
+   by volume from the well, about 0.05 kg of sulphur can be extracted per three
+   \(
+    m^3
+   \)
+   of gas. Usually, gas is saturated with water vapour at the production pressure and temperature.
+  </p>
+  <p>
+   The gas transmission company conditions the product by:
+  </p>
+  <ol style="list-style-type: none">
+   <li>
+    (1) removing water and liquid hydrocarbons
+   </li>
+   <li>
+    (2) taking out hydrogen sulphide and inert gases
+   </li>
+   <li>
+    (3) removing dirt and foreign matter
+   </li>
+   <li>
+    (4) adding an odourant for safety
+   </li>
+  </ol>
+  <p>
+   The gas reaching the customer is thus nearly pure fuel. The fuel gas transmission system delivers it safely to the industrial and commercial users.
+  </p>
+  <h4>
+   FUEL GAS SUPPLY SYSTEMS
+  </h4>
+  <p>
+   The gas piping arrangement for a steam generator burning natural gas appears in Fig. 6. In Fig. 6, the fuel gas enters the plant at a pressure of approximately 700 kPa.
+  </p>
+  <img alt="Diagram of Gas Piping Arrangement for a steam generator." src="0f985b39edc1d52ba3600c438bc8f0a5_img.jpg"/>
+  <div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+   <p>
+    The diagram illustrates the gas piping arrangement for a steam generator. The main gas line starts at 700 kPa and passes through a 'TWIN PRESSURE REDUCING STATION' with 'MANUAL SHUT-OFF VALVES', reducing the pressure to 280 kPa. Downstream of this station is another 'MANUAL SHUT-OFF VALVE', followed by a 'FLOW METER'. The gas then enters an 'AUTOMATIC SHUT-OFF STATION' containing two 'AUTOMATIC SHUT-OFF VALVES' and an 'AUTOMATIC VENT VALVE' that vents to the atmosphere. Between these two automatic shut-off valves, a 'PILOT LINE' branches off, containing a 'REDUCING VALVE' set at 20 kPa, a 'BY PASS VALVE', and a 'PILOT LINE VENT VALVE' that vents to the atmosphere. The pilot line also connects to 'TO OTHER PILOTS'. The main gas line continues through a 'FLOW CONTROL VALVE' and an 'AUTOMATIC SHUT-OFF VALVE', reducing the pressure to 7 - 70 kPa. This line then branches to 'TO OTHER BURNERS' through a 'PILOT REMOTE OPERATED VALVE' and a 'BURNER COCK'. Another branch from the main line before the final shut-off valve goes to 'TO ATMOSPHERE' through a valve.
+   </p>
+   <div class="img-alt">
+    Diagram of Gas Piping Arrangement for a steam generator.
+   </div>
+  </div>
+  <p>
+   Figure 6
+   <br/>
+   Gas Piping Arrangement
+  </p>
+  <p>
+   There is a manual shut-off valve at the point of entry to the plant so that the gas supply can be shut off completely in case of a fire or other emergency. Downstream of the inlet shut-off valve there is a twin pressure reducing station where the pressure of the incoming gas is reduced to approximately 280 kPa. Each pressure regulator is designed to supply gas to the plant at full load. The purpose of the downstream manual shut-off valve is to isolate the pressure reducing station in the event of a major leak at the station.
+  </p>
+  <p>
+   A gas flow meter is installed downstream of the second manual shut-off valve in order to measure the flow of gas to the steam generator. The gas then flows through an automatic shut-off station with two automatic shut-off valves and an automatic vent valve. In the event of abnormal conditions, such as low gas pressure or loss of combustion air supply, the automatic shut-off valves close, and the vent valve opens.
+  </p>
+  <p>
+   Situated between the two shut-off valves are the pilot burner take-off line and the main burner control valve. The main burner control valve varies the amount of gas flowing to the burners in accordance with the boiler load. Each main burner is equipped with a shut-off cock immediately at the burner to enable individual burners to be put into or taken out of service as required.
+  </p>
+  <p>
+   The pilot burner take-off line is equipped with a pressure reducing station where the pressure of the gas flowing to the pilot burners is reduced from 280 kPa to 20 kPa. The pilot gas then flows through a remote controlled shut-off station consisting of two shut-off valves and a vent valve. The vent valve is arranged to open when the shut-off valves close and vice versa. This remote shut-off station serves all the pilot burners on that particular burner deck. The other burner decks (not shown in Fig. 4) are each equipped with a similar remote shut-off station for their pilot burners. In addition, there is a manual pilot cock valve at each individual pilot burner.
+  </p>
+  <p>
+   The main burner flow control valve varies the main burner gas pressure from 7 to 70 kPa depending upon the boiler load, i.e. at full load the main burner pressure is about 70 kPa.
+  </p>
+  <h4>
+   Gas Piping Systems
+  </h4>
+  <p>
+   Gas piping requires a pitch (slope) of at least 2.5 cm over a 15 m length and have a drip leg at low points where condensate can collect and be drained. Allow for expansion bends in long runs of 100 mm or larger piping. Expansion bends should follow usual good practice for radius, uniformity of curvature, and uniformity of wall thickness.
+  </p>
+  <p>
+   All branch connections, when needed, are attached to the top or sides of main horizontal pipes rather than the bottom of the pipes. This helps to avoid transporting condensate, scale, and rust from the main piping to the branch connections. Branch connections should be equipped with manual shut-off valves, or plug cocks. Outlets are closed with threaded caps, plugs, or flanges until ready to use.
+  </p>
+  <p>
+   Shut-off valves on lines to individual buildings should be placed outside buildings so that valves can be closed in the event of an emergency. The location of these emergency shut-off valves should be plainly marked and posted with provisions made to prevent unauthorized operation.
+  </p>
+  <p>
+   Gas shut-off valves are gate valves or full opening plug cocks. Lubricated plug cocks are usually recommended for pipe sizes over 50 mm. Where gas pressure runs above 35 kPa, it is good safety practice to have lockable shut-off valves.
+  </p>
+  <h3>
+   Objective 3
+  </h3>
+  <p>
+   <b>
+    Describe, using a sketch, the design and operation of solid fuel supply systems.
+   </b>
+  </p>
+  <h4>
+   SOLID FUELS
+  </h4>
+  <p>
+   Solid fuels are often used to fire boilers. The boilers are usually field erected watertube types and are designed specifically for the fuel they will be burning. The most common solid fuel is coal. There are many grades of coal and various ways of preparing it for combustion.
+  </p>
+  <p>
+   Other types of solid fuels are Biomass fuels. These are fuels that are composed of recently living materials such as bark, shavings and sawdust, leaves, grasses, bamboo, vine clippings, sugar cane, coffee grounds, and rice hulls. Biomass boilers are often designed to use wood as well. Examples of wood-based fuels are: bark, wood sticks, sawdust, over and under sized wood chips, and even used wood pallets.
+  </p>
+  <p>
+   Garbage and waste materials can also be used to produce steam. Solid wastes can be disposed of by incineration (burning). Landfill sites are becoming less available and less desirable. Therefore, burning of refuse is gaining in acceptance. Heat recovery and strict air pollution guidelines are required for refuse incinerators. The basic incinerators with waste heat recovery have evolved into water-wall boilers with integral stokers, large enough to provide steam for turbine generator sets and commercial power production.
+  </p>
+  <h4>
+   BIOMASS FUELS
+  </h4>
+  <p>
+   Wood and other biomass fuels are composed mostly of cellulose and moisture. The moisture decreases the flame temperature while the cellulose contains fuel bound oxygen that reduces the excess air required for combustion. Generally, wood and biomass fuels generate less NO
+   <sub>
+    x
+   </sub>
+   (nitrogen oxides) and SO
+   <sub>
+    2
+   </sub>
+   (sulphur dioxide) emissions than fossil fuels.
+  </p>
+  <p>
+   Biomass fuels require preparation before being fed into the boiler. Most boilers use grating systems to burn the biomass fuels. The methods of grating systems include:
+  </p>
+  <ul style="list-style-type: none">
+   <li>
+    •
+    <b>
+     Travelling grates
+    </b>
+    are moving grates that allow for continuous ash removal. The cast iron grate bars are attached to chains. The chains are driven by a slow moving sprocket drive system. Usually 60 to 85% of the combustion air is fed from below the grates. There are openings in the grate to feed undergrate air to cool the bars and castings. The traveling grate system is similar to the traveling grate systems used for firing coal.
+   </li>
+  </ul>
+  <ul style="list-style-type: none">
+   <li>
+    • The
+    <b>
+     pinhole grate
+    </b>
+    is water-cooled grate that is clamped to the floor tubes of the furnace. The grates have venture-type air holes to admit air to the burning material on the grate. This produces a semi-suspension mode of burning. The finer particles burn in suspension and the heavier fractions accumulate on the floor as ashes. The ashes are removed by raking: either by manual or mechanical means.
+   </li>
+   <li>
+    • The
+    <b>
+     vibrating grate
+    </b>
+    systems have grate bars attached to a frame that vibrates to remove the ash. The vibration is intermittent and is controlled by a timer. The vibrating grates may be air-cooled or water-cooled. The water-cooled grates allow for high under-fed air temperatures.
+   </li>
+  </ul>
+  <img alt="Schematic diagram of a Fluidized Bed Biomass Boiler. The diagram shows a vertical furnace chamber with a 'Fluidized Bed' at the bottom. On the left, a 'Coal Feeder' and a 'Bio Mass Feeder' are shown entering the furnace. 'Air Nozzles' are located along the side walls. At the bottom, an 'Air Heater' is connected to the furnace. Exhaust gases pass through a series of 'Precipitators' and are then directed to a 'Stack' via an 'F.D. Fan'. 'B.F.W.' (Boiler Feed Water) is shown entering the top of the furnace." src="83852ec55d4802521a727926336bedab_img.jpg"/>
+  <div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+   <div class="img-alt">
+    Schematic diagram of a Fluidized Bed Biomass Boiler. The diagram shows a vertical furnace chamber with a 'Fluidized Bed' at the bottom. On the left, a 'Coal Feeder' and a 'Bio Mass Feeder' are shown entering the furnace. 'Air Nozzles' are located along the side walls. At the bottom, an 'Air Heater' is connected to the furnace. Exhaust gases pass through a series of 'Precipitators' and are then directed to a 'Stack' via an 'F.D. Fan'. 'B.F.W.' (Boiler Feed Water) is shown entering the top of the furnace.
+   </div>
+  </div>
+  <p>
+   Figure 7
+   <br/>
+   Fluidized Bed Biomass Boiler
+  </p>
+  <p>
+   The fluidized bed boiler shown in Fig. 7 is designed to burn biomass and coal in combination. It has two fuel feeders mounted on the side of the furnace. The coal is fed using a screw feeder. Biomass is fed using a belt chain feeder and a mechanical spreader. The boiler is a natural circulation design and the bed temperature is controlled by extracting heat with evaporator tubes in the fluid bed. The evaporator tubes have pin studding, increasing the life of tubes. The bubbling bed air nozzles are mounted inside and above the ash hoppers. The secondary air ports are located at two levels and air flows are varied according to the types of fuel being fired.
+  </p>
+  <p>
+   Biomass fuels require preparation so they can be fed into the boiler. The size of the fuel must be small enough not to plug the feeder. Solids handling equipment systems using conveyors, hoppers, crushers and feeders are used to condition and feed the biomass.
+  </p>
+  <h4>
+   REFUSE FUELS
+  </h4>
+  <p>
+   There are two main techniques of burning refuse. They differ in the amount of preparation the fuel goes through. The first technique is called mass burning, and uses the fuel as received with little preparation. Only large non-combustible items or bulky items are removed. The second technique of burning refuse involves more preparation of the refuse before combustion. It is referred to as RDF (refuse derived fuel). The refuse is separated, classified, and sorted to remove recyclable products, as illustrated in the fuel preparation system in Fig. 8.
+  </p>
+  <p>
+   Trucks deliver the refuse before it is fed into the primary shredder. From the primary shredder, the refuse is fed over a magnetic separator, removing any ferrous materials. It then passes to the secondary shredder to reduce the size of the pieces. It is then stored before being metered into the boiler. The combustion takes place on the grates as they move along the bottom of the furnace. Non-combustible material and ash drop into the ash pit at the end of the grate. Boiler ash and flyash from the scrubbers and precipitators are disposed of in the ash system.
+  </p>
+  <img alt="A flow diagram illustrating the refuse fuel preparation system. The process starts at a 'Receiving &amp; Storage Area' where trucks deliver refuse. The refuse is then processed through a 'Primary Shredder', followed by a 'Magnet' that separates 'Ferrous Material'. The remaining material goes through a 'Trommel' which separates 'Residue'. The material then passes through a 'Secondary Shredder' and into 'Refuse Fuel Storage'. From storage, the refuse is metered through a 'Metering Bin' into a 'Boiler'. The boiler is connected to an 'Ash System' and a 'Heat Recovery' unit. The 'Heat Recovery' unit is part of an 'Emission Control System' which includes a 'Scrubber' and a 'Precipitator or Fabric Filter' that lead to a 'Stack'." src="79e1709a7317ead45379cbb8ff3ba802_img.jpg"/>
+  <div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+   <pre>
+graph LR
+    Trucks[Trucks] --&gt; R[Receiving &amp; Storage Area]
+    R --&gt; PS[Primary Shredder]
+    PS --&gt; M[Magnet]
+    M -- Ferrous Material --&gt; FM[Ferrous Material]
+    M --&gt; T[Trommel]
+    T -- Residue --&gt; Res[Residue]
+    T --&gt; SS[Secondary Shredder]
+    SS --&gt; RFS[Refuse Fuel Storage]
+    RFS --&gt; MB[Metering Bin]
+    MB --&gt; B[Boiler]
+    B --&gt; AS[Ash System]
+    B --&gt; HR[Heat Recovery]
+    HR --&gt; S[Scrubber]
+    S --&gt; PF[Precipitator or Fabric Filter]
+    PF --&gt; ST[Stack]
+    subgraph ECS [Emission Control System]
+        S
+        PF
+    end
+  </pre>
+   <div class="img-alt">
+    A flow diagram illustrating the refuse fuel preparation system. The process starts at a 'Receiving &amp; Storage Area' where trucks deliver refuse. The refuse is then processed through a 'Primary Shredder', followed by a 'Magnet' that separates 'Ferrous Material'. The remaining material goes through a 'Trommel' which separates 'Residue'. The material then passes through a 'Secondary Shredder' and into 'Refuse Fuel Storage'. From storage, the refuse is metered through a 'Metering Bin' into a 'Boiler'. The boiler is connected to an 'Ash System' and a 'Heat Recovery' unit. The 'Heat Recovery' unit is part of an 'Emission Control System' which includes a 'Scrubber' and a 'Precipitator or Fabric Filter' that lead to a 'Stack'.
+   </div>
+  </div>
+  <p>
+   Figure 8
+   <br/>
+   <i>
+    Refuse Fuel Preparation
+   </i>
+  </p>
+  <p>
+   Refuse firing boilers are similar to boiler for firing biomass.
+  </p>
+  <h3>
+   COAL PROPERTIES
+  </h3>
+  <p>
+   Coal is a difficult fuel to deal with, and requires an ash removal system. Despite these difficulties, coal use is increasing as it is an economical fuel. More and more plants are being designed for coal instead of for gas or oil, as the price of coal does not fluctuate as the price of natural gas and oil does.
+  </p>
+  <p>
+   The constituents of coal are carbon, hydrogen, oxygen, sulphur, nitrogen, moisture, and ash. Some of the carbon is combined with hydrogen to form hydrocarbons. These hydrocarbons, along with other compounds, are known as volatile matter as they pass off as gas when the coal is heated. The carbon remaining after the volatile matter is driven off is known as fixed carbon.
+  </p>
+  <p>
+   Coals are divided into classes or groups according to various characteristics, such as the percentage of fixed carbon and volatile matter and heating value. The classes that power engineers should be familiar with are as follows:
+  </p>
+  <p>
+   <b>
+    Anthracite:
+   </b>
+   This coal is harder than any other type of coal. It has a high percentage of fixed carbon, over 92%, and less than 8% volatile matter. It ignites slowly but burns at a high temperature with a short clear flame. Its use in power plants is limited due to its high cost. A frequent disadvantage of harder coals is their high sulphur content, which contributes to environmental emissions.
+  </p>
+  <p>
+   <b>
+    Semi-anthracite:
+   </b>
+   This coal burns with a short clear flame. It contains between 86% and 92% fixed carbon and between 8% and 14% volatile matter. This coal is also very expensive and thus its use in power plants is limited.
+  </p>
+  <p>
+   <b>
+    Bituminous:
+   </b>
+   This class of coal has several subdivisions according to the volatile content.
+   <b>
+    Low volatile bituminous
+   </b>
+   has 14% to 22% volatile matter.
+   <b>
+    Medium volatile bituminous
+   </b>
+   has 22% to 33% volatile matter.
+   <b>
+    High volatile bituminous
+   </b>
+   has over 31% volatile matter. Bituminous coals are generally considered to be the best suited for power plants due to reasonable cost and availability.
+  </p>
+  <p>
+   <b>
+    Sub-bituminous:
+   </b>
+   This coal has high moisture content; therefore it is not usually shipped away from the mine for power plant use. It is often economical to use when the power plant is erected at the mine location.
+  </p>
+  <p>
+   <b>
+    Lignite:
+   </b>
+   This coal has high ash and moisture content with a low heating value. Therefore, it is not always economical to ship this coal long distances. However, it is used in power plants adjacent to lignite coal fields. Lignite may be shipped to sites with higher sulphur content coals, where it is blended with the local coal.
+  </p>
+  <h4>
+   PULVERIZED COAL SUPPLY SYSTEMS
+  </h4>
+  <p>
+   When any of the above mentioned coals are used in power plants, they are usually pulverized. This module discusses the methods used to bring the coal from the storage area into the plant, and then traces its path through the coal pulverizer to the burners; see Fig.9. Ash handling systems are also included in Fig. 9.
+  </p>
+  <img alt="Figure 9: Coal from Storage to Plant. A flow diagram showing the process of coal handling from storage to the boiler. Coal from storage is moved by a reclaim belt through reclaim hoppers, a coal breaker, and a magnetic pulley. It then passes through a belt weighing machine and a plant hopper to a coal feeder. Primary air is introduced at the coal pulverizer. The pulverized coal is fed into the boiler, which also receives high-pressure water. Exhaust gases from the boiler pass through an electrostatic precipitator and are released through a stack. Fly ash is collected in a fly ash silo, and bottom ash is removed via an ash pump to an ash pit." src="c914f51f4427bc672dd0526cfc90ebe9_img.jpg"/>
+  <div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+   <div class="img-alt">
+    Figure 9: Coal from Storage to Plant. A flow diagram showing the process of coal handling from storage to the boiler. Coal from storage is moved by a reclaim belt through reclaim hoppers, a coal breaker, and a magnetic pulley. It then passes through a belt weighing machine and a plant hopper to a coal feeder. Primary air is introduced at the coal pulverizer. The pulverized coal is fed into the boiler, which also receives high-pressure water. Exhaust gases from the boiler pass through an electrostatic precipitator and are released through a stack. Fly ash is collected in a fly ash silo, and bottom ash is removed via an ash pump to an ash pit.
+   </div>
+  </div>
+  <p>
+   Figure 9
+   <br/>
+   Coal from Storage to Plant
+  </p>
+  <h5>
+   Coal Storage and Handling
+  </h5>
+  <p>
+   The coal is unloaded from the ships, trains, or large coal haulers (if the mine is next to the plant). See Fig. 10 for an example of a coal storage area, and Figs.11 and 12 for methods used to unload ships and rail cars.
+  </p>
+  <img alt="Figure 10: Ground Plan of a Power Station Site, Using Drag Scraper. A site plan diagram showing the layout of a power station. It includes a coal store with a drag scraper system, a weighbridge, a hopper for road-borne coal, coal barges, cranes, a weigher, a winch cabin, a crusher, a boiler house, a turbine room, a switch house, an emergency hopper, a control room, and a wagon tippler with a weighbridge. Various conveyor belts (Belt No. 1, 2, 3, 4, 5, 6, 7) are shown connecting different parts of the facility, including over coal bunkers and a screen." src="844077b3034f0030b404207db0ad76b4_img.jpg"/>
+  <div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+   <div class="img-alt">
+    Figure 10: Ground Plan of a Power Station Site, Using Drag Scraper. A site plan diagram showing the layout of a power station. It includes a coal store with a drag scraper system, a weighbridge, a hopper for road-borne coal, coal barges, cranes, a weigher, a winch cabin, a crusher, a boiler house, a turbine room, a switch house, an emergency hopper, a control room, and a wagon tippler with a weighbridge. Various conveyor belts (Belt No. 1, 2, 3, 4, 5, 6, 7) are shown connecting different parts of the facility, including over coal bunkers and a screen.
+   </div>
+  </div>
+  <p>
+   Figure 10
+   <br/>
+   Ground Plan of a Power Station Site, Using Drag Scraper
+  </p>
+  <img alt="Figure 11: Rotary Car Dumper" src="e9a1dfde7b55d69a0a56f5bbe35328d4_img.jpg"/>
+  <div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+   <p>
+    A technical line drawing of a rotary car dumper. It shows a large, heavy-duty frame with a central rotating mechanism. A hopper is mounted on this mechanism, designed to rotate and dump its contents. The entire assembly is supported by a sturdy metal framework.
+   </p>
+   <div class="img-alt">
+    Figure 11: Rotary Car Dumper
+   </div>
+  </div>
+  <p>
+   <i>
+    Figure 11
+    <br/>
+    Rotary Car Dumper
+   </i>
+  </p>
+  <img alt="Figure 12: Coal Tower with Clamshell" src="05c9994c1f5daf53d0d9b107657d7a17_img.jpg"/>
+  <div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+   <p>
+    A technical line drawing of a coal tower. It features a tall vertical structure with a boom extending from the top. At the end of the boom is a clamshell bucket, which is used for loading or unloading coal from barges. Below the tower, there's a conveyor belt system and a hopper for coal storage or processing.
+   </p>
+   <div class="img-alt">
+    Figure 12: Coal Tower with Clamshell
+   </div>
+  </div>
+  <p>
+   <i>
+    Figure 12
+    <br/>
+    Coal Tower with Clamshell
+   </i>
+  </p>
+  <p>
+   The rotary car dumper has fast high-capacity unloading and can also weigh the load. The coal tower with clamshell has a bucket that lifts coal from barges and delivers it to the conveyor. Beneath the coal storage area are reclaim hoppers. These hoppers dump the coal on to the reclaim belt which takes it to the coal breakers.
+  </p>
+  <h5>
+   <b>
+    Coal Breakers
+   </b>
+  </h5>
+  <p>
+   In the coal breakers, the coal chunks are broken down into 5 cm pieces. The breaker (see Fig. 13) is a large cylinder (size depends on capacity) made of perforated steel plates on
+  </p>
+  <p>
+   which are mounted rows of lifting shelves. The cylinder rotates at 12 to 20 rpm inside a steel casing with a hopper bottom which collects the coal that passes through the screen plates.
+  </p>
+  <img alt="Figure 13: Coal Breaker diagram" src="71dea59c7a8cc6669fcce714dca70021_img.jpg"/>
+  <div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+   <p>
+    A schematic diagram of a coal breaker. It shows a horizontal cylindrical structure. On the left, an arrow labeled "Raw Coal Feed" points into the cylinder. Inside the cylinder, there are several horizontal shelves. The top of the cylinder is divided into three "Removable Sections". On the right side, a "Discharge Ring" is indicated. Below the discharge ring, an arrow labeled "Oversize and Trash Discharge" points outwards. A dimension line at the bottom indicates the length of the main cylindrical section is "14 ft (4.3 m)". A "Receiving Ring" is shown at the far left end.
+   </p>
+   <div class="img-alt">
+    Figure 13: Coal Breaker diagram
+   </div>
+  </div>
+  <p>
+   <i>
+    Figure 13
+    <br/>
+    Coal Breaker
+   </i>
+  </p>
+  <p>
+   Coal passes into the breaker feed end, and the fine pieces are immediately screened out. Larger lumps are lifted by the shelves and dropped down to the screen. These lumps are broken down by gravity impact. The harder lumps of coal are gradually fed toward the rear of the breaker where they are reduced by a hammer mill as shown in Fig.14. The hammer mill also removes tramp metal from the coal.
+  </p>
+  <img alt="Figure 14: Hammer Mill diagram" src="d4c143a69ccd7e28fe8d01dbc9dfbcfa_img.jpg"/>
+  <div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+   <p>
+    A detailed cross-sectional diagram of a hammer mill. At the top, an arrow labeled "Coal Feed" points into a chamber. Inside the chamber, a central shaft drives several hammers (beats) that are positioned to strike the coal. As the coal is broken, it moves towards the bottom of the chamber, where an arrow labeled "Broken Coal" points out. On the right side of the chamber, there is a mechanism for removing "Tramp Metal", shown as a separate discharge point.
+   </p>
+   <div class="img-alt">
+    Figure 14: Hammer Mill diagram
+   </div>
+  </div>
+  <p>
+   <i>
+    Figure 14
+    <br/>
+    Hammer Mill at End of Coal Crusher
+   </i>
+  </p>
+  <h5>
+   Magnetic Pulley
+  </h5>
+  <p>
+   When the coal leaves the breaker on its way to the belt weighing machine it passes over a magnetic pulley which removes tramp iron from the coal as shown in Fig. 15.
+  </p>
+  <img alt="Diagram of a magnetic pulley on a conveyor belt." src="0ccbf2e1f1d9d0aae8865d824a1fc322_img.jpg"/>
+  <div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+   <p>
+    A schematic diagram showing a conveyor belt moving from left to right over a circular magnetic pulley. The belt carries a mixture of coal and tramp iron. As the belt passes over the pulley, the tramp iron (represented by a bolt, nut, and washer) is attracted to the pulley's surface and falls off onto a collection area below. The remaining non-magnetic material (coal) continues along the belt's path. Labels include 'Conveyor belt', 'Magnetic pulley', 'Tramp iron', and 'Non-magnetic material (coal)'.
+   </p>
+   <div class="img-alt">
+    Diagram of a magnetic pulley on a conveyor belt.
+   </div>
+  </div>
+  <p>
+   Figure 15
+   <br/>
+   Magnetic Pulley
+  </p>
+  <h5>
+   Belt Weighing Machine
+  </h5>
+  <p>
+   The crushed coal then moves to the belt weighing machine which measures the amount of coal that is brought into the plant. An example of a belt weighing device is shown in Fig.16. It has a weight indicating sensor, or load cell, measuring the weight or mass of material on the belt. As the speed of the belt is known, the amount of coal passing over the belt in a period of time is determined.
+  </p>
+  <img alt="3D perspective view of a belt weighing machine." src="55fb58e14ec092ccc4fe111de0dc6278_img.jpg"/>
+  <div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+   <p>
+    A 3D perspective drawing of a belt weighing machine. A conveyor belt runs horizontally through a metal frame. A section of the belt is designated as the 'Weigh Length'. Above this section, a 'Y - Lever with Adjustable Knife Edges' is positioned to measure the weight of the coal on the belt. This lever is connected to a 'Load Transmission to Indicating Mechanism', which includes a 'Balance Weight'. At the downstream end of the weigh section, a 'Pulley Drive to Indicating Head' is shown. The entire assembly is supported by a sturdy metal frame.
+   </p>
+   <div class="img-alt">
+    3D perspective view of a belt weighing machine.
+   </div>
+  </div>
+  <p>
+   Figure 16
+   <br/>
+   Belt Weighing Machine
+  </p>
+  <h5>
+   Plant Hoppers
+  </h5>
+  <p>
+   Then the coal enters the plant hoppers or bunkers, which act as a coal reservoir, in case the supply of coal is interrupted temporarily. Normally each bunker supplies a feeder that supplies a pulverizer, fluid bed or cyclone. The bunker has a capacity of three to twelve hours, depending on the boiler load and plant design.
+  </p>
+  <h5>
+   Coal Feeders
+  </h5>
+  <p>
+   The plant hopper drops the coal into the coal feeder which controls the flow of coal into the pulverizer. Fig 17 shows a belt feeder. The speed of the belt varies with the boiler load and is controlled by the boiler master controller.
+  </p>
+  <img alt="Diagram of a Chain Type Coal Feeder" src="537621e5080a52b8b7b39881b862f198_img.jpg"/>
+  <div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+   <p>
+    A schematic diagram of a chain-type coal feeder. Coal is shown entering from the top through a 'Coal Hopper'. Inside the feeder, a 'Metering Coal Feeder' mechanism with an 'Adjustable Gate' regulates the flow. The coal is then directed to a 'Coal Distributor' at the bottom right. On the left, a 'Variable Coal Feed Drive' is connected to the feeder's chain mechanism.
+   </p>
+   <div class="img-alt">
+    Diagram of a Chain Type Coal Feeder
+   </div>
+  </div>
+  <p>
+   <i>
+    Figure 17
+    <br/>
+    Chain Type Coal Feeder
+   </i>
+  </p>
+  <h5>
+   Coal Pulverizers
+  </h5>
+  <p>
+   The two most common pulverizers are the ball-race mill and the ring-roll mill. Fig. 18 shows the operating principal of a ball-race mill. The centre shaft of the mill is rotated by the motor and gearing.
+  </p>
+  <img alt="Diagram of a Ball-race Mill" src="1695df64fe320e3f81049cfe402c8155_img.jpg"/>
+  <div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+   <p>
+    A cross-sectional diagram of a ball-race mill. It features a 'Stationary Ring' at the top, a 'Grinding Ball' in the center, and a 'Driving Ring' at the bottom. The diagram illustrates the arrangement of these components for coal pulverization.
+   </p>
+   <div class="img-alt">
+    Diagram of a Ball-race Mill
+   </div>
+  </div>
+  <p>
+   <i>
+    Figure 18
+    <br/>
+    Ball-race Mill
+   </i>
+  </p>
+  <p>
+   Attached to the centre shaft is the driving ring that also turns. A grinding ball rotates between the driving ring and the stationary ring. Tension is applied to the stationary ring by a spring. Coal is ground between the ball and the two rings. When the coal is ground fine enough the air flow through the mill carries it away to the burners.
+  </p>
+  <p>
+   Fig. 19 shows a ring-roll mill or bowl mill. The coal is fed down the feed pipe at the center of the mill and dispersed around the grinding rolls. The coal is ground between the rotating bowl and the grinding rolls. Tension is applied to the grinding rolls with springs.
+  </p>
+  <img alt="A detailed cross-sectional diagram of a C-E Bowl Mill, showing its internal mechanical components and the coal processing path." src="ac4da3ce8896f1f13e0706723ea0470d_img.jpg"/>
+  <div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+   <p>
+    The diagram illustrates the internal structure of a C-E Bowl Mill. At the top, an 'Incoming Coal Feed Pipe' leads into a 'Converter Head' which contains a 'Converter Head Vane'. An 'Exhauster Crossover Pipe' is also connected to the converter head. Below the converter head is a 'Classifier Assembly' located within the 'Separator Top'. A 'Deflector Regulator Assembly' and a 'Deflector Ring' are positioned around the classifier. The 'Separator Body' contains a 'Ceramic Lined Cone'. On the left side, a 'Spring Assembly' provides tension for a 'Grinding Roll'. The grinding roll is mounted on a 'Journal Assembly' and interacts with a 'Grinding Ring' and a 'Bowl Hub'. The 'Bowl' is part of the 'Millslide and Liner Assembly' and is rotated by a 'Planetary Gearbox' at the base. A 'Scraper' is attached to the millslide. On the right side, a 'Vane Wheel Assembly' is shown within the separator body.
+   </p>
+   <div class="img-alt">
+    A detailed cross-sectional diagram of a C-E Bowl Mill, showing its internal mechanical components and the coal processing path.
+   </div>
+  </div>
+  <p>
+   Figure 19
+   <br/>
+   C-E Bowl Mill
+  </p>
+  <p>
+   The pulverized coal is carried to the burners by the airflow through the pulverizer. A classifier is used to screen out large particles of coal. They fall out of the airflow for more grinding.
+  </p>
+  <h4>
+   ASH HANDLING
+  </h4>
+  <p>
+   Ash handling for a coal-fired plant is a major operation. The equipment is costly to operate and maintain. There are two types of ash that need to be removed from the boiler and the downstream ducting.
+  </p>
+  <img alt="Diagram of a coal-fired boiler system showing ash removal points." src="28d75f39a24203712ee907b32cf0bbe5_img.jpg"/>
+  <div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+   <p>
+    The diagram illustrates the flow of coal and air through a boiler system. Coal enters a Pulverizer, which also receives Pyrites. The pulverized coal is then carried into the furnace. From the furnace, Bottom Ash is removed from the bottom. Flyash is carried out of the furnace with the flue gas flow. The flue gas passes through an Economizer, where Economizer Hopper Flyash is removed. The gas then passes through an Air Heater, where Air Heater Hopper Flyash is removed. Finally, the gas passes through a Precipitator (Fabric-Filter, or Dry Scrubber), where Precipitator Flyash is removed. The remaining Gas is exhausted through a stack.
+   </p>
+   <div class="img-alt">
+    Diagram of a coal-fired boiler system showing ash removal points.
+   </div>
+  </div>
+  <p>
+   <i>
+    Figure 20
+    <br/>
+    Ash Removal Points
+   </i>
+  </p>
+  <ul style="list-style-type: none">
+   <li>
+    • Bottom ash is ash that is removed from the bottom of the furnace. Ash and slag dropping out of the furnace are quenched in water-filled bottom ash hoppers below the furnace. When the ash is removed from the hopper, a sluice gate opens, and the ash grinder starts. The ash grinder grinds up the ash and slag so that it is fine enough to go through the bottom ash pumps. High-pressure water carries this slurry to the suction of the bottom ash pumps. The pumps then pump the slurry to an ash pond or to a settling tank.
+   </li>
+   <li>
+    • Flyash is carried out of the furnace with the flue gas flow. This ash must be removed from the flue gas flow before it exits the stack to avoid polluting the environment. Typical removal points are the economizer hoppers, air preheater and precipitator hoppers as shown in Fig. 20.
+   </li>
+  </ul>
+  <h5>
+   Dust Collectors
+  </h5>
+  <p>
+   Several designs of dust collectors are used in steam generating plants, but the two most common types are the
+   <b>
+    centrifugal collector
+   </b>
+   and the
+   <b>
+    electrostatic precipitator
+   </b>
+   .
+  </p>
+  <h5>
+   Centrifugal Collectors
+  </h5>
+  <p>
+   With this type of collector, the ash-laden flue gas is given a swirling motion as it enters. The dust particles are removed by centrifugal force and fall into the hopper below. The clean gas then exits through a central outlet; see Fig. 21.
+  </p>
+  <img alt="Diagram of a Centrifugal Dust Collector showing the flow of gas and the separation of dust particles." src="08f8008fb9fa9c6225c75645620bb459_img.jpg"/>
+  <div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+   <p>
+    The diagram illustrates the internal structure and gas flow of a centrifugal dust collector. On the left, a cross-sectional view shows the following components and flow:
+   </p>
+   <ul style="list-style-type: none">
+    <li>
+     <b>
+      1
+     </b>
+     Dirty Gas Enters and is Whirled by Vanes
+    </li>
+    <li>
+     <b>
+      2
+     </b>
+     Centrifugal Action Separates Dust
+    </li>
+    <li>
+     <b>
+      3
+     </b>
+     Dust Drops into Hopper
+    </li>
+    <li>
+     <b>
+      4
+     </b>
+     Clean Gas Rises Through Center to Outlet Tube
+    </li>
+    <li>
+     <b>
+      5
+     </b>
+     Clean Gas is Discharged from Outlet
+    </li>
+   </ul>
+   <p>
+    On the right, a 3D perspective view shows the cylindrical body of the collector with an inlet at the top and a hopper at the bottom. The internal vanes are visible, and the central outlet tube extends from the top through the center of the unit.
+   </p>
+   <div class="img-alt">
+    Diagram of a Centrifugal Dust Collector showing the flow of gas and the separation of dust particles.
+   </div>
+  </div>
+  <p>
+   <i>
+    Figure 21
+   </i>
+   <br/>
+   <i>
+    Centrifugal Dust Collector
+   </i>
+  </p>
+  <h5>
+   Electrostatic Precipitators
+  </h5>
+  <p>
+   With this collector, the dust particles are given an electric charge by emitting electrodes. The charged particles are attracted to collecting electrodes and held until they are jarred loose by rapping hammers and fall into the hopper below as shown in Fig. 22.
+  </p>
+  <img alt="A detailed 3D cutaway diagram of an Electrostatic Precipitator (ESP) showing its internal and external components. The diagram is labeled with various parts: 'Quick Opening Inspection Cover' and 'Small Insulator Housing' on the top left; 'Support Insulator', 'Emitting Rapping Motor', and 'Large Insulator Housing' on the top center; 'Quick Opening Inspection Door' and 'High Voltage Cable' on the top right; 'Adjustable Gas-Control Baffles' and 'Gas Inlet' on the left side; 'Emitting Rapping Hammers' on the left side; 'Clean Gas Outlet' on the right side; 'Collecting Rapping Motor', 'Collecting Electrode Rapping Hammers', 'Emitting Spiralelectrodes', and 'Collecting Electrodes' at the bottom." src="008b6e24fa6aef654a11223efed035dd_img.jpg"/>
+  <div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+   <div class="img-alt">
+    A detailed 3D cutaway diagram of an Electrostatic Precipitator (ESP) showing its internal and external components. The diagram is labeled with various parts: 'Quick Opening Inspection Cover' and 'Small Insulator Housing' on the top left; 'Support Insulator', 'Emitting Rapping Motor', and 'Large Insulator Housing' on the top center; 'Quick Opening Inspection Door' and 'High Voltage Cable' on the top right; 'Adjustable Gas-Control Baffles' and 'Gas Inlet' on the left side; 'Emitting Rapping Hammers' on the left side; 'Clean Gas Outlet' on the right side; 'Collecting Rapping Motor', 'Collecting Electrode Rapping Hammers', 'Emitting Spiralelectrodes', and 'Collecting Electrodes' at the bottom.
+   </div>
+  </div>
+  <p>
+   <i>
+    Figure 22
+    <br/>
+    Electrostatic Precipitator
+   </i>
+  </p>
+  <p>
+   The flyash is removed from the hoppers by high velocity air and carried to a flyash silo where it is deposited in hoppers. The air that carried the ash to the silo is filtered before it is exhausted to the atmosphere. The dry ash may be hauled away for use in such products as cement. The ash can also be mixed with water and trucked away for disposal.
+  </p>
+  <h2>
+   Chapter Questions
+  </h2>
+  <p>
+   B2.1
+  </p>
+  <ol style="list-style-type: none">
+   <li>
+    1. Make a single-line sketch of an oil-handling layout for a modern high-pressure, high-output boiler. Include details of the storage, heating, pumping, and filtering methods employed.
+   </li>
+   <li>
+    2. What is the purpose of the constant flow cycle control valve?
+   </li>
+   <li>
+    3. (a) What is the minimum temperature for fuel oil in a storage tank in order for the fuel oil pump to be able to pump the fuel oil to the heater?
+    <br/>
+    (b) What temperature must fuel oil be for mechanical atomizing, and for steam atomizing?
+   </li>
+   <li>
+    4. Sketch a supply system to a gas-fired power plant. Show the pipe work and valves and indicate the gas pressures you would expect to find employed.
+   </li>
+   <li>
+    5. Using a single line sketch, show the ash removal points on a pulverized coal fired boiler.
+   </li>
+  </ol>
+ </body>
+</html>

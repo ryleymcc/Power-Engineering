@@ -1,0 +1,2988 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="utf-8"/>
+<script>
+    MathJax = {
+      tex: {
+        inlineMath: [['\\(', '\\)']],
+        displayMath: [['$$', '$$']]
+      }
+    };
+    </script>
+<script async="" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+<div id="nav-header" style="padding: 15px 20px; background: #2c3e50; color: white; display: flex; align-items: center; gap: 20px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+<a href="../index.html" style="color: white; text-decoration: none; background: #34495e; padding: 8px 16px; border-radius: 4px; font-weight: 600; font-size: 0.9rem; transition: background 0.2s;">← Back to Index</a>
+<h1 style="margin: 0; font-size: 1.2rem; font-weight: 500; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Power Engineering Series</h1>
+</div>
+<h1>
+   Static and Dynamic Forces
+  </h1>
+<h2>
+   11
+  </h2>
+<h2>
+   Learning Outcome
+  </h2>
+<p>
+<i>
+    When you complete this learning material, you will be able to:
+   </i>
+</p>
+<p>
+   Perform calculations related to static and dynamic forces acting on a body.
+  </p>
+<h2>
+   Learning Objectives
+  </h2>
+<p>
+<i>
+    You will specifically be able to complete the following tasks:
+   </i>
+</p>
+<ol style="list-style-type: none">
+<li>
+    1. Define and evaluate forces in terms of moments and couples.
+   </li>
+<li>
+    2. Define and calculate centroids and first and second moments of areas.
+   </li>
+<li>
+    3. Define and calculate the different types of stress.
+   </li>
+<li>
+    4. Define strain, modulus of elasticity, Poisson's ratio and perform calculations.
+   </li>
+<li>
+    5. Describe the thermal expansion of bars, including reactions, under conditions of restricted expansion and reactions of bars composed of dissimilar metals.
+   </li>
+<li>
+    6. Define and calculate shear forces and bending moments for simply supported beams and cantilevers.
+   </li>
+<li>
+    7. Perform calculations involving the fundamental torsion equation and explain the relationship between torque and stress.
+   </li>
+<li>
+    8. Explain the relationship between torque and power, and calculate maximum and mean torque for solid shafts of circular cross section.
+   </li>
+<li>
+    9. Calculate stress in coupling bolts due to torque.
+   </li>
+</ol>
+<h2>
+   Objective 1
+  </h2>
+<p>
+<b>
+<i>
+     Define and evaluate forces in terms of moments and couples.
+    </i>
+</b>
+</p>
+<h3>
+   STATICS AND DYNAMICS
+  </h3>
+<p>
+   The mechanics of rigid bodies is divided into two areas: statics and dynamics. Statics is the study of forces acting on a body that is at rest or moving at a uniform velocity. Dynamics is the study of the forces acting on a moving body that is accelerating or decelerating.
+  </p>
+<h3>
+   MOMENTS
+  </h3>
+<p>
+   A
+   <b>
+    moment
+   </b>
+   of a force is a measure of the tendency of a body to rotate about a specific point or axis when the force is applied to it. A moment is identified both by its magnitude and direction, causing the affected body to tend to rotate in either a
+   <b>
+    clockwise
+   </b>
+   or an
+   <b>
+    anticlockwise
+   </b>
+   direction.
+  </p>
+<p>
+   When two or more opposing forces, or their resulting moments, are in balance and their algebraic sum is zero, then the body in question is in
+   <b>
+    equilibrium
+   </b>
+   and there will be no change to its current state of motion. That is, if it is stationary, then it will remain so. If it is moving, then it will continue to move at a constant velocity.
+  </p>
+<p>
+   An imbalance in moments exists due to a force not having an equal and opposite force directly along its line of action. The moment of a force is the product of the force and its perpendicular distance from a relevant point.
+  </p>
+<p>
+   An object is in equilibrium if the algebraic sum of all the forces or moments acting on it is zero. Even though the forces are in equilibrium, they may exist in different planes and directions. A useful way of evaluating these forces is to understand the moments that they create.
+  </p>
+<p>
+   The moment
+   \(
+    M
+   \)
+   (units are in Newton-meters or Nm) is the product of force
+   \(
+    F
+   \)
+   and length
+   \(
+    l
+   \)
+   which gives the equation:
+  </p>
+<p>
+   $$
+    M = Fl
+   $$
+  </p>
+<h4>
+   Example 1
+  </h4>
+<p>
+   What is the magnitude and direction of the force shown in Fig. 1?
+  </p>
+<img alt="Diagram of a horizontal bar with a pivot at the left end. A downward force of 100 N is applied at the right end, which is 2 m away from the pivot. The bar is labeled 'Pivot' at the left end." src="9e6062272bbe3ddbb7c0606721d64cf0_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<p>
+    A horizontal bar is shown with a pivot at its left end, indicated by a small circle and the label 'Pivot'. A downward arrow representing a force is applied at the right end of the bar, labeled '100 N'. A horizontal double-headed arrow between the pivot and the point of application of the force is labeled '2 m'.
+   </p>
+<div class="img-alt">
+    Diagram of a horizontal bar with a pivot at the left end. A downward force of 100 N is applied at the right end, which is 2 m away from the pivot. The bar is labeled 'Pivot' at the left end.
+   </div>
+</div>
+<p>
+<i>
+    Figure 1
+   </i>
+<br/>
+<i>
+    Force Acting About a Pivot
+   </i>
+</p>
+<h5>
+   Answer
+  </h5>
+<p>
+   From the equation
+   \(
+    M = Fl
+   \)
+   , the moment is
+  </p>
+<p>
+   $$
+    \begin{aligned} M &amp;= Fl \\ &amp;= 100 \text{ N} \times 2 \text{ m} \\ &amp;= \mathbf{200 \text{ Nm}} \text{ (Ans.)} \end{aligned}
+   $$
+  </p>
+<p>
+   The force acts downwards and in a clockwise direction.
+  </p>
+<h4>
+   Example 2
+  </h4>
+<p>
+   What is the magnitude and direction of the force shown in Fig. 2?
+  </p>
+<img alt="Diagram of a bar at a 45-degree angle from a pivot. A 200 N force acts vertically downwards at the end of the bar, which is 3 m from the pivot. The horizontal distance from the pivot to the line of action of the force is labeled x." src="29d638143e0fbfb368ab967dac226c2a_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<p>
+    A bar is shown at an angle of
+    \(
+     45^\circ
+    \)
+    above a horizontal dashed line. The bar is pivoted at its lower end, labeled 'Pivot'. A vertical downward arrow representing a force is applied at the upper end of the bar, labeled '200 N'. The length of the bar from the pivot to the point of application of the force is labeled '3 m'. A horizontal double-headed arrow from the pivot to the vertical line of action of the force is labeled 'x'.
+   </p>
+<div class="img-alt">
+    Diagram of a bar at a 45-degree angle from a pivot. A 200 N force acts vertically downwards at the end of the bar, which is 3 m from the pivot. The horizontal distance from the pivot to the line of action of the force is labeled x.
+   </div>
+</div>
+<p>
+<i>
+    Figure 2
+   </i>
+<br/>
+<i>
+    Force Acting About an Angled Pivot
+   </i>
+</p>
+<h5>
+   Answer
+  </h5>
+<p>
+   First the perpendicular distance is determined.
+  </p>
+<p>
+   $$
+    \begin{aligned}\cos A &amp;= \frac{x}{h} \\ x &amp;= h \times \cos A \\ x &amp;= 3 \text{ m} \times \cos 45^\circ \\ &amp;= 3 \text{ m} \times 0.7071 \\ &amp;= 2.12 \text{ m}\end{aligned}
+   $$
+  </p>
+<p>
+   Using the equation,
+   \(
+    M = Fl
+   \)
+   , the moment is
+  </p>
+<p>
+   $$
+    \begin{aligned}M &amp;= Fl \\ &amp;= 200 \text{ N} \times 2.12 \text{ m} \\ &amp;= 424 \text{ Nm (Ans.)}\end{aligned}
+   $$
+  </p>
+<p>
+   The force acts downwards and its moment is in a clockwise direction.
+  </p>
+<h3>
+   STATIC EQUILIBRIUM
+  </h3>
+<p>
+   Moments are useful to evaluate situations where there are multiple forces acting on an object. A system of forces is in equilibrium if the algebraic sums of the resultant forces and moments are balanced or their algebraic sum is zero. The directions of the forces can be chosen according to the most convenient orientation, but a logical approach is to assume that vertical, horizontal and rotational forces and moments are balanced.
+  </p>
+<p>
+   To establish equilibrium, find convenient sets of moments and build equations to ensure that:
+  </p>
+<ol style="list-style-type: none">
+<li>
+    1. The sum of vertical forces is zero.
+   </li>
+<li>
+    2. The sum of horizontal forces is zero.
+   </li>
+<li>
+    3. The sum of the clockwise moments equals the sum of the anticlockwise moments.
+   </li>
+</ol>
+<h4>
+   Example 3
+  </h4>
+<p>
+   A simply supported beam is loaded as shown in Fig. 3. What are the required supporting forces
+   \(
+    R_1
+   \)
+   and
+   \(
+    R_2
+   \)
+   to maintain the beam in equilibrium?
+  </p>
+<img alt="Diagram of a simply supported beam of length 10 m. The beam has a pin support at the left end labeled R1 and a roller support at the right end labeled R2. A downward point load of 100 kN is applied 2 m from the left end. Another downward point load of 200 kN is applied 5 m from the left end. The beam is divided into two 5 m segments by a vertical dashed line at the center." src="547f726730e589392f239257a833ede3_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    Diagram of a simply supported beam of length 10 m. The beam has a pin support at the left end labeled R1 and a roller support at the right end labeled R2. A downward point load of 100 kN is applied 2 m from the left end. Another downward point load of 200 kN is applied 5 m from the left end. The beam is divided into two 5 m segments by a vertical dashed line at the center.
+   </div>
+</div>
+<p>
+   Figure 3
+   <br/>
+   Simply Supported Beam
+  </p>
+<h5>
+   Answer
+  </h5>
+<p>
+   Convenient places to take moments are around
+   \(
+    R_1
+   \)
+   and
+   \(
+    R_2
+   \)
+   . For
+   \(
+    R_1
+   \)
+   , the equation is:
+  </p>
+<p>
+   Taking moments around
+   \(
+    R_1
+   \)
+  </p>
+<p>
+   $$
+    \begin{aligned} \text{clockwise moment} &amp;= \text{anticlockwise moment} \\ (100 \text{ kN} \times 2 \text{ m}) + (200 \text{ kN} \times 5 \text{ m}) &amp;= R_2 \text{ kN} \times 10 \text{ m} \\ R_2 \text{ kN} &amp;= \frac{(100 \text{ kNm} \times 2 \text{ m}) + (200 \text{ kNm} \times 5 \text{ m})}{10 \text{ m}} \\ R_2 &amp;= 20 \text{ kN} + 100 \text{ kN} \\ R_2 &amp;= 120 \text{ kN (Ans.)} \end{aligned}
+   $$
+  </p>
+<p>
+   Taking the moments around
+   \(
+    R_2
+   \)
+  </p>
+<p>
+   clockwise moment = anticlockwise moment
+  </p>
+<p>
+   $$
+    R_1 \text{ kN} \times 10 \text{ m} = (100 \text{ kN} \times 8 \text{ m}) + (200 \text{ kN} \times 5 \text{ m})
+   $$
+  </p>
+<p>
+   $$
+    R_1 = \frac{800 \text{ kNm} + 1000 \text{ kNm}}{10 \text{ m}}
+   $$
+  </p>
+<p>
+   $$
+    R_1 = 80 \text{ kN} + 100 \text{ kN}
+   $$
+  </p>
+<p>
+   $$
+    R_1 = 180 \text{ kN (Ans.)}
+   $$
+  </p>
+<p>
+   Looking at the vertical forces (there are no horizontal forces).
+  </p>
+<p>
+   vertical forces downwards = vertical forces upwards
+  </p>
+<p>
+   $$
+    100 \text{ kN} + 200 \text{ kN} = 120 \text{ kN} + 180 \text{ kN}
+   $$
+  </p>
+<p>
+   $$
+    300 \text{ kN} = 300 \text{ kN (Ans.)}
+   $$
+  </p>
+<h3>
+   COUPLES
+  </h3>
+<p>
+   A couple has two parallel forces that are equal in magnitude, opposite in direction, and separated by a perpendicular distance. The net effect is a rotational force around the midpoint between the forces, as shown in Fig. 4.
+  </p>
+<img alt="Diagram of a couple showing two parallel forces F separated by a distance L." src="1dba94e9a65ea5fbd805e44a5a2c8cd5_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<p>
+    A diagram illustrating a couple. It consists of two parallel horizontal lines representing forces. The top line has an arrow pointing to the right and is labeled 'F' above it. The bottom line has an arrow pointing to the left and is labeled 'F' below it. A vertical double-headed arrow between the two lines indicates the perpendicular distance, labeled 'L'.
+   </p>
+<div class="img-alt">
+    Diagram of a couple showing two parallel forces F separated by a distance L.
+   </div>
+</div>
+<p>
+   Figure 4
+   <br/>
+   Couple
+  </p>
+<p>
+   The distance
+   \(
+    L
+   \)
+   is called the arm of the couple and the resultant moment is defined as
+  </p>
+<p>
+   $$
+    M = FL
+   $$
+  </p>
+<p>
+   An example of a couple is a tire wrench with opposite handles. Since the forces are equal but opposite, a higher turning moment can be exerted on a wheel nut as compared to a single-sided wrench.
+  </p>
+<h4>
+   Example 4
+  </h4>
+<p>
+   Similar to Fig. 4, two forces of 100 kN each are applied with a distance of 3 m between them. What is the resultant turning force?
+  </p>
+<h5>
+   Answer
+  </h5>
+<p>
+   The turning moment is found from the equation
+   \(
+    M = FL
+   \)
+  </p>
+<p>
+   $$
+    \begin{aligned} M &amp;= FL \\ &amp;= 100 \text{ N} \times 3 \text{ m} \\ &amp;= 300 \text{ kNm (Ans.)} \end{aligned}
+   $$
+  </p>
+<h2>
+   Objective 2
+  </h2>
+<p>
+<b>
+<i>
+     Define and calculate centroids and first and second moments of areas.
+    </i>
+</b>
+</p>
+<h3>
+   INTRODUCTION
+  </h3>
+<p>
+   Until now, forces that are concentrated at a point and act in a specific direction have been discussed. However, many forces act on a line (e.g. roller bearings) or an area (e.g. wind loading, beams, and fluid pressure).
+  </p>
+<h3>
+   CENTROIDS AND FIRST MOMENT OF AREA
+  </h3>
+<p>
+   With objects where size and shape matter, due to concerns with mass or volume, it is possible to locate a centre point for the area or volume. This point is the centroid. For symmetrical shapes, the centroid is easy to locate. For example, the centre of a circle is also its centroid. For a rectangle, the centroid is the point in the middle or half way between its sides.
+  </p>
+<p>
+   If the shape is irregular, it is more difficult to find the centroid and a method called the first moment of areas can be used to find it. The first moment of area is defined as:
+  </p>
+<p>
+   $$
+    \text{First moment of area} = \text{area} \times \text{distance}
+   $$
+  </p>
+<p>
+   For irregular shapes, the centroid is located by dividing the shape into areas whose centroids are known and then taking calculating the algebraic sum of the moments of its component areas.
+  </p>
+<p>
+   Where mass is important, the centroid is known as the centre of mass or the centre of gravity. If the object has a consistent density, the centre of mass is at the same location as the centroid. The centroid is mainly associated with two dimensional geometric shapes, whereas the centre of mass refers to three dimensional objects with known mass.
+  </p>
+<h4>
+   Example 5
+  </h4>
+<p>
+   Find the centroid for the shape shown in Fig. 5.
+  </p>
+<img alt="Diagram of a composite shape with dimensions. The shape is composed of three rectangles: ABCD (top), EFHG (middle), and JKLM (bottom). The total width is 20 cm. The top rectangle ABCD has a width of 15 cm and a height of 2 cm. The middle rectangle EFHG has a width of 1 cm and a height of 15 cm. The bottom rectangle JKLM has a width of 20 cm and a height of 4 cm. A vertical dashed line ML is at the bottom right corner. A horizontal dashed line AB is at the top right corner. A vertical dashed line EF is between the top and middle rectangles. A horizontal dashed line GH is between the middle and bottom rectangles. A vertical dashed line JK is at the bottom left corner. A horizontal dashed line ML is at the bottom. A vertical dashed line AB is at the top right. A horizontal dashed line EF is between the top and middle rectangles. A horizontal dashed line GH is between the middle and bottom rectangles. A vertical dashed line JK is at the bottom left. A horizontal dashed line ML is at the bottom. A vertical dashed line AB is at the top right. A horizontal dashed line EF is between the top and middle rectangles. A horizontal dashed line GH is between the middle and bottom rectangles. A vertical dashed line JK is at the bottom left. A horizontal dashed line ML is at the bottom." src="a5ee5c23b6dc52ec1d724b76d5a5f58f_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    Diagram of a composite shape with dimensions. The shape is composed of three rectangles: ABCD (top), EFHG (middle), and JKLM (bottom). The total width is 20 cm. The top rectangle ABCD has a width of 15 cm and a height of 2 cm. The middle rectangle EFHG has a width of 1 cm and a height of 15 cm. The bottom rectangle JKLM has a width of 20 cm and a height of 4 cm. A vertical dashed line ML is at the bottom right corner. A horizontal dashed line AB is at the top right corner. A vertical dashed line EF is between the top and middle rectangles. A horizontal dashed line GH is between the middle and bottom rectangles. A vertical dashed line JK is at the bottom left corner. A horizontal dashed line ML is at the bottom. A vertical dashed line AB is at the top right. A horizontal dashed line EF is between the top and middle rectangles. A horizontal dashed line GH is between the middle and bottom rectangles. A vertical dashed line JK is at the bottom left. A horizontal dashed line ML is at the bottom. A vertical dashed line AB is at the top right. A horizontal dashed line EF is between the top and middle rectangles. A horizontal dashed line GH is between the middle and bottom rectangles. A vertical dashed line JK is at the bottom left. A horizontal dashed line ML is at the bottom.
+   </div>
+</div>
+<p>
+   Figure 5
+   <br/>
+   Object Dimensions
+  </p>
+<h5>
+   Answer
+  </h5>
+<p>
+   Since the shape is symmetrical around the vertical axis, the centroid must lie somewhere along this line. The shape can be broken into three rectangles, ABCD, EFHG and JKLM. The centroid for each rectangle is the geometric centre of each one.
+  </p>
+<p>
+   Choose a plane around which moments can be taken, for example the line ML. The distance from the centroid of each rectangle to the plane ML is:
+  </p>
+<ul style="list-style-type: none">
+<li>
+    • 20 cm for ABCD (centre of ABCD is 1 cm. from top)
+   </li>
+<li>
+    • 11.5 cm for EFHG (centre of EFHG is 7.5 cm. from both EF and GH)
+   </li>
+<li>
+    • 2 cm for JKLM (centre of JKLM is 2 cm. from ML)
+   </li>
+</ul>
+<p>
+   Using the equation, first moment of area = area
+   \(
+    \times
+   \)
+   distance, the moments for each area around the line ML will be found as follows:
+  </p>
+<p>
+   $$
+    M_{ABCD} = (15 \text{ cm} \times 2 \text{ cm}) \times 20 \text{ cm} = 600 \text{ cm}^3
+   $$
+  </p>
+<p>
+   $$
+    M_{EFHG} = (15 \text{ cm} \times 1 \text{ cm}) \times 11.5 \text{ cm} = 172.5 \text{ cm}^3
+   $$
+  </p>
+<p>
+   $$
+    M_{JKLM} = (20 \text{ cm} \times 4 \text{ cm}) \times 2 \text{ cm} = 160 \text{ cm}^3
+   $$
+  </p>
+<p>
+   $$
+    \text{Total moment} = 932.5 \text{ cm}^3
+   $$
+  </p>
+<p>
+   Calculating the moment of the centroid where
+   \(
+    y
+   \)
+   is the distance from the centroid to the line ML:
+  </p>
+<p>
+   $$
+    \begin{aligned}
+ \text{Moment of total area about ML} &amp;= (15 \text{ cm} \times 2 \text{ cm}) + (15 \text{ cm} \times 1 \text{ cm}) + (20 \text{ cm} \times 4 \text{ cm}) \times y \text{ cm} \\
+ &amp;= (30 + 15 + 80) \text{ cm}^2 \times y \text{ cm} \\
+ &amp;= 125 y \text{ cm}^3
+ \end{aligned}
+   $$
+  </p>
+<p>
+   Since the two moments must be equal in order to maintain equilibrium, the distance from ML to the centroid is:
+  </p>
+<p>
+   $$
+    \begin{aligned}
+ 125 y \text{ cm}^3 &amp;= 932.5 \text{ cm}^3 \\
+ y &amp;= 7.46 \text{ cm (Ans.)}
+ \end{aligned}
+   $$
+  </p>
+<h3>
+   SECOND MOMENT OF AREA
+  </h3>
+<p>
+   For certain calculations, it is necessary to determine a second moment of area which includes the distance squared multiplied by the area or
+  </p>
+<p>
+   $$
+    \text{Second moment of area} = \text{area} \times \text{distance}^2
+   $$
+  </p>
+<p>
+   One application is in the design of shafts and beams to find their resistance to bending, and to torsion or twisting force. Torsion refers to the twisting stress on a shaft that an applied torque tends to create. When applied to angular motion, or rotation, the second moment of area is called the moment of inertia and the distance is called the radius of gyration.
+  </p>
+<p>
+   Following are some examples of the second moment of area for a variety of shapes. The second moment of area is usually referred to by the letter
+   \(
+    I
+   \)
+   .
+  </p>
+<img alt="Diagram of a solid rectangle showing its dimensions and centroid. The rectangle has a height labeled 'D' and a width labeled 'B'. A horizontal dashed line passes through the center, labeled 'C of G' (centroid). The bottom edge is labeled 'Base'. A vertical dashed line bisects the rectangle, and a horizontal dashed line also bisects it, intersecting at the centroid." src="8c49beafe7c55ea578abcaee4bdca0ba_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    Diagram of a solid rectangle showing its dimensions and centroid. The rectangle has a height labeled 'D' and a width labeled 'B'. A horizontal dashed line passes through the center, labeled 'C of G' (centroid). The bottom edge is labeled 'Base'. A vertical dashed line bisects the rectangle, and a horizontal dashed line also bisects it, intersecting at the centroid.
+   </div>
+</div>
+<p>
+   Figure 6
+   <br/>
+   Solid Rectangle
+  </p>
+<p>
+   The second moment of area or moment of inertia for a solid rectangle (Fig. 6) with respect to the centre of the rectangle is equal to
+   \(
+    I
+   \)
+   in the following equation:
+  </p>
+<p>
+   $$
+    I_{cg} = \frac{\text{distance}^2 \times \text{area}}{12}
+   $$
+  </p>
+<p>
+   $$
+    I_{cg} = \frac{D^2 \times BD}{12}
+   $$
+  </p>
+<p>
+   $$
+    I_{cg} = \frac{BD^3}{12}
+   $$
+  </p>
+<p>
+   With respect to the base, it becomes
+  </p>
+<p>
+   $$
+    I_{base} = \frac{BD^3}{3}
+   $$
+  </p>
+<p>
+   Note: the denominations, in the above equations, are values derived using calculus.
+  </p>
+<img alt="Diagram of a hollow rectangle with outer dimensions B and D, and inner dimensions b and d. The center of gravity (C of G) is marked at the center. The diagram shows a shaded rectangular area with a central rectangular cutout. The outer width is labeled B, the inner width is labeled b, the outer height is labeled D, and the inner height is labeled d. A horizontal dashed line passes through the center of gravity (C of G), which is marked with a dot." src="7b4218684dabfd7cc15685f82dbe5faf_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    Diagram of a hollow rectangle with outer dimensions B and D, and inner dimensions b and d. The center of gravity (C of G) is marked at the center. The diagram shows a shaded rectangular area with a central rectangular cutout. The outer width is labeled B, the inner width is labeled b, the outer height is labeled D, and the inner height is labeled d. A horizontal dashed line passes through the center of gravity (C of G), which is marked with a dot.
+   </div>
+</div>
+<p>
+   Figure 7
+   <br/>
+   Hollow Rectangle
+  </p>
+<p>
+   The second moment of area or moment of inertia for a hollow rectangle (Fig. 7) with respect to the centre of the rectangle is:
+  </p>
+<p>
+   $$
+    I_{cg} = \frac{BD^3 - bd^3}{12}
+   $$
+  </p>
+<img alt="Figure 8: Solid Circle. A diagram of a solid circle with diameter D. The circle is shaded with diagonal lines. A vertical axis passes through the center, and a horizontal dashed line represents the centroidal axis. The diameter D is indicated by a vertical dimension line on the right side of the circle." src="0f2a1e4a7b12fe5b8749882ecd636f5c_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    Figure 8: Solid Circle. A diagram of a solid circle with diameter D. The circle is shaded with diagonal lines. A vertical axis passes through the center, and a horizontal dashed line represents the centroidal axis. The diameter D is indicated by a vertical dimension line on the right side of the circle.
+   </div>
+</div>
+<p>
+   Figure 8
+   <br/>
+   Solid Circle
+  </p>
+<p>
+   The second moment of area or moment of inertia for a solid circle (Fig. 8) with respect to the centre of the circle is:
+  </p>
+<p>
+   $$
+    I_{cg} = \frac{\pi D^4}{64}
+   $$
+  </p>
+<img alt="Figure 9: Hollow Circle. A diagram of a hollow circle (annulus) with outer diameter D and inner diameter d. The area between the two concentric circles is shaded with diagonal lines. A vertical axis passes through the center, and a horizontal dashed line represents the centroidal axis. The outer diameter D is indicated by a vertical dimension line on the right, and the inner diameter d is indicated by a horizontal dimension line with arrows inside the inner circle." src="c092f712a80ce3310c5e29d0fa0e454a_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    Figure 9: Hollow Circle. A diagram of a hollow circle (annulus) with outer diameter D and inner diameter d. The area between the two concentric circles is shaded with diagonal lines. A vertical axis passes through the center, and a horizontal dashed line represents the centroidal axis. The outer diameter D is indicated by a vertical dimension line on the right, and the inner diameter d is indicated by a horizontal dimension line with arrows inside the inner circle.
+   </div>
+</div>
+<p>
+   Figure 9
+   <br/>
+   Hollow Circle
+  </p>
+<p>
+   The second moment of area or moment of inertia for a hollow circle (Fig. 9) with respect to the centre of the circle is
+  </p>
+<p>
+   $$
+    I_{cg} = \frac{\pi(D^4 - d^4)}{64}
+   $$
+  </p>
+<h2>
+   Objective 3
+  </h2>
+<p>
+<b>
+    Define and calculate the different types of stress.
+   </b>
+</p>
+<h3>
+   TYPES OF LOAD
+  </h3>
+<p>
+   When external forces are applied to objects, there is an internal resistance set up in the material that opposes the external force. This resistance to the applied force is called
+   <b>
+    stress
+   </b>
+   . The applied external forces are referred to as
+   <b>
+    loads
+   </b>
+   , and different types of loads will cause different stresses to be generated in the object upon which the load is acting. Loads are classified according the length of time they are applied, the area of application, and the type of stress they produce.
+  </p>
+<p>
+   Loads can be classified according to the time period over which they are applied:
+  </p>
+<ol style="list-style-type: none">
+<li>
+    1.
+    <b>
+     Static load:
+    </b>
+    Load that is applied to an object very slowly and held at a constant magnitude so that equilibrium is reached. An example is the load on a building structure due to the mass of the building materials.
+   </li>
+<li>
+    2.
+    <b>
+     Sustained load:
+    </b>
+    Load that is constant over a long period of time, such as the weight of a mass stored in a structure. The effects are usually the same as a static load except where the resistance to failure may differ due to specific stress or temperature conditions during loading.
+   </li>
+<li>
+    3.
+    <b>
+     Impact load or shock load:
+    </b>
+    Load that is applied suddenly, in a very short time period. The load is dependent on both the mass and the velocity of the object producing the impact force. This may cause vibration which has to dampen before equilibrium is reached.
+   </li>
+<li>
+    4.
+    <b>
+     Repeated load or cyclic load:
+    </b>
+    Load which increases and decreases in magnitude many times over specific periods of time, such as the opening and closing of engine valves.
+   </li>
+</ol>
+<p>
+   Loads may also differ according to the area of application:
+  </p>
+<ol style="list-style-type: none">
+<li>
+    1.
+    <b>
+     Concentrated load:
+    </b>
+    Load that is applied to a small area relative to the total area, such as the wheel of a car on a road.
+   </li>
+<li>
+    2.
+    <b>
+     Distributed load:
+    </b>
+    Load that is spread along a length or area, such as the weight of a beam.
+   </li>
+</ol>
+<p>
+   Loads may be classified according to the type of stress they produce:
+  </p>
+<ol style="list-style-type: none">
+<li>
+    1.
+    <b>
+     Axial load:
+    </b>
+    The force acts through the centroid of the object so that no bending occurs. It produces uniform tension or compression across the affected area.
+   </li>
+<li>
+    2.
+    <b>
+     Shear load:
+    </b>
+    The forces are parallel but not in the same plane, so that the stress varies across the cross-sectional area.
+   </li>
+<li>
+    3.
+    <b>
+     Torsional load:
+    </b>
+    This type of load applies an angular moment or a twisting force to a beam or shaft.
+   </li>
+<li>
+    4.
+    <b>
+     Bending load
+    </b>
+    This occurs when a force is applied perpendicular to the axis of an object, such as the wind on a tower or loads on structural members.
+   </li>
+<li>
+    5.
+    <b>
+     Thermal load:
+    </b>
+    This occurs when a change in temperature creates thermal expansion or contraction within an object that is physically constrained from moving freely.
+   </li>
+<li>
+    6.
+    <b>
+     Combined load:
+    </b>
+    This is caused by more than one type of the above loads is applied to an object.
+   </li>
+</ol>
+<h3>
+   STRESS
+  </h3>
+<p>
+   The result of a load applied to an area is called stress. Stress is the internal resistance that results from the application of an external load. Stress is represented by the Greek symbol
+   \(
+    \sigma
+   \)
+   , or sigma.
+  </p>
+<p>
+   $$
+    \text{Direct stress} = \frac{\text{load}}{\text{area}}
+   $$
+  </p>
+<p>
+   $$
+    \text{Direct Stress} = \frac{P}{A}
+   $$
+  </p>
+<p>
+   The units of stress are
+   \(
+    \text{N/m}^2
+   \)
+   or Pascals (Pa).
+  </p>
+<p>
+   Normally, stress calculations assume a constant cross-sectional area throughout the material being stressed. Since the amount of stress generated is proportional to the cross-sectional area across which the load is distributed, it is very important to ensure that this assumption of uniform cross-sectional area is correct. Any reduction in cross-sectional area will cause an increase in the stress levels that are generated, and this could lead to material failure if they are not allowed for. When the area is not constant, the stress changes across the area produce regions of increased local stress or stress concentrations. These require specialized mathematical analysis and are often the cause of material failure of an object such as fracture or rupture.
+  </p>
+<h3>
+   TENSION AND COMPRESSION
+  </h3>
+<p>
+   Tension and compression are illustrated in Fig. 10. When forces are in opposite directions in the same plane, there is tension in the object. It is said to be “in tension” and it is under tensile stress. When the forces are directed towards each other, the object is in compression and it is under compressive stress. In both cases, the distribution of stress is uniform.
+  </p>
+<img alt="Figure 10: Tensile and Compressive Stresses. (a) Tension: A rectangular block is shown with a cross-sectional area A. Two arrows labeled 'Force F' point outwards from the ends of the block. Inside the block, five small arrows point to the right, representing the internal stress. A label 'Stress σ' points to these internal arrows. (b) Compression: A rectangular block is shown with a cross-sectional area A. Two arrows labeled 'Force F' point inwards towards the ends of the block. Inside the block, five small arrows point to the right, representing the internal stress. A label 'Stress σ' points to these internal arrows." src="93afce28d7dec5b2202789b31b4ef8ab_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<p>
+    (a) Tension
+   </p>
+<p>
+    (b) Compression
+   </p>
+<div class="img-alt">
+    Figure 10: Tensile and Compressive Stresses. (a) Tension: A rectangular block is shown with a cross-sectional area A. Two arrows labeled 'Force F' point outwards from the ends of the block. Inside the block, five small arrows point to the right, representing the internal stress. A label 'Stress σ' points to these internal arrows. (b) Compression: A rectangular block is shown with a cross-sectional area A. Two arrows labeled 'Force F' point inwards towards the ends of the block. Inside the block, five small arrows point to the right, representing the internal stress. A label 'Stress σ' points to these internal arrows.
+   </div>
+</div>
+<p>
+   Figure 10
+   <br/>
+   Tensile and Compressive Stresses
+  </p>
+<h4>
+   Example 6
+  </h4>
+<p>
+   A circular column with a diameter of 30 cm carries a compressive load of 100 kN. What is the stress on the column?
+  </p>
+<h5>
+   Answer
+  </h5>
+<p>
+   The area of the column is:
+  </p>
+<p>
+   $$
+    \begin{aligned} A &amp;= \pi r^2 \\ &amp;= \pi(0.15 \text{ m})^2 \\ &amp;= 0.0707 \text{ m}^2 \end{aligned}
+   $$
+  </p>
+<p>
+   The stress as per the equation
+   \(
+    \text{Direct stress} = \frac{P}{A}
+   \)
+   is:
+  </p>
+<p>
+   $$
+    \begin{aligned}\text{Direct stress} &amp;= \frac{P}{A} \\ &amp;= \frac{100 \text{ kN}}{0.0707 \text{ m}^2} \\ &amp;= 1414.4 \text{ kPa (Ans.)}\end{aligned}
+   $$
+  </p>
+<h4>
+   Example 7
+  </h4>
+<p>
+   A tie bar of 5 cm diameter is used in a structural framework. If the maximum tensile stress is not to exceed 60 000 kPa, what is the maximum allowable load?
+  </p>
+<h5>
+   Answer
+  </h5>
+<p>
+   The area of the tie is
+  </p>
+<p>
+   $$
+    \begin{aligned}A &amp;= \pi r^2 \\ &amp;= \pi(0.025 \text{ m})^2 \\ &amp;= 0.0020 \text{ m}^2\end{aligned}
+   $$
+  </p>
+<p>
+   Rearranging the equation
+   \(
+    \text{Direct stress} = \frac{P}{A}
+   \)
+   , the maximum allowable force is:
+  </p>
+<p>
+   $$
+    \begin{aligned}\text{Direct stress} &amp;= \frac{P}{A} \\ P &amp;= (\text{Direct stress})A \\ &amp;= 60 \, 000 \text{ kN/m}^2 \times 0.0020 \text{ m}^2 \\ &amp;= 120.00 \text{ kN (Ans.)}\end{aligned}
+   $$
+  </p>
+<h3>
+   SHEAR STRESS
+  </h3>
+<p>
+   Shear stress is produced by equal and opposite parallel forces (not in line with each other) that tend to make one part of the material slide over the other part. The stresses occur on plane sections that are parallel to the direction of the applied force, as shown in Fig. 11.
+  </p>
+<img alt="Diagram of a rectangular block under shear stress. A horizontal force F is applied to the left on the top edge and a horizontal force F is applied to the right on the bottom edge. A shaded elliptical area on the right is labeled 'Area A'. A vertical line on the left shows a linear stress distribution with arrows pointing left at the top and right at the bottom, labeled 'Stress σ'." src="3267a096e9ca525744d8cd820f12eb59_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    Diagram of a rectangular block under shear stress. A horizontal force F is applied to the left on the top edge and a horizontal force F is applied to the right on the bottom edge. A shaded elliptical area on the right is labeled 'Area A'. A vertical line on the left shows a linear stress distribution with arrows pointing left at the top and right at the bottom, labeled 'Stress σ'.
+   </div>
+</div>
+<p>
+   Figure 11
+   <br/>
+   Shear Stress
+  </p>
+<p>
+   Fig. 12 shows shear stress in a rivet. Because the stress is applied on one plane of the rivet, it is called single shear stress. The shear stress is calculated by dividing the force by the area of the rivet.
+  </p>
+<p>
+   $$
+    \text{Shear stress } (\tau) = \frac{\text{force}}{\text{area under shear}}
+   $$
+  </p>
+<img alt="Diagram of a rivet in single shear. Two horizontal plates are shown. The top plate is being pulled to the left, and the bottom plate is being pulled to the right. A vertical rivet connects them. A circular cross-section of the rivet is highlighted with a dashed line and labeled 'Rivet'." src="8935d7297fc189503125ecbbd7c41f27_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    Diagram of a rivet in single shear. Two horizontal plates are shown. The top plate is being pulled to the left, and the bottom plate is being pulled to the right. A vertical rivet connects them. A circular cross-section of the rivet is highlighted with a dashed line and labeled 'Rivet'.
+   </div>
+</div>
+<p>
+   Figure 12
+   <br/>
+   Single Shear Stress
+  </p>
+<p>
+   In the example shown in Fig. 13, the bolt experiences a shear force in two locations. The result is called double shear. Because the force is absorbed across two areas, the stress is calculated by dividing the force by twice the area of the bolt and the stress is thereby reduced in half.
+  </p>
+<img alt="Diagram of a bolt in double shear. A central vertical bolt passes through three horizontal plates. The top and bottom plates are being pulled outwards (top to the left, bottom to the right), while the middle plate is being pulled to the right. Two horizontal cross-sections of the bolt are highlighted with dashed lines and labeled 'Bolt'." src="67af94a7c462e85f3a310c9a45c0980d_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    Diagram of a bolt in double shear. A central vertical bolt passes through three horizontal plates. The top and bottom plates are being pulled outwards (top to the left, bottom to the right), while the middle plate is being pulled to the right. Two horizontal cross-sections of the bolt are highlighted with dashed lines and labeled 'Bolt'.
+   </div>
+</div>
+<p>
+   Figure 13
+   <br/>
+   Single Shear Stress
+  </p>
+<p>
+   Note that the rivet and bolt in the above examples also experience bending and compressive stresses. Pure shear stress occurs only in torsion, or angular stress, which is covered in a later Objective.
+  </p>
+<h4>
+   Example 8
+  </h4>
+<p>
+   A bolt with a diameter of 1.5 cm connects two members so that the bolt is in double shear. If the load is 50 kN, what is the shear stress in the bolt?
+  </p>
+<h5>
+   Answer
+  </h5>
+<p>
+   The area of the bolt is:
+  </p>
+<p>
+   $$
+    \begin{aligned} A &amp;= \pi r^2 \\ &amp;= \pi (0.0075 \text{ m})^2 \\ &amp;= 0.0002 \text{ m}^2 \end{aligned}
+   $$
+  </p>
+<p>
+   The area resisting the force is double the area of the bolt so that the shear stress is:
+  </p>
+<p>
+   $$
+    \begin{aligned} \text{Shear stress } (\tau) &amp;= \frac{\text{force}}{\text{area under shear}} \\ &amp;= \frac{50 \text{ kN}}{2 \times 0.0002 \text{ m}^2} \\ &amp;= 125\,000 \text{ kPa or } 125 \text{ MPa (Ans.)} \end{aligned}
+   $$
+  </p>
+<h2>
+   Objective 4
+  </h2>
+<p>
+<b>
+    Define strain, modulus of elasticity, Poisson's ratio and perform calculations.
+   </b>
+</p>
+<h3>
+   STRAIN
+  </h3>
+<p>
+   When a force is applied to an object, the dimensions change. The change in length, relative to the original length, is called
+   <b>
+    linear or direct strain
+   </b>
+   . Linear strain is calculated using the equation:
+  </p>
+<p>
+   $$
+    \text{Direct strain} = \frac{\text{extension}}{\text{original length}}
+   $$
+  </p>
+<p>
+   $$
+    \text{Direct strain}(\varepsilon) = \frac{\Delta l}{L}
+   $$
+  </p>
+<p>
+   The units cancel each other out in the equation, so strain has no units of measure.
+  </p>
+<p>
+<b>
+    Shear strain
+   </b>
+   refers to deformation of a body due to shear stress. It is measured in terms of the angle through which the deformation occurs.
+  </p>
+<h4>
+   Example 9
+  </h4>
+<p>
+   A column 10 m long is subjected to a load which causes its length to decrease 5 mm. What is the strain in the column?
+  </p>
+<h5>
+   Answer
+  </h5>
+<p>
+   From the equation
+   \(
+    \text{Direct strain}(\varepsilon) = \frac{\Delta l}{L}
+   \)
+   , the strain is
+  </p>
+<p>
+   $$
+    \begin{aligned}\text{Direct strain}(\varepsilon) &amp;= \frac{\Delta l}{L} \\ &amp;= \frac{0.005 \text{ m}}{10 \text{ m}} \\ &amp;= 0.0005 \text{ (Ans.)}\end{aligned}
+   $$
+  </p>
+<h3>
+   STRESS AND STRAIN
+  </h3>
+<p>
+   As the stress in a material increases, there is also an increase in strain. Hooke's Law states that, within the
+   <b>
+    elastic region
+   </b>
+   , the strain produced will be directly proportional to the stress that produces it (see Fig. 14). There are limits under which Hooke's Law applies and these limits are distinct to the material being tested. Tests have shown that, as the level of stress increases, the material will pass through a number of stages of strain before it finally fails.
+  </p>
+<p>
+   In the first stage, the stress causes the material to deform only while an external force continues to produce the stress. Once the force is removed, the material returns to its original shape. The strain caused in this stage or range is called
+   <b>
+    elastic strain
+   </b>
+   . In this region, the relationship between stress and strain follows Hooke's Law.
+  </p>
+<img alt="Figure 14: Typical Stress vs. Strain Curve. The graph shows a curve starting from the origin (0,0) and increasing. The initial linear portion is labeled 'Elastic region'. The point where the curve begins to curve is labeled 'Elastic limit or yield strength'. The subsequent curved portion is labeled 'Plastic region'. The vertical axis is labeled 'Stress' and the horizontal axis is labeled 'Strain'." src="7f687094e6abe34a9cf491942b296d9a_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    Figure 14: Typical Stress vs. Strain Curve. The graph shows a curve starting from the origin (0,0) and increasing. The initial linear portion is labeled 'Elastic region'. The point where the curve begins to curve is labeled 'Elastic limit or yield strength'. The subsequent curved portion is labeled 'Plastic region'. The vertical axis is labeled 'Stress' and the horizontal axis is labeled 'Strain'.
+   </div>
+</div>
+<p>
+   Figure 14
+   <br/>
+<i>
+    Typical Stress vs. Strain Curve
+   </i>
+</p>
+<p>
+   The maximum elastic strain that a material can handle is called the
+   <b>
+    elastic limit
+   </b>
+   or
+   <b>
+    yield strength
+   </b>
+   of the material, and any additional force above this limit will cause permanent deformation. Strain in this range is called
+   <b>
+    plastic strain
+   </b>
+   , and it will cause
+   <b>
+    plastic deformation
+   </b>
+   of the material. Once the material is strained into this
+   <b>
+    plastic region
+   </b>
+   , it will not return to its original shape even after the force causing the stress is removed. Once the material has moved into the plastic deformation range, its cross sectional area will be reduced. At this point, the stress will become concentrated and the material will quickly fail if more force is applied and the
+   <b>
+    ultimate stress
+   </b>
+   limit is exceeded. A material is considered to have completely failed once it reaches the ultimate stress limit.
+  </p>
+<h3>
+   FACTOR OF SAFETY
+  </h3>
+<p>
+   In engineering design it is standard to build in a safety margin to account for unexpected factors and variations. For loads, the factor of safety is the ratio of the elastic limit and the maximum expected working stress:
+  </p>
+<p>
+   $$
+    \text{Factor of safety} = \frac{\text{Elastic Limit}}{\text{Maximum Working Stress}} \text{ or } \frac{\text{Ultimate stress}}{\text{Allowable working stress}}
+   $$
+  </p>
+<p>
+   The maximum allowable working stress, and thus the factor of safety, depends on the following variables:
+  </p>
+<ul style="list-style-type: none">
+<li>
+    • Nature of the load (i.e. gradually applied, sudden impact, or repeated loading)
+   </li>
+<li>
+    • Value of the maximum load
+   </li>
+<li>
+    • Reliability of the material selected
+   </li>
+<li>
+    • Uniformity of the material in question
+   </li>
+<li>
+    • Severity of the consequences of failure
+   </li>
+<li>
+    • Accuracy of the test data
+   </li>
+</ul>
+<h3>
+   MODULUS OF ELASTICITY
+  </h3>
+<p>
+   In the elastic region, the ratio of stress vs. strain is a specific constant for each individual material and tests has determined this constant for various materials. This ratio is called the
+   <b>
+    Modulus of Elasticity
+   </b>
+   or
+   <b>
+    Young's Modulus
+   </b>
+   and it is used as a measure of stiffness for materials.
+  </p>
+<p>
+   $$
+    \text{Modulus of elasticity } E = \frac{\text{direct stress}}{\text{direct strain}}
+   $$
+  </p>
+<p>
+   $$
+    E = \frac{P/A}{\Delta l/L}
+   $$
+  </p>
+<p>
+   $$
+    \text{Modulus of elasticity } E = \frac{PL}{A\Delta l}
+   $$
+  </p>
+<p>
+   Since
+   \(
+    \varepsilon
+   \)
+   is a pure number without units, the units for
+   \(
+    \varepsilon
+   \)
+   are the same as for stress, that is, Pascals. It is commonly measured in GPa (gigapascals or
+   \(
+    10^9
+   \)
+   pascals).
+  </p>
+<p>
+   In general, the values of Young's Moduli are the same for tension and compression although exceptions do occur.
+  </p>
+<p>
+   For shear stresses, the Modulus of Elasticity is called the Modulus of Rigidity,
+   \(
+    G
+   \)
+   , and is defined as the ratio of shear stress to shear strain or
+  </p>
+<p>
+   $$
+    \text{Modulus of rigidity } (G) = \frac{\text{shear stress } (\tau)}{\text{shear strain } (\gamma)}
+   $$
+  </p>
+<p>
+   $$
+    G = \frac{\tau}{\gamma}
+   $$
+  </p>
+<p>
+   Some typical values for the modulus of elasticity and rigidity are compared in Table 1. Note that the larger values indicate greater stiffness and less deformation for a given stress.
+  </p>
+<p style="text-align: center;">
+<i>
+    Table 1
+   </i>
+<br/>
+<i>
+    Typical Values for Modulus of Elasticity and Rigidity
+   </i>
+</p>
+<table border="1">
+<thead>
+<tr data-bbox="209 688 1399 760">
+<th>
+      Material
+     </th>
+<th>
+      Modulus of Elasticity (GPa)
+     </th>
+<th>
+      Modulus of Rigidity (GPa)
+     </th>
+</tr>
+</thead>
+<tbody>
+<tr data-bbox="209 760 1399 787">
+<td>
+      Diamond
+     </td>
+<td>
+      1000
+     </td>
+<td>
+</td>
+</tr>
+<tr data-bbox="209 787 1399 814">
+<td>
+      Tungsten carbide
+     </td>
+<td>
+      450-650
+     </td>
+<td>
+</td>
+</tr>
+<tr data-bbox="209 814 1399 842">
+<td>
+      Low alloy steel
+     </td>
+<td>
+      200-207
+     </td>
+<td>
+      79
+     </td>
+</tr>
+<tr data-bbox="209 842 1399 869">
+<td>
+      Stainless steel
+     </td>
+<td>
+      190-200
+     </td>
+<td>
+      73
+     </td>
+</tr>
+<tr data-bbox="209 869 1399 896">
+<td>
+      Silicon
+     </td>
+<td>
+      107
+     </td>
+<td>
+</td>
+</tr>
+<tr data-bbox="209 896 1399 924">
+<td>
+      Aluminum
+     </td>
+<td>
+      69
+     </td>
+<td>
+      26
+     </td>
+</tr>
+<tr data-bbox="209 924 1399 951">
+<td>
+      Nylon
+     </td>
+<td>
+      2-4
+     </td>
+<td>
+</td>
+</tr>
+<tr data-bbox="209 951 1399 999">
+<td>
+      Rubber
+     </td>
+<td>
+      0.01-0.1
+     </td>
+<td>
+</td>
+</tr>
+</tbody>
+</table>
+<h4>
+   Example 10
+  </h4>
+<p>
+   A steel bar with a diameter of 5 cm and a length of 3 m is subjected to a tensile load of 200 kN. If the elastic limit is 600 MPa and
+   \(
+    E
+   \)
+   is 200 GPa, calculate the stress and strain in the bar, the increase in its length and the factor of safety.
+  </p>
+<h5>
+   Answer
+  </h5>
+<p>
+   The area of the bar is
+  </p>
+<p>
+   $$
+    \begin{aligned} A &amp;= \pi r^2 \\ &amp;= \pi (0.025 \text{ m})^2 \\ &amp;= 0.002 \text{ m}^2 \end{aligned}
+   $$
+  </p>
+<p>
+   The stress is:
+  </p>
+<p>
+   $$
+    \begin{aligned} \text{Direct stress} &amp;= \frac{P}{A} \\ &amp;= \frac{200 \text{ kN}}{0.002 \text{ m}^2} \\ &amp;= \mathbf{100.00 \text{ MPa}} \text{ (Ans.)} \end{aligned}
+   $$
+  </p>
+<p>
+   The strain,
+   \(
+    \text{Direct strain}(\epsilon) = \frac{\Delta l}{L}
+   \)
+   , is:
+  </p>
+<p>
+   $$
+    \begin{aligned}
+ \text{Direct strain}(\varepsilon) &amp;= \frac{\Delta l}{L} \\
+ &amp;= \frac{100.00 \times 10^6 \text{ Pa}}{200 \times 10^9 \text{ Pa}} \\
+ &amp;= \mathbf{0.0005} \text{ (Ans.)}
+ \end{aligned}
+   $$
+  </p>
+<p>
+   The increase in length
+   \(
+    \text{Direct strain}(\varepsilon) = \frac{\Delta l}{L}
+   \)
+   is:
+  </p>
+<p>
+   $$
+    \begin{aligned}
+ \varepsilon &amp;= \frac{\Delta l}{L} \\
+ \Delta l &amp;= \varepsilon L \\
+ &amp;= .0005 \times 3 \text{ m} \\
+ &amp;= 0.0015 \text{ m} \\
+ &amp;= \mathbf{1.50 \text{ mm}} \text{ (Ans.)}
+ \end{aligned}
+   $$
+  </p>
+<p>
+   The factor of safety
+   \(
+    \text{Factor of safety} = \frac{\text{Elastic limit}}{\text{Maximum working stress}}
+   \)
+   is:
+  </p>
+<p>
+   $$
+    \begin{aligned}
+ \text{Factor of safety} &amp;= \frac{\text{Elastic limit}}{\text{Maximum working stress}} \\
+ &amp;= \frac{600 \text{ mPa}}{100.00 \text{ mPa}} \\
+ &amp;= \mathbf{6.0} \text{ (Ans.)}
+ \end{aligned}
+   $$
+  </p>
+<h3>
+   POISSON'S RATIO
+  </h3>
+<p>
+   When a bar is stretched, there is not only an increase in its axial length but also a corresponding decrease in its lateral width. A tensile stress acting in any direction on an object produces a tensile strain in this direction and also produces a compressive strain in every direction perpendicular to the first. Compressive stress on an object causes compressive strain in its own direction, and tensile strain in every lateral direction. The ratio between the lateral or perpendicular strain and the axial or longitudinal strain is called Poisson's ratio or
+   \(
+    \mu
+   \)
+   (mu) and is defined as
+  </p>
+<p>
+   $$
+    \text{Poisson's ratio } (\mu) = \frac{\text{lateral strain}}{\text{axial strain}}
+   $$
+  </p>
+<p>
+   For most metals, Poisson's ratio is between 0.25 and 0.35.
+  </p>
+<h4>
+   Example 11
+  </h4>
+<p>
+   A 5 cm square steel bar with a length of 1.2 m is subjected to a tensile load of 285 kN. If
+   \(
+    E
+   \)
+   is 210 GPa and
+   \(
+    \mu
+   \)
+   is 0.3, calculate the change in dimensions of the bar.
+  </p>
+<h5>
+   Answer
+  </h5>
+<p>
+   The area of the bar is:
+  </p>
+<p>
+   $$
+    \begin{aligned} A &amp;= 5 \text{ cm} \times 5 \text{ cm} \\ &amp;= 25 \text{ cm}^2 \\ A &amp;= 0.0025 \text{ m}^2 \end{aligned}
+   $$
+  </p>
+<p>
+   The stress Direct stress
+   \(
+    = \frac{P}{A}
+   \)
+   is:
+  </p>
+<p>
+   $$
+    \begin{aligned} \text{Direct stress} &amp;= \frac{P}{A} \\ &amp;= \frac{285 \text{ kN}}{0.0025 \text{ m}^2} \\ &amp;= 114\,000 \text{ kPa} \\ &amp;= 114 \text{ MPa} \end{aligned}
+   $$
+  </p>
+<p>
+   The strain Direct strain
+   \(
+    (\varepsilon) = \frac{\Delta l}{L}
+   \)
+   is:
+  </p>
+<p>
+   $$
+    \begin{aligned} \text{Direct strain}(\varepsilon) &amp;= \frac{\Delta l}{L} \\ &amp;= \frac{114 \times 10^6 \text{ Pa}}{210 \times 10^9 \text{ Pa}} \\ &amp;= 0.0005 \end{aligned}
+   $$
+  </p>
+<p>
+   The increase in length Direct strain
+   \(
+    (\varepsilon) = \frac{\Delta l}{L}
+   \)
+   is:
+  </p>
+<p>
+   $$
+    \begin{aligned} \varepsilon &amp;= \frac{\Delta L}{L} \\ \text{Direct strain}(\varepsilon) &amp;= \frac{\Delta l}{L} \\ \Delta L &amp;= \varepsilon L \\ &amp;= 0.0005 \times 1.2 \text{ m} \\ &amp;= 0.0006 \text{ m} \\ &amp;= 0.6 \text{ mm} \end{aligned}
+   $$
+  </p>
+<p>
+   The axial strain Poisson's ratio (
+   \(
+    \mu
+   \)
+   ) =
+   \(
+    \frac{\text{lateral strain}}{\text{axial strain}}
+   \)
+   is:
+  </p>
+<p>
+   $$
+    \begin{aligned}\text{Poisson's ratio } (\mu) &amp;= \frac{\text{lateral strain}}{\text{axial strain}} \\ \text{lateral strain} &amp;= \text{axial strain} \times \mu \\ &amp;= .0005 \times 0.3 \\ &amp;= 0.00015\end{aligned}
+   $$
+  </p>
+<p>
+   The decrease in width
+   <i>
+    Direct strain
+   </i>
+   (
+   \(
+    \varepsilon
+   \)
+   ) =
+   \(
+    \frac{\Delta l}{L}
+   \)
+   is:
+  </p>
+<p>
+   $$
+    \begin{aligned}\varepsilon &amp;= \frac{\Delta l}{L} \\ \Delta l &amp;= \varepsilon L \\ &amp;= 0.00015 \times 5 \text{ cm} \\ &amp;= 0.00075 \text{ cm}\end{aligned}
+   $$
+  </p>
+<p>
+   The new dimensions of the bar are:
+  </p>
+<p>
+   $$
+    \begin{aligned}\text{New length} &amp;= 1200 \text{ mm} + 0.6 \text{ mm} \\ &amp;= \mathbf{1200.6 \text{ mm}} \text{ (Ans.)} \\ \text{New width} &amp;= 5 \text{ cm} - 0.00075 \text{ cm} \\ &amp;= 4.9992 \text{ cm} \\ &amp;= \mathbf{49.992 \text{ mm}} \text{ (Ans.)}\end{aligned}
+   $$
+  </p>
+
+
+<h1>
+   Objective 5
+  </h1>
+<p>
+<b>
+    Describe the thermal expansion of bars, including reactions, under conditions of restricted expansion and reactions of bars composed of dissimilar metals.
+   </b>
+</p>
+<h2>
+   THERMAL EXPANSION
+  </h2>
+<p>
+   When metals are heated or cooled they expand or contract. The amount of expansion or contraction is dependent on the length of the material and the coefficient of thermal (also known as linear) expansion
+   \(
+    \alpha
+   \)
+   for that particular material. The coefficient of linear expansion of a material is the longitudinal expansion for each unit of length for each degree of increase in temperature. It is measured in strain per
+   \(
+    ^{\circ}\text{C}
+   \)
+   . The coefficient of linear expansion is constant for a wide range of temperatures.
+  </p>
+<p>
+   The strain due to thermal effects is determined by the equation
+  </p>
+<p>
+   $$
+    \varepsilon = \alpha \times (T_2 - T_1)
+   $$
+  </p>
+<p>
+   For a bar of length
+   \(
+    L
+   \)
+   , the change in length will be
+  </p>
+<p>
+   $$
+    \text{Change in length } (\Delta l) = L \alpha (T_2 - T_1)
+   $$
+  </p>
+<p>
+   \(
+    L
+   \)
+   = original length
+  </p>
+<p>
+   \(
+    \alpha
+   \)
+   = coefficient of linear expansion
+  </p>
+<p>
+   \(
+    (T_2 - T_1)
+   \)
+   = rise in temperature
+  </p>
+<p>
+   If an object is secured or fixed in a certain position, then its ability to move or expand is restricted or eliminated completely. If this object is then subjected to an increase or decrease in temperature, stresses will be developed in the material because its expansion or contraction is constrained. These
+   <b>
+    thermal stresses
+   </b>
+   are cumulative with any other stresses that the material may be subjected to when evaluating the material's ability to handle loads.
+  </p>
+<h3>
+   Example 12
+  </h3>
+<p>
+   A copper bar is 2.5 m long at
+   \(
+    16^{\circ}\text{C}
+   \)
+   . The coefficient of thermal expansion is
+   \(
+    18 \times 10^{-6}
+   \)
+   per
+   \(
+    ^{\circ}\text{C}
+   \)
+   and
+   \(
+    E
+   \)
+   is 110 GPa. If the temperature increases to
+   \(
+    27^{\circ}\text{C}
+   \)
+   , what is the thermal strain and the increase in length if the bar's movement is not restricted? If the bar is fixed at both ends, what is the increase in the stress?
+  </p>
+<h5>
+   Answer
+  </h5>
+<p>
+   The thermal strain is found from
+   \(
+    \varepsilon = \alpha \times (T_2 - T_1)
+   \)
+   :
+  </p>
+<p>
+   $$
+    \begin{aligned}\varepsilon &amp;= \alpha \times (T_2 - T_1) \\ &amp;= 18 \times 10^{-6} / ^\circ\text{C} \times (27 - 16) ^\circ\text{C} \\ &amp;= 0.0002\end{aligned}
+   $$
+  </p>
+<p>
+   The increase in length using equation
+   \(
+    \text{Direct strain}(\varepsilon) = \frac{\Delta l}{L}
+   \)
+   is:
+  </p>
+<p>
+   $$
+    \begin{aligned}\text{Direct strain}(\varepsilon) &amp;= \frac{\Delta l}{L} \\ \Delta l &amp;= \varepsilon L \\ &amp;= 0.0002 \times 2.5 \text{ m} \\ &amp;= 0.0005 \text{ m} \\ &amp;= 0.5 \text{ mm}\end{aligned}
+   $$
+  </p>
+<p>
+   The stress
+   \(
+    E = \frac{\text{direct stress}}{\text{direct strain}}
+   \)
+   is:
+  </p>
+<p>
+   $$
+    \begin{aligned}E &amp;= \frac{\text{direct stress}}{\text{direct strain}} \\ \text{direct stress} &amp;= E \times \text{direct strain} \\ &amp;= 110 \text{ GPa} \times 0.0002 \text{ m} \\ &amp;= 0.022 \text{ GPa} \\ &amp;= 22.0 \text{ MPa (Ans.)}\end{aligned}
+   $$
+  </p>
+<h3>
+   THERMAL EXPANSION OF COMPOSITE BARS
+  </h3>
+<p>
+   A composite bar is one that is composed of different metals such as the one shown in Fig. 15. Because brass has a higher coefficient of thermal expansion than steel, it is restricted by the steel and expands less than when it is heated on its own. Fig. 15 shows that the brass expands only by length
+   \(
+    c
+   \)
+   instead of length
+   \(
+    a
+   \)
+   . The steel is forced by the brass to expand more than when it is heated on its own, that is, it expands to length
+   \(
+    c
+   \)
+   instead of length
+   \(
+    b
+   \)
+   .
+  </p>
+<img alt="Diagram of a composite bar consisting of a steel bar on top of a brass bar. The original length is labeled 'l'. The change in length of the brass bar is labeled 'a', and the change in length of the steel bar is labeled 'b'. The total change in length of the composite bar is labeled 'c'." src="1df14e8a75f3f3fcf750749dbbd2c3f1_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<p>
+    The diagram shows a composite bar made of two materials: Steel (top) and Brass (bottom). Both bars have an initial length labeled 'l'. When the temperature changes, the brass bar expands by an amount 'a' and the steel bar expands by an amount 'b'. The total expansion of the composite bar is indicated by 'c'.
+   </p>
+<div class="img-alt">
+    Diagram of a composite bar consisting of a steel bar on top of a brass bar. The original length is labeled 'l'. The change in length of the brass bar is labeled 'a', and the change in length of the steel bar is labeled 'b'. The total change in length of the composite bar is labeled 'c'.
+   </div>
+</div>
+<p>
+   Figure 15
+   <br/>
+   Composite Bar
+  </p>
+<p>
+   The change in length in the brass bar, if unrestricted, is:
+  </p>
+<p>
+   $$
+    \text{Change in length } (\Delta l) = L \alpha (T_2 - T_1)
+   $$
+  </p>
+<p>
+   Let this value be represented by “a”:
+  </p>
+<p>
+   $$
+    a = L \alpha_b (T_2 - T_1)
+   $$
+  </p>
+<p>
+   Therefore:
+  </p>
+<p>
+   $$
+    \alpha_b = \frac{a}{L \times (T_2 - T_1)}
+   $$
+  </p>
+<p>
+   and the strain
+   \(
+    \varepsilon = \alpha \times \Delta T
+   \)
+   is:
+  </p>
+<p>
+   $$
+    \varepsilon = \alpha \times (T_2 - T_1)
+   $$
+  </p>
+<p>
+   $$
+    \varepsilon_b = \alpha_b \times (T_2 - T_1)
+   $$
+  </p>
+<p>
+   $$
+    \varepsilon_b = \frac{a \times (T_2 - T_1)}{l \times (T_2 - T_1)}
+   $$
+  </p>
+<p>
+   $$
+    \varepsilon_b = \frac{a}{l}
+   $$
+  </p>
+<p>
+   The normal change in length in the steel bar, if unrestricted, is:
+  </p>
+<p>
+   $$
+    \text{Change in length } (\Delta l) = L \alpha (T_2 - T_1)
+   $$
+  </p>
+<p>
+   Let this value be represented by “b”:
+  </p>
+<p>
+   $$
+    b = L \alpha_s (T_2 - T_1)
+   $$
+  </p>
+<p>
+   Therefore:
+  </p>
+<p>
+   $$
+    \alpha_s = \frac{b}{L \times (T_2 - T_1)}
+   $$
+  </p>
+<p>
+   and the strain
+   \(
+    \epsilon = \alpha \times \Delta T
+   \)
+   is:
+  </p>
+<p>
+   $$
+    \begin{aligned}\epsilon &amp;= \alpha \times (T_2 - T_1) \\ \epsilon_s &amp;= \alpha_s \times (T_2 - T_1) \\ \epsilon_s &amp;= \frac{b \times (T_2 - T_1)}{l \times (T_2 - T_1)} \\ \epsilon_s &amp;= \frac{b}{l}\end{aligned}
+   $$
+  </p>
+<p>
+   Let “c” represent the actual expansion of the composite bar. The difference in expansion for the brass portion will be,
+   \(
+    a - c
+   \)
+   , which introduces a compressive stress in that portion of the bar. The difference in expansion for the steel portion,
+   \(
+    c - b
+   \)
+   , causes a tensile stress.
+  </p>
+<p>
+   The difference in the free expansion,
+   \(
+    a - b
+   \)
+   , is derived by substituting for
+   \(
+    a
+   \)
+   and
+   \(
+    b
+   \)
+   in the following equation:
+  </p>
+<p>
+   $$
+    \begin{aligned}a - b &amp;= [a_b \times (T_2 - T_1) \times L] - [a_s \times (T_2 - T_1) \times L] \\ \frac{a - b}{L} &amp;= [a_b \times (T_2 - T_1)] - [a_s \times (T_2 - T_1)] \\ \frac{a - b}{L} &amp;= \epsilon_b - \epsilon_s\end{aligned}
+   $$
+  </p>
+<p>
+   Note;
+   \(
+    \epsilon_b
+   \)
+   has a negative value because the expansion of the brass is restricted. Therefore, to determine the absolute value of
+   \(
+    \frac{a - b}{L}
+   \)
+   :
+  </p>
+<p>
+   $$
+    \begin{aligned}\frac{a - b}{L} &amp;= -\epsilon_b - \epsilon_s \\ \frac{a - b}{L} &amp;= \epsilon_b + \epsilon_s\end{aligned}
+   $$
+  </p>
+<p>
+   This gives the relationship:
+  </p>
+<p>
+   Difference in free expansion per unit length = strain in brass + strain in steel
+  </p>
+<p>
+   The strains can be written in terms of stress and the modulus of elasticity, as follows:
+  </p>
+<p>
+   $$
+    \begin{aligned}\epsilon_b + \epsilon_s &amp;= (\alpha_b - \alpha_s) \times (T_2 - T_1) \\ \frac{\sigma_b}{E_b} + \frac{\sigma_s}{E_s} &amp;= (\alpha_b - \alpha_s) \times (T_2 - T_1)\end{aligned}
+   $$
+  </p>
+<p>
+   Because the force in each part of the bar must be equal, the stresses are related by the equation:
+  </p>
+<p>
+   $$
+    \sigma_s \times A_s = \sigma_b \times A_b
+   $$
+   $$
+    \sigma_b = \frac{\sigma_s \times A_s}{A_b}
+   $$
+  </p>
+<p>
+   Substituting this in
+   \(
+    \sigma_b = \frac{\sigma_s \times A_s}{A_b}
+   \)
+   , the stress in the steel bar is:
+  </p>
+<p>
+   $$
+    \frac{\sigma_s A_s}{E_b A_b} + \frac{\sigma_s}{E_s} = (\alpha_b - \alpha_s) \times (T_2 - T_1)
+   $$
+  </p>
+<p>
+   $$
+    \sigma_s = \frac{(\alpha_b - \alpha_s) \times (T_2 - T_1)}{\frac{A_s}{E_b A_b} + \frac{1}{E_s}}
+   $$
+  </p>
+<h3>
+   Example 13
+  </h3>
+<p>
+   A steel bar with a cross-sectional area of 19 cm
+   <sup>
+    2
+   </sup>
+   is fastened securely to a brass bar with a cross-sectional area of 13 cm
+   <sup>
+    2
+   </sup>
+   . The temperature of the composite assembly is raised from 100°C to 156°C. Calculate the stress in each portion of the bar given that:
+  </p>
+<p>
+   Coefficient of thermal expansion for steel =
+   \(
+    12 \times 10^{-6}
+   \)
+   per °C
+  </p>
+<p>
+   Coefficient of thermal expansion for brass =
+   \(
+    20 \times 10^{-6}
+   \)
+   per °C
+  </p>
+<p>
+   Modulus of elasticity for steel = 210 GPa
+  </p>
+<p>
+   Modulus of elasticity for brass = 91 GPa
+  </p>
+<h5>
+   Answer
+  </h5>
+<p>
+   The stress in the steel portion
+   \(
+    \sigma_s = \frac{(\alpha_b - \alpha_s) \times (T_2 - T_1)}{\frac{A_s}{E_b A_b} + \frac{1}{E_s}}
+   \)
+   is:
+  </p>
+<p>
+   $$
+    \begin{aligned}
+ \sigma_s &amp;= \frac{(\alpha_b - \alpha_s) \times (T_2 - T_1)}{\frac{A_s}{E_b A_b} + \frac{1}{E_s}} \\
+ &amp;= \frac{(20 \times 10^{-6} / ^\circ\text{C} - 12 \times 10^{-6} / ^\circ\text{C}) \times (156^\circ\text{C} - 100^\circ\text{C})}{\frac{19 \text{ cm}^2}{91 \times 10^9 \text{ Pa} \times 13 \text{ cm}^2} + \frac{1}{210 \times 10^9 \text{ Pa}}} \\
+ &amp;= \frac{8 \times 10^{-6} \times 56}{0.0161 \times 10^{-9} / \text{Pa} + 0.0048 \times 10^{-9} / \text{Pa}} \\
+ &amp;= \frac{448 \times 10^3 \text{ Pa}}{0.0209} \\
+ &amp;= 21,435 \text{ kPa (Ans.)}
+ \end{aligned}
+   $$
+  </p>
+<p>
+   The stress in the brass portion is from
+   \(
+    \sigma_b = \frac{\sigma_s \times A_s}{A_b}
+   \)
+   :
+  </p>
+<p>
+   $$
+    \begin{aligned}
+ \sigma_b &amp;= \frac{\sigma_s \times A_s}{A_b} \\
+ &amp;= \frac{21435 \text{ kPa} \times 19 \text{ cm}^2}{13 \text{ cm}^2} \\
+ &amp;= 31,328 \text{ kPa (Ans.)}
+ \end{aligned}
+   $$
+  </p>
+<h1>
+   Objective 6
+  </h1>
+<p>
+<b>
+    Define and calculate shear forces and bending moments for simply supported beams and cantilevers.
+   </b>
+</p>
+<h2>
+   LOADS ON BEAMS
+  </h2>
+<p>
+   A beam is a structural member designed primarily to support loads that are perpendicular to the longitudinal axis of the beam. Types of beams are distinguished by the method which they are supported. Simply supported beams, (Fig. 16), have a single support at each end of the beam.
+  </p>
+<img alt="Diagram of a simply supported beam." src="0872c27ab0a48c6e88ef4f09f773872f_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<p>
+    A horizontal beam is shown with two triangular supports at its ends. Each support is placed on a hatched horizontal line representing the ground, indicating that the beam is supported at both ends.
+   </p>
+<div class="img-alt">
+    Diagram of a simply supported beam.
+   </div>
+</div>
+<p>
+<i>
+    Figure 16
+    <br/>
+    Simple Supported Beam
+   </i>
+</p>
+<p>
+   Cantilever beams (Fig. 17.) are secured or fixed firmly at one end only.
+  </p>
+<img alt="Diagram of a cantilever beam." src="f3e03accc76df483950e65a9fb19c20e_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<p>
+    A horizontal beam is shown with one end fixed into a vertical hatched wall, while the other end is free, illustrating a cantilever beam.
+   </p>
+<div class="img-alt">
+    Diagram of a cantilever beam.
+   </div>
+</div>
+<p>
+<i>
+    Figure 17
+    <br/>
+    Cantilever Beam
+   </i>
+</p>
+<p>
+   There are two types of loads that will be evaluated in this section of the module:
+  </p>
+<ul style="list-style-type: none">
+<li>
+    • Concentrated
+   </li>
+<li>
+    • Uniformly distributed
+   </li>
+</ul>
+<h3>
+   Concentrated Loads
+  </h3>
+<p>
+   Concentrated loads (Fig. 18) are loads that are concentrated at a single point or location on the beam.
+  </p>
+<img alt="Diagram of a simply supported beam with two concentrated point loads applied vertically downwards at different positions along its length." src="c834b9abb4ddf70e5d10641f87d5ff5b_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    Diagram of a simply supported beam with two concentrated point loads applied vertically downwards at different positions along its length.
+   </div>
+</div>
+<p>
+   Figure 18
+   <br/>
+   Beam with Concentrated Loads
+  </p>
+<h3>
+   Uniformly Distributed Loads
+  </h3>
+<p>
+   Uniformly distributed loads (see Fig. 19) are spread uniformly across a section of the beam or the entire length.
+  </p>
+<img alt="Diagram of a simply supported beam with a uniformly distributed load applied across its entire length, represented by a series of small downward-pointing arcs." src="e0ebcd8fdcfd34b12de3601b59505fdd_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    Diagram of a simply supported beam with a uniformly distributed load applied across its entire length, represented by a series of small downward-pointing arcs.
+   </div>
+</div>
+<p>
+   Figure 19
+   <br/>
+   Beam with Uniformly Distributed Load
+  </p>
+<p>
+   The loads on a beam will result in both of the following:
+  </p>
+<ul style="list-style-type: none">
+<li>
+    • Shear forces
+   </li>
+<li>
+    • Bending moments
+   </li>
+</ul>
+<h3>
+   SHEAR FORCES
+  </h3>
+<p>
+   Shear forces tend to cause the beam to shear in a vertical direction. If the direction is the one shown in Fig. 20(a) or in a clockwise direction relative to the applied forces, it is called
+   <b>
+    positive shear
+   </b>
+   . If the direction is the one shown in Fig. 20(b) or in an anticlockwise direction relative to the applied forces, it is
+   <b>
+    negative shear
+   </b>
+   .
+  </p>
+<img alt="Two diagrams, (a) and (b), illustrating shear forces on a beam element. (a) shows a beam element with a downward point load in the center; the left part has an upward arrow on its left end and a downward arrow on its right end, while the right part has a downward arrow on its left end and an upward arrow on its right end. (b) shows a similar beam element with a downward point load, but the shear force directions are reversed: the left part has a downward arrow on its left end and an upward arrow on its right end, while the right part has an upward arrow on its left end and a downward arrow on its right end." src="76b4e08956dd2053370d2f8e9dd6d2a8_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    Two diagrams, (a) and (b), illustrating shear forces on a beam element. (a) shows a beam element with a downward point load in the center; the left part has an upward arrow on its left end and a downward arrow on its right end, while the right part has a downward arrow on its left end and an upward arrow on its right end. (b) shows a similar beam element with a downward point load, but the shear force directions are reversed: the left part has a downward arrow on its left end and an upward arrow on its right end, while the right part has an upward arrow on its left end and a downward arrow on its right end.
+   </div>
+</div>
+<p>
+   Figure 20
+   <br/>
+   Shear Forces
+  </p>
+<p>
+   Fig. 21 illustrates the change in shear forces across a simply supported beam with two point loads. Reviewing the shear forces on the beam and starting on the left hand side,
+  </p>
+<p>
+   the shear force is 4600 N and is positive until it reaches the 4000 N load. Because the 4000 N load acts in the opposite direction, the shear force is reduced to 600 N but is still positive. At the next load of 2000 N, the shear force is again reduced to -1400 N and is now negative. The shear force remains at -1400 N between the 2000 N load and the right hand side of the beam, where it is restored to zero shear force by the 1400 N force at the support. Diagrams such as the one shown in Figure 21 are the clearest way to show the shear forces.
+  </p>
+<img alt="Shear Force Diagram on a Simple Beam" src="b93cbfb52e37619e688175a6aad9edd9_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<p>
+    The figure shows a shear force diagram for a beam. The top part is a beam with two downward point loads: 4000 N and 2000 N. The bottom part is the corresponding shear force diagram. The diagram starts at +4600 N at the left end (marked 0), remains constant until the first load, then drops by 4000 N to +600 N. It remains constant until the second load, then drops by 2000 N to -1400 N. It remains constant until the right end (marked 0), where it returns to zero due to an upward reaction force of 1400 N. The baseline is indicated at the right end.
+   </p>
+<div class="img-alt">
+    Shear Force Diagram on a Simple Beam
+   </div>
+</div>
+<p>
+   Figure 21
+   <br/>
+   Shear Forces on a Simple Beam
+  </p>
+<h3>
+   BENDING MOMENTS
+  </h3>
+<p>
+   Bending force is caused by moments created on the beam by applied forces. The use of moments to determine forces was covered in Objective 1. In static equilibrium, clockwise moments must equal anticlockwise moments and vertical forces must equal the downward forces.
+  </p>
+<p>
+   The stress profile produced by a bending force is shown in Fig. 22. If the forces cause the beam to deflect downward, the top surface of the beam experiences compression and the bottom of the beam experiences tension. The bending moment is positive when the moments move in a counter-clockwise direction. Bending moments are negative when moving in a clockwise direction.
+  </p>
+<img alt="Figure 22: Stress Profile due to Bending Forces. A diagram showing a linear stress distribution across a beam's cross-section. The top half is labeled 'Compression' and the bottom half is labeled 'Tension'. The stress is zero at the neutral axis (center line)." src="4e0ade2f41b66d5602160da5cc978274_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    Figure 22: Stress Profile due to Bending Forces. A diagram showing a linear stress distribution across a beam's cross-section. The top half is labeled 'Compression' and the bottom half is labeled 'Tension'. The stress is zero at the neutral axis (center line).
+   </div>
+</div>
+<p>
+   Figure 22
+   <br/>
+   Stress Profile due to Bending Forces
+  </p>
+<p>
+   To evaluate the bending moments, use the dimensions between the forces, as shown in Fig. 23.
+  </p>
+<img alt="Figure 23: Dimensions for a Simple Beam. A diagram of a beam with a total length of 10 m. A reaction force R1 = 4600 N is applied at the left end. A downward force of 4000 N is applied 1 m from the left end. A downward force of 2000 N is applied 5 m from the left end. A reaction force R2 = 1400 N is applied at the right end. A point is marked 0.5 m from the left end." src="daa4a6fa7e2ba1954258f86b4928eb32_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    Figure 23: Dimensions for a Simple Beam. A diagram of a beam with a total length of 10 m. A reaction force R1 = 4600 N is applied at the left end. A downward force of 4000 N is applied 1 m from the left end. A downward force of 2000 N is applied 5 m from the left end. A reaction force R2 = 1400 N is applied at the right end. A point is marked 0.5 m from the left end.
+   </div>
+</div>
+<p>
+   Figure 23
+   <br/>
+   Dimensions for a Simple Beam
+  </p>
+<p>
+   The resultant bending moments are shown in Fig. 24. At the point 0.5 m from the left hand side, either the forces to the left or to the right side of this point can be used because they are equal for equilibrium. Since there is only one force on the left side of the beam, it is easier to calculate:
+  </p>
+<p>
+   $$
+    \begin{aligned} \text{Bending moment at } 0.5 \text{ m from } R_1 &amp;= 4600 \text{ N} \times 0.5 \text{ m} \\ &amp;= 2300 \text{ Nm} \end{aligned}
+   $$
+  </p>
+<p>
+   The remaining moments are:
+  </p>
+<p>
+   $$
+    \begin{aligned}\text{Bending moment at 1 m from } R_1 &amp;= 4600 \text{ N} \times 1 \text{ m} \\ &amp;= 4600 \text{ Nm}\end{aligned}
+   $$
+  </p>
+<p>
+   $$
+    \begin{aligned}\text{Bending moment at 5 m from } R_1 &amp;= (4600 \text{ N} \times 5 \text{ m}) - (4000 \text{ N} \times 4 \text{ m}) \\ &amp;= 7000 \text{ Nm}\end{aligned}
+   $$
+  </p>
+<p>
+   $$
+    \begin{aligned}\text{Bending moment at 6 m from } R_1 &amp;= (4600 \text{ N} \times 6 \text{ m}) - (4000 \text{ N} \times 5 \text{ m}) - (2000 \text{ N} \times 1 \text{ m}) \\ &amp;= 5600 \text{ Nm}\end{aligned}
+   $$
+  </p>
+<p>
+   To check the results, take the moments to the right of the point 4 m from
+   \(
+    R_2
+   \)
+   :
+  </p>
+<p>
+   $$
+    \begin{aligned}\text{Bending moment at 4 m from } R_2 &amp;= 1400 \text{ N} \times 4 \text{ m} \\ &amp;= 5600 \text{ Nm}\end{aligned}
+   $$
+  </p>
+<img alt="Bending moment diagram for a simple beam with point loads." src="b712e7522f1bb7135730c7d1abb46d43_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<p>
+    The diagram shows a bending moment diagram for a beam. The horizontal axis is labeled 'Base Line'. The vertical axis represents the bending moment in Nm. The diagram consists of straight line segments connecting the following points: (0, 0), (1, 2300), (2, 4600), (5, 7000), (6, 5600), and (10, 0). Above the beam, there are two downward point loads: 4000 N at 2 m from the left end and 2000 N at 5 m from the left end. A scale bar indicates 'Scale 1 cm = 2000 Nm'.
+   </p>
+<div class="img-alt">
+    Bending moment diagram for a simple beam with point loads.
+   </div>
+</div>
+<p>
+   Figure 24
+   <br/>
+   Bending Forces on a Simple Beam
+  </p>
+<p>
+   It is common to show both the shear forces and the bending moments on the same diagram, as shown in Fig. 25. Note that the maximum bending moment occurs at the same location where the shear force crosses the axis and is zero.
+  </p>
+<img alt="Figure 25: Combined Shear Force and Bending Moment Diagrams for a beam with point loads." src="36ac3e730a00d3f42d3400f5709f641a_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<p>
+    The figure consists of two vertically aligned diagrams. The top diagram, labeled "Shear Forces", shows the shear force distribution along the beam. It starts at a reaction of 4600 N at the left support (0), remains constant until a point load of 4000 N is applied, dropping the shear to +600 N. It remains at +600 N until a 2000 N point load is applied, dropping the shear to -1400 N. It remains at -1400 N until the right support, where a 1400 N reaction returns it to 0. The bottom diagram, labeled "Bending Moments", shows the bending moment distribution. It starts at 0 at the left support, increases linearly to 4600 Nm under the first point load, increases linearly to a maximum of 7000 Nm under the second point load, and then decreases linearly back to 0 at the right support.
+   </p>
+<div class="img-alt">
+    Figure 25: Combined Shear Force and Bending Moment Diagrams for a beam with point loads.
+   </div>
+</div>
+<p>
+   Figure 25
+   <br/>
+   Combined Diagram
+  </p>
+<h3>
+   Example 14
+  </h3>
+<p>
+   A simply supported beam carries a distributed load of 100 kN/m, as shown in Fig. 26. Show the shear forces and bending moments on a diagram and determine the location of the maximum shear force and bending moment.
+  </p>
+<img alt="Figure 26: Diagram of a simply supported beam with a uniformly distributed load." src="1439cb942d9e363bbb3161b5540dd8c6_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<p>
+    The diagram shows a horizontal beam of length 10 m. A uniformly distributed load (UDL) of 100 kN/m is applied across the entire span. The beam is simply supported at both ends with reaction forces
+    \(
+     R_1 = 500 \text{ kN}
+    \)
+    at the left end and
+    \(
+     R_2 = 500 \text{ kN}
+    \)
+    at the right end.
+   </p>
+<div class="img-alt">
+    Figure 26: Diagram of a simply supported beam with a uniformly distributed load.
+   </div>
+</div>
+<p>
+   Figure 26
+   <br/>
+   Simply Supported Beam
+  </p>
+<h5>
+   Answer
+  </h5>
+<p>
+   The total load on the beam is
+   \(
+    100 \text{ kN/m} \times 10 \text{ m} = 1000 \text{ kN}
+   \)
+   . For the beam to be in equilibrium, each reaction must carry half the load or
+   \(
+    500 \text{ kN}
+   \)
+   . Therefore, the shear force at the left hand side starts at positive
+   \(
+    500 \text{ kN}
+   \)
+   to counter the force of the support. Moving
+   \(
+    1 \text{ m}
+   \)
+   to the right, the shear force becomes
+   \(
+    500 \text{ kN} - 100 \text{ kN} = 400 \text{ kN}
+   \)
+   . At the midpoint of the beam, the shear force is zero and then becomes negative, as shown in Fig. 27. Therefore, the maximum shear force is
+   \(
+    500 \text{ kN}
+   \)
+   and occurs at both ends of the beam.
+  </p>
+<p>
+   Because the shear force is zero in the middle of the beam, this is also the point of maximum bending moment. Take the moments on the right hand side of the beam and assume that the distributed load is concentrated at the midpoint:
+  </p>
+<p>
+   $$
+    \begin{aligned}\text{Bending moment at the center} &amp;= (500 \text{ kN} \times 5 \text{ m}) - [(100 \text{ kN/m} \times 5 \text{ m}) \times 2.5 \text{ m}] \\ &amp;= 2500 \text{ kNm} - [500 \text{ kN/m} \times 2.5 \text{ m}] \\ &amp;= 2500 \text{ kNm} - 1250 \text{ kNm} \\ &amp;= \mathbf{1250 \text{ kNm}} \text{ (Ans.)}\end{aligned}
+   $$
+  </p>
+<p>
+   Calculate the bending moment
+   \(
+    2.5 \text{ m}
+   \)
+   from either side:
+  </p>
+<p>
+   $$
+    \begin{aligned}\text{Bending moment } 2.5 \text{ m from } R_1 &amp;= (500 \text{ kN} \times 2.5 \text{ m}) - [(100 \text{ kN/m} \times 2.5 \text{ m}) \times 1.25 \text{ m}] \\ &amp;= 1250 \text{ kNm} - [(250 \text{ kN/m}) \times 1.25 \text{ m}] \\ &amp;= 1250 \text{ kNm} - 312.5 \text{ kNm} \\ &amp;= \mathbf{937.5 \text{ kNm}} \text{ (Ans.)}\end{aligned}
+   $$
+  </p>
+<p>
+   Calculating more points, the bending moments form a parabolic curve which is characteristic of a distributed load.
+  </p>
+<img alt="Shear Force and Bending Moment Diagrams for a beam with a uniformly distributed load." src="7c1f9e78e0f033d391b687f1652f6e47_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<p>
+    The figure shows two diagrams for a beam subjected to a uniformly distributed load (UDL) of 500 kN/m. The top diagram is the Shear Force Diagram (SFD), which is a straight line starting at +500 kN at the left end, crossing the zero line at the center, and ending at -500 kN at the right end. The bottom diagram is the Bending Moment Diagram (BMD), which is a parabolic curve starting at 0 at the left end, reaching a maximum value of 1250 Nm at the center, and returning to 0 at the right end.
+   </p>
+<div class="img-alt">
+    Shear Force and Bending Moment Diagrams for a beam with a uniformly distributed load.
+   </div>
+</div>
+<p>
+   Figure 27
+   <br/>
+   Shear Forces and Bending Moments
+  </p>
+<h3>
+   Example 15
+  </h3>
+<p>
+   A cantilever beam is subjected to two forces, one of 500 kN at a distance of 4 m from the fixed end and the other 200 kN, a distance of 8 m from the fixed end. Sketch the shear force and bending moment diagrams.
+  </p>
+<h5>
+   Answer
+  </h5>
+<p>
+   Referring to Fig. 28, the shear force at the fixed end is found by adding the forces applied to the right side which equal 700 kN. The shear force drops to 200 kN At the location of the 500 kN force.
+  </p>
+<p>
+   Referring to Fig. 28, the bending moment at the fixed end is derived by taking the moments to the right of that point:
+  </p>
+<p>
+   $$
+    \begin{aligned}
+ \text{Bending moment at the fixed end} &amp;= -[(500 \text{ kN} \times 4 \text{ m}) + (200 \text{ kN} \times 8 \text{ m})] \\
+ &amp;= -(2000 \text{ kNm} + 1600 \text{ kNm}) \\
+ &amp;= -3600 \text{ kNm (Ans.)}
+ \end{aligned}
+   $$
+  </p>
+<p>
+   $$
+    \begin{aligned}
+ \text{Bending moment at 500 kN load} &amp;= -(200 \text{ kN} \times 4 \text{ m}) \\
+ &amp;= -800 \text{ kNm (Ans.)}
+ \end{aligned}
+   $$
+  </p>
+<p>
+   Note that the moment is considered to be negative because it is clockwise in direction.
+  </p>
+<img alt="Diagram of a cantilever beam with a 500 kN point load at 4 m and a 200 kN/m UDL from 4 m to 8 m. Below are the Shear Force and Bending Moment diagrams." src="71ab4df17511d75261da8d462d643b1a_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<p>
+    The figure shows a cantilever beam of length 8 m, fixed at the left end and free at the right end. A point load of 500 kN is applied at 4 m from the fixed end. A uniformly distributed load (UDL) of 200 kN/m is applied from 4 m to 8 m. The Shear Force Diagram (SFD) shows a constant positive value of 700 kN from 0 to 4 m, a sudden drop to -200 kN at 4 m, and a constant negative value of -200 kN from 4 to 8 m. The Bending Moment Diagram (BMD) shows a linear increase from -3600 kNm at 0 m to -800 kNm at 4 m, and a parabolic increase from -800 kNm at 4 m to 0 kNm at 8 m.
+   </p>
+<table border="1">
+<thead>
+<tr>
+<th>
+       Position (m)
+      </th>
+<th>
+       Shear Force (kN)
+      </th>
+<th>
+       Bending Moment (kNm)
+      </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+       0
+      </td>
+<td>
+       700
+      </td>
+<td>
+       -3600
+      </td>
+</tr>
+<tr>
+<td>
+       4
+      </td>
+<td>
+       700 (just before), -200 (just after)
+      </td>
+<td>
+       -800
+      </td>
+</tr>
+<tr>
+<td>
+       8
+      </td>
+<td>
+       -200
+      </td>
+<td>
+       0
+      </td>
+</tr>
+</tbody>
+</table>
+<div class="img-alt">
+    Diagram of a cantilever beam with a 500 kN point load at 4 m and a 200 kN/m UDL from 4 m to 8 m. Below are the Shear Force and Bending Moment diagrams.
+   </div>
+</div>
+<p>
+   Figure 28
+   <br/>
+   Shear Force and Bending Moment Diagrams
+  </p>
+<h1>
+   Objective 7
+  </h1>
+<p>
+<b>
+    Perform calculations involving the fundamental torsion equation and explain the relationship between torque and stress.
+   </b>
+</p>
+<h2>
+   TORSION
+  </h2>
+<p>
+   When a shaft is used to transmit power in a machine, it is subjected to a rotational force known as twisting moment or torque that tends to twist or turn the shaft. Torque causes a shear force in the shaft. A deflection of the layers of metal which make up the shaft occurs with twisting in the shaft (see Fig. 29) and this deflection is called torsion. The shear forces are related to the angle of twist to determine the torque applied and to derive the power transmitted. The amount of shear force or torsion can be calculated by knowing the angle of twist at the shaft face in radians (
+   \(
+    \theta
+   \)
+   ) and the radius from the centre to the outside surface of the shaft. This principle is the basis for torquemeters that measure the power output of rotating equipment.
+  </p>
+<img alt="Diagram of a shaft under torsion. The shaft is shown as a cylinder with a circular cross-section. A radius 'r' is indicated from the center to the outer surface. The angle of twist at the shaft face is labeled 'θ'. The length of the shaft is labeled 'l'." src="41245ac07db266bea228735b9e8c8b73_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    Diagram of a shaft under torsion. The shaft is shown as a cylinder with a circular cross-section. A radius 'r' is indicated from the center to the outer surface. The angle of twist at the shaft face is labeled 'θ'. The length of the shaft is labeled 'l'.
+   </div>
+</div>
+<p>
+<i>
+    Figure 29
+    <br/>
+    Shaft Torsion
+   </i>
+</p>
+<p>
+   The fundamental torsion equation is used to determine the shear stress at any point on the radius. The maximum stress exists at the outer periphery of the shaft. This equation applies to circular shafts only.
+  </p>
+<p>
+   $$
+    \tau = \frac{Tr}{J}
+   $$
+  </p>
+<p>
+   where
+  </p>
+<p>
+   \(
+    \tau
+   \)
+   = shear stress, pascals
+  </p>
+<p>
+   \(
+    T
+   \)
+   = twisting moment or torque, Nm
+  </p>
+<p>
+   \(
+    J
+   \)
+   = polar second moment of area of cross-section about shaft,
+   \(
+    m^4
+   \)
+  </p>
+<p>
+   \(
+    r
+   \)
+   = radius of shaft, m
+  </p>
+<p>
+   \(
+    G
+   \)
+   = modulus of rigidity, pascals
+  </p>
+<p>
+   \(
+    \theta
+   \)
+   = angle of twist, radians
+  </p>
+<p>
+   The shear stress can be expressed in terms of shear strain and the modulus of rigidity as per
+   \(
+    G = \frac{\tau}{\gamma}
+   \)
+   . The shear strain can also be calculated from the angle of twist (measured in radians) by the relationship:
+  </p>
+<p>
+   $$
+    \gamma = \frac{r\theta}{l}
+   $$
+  </p>
+<p>
+   so that the torsion equation becomes:
+  </p>
+<p>
+   $$
+    \tau = \frac{Tr}{J}
+   $$
+  </p>
+<p>
+   $$
+    \text{but, } \tau = G\gamma
+   $$
+  </p>
+<p>
+   $$
+    \tau = \frac{Tr}{J} = G\gamma
+   $$
+  </p>
+<p>
+   $$
+    \text{also, } \frac{T}{J} = \frac{\delta}{r} = \frac{G\theta}{l}
+   $$
+  </p>
+<p>
+   $$
+    \frac{Tr}{J} = \frac{Gr\theta}{l}
+   $$
+  </p>
+<p>
+   The torque can then be determined by the equation:
+  </p>
+<p>
+   $$
+    T = \frac{G\theta J}{l}
+   $$
+  </p>
+<p>
+   Another calculation that is important when dealing with torsion is that of the
+   <b>
+    polar second moment
+   </b>
+   of a shaft. When a number of different areas are multiplied by the squares of their distances from a common point of reference, then the sum of the resulting products is called the
+   <b>
+    second moment
+   </b>
+   of the total area.
+  </p>
+<p>
+   The second moment of a shaft, taken from its polar centre, is thus called the polar second moment of the shaft, and it is referred to mathematically as
+   \(
+    J
+   \)
+   .
+  </p>
+<p>
+   The polar second moment for a solid shaft is:
+  </p>
+<p>
+   $$
+    J = \frac{\pi}{2} r^4
+   $$
+  </p>
+<p>
+   or
+  </p>
+<p>
+   $$
+    J = \frac{\pi d^4}{32}
+   $$
+  </p>
+<p>
+   and for a hollow shaft:
+  </p>
+<p>
+   $$
+    J = \frac{\pi}{2} (r_1^4 - r_2^4)
+   $$
+  </p>
+<p>
+   or
+  </p>
+<p>
+   $$
+    J = \frac{\pi}{32} (d_1^4 - d_2^4)
+   $$
+  </p>
+<h3>
+   Example 16
+  </h3>
+<p>
+   A rotating solid shaft of 200 mm diameter twists
+   \(
+    0.75^\circ
+   \)
+   over a length of 4 m. If the modulus of rigidity is 100 GPa, calculate the torque transmitted and the maximum shear stress.
+  </p>
+<h5>
+   Answer
+  </h5>
+<p>
+   The twist in radians is determined by the fact that there are
+   \(
+    2\pi
+   \)
+   radians in a circle so that
+  </p>
+<p>
+   $$
+    \begin{aligned}\theta &amp;= \frac{0.75}{360} \times 2\pi \text{ radians} \\ &amp;= 0.0131 \text{ radians}\end{aligned}
+   $$
+  </p>
+<p>
+   The polar second moment is found using the equation
+   \(
+    J = \frac{\pi r^4}{2}
+   \)
+   :
+  </p>
+<p>
+   $$
+    \begin{aligned}J &amp;= \frac{\pi d^4}{32} \\ &amp;= \frac{\pi \times 0.2^4}{32} \\ &amp;= 0.0002 \text{ m}^4\end{aligned}
+   $$
+  </p>
+<p>
+   The torque is from the equation
+   \(
+    T = \frac{G\theta J}{l}
+   \)
+   :
+  </p>
+<p>
+   $$
+    T = \frac{G\theta J}{l} = \frac{100 \times 10^9 \text{ Pa} \times 0.0131 \times 0.0002 \text{ m}^4}{4}
+   $$
+  </p>
+<p>
+   $$
+    T = 25 \times 10^9 \text{ Pa} \times 0.0131 \times 0.0002 \text{ Nm}
+   $$
+  </p>
+<p>
+   $$
+    T = \mathbf{65.50 \text{ kNm}} \text{ (Ans.)}
+   $$
+  </p>
+<p>
+   The stress is calculated from the torsion equation:
+  </p>
+<p>
+   $$
+    \tau = \frac{Tr}{J}
+   $$
+  </p>
+<p>
+   $$
+    \tau = \frac{65.5 \text{ kNm} \times 0.1 \text{ m}}{0.0002 \text{ m}^4}
+   $$
+  </p>
+<p>
+   $$
+    \tau = 32\,750 \text{ kN/m}^2
+   $$
+  </p>
+<p>
+   $$
+    \tau = \mathbf{32.75 \text{ MPa}} \text{ (Ans.)}
+   $$
+  </p>
+<h1>
+   Objective 8
+  </h1>
+<p>
+<b>
+    Explain the relationship between torque and power, and calculate maximum and mean torque for solid shafts of circular cross section.
+   </b>
+</p>
+<h2>
+   TORQUE AND POWER
+  </h2>
+<p>
+   In the module on Angular Motion (PE2-1-9), the relationship between torque (T in Nm), speed (n in rev/min) and power (P in watts) was established as
+  </p>
+<p>
+   $$
+    P = 2\pi T \frac{n}{60}
+   $$
+  </p>
+<p>
+   Another form of this equation can be used which uses
+   \(
+    \omega
+   \)
+   (angular velocity in rad/s)
+  </p>
+<p>
+   $$
+    P = T\omega
+   $$
+  </p>
+<h3>
+   MAXIMUM AND MEAN TORQUE
+  </h3>
+<p>
+   When using torque to calculate shaft stress and power, it is important to understand whether the torque varies with rotation. In turbines, the torque is constant through each revolution of the shaft. However, in reciprocating engines, the torque varies depending on which part of the cycle the engine is in and whether the engine operates on the Otto or Diesel cycle. In this case, there is a mean torque which applies to the calculation of power. A maximum torque determines the maximum stress on the shaft. It is usually expressed as a ratio of maximum to mean torque.
+  </p>
+<h3>
+   Example 17
+  </h3>
+<p>
+   A reciprocating engine runs at 200 rpm and drives a 400 mm diameter solid shaft. The maximum allowable stress is 50 MPa and the ratio of maximum to mean torque is 1.5. What is the maximum power that can be transmitted?
+  </p>
+<h5>
+   Answer
+  </h5>
+<p>
+   The polar inertia is found using the equation
+   \(
+    J = \frac{\pi r^4}{2}
+   \)
+  </p>
+<p>
+   $$
+    J = \frac{\pi r^4}{2}
+   $$
+  </p>
+<p>
+   $$
+    J = \frac{\pi \times 0.2^4}{2}
+   $$
+  </p>
+<p>
+   $$
+    J = 0.0025 \text{ m}^4
+   $$
+  </p>
+<p>
+   The torque is then obtained from the equation
+   \(
+    \tau = \frac{Tr}{J}
+   \)
+   :
+  </p>
+<p>
+   $$
+    \tau = \frac{Tr}{J}
+   $$
+  </p>
+<p>
+   $$
+    T = \frac{\tau J}{r}
+   $$
+  </p>
+<p>
+   $$
+    = \frac{50 \times 10^6 \text{ N/m}^2 \times 0.0025 \text{ m}^4}{0.2 \text{ m}}
+   $$
+  </p>
+<p>
+   $$
+    = 625\,000 \text{ Nm}
+   $$
+  </p>
+<p>
+   $$
+    = 625.0 \text{ kNm}
+   $$
+  </p>
+<p>
+   Since this is the maximum torque, the mean torque is:
+  </p>
+<p>
+   $$
+    \begin{aligned} \text{mean torque} &amp;= \frac{\text{maximum torque}}{1.5} \\ &amp;= \frac{625.0}{1.5} \\ &amp;= 416.67 \text{ kNm} \end{aligned}
+   $$
+  </p>
+<p>
+   From equation,
+   \(
+    P = 2\pi T \frac{n}{60}
+   \)
+   , the maximum power is:
+  </p>
+<p>
+   $$
+    \begin{aligned} P &amp;= 2\pi T \frac{n}{60} \\ &amp;= 2\pi \times 416.67 \times \frac{200}{60} \\ &amp;= 8726.72 \text{ kW (Ans.)} \end{aligned}
+   $$
+  </p>
+<h1>
+   Objective 9
+  </h1>
+<p>
+<b>
+    Calculate stress in coupling bolts due to torque.
+   </b>
+</p>
+<h2>
+   COUPLINGS
+  </h2>
+<p>
+   Bolted couplings are often used to connect shafts. Both the shaft and the bolts must be able to transmit the torque. If the radius at which the bolts are installed is known, the force applied to the bolts can be calculated. Given maximum allowable stress and the total sectional area of the bolt material, the required cross-sectional area and diameter of the bolts can be determined. If the bolt diameter and properties are known, it is possible to calculate the maximum torque allowed.
+  </p>
+<h3>
+   Example 18
+  </h3>
+<p>
+   Two 400 mm solid shafts are connected by a coupling which has 6 bolts on a 750 mm diameter circle. If the maximum allowable stress of the bolt material and the shaft is 50 MPa, what is the minimum diameter for each bolt?
+  </p>
+<h5>
+   Answer
+  </h5>
+<p>
+   The polar inertia is found using the equation
+   \(
+    J = \frac{\pi r^4}{2}
+   \)
+  </p>
+<p>
+   $$
+    J = \frac{\pi r^4}{2}
+   $$
+  </p>
+<p>
+   $$
+    J = \frac{\pi \times 0.2^4}{2}
+   $$
+  </p>
+<p>
+   $$
+    J = 0.0025 \text{ m}^4
+   $$
+  </p>
+<p>
+   The torque is then obtained from the equation
+   \(
+    \tau = \frac{Tr}{J}
+   \)
+   :
+  </p>
+<p>
+   $$
+    \tau = \frac{Tr}{J}
+   $$
+  </p>
+<p>
+   $$
+    T = \frac{\tau J}{r}
+   $$
+  </p>
+<p>
+   $$
+    = \frac{50 \times 10^6 \text{ N/m}^2 \times 0.0025 \text{ m}^4}{0.2 \text{ m}}
+   $$
+  </p>
+<p>
+   $$
+    = 625\,000 \text{ Nm}
+   $$
+  </p>
+<p>
+   $$
+    = 625.0 \text{ kNm}
+   $$
+  </p>
+<p>
+   The force applied to the bolts is found by dividing the torque by the radius of the bolts:
+  </p>
+<p>
+   $$
+    \begin{aligned}\text{Force} &amp;= \frac{\text{torque}}{\text{radius}} \\ &amp;= \frac{625.0 \text{ kNm}}{0.375 \text{ m}} \\ &amp;= 1666.67 \text{ kN}\end{aligned}
+   $$
+  </p>
+<p>
+   Because Force = stress
+   \(
+    \times
+   \)
+   area , the total area required is:
+  </p>
+<p>
+   $$
+    \begin{aligned}\text{Force} &amp;= \text{stress} \times \text{area} \\ \text{area} &amp;= \frac{\text{Force}}{\text{stress}} \\ A &amp;= \frac{1666.67 \times 10^3 \text{ kN}}{50 \times 10^6 \text{ kN/m}^2} \\ &amp;= 0.0333 \text{ m}^2\end{aligned}
+   $$
+  </p>
+<p>
+   Thus, the area of each bolt will be:
+  </p>
+<p>
+   $$
+    \begin{aligned}A &amp;= \frac{0.0333 \text{ m}^2}{6} \\ &amp;= 0.0056 \text{ m}^2\end{aligned}
+   $$
+  </p>
+<p>
+   The radius of each bolt should be:
+  </p>
+<p>
+   $$
+    \begin{aligned}A &amp;= \pi r^2 \\ r^2 &amp;= \frac{A}{\pi} \\ r &amp;= \sqrt{\frac{0.0056 \text{ m}^2}{3.1416}} \\ r &amp;= \sqrt{0.0018} \\ r &amp;= 0.0422 \text{ m}\end{aligned}
+   $$
+  </p>
+<p>
+   The diameter of each bolt should be: 0.0844 m
+  </p>
+<p>
+<b>
+    84.4 mm (Ans.)
+   </b>
+</p>
+<ol style="list-style-type: none">
+<li>
+    1. A simply supported beam is loaded as shown in Fig. 30. What supporting forces are required at
+    \(
+     R_1
+    \)
+    and
+    \(
+     R_2
+    \)
+    to maintain the beam in equilibrium?
+   </li>
+</ol>
+<img alt="Diagram of a simply supported beam with two point loads. The beam has a total length of 10 m. Support R1 is at the left end, and support R2 is at the right end. A 1000 N point load is applied 2 m from the left end. A 3000 N point load is applied 5 m from the 1000 N load (7 m from the left end). The beam extends 3 m beyond the 3000 N load to the right support R2." src="26d664119ad25250780f554633444e54_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    Diagram of a simply supported beam with two point loads. The beam has a total length of 10 m. Support R1 is at the left end, and support R2 is at the right end. A 1000 N point load is applied 2 m from the left end. A 3000 N point load is applied 5 m from the 1000 N load (7 m from the left end). The beam extends 3 m beyond the 3000 N load to the right support R2.
+   </div>
+</div>
+<p>
+   Figure 30
+   <br/>
+   Simply Supported Beam
+  </p>
+<ol style="list-style-type: none">
+<li>
+    2. Define a centroid. Define the first moment of areas and explain how it relates to the location of a centroid.
+   </li>
+<li>
+    3. A circular column with a diameter of 40 cm carries a compressive load of 200 kN. What is the stress on the column?
+   </li>
+<li>
+    4. A steel bar with a diameter of 6 cm and a length of 5 m is subjected to a tensile load of 250 kN. If the factor of safety is 5.8 and
+    \(
+     E
+    \)
+    is 225 GPa, calculate the following:
+    <ol style="list-style-type: none">
+<li>
+      a) Stress
+     </li>
+<li>
+      b) Strain
+     </li>
+<li>
+      c) Increase in length
+     </li>
+<li>
+      d) Elastic limit
+     </li>
+</ol>
+</li>
+<li>
+    5.
+    <ol style="list-style-type: none">
+<li>
+      a) Calculate the safe load in kN that can be carried by a stud of
+      \(
+       645.16 \text{ mm}^2
+      \)
+      cross-sectional area allowing a safe working stress of
+      \(
+       30 \text{ MN/m}^2
+      \)
+      .
+     </li>
+<li>
+      b) Calculate the number of studs required to hold the cylinder cover of a diesel engine where the maximum pressure in the cylinder is 4.5 MPa and the diameter of the cover is 400 mm.
+     </li>
+</ol>
+</li>
+</ol>
+<ol style="list-style-type: none">
+<li>
+    6. A steel bar is covered by a copper sheath over its entire length. This sheath is firmly affixed to the bar so that one cannot expand more than the other. The cross-sectional area of the steel bar is twice the cross-sectional area of the copper sheath. Calculate the stresses in the steel and copper when this bar is heated to 150°C.
+   </li>
+</ol>
+<p>
+   Given:
+  </p>
+<p>
+   Coefficient of linear expansion for the steel =
+   \(
+    12 \times 10^{-6}/^{\circ}\text{C}
+   \)
+  </p>
+<p>
+   Coefficient of linear expansion for the copper =
+   \(
+    17 \times 10^{-6}/^{\circ}\text{C}
+   \)
+  </p>
+<p>
+   \(
+    E
+   \)
+   for steel =
+   \(
+    210 \text{ GN/m}^2
+   \)
+  </p>
+<p>
+   \(
+    E
+   \)
+   for copper =
+   \(
+    100 \text{ GN/m}^2
+   \)
+  </p>
+<ol style="list-style-type: none">
+<li>
+    7. A cantilever 10 m long carries two concentrated loads, one at the free end and the other at the midpoint of the beam. The bending moments at the wall is 65 kN and, at the middle of the beam, 40 kN. Calculate the magnitudes of both loads.
+   </li>
+<li>
+    8. A 406 mm diameter solid steel shaft in a reciprocating engine develops 7150 kW. The maximum stress allowed is
+    \(
+     60 \text{ MN/m}^2
+    \)
+    and the maximum to mean torque ratio is 1.75:1. Calculate the rpm of the engine.
+   </li>
+<li>
+    9. Two 450 mm solid shafts are connected by a coupling which is 900 mm in diameter. The maximum allowable stress of the bolt material and the shaft is 50 MPa. If the diameter of each bolt is 90 mm, calculate the number of bolts required?
+   </li>
+</ol>
+</body>
+</html>

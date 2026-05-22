@@ -1,0 +1,2362 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+ 
+    <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['\\(', '\\)']],
+        displayMath: [['$$', '$$']]
+      }
+    };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+</head>
+ <body>
+    <div id="nav-header" style="padding: 15px 20px; background: #2c3e50; color: white; display: flex; align-items: center; gap: 20px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+        <a href="../index.html" style="color: white; text-decoration: none; background: #34495e; padding: 8px 16px; border-radius: 4px; font-weight: 600; font-size: 0.9rem; transition: background 0.2s;">← Back to Index</a>
+        <h1 style="margin: 0; font-size: 1.2rem; font-weight: 500; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Power Engineering Series</h1>
+    </div>
+    
+  <h1>
+   Fluid Mechanics 12
+  </h1>
+  <h2>
+   Learning Outcome
+  </h2>
+  <p>
+   <i>
+    When you complete this learning material, you will be able to:
+   </i>
+  </p>
+  <p>
+   Perform calculations related to fluid flows and pressures.
+  </p>
+  <h2>
+   Learning Objectives
+  </h2>
+  <p>
+   <i>
+    You will specifically be able to complete the following tasks:
+   </i>
+  </p>
+  <ol style="list-style-type: none">
+   <li>
+    1. Describe the basics of fluid mechanics.
+   </li>
+   <li>
+    2. Perform calculations related to pressure in a fluid.
+   </li>
+   <li>
+    3. Define and calculate thermal expansion of a vessel and its liquid contents.
+   </li>
+   <li>
+    4. Describe flow in open channels and calculate fluid flow through a weir.
+   </li>
+   <li>
+    5. Describe liquid flow in a pipe using the continuity equation.
+   </li>
+   <li>
+    6. Apply the law of conservation of energy to fluid flow and define Bernoulli's equation.
+   </li>
+   <li>
+    7. Calculate fluid flow from a vessel orifice.
+   </li>
+   <li>
+    8. Calculate flow using a venturi meter.
+   </li>
+  </ol>
+  <h2>
+   Objective 1
+  </h2>
+  <p>
+   <b>
+    <i>
+     Describe the basics of fluid mechanics.
+    </i>
+   </b>
+  </p>
+  <h3>
+   FLUID MECHANICS
+  </h3>
+  <p>
+   Fluid mechanics is the study of the behaviour of fluids, either liquids or gases. The study of fluids at rest is called fluid statics, and the study of fluids in motion is called fluid dynamics.
+  </p>
+  <p>
+   Liquids are generally incompressible, and therefore, take the same shape as the container, possibly with a free surface if the volume of the fluid is less than that of the container.
+  </p>
+  <p>
+   Gases are compressible and will usually fill the container that they are in. Since liquids turn into gases, under certain pressure and temperature conditions, fluids may change from one to the other and containers may contain a combination of liquid and gas.
+  </p>
+  <h3>
+   PROPERTIES OF FLUIDS
+  </h3>
+  <p>
+   There are several basic properties of fluids that are used to perform calculations of fluid behaviour:
+  </p>
+  <ul style="list-style-type: none">
+   <li>
+    • Density
+   </li>
+   <li>
+    • Relative density
+   </li>
+   <li>
+    • Specific weight
+   </li>
+   <li>
+    • Viscosity
+   </li>
+  </ul>
+  <h4>
+   Density
+  </h4>
+  <p>
+   Density (
+   \(
+    \rho
+   \)
+   , the Greek symbol rho) is the amount of mass (
+   \(
+    m
+   \)
+   ) per unit volume (
+   \(
+    V
+   \)
+   ) of a fluid.
+  </p>
+  <p>
+   The equation for density is:
+  </p>
+  <p>
+   $$
+    \text{Density} = \frac{\text{mass}}{\text{volume}} \quad \text{or}
+   $$
+   $$
+    \rho(\text{kg/m}^3) = \frac{m(\text{kg})}{V(\text{m}^3)}
+   $$
+  </p>
+  <p>
+   Because liquids are incompressible, the volume remains the same except for small changes due to pressure and temperature. Density remains essentially the same at all times. It is standard in the oil and gas industry to define liquid density at atmospheric pressure (101.325 kPa) and 15°C. Although other standards exist, there is little practical difference.
+  </p>
+  <p>
+   Since gases expand to fill the volume of the container, the density changes depending on the situation. Therefore, it is necessary to define the density of a gas based on a standard set of pressure and temperature conditions. The most common standard is 15°C and atmospheric pressure. For flow calculations, volume is expressed in terms of standard cubic meters (a cubic meter of fluid at standard conditions of 15°C and 101.325 kPa).
+  </p>
+  <h4>
+   Relative Density
+  </h4>
+  <p>
+   Instead of using actual densities, it is convenient to express density as a relative density, as compared to that of water. The relative density (RD) of a fluid is the ratio of its density (
+   \(
+    \rho
+   \)
+   ) to the density of water at 15°C and 101.325 kPa. The density of water is 1000 kg/m
+   <sup>
+    3
+   </sup>
+   .
+  </p>
+  <p>
+   The equation for relative density is:
+  </p>
+  <p>
+   $$
+    RD = \frac{\rho}{1000 \text{ kg/m}^3}
+   $$
+  </p>
+  <p>
+   Some common relative densities are provided in Table 1.
+  </p>
+  <p>
+   <i>
+    Table 1
+    <br/>
+    Common Densities and Relative Densities
+   </i>
+  </p>
+  <table border="1">
+   <thead>
+    <tr data-bbox="267 1272 1338 1316">
+     <th>
+      Type of Fluid
+     </th>
+     <th>
+      Density, kg/m
+      <sup>
+       3
+      </sup>
+     </th>
+     <th>
+      Relative Density
+     </th>
+    </tr>
+   </thead>
+   <tbody>
+    <tr data-bbox="267 1316 1338 1348">
+     <td>
+      Water, at 0°C
+     </td>
+     <td>
+      1000
+     </td>
+     <td>
+      1.0
+     </td>
+    </tr>
+    <tr data-bbox="267 1348 1338 1379">
+     <td>
+      Water, at 100°C
+     </td>
+     <td>
+      958
+     </td>
+     <td>
+      0.958
+     </td>
+    </tr>
+    <tr data-bbox="267 1379 1338 1411">
+     <td>
+      Lubricating oil (average)
+     </td>
+     <td>
+      900
+     </td>
+     <td>
+      0.9
+     </td>
+    </tr>
+    <tr data-bbox="267 1411 1338 1442">
+     <td>
+      Mercury
+     </td>
+     <td>
+      13,540
+     </td>
+     <td>
+      13.54
+     </td>
+    </tr>
+    <tr data-bbox="267 1442 1338 1474">
+     <td>
+      Gasoline
+     </td>
+     <td>
+      680
+     </td>
+     <td>
+      0.68
+     </td>
+    </tr>
+    <tr data-bbox="267 1474 1338 1505">
+     <td>
+      Medium fuel oil
+     </td>
+     <td>
+      852
+     </td>
+     <td>
+      0.852
+     </td>
+    </tr>
+    <tr data-bbox="267 1505 1338 1537">
+     <td>
+      Heavy fuel oil
+     </td>
+     <td>
+      906
+     </td>
+     <td>
+      0.906
+     </td>
+    </tr>
+    <tr data-bbox="267 1537 1338 1568">
+     <td>
+      Air, at -40°C
+     </td>
+     <td>
+      1.514
+     </td>
+     <td>
+      0.001514
+     </td>
+    </tr>
+    <tr data-bbox="267 1568 1338 1600">
+     <td>
+      Air, at 0°C
+     </td>
+     <td>
+      1.292
+     </td>
+     <td>
+      0.001292
+     </td>
+    </tr>
+    <tr data-bbox="267 1600 1338 1631">
+     <td>
+      Air, at 120°C
+     </td>
+     <td>
+      0.8978
+     </td>
+     <td>
+      0.0008978
+     </td>
+    </tr>
+    <tr data-bbox="267 1631 1338 1663">
+     <td>
+      Aluminum
+     </td>
+     <td>
+      2700
+     </td>
+     <td>
+      2.7
+     </td>
+    </tr>
+    <tr data-bbox="267 1663 1338 1694">
+     <td>
+      Natural gas (average)
+     </td>
+     <td>
+      600
+     </td>
+     <td>
+      0.6
+     </td>
+    </tr>
+   </tbody>
+  </table>
+  <h5>
+   Example 1
+  </h5>
+  <p>
+   A tank with a volume of
+   \(
+    5 \text{ m}^3
+   \)
+   is filled with oil which has a relative density of 0.89. What is the mass of the oil?
+  </p>
+  <h5>
+   Answer
+  </h5>
+  <p>
+   Using equation
+   \(
+    RD = \frac{\rho}{1000}
+   \)
+   , the density of the oil is:
+  </p>
+  <p>
+   $$
+    \begin{aligned} RD &amp;= \frac{\rho}{1000 \text{ kg/m}^3} \\ \rho &amp;= RD \times 1000 \text{ kg/m}^3 \\ &amp;= 0.89 \times 1000 \text{ kg/m}^3 \\ &amp;= 890 \text{ kg/m}^3 \end{aligned}
+   $$
+  </p>
+  <p>
+   Therefore, using equation
+   \(
+    \rho(\text{kg/m}^3) = \frac{m(\text{kg})}{V(\text{m}^3)}
+   \)
+   , the mass of the oil is:
+  </p>
+  <p>
+   $$
+    \begin{aligned} \rho(\text{kg/m}^3) &amp;= \frac{m(\text{kg})}{V(\text{m}^3)} \\ m &amp;= \rho \text{ kg/m}^3 \times V \text{ m}^3 \\ m &amp;= 890 \text{ kg/m}^3 \times 5 \text{ m}^3 \\ m &amp;= 4450 \text{ kg (Ans.)} \end{aligned}
+   $$
+  </p>
+  <h4>
+   Specific Weight
+  </h4>
+  <p>
+   Specific weight is the weight (
+   \(
+    w
+   \)
+   ) of a fluid per unit volume. Weight is related to mass by means of Newton's second law (
+   \(
+    w = mg
+   \)
+   ) with units in N (newtons).
+  </p>
+  <p>
+   The formula for specific weight, denoted by the Greek symbol
+   \(
+    \gamma
+   \)
+   (gamma), is:
+  </p>
+  <p>
+   $$
+    \gamma(\text{kN/m}^3) = \frac{w}{V}
+   $$
+  </p>
+  <p>
+   The specific weight of water is
+   \(
+    9.81 \text{ kN/m}^3
+   \)
+   . This value can be used to calculate the specific weight for any fluid (in
+   \(
+    \text{kN/m}^3
+   \)
+   ) if its relative density (RD) is known by the equation:
+  </p>
+  <p>
+   $$
+    \gamma = 9.81(\text{kN/m}^3) \times RD
+   $$
+  </p>
+  <p>
+   Some common specific weights are provided in Table 2.
+  </p>
+  <p>
+   Table 2
+   <br/>
+   <i>
+    Specific Weights
+   </i>
+  </p>
+  <table border="1">
+   <thead>
+    <tr data-bbox="438 371 1162 422">
+     <th>
+      Type of Fluid
+     </th>
+     <th>
+      Specific Weight
+      \(
+       \gamma
+      \)
+      , kN/m
+      <sup>
+       3
+      </sup>
+     </th>
+    </tr>
+   </thead>
+   <tbody>
+    <tr data-bbox="438 422 1162 457">
+     <td>
+      Ethyl Alcohol
+     </td>
+     <td>
+      7.74
+     </td>
+    </tr>
+    <tr data-bbox="438 457 1162 493">
+     <td>
+      Gasoline
+     </td>
+     <td>
+      6.67
+     </td>
+    </tr>
+    <tr data-bbox="438 493 1162 529">
+     <td>
+      Glycerin
+     </td>
+     <td>
+      12.40
+     </td>
+    </tr>
+    <tr data-bbox="438 529 1162 567">
+     <td>
+      Mercury
+     </td>
+     <td>
+      133.00
+     </td>
+    </tr>
+    <tr data-bbox="438 567 1162 609">
+     <td>
+      Water, at 15°C
+     </td>
+     <td>
+      9.80
+     </td>
+    </tr>
+   </tbody>
+  </table>
+  <h4>
+   Viscosity
+  </h4>
+  <p>
+   Viscosity expresses the reluctance to flow by a fluid acted upon by an external force. The coefficient of absolute viscosity of a fluid is a measure of its resistance to internal deformation or shear.
+  </p>
+  <p>
+   Measurement of absolute viscosity is carried out experimentally, the basic principle being that if a film of liquid, such as mineral oil, is placed between two parallel planes with the bottom one held stationary and the top one of known area moved at constant velocity, then the force required to maintain this velocity will depend upon the resistance to shear of the particular fluid being tested.
+  </p>
+  <p>
+   Molasses is a highly viscous fluid; water is much less viscous. The viscosity of a gas is small compared to that of water.
+  </p>
+  <p>
+   The unit of dynamic viscosity in the SI system is the pascal second (Pa·s) or millipascal second (m Pa·s)
+  </p>
+  <p>
+   <b>
+    Kinematic
+   </b>
+   viscosity is the ratio of the absolute viscosity to the mass density. In the SI system the unit of kinematic viscosity is the square metre per second (m
+   <sup>
+    2
+   </sup>
+   /s) or square millimetre per second (mm
+   <sup>
+    2
+   </sup>
+   /s)
+  </p>
+  <p>
+   The measurement of the absolute viscosity of fluids (especially gases and vapours) requires elaborate equipment and considerable experimental skill. On the other hand, a rather simple instrument can be used for measuring the kinematic viscosity of oils and other viscous liquids.
+  </p>
+  <p>
+   The instrument adopted as a standard in this country is the Saybolt Universal Viscometer, shown in Fig. 1. In measuring kinematic viscosity with this instrument, the time required for a small volume of liquid to flow through an orifice is determined; consequently the “Saybolt viscosity” of the liquid is given in seconds. For very viscous liquids, the Saybolt Furol instrument is used.
+  </p>
+  <img alt="Diagram of a Saybolt Viscosimeter setup. The diagram shows a cross-section of a 'Saybolt Tube' containing 'Oil Being Tested'. This tube is immersed in an 'Oil Bath'. A 'Thermometer' and a 'Temperature Regulator' are also in the bath. At the bottom of the tube is an 'Orifice'. Below the orifice, a 'Saybolt Viscometer' (represented by a flask) is positioned to collect the oil. The flask is marked '60 ml'." src="a68671ef36320b8515aa85d288d82cf1_img.jpg"/>
+  <div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+   <div class="img-alt">
+    Diagram of a Saybolt Viscosimeter setup. The diagram shows a cross-section of a 'Saybolt Tube' containing 'Oil Being Tested'. This tube is immersed in an 'Oil Bath'. A 'Thermometer' and a 'Temperature Regulator' are also in the bath. At the bottom of the tube is an 'Orifice'. Below the orifice, a 'Saybolt Viscometer' (represented by a flask) is positioned to collect the oil. The flask is marked '60 ml'.
+   </div>
+  </div>
+  <p>
+   Figure 1
+   <br/>
+   Saybolt Viscosimeter
+  </p>
+  <h2>
+   Objective 2
+  </h2>
+  <p>
+   <b>
+    <i>
+     Perform calculations related to pressure in a fluid.
+    </i>
+   </b>
+  </p>
+  <h3>
+   DEFINITION OF PRESSURE
+  </h3>
+  <p>
+   Pressure (
+   \(
+    p
+   \)
+   ) is defined as the force (
+   \(
+    F
+   \)
+   ) applied by a fluid on a unit area (
+   \(
+    A
+   \)
+   ). This can be stated by the equation (units are
+   \(
+    \text{N/m}^2
+   \)
+   or Pa): ____
+  </p>
+  <p>
+   $$
+    p = \frac{F}{A}
+   $$
+  </p>
+  <h4>
+   Example 2
+  </h4>
+  <p>
+   A hydraulic piston with a diameter of 10 cm is required to exert a force of 2000 N. What does the pressure need to be in the hydraulic fluid?
+  </p>
+  <h5>
+   Answer
+  </h5>
+  <p>
+   The cross-sectional area of the piston is
+  </p>
+  <p>
+   $$
+    \begin{aligned} A &amp;= \pi r^2 \\ &amp;= \pi(0.05 \text{ m})^2 \\ &amp;= 0.00785 \text{ m}^2 \end{aligned}
+   $$
+  </p>
+  <p>
+   From equation
+   \(
+    p = \frac{F}{A}
+   \)
+   , the pressure is:
+  </p>
+  <p>
+   $$
+    \begin{aligned} p &amp;= \frac{F}{A} \\ &amp;= \frac{2000 \text{ N}}{0.00785 \text{ m}^2} \\ &amp;= 254.8 \text{ kPa (Ans.)} \end{aligned}
+   $$
+  </p>
+  <h3>
+   PRESSURE IN A FLUID
+  </h3>
+  <p>
+   Two principles describing pressure in fluids, also known as Pascal's laws, are as follows:
+  </p>
+  <ol style="list-style-type: none">
+   <li>
+    1. Pressure acts in all directions in a fluid
+   </li>
+   <li>
+    2. Where a fluid meets a solid surface, the pressure acts perpendicular to the surface
+   </li>
+  </ol>
+  <p>
+   Since liquids are denser than gases, changes in elevation have a greater effect on pressure in fluids than pressure in gases. The pressure of a liquid at a specific elevation is determined by the height of the fluid above it.
+  </p>
+  <p>
+   This is expressed by the equation:
+  </p>
+  <p>
+   $$
+    p = hw
+   $$
+  </p>
+  <p>
+   The elevation (
+   \(
+    h
+   \)
+   ) is in meters. The specific weight (
+   \(
+    w
+   \)
+   ) of the liquid is obtained from Newton's second law, or from the equation:
+  </p>
+  <p>
+   $$
+    w = \rho g
+   $$
+  </p>
+  <p>
+   For water, this means that:
+  </p>
+  <p>
+   $$
+    \begin{aligned} w &amp;= \rho g \\ &amp;= 1000 \text{ kg/m}^3 \times 9.81 \text{ N/kg} \\ &amp;= 9.81 \text{ kN/m}^3 \end{aligned}
+   $$
+  </p>
+  <p>
+   Therefore, the equation can also be written as:
+  </p>
+  <p>
+   $$
+    p = h\rho g
+   $$
+  </p>
+  <p>
+   <b>
+    Note:
+   </b>
+   Pressure (
+   \(
+    p
+   \)
+   ) is the difference in pressure between two elevations. If the pressure at the top of a fluid column is higher (or lower) than atmospheric, take the fluid column pressure into account.
+  </p>
+  <h4>
+   Example 3
+  </h4>
+  <p>
+   What is the pressure exerted on a submarine at 200 m if the relative density of seawater is 1.03?
+  </p>
+  <h5>
+   Answer
+  </h5>
+  <p>
+   When relative density is known, use equation
+   \(
+    RD = \frac{\rho}{1000 \text{ kg/m}^3}
+   \)
+   to calculate density:
+  </p>
+  <p>
+   $$
+    \begin{aligned} RD &amp;= \frac{\rho}{1000 \text{ kg/m}^3} \\ \rho &amp;= 1000 \text{ kg/m}^3 \times RD \\ \rho &amp;= 1000 \text{ kg/m}^3 \times 1.03 \\ \rho &amp;= 1030 \text{ kg/m}^3 \end{aligned}
+   $$
+  </p>
+  <p>
+   Pressure is found using the equation
+   \(
+    p = h\rho g
+   \)
+   ,
+  </p>
+  <p>
+   $$
+    \begin{aligned} p &amp;= h\rho g \\ &amp;= 200 \text{ m} \times 1030 \text{ kg/m}^3 \times 9.81 \text{ N/kg} \\ &amp;= 2021 \text{ kPa (Ans.)} \end{aligned}
+   $$
+  </p>
+  <h3>
+   FORCE ON A SUBMERGED SURFACE
+  </h3>
+  <p>
+   With knowledge of the pressure exerted by a fluid, it is possible to calculate the force being applied to a solid surface. If the pressure varies across a surface, it is necessary to find the average pressure. The location of the average pressure is the centre of pressure. The centre of pressure is important in aerodynamics since it determines the direction and magnitude of motion of objects (such as aircraft).
+  </p>
+  <p>
+   Pressure normally increases in a linear proportion with elevation.
+  </p>
+  <h4>
+   Example 4
+  </h4>
+  <p>
+   What is the total force on the bottom and on each side of a tank 6 m by 10 m that holds water to a depth of 5 m?
+  </p>
+  <h5>
+   Answer
+  </h5>
+  <p>
+   The pressure at the bottom of the tank is found using equation
+   \(
+    p = h\rho g
+   \)
+   :
+  </p>
+  <p>
+   $$
+    \begin{aligned} p &amp;= h\rho g \\ &amp;= 5 \text{ m} \times 1000 \text{ kg/m}^3 \times 9.81 \text{ N/m}^2 \\ &amp;= 49.05 \text{ kPa} \end{aligned}
+   $$
+  </p>
+  <p>
+   The force on the
+   <b>
+    bottom
+   </b>
+   of the tank is determined by equation
+   \(
+    F = pA
+   \)
+   :
+  </p>
+  <p>
+   $$
+    \begin{aligned}
+ F &amp;= pA \\
+ &amp;= 49.05 \text{ kPa} \times (6 \text{ m} \times 10 \text{ m}) \\
+ &amp;= 2943 \text{ kN (Ans.)}
+ \end{aligned}
+   $$
+  </p>
+  <p>
+   The average pressure on the sides of the tank is one half of the pressure at the bottom, or 24.53 kPa (49.05/2).
+  </p>
+  <p>
+   The force on the
+   <b>
+    long side
+   </b>
+   of the tank is determined by equation
+   \(
+    F = pA
+   \)
+   :
+  </p>
+  <p>
+   $$
+    \begin{aligned}
+ F &amp;= pA \\
+ &amp;= 24.53 \text{ kPa} \times (5 \text{ m} \times 10 \text{ m}) \\
+ &amp;= 1226.5 \text{ kN (Ans.)}
+ \end{aligned}
+   $$
+  </p>
+  <p>
+   The force on the
+   <b>
+    short side
+   </b>
+   of the tank is determined by equation
+   \(
+    F = pA
+   \)
+   :
+  </p>
+  <p>
+   $$
+    \begin{aligned}
+ F &amp;= pA \\
+ &amp;= 24.53 \text{ kPa} \times (5 \text{ m} \times 6 \text{ m}) \\
+ &amp;= 735.9 \text{ kN (Ans.)}
+ \end{aligned}
+   $$
+  </p>
+  <h2>
+   Objective 3
+  </h2>
+  <p>
+   <b>
+    Define and calculate thermal expansion of a vessel and its liquid contents.
+   </b>
+  </p>
+  <h3>
+   THERMAL EXPANSION
+  </h3>
+  <p>
+   For solids, the expansion of an object is determined using the coefficient of thermal (or linear) expansion. For fluids, volumetric expansion is more appropriate.
+  </p>
+  <p>
+   The change in volume is found by the equation:
+  </p>
+  <p>
+   $$
+    \Delta V = V \beta (T_2 - T_1)
+   $$
+  </p>
+  <p>
+   where
+   \(
+    \beta
+   \)
+   is the coefficient of volumetric (or cubical) expansion (as measured in change in volume per
+   \(
+    ^{\circ}\text{C}
+   \)
+   ). For objects of constant density, expansion is equal in all directions. The coefficient of volumetric expansion (
+   \(
+    \beta
+   \)
+   ) is three times that for linear expansion (
+   \(
+    \alpha
+   \)
+   ). Thus, the equation can also be written as
+  </p>
+  <p>
+   $$
+    \Delta V = V 3\alpha (T_2 - T_1)
+   $$
+  </p>
+  <h4>
+   Example 5
+  </h4>
+  <p>
+   A tank of oil with a volume of
+   \(
+    10 \text{ m}^3
+   \)
+   is heated from
+   \(
+    15^{\circ}\text{C}
+   \)
+   to
+   \(
+    190^{\circ}\text{C}
+   \)
+   . If the coefficient of volumetric expansion is
+   \(
+    0.9 \times 10^{-3}
+   \)
+   per
+   \(
+    ^{\circ}\text{C}
+   \)
+   , what is the volume at
+   \(
+    190^{\circ}\text{C}
+   \)
+   ?
+  </p>
+  <h5>
+   Answer
+  </h5>
+  <p>
+   The change in volume is found using equation
+   \(
+    \Delta V = V \beta (T_2 - T_1)
+   \)
+   :
+  </p>
+  <p>
+   $$
+    \begin{aligned}\Delta V &amp;= V \beta (T_2 - T_1) \\ &amp;= 10 \text{ m}^3 \times (0.9 \times 10^{-3} / ^{\circ}\text{C}) \times (190 - 15)^{\circ}\text{C} \\ &amp;= 10 \text{ m}^3 \times (0.0009 / ^{\circ}\text{C}) \times (175)^{\circ}\text{C} \\ &amp;= 0.009 \text{ m}^3 / ^{\circ}\text{C} \times 175^{\circ}\text{C} \\ &amp;= 1.575 \text{ m}^3\end{aligned}
+   $$
+  </p>
+  <p>
+   Therefore, the new volume is:
+  </p>
+  <p>
+   $$
+    \begin{aligned}
+ V_2 &amp;= V_1 + \Delta V \\
+ &amp;= 5 \text{ m}^3 + 0.45 \text{ m}^3 \\
+ &amp;= 5.45 \text{ m}^3 \text{ (Ans.)}
+ \end{aligned}
+   $$
+  </p>
+  <h3>
+   DIFFERENTIAL VOLUMETRIC EXPANSION
+  </h3>
+  <p>
+   If two different materials change in temperature, they will expand or contract at different rates. Since a solid object usually expands less than the fluid it holds, this means that the liquid requires a larger volume. If a tank is almost full, it may overflow if the temperature increases. For the same reason, fluids contained in piping require an overflow tank to prevent spillage.
+  </p>
+  <h4>
+   Example 6
+  </h4>
+  <p>
+   A section of pipe 14 m long, with an internal diameter of 3 cm, is filled with oil and is heated by
+   \(
+    28^\circ\text{C}
+   \)
+   . What additional volume has to be accommodated in the system to contain the oil overflow?
+  </p>
+  <p>
+   Given: Coefficient of thermal expansion for steel -
+   \(
+    12 \times 10^{-6}
+   \)
+   per
+   \(
+    ^\circ\text{C}
+   \)
+   <br/>
+   Coefficient of volumetric expansion for oil -
+   \(
+    0.9 \times 10^{-3}
+   \)
+   per
+   \(
+    ^\circ\text{C}
+   \)
+  </p>
+  <h5>
+   Answer
+  </h5>
+  <p>
+   The volume of the piping is
+  </p>
+  <p>
+   $$
+    \begin{aligned}
+ V &amp;= 1400 \text{ cm} \times \pi (1.5 \text{ cm})^2 \\
+ &amp;= 9896 \text{ cm}^3
+ \end{aligned}
+   $$
+  </p>
+  <p>
+   The increase in the volume of the piping due to the expansion of the steel is found using equation
+   \(
+    \Delta V = V 3\alpha (T_2 - T_1)
+   \)
+   :
+  </p>
+  <p>
+   $$
+    \begin{aligned}
+ \Delta V &amp;= V 3\alpha (T_2 - T_1) \\
+ &amp;= 98963 \text{ cm}^3 \times 3 \times 12 \times 10^{-6} / ^\circ\text{C} \times 28^\circ\text{C} \\
+ &amp;= 98963 \text{ cm}^3 \times 0.0000036 / ^\circ\text{C} \times 28^\circ\text{C} \\
+ &amp;= 9.976 \text{ cm}^3
+ \end{aligned}
+   $$
+  </p>
+  <p>
+   The increase in the volume of the oil is found using equation
+   \(
+    \Delta V = V \beta (T_2 - T_1)
+   \)
+   :
+  </p>
+  <p>
+   $$
+    \begin{aligned}\Delta V &amp;= V \beta (T_2 - T_1) \\ &amp;= 9896 \text{ cm}^3 \times 0.9 \times 10^{-3} / ^\circ\text{C} \times 28 ^\circ\text{C} \\ &amp;= 9896 \text{ cm}^3 \times 0.0009 / ^\circ\text{C} \times 28 ^\circ\text{C} \\ &amp;= 249.38 \text{ cm}^3\end{aligned}
+   $$
+  </p>
+  <p>
+   The difference in volumes is the oil overflow which is:
+  </p>
+  <p>
+   $$
+    \begin{aligned}\text{Oil overflow} &amp;= 249.38 - 9.976 \\ &amp;= \mathbf{239.40 \text{ cm}^3} \text{ (Ans.)}\end{aligned}
+   $$
+  </p>
+  <h2>
+   Objective 4
+  </h2>
+  <p>
+   <b>
+    Describe flow in open channels and calculate fluid flow through a weir.
+   </b>
+  </p>
+  <h3>
+   FLOW IN OPEN CHANNELS
+  </h3>
+  <p>
+   One aspect of fluid mechanics, hydraulics, is concerned with liquid flow in open channels. For example, this applies to water supply, drainage and sewage systems, and water cooling systems in industry.
+  </p>
+  <p>
+   A weir is an obstruction placed across a channel to control flow. It is also used to measure the flow rate. An example is shown in Fig. 2.
+  </p>
+  <img alt="Figure 2: A weir used to measure flow rate." src="53cb558495f8cc93c4202314ef492966_img.jpg"/>
+  <div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+   <p>
+    The image contains two diagrams of weirs. The left diagram shows a rectangular weir where water flows over a flat top. A vertical line indicates the water level upstream, and a dashed line shows the water level downstream. The height difference between the two levels is labeled 'H'. The right diagram shows a V-shaped weir, where water flows over a triangular notch. Similar to the first diagram, it shows the upstream water level and the height 'H' from the notch's vertex to the water surface.
+   </p>
+   <div class="img-alt">
+    Figure 2: A weir used to measure flow rate.
+   </div>
+  </div>
+  <p>
+   Figure 2
+   <br/>
+   <i>
+    A Weir Used to Measure Flow Rate
+   </i>
+  </p>
+  <p>
+   In order to measure the flow, a notch is cut into the weir. The flow rate is a function of the shape of the notch, and the height of the flow through the notch. Rectangular notches are used for larger flow rates. Triangular, or V, notches are used for lower flow rates. The geometry of a V-notch is illustrated in Fig. 3.
+  </p>
+  <img alt="Figure 3: Geometry of a V-notch." src="458799cad70fd71e039b539e17892e4f_img.jpg"/>
+  <div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+   <p>
+    The diagram shows a cross-section of a V-shaped notch. The vertical height from the bottom vertex of the V to the horizontal water surface is labeled 'H'. The angle at the vertex of the V, which is the notch angle, is labeled with the Greek letter theta (
+   </p>
+   \(
+    \theta
+   \)
+   <p>
+    ).
+   </p>
+   <div class="img-alt">
+    Figure 3: Geometry of a V-notch.
+   </div>
+  </div>
+  <p>
+   Figure 3
+   <br/>
+   <i>
+    Geometry of a V-Notch
+   </i>
+  </p>
+  <p>
+   The general equation for flow through a V-notch is
+  </p>
+  <p>
+   $$
+    Q = 2.635 \tan \frac{\theta}{2} H^{\frac{5}{2}}
+   $$
+  </p>
+  <p>
+   where flow (
+   \(
+    Q
+   \)
+   ) is measured in
+   \(
+    \text{m}^3/\text{s}
+   \)
+   ,
+   \(
+    \theta
+   \)
+   is the angle of the notch, and
+   \(
+    H
+   \)
+   is the height of the fluid in metres (m). The constant, 2.635, is a function of the discharge coefficient and so may vary.
+  </p>
+  <p>
+   The best angle for the notch depends on the expected range of flow rates, but an angle of
+   \(
+    90^\circ
+   \)
+   is common. Since
+   \(
+    \tan \frac{90}{2} = 1
+   \)
+   , the equation becomes:
+  </p>
+  <p>
+   $$
+    Q = 2.635 H^{\frac{5}{2}}
+   $$
+  </p>
+  <p>
+   Since it is convenient to choose angles that yield even fractions of the flow, a
+   <b>
+    half notch
+   </b>
+   has an angle of
+   \(
+    53^\circ 8'
+   \)
+   which results in the equation:
+  </p>
+  <p>
+   $$
+    Q = 2.3175 H^{\frac{5}{2}}
+   $$
+  </p>
+  <p>
+   A
+   <b>
+    quarter notch
+   </b>
+   requires an angle of close to
+   \(
+    28^\circ
+   \)
+   .
+  </p>
+  <h4>
+   Example 7
+  </h4>
+  <p>
+   A weir with a
+   \(
+    90^\circ
+   \)
+   notch is 0.5 m high. What is the maximum flow that it can measure?
+  </p>
+  <h5>
+   Answer
+  </h5>
+  <p>
+   The maximum flow is calculated using equation
+   \(
+    Q = 2.635 H^{\frac{5}{2}}
+   \)
+   :
+  </p>
+  <p>
+   $$
+    \begin{aligned} Q &amp;= 2.635 H^{\frac{5}{2}} \\ &amp;= 2.635 \times (0.5)^{\frac{5}{2}} \\ &amp;= 2.635 \times 0.1768 \\ &amp;= 0.4658 \text{ m}^3/\text{s} \text{ (Ans.)} \end{aligned}
+   $$
+  </p>
+  <h3>
+   Rectangular Notch
+  </h3>
+  <p>
+   In Fig. 24, flow over a rectangular notch,
+   \(
+    B
+   \)
+   is the width of the notch, and
+   \(
+    H
+   \)
+   the head of liquid over the bottom of the notch. Consider one elemental strip of fluid area at a depth
+   \(
+    h
+   \)
+   below the surface, having breadth
+   \(
+    B
+   \)
+   and height
+   \(
+    dh
+   \)
+   . The area of the strip will be
+   \(
+    Bdh
+   \)
+   .
+  </p>
+  <p>
+   Its velocity of flow
+   \(
+    v
+   \)
+   will depend on
+   \(
+    h
+   \)
+   such that:
+  </p>
+  <p>
+   $$
+    \text{Velocity (v)} = \sqrt{2gh}
+   $$
+  </p>
+  <img alt="Diagram of a rectangular notch flow. The left part shows a velocity profile curve starting from zero at the top and increasing to a maximum velocity 'v' at the bottom. The right part shows a cross-section of a rectangular notch with width 'B' and total height 'H'. A horizontal strip of thickness 'dh' is shown at a depth 'h' from the top surface. The top surface is indicated by a horizontal line, and the bottom of the notch is also a horizontal line." src="b0d9faaee53565a4a333764297aa7b97_img.jpg"/>
+  <div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+   <div class="img-alt">
+    Diagram of a rectangular notch flow. The left part shows a velocity profile curve starting from zero at the top and increasing to a maximum velocity 'v' at the bottom. The right part shows a cross-section of a rectangular notch with width 'B' and total height 'H'. A horizontal strip of thickness 'dh' is shown at a depth 'h' from the top surface. The top surface is indicated by a horizontal line, and the bottom of the notch is also a horizontal line.
+   </div>
+  </div>
+  <p>
+   Figure 4
+   <br/>
+   Rectangular Notch Flow
+  </p>
+  <p>
+   The quantity flow through this strip of area will be:
+  </p>
+  <p>
+   $$
+    \text{Velocity (v)} \times \text{Area} = \sqrt{2gh} B dh
+   $$
+  </p>
+  <p>
+   The sum of all such strips from the bottom, where
+   \(
+    h = 0
+   \)
+   , to the top, where
+   \(
+    h = H
+   \)
+   , can be found by integrating between these limits.
+  </p>
+  <p>
+   $$
+    \text{Total flow} = \int_0^H \sqrt{2gh} g B dh
+   $$
+  </p>
+  <p>
+   Since
+   \(
+    B
+   \)
+   and
+   \(
+    2g
+   \)
+   are constant quantities:
+  </p>
+  <p>
+   $$
+    \text{Flow} = B g \sqrt{2g} \int_0^H h^{1/2} dh
+   $$
+  </p>
+  <p>
+   $$
+    \text{Flow} = B g \sqrt{2g} \left[ \frac{h^{1/2} + 1}{1/2 + 1} \right]_0^H
+   $$
+  </p>
+  <p>
+   $$
+    \text{Flow} = B g \sqrt{2g} \frac{2}{3} g H^{3/2}
+   $$
+  </p>
+  <p>
+   To make allowance for friction, contraction of flow and approach velocity, a coefficient of discharge should be included in the above formula. This should be found by test for each notch but will be approx. 0.59 to 0.62.
+  </p>
+  <p>
+   $$
+    \text{Flow through rectangular notch} = \frac{2}{3} C_d B \sqrt{2g} \times H^{3/2} \text{ m}^3/\text{s}
+   $$
+  </p>
+  <h4>
+   Example 8
+  </h4>
+  <p>
+   A rectangular notch is 6 m wide. It discharges 270 tonnes of water per minute. Calculate the head over the notch if the discharge coefficient is 0.59.
+  </p>
+  <h5>
+   Answer
+  </h5>
+  <p>
+   The head over the notch is calculated using equation
+   \(
+    \frac{2}{3} C_d B \sqrt{2g} \times H^{\frac{3}{2}} \text{ m}^3/\text{s}
+   \)
+   :
+  </p>
+  <p>
+   $$
+    \begin{aligned} 270 \text{ t/min} &amp;= 270 \text{ m}^3/\text{min} \\ &amp;= 4.5 \text{ m}^3/\text{s} \end{aligned}
+   $$
+  </p>
+  <p>
+   $$
+    \begin{aligned} \text{Discharge} &amp;= \frac{2}{3} \times C_d \times B \sqrt{2g} \times H^{\frac{3}{2}} \\ &amp;= \frac{2}{3} \times C_d \times B \sqrt{2 \times 9.81} \times H^{\frac{3}{2}} \\ &amp;= \frac{2}{3} \times 0.59 \times 6 \times 4.429 \times H^{\frac{3}{2}} \end{aligned}
+   $$
+  </p>
+  <p>
+   $$
+    \text{Head} = \left( \frac{D}{\frac{2}{3} \times 0.59 \times 6 \times 4.429} \right)^{\frac{2}{3}}
+   $$
+  </p>
+  <p>
+   $$
+    \text{Head} = \left( \frac{4.5}{\frac{2}{3} \times 0.59 \times 6 \times 4.429} \right)^{\frac{2}{3}}
+   $$
+  </p>
+  <p>
+   $$
+    = \left( \frac{4.5}{10.4524} \right)^{\frac{2}{3}}
+   $$
+  </p>
+  <p>
+   $$
+    = \sqrt[3]{0.4305^2}
+   $$
+  </p>
+  <p>
+   $$
+    \text{Head} = \mathbf{0.5702 \text{ m}} \text{ (Ans.)}
+   $$
+  </p>
+  <h2>
+   Objective 5
+  </h2>
+  <p>
+   <b>
+    <i>
+     Describe liquid flow in a pipe using the continuity equation.
+    </i>
+   </b>
+  </p>
+  <h3>
+   FLOW IN PIPES
+  </h3>
+  <p>
+   Many industrial systems incorporate the flow of liquids through enclosed piping, for example, process, cooling and lubrication systems.
+  </p>
+  <p>
+   In this module, flow is assumed to be uniform, steady, and laminar.
+  </p>
+  <p>
+   Flow is uniform if velocity is aligned with the axis of the pipe, and the flow does not re-circulate.
+  </p>
+  <p>
+   Flow is steady if it does not vary, or fluctuate, at a specific location with respect to time.
+  </p>
+  <p>
+   Flow is laminar if it moves in layers (laminae) with straight parallel streamlines. At higher velocities, laminar flow starts to break down and becomes turbulent.
+  </p>
+  <p>
+   Flow can be measured in one of three ways, by:
+  </p>
+  <ul style="list-style-type: none">
+   <li>
+    • Volume
+   </li>
+   <li>
+    • Mass
+   </li>
+   <li>
+    • Weight
+   </li>
+  </ul>
+  <h4>
+   Volume Flow Rate
+  </h4>
+  <p>
+   The first method used to measure flow is volume flow rate.
+  </p>
+  <p>
+   It is calculated by the equation:
+  </p>
+  <p>
+   $$
+    Q = Av
+   $$
+  </p>
+  <p>
+   \(
+    Q
+   \)
+   = Flow rate,
+   \(
+    \text{m}^3/\text{s}
+   \)
+  </p>
+  <p>
+   \(
+    A
+   \)
+   = Cross-sectional area,
+   \(
+    \text{m}^2
+   \)
+  </p>
+  <p>
+   \(
+    v
+   \)
+   = Average velocity across the area,
+   \(
+    \text{m/s}
+   \)
+  </p>
+  <p>
+   Since it is common to express volume flow in litres per minute (L/min), it may be necessary to convert using the equation:
+  </p>
+  <p>
+   $$
+    Q(\text{L/min}) = Q(\text{m}^3/\text{s}) \times 60 \text{ (s/min)} \times 1000 \text{ (L/m}^3\text{)}
+   $$
+  </p>
+  <h4>
+   Mass Flow Rate
+  </h4>
+  <p>
+   The second method, mass flow rate, is given by the equation
+  </p>
+  <p>
+   $$
+    M = \rho Q
+   $$
+  </p>
+  <p>
+   \(
+    M
+   \)
+   = Mass flow rate, kg/s
+  </p>
+  <p>
+   \(
+    \rho
+   \)
+   = Density, kg/m
+   <sup>
+    3
+   </sup>
+  </p>
+  <p>
+   \(
+    Q
+   \)
+   = Flow rate, m
+   <sup>
+    3
+   </sup>
+   /s
+  </p>
+  <h4>
+   Weight Flow Rate
+  </h4>
+  <p>
+   The third method, weight flow rate, is given by the equation
+  </p>
+  <p>
+   $$
+    W = \gamma Q
+   $$
+  </p>
+  <p>
+   \(
+    W
+   \)
+   = Weight flow rate, N/s
+  </p>
+  <p>
+   \(
+    \gamma
+   \)
+   = Specific weight of the fluid, N/m
+   <sup>
+    3
+   </sup>
+  </p>
+  <p>
+   \(
+    Q
+   \)
+   = Flow rate, m
+   <sup>
+    3
+   </sup>
+   /s
+  </p>
+  <h5>
+   Example 9
+  </h5>
+  <p>
+   A pipe of 10 cm internal diameter carries oil with a relative density of 0.87 at a velocity of 1 m/s. What is the flow rate in terms of volume (both m
+   <sup>
+    3
+   </sup>
+   /s and L/min), weight, and mass?
+  </p>
+  <h5>
+   Answer
+  </h5>
+  <p>
+   The area of the pipe is:
+  </p>
+  <p>
+   $$
+    \begin{aligned} A &amp;= \pi r^2 \\ &amp;= \pi (0.05\text{m})^2 \\ &amp;= 0.0079 \text{ m}^2 \end{aligned}
+   $$
+  </p>
+  <p>
+   Volume flow rate in m
+   <sup>
+    3
+   </sup>
+   /s is given by the equation
+   \(
+    Q = Av
+   \)
+   :
+  </p>
+  <p>
+   $$
+    \begin{aligned} Q &amp;= Av \\ &amp;= 0.0079 \text{ m}^2 \times 1 \text{ m/s} \\ &amp;= \mathbf{0.0079 \text{ m}^3/\text{s}} \text{ (Ans.)} \end{aligned}
+   $$
+  </p>
+  <p>
+   <b>
+    Volume flow in L/min
+   </b>
+   is given by the equation
+  </p>
+  <p>
+   $$
+    Q(\text{L/min}) = Q(\text{m}^3/\text{s}) \times 60 \text{ (s/min)} \times 1000 \text{ (L/m}^3\text{):}
+   $$
+  </p>
+  <p>
+   $$
+    Q(\text{L/min}) = Q(\text{m}^3/\text{s}) \times 60 \text{ (s/min)} \times 1000 \text{ (L/m}^3\text{)}
+   $$
+  </p>
+  <p>
+   $$
+    Q(\text{L/min}) = 0.0079 \text{ m}^3/\text{s} \times 60 \text{ (s/min)} \times 1000 \text{ (L/m}^3\text{)}
+   $$
+  </p>
+  <p>
+   $$
+    Q(\text{L/min}) = 474.00
+   $$
+  </p>
+  <p>
+   $$
+    Q(\text{L/min}) = \mathbf{474.00 \text{ L/min}} \text{ (Ans.)}
+   $$
+  </p>
+  <p>
+   The density of the oil is obtained from the equation
+   \(
+    R.D. = \frac{\rho}{1000 \text{ kg/m}^3}
+   \)
+   :
+  </p>
+  <p>
+   $$
+    R.D. = \frac{\rho}{1000 \text{ kg/m}^3}
+   $$
+  </p>
+  <p>
+   $$
+    \rho = R.D. \times 1000 \text{ kg/m}^3
+   $$
+  </p>
+  <p>
+   $$
+    \rho = 0.87 \times 1000 \text{ kg/m}^3
+   $$
+  </p>
+  <p>
+   $$
+    \rho = 870 \text{ kg/m}^3
+   $$
+  </p>
+  <p>
+   The
+   <b>
+    mass flow rate
+   </b>
+   is given by the equation
+   \(
+    M = \rho Q
+   \)
+   :
+  </p>
+  <p>
+   $$
+    M = \rho Q
+   $$
+  </p>
+  <p>
+   $$
+    = 870 \text{ kg/m}^3 \times 0.0079 \text{ m}^3/\text{s}
+   $$
+  </p>
+  <p>
+   $$
+    = \mathbf{6.8730 \text{ kg/s}} \text{ (Ans.)}
+   $$
+  </p>
+  <p>
+   The specific weight is calculated using the equation
+   \(
+    \gamma = 9.81 \text{ (kN/m}^3\text{)} \times R.D.
+   \)
+   :
+  </p>
+  <p>
+   $$
+    \gamma = 9.81 \text{ (kN/m}^3\text{)} \times R.D.
+   $$
+  </p>
+  <p>
+   $$
+    \gamma = 9.81 \times 0.87
+   $$
+  </p>
+  <p>
+   $$
+    \gamma = 8.5347 \text{ kN/m}^3
+   $$
+  </p>
+  <p>
+   The
+   <b>
+    weight flow rate
+   </b>
+   is given by equation
+   \(
+    W = \gamma Q
+   \)
+   :
+  </p>
+  <p>
+   $$
+    W = \gamma Q
+   $$
+  </p>
+  <p>
+   $$
+    = 8.5347 \text{ kN/m}^3 \times 0.0079 \text{ m}^3/\text{s}
+   $$
+  </p>
+  <p>
+   $$
+    = 0.0674 \text{ kN/m}^3
+   $$
+  </p>
+  <p>
+   $$
+    = \mathbf{67.40 \text{ N/m}^3} \text{ (Ans.)}
+   $$
+  </p>
+  <h3>
+   PRINCIPLE OF CONTINUITY
+  </h3>
+  <p>
+   The principle of continuity is a simple approach to analyzing flow in pipes. It is based on the law of conservation of mass which states that mass flow is the same at all points in a piping system as long as there are no junctions. Thus, mass flow rates are equal for any two points in a piping system, or
+  </p>
+  <p>
+   $$
+    M_1 = M_2
+   $$
+  </p>
+  <p>
+   By substituting the equation for volume flow rate,
+   \(
+    Q = Av
+   \)
+   , into the one for mass flow rate,
+   \(
+    M = \rho Q
+   \)
+   , the equation becomes:
+  </p>
+  <p>
+   $$
+    M_1 = M_2
+   $$
+  </p>
+  <p>
+   $$
+    \text{but } M = \rho Q
+   $$
+  </p>
+  <p>
+   $$
+    \rho Q = \rho Q
+   $$
+  </p>
+  <p>
+   $$
+    \text{but } Q = Av
+   $$
+  </p>
+  <p>
+   $$
+    \rho Av = \rho Av
+   $$
+  </p>
+  <p>
+   $$
+    \rho_1 A_1 v_1 = \rho_2 A_2 v_2
+   $$
+  </p>
+  <p>
+   For liquid flow, assume that the densities at any two points are the same. Therefore, the velocities of the flow vary only with the area, as shown in Fig. 5.
+  </p>
+  <p>
+   $$
+    A_1 v_1 = A_2 v_2
+   $$
+  </p>
+  <img alt="Diagram of a pipe with varying cross-sectional area showing the principle of continuity." src="878623b895fcb54c43d220da821ef20d_img.jpg"/>
+  <div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+   <p>
+    The diagram illustrates a horizontal pipe that narrows from left to right. On the wider left section, a shaded elliptical cross-section is labeled 'Area A
+    <sub>
+     1
+    </sub>
+    '. Four horizontal arrows point to the right within this section, with a label 'Velocity V
+    <sub>
+     1
+    </sub>
+    ' below them. The pipe then tapers to a narrower section on the right. In this section, another shaded elliptical cross-section is labeled 'Area A
+    <sub>
+     2
+    </sub>
+    '. Two horizontal arrows point to the right within this narrower section, with a label 'Velocity V
+    <sub>
+     2
+    </sub>
+    ' below them. The diagram visually demonstrates that the flow velocity increases as the cross-sectional area decreases.
+   </p>
+   <div class="img-alt">
+    Diagram of a pipe with varying cross-sectional area showing the principle of continuity.
+   </div>
+  </div>
+  <p>
+   Figure 5
+   <br/>
+   Simple Flow in a Pipe Showing the Principle of Continuity
+  </p>
+  <p>
+   <b>
+    Note:
+   </b>
+   These equations work well for liquids, but should only be used for gases with low velocity.
+  </p>
+  <h4>
+   Example 9
+  </h4>
+  <p>
+   A pipe, with an internal diameter of 10 cm, carries water with a velocity of 1 m/s. What is the velocity if the pipe size is reduced to 5 cm?
+  </p>
+  <h5>
+   Answer
+  </h5>
+  <p>
+   The area of the 10 cm pipe is:
+  </p>
+  <p>
+   $$
+    \begin{aligned} A &amp;= \pi r^2 \\ &amp;= \pi(0.05 \text{ m})^2 \\ &amp;= 0.0079 \text{ m}^2 \end{aligned}
+   $$
+  </p>
+  <p>
+   The area of the 5 cm pipe is:
+  </p>
+  <p>
+   $$
+    \begin{aligned} A &amp;= \pi r^2 \\ &amp;= \pi(0.025 \text{ m})^2 \\ &amp;= 0.0020 \text{ m}^2 \end{aligned}
+   $$
+  </p>
+  <p>
+   The velocity in the 5 cm pipe is calculated by using the equation
+   \(
+    A_1 v_1 = A_2 v_2
+   \)
+   :
+  </p>
+  <p>
+   $$
+    \begin{aligned} A_1 v_1 &amp;= A_2 v_2 \\ v_2 &amp;= \frac{A_1 v_1}{A_2} \\ &amp;= \frac{0.0079 \text{ m}^2 \times 1 \text{ m/s}}{0.0020 \text{ m}^2} \\ &amp;= 3.95 \text{ m/s (Ans.)} \end{aligned}
+   $$
+  </p>
+  <h2>
+   Objective 6
+  </h2>
+  <p>
+   <b>
+    Apply the law of conservation of energy to fluid flow and define Bernoulli's equation.
+   </b>
+  </p>
+  <h3>
+   LAW OF CONSERVATION OF ENERGY
+  </h3>
+  <p>
+   A more complete method of analyzing fluid flow is to apply the law of conservation of energy. It states that the total amount of energy in a fluid system remains constant, assuming that no energy is supplied to or removed from the system.
+  </p>
+  <p>
+   There are three forms of energy that can be exchanged in a fluid system depending on its configuration:
+  </p>
+  <ul style="list-style-type: none">
+   <li>
+    • Potential energy
+   </li>
+   <li>
+    • Kinetic energy
+   </li>
+   <li>
+    • Flow energy
+   </li>
+  </ul>
+  <h4>
+   Potential Energy
+  </h4>
+  <p>
+   The first form of energy is potential energy (PE or
+   \(
+    E_p
+   \)
+   ). Potential energy is the energy that is stored, or available, in a body due to its position or condition. A body with potential energy is at rest, but if released from its position it will perform work. It is solely due to the body's position that the potential for work exists. The work is done against the force of gravity. Potential energy represents the work required to elevate a mass of fluid over a vertical distance (
+   \(
+    h
+   \)
+   ).
+  </p>
+  <p>
+   It is calculated using the equation:
+  </p>
+  <p>
+   $$
+    E_p = mgh
+   $$
+  </p>
+  <h4>
+   Kinetic Energy
+  </h4>
+  <p>
+   The second form of energy is kinetic energy (KE or
+   \(
+    E_k
+   \)
+   ). Kinetic energy may be defined as the energy stored in a body due to its motion. By virtue of its motion, such a body has available energy stored up in the event that the force causing motion is removed.
+  </p>
+  <p>
+   It can be expressed as:
+  </p>
+  <p>
+   $$
+    E_k = \frac{1}{2}mv^2
+   $$
+  </p>
+  <h4>
+   Flow Energy
+  </h4>
+  <p>
+   The third form of energy is flow energy which is due to pressure.
+  </p>
+  <p>
+   It is expressed as:
+  </p>
+  <p>
+   $$
+    E_f = pQ
+   $$
+  </p>
+  <h3>
+   BERNOULLI'S PRINCIPLE
+  </h3>
+  <p>
+   For the total energy to be conserved, it is possible to write an equation for any two points in the fluid system (see Fig. 6) which results in the equations:
+  </p>
+  <p>
+   $$
+    E_1 = E_2
+   $$
+   $$
+    E_{f_1} + E_{p_1} + E_{k_1} = E_{f_2} + E_{p_2} + E_{k_2}
+   $$
+  </p>
+  <p>
+   $$
+    \text{but } E_p = mgh, E_k = \frac{1}{2}mv^2 \text{ and } E_f = pQ
+   $$
+  </p>
+  <p>
+   $$
+    P_1Q_1 + m_1gh_1 + \frac{1}{2}m_1v_1^2 = P_2Q_2 + m_2gh_2 + \frac{1}{2}m_2v_2^2
+   $$
+  </p>
+  <p>
+   Since
+   <i>
+    mass
+   </i>
+   appears in each term, the equation can be simplified by removing it.
+  </p>
+  <p>
+   This results in the Bernoulli equation (units in metres):
+  </p>
+  <p>
+   $$
+    h_1 + \frac{P_1}{w} + \frac{v_1^2}{2g} = h_2 + \frac{P_2}{w} + \frac{v_2^2}{2g}
+   $$
+  </p>
+  <p>
+   Where:
+   \(
+    w
+   \)
+   = force of gravity on 1 m
+   <sup>
+    3
+   </sup>
+   of fluid (N)
+   <br/>
+   \(
+    h
+   \)
+   = height above datum level (metres)
+   <br/>
+   \(
+    P
+   \)
+   = pressure (N/m
+   <sup>
+    2
+   </sup>
+   or Pa)
+   <br/>
+   \(
+    v
+   \)
+   = velocity of water (metres/second)
+  </p>
+  <p>
+   The first term represents elevation head, the second pressure head, and the third velocity head.
+  </p>
+  <img alt="Diagram illustrating fluid elements used in Bernoulli's Principle. It shows a curved pipe with two points, 1 and 2, marked. Point 1 is at a higher elevation h1 and has pressure p1 and velocity v1. Point 2 is at a lower elevation h2 and has pressure p2 and velocity v2. A dashed horizontal line represents the datum plane." src="6a73c2b5fcbc3ec5ab9cc694467a9da6_img.jpg"/>
+  <div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+   <div class="img-alt">
+    Diagram illustrating fluid elements used in Bernoulli's Principle. It shows a curved pipe with two points, 1 and 2, marked. Point 1 is at a higher elevation h1 and has pressure p1 and velocity v1. Point 2 is at a lower elevation h2 and has pressure p2 and velocity v2. A dashed horizontal line represents the datum plane.
+   </div>
+  </div>
+  <p>
+   Figure 6
+   <br/>
+   Fluid Elements Used in Bernoulli's Principle
+  </p>
+  <p>
+   It is important to recognize the restrictions on Bernoulli's principle, namely:
+  </p>
+  <ol style="list-style-type: none">
+   <li>
+    1. It applies only to incompressible fluids since it assumes that the relative density remains the same.
+   </li>
+   <li>
+    2. The flow must be steady and not change with respect to time.
+   </li>
+   <li>
+    3. There cannot be any mechanical device between the two locations that adds or extracts energy from the flow.
+   </li>
+   <li>
+    4. There can be no heat transferred into or out of the system.
+   </li>
+   <li>
+    5. There can be no energy lost due to friction.
+   </li>
+  </ol>
+  <p>
+   When evaluating a flow problem, it is often possible to ignore one or more terms in the equation. For example, if the points are taken at a free surface, the pressure will be zero and the pressure head is assumed to be zero. The velocity will also be zero at a free surface.
+  </p>
+  <h4>
+   Example 10
+  </h4>
+  <p>
+   Water flows through a horizontal pipe which varies in diameter. At one point, the pressure is 140 kPa and the velocity is 1.5 m/s. If the velocity is 15 m/s at another location, what is the pressure?
+  </p>
+  <h5>
+   Answer
+  </h5>
+  <p>
+   Since there is no change in elevation, the elevation head can be ignored and the equation can be written as:
+  </p>
+  <p>
+   $$
+    \frac{P_1}{w} + \frac{v_1^2}{2g} = \frac{P_2}{w} + \frac{v_2^2}{2g}
+   $$
+  </p>
+  <p>
+   $$
+    P_2 = \left( \frac{P_1}{w} + \frac{v_1^2}{2g} - \frac{v_2^2}{2g} \right) w
+   $$
+  </p>
+  <p>
+   $$
+    P_2 = \left( \frac{140 \text{ kPa}}{9.81 \text{ kN/m}^2} + \frac{(1.5 \text{ m/s})^2}{2 \times 9.81 \text{ kN/m}^2} - \frac{(15 \text{ m/s})^2}{2 \times 9.81 \text{ kN/m}^2} \right) \times 9.81 \text{ kN/m}^2
+   $$
+  </p>
+  <p>
+   $$
+    P_2 = (14.2712 + 0.1147 - 11.4679) \times 9.81 \text{ kN/m}^2
+   $$
+  </p>
+  <p>
+   $$
+    P_2 = 2.9180 \times 9.81 \text{ kN/m}^2
+   $$
+  </p>
+  <p>
+   $$
+    \text{Pressure} = 28.63 \text{ kPa (Ans.)}
+   $$
+  </p>
+  <h2>
+   Objective 7
+  </h2>
+  <p>
+   <b>
+    Calculate fluid flow from a vessel orifice.
+   </b>
+  </p>
+  <h3>
+   FLOW FROM A VESSEL ORIFICE
+  </h3>
+  <p>
+   Flow from a vessel, such as a tank, often occurs from an orifice at the bottom, such as the one shown in Fig. 7.
+  </p>
+  <img alt="Diagram of a vessel with an orifice at the bottom. Point 1 is at the top surface of the liquid, and point 2 is at the orifice. The height difference between the two points is labeled h1 - h2." src="5bd2e409e2ed67e06109635cc3a56e25_img.jpg"/>
+  <div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+   <p>
+    A diagram of a large vessel containing a liquid. A small orifice is located at the bottom right of the vessel wall. Point 1 is marked at the top surface of the liquid. Point 2 is marked at the orifice. A vertical double-headed arrow between the level of point 1 and the level of point 2 is labeled
+   </p>
+   \(
+    h_1 - h_2
+   \)
+   <p>
+    . A stream of liquid is shown exiting from the orifice.
+   </p>
+   <div class="img-alt">
+    Diagram of a vessel with an orifice at the bottom. Point 1 is at the top surface of the liquid, and point 2 is at the orifice. The height difference between the two points is labeled h1 - h2.
+   </div>
+  </div>
+  <p>
+   Figure 7
+   <br/>
+   <i>
+    Flow from a Vessel
+   </i>
+  </p>
+  <p>
+   The velocity, and thus the flow, can be calculated using Bernoulli's equation. Looking at the three terms in Bernoulli's equation, it can be seen that at point 1 (in Fig.7), the only term that remains is potential energy, or elevation head. At point 2, the pressure term is zero (using atmospheric pressure as the base). The resulting equation is therefore
+  </p>
+  <p>
+   $$
+    h_1 + \frac{p_1}{\gamma_w} + \frac{v_1^2}{2g} = h_2 + \frac{p_2}{\gamma_w} + \frac{v_2^2}{2g}
+   $$
+  </p>
+  <p>
+   $$
+    h_1 - h_2 = \frac{v_2^2}{2g}
+   $$
+  </p>
+  <p>
+   If the difference in height,
+   \(
+    h_1 - h_2
+   \)
+   , is indicated by
+   \(
+    h
+   \)
+   , by rearranging the equation, the velocity becomes:
+  </p>
+  <p>
+   $$
+    \begin{aligned}h_1 - h_2 &amp;= \frac{v_2^2}{2g} \\ \text{but } h_1 - h_2 &amp;= h \\ h &amp;= \frac{v_2^2}{2g} \\ v_2^2 &amp;= 2g \times h \\ v_2 &amp;= \sqrt{2gh}\end{aligned}
+   $$
+  </p>
+  <p>
+   The flow through the opening is derived by substituting
+   \(
+    v_2 = \sqrt{2gh}
+   \)
+   into the equation
+   \(
+    Q = A_2 v_2
+   \)
+   so that the volume flow is:
+  </p>
+  <p>
+   $$
+    \begin{aligned}Q &amp;= A_2 v_2 \\ \text{but } v_2 &amp;= \sqrt{2gh} \\ Q &amp;= A_2 \sqrt{2gh}\end{aligned}
+   $$
+  </p>
+  <p>
+   In practice, the velocity is somewhat less, and the flow is reduced because the effective area is smaller due to contraction of the jet flow. This leads to the need for a coefficient of discharge (always less than 1) to allow for correction. The equation then becomes
+  </p>
+  <p>
+   $$
+    Q = C_d A \sqrt{2gh}
+   $$
+  </p>
+  <h4>
+   Example 11
+  </h4>
+  <p>
+   Water flows from a 10 cm diameter hole in the side of a tank 6 m below the surface. If the coefficient of discharge is 0.6, what is the flow?
+  </p>
+  <h5>
+   Answer
+  </h5>
+  <p>
+   The area of the orifice is:
+  </p>
+  <p>
+   $$
+    \begin{aligned} A &amp;= \pi r^2 \\ &amp;= \pi(0.05 \text{ m})^2 \\ &amp;= 0.0079 \text{ m}^2 \end{aligned}
+   $$
+  </p>
+  <p>
+   The flow is obtained from the equation
+   \(
+    Q = C_d A \sqrt{2gh}
+   \)
+   :
+  </p>
+  <p>
+   $$
+    \begin{aligned} Q &amp;= C_d A \sqrt{2gh} \\ &amp;= 0.6 \times 0.0079 \text{ m}^2 \sqrt{2 \times 9.81 \text{ m/s}^2 \times 6 \text{ m}} \\ &amp;= 0.0047 \sqrt{117.72} \\ &amp;= 0.0047 \times 10.8499 \\ &amp;= 0.0510 \text{ m}^3/\text{s} \\ &amp;= \mathbf{51.0 \text{ l/s}} \text{ (Ans.)} \end{aligned}
+   $$
+  </p>
+  <h2>
+   Objective 8
+  </h2>
+  <p>
+   <b>
+    Calculate flow using a venturi meter.
+   </b>
+  </p>
+  <h3>
+   VENTURI METERS
+  </h3>
+  <p>
+   Bernoulli's principle can be used to measure flow rates using a range of devices based on the fact that flow can be correlated to the drop in pressure due to an increase in flow velocity. One such device is the venturi meter shown in Fig. 8.
+  </p>
+  <img alt="Diagram of a venturi meter showing a horizontal pipe with a constriction. The wider section has a height labeled h1 and a velocity labeled v1. The narrower section has a height labeled h2 and a velocity labeled v2. Arrows indicate the flow direction from left to right." src="fd0bd97f68ab12fb22f937db56c801a5_img.jpg"/>
+  <div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+   <div class="img-alt">
+    Diagram of a venturi meter showing a horizontal pipe with a constriction. The wider section has a height labeled h1 and a velocity labeled v1. The narrower section has a height labeled h2 and a velocity labeled v2. Arrows indicate the flow direction from left to right.
+   </div>
+  </div>
+  <p>
+   Figure 8
+   <br/>
+   Venturi Meter
+  </p>
+  <p>
+   Flow rate can be derived from a combination of Bernoulli's equation and the equation of continuity.
+  </p>
+  <p>
+   Bernoulli's equation can be written without the elevation head terms since the change in elevation is zero when the venturi meter is horizontal (and is still quite small even when it is installed vertically).
+  </p>
+  <p>
+   The resulting equation is:
+  </p>
+  <p>
+   $$
+    \frac{p_1}{w} + \frac{v_1^2}{2g} = \frac{p_2}{w} + \frac{v_2^2}{2g}
+   $$
+  </p>
+  <p>
+   If the cross-sectional areas are
+   \(
+    A_1
+   \)
+   and
+   \(
+    A_2
+   \)
+   , the equation of continuity can be written as:
+  </p>
+  <p>
+   $$
+    A_1 v_1 = A_2 v_2
+   $$
+  </p>
+  <p>
+   $$
+    v_2 = \frac{A_1 v_1}{A_2}
+   $$
+  </p>
+  <p>
+   Substituting this in Bernoulli's equation,
+   \(
+    h_1 + \frac{P_1}{w} + \frac{v_1^2}{2g} = h_2 + \frac{P_2}{w} + \frac{v_2^2}{2g}
+   \)
+   , we can solve for velocity at point 1 (in Fig.6) as follows:
+  </p>
+  <p>
+   $$
+    \frac{P_1}{w} + \frac{v_1^2}{2g} = \frac{P_2}{w} + \frac{v_2^2}{2g}
+   $$
+  </p>
+  <p>
+   $$
+    \frac{P_1}{w} - \frac{P_2}{w} = \frac{v_2^2}{2g} - \frac{v_1^2}{2g}
+   $$
+  </p>
+  <p>
+   $$
+    2g \frac{(P_1 - P_2)}{w} = v_2^2 - v_1^2
+   $$
+  </p>
+  <p>
+   $$
+    \text{But } v_2 = \frac{A_1 v_1}{A_2}
+   $$
+  </p>
+  <p>
+   $$
+    2g \frac{(P_1 - P_2)}{w} = \left( \frac{A_1 v_1}{A_2} \right)^2 - v_1^2
+   $$
+  </p>
+  <p>
+   $$
+    2g \frac{(P_1 - P_2)}{w} = v_1^2 \left( \frac{A_1^2}{A_2^2} - 1 \right)
+   $$
+  </p>
+  <p>
+   $$
+    v_1 = \sqrt{\frac{2g \frac{(P_1 - P_2)}{w}}{\left( \frac{A_1^2}{A_2^2} - 1 \right)}}
+   $$
+  </p>
+  <p>
+   Flow rate can be calculated from velocity by the equation,
+   \(
+    Q = Av
+   \)
+   , with the addition of a coefficient of discharge to account for the fact that there are some minor losses, so that:
+  </p>
+  <p>
+   $$
+    Q = A_1 v_1
+   $$
+  </p>
+  <p>
+   $$
+    \text{But } v_1 = \sqrt{\frac{2g \frac{(P_1 - P_2)}{w}}{\left(\frac{A_1^2}{A_2^2} - 1\right)}}
+   $$
+  </p>
+  <p>
+   $$
+    Q = A_1 C_d \sqrt{\frac{2g \frac{(P_1 - P_2)}{w}}{\left(\frac{A_1^2}{A_2^2} - 1\right)}}
+   $$
+  </p>
+  <h4>
+   Example 12
+  </h4>
+  <p>
+   A venturi meter with a pipe diameter of 30 cm and a throat diameter of 15 cm is used to determine the flow rate of water. If the pressures are measured as 138 kPa and 117 kPa, respectively, and the coefficient of discharge is 0.98, what is the flow rate?
+  </p>
+  <h5>
+   Answer
+  </h5>
+  <p>
+   The area of the pipe is
+  </p>
+  <p>
+   $$
+    \begin{aligned} A_1 &amp;= \pi r^2 \\ &amp;= \pi (0.15 \text{ m})^2 \\ &amp;= 0.0707 \text{ m}^2 \end{aligned}
+   $$
+  </p>
+  <p>
+   The ratio of the areas is:
+  </p>
+  <p>
+   $$
+    \begin{aligned} \frac{A_1^2}{A_2^2} &amp;= \left(\frac{\pi r_1^2}{\pi r_2^2}\right)^2 \\ &amp;= \frac{r_1^4}{r_2^4} \\ &amp;= \frac{30 \text{ cm}^4}{15 \text{ cm}^4} \\ &amp;= 2^4 \\ &amp;= 16 \end{aligned}
+   $$
+  </p>
+  <p>
+   Since the gravitational force on water
+   \(
+    w
+   \)
+   is
+   \(
+    9.81 \text{ kN/m}^3
+   \)
+   the flow, using equation
+  </p>
+  <p>
+   $$
+    Q = A_1 C_d \sqrt{\frac{2g \frac{(P_1 - P_2)}{w}}{\left(\frac{A_1^2}{A_2^2} - 1\right)}} \text{ is:}
+   $$
+  </p>
+  <p>
+   $$
+    \begin{aligned}
+ Q &amp;= A_1 C_d \sqrt{\frac{2g \frac{(P_1 - P_2)}{w}}{\left(\frac{A_1^2}{A_2^2} - 1\right)}} \\
+ &amp;= 0.0707 \text{ m}^2 \times 0.98 \sqrt{\frac{2 \times 9.81 \text{ m/s}^2 \frac{(138 \text{ kPa} - 117 \text{ kPa})}{9.81 \text{ kN/m}^3}}{(16 - 1)}} \\
+ &amp;= 0.0693 \text{ m}^2 \sqrt{\frac{2 \times 9.81 \text{ m/s}^2 \times \frac{21 \text{ kPa}}{9.81 \text{ kN/m}^3}}{15}} \\
+ &amp;= 0.0693 \text{ m}^2 \sqrt{\frac{2 \times 9.81 \text{ m/s}^2 \times 2.1407}{15}} \\
+ &amp;= 0.0693 \text{ m}^2 \sqrt{\frac{42.001 \text{ m}^2/\text{s}^2}{15}} \\
+ &amp;= 0.0693 \text{ m}^2 \sqrt{2.8001 \text{ m}^2/\text{s}^2} \\
+ &amp;= 0.0693 \text{ m}^2 \times 1.6733 \text{ m}^2/\text{s}^2 \\
+ &amp;= 0.1160 \text{ m}^3/\text{s} \\
+ &amp;= 0.1160 \text{ m}^3/\text{s} \times 1000 \text{ l/m}^3 \times 60 \text{ s/min} \\
+ &amp;= \mathbf{6960.0 \text{ l/min (Ans.)}}
+ \end{aligned}
+   $$
+  </p>
+  <h2>
+   Chapter Questions
+  </h2>
+  <p>
+   A1.12
+  </p>
+  <ol style="list-style-type: none">
+   <li>
+    1. A tank contains a 5400 kg mass of oil which has a relative density of 0.86. What is the volume of the oil?
+   </li>
+   <li>
+    2. What is the total force on the bottom and on each side of a tank 2 m by 3 m that holds water to a depth of 1 m?
+   </li>
+   <li>
+    3. A tank of oil with a volume of
+    \(
+     5 \text{ m}^3
+    \)
+    heats up from
+    \(
+     20^\circ\text{C}
+    \)
+    to
+    \(
+     120^\circ\text{C}
+    \)
+    . If the coefficient of volumetric expansion is
+    \(
+     0.9 \times 10^{-3}
+    \)
+    per
+    \(
+     ^\circ\text{C}
+    \)
+    , what is the volume at
+    \(
+     120^\circ\text{C}
+    \)
+    ?
+   </li>
+   <li>
+    4. A weir with a half notch is 3 m high. What is the maximum flow that it can measure?
+   </li>
+   <li>
+    5. A rectangular notch is 7 m wide. The head of water over the rectangular notch is 0.85 metres. Calculate the amount of water per minute it discharges if the discharge coefficient is 0.62.
+   </li>
+   <li>
+    6.
+    <ol style="list-style-type: none">
+     <li>
+      a) Describe the principle of continuity.
+     </li>
+     <li>
+      b) A pipe of 20 cm internal diameter carries water with velocity of 2 m/s. What is the velocity if the pipe size is reduced to 10 cm?
+     </li>
+    </ol>
+   </li>
+   <li>
+    7. Water flows through a horizontal pipe which varies in diameter. At one point, the pressure is 225 kPa and the velocity is 2.45 m/s. If the pressure is 30 kPa at another location, what is the velocity?
+   </li>
+   <li>
+    8. Water flows from a 20 cm diameter hole in the side of a tank 5 m below the surface. If the coefficient of discharge is 0.7, what will be the flow?
+   </li>
+   <li>
+    9. A venturi meter with a pipe diameter of 30 cm and a throat diameter of 16 cm is used to determine the flow rate of water. If the pressures are measured as 140 kPa and 120 kPa, respectively, and the flow rate is 7000 l/min, what is the coefficient of discharge?
+   </li>
+  </ol>
+ </body>
+</html>

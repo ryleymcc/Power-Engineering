@@ -1,0 +1,1788 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+ 
+    <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['\\(', '\\)']],
+        displayMath: [['$$', '$$']]
+      }
+    };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+</head>
+ <body>
+    <div id="nav-header" style="padding: 15px 20px; background: #2c3e50; color: white; display: flex; align-items: center; gap: 20px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+        <a href="../index.html" style="color: white; text-decoration: none; background: #34495e; padding: 8px 16px; border-radius: 4px; font-weight: 600; font-size: 0.9rem; transition: background 0.2s;">← Back to Index</a>
+        <h1 style="margin: 0; font-size: 1.2rem; font-weight: 500; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Power Engineering Series</h1>
+    </div>
+    
+  <h1>
+   <b>
+    <i>
+     ASME Code Calculations:
+     <br/>
+     Stayed Surfaces, Safety
+     <br/>
+     Valves, Furnaces.
+    </i>
+   </b>
+  </h1>
+  <h2>
+   <b>
+    2
+   </b>
+  </h2>
+  <h2>
+   <b>
+    Learning Outcome
+   </b>
+  </h2>
+  <p>
+   <i>
+    When you complete this learning material, you will be able to:
+   </i>
+  </p>
+  <p>
+   Apply the appropriate formulae from ASME Sections I, IV, and VIII to calculations involving pressure vessel stayed surfaces, ligament efficiency, safety and safety relief valves, and furnaces.
+  </p>
+  <h2>
+   <b>
+    Learning Objectives
+   </b>
+  </h2>
+  <p>
+   <i>
+    You will specifically be able to complete the following tasks:
+   </i>
+  </p>
+  <ol style="list-style-type: none">
+   <li>
+    1. Calculate the required thickness and design pressure for braced and stayed surfaces in pressure vessels and the minimum required cross-sectional area of a stay.
+   </li>
+   <li>
+    2. Calculate the ligament efficiency method for two or more openings in the pressure boundary of a pressure vessel.
+   </li>
+   <li>
+    3. Calculate the required size and capacity of safety valves and safety relief valves.
+   </li>
+   <li>
+    4. Calculate required wall thicknesses of plain circular furnaces, circular flues, and corrugated furnaces.
+   </li>
+  </ol>
+  <h2>
+   INTRODUCTION
+  </h2>
+  <p>
+   This module uses ASME Sections I, IV, and VIII-1. Each of these sections contains rules for braced and stayed surfaces, safety valves, and furnaces or cylinders under external loads.
+  </p>
+  <p>
+   The objective of this module is not to produce a design engineer but a Power Engineer with knowledge of the basic rationale of the Codes.
+  </p>
+  <h3>
+   Stress on a vessel with internal pressure.
+  </h3>
+  <p>
+   In cylindrical vessel shells the stress set up by internal pressure longitudinally is equal to twice the stress set up circumferentially.
+  </p>
+  <p>
+   $$
+    \text{Longitudinal Stress} = \frac{\text{vessel diameter} \times \text{internal pressure}}{\text{vessel wall thickness} \times 2}
+   $$
+  </p>
+  <p>
+   $$
+    \text{Circumferential Stress} = \frac{\text{vessel end area} \times \text{internal pressure}}{\text{vessel circumference} \times \text{wall thickness}}
+   $$
+  </p>
+  <h4>
+   Example 1: Longitudinal and circumferential stress
+  </h4>
+  <p>
+   Determine the stress longitudinally and circumferentially on the shell of a vessel 4.5 m diameter, 35 mm thick and an internal pressure of 1350 kPa.
+  </p>
+  <p>
+   $$
+    \begin{aligned}\text{Longitudinal Stress} &amp;= \frac{\text{vessel diameter} \times \text{internal pressure}}{\text{vessel wall thickness} \times 2} \\ &amp;= \frac{4500 \times 1.350}{2 \times 35} \\ &amp;= 86.79 \text{ MPa}\end{aligned}
+   $$
+  </p>
+  <p>
+   $$
+    \begin{aligned}\text{Circumferential Stress} &amp;= \frac{\text{vessel end area} \times \text{internal pressure}}{\text{vessel circumference} \times \text{wall thickness}} \\ &amp;= \frac{\frac{\pi}{4} \times 4500^2 \times 1.35}{\pi \times 4500 \times 35} \\ &amp;= \frac{4500 \times 1.35}{4 \times 35} \\ &amp;= 43.39 \text{ MPa}\end{aligned}
+   $$
+  </p>
+  <p>
+   <b>
+    Note:
+   </b>
+   The longitudinal pressure exerts a stress on the metal circumferentially, and the radial pressure exerts a stress on the metal longitudinally.
+  </p>
+  <p>
+   The strength of a vessel shell depends, therefore, on the
+   <b>
+    diameter
+   </b>
+   and
+   <b>
+    thickness
+   </b>
+   and is independent of the
+   <b>
+    length
+   </b>
+   .
+  </p>
+  <p>
+   The candidate should consult the latest ASME Codes: Section I; Section II, Part D; Section IV; and Section VIII, Division 1, while studying this module.
+  </p>
+  <h3>
+   Objective 1
+  </h3>
+  <p>
+   <b>
+    <i>
+     Calculate the required thickness and design pressure for braced and stayed surfaces in pressure vessels and the minimum required cross-sectional area of a stay.
+    </i>
+   </b>
+  </p>
+  <h2>
+   RELEVANT ASME CODE SECTIONS
+  </h2>
+  <p>
+   <b>
+    Section I:
+   </b>
+   The rules for stayed surfaces and staybolts can be found in Paragraph PG-46 to Paragraph PG-49, Paragraph PW-19 and Paragraph PFT-22 to Paragraph PFT-32.
+  </p>
+  <p>
+   <b>
+    Section IV:
+   </b>
+   The rules for stayed surfaces and staybolts can be found in Paragraph HG-340 and Paragraph HW-710 to HW-713.
+  </p>
+  <p>
+   <b>
+    Section VIII-1:
+   </b>
+   The rules for stayed surfaces and staybolts can be found in Paragraph UG-47 to Paragraph UG-50 and Paragraph UW-19.
+  </p>
+  <p>
+   Stays are used in pressure vessels to carry part or all of the pressure loading when it is desirable or possible to reduce the span and/or the thickness of a tube sheet or other pressure component. Opposite surfaces are tied together by staybolts, tubes, or baffles that carry the pressure loading in tension. Because bending moments, bending strength, and the tensile strength of the stays now resist the pressure loading, the required thickness of stayed surfaces may be less than that of surfaces which are not stayed.
+  </p>
+  <h3>
+   FLAT STAYED SURFACES
+  </h3>
+  <p>
+   The equation for flat-stayed surfaces is an adaptation of the flat head equation, with the diameter replaced by the distance stays. In this case, the
+   <b>
+    C
+   </b>
+   factor represents the degree of restraint to rotation that the stay attachment provides.
+  </p>
+  <p>
+   The design pressure and thickness for stayed plates are calculated by the following formulae:
+  </p>
+  <p>
+   $$
+    P = \frac{t^2 SC}{p^2} \quad (1.1)
+   $$
+  </p>
+  <p>
+   $$
+    t = p \sqrt{\frac{P}{SC}} \quad (1.2)
+   $$
+  </p>
+  <p>
+   \(
+    t
+   \)
+   = minimum thickness of plate (mm)
+  </p>
+  <p>
+   \(
+    p
+   \)
+   = maximum pitch measured between straight lines passing through the centres of the staybolts in different rows. The lines may be horizontal and vertical, or radial and circumferential (mm).
+  </p>
+  <p>
+   \(
+    P
+   \)
+   = maximum allowable working pressure or internal design pressure (kPa).
+  </p>
+  <p>
+   \(
+    S
+   \)
+   = maximum allowable stress (MPa)—given in Table IA of Section II, Part D, or in Tables HF-300.1 and HF-300.2 in Section IV.
+  </p>
+  <p>
+   \(
+    C
+   \)
+   = a constant—the value depends on details of the staybolt end design as follows:
+  </p>
+  <ul style="list-style-type: none">
+   <li>
+    \(
+     C = 2.1
+    \)
+    for welded stays or stays screwed through plates not over 11 mm in thickness with ends riveted over.
+   </li>
+   <li>
+    \(
+     C = 2.2
+    \)
+    for welded stays or stays screwed through plates over 11 mm in thickness with ends riveted over.
+   </li>
+   <li>
+    \(
+     C = 2.5
+    \)
+    for stays screwed through plates and fitted with single nuts outside the plate, or with inside and outside nuts, omitting washers, and for stays screwed into plates not less than 1.5 times the diameter of the staybolt (measured on the outside of the staybolt diameter). If washers are used, they shall be at least half as thick as the plate being stayed.
+   </li>
+   <li>
+    \(
+     C = 2.8
+    \)
+    for stays with heads not less than 1.3 times the diameter of the stays, screwed through plates or made with a taper fit and having the heads formed on the stay before installing them, and with the threaded ends not riveted over; the heads are made so as to have a true bearing on the plate.
+   </li>
+   <li>
+    \(
+     C = 3.2
+    \)
+    for stays fitted with inside and outside nuts and outside washers where the diameter of the washers is not less than
+    \(
+     0.4p
+    \)
+    and the thickness is not less than the thickness (
+    \(
+     t
+    \)
+    ) of the surface being stayed.
+   </li>
+  </ul>
+  <p>
+   Paragraph PG-46.2 states that the minimum thickness of plates to which stays may be applied, in other than cylindrical or spherical outer shell plates, is 8 mm except for welded construction covered by PW-19.
+  </p>
+  <h4>
+   Example 2: Stayed flat plate - maximum pressure
+  </h4>
+  <p>
+   Calculate the maximum allowable working pressure on stayed flat plates 12.5 mm thick, with staybolts attached by fusion welding and pitched 154 mm horizontally and vertically. The plate material is SA-516-55. The average temperature is 200 °C
+  </p>
+  <h5>
+   Solution:
+  </h5>
+  <p>
+   Use equation 1.1, see Section I, PG-46.1
+  </p>
+  <p>
+   $$
+    P = \frac{t^2 S C}{p^2}
+   $$
+  </p>
+  <p>
+   \(
+    P
+   \)
+   = maximum allowable working pressure (MPa)
+  </p>
+  <p>
+   \(
+    t
+   \)
+   = 12.5 mm
+  </p>
+  <p>
+   \(
+    p
+   \)
+   = 154 mm
+  </p>
+  <p>
+   \(
+    S
+   \)
+   = 108.2 MPa
+  </p>
+  <p>
+   \(
+    C
+   \)
+   = 2.2 for welded stays or stays screwed through plates over 11 mm in thickness with ends riveted over.
+  </p>
+  <p>
+   $$
+    P = \frac{t^2 S C}{p^2}
+   $$
+  </p>
+  <p>
+   $$
+    P = \frac{12.5^2 \times 108.2 \times 2.2}{154^2}
+   $$
+  </p>
+  <p>
+   $$
+    P = \frac{37193.75}{23716}
+   $$
+  </p>
+  <p>
+   $$
+    P = 1.568 \text{ MPa}
+   $$
+  </p>
+  <p>
+   $$
+    = 1568 \text{ kPa}
+   $$
+  </p>
+  <h4>
+   Example 3: Stayed flat plate - thickness
+  </h4>
+  <p>
+   Calculate the minimum thickness for stayed flat plates, with staybolts screwed through the plates and pitched 185 mm horizontally and vertically. The plate material is SA-204-A, maximum allowable working pressure 6205 kPa and operating temperature of 300° C.
+  </p>
+  <h5>
+   Solution
+  </h5>
+  <p>
+   Section I PG-46.1
+  </p>
+  <p>
+   $$
+    t = p \sqrt{\frac{P}{S C}}
+   $$
+  </p>
+  <p>
+   where
+  </p>
+  <p>
+   \(
+    P
+   \)
+   = 6.205 MPa
+  </p>
+  <p>
+   \(
+    S
+   \)
+   = 128.2 MPa
+  </p>
+  <p>
+   \(
+    p
+   \)
+   = 185 mm
+  </p>
+  <p>
+   \(
+    C
+   \)
+   = 2.2 (welded stays or stays screwed through plates over 11 mm in thickness with ends riveted over - assume that the plate will be greater than 11 mm thick.)
+  </p>
+  <p>
+   $$
+    \begin{aligned}
+ t &amp;= p \sqrt{\frac{P}{SC}} \\
+ t &amp;= 185 \sqrt{\frac{6.205}{128.2 \times 2.2}} \\
+ t &amp;= 185 \times \sqrt{0.022} \\
+ t &amp;= 185 \times 0.148 \\
+ t &amp;= 27.44 \text{ mm}
+ \end{aligned}
+   $$
+  </p>
+  <p>
+   The minimum required thickness of 27.44 mm is greater than 11 mm and
+   \(
+    C = 2.2
+   \)
+   is the correct factor to use.
+  </p>
+  <h3>
+   STAYS AND STAYBOLTS
+  </h3>
+  <p>
+   The requirements are the same for Section I, Section IV and Section VIII-1, only Section I references will be listed.
+  </p>
+  <p>
+   <b>
+    Paragraph PG-47
+   </b>
+   states specific requirements for staybolts or stays. A solid stay of 203 mm or less in length shall be drilled with telltale holes at least 4.8 mm diameter to a depth of at least 13 mm beyond the inside of the plate. Hollow stays may also be used. This type of stay can be found in the waterlegs of loco-type boilers. Corrosion is likely in this area, and if a stay corrodes then a 'telltale' leak can be seen. Telltale holes are not required if the staybolt is attached by fusion welding (PW-19.8).
+  </p>
+  <p>
+   <b>
+    Paragraph PFT-26
+   </b>
+   states that the area supported by a stay is based on the full pitch dimensions with the cross-sectional area of the stay subtracted. The load carried by that stay is the product of the area supported by the stay times the internal design pressure or MAWP (maximum allowable working pressure). Therefore :
+  </p>
+  <p>
+   $$
+    \begin{aligned}
+ \text{Stay load} &amp;= \text{pressure } (P) \times (\text{pitch area } (p^2) - \text{cross-sectional area of stay } (a)) \\
+ &amp;= P \times (p^2 - a)
+ \end{aligned} \tag{1.3}
+   $$
+  </p>
+  <p>
+   <b>
+    Paragraph PG-49
+   </b>
+   points at PFT-26 for computing the load on a staybolt. This load is then divided by the maximum allowable stress value from Table 1A of Section II, Part D. The result is multiplied by 10%. Therefore:
+  </p>
+  <p>
+   $$
+    \begin{aligned}
+ \text{Minimum area of stay } (a) &amp;= 1.10 \times (\text{stay load} / \text{maximum allowable stress } (S)) \\
+ &amp;= 1.10 \times (\text{stay load} / S)
+ \end{aligned} \tag{1.4}
+   $$
+  </p>
+  <h4>
+   Example 4: Minimum required area of stay
+  </h4>
+  <p>
+   Welded stays 30 mm diameter will be used to support a flat plate 16 mm thick. The pressure is 1350 kPa. The stays are spaced 200 mm horizontally and vertically. The steel used for the stays and plate is SA-192 at a maximum temperature of 300° C. Does the stay diameter meet the Code requirements?
+  </p>
+  <h5>
+   Solution
+  </h5>
+  <p>
+   Stay diameter of 30 mm.
+   \(
+    (a) = 0.7854 \times 0.030^2 = 0.707 \times 10^{-3} \text{ m}^2
+   \)
+  </p>
+  <p>
+   \(
+    P = 1350 \text{ kPa}
+   \)
+  </p>
+  <p>
+   \(
+    p = 200 \text{ mm} = 0.2 \text{ m}
+   \)
+  </p>
+  <p>
+   \(
+    S = 91.7 \text{ MPa} = 91700 \text{ kPa}
+   \)
+  </p>
+  <p>
+   Use equation 1.3 to determine the stay load.
+  </p>
+  <p>
+   $$
+    \begin{aligned}\text{Stay Load} &amp;= P \times (p^2 - a) \\ &amp;= 1350 \times (0.2^2 - 0.707 \times 10^{-3}) \\ &amp;= 53.046\end{aligned}
+   $$
+  </p>
+  <p>
+   Use equation 1.4 to determine the minimum required area of stay.
+  </p>
+  <p>
+   $$
+    \begin{aligned}\text{Minimum required area of stay} &amp;= 1.1 \times \text{Stay load}/S \\ &amp;= 1.1 \times 53.045/97100 \\ &amp;= 0.6 \times 10^{-3} \text{ m}^2\end{aligned}
+   $$
+  </p>
+  <p>
+   Use the equation below to determine the minimum diameter of the stay.
+  </p>
+  <p>
+   $$
+    \begin{aligned}\text{Minimum diameter of stay} &amp;= \sqrt{0.6 \times 10^{-3} / 0.7854} \\ &amp;= \sqrt{0.764 \times 10^{-3}} \\ &amp;= \mathbf{0.0276 \text{ m or } 27.6 \text{ mm}} \quad (\text{Ans.})\end{aligned}
+   $$
+  </p>
+  <p>
+   The stated diameter of the stay is 30 mm; this is larger than the minimum required diameter of 27.7 mm; therefore, the stay diameter meets the Code requirements.
+  </p>
+  <p>
+   Section IV, Paragraph HG-346 states that the firetubes in a firetube boiler may be used as stays. The required thickness, maximum pitch and design pressure for tubesheets with firetubes used as stays may be calculated by the following formulae:
+  </p>
+  <p>
+   $$
+    \begin{aligned}t &amp;= \sqrt{\left(\frac{P}{CS}\right) + \left(p^2 - \frac{\pi D^2}{4}\right)} \\ p &amp;= \sqrt{\left(\frac{CS t^2}{P}\right) + \left(\frac{\pi D^2}{4}\right)} \\ P &amp;= \frac{CS t^2}{p^2 - \left(\frac{\pi D^2}{4}\right)}\end{aligned}
+   $$
+  </p>
+  <p>
+   \(
+    t
+   \)
+   = the required plate thickness mm.
+  </p>
+  <p>
+   \(
+    p
+   \)
+   = the maximum pitch measured between the centers of tubes in different rows, mm.
+  </p>
+  <p>
+   \(
+    C = 2.7
+   \)
+   for firetubes welded to plates not over 11 mm thick
+  </p>
+  <p>
+   \(
+    C = 2.8
+   \)
+   for firetubes welded to plates over 11 mm thick
+  </p>
+  <p>
+   \(
+    S
+   \)
+   = the maximum allowable stress values given in Section IV, Tables HF-300.1 and HF-300.2 kPa
+  </p>
+  <p>
+   \(
+    P
+   \)
+   = the design pressure, kPa
+  </p>
+  <p>
+   \(
+    D
+   \)
+   = the outside diameter of the tubes, mm.
+  </p>
+  <p>
+   The pitch of firetubes used as stays shall not exceed 15 times the diameter of the tubes. Firetubes welded to tubesheets and used as stays must meet the requirements of HW-713.
+  </p>
+  <h2>
+   Objective 2
+  </h2>
+  <p>
+   <b>
+    <i>
+     Calculate the ligament efficiency method for two or more openings in the pressure boundary of a pressure vessel.
+    </i>
+   </b>
+  </p>
+  <h2>
+   INTRODUCTION
+  </h2>
+  <p>
+   The tubesheet of a firetube boiler is usually a flat plate. The tubesheet of a watertube boiler is part of the boiler drum. Single openings in circular vessels have been covered in Module 1. Multiple openings, such as to be found in a tubesheet, present a different case and are covered by ligament rules to be found in Section I Paragraph PG-52, Section IV Paragraph HG-350 and Section VIII Paragraph UG-53. The ligament rules only consider the material between the holes and do not consider the tube material wall thickness. The value of the ligament efficiency found by these rules is used in the determination of the minimum required thickness and/or the maximum allowable working pressure for cylindrical components under internal pressure found in Paragraph PG-27 and Paragraph UG-27
+  </p>
+  <h3>
+   LIGAMENTS
+  </h3>
+  <p>
+   A ligament is the area of metal between the holes in a tubesheet. The three types of ligaments are:
+  </p>
+  <p>
+   <b>
+    Longitudinal:
+   </b>
+   located between the front and lengthwise holes along the drum.
+  </p>
+  <p>
+   <b>
+    Circumferential:
+   </b>
+   located between the holes and encircle the drum.
+  </p>
+  <p>
+   <b>
+    Diagonal:
+   </b>
+   a special case because they are located between the holes and are offset at an angle to each other.
+  </p>
+  <p>
+   The rules of ligaments are applicable to groups of openings in cylindrical-pressure parts that form a definite pattern. These rules also apply to openings not spaced to exceed two diameters centre to centre.
+  </p>
+  <p>
+   The following symbols are used in the formulae for calculating ligament efficiency:
+  </p>
+  <p>
+   \(
+    P
+   \)
+   = longitudinal pitch of adjacent openings (mm)
+  </p>
+  <p>
+   \(
+    p'
+   \)
+   = diagonal pitch of adjacent openings (mm)
+  </p>
+  <p>
+   \(
+    p_1
+   \)
+   = pitch between corresponding openings in a series of symmetrical groups of openings (mm)
+  </p>
+  <p>
+   \(
+    d
+   \)
+   = diameter of openings (mm)
+  </p>
+  <p>
+   \(
+    n
+   \)
+   = number of openings in length
+   \(
+    p_l
+   \)
+  </p>
+  <p>
+   \(
+    E
+   \)
+   = ligament efficiency
+  </p>
+  <p>
+   Use the formula:
+  </p>
+  <p>
+   $$
+    E = \frac{p - d}{p} \quad (2.1)
+   $$
+  </p>
+  <p>
+   when the pitch of the tubes on every row is equal (Fig. 1).
+  </p>
+  <p>
+   Use the formula:
+  </p>
+  <p>
+   $$
+    E = \frac{p_l - nd}{p_l} \quad (2.2)
+   $$
+  </p>
+  <p>
+   when the pitch of the tubes on any one row is unequal (Figs. 2 and 3).
+  </p>
+  <p>
+   For tube holes drilled along a diagonal, as shown in Fig. 4, use the diagram in Fig. PG-52-1 to obtain the ligament efficiency. (Fig. UG-53.5, Section VIII-1)
+  </p>
+  <p>
+   <b>
+    Note:
+   </b>
+   For holes along a diagonal, Section IV, paragraph HG-350.4 provides the following formula:
+  </p>
+  <p>
+   $$
+    E = \frac{p' - d}{p' F} \quad (2.3)
+   $$
+  </p>
+  <p>
+   where
+   \(
+    F
+   \)
+   is obtained from the chart in Fig. HG-321.
+  </p>
+  <p>
+   This method gives a higher efficiency than that obtained in Section I or Section VIII-1.
+  </p>
+  <img alt="Diagram showing two rows of tube holes with equal pitch. The pitch is labeled as 140 mm between each hole. A horizontal arrow below the holes is labeled 'Longitudinal Line'." src="ee8536b235eb6aad21e2048fd5308900_img.jpg"/>
+  <div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+   <p>
+    The diagram shows two horizontal rows of circular tube holes. Above the top row, seven double-headed arrows indicate the pitch between holes, each labeled '140'. A horizontal arrow below the bottom row points to the right and is labeled 'Longitudinal Line'.
+   </p>
+   <div class="img-alt">
+    Diagram showing two rows of tube holes with equal pitch. The pitch is labeled as 140 mm between each hole. A horizontal arrow below the holes is labeled 'Longitudinal Line'.
+   </div>
+  </div>
+  <p>
+   <i>
+    Figure 1
+   </i>
+   <br/>
+   <i>
+    Example of tube spacing with hole pitch equal in every row
+   </i>
+  </p>
+  <img alt="Diagram showing two rows of tube holes with unequal pitch. The pitch alternates between 130 mm and 140 mm. A horizontal arrow below the holes is labeled 'Longitudinal Line'. A dimension line below the holes indicates a distance of 270 mm." src="55a593259a0749ce342bd5eac2ba6b58_img.jpg"/>
+  <div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+   <p>
+    The diagram shows two horizontal rows of circular tube holes. Above the top row, eight double-headed arrows indicate the pitch between holes, alternating between '130' and '140'. Below the bottom row, a horizontal arrow points to the right and is labeled 'Longitudinal Line'. A dimension line with arrows at both ends is positioned below the holes, labeled '270 mm'.
+   </p>
+   <div class="img-alt">
+    Diagram showing two rows of tube holes with unequal pitch. The pitch alternates between 130 mm and 140 mm. A horizontal arrow below the holes is labeled 'Longitudinal Line'. A dimension line below the holes indicates a distance of 270 mm.
+   </div>
+  </div>
+  <p>
+   Figure 2
+   <br/>
+   <i>
+    Example of tube spacing with hole pitch unequal in every second row
+   </i>
+  </p>
+  <img alt="Figure 2: Diagram showing tube spacing with hole pitch unequal in every second row. The diagram shows two rows of circular holes. The top row has hole pitches of 130, 130, 140, 130, 140, 130, 130, 140, and 130 mm. The bottom row is offset. A dimension line indicates a longitudinal distance of 670 mm. A 'Longitudinal Line' is indicated by an arrow pointing to the right." src="32cbf74724dd69f0603b24cf051810a9_img.jpg"/>
+  <div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+   <div class="img-alt">
+    Figure 2: Diagram showing tube spacing with hole pitch unequal in every second row. The diagram shows two rows of circular holes. The top row has hole pitches of 130, 130, 140, 130, 140, 130, 130, 140, and 130 mm. The bottom row is offset. A dimension line indicates a longitudinal distance of 670 mm. A 'Longitudinal Line' is indicated by an arrow pointing to the right.
+   </div>
+  </div>
+  <p>
+   Figure 3
+   <br/>
+   <i>
+    Example of tube spacing with hole pitch varying in every second and third row
+   </i>
+  </p>
+  <img alt="Figure 3: Diagram showing tube spacing with hole pitch varying in every second and third row. The diagram shows a staggered pattern of circular holes across three rows. A horizontal dimension line indicates a pitch of 140 mm. A diagonal dimension line indicates a pitch of 160 mm. A 'Longitudinal Line' is indicated by an arrow pointing to the right." src="ff2492be4fa814905acbad18f261b8a5_img.jpg"/>
+  <div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+   <div class="img-alt">
+    Figure 3: Diagram showing tube spacing with hole pitch varying in every second and third row. The diagram shows a staggered pattern of circular holes across three rows. A horizontal dimension line indicates a pitch of 140 mm. A diagonal dimension line indicates a pitch of 160 mm. A 'Longitudinal Line' is indicated by an arrow pointing to the right.
+   </div>
+  </div>
+  <p>
+   Figure 4
+   <br/>
+   <i>
+    Example of tube spacing with tube holes on diagonal lines
+   </i>
+  </p>
+  <h4>
+   Example 5: Thickness of drum tubesheet
+  </h4>
+  <p>
+   Using the rule in Section I, determine the minimum thickness of a 920 mm I.D. (internal diameter) cylindrical drum that has a series of openings in the pattern shown in Fig. 4 above and in Fig. 5 below. The openings are 63.5 mm diameter on a staggered pattern of three longitudinal rows on 76 mm circumferential spacing and 116 mm longitudinal spacing. The maximum allowable working pressure is 4100 kPa at a temperature of 250° C. Drum material is SA-516-55 and the tube material is SA-209-T1. The openings are not located in or near any butt-welded joint.
+  </p>
+  <h5>
+   Solution
+  </h5>
+  <img alt="Diagram of a drum tubesheet showing a grid of holes. The longitudinal pitch is 116 mm. The transverse pitch is 76 mm. The horizontal distance between holes in the same row is 58 mm. The diagonal pitch is labeled X. A 'Longitudinal Line' is indicated by an arrow at the bottom." src="d4af765160d04ecef538e5066006dc77_img.jpg"/>
+  <div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+   <div class="img-alt">
+    Diagram of a drum tubesheet showing a grid of holes. The longitudinal pitch is 116 mm. The transverse pitch is 76 mm. The horizontal distance between holes in the same row is 58 mm. The diagonal pitch is labeled X. A 'Longitudinal Line' is indicated by an arrow at the bottom.
+   </div>
+  </div>
+  <p>
+   Figure 5
+   <br/>
+   Solution - Thickness of a drum tubesheet
+  </p>
+  <p>
+   $$
+    \begin{aligned}
+ \text{Diagonal pitch } X &amp;= \sqrt{58^2 + 76^2} \\
+ &amp;= \sqrt{3364 + 5776} \\
+ &amp;= \sqrt{9140} \\
+ &amp;= 95.6 \text{ mm}
+ \end{aligned}
+   $$
+  </p>
+  <p>
+   Hole diameter (d) = 63.5 mm
+  </p>
+  <p>
+   Longitudinal pitch (p) = 116 mm
+  </p>
+  <p>
+   Use equation 2.1
+  </p>
+  <p>
+   $$
+    \begin{aligned}
+ E &amp;= \frac{p - d}{p} \\
+ &amp;= \frac{116 - 63.5}{116} \\
+ &amp;= 0.4526
+ \end{aligned}
+   $$
+  </p>
+  <p>
+   $$
+    \begin{aligned}
+ \frac{p'}{p} &amp;= \frac{95.6}{116} \\
+ &amp;= 0.824
+ \end{aligned}
+   $$
+  </p>
+  <p>
+   The point corresponding to these values on the diagram in Fig. PG-52.1, read from the y-axis, is 38%. As the point falls below the line of equal efficiency for the diagonal and longitudinal ligaments, the diagonal ligament is the weaker.
+  </p>
+  <p>
+   Section I, paragraph PG-27.2.2. (2001)
+  </p>
+  <p>
+   $$
+    t = \frac{PR}{SE - (1 - y)P} + C \quad (2.4)
+   $$
+  </p>
+  <p>
+   \(
+    P = 4100 \text{ kPa or } 4.1 \text{ MPa}
+   \)
+  </p>
+  <p>
+   \(
+    R = 460 \text{ mm}
+   \)
+  </p>
+  <p>
+   \(
+    S = 108.2 \text{ MPa at } 250^\circ \text{ C for SA-516-55}
+   \)
+  </p>
+  <p>
+   \(
+    E = 0.38
+   \)
+   as determined above
+  </p>
+  <p>
+   \(
+    C = 0
+   \)
+  </p>
+  <p>
+   \(
+    y = 0.4
+   \)
+   for ferritic steel below
+   \(
+    482^\circ \text{ C}
+   \)
+  </p>
+  <p>
+   $$
+    \begin{aligned} t &amp;= \frac{PR}{SE - (1 - y)P} + C \\ &amp;= \frac{4.1 \times 460}{108.2 \times 0.38 - (1 - 0.4) \times 4.1} \\ &amp;= \frac{1886}{41.116 - 2.46} \\ &amp;= \frac{1886}{38.656} \\ &amp;= 48.789 \text{ mm (Ans.)} \end{aligned}
+   $$
+  </p>
+  <p>
+   The minimum thickness of the drum shell would be 48.789 mm without any allowance for manufacture or corrosion.
+  </p>
+  <p>
+   <b>
+    Note:
+   </b>
+   The minimum thickness of this drum, plain, without being drilled for tubes would be 17.836 mm. Therefore, the drum could be manufactured from two half shells; the tube sheet half being 48.789 mm thick, and the drum half being 17.836 mm thick as shown in Fig. 6. Each half would meet the conditions of rule PG-27.2.2.
+  </p>
+  <img alt="Diagram of a circular drum cross-section. The top half is labeled 'DRUM' with an arrow pointing to it. The bottom half is labeled 'TUBESHEET' with an arrow pointing to it. The drum half is shown with a solid outer ring, while the tubesheet half is shown with a series of small rectangular segments, representing tube holes." src="832a3f95cc4469630aca33d36af8602c_img.jpg"/>
+  <div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+   <div class="img-alt">
+    Diagram of a circular drum cross-section. The top half is labeled 'DRUM' with an arrow pointing to it. The bottom half is labeled 'TUBESHEET' with an arrow pointing to it. The drum half is shown with a solid outer ring, while the tubesheet half is shown with a series of small rectangular segments, representing tube holes.
+   </div>
+  </div>
+  <p>
+   <i>
+    Figure 6
+    <br/>
+    Example: Thickness of drum tubesheet
+    <br/>
+    Drum manufactured from two half shells
+   </i>
+  </p>
+  <h3>
+   Objective 3
+  </h3>
+  <p>
+   <b>
+    Calculate the required size and capacity of safety valves and safety relief valves.
+   </b>
+  </p>
+  <p>
+   The most important and also the most critical valve on a boiler is the safety valve. Its only purpose is to protect the boiler by automatically limiting the internal boiler pressure to a point below its Maximum Allowable Working Pressure. To accomplish this, one or more safety valves must be installed. When the valves open, they must be capable of releasing all of the steam that the boiler is capable of generating at maximum firing rates without exceeding the specified maximum allowable pressure rise. By definition:
+  </p>
+  <ul style="list-style-type: none">
+   <li>
+    •
+    <b>
+     Safety valve
+    </b>
+    is used for gas or vapour service.
+   </li>
+   <li>
+    •
+    <b>
+     Relief valve
+    </b>
+    is used primarily for liquid service.
+   </li>
+   <li>
+    •
+    <b>
+     Safety relief valve
+    </b>
+    is suitable for use as either a safety valve or a relief valve.
+   </li>
+  </ul>
+  <p>
+   The rules for safety valves are found in Section I, paragraph PG-67.
+  </p>
+  <p>
+   Paragraph PG-67.1 states that each boiler shall have at least one safety valve and if it has more than 47 m
+   <sup>
+    2
+   </sup>
+   of bare tube heating surface, it shall have two or more
+  </p>
+  <p>
+   Paragraph PG-70 states that the safety valve manufacturer determines the maximum design capacity of the safety valve and the boiler manufacturer determines the number of safety valves required by Paragraph PG-67.1.
+  </p>
+  <p>
+   Paragraph PG-67.2.2 states that for a waste heat boiler the boiler manufacturer determines the minimum required relieving capacity based on the heat produced by the auxiliary firing or the waste heat recovery whichever is greater. This also applies to boilers that are designed for dual fuel firing.
+  </p>
+  <p>
+   Section I. Paragraph PG-69 contains the rules and capacity tests that must be met by a safety valve manufacturer to obtain the ASME Code Symbol.
+  </p>
+  <p>
+   Section I, Appendix A, paragraphs A-12 to A-17 show examples illustrating the method of checking safety valve capacity by measuring the maximum amount of fuel that can be burned per hour.
+  </p>
+  <p>
+   Using the formula
+  </p>
+  <img alt="Logo of the National Board of Boiler and Pressure Vessel Inspectors (NB)" src="ded1520e45c0c3e4c46c58984602bf0e_img.jpg"/>
+  <div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+   <div class="img-alt">
+    Logo of the National Board of Boiler and Pressure Vessel Inspectors (NB)
+   </div>
+  </div>
+  <p>
+   $$
+    W = \frac{C \times H \times 0.75}{2558} \quad (3.1)
+   $$
+  </p>
+  <p>
+   \(
+    W
+   \)
+   = mass of steam generated (kg/hr)
+  </p>
+  <p>
+   \(
+    C
+   \)
+   = total mass or volume of fuel burned/hr (kg or m
+   <sup>
+    3
+   </sup>
+   )
+  </p>
+  <p>
+   \(
+    H
+   \)
+   = heat of combustion of fuel (kJ/kg) from A-17
+  </p>
+  <p>
+   The sum of the safety valve capacities marked on the valves shall be equal to or greater than
+   \(
+    W
+   \)
+   .
+  </p>
+  <h3>
+   Example 6: Mass of steam generated
+  </h3>
+  <p>
+   A boiler at the time of maximum firing uses 730 m
+   <sup>
+    3
+   </sup>
+   of natural gas per hour. The boiler pressure is 1550 kPa gauge. What is the mass of steam generated?
+  </p>
+  <h5>
+   Solution
+  </h5>
+  <p>
+   From A-17, natural gas has an
+   \(
+    H
+   \)
+   value of 35 700 kJ/m
+   <sup>
+    3
+   </sup>
+   .
+  </p>
+  <p>
+   $$
+    \begin{aligned} W &amp;= \frac{C \times H \times 0.75}{2558} \\ &amp;= \frac{730 \times 35\,700 \times 0.75}{2558} \\ &amp;= 7641 \text{ kg of steam per hour (Ans.)} \end{aligned}
+   $$
+  </p>
+  <p>
+   Paragraph A-17 lists some specific heating values for various types of fuels. The heating value of the fuel must be known to solve equations determining the mass of steam that can be generated in a boiler.
+  </p>
+  <p>
+   Section I. Appendix A. A-44 states that the minimum safety valve relieving capacity may be estimated on the basis of the pounds of steam generated per hour per square foot of boiler heating surface and waterwall heating surface, as given in Table A-44. [At the time of writing, the Table A-44 has not been converted to SI Units]
+  </p>
+  <p>
+   Section I. Appendix A-46 lists three methods that can be used to check the safety valve capacity if the capacity cannot be determined.
+  </p>
+  <ul style="list-style-type: none">
+   <li>
+    • An accumulation test with all valves shut.
+   </li>
+   <li>
+    • By measuring the maximum amount of fuel that can be burned in the boiler and using this to compute the maximum amount of steam that can be generated.
+   </li>
+   <li>
+    • By measuring the maximum amount of feedwater that can be supplied to the boiler under maximum firing rates calculating the maximum volume of steam that can be generated.
+   </li>
+  </ul>
+  <h2>
+   Objective 4
+  </h2>
+  <p>
+   <b>
+    Calculate required wall thicknesses of plain circular furnaces, circular flues, and corrugated furnaces.
+   </b>
+  </p>
+  <h2>
+   FURNACES
+  </h2>
+  <p>
+   The strength of a plain furnace depends on the length, the diameter, and the square of the thickness. The strength of a corrugated furnace depends on the diameter and thickness.
+  </p>
+  <p>
+   Corrugated furnaces have the following advantages over plain furnaces:
+  </p>
+  <ol style="list-style-type: none">
+   <li>
+    1. Stronger than a plain furnace of the same dimensions.
+   </li>
+   <li>
+    2. Better expansion allowance using corrugations or ribs.
+   </li>
+   <li>
+    3. More surface area for the same length, therefore better heat transfer.
+   </li>
+  </ol>
+  <p>
+   Examples of the form of furnace tubes in use are shown below in Fig. 7 with common dimensions.
+  </p>
+  <img alt="Figure 7: Circular Furnace Designs. The diagram shows four types of furnace tube designs: 1. PLAIN with RINGS: A plain tube with two vertical rings. 2. FOX: A corrugated tube with a wavelength of 152.4 mm and a depth of 38 mm. 3. ADAMSON: A tube with four longitudinal ribs. 4. MORISON: A corrugated tube with a wavelength of 203 mm, a depth of 32 mm, a radius of curvature R, and a constraint (r ≤ 1/2R) for the inner radius." src="36117e9cb27c58484cd8d3e5f9dc7ac3_img.jpg"/>
+  <div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+   <p>
+    The diagram illustrates four common circular furnace tube designs. The first, labeled 'PLAIN with RINGS', shows a straight tube with two vertical rings. The second, labeled 'FOX', shows a corrugated tube with a wavelength of 152.4 mm and a depth of 38 mm. The third, labeled 'ADAMSON', shows a tube with four longitudinal ribs. The fourth, labeled 'MORISON', shows a corrugated tube with a wavelength of 203 mm, a depth of 32 mm, a radius of curvature R, and a constraint
+    \(
+     (r \leq 1/2R)
+    \)
+    for the inner radius.
+   </p>
+   <div class="img-alt">
+    Figure 7: Circular Furnace Designs. The diagram shows four types of furnace tube designs: 1. PLAIN with RINGS: A plain tube with two vertical rings. 2. FOX: A corrugated tube with a wavelength of 152.4 mm and a depth of 38 mm. 3. ADAMSON: A tube with four longitudinal ribs. 4. MORISON: A corrugated tube with a wavelength of 203 mm, a depth of 32 mm, a radius of curvature R, and a constraint (r ≤ 1/2R) for the inner radius.
+   </div>
+  </div>
+  <p>
+   Figure 7
+   <br/>
+   Circular Furnace Designs
+  </p>
+  <p>
+   Manufacturers use different methods to produce corrugations in the furnace tube. These patented designs have advantages over a plain tube.
+  </p>
+  <p>
+   <b>
+    Plain furnaces:
+   </b>
+   are often found in heating boilers because of the simplicity of construction and low cost. The design temperature of the furnace is specified as 260° C, but no design temperatures are specified for other components of the heating boiler. This is left to the designer/manufacturer. The rules for power boilers are to be found in Section I, paragraph PFT-15 and 51.
+  </p>
+  <p>
+   <b>
+    Ring-reinforced furnaces:
+   </b>
+   are found in Section I and Section VIII-1 vessels. The rules are found in Section I, paragraphs PFT-16 and 17.
+  </p>
+  <p>
+   <b>
+    Corrugated furnaces:
+   </b>
+   The rules for corrugated furnaces were originally developed in England in the late 1800s. Since that time, riveted seams and joints have been replaced by fusion welding which has improved the use of this type of furnace. Small plain circular portions have been added to the corrugated furnace tube for ease of construction. The rules are found in Section I, paragraph PFT-18.
+  </p>
+  <p>
+   <b>
+    Combined plain circular and corrugated furnaces:
+   </b>
+   have been produced but must conform to the rules set out in Section I, paragraph PFT-19.
+  </p>
+  <h3>
+   PLAIN FURNACES
+  </h3>
+  <p>
+   Section I states that the thickness of a plain circular furnace may not be less than 8 mm. Section IV states that the thickness may not be less than 6 mm. The difference in thickness is due to heating boilers being constructed for low pressures.
+  </p>
+  <p>
+   Furnaces are subjected to external pressure. Section II, Part D, Subpart 3, Appendix 3 (Basis for Establishing External Pressure Charts) explains how these rules were developed. The external pressure is equal to the compressive stresses and buckling can occur below the elastic limit if the wrong material or wrong wall thickness is chosen for a specific service. The equations developed for this are similar to those developed for column theory, where different relationships exist for critical load depending on the length of the column. ASME has used two equations to evaluate critical buckling pressures to produce graphical charts that simplify the calculations needed for a safe design. The charts are found in Section II, Part D, Subpart 3, Figure G, (page 681 of 2001 edition) representing the geometric properties of the cylinder, and Section II, Part D, Subpart 3, Figures CS-1 to CS-6 representing the material properties for carbon steels
+  </p>
+  <p>
+   Section I, paragraph PFT-51 outlines the procedure to determine the maximum allowable working pressure of tubes, flues, plain circular, Adamson, and ring-reinforced furnaces of firetube boilers.
+  </p>
+  <p>
+   The symbols defined below are used in the formulas for plain furnaces:
+  </p>
+  <p>
+   \(
+    A
+   \)
+   = factor determined from Section II, Part D, Fig. G—used to enter the applicable material chart in Section II, Part D. For cylinders having (
+   \(
+    D_o/t
+   \)
+   ) values less than 10, see PFT-51.1.2 (b).
+  </p>
+  <p>
+   \(
+    B
+   \)
+   = factor determined from the applicable material chart in Section II, Part D, Subpart 3 for maximum design metal temperature (kPa).
+  </p>
+  <p>
+   \(
+    D_o
+   \)
+   = outside diameter of cylindrical furnace or tube (mm).
+  </p>
+  <p>
+   \(
+    L
+   \)
+   = total length of the plain furnace taken as the distance from centre to centre of weld attachments (mm).
+  </p>
+  <p>
+   \(
+    P
+   \)
+   = external design pressure (kPa).
+  </p>
+  <p>
+   \(
+    P_a
+   \)
+   = maximum allowable design pressure (kPa).
+  </p>
+  <p>
+   \(
+    t
+   \)
+   = minimum required furnace wall thickness (mm).
+  </p>
+  <h4>
+   Procedure
+  </h4>
+  <p>
+   <b>
+    Step 1:
+   </b>
+   Assume a value of
+   \(
+    t
+   \)
+   and determine the ratios
+   \(
+    L/D_o
+   \)
+   and
+   \(
+    D_o/t
+   \)
+  </p>
+  <p>
+   <b>
+    Step 2:
+   </b>
+   Enter Fig. G (Section II, Part D, Subpart 3) at the value of
+   \(
+    L/D_o
+   \)
+   (y-axis)
+  </p>
+  <ul style="list-style-type: none">
+   <li>
+    • For values of
+    \(
+     L/D_o
+    \)
+    greater than 50, enter the chart at a value of
+    \(
+     L/D_o = 50
+    \)
+   </li>
+   <li>
+    • For values of
+    \(
+     L/D_o
+    \)
+    less than 0.05, enter the chart at a value of
+    \(
+     L/D_o = 0.05
+    \)
+   </li>
+  </ul>
+  <p>
+   <b>
+    Step 3:
+   </b>
+   Move horizontally to the line for the value of
+   \(
+    D_o/t
+   \)
+   determined in Step 1 (interpolation may be made for intermediate values of
+   \(
+    D_o/t
+   \)
+   ). From this point of intersection, move vertically downward to determine the value of Factor
+   \(
+    A
+   \)
+   (x-axis).
+  </p>
+  <p>
+   <b>
+    Step 4:
+   </b>
+   Using the value of
+   \(
+    A
+   \)
+   determined in Step 3, enter the applicable material chart in Section II, Part D for the material under consideration. Move vertically to an intersection with the material-temperature line for the design temperature (interpolation may be made between lines for intermediate temperatures).
+  </p>
+  <p>
+   <b>
+    Step 5:
+   </b>
+   From the intersection obtained in Step 4, move horizontally to the right and read the value of Factor
+   \(
+    B
+   \)
+   .
+  </p>
+  <p>
+   <b>
+    Step 6:
+   </b>
+   Using the value of
+   \(
+    B
+   \)
+   determined in Step 5, calculate the value of the maximum allowable external pressure
+   \(
+    P_a
+   \)
+   using the following formula:
+  </p>
+  <p>
+   $$
+    P_a = \frac{4B}{3(D_o/t)} \quad (4.1)
+   $$
+  </p>
+  <p>
+   <b>
+    Step 7:
+   </b>
+   Compare the calculated value of
+   \(
+    P_a
+   \)
+   obtained in Step 6 with
+   \(
+    P
+   \)
+   . If
+   \(
+    P_a
+   \)
+   is smaller than
+   \(
+    P
+   \)
+   , select a larger value for
+   \(
+    t
+   \)
+   and repeat the design procedure until a value of
+   \(
+    P_a
+   \)
+   is obtained that is equal to or just greater than
+   \(
+    P
+   \)
+   .
+  </p>
+  <p>
+   Section IV, paragraph HG-312 allows the use of the following modified formula:
+  </p>
+  <p>
+   $$
+    P_a = \frac{B}{(D_o/t)} \quad (4.2)
+   $$
+  </p>
+  <p>
+   Section VIII-1, paragraph UCS-28 provides examples in the Non-Mandatory Appendix L-3 using the same procedure and charts as above. Paragraph UCS-28 (c) requires the use of Section I, PFT-19 rules for corrugated shells subjected to external pressure.
+  </p>
+  <h4>
+   Example 7: Plain furnace - wall thickness
+  </h4>
+  <p>
+   A plain circular furnace 2.0 m long and 750 mm outside diameter is designed for an external pressure of 103 kPa at 260° C. The furnace is constructed of SA-285-C carbon steel. What is the required thickness of the furnace wall?
+  </p>
+  <h5>
+   Solution
+  </h5>
+  <p>
+   <b>
+    Step 1:
+   </b>
+   Assume wall thickness
+   \(
+    t = 10
+   \)
+   mm,
+   \(
+    D_o = 750
+   \)
+   mm, and
+   \(
+    L = 2000
+   \)
+   mm.
+   <br/>
+   Calculate the ratios.
+  </p>
+  <p>
+   $$
+    \begin{aligned} \frac{L}{D_o} &amp;= \frac{2000}{750} \\ &amp;= 2.667 \end{aligned}
+   $$
+  </p>
+  <p>
+   $$
+    \begin{aligned} \frac{D_o}{t} &amp;= \frac{750}{10} \\ &amp;= 75 \end{aligned}
+   $$
+  </p>
+  <p>
+   <b>
+    Step 2:
+   </b>
+   Use Section II, Part D, Chart Fig. G.
+  </p>
+  <p>
+   <b>
+    Step 3:
+   </b>
+   The value of
+   \(
+    A = 0.0008
+   \)
+   .
+  </p>
+  <p>
+   <b>
+    Step 4:
+   </b>
+   Use the value of
+   \(
+    A
+   \)
+   in Section II, Part D, Chart Fig. CS-2.
+  </p>
+  <p>
+   <b>
+    Step 5:
+   </b>
+   SA-285-C has an
+   \(
+    E
+   \)
+   value of
+   \(
+    186 \times 10^3
+   \)
+   kPa. Value of
+   \(
+    B = 9500
+   \)
+  </p>
+  <p>
+   <b>
+    Step 6:
+   </b>
+   Use equation 4.1
+  </p>
+  <p>
+   $$
+    \begin{aligned}
+ P_a &amp;= \frac{4B}{3(D_o/t)} \\
+ &amp;= \frac{4 \times 9500}{3 \times (75)} \\
+ &amp;= 168.89 \text{ kPa}
+ \end{aligned}
+   $$
+  </p>
+  <p>
+   <b>
+    Step 7:
+   </b>
+   As this value is greater than 103 kPa, assume a new thickness of 7.5 mm and repeat the procedure.
+  </p>
+  <p>
+   <b>
+    Step 1:
+   </b>
+   Calculate the ratios.
+  </p>
+  <p>
+   $$
+    \begin{aligned}
+ \frac{L}{D_o} &amp;= \frac{2000}{750} \\
+ &amp;= 2.667
+ \end{aligned}
+   $$
+  </p>
+  <p>
+   $$
+    \begin{aligned}
+ \frac{D_o}{t} &amp;= \frac{750}{7.5} \\
+ &amp;= 100
+ \end{aligned}
+   $$
+  </p>
+  <p>
+   <b>
+    Step 2:
+   </b>
+   Use Section II, Part D, Chart Fig. G.
+  </p>
+  <p>
+   <b>
+    Step 3:
+   </b>
+   The value of
+   \(
+    A = 0.0005
+   \)
+   .
+  </p>
+  <p>
+   <b>
+    Step 4:
+   </b>
+   Use the value of
+   \(
+    A
+   \)
+   in Section II, Part D, Chart Fig. CS-2.
+  </p>
+  <p>
+   <b>
+    Step 5:
+   </b>
+   SA-285-C has an
+   \(
+    E
+   \)
+   value of
+   \(
+    186 \times 10^3
+   \)
+   kPa. Value of
+   \(
+    B = 6800
+   \)
+  </p>
+  <p>
+   <b>
+    Step 6:
+   </b>
+   Use equation 4.1
+  </p>
+  <p>
+   $$
+    \begin{aligned}
+ P_a &amp;= \frac{4B}{3(D_o/t)} \\
+ &amp;= \frac{4 \times 6800}{3 \times (100)} \\
+ &amp;= 90.667 \text{ kPa}
+ \end{aligned}
+   $$
+  </p>
+  <p>
+   <b>
+    Step 7:
+   </b>
+   As this value is less than 103 kPa, the thickness is unacceptable. Assume a new thickness of 8 mm and repeat the procedure.
+  </p>
+  <p>
+   <b>
+    Step 1:
+   </b>
+   Calculate the ratios.
+  </p>
+  <p>
+   $$
+    \begin{aligned}\frac{L}{D_o} &amp;= \frac{2000}{750} \\ &amp;= 2.667\end{aligned}
+   $$
+  </p>
+  <p>
+   $$
+    \begin{aligned}\frac{D_o}{t} &amp;= \frac{750}{8} \\ &amp;= 93.75\end{aligned}
+   $$
+  </p>
+  <p>
+   <b>
+    Step 2:
+   </b>
+   Use Section II, Part D, Chart Fig. G.
+  </p>
+  <p>
+   <b>
+    Step 3:
+   </b>
+   The value of
+   \(
+    A = 0.00058
+   \)
+   .
+  </p>
+  <p>
+   <b>
+    Step 4:
+   </b>
+   Use the value of
+   \(
+    A
+   \)
+   in Section II, Part D, Chart Fig. CS-2.
+  </p>
+  <p>
+   <b>
+    Step 5:
+   </b>
+   SA-285-C has an
+   \(
+    E
+   \)
+   value of
+   \(
+    186 \times 10^3
+   \)
+   kPa. Value of
+   \(
+    B = 7800
+   \)
+  </p>
+  <p>
+   <b>
+    Step 6:
+   </b>
+   Use equation 4.1
+  </p>
+  <p>
+   $$
+    \begin{aligned}P_a &amp;= \frac{4B}{3(D_o/t)} \\ &amp;= \frac{4 \times 7800}{3 \times (93.75)} \\ &amp;= 110.9 \text{ kPa}\end{aligned}
+   $$
+  </p>
+  <p>
+   <b>
+    Step 7:
+   </b>
+   The value of
+   \(
+    P_a
+   \)
+   is slightly greater than 103 kPa; therefore,
+   <b>
+    a thickness of 8 mm is required.
+   </b>
+   (Ans.)
+  </p>
+  <p>
+   If the value of
+   \(
+    D_o/t
+   \)
+   is less than 4, calculate the value of
+   \(
+    A
+   \)
+   using the following formula:
+  </p>
+  <p>
+   $$
+    A = \frac{1.1}{\left(\frac{D_o}{t}\right)^2} \quad (4.3)
+   $$
+  </p>
+  <p>
+   If the value of
+   \(
+    A
+   \)
+   is greater than 0.10, use a value of 0.10.
+  </p>
+  <h3>
+   CORRUGATED FURNACES
+  </h3>
+  <p>
+   Section I, paragraph PFT-18 contains the rule for determining the maximum allowable working pressure for the most common types of corrugated furnaces, such as the Leeds suspension bulb, Morison, Fox, Purves, and Brown, having plain portions at each end not exceeding 228 mm in length.
+  </p>
+  <p>
+   Use the following formula:
+  </p>
+  <p>
+   $$
+    P = \frac{Ct}{D} \quad (4.4)
+   $$
+  </p>
+  <p>
+   \(
+    P
+   \)
+   = maximum allowable working pressure (kPa).
+  </p>
+  <p>
+   \(
+    t
+   \)
+   = thickness (mm)—not less than 8 mm for Leeds, Morison, Fox, and Brown and not less than 11 mm for a Purves furnace.
+  </p>
+  <p>
+   \(
+    D
+   \)
+   = mean diameter (mm).
+  </p>
+  <p>
+   \(
+    C
+   \)
+   = a constant—the value depends on the type of furnace.
+  </p>
+  <p>
+   \(
+    C
+   \)
+   = 81 000 for
+   <b>
+    Leeds furnaces
+   </b>
+   , when corrugations are not more than 203 mm from centre to centre and not less than 51 mm deep.
+  </p>
+  <p>
+   \(
+    C
+   \)
+   = 107 000 for
+   <b>
+    Morison furnaces
+   </b>
+   , when corrugations are not more than 203 mm from centre to centre and not less than 32 mm deep, and the radius of the outer corrugation
+   \(
+    r
+   \)
+   is not more than one-half of the radius of the suspension curve
+   \(
+    R
+   \)
+   (See Fig. 7 and Fig. PFT-18.1).
+  </p>
+  <p>
+   <b>
+    Note:
+   </b>
+   The mean diameter of the Morison furnace may be taken as the least inside diameter plus 51 mm.
+  </p>
+  <p>
+   \(
+    C
+   \)
+   = 96 000 for
+   <b>
+    Fox furnaces
+   </b>
+   , when corrugations are not more than 203 mm from centre to centre and not less than 38 mm deep.
+  </p>
+  <p>
+   \(
+    C
+   \)
+   = 96 000 for
+   <b>
+    Purves furnaces
+   </b>
+   , when rib projections are not more than 230 mm from centre to centre and not less than 35 mm deep.
+  </p>
+  <p>
+   \(
+    C
+   \)
+   = 96 000 for
+   <b>
+    Brown furnaces
+   </b>
+   , when corrugations are not more than 230 mm from centre to centre and not less than 41 mm deep.
+  </p>
+  <h4>
+   Example 8: Corrugated furnace - wall thickness
+  </h4>
+  <p>
+   A Brown corrugated furnace of 1065 mm mean diameter, fitted with plain end, 216 mm in length is required to operate at a pressure of 860 kPa. The corrugations are 222 mm from centre to centre and 41 mm deep. What is the required thickness of the furnace wall?
+  </p>
+  <h5>
+   Solution
+  </h5>
+  <p>
+   Use equation 4.4
+  </p>
+  <p>
+   $$
+    P = 860 \text{ kPa}
+   $$
+  </p>
+  <p>
+   $$
+    D = 1065 \text{ mm}
+   $$
+  </p>
+  <p>
+   $$
+    C = 96\,000 \text{ (Brown furnace with corrugations not more than 230 mm from centre to centre and not less than 41 mm deep).}
+   $$
+  </p>
+  <p>
+   $$
+    P = \frac{Ct}{D}
+   $$
+  </p>
+  <p>
+   So
+  </p>
+  <p>
+   $$
+    \begin{aligned} t &amp;= \frac{PD}{C} \\ &amp;= \frac{860 \times 1065}{96\,000} \\ &amp;= \mathbf{9.54\,mm} \text{ (Ans.)} \end{aligned}
+   $$
+  </p>
+  <p>
+   The thickness calculated above is greater than the minimum allowed thickness of 8 mm and is therefore acceptable.
+  </p>
+  <p>
+   By carefully following the procedures provided in Section I for calculating the wall thickness of various furnace types, these calculations can be a simple process.
+  </p>
+  <p>
+   The following questions provide the candidate with experience using the ASME Codes.
+  </p>
+  <ol style="list-style-type: none">
+   <li>
+    1. A flat plate is stayed with welded staybolts equally pitched both horizontally and vertically. The plate is 12.2 mm thick and is made of SA-285-B material. The maximum allowable pressure is 865 kPa, and the operating temperature is 250° C. Calculate the pitch of the stays.
+   </li>
+   <li>
+    2. Determine the maximum allowable working pressure in kPa for a watertube boiler drum. The drum plate thickness is 50.8 mm with an inside radius of 500 mm. The longitudinal joint efficiency is 100%. The material is SA-515-55 and the operating temperature is not to exceed 300° C. The pitch of the boiler tube holes in the drum is 140 mm as shown in Fig 1. The diameter of the tube holes is 82.5 mm.
+   </li>
+   <li>
+    3. A boiler is to be converted from burning pulverized semi-bituminous coal to natural gas. At maximum load the boiler burns coal at a rate of 5.5 tonnes per hour. What is the maximum amount of natural gas that can be burned per hour if the safety valves are re-rated to 3% above their present setting?
+   </li>
+   <li>
+    4. A furnace is produced using the Fox corrugation system. The furnace has a mean diameter of 1118 mm and a maximum allowable working pressure of 1375 kPa. The corrugations are 152.4 mm centre to centre and have a suspension curve depth of 38 mm. The length of the furnace is 2.5 m. The furnace material is carbon steel with a minimum yield strength of 213.7 MPa (31 000 psi).
+    <ol style="list-style-type: none">
+     <li>
+      (a) What is the minimum thickness of the furnace tube?
+     </li>
+     <li>
+      (b) What is the maximum allowable working pressure of a plain furnace tube 2.5 m in length and 1118 mm outside diameter with the same thickness?
+     </li>
+    </ol>
+   </li>
+  </ol>
+  <p>
+  </p>
+ </body>
+</html>

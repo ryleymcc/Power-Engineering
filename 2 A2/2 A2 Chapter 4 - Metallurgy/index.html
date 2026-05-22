@@ -1,0 +1,2651 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+ 
+    <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['\\(', '\\)']],
+        displayMath: [['$$', '$$']]
+      }
+    };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+</head>
+ <body>
+    <div id="nav-header" style="padding: 15px 20px; background: #2c3e50; color: white; display: flex; align-items: center; gap: 20px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+        <a href="../index.html" style="color: white; text-decoration: none; background: #34495e; padding: 8px 16px; border-radius: 4px; font-weight: 600; font-size: 0.9rem; transition: background 0.2s;">← Back to Index</a>
+        <h1 style="margin: 0; font-size: 1.2rem; font-weight: 500; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Power Engineering Series</h1>
+    </div>
+    
+  <h2>
+   Learning Outcome
+  </h2>
+  <p>
+   <i>
+    When you complete this learning material, you will be able to:
+   </i>
+  </p>
+  <p>
+   Discuss the structure and uses of various metals and metal alloys.
+  </p>
+  <h2>
+   Learning Objectives
+  </h2>
+  <p>
+   <i>
+    You will specifically be able to complete the following tasks:
+   </i>
+  </p>
+  <ol style="list-style-type: none">
+   <li>
+    1. Explain the study of metallurgy and the atomic and crystalline structure of metals.
+   </li>
+   <li>
+    2. Explain the significance of the iron-carbon equilibrium diagram.
+   </li>
+   <li>
+    3. Explain the purposes of, and processes used, in the heat treatment of steels.
+   </li>
+   <li>
+    4. Explain how to interpret metal specifications.
+   </li>
+   <li>
+    5. Explain typical selection of metals for process plant applications (what is selected and why).
+   </li>
+   <li>
+    6. Describe the composition, physical properties, and uses of copper, lead, and tin.
+   </li>
+   <li>
+    7. Describe the composition, physical properties, and uses of aluminum and aluminum alloys.
+   </li>
+  </ol>
+  <h2>
+   Objective 1
+  </h2>
+  <p>
+   <b>
+    Explain the study of metallurgy and the atomic and crystalline structure of metals.
+   </b>
+  </p>
+  <h3>
+   METALLURGY
+  </h3>
+  <p>
+   Metallurgy is the study of metals and is the oldest science devoted to the study of engineering materials. The growth of metallurgy has led to its division into three well-defined groups:
+  </p>
+  <ul style="list-style-type: none">
+   <li>
+    • Extractive
+   </li>
+   <li>
+    • Mechanical
+   </li>
+   <li>
+    • Physical
+   </li>
+  </ul>
+  <h4>
+   Extractive Metallurgy
+  </h4>
+  <p>
+   Extractive metallurgy, the study of the extraction and purification of metals from their ores, is conducted in several steps. Each step increases the purity of the metal by removing unwanted impurities. For example, the route from ore to refined metal may follow one of three paths:
+  </p>
+  <ol style="list-style-type: none">
+   <li>
+    1. Pyrometallurgy: melting the ore in a furnace to release the metal.
+   </li>
+   <li>
+    2. Hydrometallurgy: dissolving the metal from the ore and recovering it as a powder.
+   </li>
+   <li>
+    3. Electrometallurgy: dissolving the metal from the ore with the use of electricity, plate the metal out of solution.
+   </li>
+  </ol>
+  <h4>
+   Mechanical Metallurgy
+  </h4>
+  <p>
+   Mechanical metallurgy is the study of the techniques and mechanical forces that shape and make the finished forms of metal. This includes studying the effects of stress, time and temperature.
+  </p>
+  <h4>
+   Physical Metallurgy
+  </h4>
+  <p>
+   Physical metallurgy is the study of the structure of metals. Properties of metals are intimately related to their structures. Careful modification of the structure can produce more desirable and useful properties in a metal. For example, the structure of metals can be changed by modifying chemical composition, alloys and heat treatments.
+  </p>
+  <p>
+   Metals may be defined as substances that are good conductors of heat and electricity. They are generally malleable and ductile. They occur naturally in ores in the form of chemical compounds such as sulphides or oxides. With the exception of the noble metals, such as platinum and gold, metallic materials tend to react chemically with the environment and revert to compound forms, a process known as corrosion.
+  </p>
+  <p>
+   Although a detailed discussion of the extraction of metals from their ores, their subsequent refinement, and the principles of modification of properties by alloying are beyond the scope of this module, the essential background material is outlined in the following objectives.
+  </p>
+  <p>
+   Many non-ferrous materials are used in power plant construction, for example, copper-based alloys for condenser tubing, copper for alternator windings, tin-based alloys for bearings, and aluminum for bus bars, but the majority of components are made from iron-based materials, and it is with these ferrous materials that this module is largely concerned.
+  </p>
+  <p>
+   We shall examine the principles underlying the behaviour of ferrous materials and go on to consider the assessment criteria used for selection, the requirements of fabrication into components, and the problems caused by the operating environment.
+  </p>
+  <h3>
+   ATOMIC STRUCTURE OF METALS
+  </h3>
+  <p>
+   Metals, like other matter including water, can exist in three common physical states—
+   <b>
+    solids
+   </b>
+   ,
+   <b>
+    liquids
+   </b>
+   , and
+   <b>
+    gases
+   </b>
+   —depending on the temperature and pressure. For practical purposes, we only work with metals in the first two states, solids and liquids, making temperature our only concern.
+  </p>
+  <p>
+   If we could view the atomic structure of a solid metal as it was heated, we would see the atoms of the material increasingly vibrate as the temperature increased. At a certain temperature, the substance would melt, and the cohesive bonds holding the individual atoms together would break, releasing them from their captive positions and allowing them to travel freely throughout the liquid. At the melting point, as with water, heat energy is absorbed without a further increase in temperature until all the metal is in the liquid state. This transition phase is called the
+   <b>
+    latent heat of fusion
+   </b>
+   . Every metal and alloy has a fixed melting point, and the internal arrangement of the atoms in the solid state can also be temperature sensitive as we will see in the next objective. Our main concern in metallurgy is to deal with and understand the complexity of the solid-to-liquid-to-solid phase changes metals go through as they are refined, and the chemical and physical properties exhibited by them during these transitions.
+  </p>
+  <p>
+   Fig. 1 shows a simple cooling curve for pure copper.
+  </p>
+  <img alt="Simplified cooling curve of pure copper. The graph plots Temperature (°C) on the y-axis (1000 to 1500) against Time on the x-axis. The curve shows a linear decrease from 1500°C, labeled 'Metal in molten liquid'. At point 'a', 'Solidification starts'. The curve then becomes horizontal at approximately 1085°C until point 'b', where 'Solidification ends'. After point 'b', the curve drops vertically to point 'c' at 1000°C." src="de6e8b740c69dac308cce9edfec3eff4_img.jpg"/>
+  <div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+   <div class="img-alt">
+    Simplified cooling curve of pure copper. The graph plots Temperature (°C) on the y-axis (1000 to 1500) against Time on the x-axis. The curve shows a linear decrease from 1500°C, labeled 'Metal in molten liquid'. At point 'a', 'Solidification starts'. The curve then becomes horizontal at approximately 1085°C until point 'b', where 'Solidification ends'. After point 'b', the curve drops vertically to point 'c' at 1000°C.
+   </div>
+  </div>
+  <p>
+   Figure 1
+   <br/>
+   Cooling Curve - Pure Copper
+  </p>
+  <p>
+   As metal solidifies at the freezing point,
+   <i>
+    A
+   </i>
+   , a rigid atomic structure forms within the solid, holding individual copper atoms in fixed configurations known as
+   <b>
+    unit cells
+   </b>
+   . In most metals, the geometry of the atoms in these unit cells takes one of three basic structures:
+  </p>
+  <ul style="list-style-type: none">
+   <li>
+    • Face-centered cubic (FCC)
+   </li>
+   <li>
+    • Body-centered cubic (BCC)
+   </li>
+   <li>
+    • Close packed hexagonal (CPH)
+   </li>
+  </ul>
+  <h4>
+   Face-Centered Cubic (FCC) Structure
+  </h4>
+  <p>
+   Fifteen atoms form the FCC unit cell, shown in Fig. 2. This configuration gives the metals that solidify in this pattern the properties of high ductility, low shear, and low tensile strength but good heat and electrical conductivity. Examples of metals that are FCC in the solid state are gold, aluminum, silver, lead, nickel, and gamma iron (iron between the temperatures of 910°C and 1390°C).
+  </p>
+  <img alt="Figure 2: FCC Unit Cell. The image contains two diagrams. The left diagram is a space-filling model showing a cluster of 14 spheres representing atoms in a face-centered cubic arrangement. The right diagram is a wireframe model of a cube with dots at each of the eight corners and at the center of each of the six faces, representing the lattice points of an FCC unit cell." src="38fbc690a0834bf1eaa4090e95730f0f_img.jpg"/>
+  <div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+   <div class="img-alt">
+    Figure 2: FCC Unit Cell. The image contains two diagrams. The left diagram is a space-filling model showing a cluster of 14 spheres representing atoms in a face-centered cubic arrangement. The right diagram is a wireframe model of a cube with dots at each of the eight corners and at the center of each of the six faces, representing the lattice points of an FCC unit cell.
+   </div>
+  </div>
+  <p>
+   <i>
+    Figure 2
+   </i>
+   <br/>
+   <i>
+    FCC Unit Cell
+   </i>
+  </p>
+  <h4>
+   Body-Centered Cubic (BCC) Structure
+  </h4>
+  <p>
+   Nine atoms are contained in the BCC cubic structure shown in Fig. 3. Metals with this configuration in the solid state exhibit high strength, low ductility, and are very resistant to shear deformities. Metals included in this group are chromium, tungsten, molybdenum, vanadium,
+   <b>
+    alpha iron
+   </b>
+   (iron in the solid state below a temperature of 910°C), and
+   <b>
+    delta iron
+   </b>
+   (iron above 1390°C).
+  </p>
+  <img alt="Figure 3: BCC Unit Cell. The image contains two diagrams. The left diagram is a space-filling model showing a cluster of 9 spheres, with 8 spheres at the corners of a cube and one sphere in the center. The right diagram is a wireframe model of a cube with dots at each of the eight corners and a single dot at the exact center of the cube, representing the lattice points of a BCC unit cell." src="713ab448986a8f539adc23175c5c5e51_img.jpg"/>
+  <div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+   <div class="img-alt">
+    Figure 3: BCC Unit Cell. The image contains two diagrams. The left diagram is a space-filling model showing a cluster of 9 spheres, with 8 spheres at the corners of a cube and one sphere in the center. The right diagram is a wireframe model of a cube with dots at each of the eight corners and a single dot at the exact center of the cube, representing the lattice points of a BCC unit cell.
+   </div>
+  </div>
+  <p>
+   <i>
+    Figure 3
+   </i>
+   <br/>
+   <i>
+    BCC Unit Cell
+   </i>
+  </p>
+  <h4>
+   Close Packed Hexagonal (CPH) Structure
+  </h4>
+  <p>
+   Seventeen atoms make up the CPH unit cell structure, shown in Fig. 4. This configuration gives the metals that comprise this group intermediate strength and ductility. Metals that fit in this group include zinc, magnesium, cadmium, and titanium.
+  </p>
+  <img alt="Figure 4: Close-Packed Hexagonal (CPH) Unit Cell. The left side shows a 3D model of atoms as spheres in a hexagonal arrangement. The right side shows a wireframe diagram of the hexagonal unit cell with atoms at the lattice points." src="da1b6cffc4c82442fd96b854f4e79a67_img.jpg"/>
+  <div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+   <div class="img-alt">
+    Figure 4: Close-Packed Hexagonal (CPH) Unit Cell. The left side shows a 3D model of atoms as spheres in a hexagonal arrangement. The right side shows a wireframe diagram of the hexagonal unit cell with atoms at the lattice points.
+   </div>
+  </div>
+  <p>
+   Figure 4
+   <br/>
+   Close-Packed Hexagonal (CPH) Unit Cell
+  </p>
+  <h3>
+   CRYSTALLINE STRUCTURE OF METALS
+  </h3>
+  <p>
+   When molten metal cools and solidifies, unit cells become packed together to form three-dimensional crystals that occupy a
+   <b>
+    space lattice
+   </b>
+   . Further growth of these crystals forms
+   <b>
+    dendrites
+   </b>
+   , which look like the branches of an evergreen tree that extend throughout the molten matrix until they contact neighbouring dendrites. These contact surfaces become the crystal or grain boundaries. Any impurities that are not soluble in this solid solution are pushed ahead of the growing crystals and become trapped at the grain boundaries and between the limbs of the dendrites. Fig. 5 (a) shows the side view of a growing metallic crystal dendrite while Fig. 5 (b) is a top view.
+  </p>
+  <img alt="Figure 5: Metallic Crystal Dendrite. (a) Side view showing a central vertical axis with branching, tree-like structures. (b) Top view showing a six-fold symmetric star-like branching pattern." src="0872c27ab0a48c6e88ef4f09f773872f_img.jpg"/>
+  <div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+   <div class="img-alt">
+    Figure 5: Metallic Crystal Dendrite. (a) Side view showing a central vertical axis with branching, tree-like structures. (b) Top view showing a six-fold symmetric star-like branching pattern.
+   </div>
+  </div>
+  <p>
+   Figure 5
+   <br/>
+   Metallic Crystal Dendrite
+  </p>
+  <p>
+   Grain size determines important properties of metals. As a rule, smaller grain size increases tensile strength and ductility while larger grain size tends to resist creep and deformation under constant loading but may be more prone to cracking. At the atomic level, the shear strength of metals is determined primarily by the type of unit cell structure exhibited.
+  </p>
+  <p>
+   Fig. 6 shows the high-atom packed density in a FCC structure in which the top layer is easier to pull than in the BCC structure. This type is found in lead which is ductile with a low shear strength.
+  </p>
+  <img alt="Diagram of an FCC (Face-Centered Cubic) crystal structure showing a close-packed arrangement of atoms. Two rows of four atoms each are shown, with the top row slightly offset from the bottom row. Arrows indicate the direction of shear deformation." src="c834b9abb4ddf70e5d10641f87d5ff5b_img.jpg"/>
+  <div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+   <div class="img-alt">
+    Diagram of an FCC (Face-Centered Cubic) crystal structure showing a close-packed arrangement of atoms. Two rows of four atoms each are shown, with the top row slightly offset from the bottom row. Arrows indicate the direction of shear deformation.
+   </div>
+  </div>
+  <p>
+   Figure 6
+   <br/>
+   FCC Structure
+  </p>
+  <p>
+   Fig. 7 shows the low-atom packed density in a BCC structure. To move, the top line of atoms has to jump over the atoms below them. This requires a large force. This type is found in iron, which is hard with a high shear strength.
+  </p>
+  <img alt="Diagram of a BCC (Body-Centered Cubic) crystal structure showing a less densely packed arrangement of atoms. The atoms are arranged in a zigzag pattern, with arrows indicating the direction of shear deformation." src="efca2dce0095c9dc2a68e9af6b2bfd40_img.jpg"/>
+  <div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+   <div class="img-alt">
+    Diagram of a BCC (Body-Centered Cubic) crystal structure showing a less densely packed arrangement of atoms. The atoms are arranged in a zigzag pattern, with arrows indicating the direction of shear deformation.
+   </div>
+  </div>
+  <p>
+   Figure 7
+   <br/>
+   BCC Structure
+  </p>
+  <h4>
+   Polymorphism
+  </h4>
+  <p>
+   Polymorphism is defined as the ability of a metal to change to a different unit cell structure depending on its temperature. Most metals and alloys exhibit this property; most important for the study of iron.
+  </p>
+  <h4>
+   Allotropy of Iron
+  </h4>
+  <p>
+   The change in atomic cell structure, dependent on temperature, is known as the allotropy of iron. The metal can exist in different physical forms that affect its melting point, hardness, metal solubility, and alloying chemistry. This is very important in determining the way iron reacts with carbon to form steel and cast iron.
+  </p>
+  <h2>
+   Objective 2
+  </h2>
+  <p>
+   <b>
+    Explain the significance of the iron-carbon equilibrium diagram.
+   </b>
+  </p>
+  <h3>
+   IRON-CARBON EQUILIBRIUM DIAGRAM
+  </h3>
+  <p>
+   Pure iron is a relatively soft, ductile element with low strength that possesses few of the noble properties commonly associated with steel. In large part, the science of steelmaking has been an attempt to understand and control the phase changes of iron, in the presence of carbon and other alloying metals, in order to make the high-strength steels that modern industry relies on. Quality control and materials testing must meet strict and exacting engineering specifications.
+  </p>
+  <p>
+   Carbon steels are produced by adjusting the carbon content in iron. Carbon steels refer to alloys containing 2% or less carbon, while cast iron contains from 2% to 6% carbon. Carbon steel is divided into three grades:
+  </p>
+  <ul style="list-style-type: none">
+   <li>
+    • Low (maximum carbon content 0.30%)
+   </li>
+   <li>
+    • Medium (maximum carbon content 0.30 to 0.60%)
+   </li>
+   <li>
+    • High (maximum carbon content 0.60 to 1.00%)
+   </li>
+  </ul>
+  <p>
+   The form that carbon assumes in the iron matrix (single atoms, graphite flakes, spheres, or molecular combinations such as cementite (
+   \(
+    \text{Fe}_3\text{C}
+   \)
+   ) an interstitial compound where the smaller carbon atoms fit in the interstitial spaces between the larger iron atoms), the carbon atom's final resting place (inside the unit cell structures or in the exterior intra-granular spaces), and the carbon concentration determine a wide range of physical properties exhibited in the final alloy. In steel, hardness and brittleness increase as the carbon content increases. Softness, ductility and weldability increase as carbon content decreases.
+  </p>
+  <p>
+   Iron-carbon equilibrium in steel is determined by the:
+  </p>
+  <ul style="list-style-type: none">
+   <li>
+    • Initial concentration of carbon in the ferrite mixture
+   </li>
+   <li>
+    • Temperature
+   </li>
+   <li>
+    • Cooling rate
+   </li>
+   <li>
+    • Presence of other alloying metals
+   </li>
+  </ul>
+  <p>
+   Fig. 8 is an iron-carbon equilibrium (phase) diagram showing the phase changes that occur as carbon content and temperature vary for carbon concentrations ranging from 0% to 6.5% in a pure iron solvent.
+  </p>
+  <img alt="Iron-Carbide Equilibrium (Phase) Diagram showing temperature vs. carbon content. The y-axis represents temperature in °C from 0 to 1600. The x-axis represents carbon content from 0 to 6.5, divided into STEEL (0 to 2%) and CAST IRON (2% to 6.5%). Key features include: Liquid Region (top right), Liquidus line, Solidus line, Peritectic Reaction at 1492°C (δ + L → γ), Eutectic Reaction at 1130°C (L → γ + Fe3C), Eutectoid Reaction at 723°C (γ → α + Fe3C), and various phase regions such as δ + L, γ + L, α + γ, α + Fe3C, and Fe3C. Critical carbon percentages 0.025, 0.8, 1, 2, 4, and 6.5 are marked. A 'Magnetic Change of Fe3C' is indicated at 210°C." src="adb1f42239329fa8283d1a40005f989f_img.jpg"/>
+  <div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+   <div class="img-alt">
+    Iron-Carbide Equilibrium (Phase) Diagram showing temperature vs. carbon content. The y-axis represents temperature in °C from 0 to 1600. The x-axis represents carbon content from 0 to 6.5, divided into STEEL (0 to 2%) and CAST IRON (2% to 6.5%). Key features include: Liquid Region (top right), Liquidus line, Solidus line, Peritectic Reaction at 1492°C (δ + L → γ), Eutectic Reaction at 1130°C (L → γ + Fe3C), Eutectoid Reaction at 723°C (γ → α + Fe3C), and various phase regions such as δ + L, γ + L, α + γ, α + Fe3C, and Fe3C. Critical carbon percentages 0.025, 0.8, 1, 2, 4, and 6.5 are marked. A 'Magnetic Change of Fe3C' is indicated at 210°C.
+   </div>
+  </div>
+  <p>
+   Figure 8
+   <br/>
+   Iron-Carbide Equilibrium (Phase) Diagram
+  </p>
+  <p>
+   All phases below the solidus line are solids, and the phase above the liquidus line is molten. The areas between these two lines are pasty state phases where the mixture exists in a solid-liquid state at the corresponding temperature. To use this graph, draw a vertical line through the diagram to indicate the carbon content to be studied and follow the line up or down as the temperature changes. Refer to the definitions below.
+  </p>
+  <h4>
+   Austenite
+  </h4>
+  <p>
+   Austenite is the structural name of iron in a unit cell of face-centered cubic (FCC) form, called gamma iron that can contain dissolved carbon atoms, up to 2%. All quenching heat treatment procedures must begin from this phase.
+  </p>
+  <h4>
+   Cementite
+  </h4>
+  <p>
+   Cementite is the common name for iron-carbon in the form of molecular iron carbide (
+   \(
+    \text{Fe}_3\text{C}
+   \)
+   ).
+  </p>
+  <h4>
+   Eutectic Reaction Point
+  </h4>
+  <p>
+   Eutectic reaction point occurs when the liquid alloy changes directly into solid austenite and cementite without going through a pasty state phase. As the diagram indicates, this only occurs with an alloy composition of 4.0% carbon at a temperature of 1130°C; the lowest melting point of any composition of an iron-carbon mixture.
+  </p>
+  <h4>
+   Ferrite
+  </h4>
+  <p>
+   Ferrite is the structural name for iron in the body-centered cubic (BCC) form. The maximum amount of carbon atoms that ferrite can contain is 0.025% at 723°C. Ferrite describes a structure not a composition.
+  </p>
+  <h4>
+   Lower Critical Change Line
+  </h4>
+  <p>
+   Lower critical change line is the temperature at which an iron alloy of any carbon composition returns to a body-centered cubic unit cell structure. The diagram indicates this temperature at 723°C.
+  </p>
+  <h4>
+   Pearlite
+  </h4>
+  <p>
+   Pearlite consists of a layered structure (microscopically) of ferrite and cementite. It appears dark-grained in colour and forms in iron-carbon alloys below the lower critical change line at 723°C.
+  </p>
+  <h4>
+   Peritectic Reaction
+  </h4>
+  <p>
+   Peritectic reaction is the point where liquid delta iron, in the body-centered cubic form, changes directly into solid austenite without going through a pasty state phase. This occurs at 1492°C.
+  </p>
+  <p>
+   At room temperature, the low and medium carbon steels (below 0.8% carbon) always have a ferrite component that makes the steels tough and ductile and an iron carbide influence from the pearlite that still makes them relatively hard. These steels have the scientific name "hypoeutectoid steels." Steel having 0.8% carbon would, as it cools to room temperature, change into 100% pearlite. This type of steel is used for railway rails and is called "eutectoid steel."
+  </p>
+  <p>
+   When the carbon content exceeds 0.8%, steel exhibits hardness and high tensile strength and is used in tools such as axes and chisels. At 723°C these steels become a mixture of cementite and pearlite and have the scientific name "hypereutectoid steels."
+  </p>
+  <p>
+  </p>
+  <h2>
+   Objective 3
+  </h2>
+  <p>
+   <b>
+    Explain the purposes of, and processes used, in the heat treatment of steels.
+   </b>
+  </p>
+  <h3>
+   HEAT TREATMENT OF STEELS
+  </h3>
+  <p>
+   Heat treatment in steelmaking is a large secondary industry. Its importance is commensurate with the costs and resources spent on the processes used to manufacture steel products with a vast array of different mechanical and physical properties.
+  </p>
+  <p>
+   Definitions of these processes can be better understood by referring to the partial iron-carbon diagram shown below in Fig. 9. In general, the purpose of heat treating a metal is to force a physical and/or chemical transformation in the alloy and then cool it at a rate, and in such a manner, that it retains the desired properties.
+  </p>
+  <p>
+   The transformation lines, shown on the previous iron-carbon diagram (Fig. 8), shift with the rate of heating (transformation line rises) and the rate of cooling (transformation line falls). The effect is shown below (Fig. 9) on a section of the iron-carbon phase diagram.
+  </p>
+  <img alt="Figure 9: Eutectoid Reaction Region of the Iron-Carbon Diagram. The graph shows temperature (°C) on the y-axis (723, 910, 1130) versus carbon content (0.025, 0.81, 2) on the x-axis. It illustrates the shift of critical transformation lines (Ac1, Ac3, Ac_cm, Ar1, Ar3, Ar_cm) during heating and cooling. The region is divided into Hypoeutectoid Steels (left of 0.81 C) and Hypereutectoid Steels (right of 0.81 C)." src="8b79f5ec940d107c246612c2a2ec519f_img.jpg"/>
+  <div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+   <p>
+    The figure is a partial iron-carbon phase diagram focusing on the eutectoid reaction region. The vertical axis represents temperature in degrees Celsius (°C), with key values at 723, 910, and 1130. The horizontal axis represents carbon content, with markers at 0.025, 0.81, and 2. The diagram shows the shift of critical transformation lines during heating (Ac) and cooling (Ar). For hypoeutectoid steels (carbon content &lt; 0.81), the lines are labeled Ac
+    <sub>
+     3
+    </sub>
+    (heating), Ar
+    <sub>
+     3
+    </sub>
+    (cooling), Ac
+    <sub>
+     1
+    </sub>
+    (heating), and Ar
+    <sub>
+     1
+    </sub>
+    (cooling). For hypereutectoid steels (carbon content &gt; 0.81), the lines are labeled Ac
+    <sub>
+     cm
+    </sub>
+    (heating), Ar
+    <sub>
+     cm
+    </sub>
+    (cooling), Ac
+    <sub>
+     1
+    </sub>
+    (heating), and Ar
+    <sub>
+     1
+    </sub>
+    (cooling). The eutectoid temperature is indicated at 723°C. The diagram is titled 'IRON-CARBON DIAGRAM' and is divided into 'Hypoeutectoid Steels' and 'Hypereutectoid Steels' regions.
+   </p>
+   <div class="img-alt">
+    Figure 9: Eutectoid Reaction Region of the Iron-Carbon Diagram. The graph shows temperature (°C) on the y-axis (723, 910, 1130) versus carbon content (0.025, 0.81, 2) on the x-axis. It illustrates the shift of critical transformation lines (Ac1, Ac3, Ac_cm, Ar1, Ar3, Ar_cm) during heating and cooling. The region is divided into Hypoeutectoid Steels (left of 0.81 C) and Hypereutectoid Steels (right of 0.81 C).
+   </div>
+  </div>
+  <p>
+   Figure 9
+   <br/>
+   Eutectoid Reaction Region
+  </p>
+  <p>
+   Where
+  </p>
+  <p>
+   A
+   <sub>
+    1
+   </sub>
+   = Critical temperature between pearlite phase field and austenite phase field (eutectic transformation line at 723°C)
+  </p>
+  <table>
+   <tr data-bbox="274 147 1401 226">
+    <td>
+     \(
+      A_{r1}
+     \)
+    </td>
+    <td>
+     =
+    </td>
+    <td>
+     Critical temperature between pearlite phase field and austenite phase field on cooling
+    </td>
+   </tr>
+   <tr data-bbox="274 226 1401 300">
+    <td>
+     \(
+      A_{c1}
+     \)
+    </td>
+    <td>
+     =
+    </td>
+    <td>
+     Critical temperature between pearlite phase field and austenite phase field on heating
+    </td>
+   </tr>
+   <tr data-bbox="274 300 1401 373">
+    <td>
+     \(
+      A_3
+     \)
+    </td>
+    <td>
+     =
+    </td>
+    <td>
+     Critical temperature between ferrite-austenite phase field and austenite phase field
+    </td>
+   </tr>
+   <tr data-bbox="274 373 1401 449">
+    <td>
+     \(
+      A_{r3}
+     \)
+    </td>
+    <td>
+     =
+    </td>
+    <td>
+     Critical temperature between ferrite-austenite phase field and austenite phase field on cooling
+    </td>
+   </tr>
+   <tr data-bbox="274 449 1401 522">
+    <td>
+     \(
+      A_{c3}
+     \)
+    </td>
+    <td>
+     =
+    </td>
+    <td>
+     Critical temperature between ferrite-austenite phase field and austenite phase field on heating
+    </td>
+   </tr>
+   <tr data-bbox="274 522 1401 598">
+    <td>
+     \(
+      A_{cm}
+     \)
+    </td>
+    <td>
+     =
+    </td>
+    <td>
+     Critical temperature between cementite-austenite phase field and austenite phase field
+    </td>
+   </tr>
+   <tr data-bbox="274 598 1401 672">
+    <td>
+     \(
+      A_{rcm}
+     \)
+    </td>
+    <td>
+     =
+    </td>
+    <td>
+     Critical temperature between cementite-austenite phase field and austenite phase field on cooling
+    </td>
+   </tr>
+   <tr data-bbox="274 672 1401 751">
+    <td>
+     \(
+      A_{cm}
+     \)
+    </td>
+    <td>
+     =
+    </td>
+    <td>
+     Critical temperature between cementite-austenite phase field and austenite phase field on heating
+    </td>
+   </tr>
+  </table>
+  <p>
+   <b>
+    Note:
+   </b>
+   The suffixes "r" and "c" are from the French words
+   <i>
+    refroidissant
+   </i>
+   (cooling) and
+   <i>
+    chauffant
+   </i>
+   (heating).
+  </p>
+  <h3>
+   ANNEALING PROCESSES
+  </h3>
+  <p>
+   Annealing processes are heat treatments that produce pearlitic microstructures (ferrite, pearlite, and cementite). They are performed to homogenize the microstructure, increase ductility, remove residual stresses, and improve machinability.
+  </p>
+  <h4>
+   Full Annealing
+  </h4>
+  <p>
+   Annealing processes heat the steel to just above the transition temperature required to produce austenite (
+   \(
+    A_{c3}
+   \)
+   for &lt; 0.8% carbon steels and
+   \(
+    A_1
+   \)
+   for &gt; 0.8% carbon steels), hold it at that temperature to allow uniform crystal restructuring, and then cool it very slowly to room temperature at a maximum rate of 10°C/hour. The steel is usually left in the furnace with the heat shut off or packed in sand or another material that is a good heat insulator.
+  </p>
+  <p>
+   Annealing high carbon steels can induce brittleness by allowing larger grain formation; this reduces toughness and ductility. Heat soaking for too long a period encourages grain enlargement in any annealing procedure and increases brittleness in the metal.
+  </p>
+  <p>
+   Sub-critical annealing or process annealing is a similar process, but the steel is heated to just below its austenite transformation temperature, and then cooled slowly to reduce internal stresses in the metal.
+  </p>
+  <h4>
+   Normalizing
+  </h4>
+  <p>
+   Carbon steels containing less than 0.8% carbon are normalized to:
+  </p>
+  <ul style="list-style-type: none">
+   <li>
+    • Relieve internal stresses embedded in the metal from welding, machining, or forging
+   </li>
+   <li>
+    • Refine grain size and promote uniform composition to increase strength and toughness
+   </li>
+   <li>
+    • Improve machinability
+   </li>
+  </ul>
+  <p>
+   This process raises the temperature of the steel to approximately 55°C above the upper transition temperature into the austenite region. The steel is held at that temperature just long enough to ensure even heating throughout. It is then allowed to cool in still air at a rate not exceeding approximately 100°C/hour. If a furnace is used, the furnace should have a reducing atmosphere (no free oxygen present) to prevent oxide scale forming on the surfaces.
+  </p>
+  <p>
+   Referring to the iron-carbon phase diagram in Fig. 8, the normalizing process produces finer and more consistent pearlite layers in the ferrite matrix. Because all high-strength, tough steels have less than 0.8% carbon in their alloy, no transformation products other than pearlite and ferrite are produced by normalizing. The importance of normalizing, which produces tougher steels than any other heat-treatment process, can be appreciated by the fact that the ASME Codes require normalized and tempered materials in many of their specifications for steel forgings and castings. Normalizing low carbon steels makes the steels just hard enough to machine freely, leaving the surface free of tears.
+  </p>
+  <h4>
+   Spheroidizing
+  </h4>
+  <p>
+   Spheroidizing refers to any process of prolonged heating and cooling of steel, similar to annealing, that converts the carbide content of the matrix into a rounded or spheroid structure. Metal in this form is the softest and most workable.
+  </p>
+  <h3>
+   HARDENING PROCESSES
+  </h3>
+  <p>
+   Hardening processes involve heating mild steel to a temperature above its transformation range (austenizing), and then cooling it quickly to increase hardness by the formation of martensite. Martensite is a structure of fine carbide needle-like grains that are extremely hard and are formed during the transformation from austenite. If the temperature is dropped quickly, the carbon in the austenite does not have time to precipitate as pearlite but instead forms distorted needle-like grains of carbide in the ferrite matrix. The cooling rate varies with the material and is called the critical cooling rate. Cooling is typically done in water, brine, oil, or air and is promoted by the agitation of the liquid or the sample.
+  </p>
+  <h4>
+   Case Hardening
+  </h4>
+  <p>
+   Case hardening is a type of heat treatment process that produces martensite in the outer layer only, leaving the interior to retain a tough ferrite-pearlite composition.
+  </p>
+  <p>
+   Metals parts surface hardened by these methods include: bearings, machine tools, crankshafts, cams, valves, gears, rollers, and hand tools.
+  </p>
+  <p>
+   Two important thermochemical case hardening processes for low alloy steels are
+   <b>
+    carburizing
+   </b>
+   and
+   <b>
+    nitriding
+   </b>
+   .
+  </p>
+  <p>
+   <b>
+    Carburizing
+   </b>
+   is achieved by heating the part to its transformation temperature in an atmosphere of carbon monoxide (CO). Carbon diffuses into the skin of the metal increasing martensite formation in this area when the part is later quench hardened.
+  </p>
+  <p>
+   <b>
+    Nitriding
+   </b>
+   is carried out in a furnace at a temperature below the transformation range of iron (approximately 500°C to 600°C) in an atmosphere of ammonia (NH
+   <sub>
+    3
+   </sub>
+   ). Ammonia dissociates at this temperature into nitrogen and hydrogen. Atomic nitrogen diffuses into the surface layer of the metal forming iron nitrides which are extremely hard. This process, unlike carburizing, does not require subsequent quench hardening.
+  </p>
+  <p>
+   These two processes can be combined into one operation called
+   <b>
+    carbonitriding
+   </b>
+   when a source of carbon and nitrogen is introduced into the furnace at a temperature above the transformation range of the steel. A less severe quench hardening step is required after this operation (than with carburizing), but the resulting hardening effect is comparable. Nitriding, alone, produces the hardest surface.
+  </p>
+  <h4>
+   Quenching
+  </h4>
+  <p>
+   Quenching is the rapid cooling of a heated metal. This process is performed to obtain the desired transformation products. Quenching a metal increases strength and hardness and decreases toughness and ductility. Steel with a carbon content over 0.8% is heated above the upper transformation temperature and held there to allow the formation of austenite. The steel part is then quickly cooled by immersing it in a liquid such as water, brine, or oil.
+  </p>
+  <h4>
+   Tempering
+  </h4>
+  <p>
+   Tempering refers to the process of heating quenched steels to a specific temperature below their lower transformation ranges, which forces the saturated carbon in the martensite to form back into a stable iron carbide (cementite) and ferrite mixture (see Fig. 8), and then cooling the sample to room temperature at a rate that prevents martensite reformation. The primary purpose of tempering is to improve the mechanical properties of the steel. The goals are to increase ductility and toughness with slightly reduced hardness. A sword that has been quench hardened and then tempered will not shatter but will retain a hard sharp edge.
+  </p>
+  <h2>
+   Objective 4
+  </h2>
+  <p>
+   <b>
+    <i>
+     Explain how to interpret metal specifications.
+    </i>
+   </b>
+  </p>
+  <h3>
+   METAL SPECIFICATIONS
+  </h3>
+  <p>
+   In North America, specifications for metals used to construct pressure vessels and process piping systems lie in the regulatory domain of the American Society of Mechanical Engineers (ASME). They develop codes which are in turn approved by the American National Standards Institute (ANSI). The extensive complexity of these codes are intended for professional engineers who design power and processing plants, and rest, in most cases, outside the scope of responsibility of operating power engineers. A career in power engineering, however, will almost certainly include exposure to construction projects where, to some degree, the onus may fall on a power engineer to monitor the correctness of the materials used. A chief engineer in a power plant may be responsible for purchasing piping, fittings, and equipment to replace or repair plant systems. To this extent, all candidates should be familiar with basic metal specifications.
+  </p>
+  <p>
+   It should be noted that under no circumstances should an unidentified metal ever be used in a plant application or a careless substitution of materials ever be made. Material specification and selection should be left to the design engineer.
+  </p>
+  <p>
+   One should also be aware of a problem with counterfeit products in the marketplace that are stamped to suggest compliance with ASME code specifications but are, in fact, inferior and have metallurgical compositions different than that required by the code. These products are forgeries and are dangerous to use. Ordering materials from reputable suppliers helps avoid this situation.
+  </p>
+  <p>
+   In general, piping, boiler and exchanger tubing, fittings, and structural materials can be categorized as being manufactured from one of the following types of metals:
+  </p>
+  <ul style="list-style-type: none">
+   <li>
+    • Low carbon or mild weldable steels (carbon content &lt; 0.30%)
+   </li>
+   <li>
+    • Medium carbon steels (carbon content &gt; 0.3% but &lt; 0.60%)
+   </li>
+   <li>
+    • High carbon steels (carbon content &gt; 0.60% but &lt; 1.5%)
+   </li>
+   <li>
+    • Cast irons (carbon content between 2% and 6%)
+   </li>
+   <li>
+    • Alloy steels (low carbon steels alloyed with manganese, chromium, vanadium, nickel, molybdenum, tungsten, and other elements), for example, stainless steel which contains 12% to 20% chromium and is a very valuable alloy.
+   </li>
+   <li>
+    • Non-ferrous metals (copper, aluminum, brass, nickel, tungsten and zirconium)
+   </li>
+  </ul>
+  <p>
+   Most piping in a power plant is made from low carbon or alloy steels. Choosing a metal for a particular job is done on the basis of
+   <b>
+    safety
+   </b>
+   and metal
+   <b>
+    survivability
+   </b>
+   . The engineer has to ensure the material can withstand the most extreme environment it will be used in and still retain a factor of safety.
+  </p>
+  <p>
+   An engineering piping specification will call for an ASTM (American Society for Testing and Materials) "A" or "B" spec number material of specified grade, dimension, and schedule (wall thickness). "A" material represents carbon steels and alloys while "B" material represents non-ferrous material. ASME Codes B31.1 (Power Piping) and B31.3 (Hydrocarbon Process Piping) offer a complete choice of carbon steel and alloy piping suitable for defined applications in power plants and hydrocarbon processing plants. Compatible flanges and fittings for a particular choice of piping can be found in ASME Code B16.5 (Pipe Flanges and Fittings).
+  </p>
+  <p>
+   Table 1 shows an example of the most commonly used carbon steel pipe.
+  </p>
+  <p style="text-align: center;">
+   <i>
+    Table 1
+    <br/>
+    Standards Comparison
+   </i>
+  </p>
+  <table border="1">
+   <thead>
+    <tr data-bbox="349 875 1347 917">
+     <th>
+      STANDARD NAME
+     </th>
+     <th>
+      ASTM A53
+     </th>
+     <th>
+      ASTM A106
+     </th>
+    </tr>
+   </thead>
+   <tbody>
+    <tr data-bbox="349 917 1347 959">
+     <td>
+      Type
+     </td>
+     <td>
+      Specification
+     </td>
+     <td>
+      Specification
+     </td>
+    </tr>
+    <tr data-bbox="349 959 1347 1066">
+     <td>
+      Title
+     </td>
+     <td>
+      Pipe, Steel, Black &amp; Hot-dipped, Zinc Coated, Welded &amp; Seamless
+     </td>
+     <td>
+      Seamless Carbon Steel Pipe for High Temperature Service
+     </td>
+    </tr>
+    <tr data-bbox="349 1066 1347 1176">
+     <td>
+      Commonly used type/grade within specification
+     </td>
+     <td>
+      Type E, Grade B
+     </td>
+     <td>
+      Grade B
+     </td>
+    </tr>
+    <tr data-bbox="349 1176 1347 1402">
+     <td>
+      Description
+     </td>
+     <td>
+      Electric resistance welded, slightly higher carbon (stronger) than Grade A. Not made to Fine grain steelmaking practice
+     </td>
+     <td>
+      Seamless, good balance between strength &amp; weldability, slightly higher carbon (stronger) than Grade A. Made to fine grain steelmaking practice for more reliable properties
+     </td>
+    </tr>
+    <tr data-bbox="349 1402 1347 1444">
+     <td>
+      End-use
+     </td>
+     <td>
+      Ordinary or general purpose
+     </td>
+     <td>
+      Critical service
+     </td>
+    </tr>
+   </tbody>
+  </table>
+  <h3>
+   Material Test Reports
+  </h3>
+  <p>
+   Material test reports, or MTRs, are a good resource for monitoring material specifications. Also referred to as
+   <b>
+    certificates of testing
+   </b>
+   , these reports are made available by the vendor to the purchaser upon request. MTRs originate in the smelter where the metal was made and they give a comprehensive chemical and physical analysis of the metal used to manufacture the pipe or fitting. Molten metal is sampled from every ladle after the smelting stage. Each batch of metal (or alloy) is given a
+   <b>
+    heat number
+   </b>
+   which identifies the batch and all the products made from that batch and follows them throughout their lifetime. An MTR identifies the pipe or fitting and
+  </p>
+  <p>
+   specifies the heat number of the metal it was made from. It documents the chemical composition, the ASME spec number, grade, schedule, tensile strength, and yield point of that metal. The results of any specialized testing, such as a Charpy test for brittleness, and any heat treatment processes that part underwent are also recorded. An example of a material test report is shown in Table 2.
+  </p>
+  <p>
+   MTRs are valuable tools to monitor the properties and specifications of metals you have purchased.
+  </p>
+  <p style="text-align: center;">
+   <i>
+    Table 2
+    <br/>
+    Material Test Report
+   </i>
+  </p>
+  <table border="1">
+   <thead>
+    <tr data-bbox="212 600 1380 812">
+     <th>
+      ITEM
+     </th>
+     <th>
+      QUANTITY
+     </th>
+     <th>
+      DESCRIPTION
+     </th>
+     <th>
+      NB
+     </th>
+     <th>
+      MEANS
+     </th>
+     <th>
+      NORMALIZED
+     </th>
+     <th>
+      HEAT #
+     </th>
+     <th>
+      TENSILE STRENGTH N/m
+      <sup>
+       2
+      </sup>
+     </th>
+     <th>
+      YIELD POINT N/m
+      <sup>
+       2
+      </sup>
+     </th>
+     <th>
+      ELONGATION %
+     </th>
+     <th>
+      HARDNESS
+     </th>
+    </tr>
+   </thead>
+   <tbody>
+    <tr data-bbox="212 812 1380 846">
+     <td>
+      5
+     </td>
+     <td>
+      24
+     </td>
+     <td>
+      WN 2 1500LB 5/XXS A105
+     </td>
+     <td>
+      NE
+     </td>
+     <td>
+      11TK
+     </td>
+     <td>
+     </td>
+     <td>
+      562
+     </td>
+     <td>
+      244
+     </td>
+     <td>
+      28.2
+     </td>
+     <td>
+      160
+     </td>
+     <td>
+     </td>
+    </tr>
+    <tr data-bbox="212 846 1380 877">
+     <td>
+      7
+     </td>
+     <td>
+      25
+     </td>
+     <td>
+      WN 2 1/2 300LB S40 A105 NORMZ
+     </td>
+     <td>
+      NE
+     </td>
+     <td>
+      104TK
+     </td>
+     <td>
+     </td>
+     <td>
+      498
+     </td>
+     <td>
+      283
+     </td>
+     <td>
+      32.5
+     </td>
+     <td>
+      144
+     </td>
+     <td>
+     </td>
+    </tr>
+    <tr data-bbox="212 877 1380 909">
+     <td>
+      8
+     </td>
+     <td>
+      10
+     </td>
+     <td>
+      SO 2 1/2 300LB A105 NORMZ
+     </td>
+     <td>
+      NE
+     </td>
+     <td>
+      104TK
+     </td>
+     <td>
+     </td>
+     <td>
+      498
+     </td>
+     <td>
+      283
+     </td>
+     <td>
+      32.5
+     </td>
+     <td>
+      144
+     </td>
+     <td>
+     </td>
+    </tr>
+    <tr data-bbox="212 909 1380 940">
+     <td>
+      14
+     </td>
+     <td>
+      5
+     </td>
+     <td>
+      BLIND 1 1500LB RTF A105
+     </td>
+     <td>
+      NE
+     </td>
+     <td>
+      100AK
+     </td>
+     <td>
+     </td>
+     <td>
+      496
+     </td>
+     <td>
+      213
+     </td>
+     <td>
+      36.3
+     </td>
+     <td>
+      144
+     </td>
+     <td>
+     </td>
+    </tr>
+    <tr data-bbox="212 940 1380 972">
+     <td>
+      19
+     </td>
+     <td>
+      5
+     </td>
+     <td>
+      WN 6 150LB S160 A105 NORMZ
+     </td>
+     <td>
+      NE
+     </td>
+     <td>
+      160A1
+     </td>
+     <td>
+     </td>
+     <td>
+      529
+     </td>
+     <td>
+      264
+     </td>
+     <td>
+      28.7
+     </td>
+     <td>
+      148
+     </td>
+     <td>
+     </td>
+    </tr>
+    <tr data-bbox="212 972 1380 1003">
+     <td>
+      20
+     </td>
+     <td>
+      225
+     </td>
+     <td>
+      WN 6 150LB S160 A105 NORMZ
+     </td>
+     <td>
+      NE
+     </td>
+     <td>
+      27AG
+     </td>
+     <td>
+     </td>
+     <td>
+      517
+     </td>
+     <td>
+      238
+     </td>
+     <td>
+      33.2
+     </td>
+     <td>
+      167
+     </td>
+     <td>
+     </td>
+    </tr>
+    <tr data-bbox="212 1003 1380 1035">
+     <td>
+      23
+     </td>
+     <td>
+      30
+     </td>
+     <td>
+      WN 6 300LB S40 A105 NORMZ
+     </td>
+     <td>
+      NE
+     </td>
+     <td>
+      108TK
+     </td>
+     <td>
+     </td>
+     <td>
+      521
+     </td>
+     <td>
+      223
+     </td>
+     <td>
+      33.5
+     </td>
+     <td>
+      152
+     </td>
+     <td>
+     </td>
+    </tr>
+    <tr data-bbox="212 1035 1380 1060">
+     <td>
+     </td>
+     <td>
+     </td>
+     <td>
+      SO 6 300LB A105 NORMZ
+     </td>
+     <td>
+      NE
+     </td>
+     <td>
+      24TK
+     </td>
+     <td>
+     </td>
+     <td>
+      555
+     </td>
+     <td>
+      298
+     </td>
+     <td>
+      30.8
+     </td>
+     <td>
+      157
+     </td>
+     <td>
+     </td>
+    </tr>
+   </tbody>
+  </table>
+  <h2>
+   Objective 5
+  </h2>
+  <p>
+   <b>
+    Explain typical selection of metals for process plant applications (what is selected and why).
+   </b>
+  </p>
+  <h3>
+   METAL SELECTION
+  </h3>
+  <p>
+   Plant operating engineers have many responsibilities, but in strict terms, these do not usually include designating metal specifications for plant pressure piping, vessels, or structural steels. This is the responsibility of professional design engineers. However, close association with professional engineering and construction personnel during construction and the duty to safely operate and maintain the plant afterward put the onus on power engineers to become familiar with the procedures, specifications, and jargon of the trade.
+  </p>
+  <p>
+   An outline for a construction project might take the following form, as shown in Fig. 10.
+  </p>
+  <img alt="Figure 10: Construction Project Outline flowchart showing the relationship between Foundry, Supply Vendor, Engineering Procurement, Constructor, and Plant, with a feedback loop to CSA/ANSI/ASME standards." src="a24e89a6fe9bb70c83f8bf5202baba95_img.jpg"/>
+  <div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+   <pre>graph LR
+    Foundry[Foundry / Metal Refinery] -- "Order" --&gt; Vendor((Supply Vendor &amp; Distribution))
+    Vendor -- "Order to specification" --&gt; EP[Engineering Procurement]
+    EP -- "Supply per specification with MTRS" --&gt; Constructor[Constructor]
+    Constructor -- "Compliance" --&gt; Plant[Plant]
+    Plant -- "Company inspector" --&gt; Inspection{INSPECTION}
+    Inspection -- "Constructor quality control inspector" --&gt; Constructor
+    Inspection -- "Compliance" --&gt; Vendor
+    Vendor -- "Supply MTRS or Certificates of Testing" --&gt; Foundry
+    Foundry -- "Produces metal per specification" --&gt; CSA((CSA))
+    CSA -- "Selects specification" --&gt; EP
+    EP -- "Selects specification" --&gt; ANSI[ANSI/ASME]
+    ANSI -- "Selects specification" --&gt; EP</pre>
+   <div class="img-alt">
+    Figure 10: Construction Project Outline flowchart showing the relationship between Foundry, Supply Vendor, Engineering Procurement, Constructor, and Plant, with a feedback loop to CSA/ANSI/ASME standards.
+   </div>
+  </div>
+  <p>
+   Figure 10
+   <br/>
+   Construction Project Outline
+  </p>
+  <p>
+   An operating engineer would usually become involved in this project as the owner's inspector or be included in an operations staff group responsible for monitoring construction progress and compliance. Operating engineers have to become familiar with the operating systems and design philosophy. As you can see from the above diagram (Fig. 10), all designations for pressure piping and fittings use a Canadian Standards Association (CSA) reference or ASME metal specification.
+  </p>
+  <p>
+   Regulations controlling the "Design, Construction and Installation of Boilers &amp; Pressure Vessels" require, in part, the submission of "material specifications, size, schedule and primary service rating of all primary piping and fittings used in that construction" for approval and registration to the local boiler authority.
+  </p>
+  <p>
+   The American National Standards Institute (ANSI), a governing body, has established minimum requirements for manufacturers to identify pipes, fittings, and flanges:
+  </p>
+  <ul style="list-style-type: none">
+   <li>
+    • Size
+   </li>
+   <li>
+    • Wall thickness
+   </li>
+   <li>
+    • Schedule designation
+   </li>
+   <li>
+    • Material type
+   </li>
+   <li>
+    • Manufacturer's identity stamp
+   </li>
+  </ul>
+  <h3>
+   Size
+  </h3>
+  <p>
+   Size refers to as nominal pipe size (NPS); still measured in inches but may be in metric or SI units (always measured in millimetres) and usually designates the outside pipe diameter or the inside flange diameter.
+  </p>
+  <h3>
+   Wall Thickness
+  </h3>
+  <p>
+   Wall thickness, measured in inches or millimetres, refers to piping, steel plate, vessel walls, and pipefittings other than flanges.
+  </p>
+  <h3>
+   Schedule Designation
+  </h3>
+  <p>
+   If you examine flanges and pipe elbows in a plant you will see this information stamped onto every fitting. Piping is usually stencilled along its entire length to ensure it can be identified when cut into shorter lengths during construction.
+  </p>
+  <h3>
+   Flanges
+  </h3>
+  <p>
+   Flanges are always referred to by the pressure rating class of ANSI schedule 150, 300, 400, 600, 900, 1500, or 2500. As per ASME Code B16.5 (Pipe Flanges and Fittings), forged or cast flanges are identified in a material group and under a nominal designation (alloy composition) by "A" numbers and grade. They have different maximum allowable working pressures (MAWPs) depending on their schedule class number (ANSI 150 through 2500) and maximum service temperature. This sounds complicated, but it can be more easily understood by referring to the following chart taken from ASME Code B16.5 (Pipe Flanges and Fittings), page 15:
+  </p>
+  <p style="text-align: center;">
+   <i>
+    Table 3
+   </i>
+   <br/>
+   <i>
+    ASME Pressure-Temperature Chart
+   </i>
+   <br/>
+   <i>
+    (Courtesy of ASME)
+   </i>
+  </p>
+  <table border="1">
+   <thead>
+    <tr data-bbox="235 405 1339 443">
+     <th rowspan="2">
+      Class
+      <br/>
+      Temp.
+      <sup>
+       0
+      </sup>
+      F
+     </th>
+     <th colspan="7">
+      Working Pressures By Classes, psig
+     </th>
+    </tr>
+    <tr data-bbox="235 443 1339 499">
+     <th>
+      150
+     </th>
+     <th>
+      300
+     </th>
+     <th>
+      400
+     </th>
+     <th>
+      600
+     </th>
+     <th>
+      900
+     </th>
+     <th>
+      1500
+     </th>
+     <th>
+      2500
+     </th>
+    </tr>
+   </thead>
+   <tbody>
+    <tr data-bbox="235 499 1339 533">
+     <td>
+      - 20 to 100
+     </td>
+     <td>
+      285
+     </td>
+     <td>
+      740
+     </td>
+     <td>
+      990
+     </td>
+     <td>
+      1480
+     </td>
+     <td>
+      2220
+     </td>
+     <td>
+      3705
+     </td>
+     <td>
+      6170
+     </td>
+    </tr>
+    <tr data-bbox="235 533 1339 564">
+     <td>
+      200
+     </td>
+     <td>
+      260
+     </td>
+     <td>
+      675
+     </td>
+     <td>
+      900
+     </td>
+     <td>
+      1350
+     </td>
+     <td>
+      2025
+     </td>
+     <td>
+      3375
+     </td>
+     <td>
+      5625
+     </td>
+    </tr>
+    <tr data-bbox="235 564 1339 596">
+     <td>
+      300
+     </td>
+     <td>
+      230
+     </td>
+     <td>
+      655
+     </td>
+     <td>
+      875
+     </td>
+     <td>
+      1315
+     </td>
+     <td>
+      1970
+     </td>
+     <td>
+      3280
+     </td>
+     <td>
+      5470
+     </td>
+    </tr>
+    <tr data-bbox="235 596 1339 627">
+     <td>
+      400
+     </td>
+     <td>
+      200
+     </td>
+     <td>
+      635
+     </td>
+     <td>
+      845
+     </td>
+     <td>
+      1270
+     </td>
+     <td>
+      1900
+     </td>
+     <td>
+      3170
+     </td>
+     <td>
+      5280
+     </td>
+    </tr>
+    <tr data-bbox="235 627 1339 659">
+     <td>
+      500
+     </td>
+     <td>
+      170
+     </td>
+     <td>
+      600
+     </td>
+     <td>
+      800
+     </td>
+     <td>
+      1200
+     </td>
+     <td>
+      1795
+     </td>
+     <td>
+      2995
+     </td>
+     <td>
+      4990
+     </td>
+    </tr>
+    <tr data-bbox="235 659 1339 690">
+     <td>
+      600
+     </td>
+     <td>
+      140
+     </td>
+     <td>
+      550
+     </td>
+     <td>
+      730
+     </td>
+     <td>
+      1095
+     </td>
+     <td>
+      1640
+     </td>
+     <td>
+      2735
+     </td>
+     <td>
+      4560
+     </td>
+    </tr>
+    <tr data-bbox="235 690 1339 722">
+     <td>
+      650
+     </td>
+     <td>
+      125
+     </td>
+     <td>
+      535
+     </td>
+     <td>
+      715
+     </td>
+     <td>
+      1075
+     </td>
+     <td>
+      1610
+     </td>
+     <td>
+      2685
+     </td>
+     <td>
+      4475
+     </td>
+    </tr>
+    <tr data-bbox="235 722 1339 753">
+     <td>
+      700
+     </td>
+     <td>
+      110
+     </td>
+     <td>
+      535
+     </td>
+     <td>
+      710
+     </td>
+     <td>
+      1065
+     </td>
+     <td>
+      1600
+     </td>
+     <td>
+      2665
+     </td>
+     <td>
+      4440
+     </td>
+    </tr>
+    <tr data-bbox="235 753 1339 785">
+     <td>
+      750
+     </td>
+     <td>
+      95
+     </td>
+     <td>
+      505
+     </td>
+     <td>
+      670
+     </td>
+     <td>
+      1010
+     </td>
+     <td>
+      1510
+     </td>
+     <td>
+      2520
+     </td>
+     <td>
+      4200
+     </td>
+    </tr>
+    <tr data-bbox="235 785 1339 816">
+     <td>
+      800
+     </td>
+     <td>
+      80
+     </td>
+     <td>
+      410
+     </td>
+     <td>
+      550
+     </td>
+     <td>
+      825
+     </td>
+     <td>
+      1235
+     </td>
+     <td>
+      2060
+     </td>
+     <td>
+      3430
+     </td>
+    </tr>
+    <tr data-bbox="235 816 1339 848">
+     <td>
+      850
+     </td>
+     <td>
+      65
+     </td>
+     <td>
+      270
+     </td>
+     <td>
+      355
+     </td>
+     <td>
+      535
+     </td>
+     <td>
+      805
+     </td>
+     <td>
+      1340
+     </td>
+     <td>
+      2230
+     </td>
+    </tr>
+    <tr data-bbox="235 848 1339 879">
+     <td>
+      900
+     </td>
+     <td>
+      50
+     </td>
+     <td>
+      170
+     </td>
+     <td>
+      230
+     </td>
+     <td>
+      345
+     </td>
+     <td>
+      515
+     </td>
+     <td>
+      860
+     </td>
+     <td>
+      1430
+     </td>
+    </tr>
+    <tr data-bbox="235 879 1339 911">
+     <td>
+      950
+     </td>
+     <td>
+      35
+     </td>
+     <td>
+      105
+     </td>
+     <td>
+      140
+     </td>
+     <td>
+      205
+     </td>
+     <td>
+      310
+     </td>
+     <td>
+      515
+     </td>
+     <td>
+      860
+     </td>
+    </tr>
+    <tr data-bbox="235 911 1339 942">
+     <td>
+      1000
+     </td>
+     <td>
+      20
+     </td>
+     <td>
+      50
+     </td>
+     <td>
+      70
+     </td>
+     <td>
+      105
+     </td>
+     <td>
+      155
+     </td>
+     <td>
+      260
+     </td>
+     <td>
+      430
+     </td>
+    </tr>
+   </tbody>
+  </table>
+  <p>
+   For example, a common choice for a vapour line flange from the top of a propane chiller in a gas processing plant might be a 12 inch, A 350 LF2, ANSI 300. "ANSI 300" ensures that the flange meets the requirements for the maximum allowable working pressure of the vessel with an included safety factor. Grade "LF2" allows a minimum process temperature of -45°C. The ANSI class number "A" is commonly referred to as the schedule number. Remember, flanges that comply with ASME B16.5 (the industry standard) have to be stamped "B16." If they are not, they are not acceptable for pressure equipment.
+  </p>
+  <h3>
+   Piping
+  </h3>
+  <p>
+   Piping schedule can be specified per the following partially complete list and is usually referenced by "diameter-schedule" that indicates pipe size and minimum pipe wall thickness.
+  </p>
+  <p>
+   <i>
+    Table 4
+    <br/>
+    Piping Schedule
+   </i>
+  </p>
+  <table border="1">
+   <thead>
+    <tr data-bbox="326 499 1395 535">
+     <th>
+      NPS diameter (inches)
+     </th>
+     <th>
+      Schedule
+     </th>
+     <th>
+      Wall Thickness
+     </th>
+    </tr>
+   </thead>
+   <tbody>
+    <tr data-bbox="326 535 1395 569">
+     <td rowspan="2">
+      1 inch
+     </td>
+     <td>
+      40 (called standard wall)
+     </td>
+     <td>
+      3.38 mm (.133 in)
+     </td>
+    </tr>
+    <tr data-bbox="326 569 1395 602">
+     <td>
+      80 (heavy wall or XS extra heavy)
+     </td>
+     <td>
+      4.55 mm (.179 in)
+     </td>
+    </tr>
+    <tr data-bbox="326 602 1395 636">
+     <td rowspan="2">
+      2 inch
+     </td>
+     <td>
+      40
+     </td>
+     <td>
+      3.91 mm (.154 in)
+     </td>
+    </tr>
+    <tr data-bbox="326 636 1395 669">
+     <td>
+      80 XS
+     </td>
+     <td>
+      5.54 mm (.280 in)
+     </td>
+    </tr>
+    <tr data-bbox="326 669 1395 703">
+     <td rowspan="2">
+      4 inch
+     </td>
+     <td>
+      40
+     </td>
+     <td>
+      6.02 mm (.237 in)
+     </td>
+    </tr>
+    <tr data-bbox="326 703 1395 737">
+     <td>
+      80 XS
+     </td>
+     <td>
+      8.56 mm (.337 in)
+     </td>
+    </tr>
+    <tr data-bbox="326 737 1395 770">
+     <td rowspan="2">
+      6 inch
+     </td>
+     <td>
+      40
+     </td>
+     <td>
+      7.11 mm (.280 in)
+     </td>
+    </tr>
+    <tr data-bbox="326 770 1395 798">
+     <td>
+      80 XS
+     </td>
+     <td>
+      10.97 mm (.406 in)
+     </td>
+    </tr>
+   </tbody>
+  </table>
+  <p>
+   For example, a 2-inch schedule 40 pipe has a wall thickness of 3.91 mm. Note that commercial pipe sizes 6 -inches in diameter and up are only manufactured in
+   <b>
+    even
+   </b>
+   inch diameters. In all pipe sizes, the outside diameter (OD) is more or less constant, and varying wall thickness determines the resulting inside diameter of the pipe.
+  </p>
+  <p>
+   Although only two common pipe schedules are listed above (40 and 80), pipe schedules range from schedule 10 through schedule 160 with increasing wall thickness. Above schedule 40, the schedule designation is incremented by 40 (e.g. schedule 40, 80, 120, and 160).
+  </p>
+  <p>
+   Table 5 shows a material selection of commonly used piping and fittings that applies to power and processing plants complying with the following codes: ASME B31.1 (Power Piping), ASME B31.3 (Hydrocarbon Process Piping), and ASME B31.4 (Liquid Transportation Systems).
+  </p>
+  <p style="text-align: center;">
+   <i>
+    Table 5
+   </i>
+   <br/>
+   <i>
+    Material Selection—Common Specifications for Carbon Steel Systems
+   </i>
+  </p>
+  <table border="1">
+   <thead>
+    <tr data-bbox="224 371 1463 420">
+     <th>
+      Commodity
+     </th>
+     <th>
+      B31.1
+     </th>
+     <th>
+      B31.3
+     </th>
+     <th>
+      B31.4
+     </th>
+    </tr>
+   </thead>
+   <tbody>
+    <tr data-bbox="224 420 1463 468">
+     <td>
+     </td>
+     <td>
+     </td>
+     <td>
+     </td>
+     <td>
+     </td>
+    </tr>
+    <tr data-bbox="224 468 1463 583">
+     <td>
+      Pipe
+     </td>
+     <td>
+      ASTM A 106
+     </td>
+     <td>
+      ASTM A 53
+      <br/>
+      API 5L
+     </td>
+     <td>
+      ASTM A 53
+      <br/>
+      API 5L
+      <br/>
+      API 5LU
+     </td>
+    </tr>
+    <tr data-bbox="224 583 1463 625">
+     <td>
+      Pipe – Low Temp
+     </td>
+     <td>
+      ASTM A 333 Gr.6
+     </td>
+     <td>
+      ASTM A 333 Gr.6
+     </td>
+     <td>
+      ASTM A 333 Gr.6
+     </td>
+    </tr>
+    <tr data-bbox="224 625 1463 667">
+     <td>
+      Pipe – High Temp
+     </td>
+     <td>
+      ASTM A 106
+     </td>
+     <td>
+      ASTM A 106
+     </td>
+     <td>
+      ASTM A 106
+     </td>
+    </tr>
+    <tr data-bbox="224 667 1463 743">
+     <td>
+      Bolting
+     </td>
+     <td>
+      ASTM A 193 B7
+     </td>
+     <td>
+      ASTM A 193 B7
+      <br/>
+      ASTM A 320
+     </td>
+     <td>
+      ASTM A 193 B7
+      <br/>
+      ASTM A 320
+     </td>
+    </tr>
+    <tr data-bbox="224 743 1463 785">
+     <td>
+      Nut
+     </td>
+     <td>
+      ASTM A 194 2H
+     </td>
+     <td>
+      ASTM A 194 2H
+     </td>
+     <td>
+      ASTM A 194 2H
+     </td>
+    </tr>
+    <tr data-bbox="224 785 1463 827">
+     <td>
+      Fittings
+     </td>
+     <td>
+      ASTM A 234 WPB
+     </td>
+     <td>
+      ASTM A 234 WPB
+     </td>
+     <td>
+     </td>
+    </tr>
+    <tr data-bbox="224 827 1463 869">
+     <td>
+      Fittings – Low Temp
+     </td>
+     <td>
+      ASTM A 420 WPL6
+     </td>
+     <td>
+      ASTM A 420 WPL6
+     </td>
+     <td>
+      ASTM A 420 WPL6
+     </td>
+    </tr>
+    <tr data-bbox="224 869 1463 945">
+     <td>
+      Fittings – High Temp
+     </td>
+     <td>
+      ASTM A 234 WPB
+      <br/>
+      ASTM A 216 WCB
+     </td>
+     <td>
+      ASTM A 234 WPB
+      <br/>
+      ASTM A 216 WCB
+     </td>
+     <td>
+      ASTM A 234 WPB
+     </td>
+    </tr>
+    <tr data-bbox="224 945 1463 1081">
+     <td>
+      Flanges
+     </td>
+     <td>
+      ASTM A 105
+      <br/>
+      ASTM A 181
+      <br/>
+      ASME B16.5
+     </td>
+     <td>
+      ASTM A 105
+      <br/>
+      ASTM A 181
+      <br/>
+      ASME B16.5
+     </td>
+     <td>
+      ASTM A 105
+      <br/>
+      ASTM A 181
+      <br/>
+      ASME B16.5
+     </td>
+    </tr>
+    <tr data-bbox="224 1081 1463 1157">
+     <td>
+      Flanges – Low Temp
+     </td>
+     <td>
+      ASTM A 350 LF2
+      <br/>
+      ASTM A 352 LCB
+     </td>
+     <td>
+      ASTM A 350 LF2
+      <br/>
+      ASTM A 352 LCB
+     </td>
+     <td>
+      ASTM A 350 LF2
+     </td>
+    </tr>
+    <tr data-bbox="224 1157 1463 1272">
+     <td>
+      Flanges – High Temp
+     </td>
+     <td>
+      ASTM A 105
+      <br/>
+      ASTM A 181
+      <br/>
+      ASTM A 216 WCB
+     </td>
+     <td>
+      ASTM A 105
+      <br/>
+      ASTM A 181
+      <br/>
+      ASTM A 216 WCB
+     </td>
+     <td>
+      ASTM A 105
+      <br/>
+      ASTM A 216 WCB
+     </td>
+    </tr>
+    <tr data-bbox="224 1272 1463 1348">
+     <td>
+      Valves
+     </td>
+     <td>
+      ASTM A 105
+      <br/>
+      ASME B16.34
+     </td>
+     <td>
+      ASTM A 105
+      <br/>
+      API 600
+     </td>
+     <td>
+      API 6D
+      <br/>
+      API 600
+     </td>
+    </tr>
+    <tr data-bbox="224 1348 1463 1423">
+     <td>
+      Valves – Low Temp
+     </td>
+     <td>
+      ASTM A 350 LF2
+      <br/>
+      ASTM A 352 LCB
+     </td>
+     <td>
+      ASTM A 350 LF2
+      <br/>
+      ASTM A 352 LCB
+     </td>
+     <td>
+     </td>
+    </tr>
+    <tr data-bbox="224 1423 1463 1465">
+     <td>
+      Valves – High Temp
+     </td>
+     <td>
+      ASTM A 216 WCB
+     </td>
+     <td>
+      ASTM A 216 WCB
+     </td>
+     <td>
+     </td>
+    </tr>
+   </tbody>
+  </table>
+  <p>
+   In these carbon-steel systems,
+   <b>
+    low temp
+   </b>
+   means a limiting design temperature range from
+   \(
+    -45^{\circ}\text{C}
+   \)
+   to an upper specified value
+   \(
+    &lt; 425^{\circ}\text{C}
+   \)
+   , while
+   <b>
+    high temp
+   </b>
+   means a limiting range from
+   \(
+    -29^{\circ}\text{C}
+   \)
+   to an upper specified value
+   \(
+    &lt; 425^{\circ}\text{C}
+   \)
+   . These limits are the lowest temperatures expected from either the processing fluid
+   <b>
+    or
+   </b>
+   the external environment that will affect a particular piping system. They are a design specification based on acceptable Charpy impact testing results that demonstrate these metals do not become brittle within these ranges. Cryogenic systems are common in certain processes, but stainless steels are used because of their resistance to fracture at very low temperatures.
+  </p>
+  <p>
+   In general, selection of a metal for a pressure piping system has to take into account its suitability when exposed to the stresses of its operating environment, which may include consideration of the following variables:
+  </p>
+  <ul style="list-style-type: none">
+   <li>
+    • Internal or external maximum pressures
+   </li>
+   <li>
+    • Maximum and minimum temperatures
+   </li>
+   <li>
+    • Tensile and compressive stress loads
+   </li>
+   <li>
+    • Vibration and cyclic stress loads
+   </li>
+   <li>
+    • Chemical corrosion exposure
+   </li>
+   <li>
+    • Temperature gradients and thermal expansion stress factors
+   </li>
+   <li>
+    • Nozzle loadings (on flange connections)
+   </li>
+   <li>
+    • Impulse stresses (liquid slugging, hydraulic shock, physical collisions)
+   </li>
+   <li>
+    • Heat conductivity
+   </li>
+  </ul>
+  <p>
+   Cost saving will always be a consideration in the selection of a material if the design engineer has a range of metals that can successfully meet a given specification.
+  </p>
+  <h2>
+   Objective 6
+  </h2>
+  <p>
+   <b>
+    Describe the composition, physical properties, and uses of copper, lead, and tin.
+   </b>
+  </p>
+  <h3>
+   COPPER
+  </h3>
+  <p>
+   The symbol for copper (Cu) comes from the Latin word
+   <i>
+    cuprum
+   </i>
+   , which means originating from the island of Cyprus. The Romans obtained it by smelting malachite, a hydroxylated copper carbonate (
+   \(
+    \text{Cu}_2\text{CO}_3(\text{OH})_2
+   \)
+   ). Although elemental copper can be found free in nature, the most important sources of this metal are the mineral ores chalcopyrite, cuprite, malachite, and bornite. Approximately 90% of the world's primary copper occurs in the sulphide ores chalcopyrite (
+   \(
+    \text{CuFeS}_2
+   \)
+   ) and bornite (
+   \(
+    \text{Cu}_5\text{FeS}_4
+   \)
+   ). Most copper refining processes use acid leaching, smelting, or electrolysis to separate the metal from its ores. Pure copper metal is reddish brown in colour and weighs 20% more than iron. It is tough, malleable, and ductile and can be forged into sheets and bars and drawn into wire. Other properties that make copper a desirable engineering material are its excellent electrical and heat conductivity and its high resistance to general corrosion. Industry uses this metal in its pure form as conductors in electrical switchgear and related equipment and as electric wire. Copper and its alloys are used in the manufacture of heat exchangers, tubing, piping, valves, pipefittings, sheet roofing, and as feed stock for the production of brass and bronze alloys.
+  </p>
+  <h4>
+   Copper Alloys
+  </h4>
+  <p>
+   At the beginning of the 21st century, the world production of copper exceeded 16 million tonnes per year with more than half of this refined supply used to produce electric wire and conductors and the remainder used for copper alloy production. Recycling scrap copper in the form of used wire, tubing, and exchanger cores accounted for almost 40% of the North American supply.
+  </p>
+  <p>
+   Copper, when mixed with other elements, produces a myriad of alloys having special and superior properties to the virgin metal itself. The most commonly used copper alloys are the various brasses and bronzes. There are well over 300 different copper alloys commercially available.
+  </p>
+  <h4>
+   Bronze
+  </h4>
+  <p>
+   Bronze is an alloy of
+   <b>
+    copper
+   </b>
+   and
+   <b>
+    tin
+   </b>
+   but may also contain phosphorus, lead, silicon, nickel, zinc, and aluminum. It is used to make many groups of cast and wrought bronze alloys including phosphor bronzes, leaded-tin bronzes, nickel-tin bronzes, aluminum, and silicon-bronzes each having distinctive properties. Overall, these alloys have a high
+  </p>
+  <p>
+   resistance to corrosion and show better machinability and increased strength over the parent metals.
+  </p>
+  <p>
+   Aluminum bronze, containing up to 12% aluminum, have superior wear resistance and anti-galling properties, are very corrosion resistant and strong, and are used to construct bearings, bushings and machine parts. Phosphor bronze (90% copper, 9.75% tin, and 0.25% phosphorus) is very strong, hard, and resilient and is used to make bushings and high grade springs. Bronze has long been in artistic demand for casting statues, bells, and coinage.
+  </p>
+  <h4>
+   Brass
+  </h4>
+  <p>
+   Brass is essentially an alloy of
+   <b>
+    copper
+   </b>
+   and
+   <b>
+    zinc
+   </b>
+   with small amounts of other metals including tin, manganese, lead, nickel, iron, aluminum, and silicon. Ductility maximizes with a 70/30 ratio of copper/zinc and this characteristic can be used, for example, in cartridge brass where expansion sealing in the breech is required. Naval brasses are alloys with small amounts of tin that result in a metal that shows superior resistance to saltwater corrosion, and they are used extensively in these applications. Iron-tin brasses have high strength and hardness and are used in the manufacture of bearings, valves, fittings, and naval propeller castings. Brasses have good machinability and can be welded.
+  </p>
+  <h3>
+   LEAD
+  </h3>
+  <p>
+   Lead is dense, malleable, soft, lubricious, highly corrosion resistant, and has a low melting point. Lead is extracted from lead sulphide ore (galena). The recycling of scrap from batteries, sheet, cable, bearings, and solder is also a major source of lead. Lead is usually used as an alloy in applications such as lead-acid batteries, ammunition, cable sheathing, bearings, construction and electrolytic refining and plating. Battery grids are the largest single use of lead.
+  </p>
+  <h4>
+   Bearing Metals
+  </h4>
+  <p>
+   Tin-based and lead-based bearing metals are babbitts or alloys used for lining bearings. Babbitts include compositions of 80% lead (Pb) and less than 5% tin (Sn) to compositions of greater than 80% tin and 0% lead. The metals antimony and copper are usually present as a small percentage. Other metals which may be used to add strength are cadmium, nickel, bismuth, arsenic, zinc, and tellurium.
+  </p>
+  <h4>
+   White Metal
+  </h4>
+  <p>
+   Lead-based alloys are commonly called white metal. White metal is the name given to alloys made from lead and tin with small amounts of other elements, specifically, antimony, bismuth, silver, and zinc. White metals are used chiefly for bearing materials because of their low melting point, which allows easy casting of bearing shells. This metal shows sufficient strength and ductility not to crack and squeeze out under heavy loads. In addition, white metals are soft enough to contour to a shaft, preventing high points on bearing surfaces, and because of their good thermal conductivity, heat is readily dissipated away from operating bearing surfaces.
+  </p>
+  <p>
+   Babbitt metal is the common name for a tin-based alloy (89% tin, 7.5% lead, 3.5% copper) that is widely used for high speed and light bearing load applications. An example of a lead-based white metal used for bearing applications at slower speeds and heavier shaft loads, is an alloy having a composition of 75% lead, 15% antimony, and 10% tin. This alloy is tougher but less ductile than the high-tin content Babbitt alloy.
+  </p>
+  <h3>
+   TIN
+  </h3>
+  <p>
+   Tin is extracted from oxide ores. It is a soft, white metal with good corrosion resistance and lubricity. Tin is mainly used in tinplate and as an alloying addition. Tinplate production is the largest single use of tin. Tin plate is used to make containers and packaging for food and also non-food items.
+  </p>
+  <h4>
+   Tin-Lead Solders
+  </h4>
+  <p>
+   Solders are divided into tin-lead solders and other solders based on various metals. The tin-lead group includes high-lead, general purpose, and high-tin solders.
+  </p>
+  <p>
+   High-lead solders, containing 80% lead, are used for joining tin-plated containers and automobile radiators. General purpose solders vary from 25% tin/25% lead to 50% tin/50% lead.
+  </p>
+  <p>
+   The tin-lead phase diagram, Fig. 11, indicates that a wide range of solder alloys are possible, depending on the melting range (pasty stage) required. For example, wiping a lead pipe to lead pipe joint requires a lengthy pasty stage, but electronic components require the lowest melting point and no pasty stage (eutectic) to minimize damage to printed circuit boards.
+  </p>
+  <img alt="Figure 11: Tin-Lead Phase Diagram. A binary phase diagram showing temperature on the y-axis from 182°C to 327°C and composition on the x-axis between Lead (Pb) and Tin (Sn)." src="51536f203c07ce20ce119e7e09b11cb6_img.jpg"/>
+  <div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+   <p>
+    The figure is a binary phase diagram for the lead-tin (Pb-Sn) system. The vertical axis represents temperature in degrees Celsius (°C), with key points at 182°C (eutectic temperature), 232°C (melting point of pure Sn), and 327°C (melting point of pure Pb). The horizontal axis represents composition: the left side is 100% Pb (melting at 327°C) and the right side is 100% Sn (melting at 232°C). Arrows indicate Sn concentration increases to the right and Pb concentration increases to the left. Key composition points along the 182°C isotherm are 19.2% Sn, 61.9% Sn (eutectic point), and 97.5% Sn. The diagram identifies several regions:
+    <br/>
+    -
+    <b>
+     Liquid
+    </b>
+    : Above the liquidus lines.
+    <br/>
+    -
+    <b>
+     Solid Metal
+    </b>
+    : The
+    \(
+     \alpha
+    \)
+    phase (solid solution of Sn in Pb) on the far left and
+    \(
+     \beta
+    \)
+    phase (solid solution of Pb in Sn) on the far right.
+    <br/>
+    -
+    <b>
+     Pasty Consistency
+    </b>
+    : The two-phase regions
+    \(
+     \alpha + L
+    \)
+    and
+    \(
+     \beta + L
+    \)
+    between the liquidus and solidus lines.
+    <br/>
+    -
+    <b>
+     Solid Regions
+    </b>
+    : Below the 182°C eutectic line, the regions are labeled
+    \(
+     \alpha + \text{Eutectic}
+    \)
+    and
+    \(
+     \beta + \text{Eutectic}
+    \)
+    .
+   </p>
+   <div class="img-alt">
+    Figure 11: Tin-Lead Phase Diagram. A binary phase diagram showing temperature on the y-axis from 182°C to 327°C and composition on the x-axis between Lead (Pb) and Tin (Sn).
+   </div>
+  </div>
+  <p>
+   <i>
+    Figure 11
+   </i>
+   <br/>
+   <i>
+    Tin–Lead Phase Diagram
+   </i>
+  </p>
+  <h2>
+   Objective 7
+  </h2>
+  <p>
+   <b>
+    Describe the composition, physical properties, and uses of aluminum and aluminum alloys.
+   </b>
+  </p>
+  <h3>
+   ALUMINUM
+  </h3>
+  <p>
+   Pure aluminum metal has a density of
+   \(
+    2699 \text{ kg/m}^3
+   \)
+   . In the useful
+   <b>
+    lightweight metal
+   </b>
+   class, it is only surpassed by magnesium at
+   \(
+    1738 \text{ kg/m}^3
+   \)
+   . In comparison, iron has a density of
+   \(
+    7870 \text{ kg/m}^3
+   \)
+   . Light weight, with the additional properties of very good heat and electrical conductivity, make this metal almost indispensable.
+  </p>
+  <p>
+   Aluminum has only been commercially produced in the last century because of the difficulty of separating the pure metal from its abundant ores (which comprise over 8% of the earth's crust). Bauxite, a reddish-brown ore, with abundant sources located in Australia and Jamaica, is a complex mixture of minerals containing mostly aluminum hydroxides (
+   \(
+    \text{Al}_2\text{O}_3 \cdot 3\text{H}_2\text{O}
+   \)
+   ). Through a caustic leaching operation called the
+   <b>
+    Bayer process
+   </b>
+   , alumina (
+   \(
+    \text{Al}_2\text{O}_3
+   \)
+   ) is produced from bauxite. Alumina is then fed to an electrolytic cell in the presence of the mineral cryolite (
+   \(
+    \text{Na}_3\text{AlF}_6
+   \)
+   ). An electric current fuses these minerals together forming molten aluminum which settles and is tapped off the bottom of the bed. This final refining step is known as the
+   <b>
+    Hall-Heroult process
+   </b>
+   .
+  </p>
+  <p>
+   Elemental aluminum has a relatively low tensile strength and is very malleable and ductile, but, as with other metals, its alloys have properties that are far superior, and it is these alloys that are widely used in industry.
+  </p>
+  <h3>
+   ALUMINUM ALLOYS
+  </h3>
+  <p>
+   Aluminum is combined with other metals such as copper, silicon, manganese, zinc, nickel, magnesium, chromium, and lithium to produce hundreds of important alloys that show a remarkable range of strength, fatigue resistance, toughness, and light weight. These properties make them ideal for use in aircraft and spacecraft construction, automobile design, industrial plant equipment, military hardware, and domestic implements.
+  </p>
+  <p>
+   Aluminum, combined with copper, is a good example of a useful common alloy. This alloy is produced by heating aluminum above
+   \(
+    550^\circ\text{C}
+   \)
+   and then saturating the crucible with copper to form a solution that contains about 5 % copper by weight. Since this matrix is not positively soluble in the solid state, the copper tends to be rejected by the aluminum during cooling. But, if the mixture is quenched with cold water, the copper does not have time to precipitate into copper crystals and instead forms an
+   <b>
+    intermetallic
+   </b>
+  </p>
+  <p>
+   <b>
+    compound
+   </b>
+   (
+   \(
+    \text{CuAl}_2
+   \)
+   ). This process is called
+   <b>
+    precipitation hardening
+   </b>
+   and produces an alloy that is 5 to 6 times stronger than pure aluminum.
+  </p>
+  <p>
+   The
+   \(
+    \text{CuAl}_2
+   \)
+   micro-particles are extremely hard and interfere with the surrounding aluminum atoms by preventing easy slippage of their atomic-plane structures, resulting in a hard, strong alloy. Carbon atoms in an iron matrix react very much the same way in converting iron into steel.
+  </p>
+  <p>
+   Recently, strong interest has been shown in aluminum-lithium alloys and aluminum metal matrix composites (MMC) which have very high strengths, are heat resistant, durable, and light weight. They are used to manufacture machine parts, such as diesel engine pistons and high load-bearing components for the aerospace industry. Metal matrix composites are made by solidifying molten alloys that have been reinforced with boron or ceramic fibres. Further research in this direction holds promise for many new applications.
+  </p>
+  <p>
+   Aluminum has another remarkable property. It is unique in being the only metal known that increases in tensile strength as its temperature decreases. This property is utilized in the construction of large plate-fin, aluminum-alloy heat exchangers, called cold boxes, with multiple internal flow paths that display incomparable heat exchange efficiency in cryogenic process plants. A pair of these cold box heat exchangers installed in an ethane extraction plant under construction is shown in Fig. 12. Temperatures drop to
+   \(
+    -100^\circ\text{C}
+   \)
+   in the coldest sections. Note the number of flanged connections; each represents an associated internal passage.
+  </p>
+  <img alt="A black and white photograph showing a large, complex industrial heat exchanger unit. The unit consists of several vertical cylindrical tanks connected by a network of pipes and valves. It is situated outdoors on a flat, open landscape under a clear sky." src="84cebc242b1af66723a02cdf67fc98c9_img.jpg"/>
+  <div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+   <div class="img-alt">
+    A black and white photograph showing a large, complex industrial heat exchanger unit. The unit consists of several vertical cylindrical tanks connected by a network of pipes and valves. It is situated outdoors on a flat, open landscape under a clear sky.
+   </div>
+  </div>
+  <p>
+   <i>
+    Figure 12
+    <br/>
+    Cold Box Heat Exchangers
+   </i>
+  </p>
+  <p>
+   Aluminum and its alloys are also used extensively in the electrical field as conductor-metal in large electric transmission lines, switchgear equipment, and motor control centre main bus bar connectors. This electrical conductor does not have to be surface protected because aluminum becomes highly resistant to corrosion by forming a thin surface oxide layer that protects the underlying base metal from any further deterioration. For this reason, and because of its high electrical conductivity, strength, and light weight, most high-voltage transmission systems use strand-twisted aluminum alloy conductor cable that, in systems above 250 kV, can exceed 28 mm in diameter. Because of the mass reduction when compared to copper-clad steel cable, utility companies can place the transmission towers much farther apart and realize large cost savings when constructing these lines using aluminum wire cable.
+  </p>
+  <p>
+   Cross-sectional views of modern conductor cables used in large electric transmission systems are shown in Fig. 13. The conductor is made from an aluminum-magnesium-silicon alloy with high electrical conductivity and, due to its rigorous corrosion resistance properties (no steel core), it is usually installed in areas that have severe, corrosive environments such as seacoasts. This type of cable is also used in urban areas, where supports are close together, omitting the need for higher strength steel core cable which is more expensive.
+  </p>
+  <img alt="Figure 13: All Aluminum Alloy Conductors (AAC)" src="7adda64806b35031fadb1fd5a227a9f8_img.jpg"/>
+  <div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+   <p>
+    A perspective view of a conductor consisting of several parallel strands of aluminum alloy wire. The strands are cylindrical and have a slightly textured surface, running along the length of the conductor.
+   </p>
+   <div class="img-alt">
+    Figure 13: All Aluminum Alloy Conductors (AAC)
+   </div>
+  </div>
+  <p>
+   <i>
+    Figure 13
+    <br/>
+    All Aluminum Alloy Conductors (AAC)
+   </i>
+  </p>
+  <p>
+   The conductor, shown in Fig. 14, is made with a solid or stranded steel core surrounded by aluminum stranded wire and can be manufactured with a wide range of tensile strengths that vary with the size of the inner steel core. They are used for river crossings and other long-span installations.
+  </p>
+  <p>
+   An advantage of this type of conductor is its:
+  </p>
+  <ul style="list-style-type: none">
+   <li>
+    • High tensile strength
+   </li>
+  </ul>
+  <p>
+   Disadvantages are:
+  </p>
+  <ul style="list-style-type: none">
+   <li>
+    • A greater diameter is required to carry a given electrical load
+   </li>
+   <li>
+    • The inner steel core is prone to corrosion
+   </li>
+   <li>
+    • They are comparatively costly
+   </li>
+  </ul>
+  <img alt="Figure 14: Aluminum Conductor Steel Reinforced (ACSR)" src="7bf4ae6f6e514c657b55be6302e3c7a4_img.jpg"/>
+  <div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+   <p>
+    A perspective view of an ACSR conductor. It features a central core made of steel wires, which is surrounded by an outer layer of aluminum stranded wires. The cross-section at the left end shows the internal structure of the steel core and the surrounding aluminum strands.
+   </p>
+   <div class="img-alt">
+    Figure 14: Aluminum Conductor Steel Reinforced (ACSR)
+   </div>
+  </div>
+  <p>
+   <i>
+    Figure 14
+    <br/>
+    Aluminum Conductor Steel Reinforced (ACSR)
+   </i>
+  </p>
+  <p>
+   In an attempt to increase tensile strength without sacrificing load carrying capacity, an innovative manufacturing method uses a continuous carbon fibre-polymer resin composite to replace the steel inner core of the ACSR conductor. The aluminum conductor composite core (ACCC), shown in Fig. 15, is 75% lighter than steel with comparable tensile strength for a given wire diameter and completely unaffected by corrosion.
+  </p>
+  <img alt="A 3D perspective view of an Aluminum Conductor Composite Core (ACCC) wire. The wire is shown with a central core and an outer helical winding of aluminum strands. The core appears to be made of a different material, likely the carbon fiber-polymer resin composite mentioned in the text. The wire is oriented diagonally across the frame, with its ends visible." src="cff94fda4719415b20d835d30d2bef5a_img.jpg"/>
+  <div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+   <div class="img-alt">
+    A 3D perspective view of an Aluminum Conductor Composite Core (ACCC) wire. The wire is shown with a central core and an outer helical winding of aluminum strands. The core appears to be made of a different material, likely the carbon fiber-polymer resin composite mentioned in the text. The wire is oriented diagonally across the frame, with its ends visible.
+   </div>
+  </div>
+  <p>
+   <i>
+    Figure 15
+    <br/>
+    Aluminum Conductor Composite Core (ACCC)
+   </i>
+  </p>
+  <h2>
+   Chapter Questions
+  </h2>
+  <h1>
+   A2.4
+  </h1>
+  <ol style="list-style-type: none">
+   <li>
+    1. a) Explain the differences between face-centered cubic, body-centered cubic and close-packed hexagonal unit cell structures in metals and give examples of each.
+    <br/>
+    b) What is the allotropy of iron and why is this process important to understand?
+    <br/>
+    c) A metal is prone to cracking under stress if its grain boundaries are contaminated with impurities. Explain how this can occur and give an example.
+    <br/>
+    d) At the atomic level, what generally determines the shear strength of a metal?
+   </li>
+   <li>
+    2. a) Define austenite and cementite structure in steel.
+    <br/>
+    b) What occurs at the lower critical change line with a dropping temperature in an alloy of 3% carbon in iron that is significant in forming cast iron?
+    <br/>
+    c) Why is cast iron brittle?
+   </li>
+   <li>
+    3. a) Which heat treatment process produces the maximum toughness in mild steels? Describe this process.
+    <br/>
+    b) How are steels hardened? Why are some steels only case hardened? Give five uses for case hardened steel.
+    <br/>
+    c) Tempering and quenching steel is a process used to control the diffusion and precipitation of which element in the matrix?
+   </li>
+   <li>
+    4. a) What information does a material test report give you?
+    <br/>
+    b) What regulatory body governs the metal specification of steam piping used in a power plant?
+   </li>
+   <li>
+    5. a) What term generally refers to the wall thickness in a steel pipe? The pressure rating of a steel flange?
+    <br/>
+    b) Piping, fittings, and flanges have to be permanently stencilled with what minimum information?
+   </li>
+   <li>
+    6. a) List two main sources of copper supply.
+    <br/>
+    b) Describe why copper is an important metal.
+    <br/>
+    c) List five uses of pure copper in industry.
+    <br/>
+    d) How does the composition of brass differ from bronze? Describe the different properties of these two alloys.
+    <br/>
+    e) What is white metal? Name the most important alloy of white metal and its uses.
+   </li>
+   <li>
+    7. a) Describe the process that produces our major supply of aluminum.
+    <br/>
+    b) Name three main uses of aluminum and why its alloys are so important.
+   </li>
+  </ol>
+ </body>
+</html>

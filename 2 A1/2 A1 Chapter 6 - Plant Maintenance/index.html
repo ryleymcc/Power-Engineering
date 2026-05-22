@@ -1,0 +1,3888 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="utf-8"/>
+<script>
+    MathJax = {
+      tex: {
+        inlineMath: [['\\(', '\\)']],
+        displayMath: [['$$', '$$']]
+      }
+    };
+    </script>
+<script async="" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+<div id="nav-header" style="padding: 15px 20px; background: #2c3e50; color: white; display: flex; align-items: center; gap: 20px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+<a href="../index.html" style="color: white; text-decoration: none; background: #34495e; padding: 8px 16px; border-radius: 4px; font-weight: 600; font-size: 0.9rem; transition: background 0.2s;">← Back to Index</a>
+<h1 style="margin: 0; font-size: 1.2rem; font-weight: 500; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Power Engineering Series</h1>
+</div>
+<h1>
+   Plant Maintenance
+  </h1>
+<h2>
+   6
+  </h2>
+<h2>
+   Learning Outcome
+  </h2>
+<p>
+<i>
+    When you complete this learning material, you will be able to:
+   </i>
+</p>
+<p>
+   Describe plant maintenance management systems.
+  </p>
+<h2>
+   Learning Objectives
+  </h2>
+<p>
+<i>
+    You will specifically be able to complete the following tasks:
+   </i>
+</p>
+<ol style="list-style-type: none">
+<li>
+    1. Describe the major aspects of managing maintenance activities including management of maintenance, maintenance program development, planning, scheduling, performing maintenance, assessment and improvement.
+   </li>
+<li>
+    2. Describe the different approaches to maintenance including preventive, and corrective.
+   </li>
+<li>
+    3. Describe how routine maintenance activities are planned, scheduled, and controlled.
+   </li>
+<li>
+    4. Describe the use of Gantt and PERT charts and the critical path method to schedule major maintenance activities.
+   </li>
+<li>
+    5. Describe the steps involved in preparing for, and conducting, a pressure vessel inspection.
+   </li>
+<li>
+    6. Describe the use of computerized systems in managing maintenance, including a work order system.
+   </li>
+<li>
+    7. Describe various methods of monitoring equipment, including log sheets and trending.
+   </li>
+<li>
+    8. Describe the steps involved in developing a plant budget and controlling maintenance costs.
+   </li>
+</ol>
+<p>
+   This is a blank sheet of lined paper with a vertical pink margin line on the left and three punch holes on the right.
+  </p>
+<h2>
+   Objective 1
+  </h2>
+<p>
+<b>
+<i>
+     Describe the major aspects of managing maintenance activities including management of maintenance, maintenance program development, planning, scheduling, performing maintenance, assessment and improvement.
+    </i>
+</b>
+</p>
+<h3>
+   INTRODUCTION
+  </h3>
+<p>
+   Proper maintenance is a critical factor in the successful operation of all types of equipment. In addition to good execution of maintenance tasks, it is also important to understand other aspects of maintenance management. If these aspects are not considered, it is likely that the actual maintenance will not be effectively or efficiently carried out. This module provides an overview of these aspects so that a successful maintenance management program can be set up.
+  </p>
+<h3>
+   DEFINITION OF MAINTENANCE
+  </h3>
+<p>
+   The first thing to consider is the definition of maintenance.
+  </p>
+<p>
+<b>
+    Maintenance:
+   </b>
+   “The combination of all technical and administrative actions, including supervision actions, intended to retain an item in, or restore it to, a state in which it can perform a required function.”
+  </p>
+<p>
+   International Electrotechnical Commission (IEC).
+   <u>
+    International Electrotechnical Vocabulary IEV191-07-01
+   </u>
+   . Mortagne-au-Perche: Imprimerie de Montligeon, 1990.
+  </p>
+<p>
+   This definition has a number of components:
+  </p>
+<ul style="list-style-type: none">
+<li>
+    •
+    <b>
+     item:
+    </b>
+    this term includes all hardware and associated software such as equipment, components, devices, systems, and other physical assets.
+   </li>
+<li>
+    •
+    <b>
+     perform a required function:
+    </b>
+    maintenance is concerned with ensuring that equipment can perform required functions. These functions are a combination of design (which defines the limits of use) and operation (which describes its actual use).
+   </li>
+<li>
+    •
+    <b>
+     to retain an item in, or restore it, to a state:
+    </b>
+    the purpose of maintenance is either to perform actions that keep equipment performing as required by doing preventive maintenance (to retain), or to repair it when it has failed by doing corrective maintenance (to restore).
+   </li>
+</ul>
+<ul style="list-style-type: none">
+<li>
+    •
+    <b>
+     combination of all technical and administrative actions, including supervision action”:
+    </b>
+    maintenance is not only the execution of maintenance tasks, but also administrative actions (such as planning and scheduling) and supervisory actions (such as hiring and training skilled personnel).
+   </li>
+</ul>
+<h3>
+   MAJOR ASPECTS OF MAINTENANCE MANAGEMENT
+  </h3>
+<p>
+   Fig. 1 shows the major aspects of maintenance. Each aspect includes a number of processes that are carried out by different people involved in maintenance.
+  </p>
+<p>
+   These processes can be divided into four categories:
+  </p>
+<ul style="list-style-type: none">
+<li>
+    •
+    <b>
+     Overall planning:
+    </b>
+    includes management of maintenance, maintenance program development, and maintenance planning and scheduling.
+   </li>
+<li>
+    •
+    <b>
+     Preventive maintenance:
+    </b>
+    includes maintenance planning and scheduling, maintenance execution, maintenance assessment, and maintenance improvement.
+   </li>
+<li>
+    •
+    <b>
+     Corrective maintenance:
+    </b>
+    includes maintenance planning and scheduling, maintenance execution, maintenance assessment, and maintenance improvement.
+   </li>
+<li>
+    •
+    <b>
+     Maintenance enhancement:
+    </b>
+    includes maintenance improvement, maintenance program development, and maintenance planning and scheduling.
+   </li>
+</ul>
+<img alt="Flowchart illustrating the Major Aspects of Maintenance Management. The diagram shows a cycle of five interconnected boxes: Management of Maintenance, Maintenance Program Development, Maintenance Planning and Scheduling, Maintenance Execution, and Maintenance Assessment. Arrows indicate the flow between these aspects, categorized into Overall Planning, Corrective Maintenance, Preventive Maintenance, and Maintenance Enhancement." src="f0bae10b54c4f3cf8d0e33f5e2fb7cfa_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<pre>
+graph TD
+    subgraph Overall_Planning [Overall Planning]
+        A[Management of Maintenance] --&gt; B[Maintenance Program Development]
+        B --&gt; C[Maintenance Planning and Scheduling]
+    end
+    subgraph Corrective_Maintenance [Corrective Maintenance]
+        C --&gt; D[Maintenance Execution]
+        D --&gt; E[Maintenance Assessment]
+    end
+    subgraph Preventive_Maintenance [Preventive Maintenance]
+        E --&gt; F[Maintenance Improvement]
+        F --&gt; B
+    end
+    subgraph Maintenance_Enhancement [Maintenance Enhancement]
+        F --&gt; A
+    end
+    C &lt;--&gt; D
+    D &lt;--&gt; E
+    E &lt;--&gt; F
+    F &lt;--&gt; B
+    B &lt;--&gt; C
+  </pre>
+<div class="img-alt">
+    Flowchart illustrating the Major Aspects of Maintenance Management. The diagram shows a cycle of five interconnected boxes: Management of Maintenance, Maintenance Program Development, Maintenance Planning and Scheduling, Maintenance Execution, and Maintenance Assessment. Arrows indicate the flow between these aspects, categorized into Overall Planning, Corrective Maintenance, Preventive Maintenance, and Maintenance Enhancement.
+   </div>
+</div>
+<p>
+   Figure 1
+   <br/>
+   Major Aspects of Maintenance
+   <br/>
+   (Courtesy of Strategic Maintenance Solutions Inc.)
+  </p>
+<p>
+<b>
+    Management of maintenance
+   </b>
+   is the responsibility of supervisors and managers and includes:
+  </p>
+<ul style="list-style-type: none">
+<li>
+    • Developing a high-level maintenance strategy for an organization
+   </li>
+<li>
+    • Managing, coordinating, and supervising maintenance groups
+   </li>
+<li>
+    • Providing finances and managing maintenance budgets
+   </li>
+<li>
+    • Providing resources for maintenance, such as skilled staff, spare parts and materials, maintenance facilities, tools and support equipment, and manual and computerized information systems
+   </li>
+</ul>
+<p>
+<b>
+    Maintenance program development
+   </b>
+   is the responsibility of maintenance planners, with involvement from maintenance personnel, and includes:
+  </p>
+<ul style="list-style-type: none">
+<li>
+    • Identifying preventive maintenance tasks
+   </li>
+<li>
+    • Determining support resources needed for preventive maintenance tasks
+   </li>
+</ul>
+<p>
+<b>
+    Maintenance planning and scheduling
+   </b>
+   is the responsibility of maintenance planners and includes:
+  </p>
+<ul style="list-style-type: none">
+<li>
+    • Planning resources needed to carry out specific preventive and corrective maintenance tasks
+   </li>
+<li>
+    • Scheduling maintenance tasks within the limits of available resources
+   </li>
+</ul>
+<p>
+<b>
+    Maintenance execution
+   </b>
+   is performed by maintenance staff and includes:
+  </p>
+<ul style="list-style-type: none">
+<li>
+    • Obtaining resources such as spare parts and specialized tools
+   </li>
+<li>
+    • Traveling to the work site
+   </li>
+<li>
+    • Following safety and environmental procedures
+   </li>
+<li>
+    • Dismantling, repairing, and reassembling equipment
+   </li>
+<li>
+    • Investigating and diagnosing failures
+   </li>
+<li>
+    • Documenting the results of work done and resources used
+   </li>
+</ul>
+<p>
+<b>
+    Maintenance assessment
+   </b>
+   is a responsibility shared by maintenance planners and maintenance personnel and includes:
+  </p>
+<ul style="list-style-type: none">
+<li>
+    • Assessing and documenting the success of maintenance actions
+   </li>
+<li>
+    • Measuring maintenance performance indicators
+   </li>
+<li>
+    • Performing failure analysis, especially for major failures
+   </li>
+<li>
+    • Assessing equipment availability, reliability, and cost
+   </li>
+<li>
+    • Reviewing the success of preventive maintenance programs
+   </li>
+</ul>
+<p>
+<b>
+    Maintenance improvement
+   </b>
+   involves not only maintenance staff, but may also involve other groups such as design engineering, and could result in:
+  </p>
+<ul style="list-style-type: none">
+<li>
+    • Design improvements or modifications
+   </li>
+<li>
+    • Changes to operating procedures
+   </li>
+<li>
+    • Changes to maintenance procedures
+   </li>
+<li>
+    • Improvements to preventive maintenance tasks and resources
+   </li>
+</ul>
+<p>
+   Two process loops are shown in Fig. 1. The first one (on the right) is the maintenance cycle. This cycle takes place constantly as maintenance tasks are identified or triggered, planned, scheduled, executed, and assessed. The second loop (on the left) is the continuous improvement loop; it deals with incorporating changes and improvements in equipment, procedures, and tasks. Management of maintenance is also an ongoing activity although it is not involved in a cycle.
+  </p>
+<h3>
+   MAINTENANCE AND RELIABILITY
+  </h3>
+<p>
+   It is worthwhile noting that maintenance and reliability are closely related. Reliability starts with equipment that has been designed for the required operating conditions and performance. It must also be operated within design limits and according to specified operating procedures. Finally, the required maintenance has to be carried out. All three factors are necessary to achieve reliability.
+  </p>
+<p>
+   Reliability can be used to measure the success of a maintenance program. However, it is not the only factor to consider since measures such as availability, product quality, production capacity, and cost may be equally, or even more, important.
+  </p>
+<h2>
+   Objective 2
+  </h2>
+<p>
+<b>
+<i>
+     Describe the different approaches to maintenance including preventive and corrective.
+    </i>
+</b>
+</p>
+<h3>
+   APPROACHES TO MAINTENANCE
+  </h3>
+<p>
+   There are different approaches to managing maintenance. Methods and terminology are not entirely standard. Whereas some refer to 'maintenance management', others use the term 'asset management', or even the combined term 'maintenance and reliability'. Even though people use different approaches, the key concepts are the same.
+  </p>
+<p>
+   Total Productive Maintenance (TPM) is a well-known formal approach to maintenance management. It was developed in Japan as part of the quality movement and uses a structured approach to ensure reliability and develop a standardized maintenance program. It applies to all aspects of maintenance. It is appropriate if a company wants a structured and formal means of improving maintenance and reliability. However, if there are known areas that need improvement, it may be more effective to address these areas individually rather than following a comprehensive method such as TPM.
+  </p>
+<p>
+   Other approaches to maintenance management focus on risk management. These approaches include: Reliability Centered Maintenance, Risk-Based Inspection, and statistical risk assessment.
+  </p>
+<p>
+   This module does not specifically recommend any of these approaches, but instead focuses on basic methods and procedures.
+  </p>
+<h3>
+   TYPES OF MAINTENANCE
+  </h3>
+<p>
+   There are two major categories of maintenance: preventive and corrective.
+  </p>
+<p>
+<b>
+    Preventive Maintenance:
+   </b>
+   "The maintenance carried out at predetermined intervals or according to prescribed criteria and intended to reduce the probability of failure or the degradation of the functioning of an item."
+  </p>
+<p>
+   International Electrotechnical Commission (IEC).
+   <u>
+    International Electrotechnical Vocabulary IEV191-07-07
+   </u>
+   . Mortagne-au-Perche: Imprimerie de Montligeon, 1990.
+  </p>
+<p>
+<b>
+    Corrective Maintenance:
+   </b>
+   "The maintenance carried out after fault recognition and intended to put an item into a state in which it can perform a required function."
+  </p>
+<p>
+   International Electrotechnical Commission (IEC).
+   <u>
+    International Electrotechnical Vocabulary IEV191-07-08
+   </u>
+   . Mortagne-au-Perche: Imprimerie de Montligeon, 1990.
+  </p>
+<p>
+   Preventive maintenance covers all pre-planned maintenance activities. There are various approaches, but preventive maintenance is always performed before failure occurs. On the other hand, corrective maintenance is done only after a failure. A further breakdown of these two types of maintenance is shown in Fig. 2.
+  </p>
+<img alt="Flowchart of Maintenance Tasks showing the breakdown of Maintenance into Preventive and Corrective maintenance." src="2ee59e629035d641140e55f4d215b0d7_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<pre>
+graph TD
+    MAINTENANCE[MAINTENANCE] --&gt;|Before failure| PM[Preventive maintenance]
+    MAINTENANCE --&gt;|After failure| CM[Corrective maintenance]
+    PM --&gt; CM1[Condition monitoring and inspection]
+    PM --&gt; CM2[Interval-based repair or replacement]
+    PM --&gt; CM3[Functional testing or failure finding]
+    CM1 --&gt; D1{If not OK}
+    CM2 --&gt; D1
+    CM3 --&gt; D2{If not OK}
+    D1 --&gt; MS[Maintenance actions]
+    D2 --&gt; MS
+    CM --&gt; CM4[Immediate or emergency maintenance]
+    CM --&gt; CM5[Deferred maintenance]
+    CM4 --&gt; MS
+    CM5 --&gt; MS
+    MS --&gt; MS_DETAILS["Cleaning, lubrication, adjustment, calibration, repair, refurbishment, replacement"]
+  </pre>
+<p>
+    The flowchart illustrates the classification of maintenance tasks. It starts with 'MAINTENANCE' at the top, which branches into 'Preventive maintenance' (labeled 'Before failure') and 'Corrective maintenance' (labeled 'After failure'). 'Preventive maintenance' further branches into three sub-tasks: 'Condition monitoring and inspection', 'Interval-based repair or replacement', and 'Functional testing or failure finding'. The first and third sub-tasks lead to decision diamonds labeled 'If not OK', which then lead to a common 'Maintenance actions' box. 'Interval-based repair or replacement' also leads directly to this box. 'Corrective maintenance' branches into 'Immediate or emergency maintenance' and 'Deferred maintenance', both of which lead to the same 'Maintenance actions' box. The 'Maintenance actions' box is further detailed with a list of tasks: 'Cleaning, lubrication, adjustment, calibration, repair, refurbishment, replacement'.
+   </p>
+<div class="img-alt">
+    Flowchart of Maintenance Tasks showing the breakdown of Maintenance into Preventive and Corrective maintenance.
+   </div>
+</div>
+<p>
+   Figure 2
+   <br/>
+   Types of Maintenance Tasks
+   <br/>
+   (Courtesy of Strategic Maintenance Solutions Inc.)
+  </p>
+<h4>
+   Preventive Maintenance
+  </h4>
+<p>
+   Preventive maintenance can be broken down into three types of maintenance:
+  </p>
+<ul style="list-style-type: none">
+<li>
+    • Condition monitoring and inspection
+   </li>
+<li>
+    • Functional testing or failure finding
+   </li>
+<li>
+    • Interval-based repair or replacement
+   </li>
+</ul>
+<p>
+   Corrective maintenance is carried out only after failure has occurred. In some cases, for example, redundant equipment, it may be possible to defer the maintenance until a more appropriate time. If corrective maintenance has to be done immediately, it is often called
+   <b>
+    emergency maintenance
+   </b>
+   .
+  </p>
+<h4>
+   Condition Monitoring
+  </h4>
+<p>
+   This type of maintenance is also commonly referred to as predictive or condition-based maintenance.
+  </p>
+<p>
+   Since even the same equipment often fails at different intervals, the most efficient time to perform maintenance is just before failure. This is possible only if there is a good way to monitor the equipment, and if it is a convenient time to do the maintenance. For example, if you are monitoring engine condition on an aircraft, you want to have enough time to get to your destination, or at least find a landing spot.
+  </p>
+<p>
+   Examples of condition monitoring are:
+  </p>
+<ul style="list-style-type: none">
+<li>
+    • Monitoring oil filter differential pressure and replacing the filter when a pre-determined pressure is reached.
+   </li>
+<li>
+    • Inspecting a pressure vessel for corrosion or erosion by visual inspection, or by measuring wall thickness using ultrasonic inspection.
+   </li>
+<li>
+    • Performing oil analysis and replacing the oil when certain levels of contaminants are reached.
+   </li>
+<li>
+    • Doing vibration monitoring on rotating equipment, such as a pump, and replacing it when the vibration exceeds a certain value.
+   </li>
+<li>
+    • Using human senses to detect changes in sound, oil leakage, or other signs of deterioration.
+   </li>
+</ul>
+<h4>
+   Functional Testing
+  </h4>
+<p>
+   Functional testing, also called failure finding, is aimed at finding hidden failures. A hidden failure is one that does not become evident when it occurs because the function is not required at that time, or is only activated intermittently. The failure becomes evident when the function is activated; at which point, there may be undesirable consequences. Failure finding is especially relevant for protective devices that are not needed very often. However, if they fail to operate when required, the results may be catastrophic.
+  </p>
+<p>
+   Examples of failure finding tasks are:
+  </p>
+<ul style="list-style-type: none">
+<li>
+    • Checking an overspeed switch to make sure it trips at the correct speed
+   </li>
+<li>
+    • Verifying the correct operation of a pressure switch
+   </li>
+<li>
+    • Starting a backup generator on a monthly basis to verify its operation
+   </li>
+<li>
+    • Exercising shutoff valves to prevent them from seizing up
+   </li>
+<li>
+    • Checking the spare tire on your car
+   </li>
+</ul>
+<h4>
+   Interval-based Maintenance
+  </h4>
+<p>
+   Interval-based maintenance entails regular repair or replacement of components or equipment after a specified interval has passed — without regard for equipment condition or performance. The interval can be elapsed (calendar) time, running hours, number of operating cycles, number of starts, distance, or any other relevant factor.
+  </p>
+<p>
+   Interval-based maintenance is normally chosen when condition monitoring is not cost-effective, or, for example, when it is more convenient to do the repair or replacement in conjunction with another activity, such as a yearly shutdown of the whole plant.
+  </p>
+<p>
+   Examples of interval-based maintenance are:
+  </p>
+<ul style="list-style-type: none">
+<li>
+    • Replacing an oil filter after 6000 km
+   </li>
+<li>
+    • Overhauling a pump every two years
+   </li>
+<li>
+    • Replacing turbine blades after 100,000 running hours
+   </li>
+<li>
+    • Repairing a starter after 500 starts
+   </li>
+</ul>
+<h4>
+   Corrective Maintenance
+  </h4>
+<p>
+   Corrective maintenance is also called reactive or breakdown maintenance. If the failure has a major impact on production or operation, it will likely become the highest priority. If the impact is small and backup equipment is available, it may be possible to defer the maintenance until a more convenient time.
+  </p>
+<p>
+   A good maintenance program should prevent most major failures. However, it may not be worthwhile to try to avoid every failure. It is quite possible to spend more money on expensive condition monitoring techniques, or to replace equipment that is still in good condition, than it would if you waited until failure occurred. Clearly, waiting is not acceptable for failures that could result in major safety hazards or large financial losses.
+  </p>
+<h2>
+   Objective 3
+  </h2>
+<p>
+<b>
+    Describe how routine maintenance activities are planned, scheduled, and controlled.
+   </b>
+</p>
+<h3>
+   THE PLANNING AND SCHEDULING PROCESS
+  </h3>
+<p>
+   Effective planning and scheduling is crucial to the success of a maintenance program. It reduces the number and frequency of maintenance activities, which in turn eliminates delays in the production schedule, and improves task planning.
+  </p>
+<p>
+   Benefits include:
+  </p>
+<ul style="list-style-type: none">
+<li>
+    • Reduced downtime and impact on production schedules
+   </li>
+<li>
+    • Reduced time required to do the work
+   </li>
+<li>
+    • Reduced maintenance costs (often by 10% to 30%)
+   </li>
+<li>
+    • Reduced environmental impact
+   </li>
+<li>
+    • Improved regulatory compliance
+   </li>
+<li>
+    • Improved utilization of resources (such as personnel, parts/materials, and tools/work equipment/vehicles)
+   </li>
+<li>
+    • Improved measurement of maintenance performance
+   </li>
+<li>
+    • Improved personnel safety
+   </li>
+</ul>
+<p>
+   The basic planning and scheduling process is described in Fig. 3.
+  </p>
+<img alt="Flowchart of the Planning and Scheduling Process. The process starts with 'Initiate Work' (Preventive, Corrective, or Project/Outage), which leads to 'Plan Work'. 'Plan Work' leads to 'Schedule Work', which leads to 'Acquire and Mobilize Resources', which leads to 'Perform Work', which leads to 'Finalize Work'. A 'Manage Backlog' box is positioned above the main flow, with an arrow pointing to it from the 'Initiate Work' box and another arrow pointing from it to the 'Finalize Work' box." src="8e14350b4b669119a3bdfca7869110ca_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<pre>graph LR; InitiateWork["Initiate Work<br/>1: Preventive Maintenance<br/>2: Corrective Maintenance<br/>3: Project or Outage Work"] --&gt; PlanWork["Plan Work"]; InitiateWork --&gt; ManageBacklog["Manage Backlog"]; PlanWork --&gt; ScheduleWork["Schedule Work"]; ScheduleWork --&gt; AcquireResources["Acquire and Mobilize Resources"]; AcquireResources --&gt; PerformWork["Perform Work"]; PerformWork --&gt; FinalizeWork["Finalize Work"]; ManageBacklog --&gt; FinalizeWork;</pre>
+<div class="img-alt">
+    Flowchart of the Planning and Scheduling Process. The process starts with 'Initiate Work' (Preventive, Corrective, or Project/Outage), which leads to 'Plan Work'. 'Plan Work' leads to 'Schedule Work', which leads to 'Acquire and Mobilize Resources', which leads to 'Perform Work', which leads to 'Finalize Work'. A 'Manage Backlog' box is positioned above the main flow, with an arrow pointing to it from the 'Initiate Work' box and another arrow pointing from it to the 'Finalize Work' box.
+   </div>
+</div>
+<p>
+   Figure 3
+   <br/>
+   Planning and Scheduling Process
+   <br/>
+   (Courtesy of Strategic Maintenance Solutions Inc.)
+  </p>
+<p>
+   The first step is to initiate the work which is usually done by raising a work request. For preventive maintenance (a repetitive activity), this is often triggered automatically by a computer system. The work request moves immediately to the planning stage. Corrective maintenance usually starts with a manual work request raised by operations,
+  </p>
+<p>
+   or possibly maintenance or another group that reports a failure or identifies unplanned work that needs to be done. These work requests should be screened and approved before they are passed to the planning stage. A third type of work request is issued for project work or miscellaneous tasks.
+  </p>
+<p>
+   Following Fig. 3 to the second step, planning involves identifying required resources.
+  </p>
+<p>
+   The scheduling step is concerned with deciding the most appropriate time for the work to be carried out. At this point, the work request is turned into a work order.
+  </p>
+<p>
+   The next step is acquiring and mobilizing resources. This usually involves:
+  </p>
+<ul style="list-style-type: none">
+<li>
+    • Obtaining parts and materials (from inventory or by purchase)
+   </li>
+<li>
+    • Reserving specialized tools and support equipment
+   </li>
+<li>
+    • Identifying who will do the work
+   </li>
+<li>
+    • Transporting resources (including maintenance staff) to the work location
+   </li>
+</ul>
+<p>
+   Then, the maintenance work is carried out.
+  </p>
+<p>
+   Finalizing the work includes documenting the results on the work order and returning tools and support equipment, as well as unused parts and materials, to inventory.
+  </p>
+<p>
+   During this process, the total amount of work yet to be completed, commonly referred to as the backlog, is managed and adjusted in response to changes in priorities, the addition of new corrective work, and other unforeseen factors.
+  </p>
+<h4>
+   Maintenance Planning
+  </h4>
+<p>
+   In the planning stage, the planner identifies all resources that are going to be needed to complete the maintenance tasks. The planned activities may range from quite small to very large. An average maintenance activity requires a small number of staff, a few parts and materials, and can be completed in 4 to 8 hours. Major maintenance activities are usually performed during a major plant turnaround or shutdown (both terms are used). In general, the items that have to be planned for both minor and major maintenance activities are similar, but differ in magnitude.
+  </p>
+<p>
+   Planning is needed to identify some or all of the following items:
+  </p>
+<ul style="list-style-type: none">
+<li>
+    • Description of tasks to be performed and their sequence (if important)
+   </li>
+<li>
+    • Length of downtime required (equipment, system, or plant)
+   </li>
+<li>
+    • Number of staff and hours needed for each type of maintenance trade or specialty
+   </li>
+<li>
+    • Types of spare parts and materials and where they are to be sourced (inventory or purchase)
+   </li>
+<li>
+    • Specialized tools and support equipment
+   </li>
+<li>
+    • Lifting equipment (e.g. a crane)
+   </li>
+<li>
+    • Special safety and environmental procedures
+   </li>
+<li>
+    • Special maintenance procedures
+   </li>
+</ul>
+<ul style="list-style-type: none">
+<li>
+    • External contractors and services
+   </li>
+<li>
+    • Financial account codes to which the costs are to be charged
+   </li>
+<li>
+    • Cost breakdown and total cost for the task
+   </li>
+</ul>
+<p>
+   Normally, these resources are added to the work order, which can be either a paper form or an electronic form linked to a computer database. The use of a computer system to manage maintenance, which is becoming very common, is described in Objective 6.
+  </p>
+<p>
+   For preventive maintenance tasks, since the required resources have usually been previously identified, the planning process is very quick. In some cases, it can be done automatically by the computer system. For corrective maintenance tasks, the planning process has to be done for each individual task.
+  </p>
+<h4>
+   Maintenance Scheduling
+  </h4>
+<p>
+   Scheduling occurs after planning is completed. Scheduling consists of deciding when tasks should be done.
+  </p>
+<p>
+   The actual time it takes to complete a task depends on:
+  </p>
+<ul style="list-style-type: none">
+<li>
+    • How urgent the task is (priority)
+   </li>
+<li>
+    • When the equipment can be shutdown
+   </li>
+<li>
+    • When required material resources, such as spare parts, can be acquired
+   </li>
+<li>
+    • When labour resources are available
+   </li>
+</ul>
+<p>
+   The planner tries to make the most efficient use of all resources, especially maintenance staff, and also tries to reduce downtime by scheduling tasks on the same equipment or system at the same time. If the maintenance work involves dependent (interrelated) tasks, more extensive scheduling techniques are used. These are described in the next objective. Most routine maintenance tasks are independent. A planner assigns a certain number of preventive maintenance tasks to various maintenance staff and crews, usually on a daily or sometimes on a weekly basis.
+  </p>
+<p>
+   Corrective maintenance tasks can be a challenge to the scheduling process. They occur unexpectedly and result in the deferral of preventive maintenance and other planned tasks. It is important to determine whether corrective maintenance is of an emergency nature, and therefore has to be responded to immediately, or whether it can be deferred until a more appropriate time.
+  </p>
+<h4>
+   The Maintenance Backlog
+  </h4>
+<p>
+   The list of all maintenance tasks that have been initiated, regardless of the stage they are at, is referred to as the backlog. Fig. 4 shows the stages of the backlog and illustrates how work requests and work orders progress through the stages.
+  </p>
+<img alt="Figure 4: The Maintenance Backlog. A flow diagram showing the stages of maintenance work. On the left, four boxes represent input types: 'Preventive tasks', 'Project and other tasks', 'Corrective maintenance', and a computer icon. Arrows lead from these inputs into a horizontal sequence of six boxes representing stages of the backlog: 'Waiting to be planned', 'In planning', 'Planned and waiting to be scheduled', 'Scheduled and waiting to be done', 'Work in progress', and 'Work completed and waiting for final documentation'. Above the 'In planning' and 'Planned and waiting to be scheduled' boxes is a box labeled 'Waiting for next shutdown or opportunity'. A bracket underneath the six stages is labeled 'THE BACKLOG'. An arrow points from the final stage back to the computer icon." src="4801720824e4b5e2361a5564f91cfb70_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    Figure 4: The Maintenance Backlog. A flow diagram showing the stages of maintenance work. On the left, four boxes represent input types: 'Preventive tasks', 'Project and other tasks', 'Corrective maintenance', and a computer icon. Arrows lead from these inputs into a horizontal sequence of six boxes representing stages of the backlog: 'Waiting to be planned', 'In planning', 'Planned and waiting to be scheduled', 'Scheduled and waiting to be done', 'Work in progress', and 'Work completed and waiting for final documentation'. Above the 'In planning' and 'Planned and waiting to be scheduled' boxes is a box labeled 'Waiting for next shutdown or opportunity'. A bracket underneath the six stages is labeled 'THE BACKLOG'. An arrow points from the final stage back to the computer icon.
+   </div>
+</div>
+<p>
+   Figure 4
+   <br/>
+   The Maintenance Backlog
+   <br/>
+   (Courtesy of Strategic Maintenance Solutions Inc.)
+  </p>
+<p>
+   A major function of the planning process is to manage the backlog. Because tasks take time to move through the various stages, the backlog will never be zero. An average backlog represents about three weeks of work. If the backlog becomes too large, this is a good indication that there are not enough resources available to complete all of the work, and it is likely that some work is not being done when required.
+  </p>
+<h3>
+   MAJOR MAINTENANCE SHUTDOWNS
+  </h3>
+<p>
+   The most intensive and time-consuming planning and scheduling activities occur when there is a major shutdown of a facility (turnaround). The planning steps are essentially the same as those described earlier, except that they are done simultaneously for a significant number of tasks. Because one of the goals is to minimize total shutdown time, the scheduling process is more complicated. The techniques described in the following objective address how to schedule tasks for a major shutdown. Briefly, a major shutdown requires detailed planning and scheduling to:
+  </p>
+<ul style="list-style-type: none">
+<li>
+    • Meet downtime, cost, and other objectives
+   </li>
+<li>
+    • Isolate and deactivate entire systems
+   </li>
+<li>
+    • Ensure a proper and safe shutdown
+   </li>
+<li>
+    • Manage the special safety procedures required by the amount and type of work
+   </li>
+<li>
+    • Ensure safe and timely startup of the plant
+   </li>
+</ul>
+<h2>
+   Objective 4
+  </h2>
+<p>
+<b>
+<i>
+     Describe the use of Gantt and PERT charts and the critical path method to schedule major maintenance activities.
+    </i>
+</b>
+</p>
+<h3>
+   PREPARING A SCHEDULE
+  </h3>
+<p>
+   The purpose of scheduling is to accomplish a set of tasks in the most efficient manner within existing constraints in order to meet certain objectives. The tasks that require scheduling are normally dependent on each other in some way, and therefore have to be organized in a logical and time-efficient manner. Constraints, such as the amount of personnel available, always exist and have to be considered during the scheduling process. For major activities, management usually provides overall objectives such as cost or shutdown limits.
+  </p>
+<p>
+   Scheduling involves a series of steps that are normally done in the following order:
+  </p>
+<ol style="list-style-type: none">
+<li>
+    1. Identify all required tasks
+   </li>
+<li>
+    2. Estimate the duration of each task
+   </li>
+<li>
+    3. Identify required resources (trade type, hours, materials and parts, tools and work equipment, etc.)
+   </li>
+<li>
+    4. Organize tasks into a logical order and determine dependencies between tasks
+   </li>
+<li>
+    5. Apply resource and other constraints
+   </li>
+<li>
+    6. Review the critical path and adjust resources as needed to meet planned deadlines
+   </li>
+<li>
+    7. Estimate final cost and shutdown duration
+   </li>
+<li>
+    8. Make tradeoffs as needed
+   </li>
+</ol>
+<h4>
+   Scheduling Concepts
+  </h4>
+<p>
+   The first consideration in scheduling is to understand what information is needed. Fig. 5 shows one method of recording the time-related data that has to be determined for each task.
+  </p>
+<p>
+   The first step is to fill in the task description and estimate the duration of the task. The other fields record relevant timing information that can be filled in as the tasks are scheduled. They are:
+  </p>
+<ul style="list-style-type: none">
+<li>
+    •
+    <b>
+     Early Start:
+    </b>
+    the earliest time that the task can be started. This may depend on the timing of related tasks.
+   </li>
+</ul>
+<ul style="list-style-type: none">
+<li>
+    •
+    <b>
+     Early Finish:
+    </b>
+    the earliest time that the task can be completed. This is determined by adding the early start time to the duration.
+   </li>
+<li>
+    •
+    <b>
+     Late Finish:
+    </b>
+    the latest time that the task can be completed without impacting overall completion time.
+   </li>
+<li>
+    •
+    <b>
+     Late Start:
+    </b>
+    the latest time that the task can be started without delaying the overall completion time. This is calculated by subtracting the duration from the late finish time.
+   </li>
+<li>
+    •
+    <b>
+     Slack:
+    </b>
+    the amount of time a task can be delayed after the early start time without impacting overall completion time.
+   </li>
+</ul>
+<table border="1">
+<tr data-bbox="592 688 1023 781">
+<td>
+     Early Start
+    </td>
+<td>
+     Duration
+    </td>
+<td>
+     Early Finish
+    </td>
+</tr>
+<tr data-bbox="592 781 1023 856">
+<td colspan="3" style="text-align: center;">
+     Task Name
+    </td>
+</tr>
+<tr data-bbox="592 856 1023 938">
+<td>
+     Late Start
+    </td>
+<td>
+     Slack
+    </td>
+<td>
+     Late Finish
+    </td>
+</tr>
+</table>
+<p style="text-align: center;">
+<i>
+    Figure 5
+    <br/>
+    Data Required for Scheduling a Task
+    <br/>
+    (Courtesy of Strategic Maintenance Solutions Inc.)
+   </i>
+</p>
+<p>
+   To calculate these times, the planner has to determine task dependencies. Fig. 6 shows several possible dependencies:
+  </p>
+<ul style="list-style-type: none">
+<li>
+    •
+    <b>
+     Parallel (no dependency):
+    </b>
+    the two tasks are independent. The shortest completion time is achieved by doing them in parallel, as long as sufficient resources are available. Note that the shorter task can be started later by an amount of time equal to the difference between the two duration times (the slack time).
+   </li>
+<li>
+    •
+    <b>
+     Finish to start:
+    </b>
+    Task C cannot be started until Task B has been completed. Again, there is slack time for Task A.
+   </li>
+<li>
+    •
+    <b>
+     Start to start with delay:
+    </b>
+    Task B cannot be started until after a delay following the start of Task A.
+   </li>
+<li>
+    •
+    <b>
+     Finish to finish with delay:
+    </b>
+    Task B cannot be finished until after a delay following the finish of Task A.
+   </li>
+</ul>
+<p>
+   Of these dependencies, the first two are the most common.
+  </p>
+<img alt="Figure 6: Task Dependencies. This figure illustrates four common task dependency relationships in project management. 1. Parallel No Dependency: Two tasks, Task A and Task B, are shown as separate boxes with no connecting arrows. A vertical double-headed arrow between them is labeled 'Slack Time'. 2. Finish to Start: Task A and Task B are shown as separate boxes. Task C is shown as a box that starts only after both Task A and Task B have finished. A vertical double-headed arrow between the end of Task B and the start of Task C is labeled 'Slack Time'. 3. Start to Start with Delay: Task A and Task B are shown as separate boxes. Task B starts after Task A starts, but there is a horizontal gap between the start of Task A and the start of Task B. This gap is labeled 'Delay Time'. 4. Finish to Finish with Delay: Task A and Task B are shown as separate boxes. Task B finishes after Task A finishes, but there is a horizontal gap between the end of Task A and the end of Task B. This gap is labeled 'Delay Time'." src="8fbdfc3d17fb1dae7b2d8f5a287fa9fc_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    Figure 6: Task Dependencies. This figure illustrates four common task dependency relationships in project management. 1. Parallel No Dependency: Two tasks, Task A and Task B, are shown as separate boxes with no connecting arrows. A vertical double-headed arrow between them is labeled 'Slack Time'. 2. Finish to Start: Task A and Task B are shown as separate boxes. Task C is shown as a box that starts only after both Task A and Task B have finished. A vertical double-headed arrow between the end of Task B and the start of Task C is labeled 'Slack Time'. 3. Start to Start with Delay: Task A and Task B are shown as separate boxes. Task B starts after Task A starts, but there is a horizontal gap between the start of Task A and the start of Task B. This gap is labeled 'Delay Time'. 4. Finish to Finish with Delay: Task A and Task B are shown as separate boxes. Task B finishes after Task A finishes, but there is a horizontal gap between the end of Task A and the end of Task B. This gap is labeled 'Delay Time'.
+   </div>
+</div>
+<p>
+   Figure 6
+   <br/>
+   Task Dependencies
+   <br/>
+   (Courtesy of Strategic Maintenance Solutions Inc.)
+  </p>
+<h3>
+   PERT CHARTS
+  </h3>
+<p>
+   Using the format shown in Fig. 5, it is possible to organize the tasks into a schedule. A simple example is shown in Fig. 7. This type of diagram is referred to as a PERT (Program Evaluation and Review Technique) chart. The numbers in the example are measured in days, but other times can be used. To fill in the task times (shown in bold), the following steps are carried out for each set of parallel tasks:
+  </p>
+<ol style="list-style-type: none">
+<li>
+    1. The early start time is 0 for the first set of parallel tasks (tasks A to C).
+   </li>
+<li>
+    2. The early finish time is filled in for each task by adding the duration to the early start time.
+   </li>
+</ol>
+<ol style="list-style-type: none">
+<li>
+    3. The late finish time is the same for all parallel tasks and is determined by adding the longest duration (4 days) to the early start time (0).
+   </li>
+<li>
+    4. The late start time is calculated for each task by subtracting the duration from the late finish time.
+   </li>
+<li>
+    5. Finally, the slack time is calculated by subtracting the early start from the late start time.
+   </li>
+</ol>
+<p>
+   Unless a delay is required before the next set of parallel tasks begins (tasks D and E), the early start time is equal to the late finish time of the previous set of parallel tasks.
+  </p>
+<img alt="PERT Chart showing tasks A through F with their early/late start/finish times, durations, and slack." src="dfe556fea00682b09a59427aaf72051c_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<pre>
+graph LR
+    A[Task A] --&gt; D[Task D]
+    A --&gt; E[Task E]
+    B[Task B] --&gt; D
+    B --&gt; E
+    C[Task C] --&gt; D
+    C --&gt; E
+    D --&gt; F[Task F]
+    E --&gt; F
+</pre>
+<div style="display: flex; flex-wrap: wrap; gap: 20px;">
+<table border="1" style="border-collapse: collapse; text-align: center;">
+<tr>
+<td>
+       0
+      </td>
+<td>
+       2
+      </td>
+<td>
+       2
+      </td>
+</tr>
+<tr>
+<td colspan="3">
+       Task A
+      </td>
+</tr>
+<tr>
+<td>
+       2
+      </td>
+<td>
+       2
+      </td>
+<td>
+       4
+      </td>
+</tr>
+</table>
+<table border="1" style="border-collapse: collapse; text-align: center;">
+<tr>
+<td>
+       0
+      </td>
+<td>
+       4
+      </td>
+<td>
+       4
+      </td>
+</tr>
+<tr>
+<td colspan="3">
+       Task B
+      </td>
+</tr>
+<tr>
+<td>
+       0
+      </td>
+<td>
+       0
+      </td>
+<td>
+       4
+      </td>
+</tr>
+</table>
+<table border="1" style="border-collapse: collapse; text-align: center;">
+<tr>
+<td>
+       0
+      </td>
+<td>
+       3
+      </td>
+<td>
+       3
+      </td>
+</tr>
+<tr>
+<td colspan="3">
+       Task C
+      </td>
+</tr>
+<tr>
+<td>
+       1
+      </td>
+<td>
+       1
+      </td>
+<td>
+       4
+      </td>
+</tr>
+</table>
+<table border="1" style="border-collapse: collapse; text-align: center;">
+<tr>
+<td>
+       4
+      </td>
+<td>
+       2
+      </td>
+<td>
+       6
+      </td>
+</tr>
+<tr>
+<td colspan="3">
+       Task D
+      </td>
+</tr>
+<tr>
+<td>
+       5
+      </td>
+<td>
+       1
+      </td>
+<td>
+       7
+      </td>
+</tr>
+</table>
+<table border="1" style="border-collapse: collapse; text-align: center;">
+<tr>
+<td>
+       4
+      </td>
+<td>
+       3
+      </td>
+<td>
+       7
+      </td>
+</tr>
+<tr>
+<td colspan="3">
+       Task E
+      </td>
+</tr>
+<tr>
+<td>
+       4
+      </td>
+<td>
+       0
+      </td>
+<td>
+       7
+      </td>
+</tr>
+</table>
+<table border="1" style="border-collapse: collapse; text-align: center;">
+<tr>
+<td>
+       7
+      </td>
+<td>
+       4
+      </td>
+<td>
+       11
+      </td>
+</tr>
+<tr>
+<td colspan="3">
+       Task F
+      </td>
+</tr>
+<tr>
+<td>
+       7
+      </td>
+<td>
+       0
+      </td>
+<td>
+       11
+      </td>
+</tr>
+</table>
+</div>
+<div class="img-alt">
+    PERT Chart showing tasks A through F with their early/late start/finish times, durations, and slack.
+   </div>
+</div>
+<p style="text-align: center;">
+<i>
+    Figure 7
+   </i>
+<br/>
+<i>
+    PERT Chart
+   </i>
+<br/>
+<i>
+    (Courtesy of Strategic Maintenance Solutions Inc.)
+   </i>
+</p>
+<h4>
+   GANTT CHARTS
+  </h4>
+<p>
+   If the tasks are placed on a timeline, the result is a Gantt chart. Fig. 8 shows an equivalent Gantt chart for the PERT chart in Fig. 7. Gantt charts are named for Henry Gantt, who developed this concept in the early 1900's.
+  </p>
+
+
+<img alt="Gantt Chart showing tasks A through F with their start, end, duration, and elapsed times. The timeline spans from August 27, 2000, to September 14, 2000. Task A: 2d, Task B: 4d, Task C: 3d, Task D: 2d, Task E: 3d, Technical Review: 0d (milestone), Task F: 4d." src="770fa0497770252dc22b4fa902ebb384_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<table border="1">
+<thead>
+<tr>
+<th rowspan="2">
+       ID
+      </th>
+<th rowspan="2">
+       Task Name
+      </th>
+<th rowspan="2">
+       Start
+      </th>
+<th rowspan="2">
+       End
+      </th>
+<th rowspan="2">
+       Duration
+      </th>
+<th rowspan="2">
+       Elapsed Time
+      </th>
+<th colspan="7">
+       Aug 27 2000
+      </th>
+<th colspan="7">
+       Sep 3 2000
+      </th>
+<th colspan="7">
+       Sep 10 2000
+      </th>
+</tr>
+<tr>
+<th>
+       1
+      </th>
+<th>
+       2
+      </th>
+<th>
+       3
+      </th>
+<th>
+       4
+      </th>
+<th>
+       5
+      </th>
+<th>
+       6
+      </th>
+<th>
+       7
+      </th>
+<th>
+       8
+      </th>
+<th>
+       9
+      </th>
+<th>
+       10
+      </th>
+<th>
+       11
+      </th>
+<th>
+       12
+      </th>
+<th>
+       13
+      </th>
+<th>
+       14
+      </th>
+<th>
+</th>
+<th>
+</th>
+<th>
+</th>
+<th>
+</th>
+<th>
+</th>
+<th>
+</th>
+<th>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+       1
+      </td>
+<td>
+       Task A
+      </td>
+<td>
+       00-09-01
+      </td>
+<td>
+       00-09-02
+      </td>
+<td>
+       2d
+      </td>
+<td>
+       4d
+      </td>
+<td colspan="21">
+       [Gantt Bar]
+      </td>
+</tr>
+<tr>
+<td>
+       2
+      </td>
+<td>
+       Task B
+      </td>
+<td>
+       00-09-01
+      </td>
+<td>
+       00-09-04
+      </td>
+<td>
+       4d
+      </td>
+<td>
+       4d
+      </td>
+<td colspan="21">
+       [Gantt Bar]
+      </td>
+</tr>
+<tr>
+<td>
+       3
+      </td>
+<td>
+       Task C
+      </td>
+<td>
+       00-09-01
+      </td>
+<td>
+       00-09-03
+      </td>
+<td>
+       3d
+      </td>
+<td>
+       4d
+      </td>
+<td colspan="21">
+       [Gantt Bar]
+      </td>
+</tr>
+<tr>
+<td>
+       4
+      </td>
+<td>
+       Task D
+      </td>
+<td>
+       00-09-05
+      </td>
+<td>
+       00-09-06
+      </td>
+<td>
+       2d
+      </td>
+<td>
+       3d
+      </td>
+<td colspan="21">
+       [Gantt Bar]
+      </td>
+</tr>
+<tr>
+<td>
+       5
+      </td>
+<td>
+       Task E
+      </td>
+<td>
+       00-09-05
+      </td>
+<td>
+       00-09-07
+      </td>
+<td>
+       3d
+      </td>
+<td>
+       3d
+      </td>
+<td colspan="21">
+       [Gantt Bar]
+      </td>
+</tr>
+<tr>
+<td>
+       6
+      </td>
+<td>
+       Technical Review
+      </td>
+<td>
+       00-09-08
+      </td>
+<td>
+       00-09-08
+      </td>
+<td>
+       0d
+      </td>
+<td>
+       0
+      </td>
+<td colspan="21">
+       [Milestone]
+      </td>
+</tr>
+<tr>
+<td>
+       7
+      </td>
+<td>
+       Task F
+      </td>
+<td>
+       00-09-08
+      </td>
+<td>
+       00-09-12
+      </td>
+<td>
+       4d
+      </td>
+<td>
+       4d
+      </td>
+<td colspan="21">
+       [Gantt Bar]
+      </td>
+</tr>
+</tbody>
+</table>
+<div class="img-alt">
+    Gantt Chart showing tasks A through F with their start, end, duration, and elapsed times. The timeline spans from August 27, 2000, to September 14, 2000. Task A: 2d, Task B: 4d, Task C: 3d, Task D: 2d, Task E: 3d, Technical Review: 0d (milestone), Task F: 4d.
+   </div>
+</div>
+<p style="text-align: center;">
+<i>
+    Figure 8
+    <br/>
+    Gantt Chart
+    <br/>
+    (Courtesy of Strategic Maintenance Solutions Inc.)
+   </i>
+</p>
+<p>
+   The strong point of a Gantt chart is its ability to clearly display overall progress. Fig. 8 also shows how a specific milestone, such as a technical review, can be included in the timeline.
+  </p>
+<h1>
+   CRITICAL PATH METHOD
+  </h1>
+<p>
+   Both PERT and Gantt charts can be used to determine the
+   <b>
+    critical path
+   </b>
+   . This is defined as all the tasks that will increase project completion time if they take longer than planned. If there is some way to shorten the duration of any of these tasks, then the overall completion time will be decreased.
+  </p>
+<p>
+   Once the schedule has been built, it is possible to calculate the total completion time using the tasks on the critical path. If there is a need to reduce the total completion time, then the only tasks that matter are those on the critical path. The slack time for tasks on the critical path is always zero. In Fig. 7 and Fig. 8, tasks B, E, and F form the critical path.
+  </p>
+<p>
+   Once the project is under way, it is most important to focus on the tasks that are on the critical path. These are the ones that determine whether or not the project can be completed on schedule.
+  </p>
+<h2>
+   Objective 5
+  </h2>
+<p>
+<b>
+<i>
+     Describe the steps involved in preparing for and conducting a pressure vessel inspection.
+    </i>
+</b>
+</p>
+<h4>
+   INTRODUCTION
+  </h4>
+<p>
+   The following example explains the general steps involved in planning and scheduling a pressure vessel inspection, including the replacement of a relief valve. It is for illustrative purposes only.
+  </p>
+<p>
+   The process has been documented using Microsoft Project, but other project management software can also be used. This type of software is used because it allows for detailed scheduling of a project, including production of critical path flowcharts or Gantt charts, with very little time consumed.
+  </p>
+<h4>
+   TASK PREPARATION
+  </h4>
+<p>
+   The first step is to identify the tasks required to complete a pressure vessel inspection. It is important to consider not only the actual inspection tasks, but also safety requirements and preparation tasks.
+  </p>
+<p>
+   One way to identify tasks is to group them by type into broad categories:
+  </p>
+<ul style="list-style-type: none">
+<li>
+    • Preparation
+   </li>
+<li>
+    • Safety requirements
+   </li>
+<li>
+    • Inspection
+   </li>
+<li>
+    • Completion
+   </li>
+</ul>
+<p>
+   Preparation includes these tasks:
+  </p>
+<ul style="list-style-type: none">
+<li>
+    • Obtain special tools (
+    <i>
+     e.g.
+    </i>
+    the device to do the ultrasonic inspection)
+   </li>
+<li>
+    • Pick up spare parts (
+    <i>
+     e.g.
+    </i>
+    the replacement relief valve)
+   </li>
+<li>
+    • Travel to the location of the pressure vessel (this may or may not be significant)
+   </li>
+</ul>
+<p>
+   Safety requirements entail:
+  </p>
+<ul style="list-style-type: none">
+<li>
+    • Obtaining a work permit
+   </li>
+<li>
+    • Isolating the pressure vessel and depressurizing it (done by an operator)
+   </li>
+<li>
+    • Performing a safety check before putting the vessel back into service
+   </li>
+</ul>
+<p>
+   The actual inspection involves:
+  </p>
+<ul style="list-style-type: none">
+<li>
+    • A thorough visual inspection of the vessel for corrosion or other signs of deterioration
+   </li>
+</ul>
+<ul style="list-style-type: none">
+<li>
+    • An ultrasonic inspection of wall thickness at predetermined points
+   </li>
+<li>
+    • Replacement of the relief valve
+   </li>
+</ul>
+<p>
+   Completion includes:
+  </p>
+<ul style="list-style-type: none">
+<li>
+    • Returning the pressure vessel to service and verifying proper operation
+   </li>
+<li>
+    • Returning the relief valve to the repair shop
+   </li>
+<li>
+    • Traveling back to the maintenance shop
+   </li>
+<li>
+    • Documenting the results on the work order and official inspection forms
+   </li>
+</ul>
+<p>
+   There are three types of skill required: an operator, a technician or technologist who knows how to do the ultrasonic inspection, and a maintenance worker to replace the relief valve. The visual inspection can be done by a maintenance worker.
+  </p>
+<p>
+   A list of the tasks and required resources is shown in Fig. 9. This list is used to prepare the schedule.
+  </p>
+<img alt="Screenshot of a project management software interface showing a task list with resources. The interface includes a 'Link dependent tasks' panel on the left and a main task list table on the right. The table lists tasks such as 'Define scope of work', 'Pick up work order', and 'Return pressure vessel to service', along with the resources required for each task." src="09af5b86cf9391543d22db5f2129b3ca_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<p>
+    The figure shows a screenshot of a project management tool, likely Microsoft Project, displaying a task list and resource allocation. On the left, a 'Link dependent tasks' panel provides instructions and icons for creating task dependencies. The main area is a table with the following columns: Task Name, Predecessors, Duration, and Resources.
+   </p>
+<table border="1">
+<thead>
+<tr>
+<th>
+       Task Name
+      </th>
+<th>
+       Predecessors
+      </th>
+<th>
+       Duration
+      </th>
+<th>
+       Resources
+      </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+       Define scope of work
+      </td>
+<td>
+</td>
+<td>
+       1 day
+      </td>
+<td>
+       Andy Inspector
+      </td>
+</tr>
+<tr>
+<td>
+       Pick up work order
+      </td>
+<td>
+</td>
+<td>
+       1 day
+      </td>
+<td>
+       Tom Mechanic
+      </td>
+</tr>
+<tr>
+<td>
+       Detail work plan
+      </td>
+<td>
+</td>
+<td>
+       1 day
+      </td>
+<td>
+       Joe Operator
+      </td>
+</tr>
+<tr>
+<td>
+       Travel to location
+      </td>
+<td>
+</td>
+<td>
+       1 day
+      </td>
+<td>
+       Joe Operator, Andy Inspector, Tom Mechanic
+      </td>
+</tr>
+<tr>
+<td>
+       Release and depressurize
+      </td>
+<td>
+</td>
+<td>
+       1 day
+      </td>
+<td>
+       Tom Mechanic
+      </td>
+</tr>
+<tr>
+<td>
+       Do visual inspection
+      </td>
+<td>
+</td>
+<td>
+       1 day
+      </td>
+<td>
+       Andy Inspector, Tom Mechanic
+      </td>
+</tr>
+<tr>
+<td>
+       Replace relief valve
+      </td>
+<td>
+</td>
+<td>
+       1 day
+      </td>
+<td>
+       Tom Mechanic (after visual inspect)
+      </td>
+</tr>
+<tr>
+<td>
+       Perform ultrasonic inspection
+      </td>
+<td>
+</td>
+<td>
+       1 day
+      </td>
+<td>
+       Andy Inspector, (Requires Andy's skill)
+      </td>
+</tr>
+<tr>
+<td>
+       Return pressure vessel to service
+      </td>
+<td>
+</td>
+<td>
+       1 day
+      </td>
+<td>
+       Joe Operator
+      </td>
+</tr>
+<tr>
+<td>
+       Perform safety check
+      </td>
+<td>
+</td>
+<td>
+       1 day
+      </td>
+<td>
+       Joe Operator, Andy Inspector
+      </td>
+</tr>
+<tr>
+<td>
+       Travel back to shop
+      </td>
+<td>
+</td>
+<td>
+       1 day
+      </td>
+<td>
+       Andy Inspector, Joe Operator, Tom Mechanic
+      </td>
+</tr>
+<tr>
+<td>
+       Turn off relief valve
+      </td>
+<td>
+</td>
+<td>
+       1 day
+      </td>
+<td>
+       Tom Mechanic
+      </td>
+</tr>
+<tr>
+<td>
+       Return ultrasonic service
+      </td>
+<td>
+</td>
+<td>
+       1 day
+      </td>
+<td>
+       Tom Mechanic
+      </td>
+</tr>
+<tr>
+<td>
+       Document results
+      </td>
+<td>
+</td>
+<td>
+       1 day
+      </td>
+<td>
+       Andy Inspector
+      </td>
+</tr>
+</tbody>
+</table>
+<div class="img-alt">
+    Screenshot of a project management software interface showing a task list with resources. The interface includes a 'Link dependent tasks' panel on the left and a main task list table on the right. The table lists tasks such as 'Define scope of work', 'Pick up work order', and 'Return pressure vessel to service', along with the resources required for each task.
+   </div>
+</div>
+<p>
+   Figure 9
+   <br/>
+   Initial Task List with Resources
+  </p>
+<h4>
+   TASK SCHEDULING
+  </h4>
+<p>
+   Then, the tasks are linked by adding the dependencies between them. As shown in Fig. 9 and Fig. 10, this is done in Microsoft Project by selecting two tasks, and then choosing the type of dependency from the panel on the left side of the screen. Where possible, tasks are left in parallel. However, the most common situation is to have one task start as soon as the previous one is finished.
+  </p>
+<p>
+   In the pressure vessel inspection example, it is possible to perform the task with only an operator and one maintenance worker who is qualified to do ultrasonic inspections. With
+  </p>
+<p>
+   two workers, there are only two tasks that can be done in parallel — the operator can get the permit while the maintenance worker gets the parts. The total elapsed time is 9.5 hours with an equipment downtime of 5 hours.
+  </p>
+<p>
+   However, if it is important to complete the task in the least amount of time, a third worker can be added so that more tasks can be done in parallel. This scenario is shown in Fig. 10. The total elapsed time with 3 workers is 7.5 hours with an equipment downtime of 3 hours. This assumes that two workers do the visual inspection, and then do the ultrasonic inspection and relief valve replacement in parallel.
+  </p>
+<img alt="A screenshot of a project management software interface showing a Gantt chart for a 'Pressure Vessel Inspection' task. The chart lists various sub-tasks with their durations and assigned resources (Andy Inspector, Tom Mechanic, Joe Operator). Arrows indicate dependencies between tasks. The left sidebar shows a tree view of the project structure." src="7a3561af571faf036baa93f5f4b1bdb9_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<p>
+    The figure is a screenshot of a project management tool. On the left is a 'Task List' with a tree view: 'Link: Pressure Vessel Inspection' (selected), 'On the right, select the tasks that you want to link:', and several checkboxes for selecting tasks to link. The main area is a Gantt chart with the following tasks and durations:
+   </p>
+<table border="1">
+<thead>
+<tr>
+<th>
+       Task
+      </th>
+<th>
+       Duration
+      </th>
+<th>
+       Resources
+      </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+       Order materials
+      </td>
+<td>
+       0.5 hrs
+      </td>
+<td>
+       Andy Inspector
+      </td>
+</tr>
+<tr>
+<td>
+       Policy compliance
+      </td>
+<td>
+       1 hr
+      </td>
+<td>
+       Tom Mechanic
+      </td>
+</tr>
+<tr>
+<td>
+       Other work period
+      </td>
+<td>
+       0.5 hrs
+      </td>
+<td>
+       Joe Operator
+      </td>
+</tr>
+<tr>
+<td>
+       Travel to location
+      </td>
+<td>
+       0.5 hrs
+      </td>
+<td>
+       Joe Operator, Andy Inspector, Tom Mechanic
+      </td>
+</tr>
+<tr>
+<td>
+       Notify and depressurize
+      </td>
+<td>
+       0.5 hrs
+      </td>
+<td>
+       Tom Mechanic
+      </td>
+</tr>
+<tr>
+<td>
+       Perform visual inspection
+      </td>
+<td>
+       1 hr
+      </td>
+<td>
+       Andy Inspector, Tom Mechanic
+      </td>
+</tr>
+<tr>
+<td>
+       Repeat visual inspection
+      </td>
+<td>
+       1 hr
+      </td>
+<td>
+       Tom Mechanic, Relief valve (each)
+      </td>
+</tr>
+<tr>
+<td>
+       Perform ultrasonic inspection
+      </td>
+<td>
+       2 hrs
+      </td>
+<td>
+       Andy Inspector, Ultrasonic contact w/...
+      </td>
+</tr>
+<tr>
+<td>
+       Return pressure vessel to service
+      </td>
+<td>
+       0.5 hrs
+      </td>
+<td>
+       Joe Operator
+      </td>
+</tr>
+<tr>
+<td>
+       Perform safety check
+      </td>
+<td>
+       0.5 hrs
+      </td>
+<td>
+       Joe Operator, Andy Inspector
+      </td>
+</tr>
+<tr>
+<td>
+       Travel back to shop
+      </td>
+<td>
+       0.5 hrs
+      </td>
+<td>
+       Andy Inspector, Joe Operator
+      </td>
+</tr>
+<tr>
+<td>
+       Depressurize relief valve
+      </td>
+<td>
+       0.5 hrs
+      </td>
+<td>
+       Tom Mechanic
+      </td>
+</tr>
+<tr>
+<td>
+       Return ultrasonic device
+      </td>
+<td>
+       0.5 hrs
+      </td>
+<td>
+       Tom Mechanic
+      </td>
+</tr>
+<tr>
+<td>
+       Document results
+      </td>
+<td>
+       0.5 hrs
+      </td>
+<td>
+       Andy Inspector
+      </td>
+</tr>
+</tbody>
+</table>
+<div class="img-alt">
+    A screenshot of a project management software interface showing a Gantt chart for a 'Pressure Vessel Inspection' task. The chart lists various sub-tasks with their durations and assigned resources (Andy Inspector, Tom Mechanic, Joe Operator). Arrows indicate dependencies between tasks. The left sidebar shows a tree view of the project structure.
+   </div>
+</div>
+<p>
+   Figure 10
+   <br/>
+   Linking Dependent Tasks
+  </p>
+<h5>
+   Critical Path
+  </h5>
+<p>
+   Most software highlights the critical path as shown in Fig. 11. By analysing the critical path, it is possible to consider different scheduling options that may reduce the total elapsed time and make better use of available resources.
+  </p>
+<p>
+   For the pressure vessel inspection example, a further time reduction is possible if Tom Mechanic performs both the visual inspection and relief valve replacement at the same time, while Andy Inspector performs the ultrasonic inspection. This reduces both the total elapsed time and equipment downtime by 1 hour.
+  </p>
+<img alt="A Gantt chart titled 'Project: Engine Overhaul' showing tasks, durations, and resources. The chart includes a legend on the left explaining the critical path and project finish date. Tasks are listed on the left, and a timeline on the right shows their duration and assigned personnel." src="431b8889a0e7f676f0eef40859590349_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<p>
+<b>
+     Project: Engine Overhaul
+    </b>
+</p>
+<p>
+<b>
+     Legend:
+    </b>
+</p>
+<ul style="list-style-type: none">
+<li>
+     The critical path is the series of tasks that dictates the project finish date. Tasks on the critical path are called critical tasks, and they cannot be delayed without affecting the project finish date.
+    </li>
+<li>
+     In the view on the right, critical tasks are shown as red bars.
+    </li>
+<li>
+<b>
+      Project Finish Date:
+     </b>
+     The project is currently scheduled to finish on 8/14/00.
+    </li>
+<li>
+<b>
+      Apply a filter:
+     </b>
+     To focus on any certain tasks, you can apply a filter.
+    </li>
+</ul>
+<table border="1">
+<thead>
+<tr>
+<th>
+       Task
+      </th>
+<th>
+       Duration
+      </th>
+<th>
+       Resources
+      </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+       Order special tools
+      </td>
+<td>
+       1 day
+      </td>
+<td>
+       Andy Inspector
+      </td>
+</tr>
+<tr>
+<td>
+       Remove engine parts
+      </td>
+<td>
+       2 days
+      </td>
+<td>
+       Tom Mechanic
+      </td>
+</tr>
+<tr>
+<td>
+       Order work post
+      </td>
+<td>
+       1 day
+      </td>
+<td>
+       Tom and Geraldine
+      </td>
+</tr>
+<tr>
+<td>
+       Travel to location
+      </td>
+<td>
+       1 day
+      </td>
+<td>
+       Tom, Andy, Jerry, and Geraldine
+      </td>
+</tr>
+<tr>
+<td>
+       Inspect and depressurize
+      </td>
+<td>
+       1 day
+      </td>
+<td>
+       Tom and Geraldine
+      </td>
+</tr>
+<tr>
+<td>
+       Do visual inspection
+      </td>
+<td>
+       1 day
+      </td>
+<td>
+       Andy Inspector, Tom Mechanic
+      </td>
+</tr>
+<tr>
+<td>
+       Replace rotor valve
+      </td>
+<td>
+       1 day
+      </td>
+<td>
+       Tom Mechanic, Jerry (afternoon only)
+      </td>
+</tr>
+<tr>
+<td>
+       Perform pressure inspection
+      </td>
+<td>
+       1 day
+      </td>
+<td>
+       Andy Inspector, Geraldine (afternoon only)
+      </td>
+</tr>
+<tr>
+<td>
+       Return pressure switch to service
+      </td>
+<td>
+       1 day
+      </td>
+<td>
+       Tom Operator
+      </td>
+</tr>
+<tr>
+<td>
+       Perform safety check
+      </td>
+<td>
+       1 day
+      </td>
+<td>
+       Tom Operator, Andy (afternoon only)
+      </td>
+</tr>
+<tr>
+<td>
+       Remove engine stop
+      </td>
+<td>
+       1 day
+      </td>
+<td>
+       Andy Inspector, Jerry (afternoon only)
+      </td>
+</tr>
+<tr>
+<td>
+       Close on rotor valve
+      </td>
+<td>
+       1 day
+      </td>
+<td>
+       Tom Mechanic
+      </td>
+</tr>
+<tr>
+<td>
+       Return diagnostic devices
+      </td>
+<td>
+       1 day
+      </td>
+<td>
+       Tom Technician
+      </td>
+</tr>
+<tr>
+<td>
+       Recover fluids
+      </td>
+<td>
+       1 day
+      </td>
+<td>
+       Andy Inspector
+      </td>
+</tr>
+</tbody>
+</table>
+<div class="img-alt">
+    A Gantt chart titled 'Project: Engine Overhaul' showing tasks, durations, and resources. The chart includes a legend on the left explaining the critical path and project finish date. Tasks are listed on the left, and a timeline on the right shows their duration and assigned personnel.
+   </div>
+</div>
+<p>
+   Figure 11
+   <br/>
+   Gantt Chart Showing the Critical Path
+  </p>
+<h2>
+   Objective 6
+  </h2>
+<p>
+<b>
+<i>
+     Describe the use of computerized systems in managing maintenance, including a work order system.
+    </i>
+</b>
+</p>
+<h4>
+   INTRODUCTION
+  </h4>
+<p>
+   Most companies use computerized information systems to assist with maintenance management. These systems are commonly referred to as Computerized Maintenance Management Systems (CMMS) or Enterprise Asset Management (EAM) systems. A large variety of software is available for purchase. Some systems are designed for small applications and can be run on a desktop computer. At the other end of the scale are server-based systems for large corporations that can be accessed from anywhere on a network.
+  </p>
+<p>
+   Most CMMS's have similar functionality which usually includes these major components:
+  </p>
+<ul style="list-style-type: none">
+<li>
+    • Facility and equipment information
+   </li>
+<li>
+    • Work management (work requests and work orders)
+   </li>
+<li>
+    • Planning and scheduling
+   </li>
+<li>
+    • Preventive maintenance
+   </li>
+<li>
+    • Spare parts and materials
+   </li>
+<li>
+    • Equipment tracking
+   </li>
+<li>
+    • Analysis and reporting
+   </li>
+</ul>
+<h4>
+   FACILITY AND EQUIPMENT INFORMATION
+  </h4>
+<p>
+   The information contained in a CMMS can be used to organize facilities and equipment into a hierarchy as shown in Fig. 12. This hierarchy organizes equipment information by location and makes it easier to find a specific piece of equipment.
+  </p>
+<img alt="A screenshot of the Ivara EAM software interface showing an asset hierarchy tree. The tree structure is displayed on the left side of the screen, with various assets and sub-assets listed under expandable nodes. The main window area is mostly blank, showing only a small portion of the hierarchy at the bottom." src="c834b9abb4ddf70e5d10641f87d5ff5b_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    A screenshot of the Ivara EAM software interface showing an asset hierarchy tree. The tree structure is displayed on the left side of the screen, with various assets and sub-assets listed under expandable nodes. The main window area is mostly blank, showing only a small portion of the hierarchy at the bottom.
+   </div>
+</div>
+<p>
+   Figure 12
+   <br/>
+   Ivara EAM Example Screen Showing an Asset Hierarchy
+   <br/>
+   (Courtesy of Ivara Corporation)
+  </p>
+<p>
+   A wide variety of information can be recorded about the equipment including manufacturer data (e.g. manufacturer name, model number, and serial number) as shown in Fig. 13. The tabs across the top of the screen show the different types of information available including: General, Component Info, Description, Parts List, and Procedures and Documents.
+  </p>
+<p>
+   Image: Screenshot of Ivara EAM software showing equipment manufacturer data for a 'Double 125 Centrifugal Water Pump'. The form includes sections for Equipment Identification, Location, Description, and Specifications. The Specifications section contains fields for Year, Serial No., Capacity, Power, and Dimensions. The Description section includes fields for Manufacturer, Type, and Model.
+  </p>
+<p>
+<b>
+    Equipment Identification
+   </b>
+<br/>
+   Equipment Name: Double 125 Centrifugal Water Pump
+   <br/>
+   Equipment ID: 125-001
+  </p>
+<p>
+<b>
+    Location
+   </b>
+<br/>
+   Plant: 100
+   <br/>
+   Area: 100-001
+   <br/>
+   Unit: 100-001-001
+  </p>
+<p>
+<b>
+    Description
+   </b>
+<br/>
+   Description: Double 125 Centrifugal Water Pump
+  </p>
+<p>
+<b>
+    Specifications
+   </b>
+</p>
+<table border="1">
+<tr>
+<td>
+     Year
+    </td>
+<td>
+     1985
+    </td>
+<td>
+     Capacity
+    </td>
+<td>
+     125 GPM
+    </td>
+</tr>
+<tr>
+<td>
+     Serial No.
+    </td>
+<td>
+     123456
+    </td>
+<td>
+     Power
+    </td>
+<td>
+     10 HP
+    </td>
+</tr>
+<tr>
+<td>
+     Dimensions
+    </td>
+<td colspan="3">
+     1000 x 500 x 500
+    </td>
+</tr>
+</table>
+<p>
+<b>
+    Description
+   </b>
+</p>
+<table border="1">
+<tr>
+<td>
+     Manufacturer
+    </td>
+<td>
+     ABC Manufacturing
+    </td>
+</tr>
+<tr>
+<td>
+     Type
+    </td>
+<td>
+     Centrifugal
+    </td>
+</tr>
+<tr>
+<td>
+     Model
+    </td>
+<td>
+     D-125
+    </td>
+</tr>
+</table>
+<p>
+   Figure 13
+   <br/>
+   Ivara EAM Example Screen Showing Equipment Manufacturer Data
+   <br/>
+   (Courtesy of Ivara Corporation)
+  </p>
+<h4>
+   WORK MANAGEMENT
+  </h4>
+<p>
+   Probably the most important function of a CMMS is the work management component. This supports the raising of work requests and processing of work orders. Work orders allow current work activities to be identified, approved, planned, scheduled, managed, and documented. Completed work orders document the maintenance history of the equipment and are critical for future analysis.
+  </p>
+<p>
+   The work order process begins with the raising of a work request. Fig. 14 shows a request to investigate a low pressure problem with a water pump.
+  </p>
+<p>
+   Work request (000047)
+  </p>
+<p>
+   Asset number: 100 77
+   <input type="button" value="Lookup"/>
+</p>
+<p>
+   Asset name: Goals 3762 Centrifugal Water Pump
+  </p>
+<p>
+   Headquarters: P1 P1 P P
+  </p>
+<p>
+   Asset location:
+  </p>
+<p>
+   Work request description:
+  </p>
+<p>
+   Priority:
+   <input type="button" value="Select"/>
+<input type="button" value="Up"/>
+</p>
+<p>
+   Type:
+   <input type="button" value="Select"/>
+<input type="button" value="Up"/>
+</p>
+<p>
+   Detail:
+   <input type="button" value="Select"/>
+<input type="button" value="Up"/>
+</p>
+<p>
+   Reason:
+   <input type="button" value="Select"/>
+<input type="button" value="Up"/>
+</p>
+<p>
+   Planning and scheduling information:
+  </p>
+<p>
+   Work story:
+   <input type="button" value="Select"/>
+<input type="button" value="Up"/>
+</p>
+<p>
+   Manpower group:
+   <input type="button" value="Select"/>
+<input type="button" value="Up"/>
+</p>
+<p>
+   Plans:
+   <input type="button" value="Select"/>
+<input type="button" value="Up"/>
+</p>
+<p>
+   Requested completion:
+   <input type="text" value="10"/>
+<input type="button" value="Up"/>
+<input type="button" value="Down"/>
+</p>
+<p>
+   Estimated cost:
+   <input type="text" value=""/>
+</p>
+<p>
+<input type="button" value="OK"/>
+<input type="button" value="Save for Approval"/>
+<input type="button" value="Cancel"/>
+</p>
+<p>
+   Figure 14
+   <br/>
+   Ivara EAM Example Screen Showing a Work Request
+   <br/>
+   (Courtesy of Ivara Corporation)
+  </p>
+<p>
+   Once the work request has been approved, it is turned into a work order which begins the planning and scheduling process (see Fig. 15).
+  </p>
+<p>
+   Image: Screenshot of the Ivara EAM software interface showing a work order entry screen. The screen includes fields for Work order, Priority, Status, and various dates and times. A 'Save' button is visible at the bottom left.
+  </p>
+<p>
+   The screenshot shows a 'Work order' entry screen in the Ivara EAM system. The interface is divided into several sections:
+  </p>
+<ul style="list-style-type: none">
+<li>
+<b>
+     Work order:
+    </b>
+    0001754 - for output process
+   </li>
+<li>
+<b>
+     Priority:
+    </b>
+    [Dropdown menu]
+   </li>
+<li>
+<b>
+     Status:
+    </b>
+    [Dropdown menu]
+   </li>
+<li>
+<b>
+     Date:
+    </b>
+    [Text field]
+   </li>
+<li>
+<b>
+     Time:
+    </b>
+    [Text field]
+   </li>
+<li>
+<b>
+     Equipment:
+    </b>
+    [Text field]
+   </li>
+<li>
+<b>
+     Product:
+    </b>
+    [Text field]
+   </li>
+<li>
+<b>
+     Process:
+    </b>
+    [Text field]
+   </li>
+<li>
+<b>
+     Quantity:
+    </b>
+    [Text field]
+   </li>
+<li>
+<b>
+     Start Date:
+    </b>
+    [Text field]
+   </li>
+<li>
+<b>
+     Start Time:
+    </b>
+    [Text field]
+   </li>
+<li>
+<b>
+     End Date:
+    </b>
+    [Text field]
+   </li>
+<li>
+<b>
+     End Time:
+    </b>
+    [Text field]
+   </li>
+<li>
+<b>
+     Notes:
+    </b>
+    [Text area]
+   </li>
+<li>
+<b>
+     Save:
+    </b>
+    [Button]
+   </li>
+</ul>
+<p>
+   Figure 15
+   <br/>
+   Ivara EAM Example Screen Showing a Work Order
+   <br/>
+   (Courtesy of Ivara Corporation)
+  </p>
+<h4>
+   PLANNING AND SCHEDULING
+  </h4>
+<p>
+   The work order is then planned, which means that resources, such as labour, parts and materials, are identified. Other planning information, such as task duration and planned start time, are added to the work order (see Fig. 16).
+  </p>
+<p>
+   Then, all outstanding work orders are scheduled within the constraints of available labour and other required resources, such as parts and lifting equipment. Fig. 17 illustrates the availability of labour resources with a bar graph for each type of trade and warns the planner when available labour has been exceeded.
+  </p>
+<img alt="Screenshot of Ivara EAM software showing work order scheduling. The interface includes a 'Work Order' list, a 'Resource' list, and a 'Trade' list. A bar graph on the left shows resource availability for 'Electrician', 'Instrument Man', and 'Operator'. The main area displays a table of work orders with columns for 'Work Order', 'Description', 'Start Date', 'End Date', 'Status', and 'Resources'. The 'Resources' column lists various trades like 'Electrician', 'Instrument Man', and 'Operator' with their respective counts." src="2236272d3b3db6e6363337f5a8db72f6_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<p>
+    The figure is a screenshot of the Ivara EAM software interface. It features a 'Work Order' list on the left, a 'Resource' list in the center, and a 'Trade' list on the right. A bar graph on the left side of the main area shows resource availability for 'Electrician', 'Instrument Man', and 'Operator'. The main area displays a table of work orders with columns for 'Work Order', 'Description', 'Start Date', 'End Date', 'Status', and 'Resources'. The 'Resources' column lists various trades like 'Electrician', 'Instrument Man', and 'Operator' with their respective counts.
+   </p>
+<table border="1">
+<thead>
+<tr>
+<th>
+       Work Order
+      </th>
+<th>
+       Description
+      </th>
+<th>
+       Start Date
+      </th>
+<th>
+       End Date
+      </th>
+<th>
+       Status
+      </th>
+<th>
+       Resources
+      </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+       100001
+      </td>
+<td>
+       Control Valve System
+      </td>
+<td>
+       01/24/2012
+      </td>
+<td>
+       01/24/2012
+      </td>
+<td>
+       Planned
+      </td>
+<td>
+       Electrician 1, Instrument Man 1, Operator 1
+      </td>
+</tr>
+<tr>
+<td>
+       100002
+      </td>
+<td>
+       Control Valve System
+      </td>
+<td>
+       01/24/2012
+      </td>
+<td>
+       01/24/2012
+      </td>
+<td>
+       Planned
+      </td>
+<td>
+       Electrician 1, Instrument Man 1, Operator 1
+      </td>
+</tr>
+<tr>
+<td>
+       100003
+      </td>
+<td>
+       Control Valve System
+      </td>
+<td>
+       01/24/2012
+      </td>
+<td>
+       01/24/2012
+      </td>
+<td>
+       Planned
+      </td>
+<td>
+       Electrician 1, Instrument Man 1, Operator 1
+      </td>
+</tr>
+<tr>
+<td>
+       100004
+      </td>
+<td>
+       Control Valve System
+      </td>
+<td>
+       01/24/2012
+      </td>
+<td>
+       01/24/2012
+      </td>
+<td>
+       Planned
+      </td>
+<td>
+       Electrician 1, Instrument Man 1, Operator 1
+      </td>
+</tr>
+<tr>
+<td>
+       100005
+      </td>
+<td>
+       Control Valve System
+      </td>
+<td>
+       01/24/2012
+      </td>
+<td>
+       01/24/2012
+      </td>
+<td>
+       Planned
+      </td>
+<td>
+       Electrician 1, Instrument Man 1, Operator 1
+      </td>
+</tr>
+<tr>
+<td>
+       100006
+      </td>
+<td>
+       Control Valve System
+      </td>
+<td>
+       01/24/2012
+      </td>
+<td>
+       01/24/2012
+      </td>
+<td>
+       Planned
+      </td>
+<td>
+       Electrician 1, Instrument Man 1, Operator 1
+      </td>
+</tr>
+<tr>
+<td>
+       100007
+      </td>
+<td>
+       Control Valve System
+      </td>
+<td>
+       01/24/2012
+      </td>
+<td>
+       01/24/2012
+      </td>
+<td>
+       Planned
+      </td>
+<td>
+       Electrician 1, Instrument Man 1, Operator 1
+      </td>
+</tr>
+<tr>
+<td>
+       100008
+      </td>
+<td>
+       Control Valve System
+      </td>
+<td>
+       01/24/2012
+      </td>
+<td>
+       01/24/2012
+      </td>
+<td>
+       Planned
+      </td>
+<td>
+       Electrician 1, Instrument Man 1, Operator 1
+      </td>
+</tr>
+<tr>
+<td>
+       100009
+      </td>
+<td>
+       Control Valve System
+      </td>
+<td>
+       01/24/2012
+      </td>
+<td>
+       01/24/2012
+      </td>
+<td>
+       Planned
+      </td>
+<td>
+       Electrician 1, Instrument Man 1, Operator 1
+      </td>
+</tr>
+<tr>
+<td>
+       100010
+      </td>
+<td>
+       Control Valve System
+      </td>
+<td>
+       01/24/2012
+      </td>
+<td>
+       01/24/2012
+      </td>
+<td>
+       Planned
+      </td>
+<td>
+       Electrician 1, Instrument Man 1, Operator 1
+      </td>
+</tr>
+</tbody>
+</table>
+<div class="img-alt">
+    Screenshot of Ivara EAM software showing work order scheduling. The interface includes a 'Work Order' list, a 'Resource' list, and a 'Trade' list. A bar graph on the left shows resource availability for 'Electrician', 'Instrument Man', and 'Operator'. The main area displays a table of work orders with columns for 'Work Order', 'Description', 'Start Date', 'End Date', 'Status', and 'Resources'. The 'Resources' column lists various trades like 'Electrician', 'Instrument Man', and 'Operator' with their respective counts.
+   </div>
+</div>
+<p>
+   Figure 17
+   <br/>
+   Ivara EAM Example Screen Showing Work Orders Being Scheduled
+   <br/>
+   (Courtesy of Ivara Corporation)
+  </p>
+<p>
+   When the work is completed, observations about the work and information about resources used are added to the work order, and then it is closed.
+  </p>
+<h4>
+   PREVENTIVE MAINTENANCE
+  </h4>
+<p>
+   All preventive maintenance tasks should be recorded in the CMMS so that they can be pre-planned and automatically triggered to produce a work order. The screen shown in Fig. 18 illustrates a standard task for a weekly inspection round.
+  </p>
+<img alt="Screenshot of the Ivara EAM software interface showing preventive maintenance tasks." src="7832324609ad3cc688064e0341612b32_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<p>
+    The image is a screenshot of the Ivara EAM software interface. It displays a 'Standard Job' for a 'Weekly Cooling Tower System Inspection - Equipment'. The interface includes a navigation tree on the left, a main work area with a 'Work Procedure' section, and a 'Standard Job Details' panel on the right. The 'Standard Job Details' panel contains fields for 'Description', 'Estimated Time', 'Labor Hours', 'Parts', and 'Tools'. The 'Work Procedure' section shows a list of tasks with checkboxes for completion. The overall layout is typical of an enterprise asset management system.
+   </p>
+<div class="img-alt">
+    Screenshot of the Ivara EAM software interface showing preventive maintenance tasks.
+   </div>
+</div>
+<p>
+   Figure 18
+   <br/>
+   Ivara EAM Example Screen Showing Preventive Maintenance Tasks
+   <br/>
+   (Courtesy of Ivara Corporation)
+  </p>
+<p>
+   Work orders for preventive maintenance tasks can be triggered in various ways, including:
+  </p>
+<ul style="list-style-type: none">
+<li>
+    • Elapsed time at a fixed day or date (e.g. first Monday of every month)
+   </li>
+<li>
+    • Elapsed time at a fixed interval (e.g. one month after the previous task)
+   </li>
+<li>
+    • Running hours (e.g. every 8000 hours)
+   </li>
+<li>
+    • When an indicator value is exceeded (e.g. pump pressure drops below 100 kPa)
+   </li>
+</ul>
+<h4>
+   SPARE PARTS AND MATERIALS
+  </h4>
+<p>
+   Availability of spare parts and materials is usually critical to the execution of a maintenance task. Some CMMS's contain a complete inventory and purchasing system, while others link to a separate system that handles purchasing and inventory control. Within the CMMS, spare parts and materials requirements are recorded for each piece of equipment and for each preventive task. This takes quite a bit of time to set up, but makes planning easier and faster.
+  </p>
+<h5>
+<b>
+    EQUIPMENT TRACKING
+   </b>
+</h5>
+<p>
+   Another useful function of a CMMS is equipment tracking. For example, when equipment, such as a pump or motor, is removed for repair, a replacement is installed from inventory and the repaired item is moved to inventory. It may be important to track the movement of equipment and to know where it is installed.
+  </p>
+<h2>
+   Objective 7
+  </h2>
+<p>
+<b>
+<i>
+     Describe various methods of monitoring equipment, including log sheets and trending.
+    </i>
+</b>
+</p>
+<h3>
+   CONDITION MONITORING
+  </h3>
+<p>
+   Condition monitoring is an important component of maintenance. It consists of measuring relevant indicators of equipment condition that can be useful in predicting deterioration and the likelihood of failure. This knowledge is used to make decisions about the type of maintenance required.
+  </p>
+<p>
+   There are a number of common techniques that break down into these categories:
+  </p>
+<ul style="list-style-type: none">
+<li>
+    • Vibration monitoring
+   </li>
+<li>
+    • Oil analysis
+   </li>
+<li>
+    • Thermography
+   </li>
+<li>
+    • Ultrasonic inspection
+   </li>
+<li>
+    • General monitoring (including equipment and process performance, output, pressures, and temperatures)
+   </li>
+</ul>
+<p>
+   The first four techniques require specialized training and are beyond the scope of this objective. General monitoring is more common and is described below.
+  </p>
+<h5>
+   General Monitoring
+  </h5>
+<p>
+   General monitoring is often done manually using paper log sheets. Computerized monitoring program are also used. They gather data using portable hand-held data collectors or by monitoring control systems with permanently mounted sensors.
+  </p>
+<p>
+   Fig. 19 shows an example of a paper log sheet for monitoring an engine. The date and time of the entry and the hours on the run meter are recorded along with the name of the person who completed it. Each parameter is clearly described with its unit of measurement. Alert values are noted for each parameter where relevant. Where an alert value has been exceeded, the reading is circled.
+  </p>
+<p>
+   The sequence of parameters on the log sheet is always an issue. For recording purposes, it is best to put them in the order that the readings are taken although this often differs between operators. When viewing the results, it is better to organize the readings logically according to systems and types of readings. The log sheet in Fig. 19 is organized this way, but includes a separate column to indicate the normal input sequence (for reference purposes only).
+  </p>
+<p>
+   Sometimes, a calculated value is required to recognize an abnormal condition. If the calculation is simple, such as the exhaust temperature spread shown in Fig. 19, it can be added to the log sheet. This is the difference between the lowest and highest exhaust temperatures. If the spread is caused by an exhaust temperature that is too high, the engine may be receiving too much fuel through an eroded fuel nozzle. If the spread is caused by an exhaust temperature that is too low, there may be problems with a plugged fuel nozzle.
+  </p>
+<p>
+   Everyone who logs equipment needs to be trained not only how to take readings, but also what they are used for, and what to do if an alert value is exceeded. If possible, the alert value readings should be documented separately from the log sheet by someone familiar with the engine and its operation.
+  </p>
+<h5>
+<p style="text-align: center;">
+<i>
+     Engine Log Sheet
+     <br/>
+     Bearspaw Unit 1
+    </i>
+</p>
+</h5>
+<table border="1">
+<thead>
+<tr>
+<th rowspan="2">
+      Input seq.
+     </th>
+<th rowspan="2">
+      Parameter
+     </th>
+<th rowspan="2">
+      Unit of Measurement
+     </th>
+<th rowspan="2">
+      Low alert
+     </th>
+<th rowspan="2">
+      High alert
+     </th>
+<th colspan="3">
+      Readings
+     </th>
+</tr>
+<tr>
+<th>
+      A. Smith
+     </th>
+<th>
+      A. Smith
+     </th>
+<th>
+      P. Jones
+     </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+      1
+     </td>
+<td>
+      Name
+     </td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+      2
+     </td>
+<td>
+      Date
+     </td>
+<td>
+      yy.mm.dd
+     </td>
+<td>
+</td>
+<td>
+</td>
+<td>
+      03.06.01
+     </td>
+<td>
+      03.06.02
+     </td>
+<td>
+      03.06.03
+     </td>
+</tr>
+<tr>
+<td>
+      3
+     </td>
+<td>
+      Time
+     </td>
+<td>
+      hh.mm
+     </td>
+<td>
+</td>
+<td>
+</td>
+<td>
+      0830
+     </td>
+<td>
+      0900
+     </td>
+<td>
+      0845
+     </td>
+</tr>
+<tr>
+<td>
+      4
+     </td>
+<td>
+      Run Hours
+     </td>
+<td>
+      hrs
+     </td>
+<td>
+</td>
+<td>
+</td>
+<td>
+      12,345
+     </td>
+<td>
+      12,369
+     </td>
+<td>
+      12,393
+     </td>
+</tr>
+<tr>
+<td>
+      5
+     </td>
+<td>
+      Ambient temperature
+     </td>
+<td>
+      °C
+     </td>
+<td>
+</td>
+<td>
+</td>
+<td>
+      21
+     </td>
+<td>
+      16
+     </td>
+<td>
+      18
+     </td>
+</tr>
+<tr>
+<td>
+      6
+     </td>
+<td>
+      Gas producer speed
+     </td>
+<td>
+      RPM
+     </td>
+<td>
+      8500
+     </td>
+<td>
+      12,000
+     </td>
+<td>
+      9200
+     </td>
+<td>
+      9100
+     </td>
+<td>
+      11000
+     </td>
+</tr>
+<tr>
+<td>
+      13
+     </td>
+<td>
+      Power turbine speed
+     </td>
+<td>
+      RPM
+     </td>
+<td>
+      2000
+     </td>
+<td>
+      7500
+     </td>
+<td>
+      6100
+     </td>
+<td>
+      6050
+     </td>
+<td>
+      7000
+     </td>
+</tr>
+<tr>
+<td>
+      16
+     </td>
+<td>
+      Generator power
+     </td>
+<td>
+      kW
+     </td>
+<td>
+</td>
+<td>
+</td>
+<td>
+      16,300
+     </td>
+<td>
+      16,000
+     </td>
+<td>
+      15,900
+     </td>
+</tr>
+<tr>
+<td>
+      15
+     </td>
+<td>
+      Air filter diff pressure
+     </td>
+<td>
+      mm H2O
+     </td>
+<td>
+</td>
+<td>
+      400
+     </td>
+<td>
+      210
+     </td>
+<td>
+      215
+     </td>
+<td>
+      220
+     </td>
+</tr>
+<tr>
+<td>
+      14
+     </td>
+<td>
+      Compressor discharge pressure
+     </td>
+<td>
+      kPa
+     </td>
+<td>
+</td>
+<td>
+</td>
+<td>
+      254
+     </td>
+<td>
+      243
+     </td>
+<td>
+      298
+     </td>
+</tr>
+<tr>
+<td>
+      17
+     </td>
+<td>
+      Exhaust gas temp #1
+     </td>
+<td>
+      °C
+     </td>
+<td>
+</td>
+<td>
+      550
+     </td>
+<td>
+      502
+     </td>
+<td>
+      500
+     </td>
+<td>
+      490
+     </td>
+</tr>
+<tr>
+<td>
+      18
+     </td>
+<td>
+      Exhaust gas temp #2
+     </td>
+<td>
+      °C
+     </td>
+<td>
+</td>
+<td>
+      550
+     </td>
+<td>
+      503
+     </td>
+<td>
+      585
+     </td>
+<td>
+      571
+     </td>
+</tr>
+<tr>
+<td>
+      19
+     </td>
+<td>
+      Exhaust gas temp #3
+     </td>
+<td>
+      °C
+     </td>
+<td>
+</td>
+<td>
+      550
+     </td>
+<td>
+      500
+     </td>
+<td>
+      503
+     </td>
+<td>
+      498
+     </td>
+</tr>
+<tr>
+<td>
+      20
+     </td>
+<td>
+      Exhaust gas temp #4
+     </td>
+<td>
+      °C
+     </td>
+<td>
+</td>
+<td>
+      550
+     </td>
+<td>
+      498
+     </td>
+<td>
+      507
+     </td>
+<td>
+      502
+     </td>
+</tr>
+<tr>
+<td>
+      21
+     </td>
+<td>
+      Exhaust gas temp #5
+     </td>
+<td>
+      °C
+     </td>
+<td>
+</td>
+<td>
+      550
+     </td>
+<td>
+      506
+     </td>
+<td>
+      509
+     </td>
+<td>
+      503
+     </td>
+</tr>
+<tr>
+<td>
+      22
+     </td>
+<td>
+      Exhaust gas temp #6
+     </td>
+<td>
+      °C
+     </td>
+<td>
+</td>
+<td>
+      550
+     </td>
+<td>
+      508
+     </td>
+<td>
+      501
+     </td>
+<td>
+      510
+     </td>
+</tr>
+<tr>
+<td>
+      23
+     </td>
+<td>
+      Exhaust gas temp #7
+     </td>
+<td>
+      °C
+     </td>
+<td>
+</td>
+<td>
+      550
+     </td>
+<td>
+      507
+     </td>
+<td>
+      502
+     </td>
+<td>
+      506
+     </td>
+</tr>
+<tr>
+<td>
+      24
+     </td>
+<td>
+      Exhaust gas temp #8
+     </td>
+<td>
+      °C
+     </td>
+<td>
+</td>
+<td>
+      550
+     </td>
+<td>
+      506
+     </td>
+<td>
+      504
+     </td>
+<td>
+      503
+     </td>
+</tr>
+<tr>
+<td>
+      Calc.
+     </td>
+<td>
+      Temp spread
+     </td>
+<td>
+      °C
+     </td>
+<td>
+</td>
+<td>
+      80
+     </td>
+<td>
+      10
+     </td>
+<td>
+      (85)
+     </td>
+<td>
+      (81)
+     </td>
+</tr>
+<tr>
+<td>
+      8
+     </td>
+<td>
+      Fuel pressure
+     </td>
+<td>
+      kPa
+     </td>
+<td>
+      200
+     </td>
+<td>
+      350
+     </td>
+<td>
+      320
+     </td>
+<td>
+      330
+     </td>
+<td>
+      (360)
+     </td>
+</tr>
+<tr>
+<td>
+      10
+     </td>
+<td>
+      Oil pressure
+     </td>
+<td>
+      kPa
+     </td>
+<td>
+      275
+     </td>
+<td>
+      380
+     </td>
+<td>
+      290
+     </td>
+<td>
+      295
+     </td>
+<td>
+      293
+     </td>
+</tr>
+<tr>
+<td>
+      9
+     </td>
+<td>
+      Oil temperature
+     </td>
+<td>
+      °C
+     </td>
+<td>
+      75
+     </td>
+<td>
+      90
+     </td>
+<td>
+      82
+     </td>
+<td>
+      83
+     </td>
+<td>
+      82
+     </td>
+</tr>
+<tr>
+<td>
+      11
+     </td>
+<td>
+      Oil filter diff pressure
+     </td>
+<td>
+      kPa
+     </td>
+<td>
+</td>
+<td>
+      100
+     </td>
+<td>
+      60
+     </td>
+<td>
+      62
+     </td>
+<td>
+      63
+     </td>
+</tr>
+<tr>
+<td>
+      12
+     </td>
+<td>
+      Oil level
+     </td>
+<td>
+      %
+     </td>
+<td>
+      50
+     </td>
+<td>
+</td>
+<td>
+      80
+     </td>
+<td>
+      85
+     </td>
+<td>
+      85
+     </td>
+</tr>
+<tr>
+<td>
+</td>
+<td>
+      Vibration - front
+     </td>
+<td>
+      mm/sec
+     </td>
+<td>
+</td>
+<td>
+      20
+     </td>
+<td>
+      10
+     </td>
+<td>
+      11
+     </td>
+<td>
+      9
+     </td>
+</tr>
+<tr>
+<td>
+</td>
+<td>
+      Vibration - centre
+     </td>
+<td>
+      mm/sec
+     </td>
+<td>
+</td>
+<td>
+      20
+     </td>
+<td>
+      12
+     </td>
+<td>
+      14
+     </td>
+<td>
+      13
+     </td>
+</tr>
+<tr>
+<td>
+</td>
+<td>
+      Vibration - rear
+     </td>
+<td>
+      mm/sec
+     </td>
+<td>
+</td>
+<td>
+      20
+     </td>
+<td>
+      8
+     </td>
+<td>
+      7
+     </td>
+<td>
+      9
+     </td>
+</tr>
+</tbody>
+</table>
+<p>
+   COMMENTS:
+  </p>
+<p style="text-align: center;">
+<i>
+    Figure 19
+   </i>
+</p>
+<p>
+<i>
+    Example of a Log Sheet (all numbers are fictitious)
+   </i>
+</p>
+<h3>
+   TRENDING
+  </h3>
+<p>
+   The best way to monitor changes in condition is to display indicator values on a trend chart.
+  </p>
+<p>
+   Some CMMS's include a condition monitoring feature that can automatically trigger maintenance tasks. An example is shown in Fig. 20. Note the three different alert bands at the top of the graph that indicate a progression of importance from alert to alarm to danger.
+  </p>
+<img alt="A screenshot of a trend graph interface. The window title is 'Trend Chart'. The menu bar includes 'Home', 'Display', 'Plot', 'Trend Chart', 'Control Chart', 'Analysis', 'Tools', 'Printing', 'Help', and 'HOM'. The graph shows a line labeled 'Rolling' over time from 07/01/2002 00:19 to 03/20/2003 17:14. The y-axis ranges from 0 to 145. The top of the graph features three horizontal alert bands: a top dark band (danger), a middle light band (alarm), and a bottom dark band (alert). The 'Rolling' line starts at approximately 100, rises to about 125, and then drops to around 100. The bottom of the window has 'Edit', 'View/Zoom', and 'Close' buttons." src="3468bcffa38de23cef94bfb460ccb301_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    A screenshot of a trend graph interface. The window title is 'Trend Chart'. The menu bar includes 'Home', 'Display', 'Plot', 'Trend Chart', 'Control Chart', 'Analysis', 'Tools', 'Printing', 'Help', and 'HOM'. The graph shows a line labeled 'Rolling' over time from 07/01/2002 00:19 to 03/20/2003 17:14. The y-axis ranges from 0 to 145. The top of the graph features three horizontal alert bands: a top dark band (danger), a middle light band (alarm), and a bottom dark band (alert). The 'Rolling' line starts at approximately 100, rises to about 125, and then drops to around 100. The bottom of the window has 'Edit', 'View/Zoom', and 'Close' buttons.
+   </div>
+</div>
+<p>
+<i>
+    Figure 20
+    <br/>
+    Example Screen Showing a Trend Graph
+    <br/>
+    (Courtesy of Ivara Corporation)
+   </i>
+</p>
+<h2>
+   Objective 8
+  </h2>
+<p>
+<b>
+<i>
+     Describe the steps involved in developing a plant budget and controlling maintenance costs.
+    </i>
+</b>
+</p>
+<h4>
+   MAINTENANCE COSTS
+  </h4>
+<p>
+   Maintenance costs are a significant component of ownership costs and must be closely monitored. Various methods are used to monitor and evaluate maintenance costs, including:
+  </p>
+<ul style="list-style-type: none">
+<li>
+    • The maintenance budget which plans costs annually as part of the corporate budgeting process
+   </li>
+<li>
+    • Evaluation and analysis of specific equipment and assets, often using a computerized maintenance management system (CMMS)
+   </li>
+<li>
+    • An overall analysis of maintenance costs in comparison with industry benchmarks or other data
+   </li>
+</ul>
+<p>
+   In this module, the emphasis is on the maintenance budget since it is the most common approach to controlling maintenance costs.
+  </p>
+<h4>
+   CAPITAL AND OPERATING COSTS
+  </h4>
+<p>
+   Costs are normally divided into two categories: capital and operating. This is done for accounting and tax purposes. Capital items are assets that can be written off (depreciated) over time against income, while expenses are deducted directly from income as they are incurred.
+  </p>
+<p>
+   The majority of maintenance costs will be included in the operating budget. These include labour costs, spare parts and materials, external contracts, travel expenses, equipment rentals, and contract services.
+  </p>
+<p>
+   Although capital maintenance expenses are not common, some companies consider major tools and support equipment (e.g. over $1,000), major equipment replacement (e.g. over $10,000) and modifications (e.g. over $1,000) to be capital items. In some cases, companies designate a major overhaul as a capital expense.
+  </p>
+<h4>
+   THE MAINTENANCE BUDGET
+  </h4>
+<p>
+   It is always necessary to plan for maintenance expenditures. This process is normally handled through the annual budget. Each department prepares an estimate (budget) of anticipated expenditures for the coming year for approval by management. The supervisor of each department is responsible for monitoring expenditures throughout the year and ensuring that budget limits are not exceeded.
+  </p>
+<p>
+   Because maintenance departments deal with costs that are not always predictable, it is important to plan the budget carefully and for management to understand the constraints associated with the budget.
+  </p>
+<p>
+   Two approaches are used for budgeting:
+  </p>
+<ul style="list-style-type: none">
+<li>
+    •
+    <b>
+     Zero-based budgeting:
+    </b>
+    budget amounts are determined by identifying and estimating all activities to be carried out. For maintenance budgets, this works well for routine and major inspections although it takes a considerable amount of time to prepare.
+   </li>
+<li>
+    •
+    <b>
+     Historical budgeting:
+    </b>
+    costs are estimated based on past history with actual expenditures, usually those of the previous year. This is the most efficient way to budget for miscellaneous expenses and minor work, as well as unscheduled work due to failures.
+   </li>
+</ul>
+<p>
+   In both cases, adjustments may have to be factored in for expected increases, for example inflation and salary increases.
+  </p>
+<p>
+   The most difficult elements to estimate are unscheduled work and major failures. Some companies provide only a moderate allowance for these situations and explain the variance (the difference between the budgeted amount and the actual expenditure) as required. If management has problems with variances, it may be best to budget a larger amount for unscheduled maintenance (even though it might not be entirely used up every year).
+  </p>
+<p>
+   Although the amounts will obviously vary with equipment type, application, and equipment age, it has been found that yearly maintenance costs average about 3% to 6% of the total replacement value of equipment. For example, the yearly maintenance budget for a small facility worth $10 million should be between $300,000 and $600,000.
+  </p>
+<h5>
+   Cost Reporting
+  </h5>
+<p>
+   Every company has its own cost structure which is represented by a series of account codes to which costs are charged. In general, maintenance costs can be divided into these categories:
+  </p>
+<ul style="list-style-type: none">
+<li>
+    • Internal labour (regular time plus overtime)
+   </li>
+<li>
+    • Contract labour
+   </li>
+<li>
+    • Spare parts and materials
+   </li>
+</ul>
+<ul style="list-style-type: none">
+<li>
+    • Supplies (such as lubricants)
+   </li>
+<li>
+    • External services
+   </li>
+<li>
+    • Company overhead charges
+   </li>
+</ul>
+<p>
+   Cost reports are produced monthly and provided to the appropriate supervisors for review. These reports usually provide costs by account code as monthly and year-to-date totals. The reports should also show the budget amounts for each account code and the variance between budget and actual. The supervisor can then evaluate the actual costs against the budget amounts and identify significant variances. Variances can be divided into two types:
+  </p>
+<ul style="list-style-type: none">
+<li>
+    •
+    <b>
+     Permanent variances:
+    </b>
+    are unexpected differences, such as costs related to a major failure, and will increase the total annual maintenance expenditure.
+   </li>
+<li>
+    •
+    <b>
+     Temporary variances:
+    </b>
+    exist because of timing differences. For example, if a major inspection is done earlier than planned. These variances will not increase the total annual maintenance expenditure
+   </li>
+</ul>
+<h5>
+   EQUIPMENT MAINTENANCE COSTS
+  </h5>
+<p>
+   Since the maintenance budget is based on costs associated with individual departments, it is not an appropriate tool for analyzing and understanding the actual costs associated with specific equipment. To do this, it is necessary to use the history contained in a CMMS. This history is built from costs associated with work orders that apply directly to the equipment. Thus, it is possible to analyze maintenance information by looking at the actual costs incurred to maintain one type of equipment, such as a pump, and compare individual costs against the average.
+  </p>
+<h2>
+   Chapter Questions
+  </h2>
+<p>
+   A1.6
+  </p>
+<ol style="list-style-type: none">
+<li>
+    1. Identify and describe three components of the definition of maintenance.
+   </li>
+<li>
+    2. Explain the difference between preventive and corrective maintenance.
+   </li>
+<li>
+    3. List four items that could be identified during planning of maintenance.
+   </li>
+<li>
+    4. Describe what is meant by the critical path.
+   </li>
+<li>
+    5. List four types of information that might be recorded in a CMMS.
+   </li>
+<li>
+    6. What are the two approaches used for preparing a maintenance budget?
+   </li>
+</ol>
+</body>
+</html>

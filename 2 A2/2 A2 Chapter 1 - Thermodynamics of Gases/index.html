@@ -1,0 +1,2033 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+ 
+    <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['\\(', '\\)']],
+        displayMath: [['$$', '$$']]
+      }
+    };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+</head>
+ <body>
+    <div id="nav-header" style="padding: 15px 20px; background: #2c3e50; color: white; display: flex; align-items: center; gap: 20px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+        <a href="../index.html" style="color: white; text-decoration: none; background: #34495e; padding: 8px 16px; border-radius: 4px; font-weight: 600; font-size: 0.9rem; transition: background 0.2s;">← Back to Index</a>
+        <h1 style="margin: 0; font-size: 1.2rem; font-weight: 500; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Power Engineering Series</h1>
+    </div>
+    
+  <h1>
+   <b>
+    Power Engineering
+    <br/>
+    Second Class (A2):
+    <br/>
+    Thermodynamics and Metallurgy
+   </b>
+  </h1>
+  <h2>
+   <b>
+    <u>
+     Table of Contents
+    </u>
+   </b>
+  </h2>
+  <table>
+   <thead>
+    <tr data-bbox="188 573 1321 623">
+     <th>
+      <b>
+       <u>
+        Chapter
+       </u>
+      </b>
+     </th>
+     <th>
+      <b>
+       <u>
+        Page
+       </u>
+      </b>
+     </th>
+    </tr>
+   </thead>
+   <tbody>
+    <tr data-bbox="188 623 1321 669">
+     <td>
+      <b>
+       1. Thermodynamics of Gases
+      </b>
+     </td>
+     <td>
+      <b>
+       1
+      </b>
+     </td>
+    </tr>
+    <tr data-bbox="188 669 1321 714">
+     <td>
+      <b>
+       2. Thermodynamics of Steam
+      </b>
+     </td>
+     <td>
+      <b>
+       35
+      </b>
+     </td>
+    </tr>
+    <tr data-bbox="188 714 1321 760">
+     <td>
+      <b>
+       3. Practical Thermodynamic Cycles
+      </b>
+     </td>
+     <td>
+      <b>
+       67
+      </b>
+     </td>
+    </tr>
+    <tr data-bbox="188 760 1321 804">
+     <td>
+      <b>
+       4. Metallurgy
+      </b>
+     </td>
+     <td>
+      <b>
+       113
+      </b>
+     </td>
+    </tr>
+    <tr data-bbox="188 804 1321 850">
+     <td>
+      <b>
+       5. Testing of Metals
+      </b>
+     </td>
+     <td>
+      <b>
+       151
+      </b>
+     </td>
+    </tr>
+    <tr data-bbox="188 850 1321 867">
+     <td>
+      <b>
+       End of Chapter Questions and Solutions
+      </b>
+     </td>
+     <td>
+      <b>
+       233
+      </b>
+     </td>
+    </tr>
+   </tbody>
+  </table>
+  <h1>
+   Thermodynamics of Gases
+  </h1>
+  <h2>
+   1
+  </h2>
+  <h3>
+   Learning Outcome
+  </h3>
+  <p>
+   <i>
+    When you complete this learning material, you will be able to:
+   </i>
+  </p>
+  <p>
+   Perform calculations related to expansion and compression of perfect gases.
+  </p>
+  <h3>
+   Learning Objectives
+  </h3>
+  <p>
+   <i>
+    You will specifically be able to complete the following tasks:
+   </i>
+  </p>
+  <ol style="list-style-type: none">
+   <li>
+    1. Describe the behaviour of a perfect gas.
+   </li>
+   <li>
+    2. Explain Dalton's Law of Partial Pressures.
+   </li>
+   <li>
+    3. Define and calculate specific heats under constant volume and constant pressure conditions.
+   </li>
+   <li>
+    4. Explain the relationship between work and heat.
+   </li>
+   <li>
+    5. Calculate the work done during expansion and compression under constant pressure and isothermal conditions.
+   </li>
+   <li>
+    6. Calculate the work done during adiabatic expansion and compression.
+   </li>
+   <li>
+    7. Calculate the work done during polytropic expansion and compression.
+   </li>
+  </ol>
+  <h3>
+   Objective 1
+  </h3>
+  <p>
+   <b>
+    Describe the behaviour of a perfect gas.
+   </b>
+  </p>
+  <h4>
+   CONCEPT OF A PERFECT GAS
+  </h4>
+  <p>
+   The starting point of thermodynamics related to gases is the behaviour of an
+   <b>
+    ideal
+   </b>
+   or
+   <b>
+    perfect
+   </b>
+   gas. A perfect gas is a gas which follows certain physical laws or rules under a prescribed set of conditions. For this module, a perfect gas is a gas which is sufficiently removed from its condensation temperature that it will remain in a gaseous state when subjected to the changes of temperature and pressure of the operation being considered.
+  </p>
+  <p>
+   The characteristic equation of the state of a perfect gas is:
+  </p>
+  <p>
+   $$
+    \frac{PV}{T} = R
+   $$
+  </p>
+  <p>
+   where
+   \(
+    R
+   \)
+   is a constant.
+  </p>
+  <p>
+   The relationship between temperature, pressure and volume is consistent throughout a selected working range. The behaviour of a perfect gas can be used as a model for the behaviour of
+   <b>
+    real
+   </b>
+   gases.
+  </p>
+  <p>
+   Note that
+   <b>
+    pressure
+   </b>
+   of a perfect gas will normally refer to absolute pressure rather than to gauge pressure. Unless gauge pressure is specifically indicated, it is assumed that thermodynamic calculations will utilize absolute pressures, and this convention is used throughout this module. Similarly, thermodynamic calculations normally utilize absolute temperature, using the Kelvin scale.
+  </p>
+  <p>
+   Pressure, temperature and volume are used to describe the state of a gas. The General Gas Law is derived from:
+  </p>
+  <ul style="list-style-type: none">
+   <li>
+    • Boyle's Law
+   </li>
+   <li>
+    • Charles' Laws
+   </li>
+   <li>
+    • Gay-Lussac's Laws
+   </li>
+  </ul>
+  <h4>
+   BOYLE'S LAW
+  </h4>
+  <p>
+   Boyle's Law describes the relationship between pressure and volume at a constant temperature. It states that the product of pressure and volume is always the same if the temperature is constant, or:
+  </p>
+  <p>
+   $$
+    PV = \text{constant}
+   $$
+  </p>
+  <p>
+   The results of this equation produce a curve such as the one shown in Fig. 1. Note that the pressure is in absolute units, not gauge pressure, and temperature is in degrees Kelvin (K).
+  </p>
+  <img alt="A graph showing the relationship between Pressure (P) on the vertical axis and Volume (V) on the horizontal axis. A curve is plotted, labeled 'Temperature is Constant', showing that as volume increases, pressure decreases." src="ac99eff233b8fe51d30f499e7413c345_img.jpg"/>
+  <div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+   <p>
+    A Cartesian coordinate system with a vertical y-axis labeled 'Pressure P' and a horizontal x-axis labeled 'Volume V'. A smooth, downward-sloping curve is drawn in the first quadrant. To the right of the curve, the text 'Temperature is Constant' is written.
+   </p>
+   <div class="img-alt">
+    A graph showing the relationship between Pressure (P) on the vertical axis and Volume (V) on the horizontal axis. A curve is plotted, labeled 'Temperature is Constant', showing that as volume increases, pressure decreases.
+   </div>
+  </div>
+  <p>
+   <i>
+    Figure 1
+   </i>
+   <br/>
+   <i>
+    Boyle's Law
+   </i>
+  </p>
+  <p>
+   Boyle's Law is also used to compare two different sets of conditions so the equation becomes:
+  </p>
+  <p>
+   $$
+    P_1V_1 = P_2V_2
+   $$
+  </p>
+  <p>
+   This is a reasonable assumption if the process of expansion or compression is slow enough for the temperature to remain constant. Constant temperature operations are also called isothermal operations.
+  </p>
+  <h4>
+   CHARLES' LAW
+  </h4>
+  <p>
+   Charles' Law describes the relationship between pressure and temperature at a constant volume. It states that the ratio of pressure and temperature is always the same if the volume is constant, or:
+  </p>
+  <p>
+   $$
+    \frac{P}{T} = \text{constant}
+   $$
+  </p>
+  <p>
+   An alternate expression by comparing two different sets of conditions is:
+  </p>
+  <p>
+   $$
+    \frac{P_1}{T_1} = \frac{P_2}{T_2}
+   $$
+  </p>
+  <h4>
+   GAY-LUSSAC'S LAW
+  </h4>
+  <p>
+   Gay Lussac's law describes the relationship between volume and temperature when pressure is constant.
+  </p>
+  <p>
+   $$
+    \frac{V}{T} = \text{constant}
+   $$
+  </p>
+  <p>
+   The other version is:
+  </p>
+  <p>
+   $$
+    \frac{V_1}{T_1} = \frac{V_2}{T_2}
+   $$
+  </p>
+  <h4>
+   GENERAL GAS LAW
+  </h4>
+  <p>
+   The three laws can be combined to give the equation:
+  </p>
+  <p>
+   $$
+    \frac{PV}{T} = \text{constant}
+   $$
+  </p>
+  <p>
+   The version that compares the two sets of conditions is:
+  </p>
+  <p>
+   $$
+    \frac{P_1 V_1}{T_1} = \frac{P_2 V_2}{T_2}
+   $$
+  </p>
+  <h5>
+   Example 1
+  </h5>
+  <p>
+   A gas is measured to be at a pressure of 150 kPa (gauge), 50°C and a volume of 3 litres. Find the volume the gas would occupy at standard conditions of 15°C and 101.325 kPa.
+  </p>
+  <h6>
+   Answer
+  </h6>
+  <p>
+   Standard conditions are 15°C and 101.325 kPa. Converting the pressure and temperature to absolute, using the equation
+   \(
+    \frac{PV_1}{T_1} = \frac{P_2V_2}{T_2}
+   \)
+   , gives the solution as follows:
+  </p>
+  <p>
+   $$
+    \begin{aligned}\frac{PV_1}{T_1} &amp;= \frac{P_2V_2}{T_2} \\ P_2V_2T_1 &amp;= P_1V_1T_2 \\ V_2 &amp;= \frac{P_1V_1T_2}{P_2T_1} \\ V_2 &amp;= \frac{(150+101.325 \text{ kPa}) \times 3 \text{ L} \times 273 \text{ K}}{101.325 \text{ kPa} \times (273+50) \text{ K}} \\ V_2 &amp;= \frac{261.325 \text{ kPa} \times 3 \text{ L} \times 273 \text{ K}}{101.325 \text{ kPa} \times 323 \text{ K}} \\ V_2 &amp;= \frac{261.325 \text{ kPa} \times 3 \text{ L} \times 273 \text{ K}}{101.325 \text{ kPa} \times 323 \text{ K}} \\ V_2 &amp;= \frac{214025.18}{32727.98} \\ V_2 &amp;= 6.54 \text{ L (Ans.)}\end{aligned}
+   $$
+  </p>
+  <h4>
+   IDEAL GAS LAW
+  </h4>
+  <p>
+   The ideal gas law explains the relationship between pressure, volume and temperature that includes the mass of the substance.
+  </p>
+  <p>
+   $$
+    PV = mRT
+   $$
+  </p>
+  <p>
+   where
+   \(
+    m
+   \)
+   is the mass in kg and
+   \(
+    R
+   \)
+   is a characteristic constant, with units in kJ/kgK, that is specific to the type of gas. Table 1 provides a list of some common gases and their values for
+   \(
+    R
+   \)
+   .
+  </p>
+  <p>
+   <i>
+    Table 1
+   </i>
+   <br/>
+   <i>
+    Constants for Common Gases
+   </i>
+  </p>
+  <table border="1">
+   <thead>
+    <tr data-bbox="360 1493 1250 1530">
+     <th>
+      Gas
+     </th>
+     <th>
+      \(
+       R
+      \)
+      in kJ/kgK
+     </th>
+    </tr>
+   </thead>
+   <tbody>
+    <tr data-bbox="360 1530 1250 1562">
+     <td>
+      Air
+     </td>
+     <td>
+      0.287
+     </td>
+    </tr>
+    <tr data-bbox="360 1562 1250 1593">
+     <td>
+      Ammonia
+     </td>
+     <td>
+      0.462
+     </td>
+    </tr>
+    <tr data-bbox="360 1593 1250 1625">
+     <td>
+      Carbon dioxide
+     </td>
+     <td>
+      0.1889
+     </td>
+    </tr>
+    <tr data-bbox="360 1625 1250 1656">
+     <td>
+      Carbon monoxide
+     </td>
+     <td>
+      0.2969
+     </td>
+    </tr>
+    <tr data-bbox="360 1656 1250 1688">
+     <td>
+      Helium
+     </td>
+     <td>
+      2.0785
+     </td>
+    </tr>
+    <tr data-bbox="360 1688 1250 1719">
+     <td>
+      Nitrogen
+     </td>
+     <td>
+      0.2969
+     </td>
+    </tr>
+    <tr data-bbox="360 1719 1250 1751">
+     <td>
+      Oxygen
+     </td>
+     <td>
+      0.2598
+     </td>
+    </tr>
+    <tr data-bbox="360 1751 1250 1789">
+     <td>
+      Hydrogen
+     </td>
+     <td>
+      4.124
+     </td>
+    </tr>
+   </tbody>
+  </table>
+  <h5>
+   Example 2
+  </h5>
+  <p>
+   A steel tank contains
+   \(
+    2 \text{ m}^3
+   \)
+   of oxygen at a pressure of
+   \(
+    13\,790 \text{ kPa}
+   \)
+   (gauge) and a temperature of
+   \(
+    21^\circ\text{C}
+   \)
+   . What is the mass of oxygen in the tank? (
+   \(
+    R = 0.2598 \text{ kJ/kgK}
+   \)
+   )
+  </p>
+  <h6>
+   Answer
+  </h6>
+  <p>
+   The mass is calculated using the equation
+   \(
+    PV = mRT
+   \)
+   :
+  </p>
+  <p>
+   $$
+    \begin{aligned} PV &amp;= mRT \\ mRT &amp;= PV \\ m &amp;= \frac{PV}{RT} \\ m &amp;= \frac{(13,790 + 101.325) \text{ kPa} \times 2 \text{ m}^3}{0.2598 \text{ kJ/kgK} \times (273 + 21) \text{ K}} \\ &amp;= \frac{13\,891.325 \text{ kN/m}^2 \times 2 \text{ m}^3}{0.2598 \text{ kNm/kgK} \times 294 \text{ K}} \\ &amp;= \frac{27\,782.65 \text{ kg}}{76.38} \\ &amp;= 363.74 \text{ kg (Ans.)} \end{aligned}
+   $$
+  </p>
+  <h3>
+   Objective 2
+  </h3>
+  <p>
+   <b>
+    Explain Dalton's Law of Partial Pressures.
+   </b>
+  </p>
+  <h4>
+   <b>
+    DALTON'S LAW
+   </b>
+  </h4>
+  <p>
+   It is often necessary to perform calculations that involve multiple gases, for example, water vapour and air or natural gas which consists of a mixture of hydrocarbons. Dalton's Law states that the total pressure of a mixture of gases is equal to the sum of the individual (or partial) pressures which each gas would exert if the other gases were not present. In other words, the partial pressure of each gas is calculated using the total volume, and the total pressure is the sum of all of the partial pressures.
+  </p>
+  <p>
+   $$
+    P_{total} = P_1 + P_2 + P_3
+   $$
+  </p>
+  <h5>
+   <b>
+    Example 3
+   </b>
+  </h5>
+  <p>
+   A tank with a volume of
+   \(
+    5 \text{ m}^3
+   \)
+   is half full of water. The top half of the tank contains air at
+   \(
+    40^\circ\text{C}
+   \)
+   and atmospheric pressure. If the partial pressure of water is
+   \(
+    7.3814 \text{ kPa}
+   \)
+   at
+   \(
+    40^\circ\text{C}
+   \)
+   , what is the mass of the air in the tank? (
+   \(
+    R
+   \)
+   for air =
+   \(
+    0.287 \text{ kJ/kgK}
+   \)
+   )
+  </p>
+  <h5>
+   <b>
+    Answer
+   </b>
+  </h5>
+  <p>
+   The volume of gas above the water is a mixture of air and water vapour. Because the partial pressure of the water vapour is
+   \(
+    7.3814 \text{ kPa}
+   \)
+   , the partial pressure of the air is:
+  </p>
+  <p>
+   $$
+    \begin{aligned} P_{air} &amp;= P_{total} - P_{water} \\ &amp;= 101.325 \text{ kPa} - 7.3814 \text{ kPa} \\ &amp;= 93.94 \text{ kPa} \end{aligned}
+   $$
+  </p>
+  <p>
+   Because the partial pressure always refers to the total volume, the volume is
+   \(
+    2.5 \text{ m}^3
+   \)
+   at
+   \(
+    40^\circ\text{C}
+   \)
+   .
+  </p>
+  <p>
+   The mass is calculated using the equation
+   \(
+    PV = mRT
+   \)
+   :
+  </p>
+  <p>
+   $$
+    \begin{aligned}
+ PV &amp;= mRT \\
+ mRT &amp;= PV \\
+ m &amp;= \frac{PV}{RT} \\
+ m &amp;= \frac{93.94 \text{ kPa} \times 2.5 \text{ m}^3}{0.287 \text{ kJ/kgK} \times (273 + 40) \text{ K}} \\
+ m &amp;= \frac{234.85}{0.287 \text{ kJ/kgK} \times (313) \text{ K}} \\
+ m &amp;= \frac{234.85}{89.83} \\
+ &amp;= 2.614 \text{ kg (Ans.)}
+ \end{aligned}
+   $$
+  </p>
+  <h3>
+   Objective 3
+  </h3>
+  <p>
+   <b>
+    Define and calculate specific heats under constant volume and constant pressure conditions.
+   </b>
+  </p>
+  <h4>
+   SPECIFIC HEAT
+  </h4>
+  <p>
+   The specific heat of a substance is the amount of heat which is required to raise a unit quantity through 1°C rise in temp.
+  </p>
+  <p>
+   A solid or a liquid has only one specific heat. However, a gas has many, depending upon the conditions under which the heat supply is given. The standard cases taken are heat addition at:
+  </p>
+  <ul style="list-style-type: none">
+   <li>
+    • Constant volume
+   </li>
+   <li>
+    • Constant pressure
+   </li>
+  </ul>
+  <h4>
+   Constant Volume
+  </h4>
+  <p>
+   Heat given to a gas contained in a cylinder in which the piston is fixed so that the volume remains constant, would be calculated from:
+  </p>
+  <p>
+   $$
+    \begin{aligned}Q(\text{kJ}) &amp;= mC_v(T_2 - T_1) \\Q &amp;= \text{Heat supplied} \\m &amp;= \text{Mass of gas, kg} \\C_v &amp;= \text{Specific heat of the gas at constant volume} \\T_2 &amp;= \text{Final temperature, K} \\T_1 &amp;= \text{Initial temperature, K}\end{aligned}
+   $$
+  </p>
+  <h4>
+   Constant Pressure
+  </h4>
+  <p>
+   Heat given to a gas contained in a cylinder in which the piston moves so that the pressure of the gas remains constant, would be calculated from:
+  </p>
+  <p>
+   $$
+    \begin{aligned}Q(\text{kJ}) &amp;= mC_p(T_2 - T_1) \\Q &amp;= \text{Heat supplied} \\m &amp;= \text{Mass of gas, kg} \\C_p &amp;= \text{Specific heat of the gas at constant pressure} \\T_2 &amp;= \text{Final temperature, K} \\T_1 &amp;= \text{Initial temperature, K}\end{aligned}
+   $$
+  </p>
+  <p>
+   Assuming the same quantity of gas and the same temperature rise in each case, the heat quantity supplied at constant pressure must be greater than that supplied under constant volume conditions because in addition to raising the gas temperature, work must be done on the piston to move it against the constant pressure. This means that
+   \(
+    C_p
+   \)
+   must always be greater than
+   \(
+    C_v
+   \)
+   .
+  </p>
+  <p>
+   The fundamental energy equation states:
+  </p>
+  <p>
+   $$
+    \text{Heat Supplied} = \text{Change of Internal Energy} + \text{Work Done}
+   $$
+  </p>
+  <p>
+   If this is applied to the situation, a relationship between these specific heats can be used out which applies to all gases.
+  </p>
+  <p>
+   Joule's Law states that the internal energy of a gas is directly proportional to the absolute temperature of the gas. For a change in temperature the change in internal energy is measured in:
+  </p>
+  <p>
+   $$
+    Q(\text{kJ}) = mC_v(T_2 - T_1)
+   $$
+  </p>
+  <p>
+   Work done by a gas during any operation can be expressed in terms of pressure and volume change. For example, during conditions of constant pressure the work done would be:
+  </p>
+  <p>
+   $$
+    P(V_2 - V_1) \text{ Nm}
+   $$
+  </p>
+  <p>
+   Referring to Fig. 2, a piston (area
+   \(
+    A \text{ m}^2
+   \)
+   ) in a cylinder is acted upon by a pressure
+   \(
+    P \text{ N/m}^2
+   \)
+   . The total force in N on the piston is then
+   \(
+    PA \text{ N}
+   \)
+   . If the distance moved by the piston is
+   \(
+    S \text{ m}
+   \)
+   , then, since work done is force x distance moved, the work done on the piston is:
+  </p>
+  <p>
+   $$
+    \text{Work done} = \text{Pressure } P(\text{N/m}^2) \times \text{Area } A(\text{m}^2) \times \text{Distance moved Stroke(m)}
+   $$
+  </p>
+  <p>
+   $$
+    \text{Work done} = P(\text{N/m}^2) \times A(\text{m}^2) \times S(\text{m})
+   $$
+  </p>
+  <img alt="Diagram of a cylinder with a piston. The piston has an area labeled 'Area A m²'. A pressure 'Press. P N/m²' is applied to the piston, indicated by arrows pointing right. The distance the piston moves is labeled 'Stroke S m' with a double-headed arrow. The cylinder is shown in two states: a dashed outline for the initial position and a solid outline for the final position after the piston has moved to the right." src="bbc222cd5becfc0891eb10460c214f2f_img.jpg"/>
+  <div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+   <div class="img-alt">
+    Diagram of a cylinder with a piston. The piston has an area labeled 'Area A m²'. A pressure 'Press. P N/m²' is applied to the piston, indicated by arrows pointing right. The distance the piston moves is labeled 'Stroke S m' with a double-headed arrow. The cylinder is shown in two states: a dashed outline for the initial position and a solid outline for the final position after the piston has moved to the right.
+   </div>
+  </div>
+  <p>
+   Figure 2
+   <br/>
+   Cylinder Piston
+  </p>
+  <p>
+   But
+   \(
+    A \times S
+   \)
+   is a measure of the volume change in the cylinder during the operation and could be written
+   \(
+    (V_2 - V_1) \text{ m}^3
+   \)
+   :
+  </p>
+  <p>
+   $$
+    \text{Work done} = P(V_2 - V_1) \text{ Nm}
+   $$
+  </p>
+  <p>
+   Substituting Work done
+   \(
+    = P(V_2 - V_1) \text{ Nm}
+   \)
+   into the energy equation,
+  </p>
+  <p>
+   Heat Supplied = Change of Internal Energy + Work Done, for constant volume operation:
+  </p>
+  <p>
+   $$
+    \begin{aligned} \text{Heat Supplied} &amp;= \text{Change of Internal Energy} + \text{Work Done} \\ Q(\text{kJ}) &amp;= mC_v(T_2 - T_1) + P(V_2 - V_1) \end{aligned}
+   $$
+  </p>
+  <p>
+   For the constant pressure conditions, this becomes:
+  </p>
+  <p>
+   $$
+    mC_p(T_2 - T_1) = mC_v(T_2 - T_1) + P(V_2 - V_1)
+   $$
+  </p>
+  <p>
+   The General Gas Law can be applied to an ideal gas operation,
+   \(
+    PV = mRT
+   \)
+  </p>
+  <p>
+   $$
+    P(V_2 - V_1) \text{ or } PV_2 - PV_1
+   $$
+  </p>
+  <p>
+   can be written:
+  </p>
+  <p>
+   $$
+    mRT_2 - mRT_1 = mR(T_2 - T_1)
+   $$
+  </p>
+  <p>
+   The equation then becomes:
+  </p>
+  <p>
+   $$
+    mC_p(T_2 - T_1) = mC_v(T_2 - T_1) + mR(T_2 - T_1)
+   $$
+  </p>
+  <p>
+   Cancelling the common terms
+   \(
+    m
+   \)
+   and
+   \(
+    (T_2 - T_1)
+   \)
+  </p>
+  <p>
+   $$
+    C_p = C_v + R
+   $$
+  </p>
+  <p>
+   $$
+    C_p - C_v = R
+   $$
+  </p>
+  <p>
+   This means that the difference between the specific heats of any gas will give the Characteristic Constant for the gas (expressed in kJ/kgK).
+  </p>
+  <h4>
+   Ratio of Specific Heat
+  </h4>
+  <p>
+   Another relationship between the specific heats of a gas is used in calculations, this being the ratio of:
+  </p>
+  <p>
+   $$
+    \frac{C_p}{C_v}, \text{ given the symbol } \gamma \text{ (Gamma)}
+   $$
+  </p>
+  <p>
+   Some sample values for specific heats are shown in Table 2.
+  </p>
+  <p>
+   <i>
+    Table 2
+    <br/>
+    Sample Values for Specific Heats
+   </i>
+  </p>
+  <table border="1">
+   <thead>
+    <tr data-bbox="211 695 1396 863">
+     <th>
+      Substance
+     </th>
+     <th>
+      Specific Heat at Constant Pressure
+      \(
+       C_p
+      \)
+      <br/>
+      kJ/kgK
+      <br/>
+      or
+      <br/>
+      kJ/kg°C
+     </th>
+     <th>
+      Specific Heat at Constant Volume
+      \(
+       C_v
+      \)
+      <br/>
+      kJ/kgK
+      <br/>
+      or
+      <br/>
+      kJ/kg°C
+     </th>
+     <th>
+      Ratio of Specific Heats
+      <br/>
+      \(
+       \gamma = C_p / C_v
+      \)
+     </th>
+    </tr>
+   </thead>
+   <tbody>
+    <tr data-bbox="211 863 1396 892">
+     <td>
+      Air
+     </td>
+     <td>
+      1.005
+     </td>
+     <td>
+      0.718
+     </td>
+     <td>
+      1.40
+     </td>
+    </tr>
+    <tr data-bbox="211 892 1396 921">
+     <td>
+      Water vapour
+     </td>
+     <td>
+      2.020
+     </td>
+     <td>
+     </td>
+     <td>
+     </td>
+    </tr>
+    <tr data-bbox="211 921 1396 951">
+     <td>
+      Water liquid
+     </td>
+     <td>
+      4.184
+     </td>
+     <td>
+     </td>
+     <td>
+     </td>
+    </tr>
+    <tr data-bbox="211 951 1396 980">
+     <td>
+      Hydrogen
+     </td>
+     <td>
+      14.235
+     </td>
+     <td>
+      10.096
+     </td>
+     <td>
+      1.41
+     </td>
+    </tr>
+    <tr data-bbox="211 980 1396 1010">
+     <td>
+      Methane
+     </td>
+     <td>
+      2.177
+     </td>
+     <td>
+      1.675
+     </td>
+     <td>
+      1.30
+     </td>
+    </tr>
+    <tr data-bbox="211 1010 1396 1039">
+     <td>
+      Carbon Dioxide
+     </td>
+     <td>
+      0.825
+     </td>
+     <td>
+      0.630
+     </td>
+     <td>
+      1.31
+     </td>
+    </tr>
+    <tr data-bbox="211 1039 1396 1068">
+     <td>
+      Carbon Monoxide
+     </td>
+     <td>
+      1.051
+     </td>
+     <td>
+      0.751
+     </td>
+     <td>
+      1.40
+     </td>
+    </tr>
+    <tr data-bbox="211 1068 1396 1098">
+     <td>
+      Hydrogen Sulphide
+     </td>
+     <td>
+      1.105
+     </td>
+     <td>
+      0.85
+     </td>
+     <td>
+      1.30
+     </td>
+    </tr>
+   </tbody>
+  </table>
+  <h4>
+   Example 4
+  </h4>
+  <p>
+   A 5 m
+   <sup>
+    3
+   </sup>
+   volume of air at atmospheric pressure in a closed vessel is heated from 21°C to 45°C. If the specific heat is 716 J/kg°C, how much heat is required? (
+   \(
+    R
+   \)
+   for air = 0.287 kJ/kgK)
+  </p>
+  <h5>
+   Answer
+  </h5>
+  <p>
+   The mass of air is found using the equation
+   \(
+    PV = mRT
+   \)
+   :
+  </p>
+  <p>
+   $$
+    \begin{aligned} PV &amp;= mRT \\ mRT &amp;= \frac{PV}{RT} \\ m &amp;= \frac{506.625}{0.287 \text{ kJ/kgK} \times (273 + 21) \text{ K}} \\ m &amp;= \frac{506.625}{0.287 \text{ kJ/kgK} \times 294 \text{ K}} \\ m &amp;= \frac{506.625}{84.378} \\ &amp;= 6.00 \text{ kg} \end{aligned}
+   $$
+  </p>
+  <p>
+   The amount of heat needed is calculated using the equation
+   \(
+    Q = mC_v(T_2 - T_1)
+   \)
+   :
+  </p>
+  <p>
+   $$
+    \begin{aligned} Q &amp;= mC_v(T_2 - T_1) \\ Q &amp;= 6 \text{ kg} \times 716 \text{ J/kg}^\circ\text{C} \times (45 - 21)^\circ\text{C} \\ Q &amp;= 6 \text{ kg} \times 716 \text{ J/kg}^\circ\text{C} \times 24^\circ\text{C} \\ Q &amp;= 103104 \text{ J} \\ Q &amp;= \mathbf{103.1 \text{ kJ}} \text{ (Ans.)} \end{aligned}
+   $$
+  </p>
+  <h3>
+   Objective 4
+  </h3>
+  <p>
+   <b>
+    Explain the relationship between work and heat.
+   </b>
+  </p>
+  <h4>
+   CONCEPT OF HEAT
+  </h4>
+  <p>
+   Heat is the energy associated with the motion of molecules within a body. Heat can be converted to or from other forms of energy. Temperature is a measurement of the addition or subtraction of heat to or from a body. Temperature measurements provide a quantifiable comparison of the relative amounts of heat in different bodies or systems.
+  </p>
+  <p>
+   When two substances at different temperatures come into contact with each other, over time their temperatures equalize. Heat is transferred from the hotter object to the colder one. There is a transfer of energy but it is necessary to understand what occurs at the microscopic molecular level to fully explain what happens.
+  </p>
+  <h4>
+   FIRST LAW OF THERMODYNAMICS
+  </h4>
+  <p>
+   There is a very close relationship between heat and mechanical energy, or work, which is called the “mechanical equivalent” of heat. During compression, work is applied to a gas and causes an increase in its internal energy. Heat and work are just different forms of energy. Expansion and compression of gases depend on this fact.
+  </p>
+  <p>
+   The First Law of Thermodynamics states that work and heat are mutually convertible. This is evidenced by the units of measure of work and heat. Work is the product of force and distance and is measured in Nm or kNm. Heat and other forms of energy are measured in Joules or kJ. One kNm is equivalent to one kJ. That is, one unit of work done is equivalent to one unit of energy which is either expended or made available.
+  </p>
+  <p>
+   If work is applied to a system, there is a corresponding increase in the internal energy in the system which is measured by the amount of heat contained within the system. For example, if a gas is compressed and no heat is allowed to escape from the system, this is measurable by an increase in its temperature. Expansion causes a reduction of heat energy and a decrease in temperature as work is completed.
+  </p>
+  <p>
+   The equation that goes with the First Law is:
+  </p>
+  <p>
+   $$
+    \Delta U = Q - W
+   $$
+  </p>
+  <p>
+   where
+   \(
+    U
+   \)
+   is a measure of the internal energy of the system,
+   \(
+    Q
+   \)
+   is a measure of heat flow, and
+   \(
+    W
+   \)
+   is a measure of work done.
+  </p>
+  <h4>
+   SECOND LAW OF THERMODYNAMICS
+  </h4>
+  <p>
+   The Second Law of Thermodynamics states that work must be done to transfer heat from one system to another. It is impossible for heat to flow from a colder system to a hotter one without expending energy in the form of work.
+  </p>
+  <p>
+   This principle led to the development of theoretical thermodynamic cycles that uses heat to produce work and also ones that use work to transfer heat such as in refrigeration. For the moment, we will consider the work required to compress gases and the work that can be done by the expansion of a gas. It will be seen in the following objectives that work can be done on a gas in a several different ways that depend essentially on how heat flows in the system due to compression or expansion.
+  </p>
+  <h3>
+   Objective 5
+  </h3>
+  <p>
+   <b>
+    Calculate the work done during expansion and compression under constant pressure and isothermal conditions.
+   </b>
+  </p>
+  <h3>
+   WORK AT CONSTANT PRESSURE
+  </h3>
+  <p>
+   Studies of expansion and compression of gases are of interest to the power engineer to allow the calculation, for example, the work which can be done by an expanding gas in an internal combustion engine or the work which is required to be done upon a quantity of air in a compressor.
+  </p>
+  <p>
+   Expansion and compression of gases may be carried out under many different circumstances. It is customary to study certain set conditions and to use these as a guide to the actual operating conditions which may exist in an item of plant.
+  </p>
+  <p>
+   An expansion or a compression taking place at constant pressure is represented on a
+   <i>
+    PV
+   </i>
+   diagram as shown in Fig. 3. The line 1 - 2 represents an expansion at constant pressure
+   <i>
+    P
+   </i>
+   from volume
+   <i>
+    V
+   </i>
+   <sub>
+    1
+   </sub>
+   to volume
+   <i>
+    V
+   </i>
+   <sub>
+    2
+   </sub>
+   . Assuming that the pressure remains the same, the relationship between pressure and volume is shown on the graph in Fig. 3. A process at constant pressure is called isobaric.
+  </p>
+  <img alt="Figure 3: A Pressure-Volume (PV) diagram showing an isobaric expansion process. The vertical axis is labeled 'Pressure' and the horizontal axis is labeled 'Volume'. A horizontal line segment connects point 1 (at volume V1) to point 2 (at volume V2). The area under this line, bounded by the vertical axis and the vertical dashed lines at V1 and V2, is shaded with diagonal lines, representing the work done during the expansion." src="bd4617f25d15430eb78c2d6d75a99dde_img.jpg"/>
+  <div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+   <div class="img-alt">
+    Figure 3: A Pressure-Volume (PV) diagram showing an isobaric expansion process. The vertical axis is labeled 'Pressure' and the horizontal axis is labeled 'Volume'. A horizontal line segment connects point 1 (at volume V1) to point 2 (at volume V2). The area under this line, bounded by the vertical axis and the vertical dashed lines at V1 and V2, is shaded with diagonal lines, representing the work done during the expansion.
+   </div>
+  </div>
+  <p>
+   Figure 3
+   <br/>
+   <i>
+    Work Done at Constant Pressure
+   </i>
+  </p>
+  <p>
+   A constant volume process (called isochoric) does not cause any work to be done because the area is zero.
+   \(
+    (V_2 - V_1) = 0
+   \)
+   . This can be seen in Fig. 4.
+  </p>
+  <img alt="A graph showing Pressure on the vertical axis and Volume on the horizontal axis. A horizontal dashed line represents constant pressure. A vertical dashed line at the right end of the horizontal line is labeled V1 = V2, indicating a process at constant volume." src="60e9207be66a64332619bb4b667fe67b_img.jpg"/>
+  <div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+   <div class="img-alt">
+    A graph showing Pressure on the vertical axis and Volume on the horizontal axis. A horizontal dashed line represents constant pressure. A vertical dashed line at the right end of the horizontal line is labeled V1 = V2, indicating a process at constant volume.
+   </div>
+  </div>
+  <p>
+   Figure 4
+   <br/>
+   Work Done at Constant Volume
+  </p>
+  <h5>
+   Example 5
+  </h5>
+  <p>
+   2712 kNm of work is done to compress 5 m
+   <sup>
+    3
+   </sup>
+   of a gas to a volume of 1 m
+   <sup>
+    3
+   </sup>
+   . If the work is done at constant pressure, what is the pressure?
+  </p>
+  <h5>
+   Answer
+  </h5>
+  <p>
+   Using the equation Work done =
+   \(
+    P(V_2 - V_1)
+   \)
+   Nm, the pressure is:
+  </p>
+  <p>
+   $$
+    \text{Work done } (W) = P(V_2 - V_1) \text{ Nm}
+   $$
+  </p>
+  <p>
+   $$
+    P(V_2 - V_1) = W
+   $$
+  </p>
+  <p>
+   $$
+    P = \frac{W}{V_2 - V_1}
+   $$
+  </p>
+  <p>
+   $$
+    P = \frac{2712 \text{ kNm}}{(5-1) \text{ m}^3}
+   $$
+  </p>
+  <p>
+   $$
+    P = \frac{2712 \text{ kNm}}{4 \text{ m}^3}
+   $$
+  </p>
+  <p>
+   $$
+    P = 678 \text{ kN/m}^2
+   $$
+  </p>
+  <p>
+   $$
+    P = 678 \text{ kPa (absolute) (Ans.)}
+   $$
+  </p>
+  <h4>
+   WORK AT CONSTANT TEMPERATURE
+  </h4>
+  <p>
+   Another possible compression or expansion process is one that occurs at constant temperature or an isothermal process.
+  </p>
+  <p>
+   An isothermal process for an ideal or perfect gas follows Boyle's Law as shown in the equation
+   \(
+    PV = \text{constant}
+   \)
+   and illustrated in Fig. 5. Because compression normally causes an increase in temperature, heat has to be removed from the system for it to remain at a constant temperature. This is not normally fully achieved in a compressor because of the difficulty of doing so. There are some isothermal compressors with cooling jackets around them to extract heat. An isothermal compression process requires less work than an adiabatic compression process, but may require additional energy to remove the heat generated during compression.
+  </p>
+  <img alt="Figure 5: A graph showing Pressure (P) on the vertical axis and Volume (V) on the horizontal axis. Two curves are shown, labeled T1 and T2, representing isothermal processes. The curve T1 is above T2. A point on T1 is marked with a dot, and a horizontal dashed line extends from it to the P-axis at P1. A point on T2 is marked with a dot, and a horizontal dashed line extends from it to the P-axis at P2. The volume axis is labeled 'Volume V'." src="a289b64f80c6df506c0c55d553fc4496_img.jpg"/>
+  <div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+   <div class="img-alt">
+    Figure 5: A graph showing Pressure (P) on the vertical axis and Volume (V) on the horizontal axis. Two curves are shown, labeled T1 and T2, representing isothermal processes. The curve T1 is above T2. A point on T1 is marked with a dot, and a horizontal dashed line extends from it to the P-axis at P1. A point on T2 is marked with a dot, and a horizontal dashed line extends from it to the P-axis at P2. The volume axis is labeled 'Volume V'.
+   </div>
+  </div>
+  <p>
+   Figure 5
+   <br/>
+   <i>
+    Isothermal Expansion or Compression Process
+   </i>
+  </p>
+  <p>
+   The work done by an isothermal process is shown in Fig. 6. The following equations show how the area under the curve is calculated.
+  </p>
+  <img alt="Figure 6: A graph showing Pressure (P) on the vertical axis and Volume (V) on the horizontal axis. A curve is shown, representing an isothermal process. The area under the curve between two volumes, V1 and V2, is shaded with diagonal lines. The pressure at V1 is labeled P1, and the pressure at V2 is labeled P2. A small vertical strip of the shaded area is highlighted with a double vertical line, and its width is labeled dV. The pressure at this strip is labeled P. The volume axis is labeled 'Volume' with an arrow pointing right." src="65a9654ccb3d0d452378b0f4c0c392f7_img.jpg"/>
+  <div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+   <div class="img-alt">
+    Figure 6: A graph showing Pressure (P) on the vertical axis and Volume (V) on the horizontal axis. A curve is shown, representing an isothermal process. The area under the curve between two volumes, V1 and V2, is shaded with diagonal lines. The pressure at V1 is labeled P1, and the pressure at V2 is labeled P2. A small vertical strip of the shaded area is highlighted with a double vertical line, and its width is labeled dV. The pressure at this strip is labeled P. The volume axis is labeled 'Volume' with an arrow pointing right.
+   </div>
+  </div>
+  <p>
+   Figure 6
+   <br/>
+   <i>
+    Work Done at Constant Temperature
+   </i>
+  </p>
+  <p>
+   The area under the curve is determined by taking a small strip of volume
+   \(
+    dV
+   \)
+   and then using calculus to integrate the volume from
+   \(
+    V_1
+   \)
+   to
+   \(
+    V_2
+   \)
+   . In mathematical terms, this is shown as:
+  </p>
+  <p>
+   $$
+    W = \int_{V_1}^{V_2} PdV
+   $$
+  </p>
+  <p>
+   The pressure varies with volume so Boyle's Law is substituted for the pressure as follows:
+  </p>
+  <p>
+   $$
+    W = \int_{V_1}^{V_2} PdV = \int_{V_1}^{V_2} \frac{\text{constant}}{V} dV
+   $$
+  </p>
+  <p>
+   Integrating this equation mathematically gives the equation:
+  </p>
+  <p>
+   $$
+    W = \text{constant} \times \ln \frac{V_2}{V_1}
+   $$
+  </p>
+  <p>
+   Using Boyle's Law again, the constant is replaced by
+   \(
+    PV
+   \)
+   (any combination of pressure and volume along the curve can be used although the logical options are
+   \(
+    P_1V_1
+   \)
+   or
+   \(
+    P_2V_2
+   \)
+   ) to give the equation:
+  </p>
+  <p>
+   $$
+    W = PV \ln \frac{V_2}{V_1}
+   $$
+  </p>
+  <p>
+   Note that
+   <b>
+    ln
+   </b>
+   (sometimes written as
+   \(
+    \log_e
+   \)
+   ) refers to the natural logarithm
+   \(
+    e
+   \)
+   which uses the number 2.7183 as the base.
+   \(
+    P
+   \)
+   refers to absolute pressure.
+  </p>
+  <p>
+   If the temperature is known, the general gas equation is applied,
+   \(
+    PV = mRT
+   \)
+   :
+  </p>
+  <p>
+   $$
+    W = PV \ln \frac{V_2}{V_1}
+   $$
+  </p>
+  <p>
+   $$
+    \text{but } PV = mRT
+   $$
+  </p>
+  <p>
+   $$
+    W = mRT \ln \frac{V_2}{V_1}
+   $$
+  </p>
+  <p>
+   Either version of this equation can be expressed in terms of pressure rather than volume by using the equation
+   \(
+    P_1V_1 = P_2V_2
+   \)
+   , so that equation
+   \(
+    W = PV \ln \frac{V_2}{V_1}
+   \)
+   becomes:
+  </p>
+  <p>
+   $$
+    W = PV \ln \frac{P_1}{P_2}
+   $$
+  </p>
+  <h5>
+   Example 6
+  </h5>
+  <p>
+   A quantity of air with an initial volume of
+   \(
+    20 \text{ m}^3
+   \)
+   at a pressure of
+   \(
+    700 \text{ kPa}
+   \)
+   (absolute) is expanded to a pressure of
+   \(
+    100 \text{ kPa}
+   \)
+   . What work is done under isothermal conditions?
+  </p>
+  <h5>
+   Answer
+  </h5>
+  <p>
+   For isothermal work, expansion occurs at a constant temperature. Because the two pressures are known, the applicable equation is
+   \(
+    W = PV \ln \frac{P_1}{P_2}
+   \)
+   :
+  </p>
+  <p>
+   $$
+    \begin{aligned} W &amp;= P_1V_1 \ln \frac{P_1}{P_2} \\ &amp;= 700 \text{ kPa} \times 20 \text{ m}^3 \ln \frac{700 \text{ kPa}}{100 \text{ kPa}} \\ &amp;= 14 \, 000 \text{ kNm} \times 1.9459 \\ &amp;= 27 \, 243 \text{ kNm (Ans.)} \end{aligned}
+   $$
+  </p>
+  <h4>
+   Example 7
+  </h4>
+  <p>
+   A volume of
+   \(
+    10 \text{ m}^3
+   \)
+   of air at a pressure of
+   \(
+    280 \text{ kPa}
+   \)
+   (absolute) is expanded to a volume of
+   \(
+    25 \text{ m}^3
+   \)
+   . What work is done under isothermal conditions?
+  </p>
+  <h5>
+   Answer
+  </h5>
+  <p>
+   Since the two volumes are known, the applicable equation is
+   \(
+    W = PV \ln \frac{V_2}{V_1}
+   \)
+   so that the work at constant temperature is:
+  </p>
+  <p>
+   $$
+    \begin{aligned} W &amp;= P_1 V_1 \ln \frac{V_2}{V_1} \\ W &amp;= 280 \text{ kPa} \times 10 \text{ m}^3 \times \ln \frac{25 \text{ m}^3}{10 \text{ m}^3} \\ W &amp;= 280 \text{ kPa} \times 10 \text{ m}^3 \times \ln 2.5 \text{ m}^3 \\ W &amp;= 2800 \text{ kNm} \times 0.9163 \\ &amp;= 2565.61 \text{ kNm (Ans.)} \end{aligned}
+   $$
+  </p>
+  <h3>
+   Objective 6
+  </h3>
+  <p>
+   <b>
+    Calculate the work done during adiabatic expansion and compression.
+   </b>
+  </p>
+  <h4>
+   ADIABATIC COMPRESSION AND EXPANSION
+  </h4>
+  <p>
+   During many expansion and compression processes, there is not sufficient opportunity for the heat to flow out of or into the working fluid. This process, called adiabatic, occurs when no heat moves across the system boundary. This means that during compression, heat is retained and the temperature of the working fluid increases. During expansion, the temperature decreases.
+  </p>
+  <p>
+   In an adiabatic process, the relationship between pressure and volume is re-written to include the ratio of specific heats
+   \(
+    C_p / C_v
+   \)
+   or
+   \(
+    \gamma
+   \)
+   . The adiabatic version of the pressure-volume relationship is:
+  </p>
+  <p>
+   $$
+    PV^\gamma = \text{constant}
+   $$
+  </p>
+  <p>
+   Another way to express this is with the equation:
+  </p>
+  <p>
+   $$
+    P_1 V_1^\gamma = P_2 V_2^\gamma
+   $$
+  </p>
+  <p>
+   An adiabatic process is shown graphically in Fig. 7.
+  </p>
+  <img alt="Figure 7: A graph showing an adiabatic expansion or compression process. The vertical axis is labeled 'Pressure P' and the horizontal axis is labeled 'Volume V'. Two curves are shown, labeled T1 and T2. The curve T1 is above the curve T2. A point on the T1 curve is marked with a dot, and a horizontal dashed line extends from it to the P1 label on the vertical axis. Another point on the T2 curve is marked with a dot, and a horizontal dashed line extends from it to the P2 label on the vertical axis. The P1 label is higher than the P2 label on the vertical axis." src="155bd5ec49c26532be9f04b06904002e_img.jpg"/>
+  <div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+   <div class="img-alt">
+    Figure 7: A graph showing an adiabatic expansion or compression process. The vertical axis is labeled 'Pressure P' and the horizontal axis is labeled 'Volume V'. Two curves are shown, labeled T1 and T2. The curve T1 is above the curve T2. A point on the T1 curve is marked with a dot, and a horizontal dashed line extends from it to the P1 label on the vertical axis. Another point on the T2 curve is marked with a dot, and a horizontal dashed line extends from it to the P2 label on the vertical axis. The P1 label is higher than the P2 label on the vertical axis.
+   </div>
+  </div>
+  <p>
+   Figure 7
+   <br/>
+   <i>
+    Adiabatic Expansion or Compression Process
+   </i>
+  </p>
+  <p>
+   To calculate the work involved in an adiabatic process, substitute into the equation
+  </p>
+  <p>
+   $$
+    W = \int_{V_1}^{V_2} P dV :
+   $$
+  </p>
+  <p>
+   $$
+    W = \int_{V_1}^{V_2} P dV = \int_{V_1}^{V_2} \frac{\text{constant}}{V^\gamma} dV
+   $$
+  </p>
+  <p>
+   This equation is then solved using calculus to give:
+  </p>
+  <p>
+   $$
+    W = \frac{P_1 V_1 - P_2 V_2}{\gamma - 1}
+   $$
+  </p>
+  <h5>
+   Example 8
+  </h5>
+  <p>
+   A volume of
+   \(
+    10 \text{ m}^3
+   \)
+   of air at a pressure of
+   \(
+    280 \text{ kPa}
+   \)
+   is expanded to a volume of
+   \(
+    25 \text{ m}^3
+   \)
+   . What work is done under adiabatic conditions? (Assume that
+   \(
+    C_p = 1.005
+   \)
+   and
+   \(
+    C_v = 0.7118
+   \)
+   )
+  </p>
+  <h5>
+   Answer
+  </h5>
+  <p>
+   The ratio of specific heats is first calculated from the equation
+   \(
+    \gamma = \frac{C_p}{C_v}
+   \)
+   as:
+  </p>
+  <p>
+   $$
+    \begin{aligned} \gamma &amp;= \frac{C_p}{C_v} \\ &amp;= \frac{1.005}{0.7118} \\ &amp;= 1.412 \end{aligned}
+   $$
+  </p>
+  <p>
+   Pressure
+   \(
+    P_2
+   \)
+   can then be calculated using the equation
+   \(
+    P_1 V_1^\gamma = P_2 V_2^\gamma
+   \)
+   :
+  </p>
+  <p>
+   $$
+    \begin{aligned} P_1 V_1^\gamma &amp;= P_2 V_2^\gamma \\ P_2 V_2^\gamma &amp;= P_1 V_1^\gamma \\ P_2 &amp;= \frac{P_1 V_1^\gamma}{V_2^\gamma} \\ P_2 &amp;= \frac{280 \text{ kPa} \times 10^{1.412} \text{ m}^3}{25^{1.412} \text{ m}^3} \\ P_2 &amp;= 280 \text{ kPa} \times 0.2742 \\ P_2 &amp;= 76.78 \text{ kPa} \end{aligned}
+   $$
+  </p>
+  <p>
+   The work is calculated from the equation
+   \(
+    W = \frac{P_1V_1 - P_2V_2}{\gamma - 1}
+   \)
+   :
+  </p>
+  <p>
+   $$
+    W = \frac{P_1V_1 - P_2V_2}{\gamma - 1}
+   $$
+  </p>
+  <p>
+   $$
+    W = \frac{(280 \text{ kPa} \times 10 \text{ m}^3) - (76.78 \text{ kPa} \times 25 \text{ m}^3)}{1.412 - 1 \text{ kNm}}
+   $$
+  </p>
+  <p>
+   $$
+    W = \frac{2800 - 1919.50}{0.412}
+   $$
+  </p>
+  <p>
+   $$
+    W = \frac{880.50}{0.412}
+   $$
+  </p>
+  <p>
+   $$
+    W = 2137.14 \text{ kNm (Ans.)}
+   $$
+  </p>
+  <h3>
+   Objective 7
+  </h3>
+  <p>
+   <b>
+    Calculate the work done during polytropic expansion and compression.
+   </b>
+  </p>
+  <h3>
+   POLYTROPIC COMPRESSION AND EXPANSION
+  </h3>
+  <p>
+   In most situations, the expansion or compression process is neither isothermal nor adiabatic. Some heat is always expended during expansion and retained during compression. This condition of non-constancy of pressure, volume and heat flow is called a polytropic process. To deal with this situation, the approach is taken to define a coefficient
+   \(
+    n
+   \)
+   which takes the place of
+   \(
+    \gamma
+   \)
+   . The relationship between pressure and volume then is stated as:
+  </p>
+  <p>
+   $$
+    PV^n = \text{constant}
+   $$
+  </p>
+  <p>
+   The alternate version is:
+  </p>
+  <p>
+   $$
+    P_1 V_1^n = P_2 V_2^n
+   $$
+  </p>
+  <p>
+   Graphically, this relationship can be illustrated as in Fig. 8. Note that the polytropic curve falls in between the isothermal and adiabatic curves. The value of
+   \(
+    n
+   \)
+   is more than 1 (isothermal) and less than
+   \(
+    \gamma
+   \)
+   .
+  </p>
+  <img alt="Figure 8: A graph showing Pressure (P) on the vertical axis and Volume (V) on the horizontal axis. Three curves are shown: an upper solid curve labeled T1 (isothermal), a lower solid curve labeled T2 (adiabatic), and a dashed curve between them (polytropic). The polytropic curve starts at point 1 (P1, V1) and ends at point 2 (P2, V2). Horizontal dashed lines connect P1 and P2 to the vertical axis. The curves show that for a given volume change, the pressure drop is greatest for the adiabatic process and least for the isothermal process, with the polytropic process falling in between." src="fbfbd4dd5363c5bd548a8e871d0fce40_img.jpg"/>
+  <div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+   <div class="img-alt">
+    Figure 8: A graph showing Pressure (P) on the vertical axis and Volume (V) on the horizontal axis. Three curves are shown: an upper solid curve labeled T1 (isothermal), a lower solid curve labeled T2 (adiabatic), and a dashed curve between them (polytropic). The polytropic curve starts at point 1 (P1, V1) and ends at point 2 (P2, V2). Horizontal dashed lines connect P1 and P2 to the vertical axis. The curves show that for a given volume change, the pressure drop is greatest for the adiabatic process and least for the isothermal process, with the polytropic process falling in between.
+   </div>
+  </div>
+  <p>
+   Figure 8
+   <br/>
+   Polytropic Expansion Process
+  </p>
+  <p>
+   The calculation for work is similar to one for an adiabatic process except that
+   \(
+    \gamma
+   \)
+   is replaced by
+   \(
+    n
+   \)
+   .
+  </p>
+  <p>
+   $$
+    W = \frac{P_1V_1 - P_2V_2}{n-1}
+   $$
+  </p>
+  <h4>
+   Example 9
+  </h4>
+  <p>
+   A volume of
+   \(
+    10 \text{ m}^3
+   \)
+   of air at a pressure of
+   \(
+    280 \text{ kPa}
+   \)
+   (absolute) is expanded to a volume of
+   \(
+    25 \text{ m}^3
+   \)
+   . What work is done under polytropic conditions? (Assume that
+   \(
+    n = 1.2
+   \)
+   )
+  </p>
+  <h5>
+   Answer
+  </h5>
+  <p>
+   Pressure
+   \(
+    P_2
+   \)
+   is calculated using the equation
+   \(
+    P_1V_1^n = P_2V_2^n
+   \)
+   :
+  </p>
+  <p>
+   $$
+    \begin{aligned} P_1V_1^n &amp;= P_2V_2^n \\ P_2V_2^n &amp;= P_1V_1^n \\ P_2 &amp;= \frac{P_1V_1^n}{V_2^n} \\ P_2 &amp;= \frac{280 \text{ kPa} \times 10^{1.2} \text{ m}^3}{25^{1.2} \text{ m}^3} \\ P_2 &amp;= \frac{280 \text{ kPa} \times 15.85 \text{ m}^3}{47.59 \text{ m}^3} \\ P_2 &amp;= \frac{4438}{47.59 \text{ m}^3} \\ P_2 &amp;= 93.25 \text{ kNm (Ans.)} \end{aligned}
+   $$
+  </p>
+  <p>
+   The work is calculated using equation
+   \(
+    W = \frac{P_1V_1 - P_2V_2}{n-1}
+   \)
+   :
+  </p>
+  <p>
+   $$
+    \begin{aligned} W &amp;= \frac{P_1V_1 - P_2V_2}{n-1} \\ W &amp;= \frac{(280 \text{ kPa} \times 10 \text{ m}^3) - (93.25 \text{ kPa} \times 25 \text{ m}^3)}{1.2-1} \\ W &amp;= \frac{2800 - 2331.25}{1.2-1} \\ W &amp;= \frac{2800 - 2331.25}{0.2} \\ W &amp;= \frac{468.75}{0.2} \\ &amp;= 2343.75 \text{ kNm (Ans.)} \end{aligned}
+   $$
+  </p>
+  <h4>
+   COMPARISON OF COMPRESSION AND EXPANSION PROCESSES
+  </h4>
+  <p>
+   The previous examples have shown that for an expansion process, the most work is extracted for a given increase in volume if the process is at constant pressure, followed by isothermal and polytropic processes. The least expansion work can be extracted if it is done adiabatically. This can be confirmed by inspecting the areas under the curves shown in Fig. 9.
+  </p>
+  <img alt="Figure 9: Comparison of Expansion Processes. A P-V diagram showing expansion curves from an initial state to a final volume V. The curves are labeled Isobaric, Isothermal, Polytropic, and Adiabatic. The final states are marked on isotherms T1 and T2." src="a844248c1fa0a79f187fc9aa111182f7_img.jpg"/>
+  <div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+   <p>
+    A Pressure (P) vs. Volume (V) diagram illustrating expansion processes. The vertical axis is labeled 'Pressure P' and the horizontal axis 'Volume V'. Four curves originate from a common initial state at a smaller volume and expand to a larger final volume
+    \(
+     V
+    \)
+    .
+    <ul style="list-style-type: none">
+     <li>
+      <b>
+       Isobaric:
+      </b>
+      A horizontal dashed line at constant pressure.
+     </li>
+     <li>
+      <b>
+       Isothermal:
+      </b>
+      A solid curve following a constant temperature line
+      \(
+       T_1
+      \)
+      .
+     </li>
+     <li>
+      <b>
+       Polytropic:
+      </b>
+      A solid curve situated between the isothermal and adiabatic lines.
+     </li>
+     <li>
+      <b>
+       Adiabatic:
+      </b>
+      The steepest solid curve, ending at a lower pressure on isotherm
+      \(
+       T_2
+      \)
+      .
+     </li>
+    </ul>
+    The area under each curve represents work. The isobaric process has the largest area, and the adiabatic has the smallest.
+   </p>
+   <div class="img-alt">
+    Figure 9: Comparison of Expansion Processes. A P-V diagram showing expansion curves from an initial state to a final volume V. The curves are labeled Isobaric, Isothermal, Polytropic, and Adiabatic. The final states are marked on isotherms T1 and T2.
+   </div>
+  </div>
+  <p>
+   <i>
+    Figure 9
+   </i>
+   <br/>
+   <i>
+    Comparison of Expansion Processes
+   </i>
+  </p>
+  <p>
+   Compression is the opposite. Isothermal compression takes the least amount of work and adiabatic requires the most, with polytropic in between. The comparison for compression processes is illustrated in Fig. 10.
+  </p>
+  <img alt="Figure 10: Comparison of Compression Processes. A P-V diagram showing compression curves from an initial state 1 to a final volume. Curves are labeled Isothermal, Polytropic, and two Adiabatic lines." src="bac21fd48fcd7f025c723590e07d1823_img.jpg"/>
+  <div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+   <p>
+    A Pressure (P) vs. Volume (V) diagram illustrating compression processes. The vertical axis is 'Pressure P' and the horizontal axis is 'Volume V'. The processes start from an initial state (labeled 1) at a larger volume and compress to a smaller final volume.
+    <ul style="list-style-type: none">
+     <li>
+      <b>
+       Isothermal:
+      </b>
+      The lowest solid curve, following isotherm
+      \(
+       T_2
+      \)
+      .
+     </li>
+     <li>
+      <b>
+       Polytropic:
+      </b>
+      A solid curve above the isothermal line.
+     </li>
+     <li>
+      <b>
+       Adiabatic:
+      </b>
+      Two solid curves (both labeled 'Adiabatic') that rise more steeply than the others, ending at higher pressures near state 2 on isotherm
+      \(
+       T_1
+      \)
+      .
+     </li>
+    </ul>
+    The area under the curves represents work required; the isothermal curve has the smallest area (least work), while the adiabatic curves have the largest area (most work).
+   </p>
+   <div class="img-alt">
+    Figure 10: Comparison of Compression Processes. A P-V diagram showing compression curves from an initial state 1 to a final volume. Curves are labeled Isothermal, Polytropic, and two Adiabatic lines.
+   </div>
+  </div>
+  <p>
+   <i>
+    Figure 10
+   </i>
+   <br/>
+   <i>
+    Comparison of Compression Processes
+   </i>
+  </p>
+  <h2>
+   Chapter Questions
+  </h2>
+  <h1>
+   A2.1
+  </h1>
+  <ol style="list-style-type: none">
+   <li>
+    1. A receiver contains
+    \(
+     1.5 \text{ m}^3
+    \)
+    of air at
+    \(
+     860 \text{ kPa}
+    \)
+    and
+    \(
+     20^\circ\text{C}
+    \)
+    . Calculate the final temperature after
+    \(
+     2.75 \text{ kg}
+    \)
+    of air is added. (
+    \(
+     R
+    \)
+    for air =
+    \(
+     0.287 \text{ kJ/kgK}
+    \)
+    )
+   </li>
+   <li>
+    2.
+    \(
+     2 \text{ m}^3
+    \)
+    volumes of hydrogen at atmospheric pressure in a closed vessel needs to be heated from
+    \(
+     0^\circ\text{C}
+    \)
+    to
+    \(
+     21^\circ\text{C}
+    \)
+    . If the specific heat is
+    \(
+     10070 \text{ J/kg}^\circ\text{C}
+    \)
+    , how much heat is required? (
+    \(
+     R
+    \)
+    for hydrogen =
+    \(
+     4.124 \text{ kJ/kgK}
+    \)
+    )
+   </li>
+   <li>
+    3. A tank with a volume of
+    \(
+     5 \text{ m}^3
+    \)
+    is half full of water. The top half of the tank contains
+    \(
+     2.75 \text{ kg}
+    \)
+    of air at atmospheric pressure. If the partial pressure of water is
+    \(
+     7.3814 \text{ kPa}
+    \)
+    , what is the temperature of the air in the tank? (
+    \(
+     R
+    \)
+    for air =
+    \(
+     0.287 \text{ kJ/kgK}
+    \)
+    )
+   </li>
+   <li>
+    4. The values of the specific heats of a gas at constant pressure and at constant volume are
+    \(
+     0.9839
+    \)
+    and
+    \(
+     0.7285
+    \)
+    , respectively. Find the value of
+    \(
+     \gamma
+    \)
+    for this gas. If
+    \(
+     1.8 \text{ kg}
+    \)
+    of this gas is heated from
+    \(
+     16^\circ\text{C}
+    \)
+    to
+    \(
+     155^\circ\text{C}
+    \)
+    , find the heat absorbed if the heating takes place at
+    <ol style="list-style-type: none">
+     <li>
+      a) Constant pressure
+     </li>
+     <li>
+      b) Constant volume.
+     </li>
+    </ol>
+   </li>
+   <li>
+    5. With respect to compression and expansion processes, define the following:
+    <ol style="list-style-type: none">
+     <li>
+      (a) Isothermal process
+     </li>
+     <li>
+      (b) Adiabatic process
+     </li>
+     <li>
+      (c) Polytropic process
+     </li>
+    </ol>
+   </li>
+   <li>
+    6.
+    \(
+     100 \text{ m}^3
+    \)
+    of a perfect gas at atmospheric pressure and a temperature of
+    \(
+     21^\circ\text{C}
+    \)
+    is compressed to
+    \(
+     25 \text{ m}^3
+    \)
+    . What work is required if the gas is compressed:
+    <ol style="list-style-type: none">
+     <li>
+      a) Isothermally
+     </li>
+     <li>
+      b) Adiabatically (Assume
+      \(
+       \gamma = 1.32
+      \)
+      )
+     </li>
+     <li>
+      c) Polytropically (Assume
+      \(
+       n = 1.18
+      \)
+      )
+     </li>
+    </ol>
+   </li>
+  </ol>
+ </body>
+</html>

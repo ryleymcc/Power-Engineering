@@ -1,0 +1,2539 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="utf-8"/>
+<script>
+    MathJax = {
+      tex: {
+        inlineMath: [['\\(', '\\)']],
+        displayMath: [['$$', '$$']]
+      }
+    };
+    </script>
+<script async="" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+<div id="nav-header" style="padding: 15px 20px; background: #2c3e50; color: white; display: flex; align-items: center; gap: 20px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+<a href="../index.html" style="color: white; text-decoration: none; background: #34495e; padding: 8px 16px; border-radius: 4px; font-weight: 600; font-size: 0.9rem; transition: background 0.2s;">← Back to Index</a>
+<h1 style="margin: 0; font-size: 1.2rem; font-weight: 500; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Power Engineering Series</h1>
+</div>
+<h1>
+   Direct Current Machines
+  </h1>
+<h2>
+   2
+  </h2>
+<h2>
+   Learning Outcome
+  </h2>
+<p>
+<i>
+    When you complete this learning material, you will be able to:
+   </i>
+</p>
+<p>
+   Explain the construction and operating principles of DC generators and motors.
+  </p>
+<h2>
+   Learning Objectives
+  </h2>
+<p>
+<i>
+    You will specifically be able to complete the following tasks:
+   </i>
+</p>
+<ol style="list-style-type: none">
+<li>
+    1. Describe the construction and operating principles of a DC generator.
+   </li>
+<li>
+    2. Explain the principle and application of compensating windings, interpoles and lap and wave armature windings.
+   </li>
+<li>
+    3. Explain the principles, applications, and load/voltage characteristics of generators.
+   </li>
+<li>
+    4. Describe the parallel operation and voltage regulation of DC generators.
+   </li>
+<li>
+    5. Review the principle of DC motor operation, including torque development and back emf.
+   </li>
+<li>
+    6. Calculate torque, speed and current of a DC motor.
+   </li>
+<li>
+    7. Explain the principle and application of shunt, series, and compound-wound DC motors including speed control.
+   </li>
+<li>
+    8. Explain the principle and application of counter-E, current limit, and time limit DC motor automatic starters.
+   </li>
+<li>
+    9. Explain the principle and application of dynamic and regenerative braking.
+   </li>
+<li>
+    10. Calculate efficiency and discuss the reasons for power losses in a DC motor and generator.
+   </li>
+</ol>
+<h2>
+   Objective 1
+  </h2>
+<p>
+<b>
+    Describe the construction and operating principles of a DC generator.
+   </b>
+</p>
+<h3>
+   INTRODUCTION
+  </h3>
+<p>
+   The magnetic/induction principles behind the operation of an AC generator are essentially the same as the principles associated with the operation of a DC generator. The fundamental difference between an AC generator and a DC generator lies in the design of the slip rings. In a DC generator, the slip rings are replaced by a device called a commutator (a commutator is sometimes called a split-ring commutator).
+  </p>
+<p>
+   Fig. 1(a) shows the slip rings of an AC generator delivering alternating current power to a load. Fig. 1(b) shows the commutator of a DC generator delivering direct current power to a load.
+  </p>
+<img alt="Figure 1: Comparison of AC and DC generator construction and output waveforms." src="af191c691aa1282801a350dbb14c7925_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<p>
+    Figure 1 consists of two parts, (a) and (b), illustrating the construction and output of AC and DC generators.
+   </p>
+<p>
+<b>
+     (a) AC Generator:
+    </b>
+    The top diagram shows a rotor with a single coil rotating between a North (N) and South (S) magnetic pole. The ends of the coil are connected to two continuous slip rings. Brushes make contact with these slip rings, which are then connected to a load. The bottom graph shows the output voltage waveform over one full cycle (0° to 360°). The voltage starts at 0V at 0°, rises to a peak of +10V at 90°, crosses zero at 180°, reaches a minimum of -10V at 270°, and returns to 0V at 360°.
+   </p>
+<p>
+<b>
+     (b) DC Generator:
+    </b>
+    The top diagram shows a similar rotor and magnetic pole setup, but the ends of the coil are connected to a split-ring commutator. Two brushes are in contact with the commutator segments, which are connected to a load. The bottom graph shows the output voltage waveform over one full cycle (0° to 360°). Due to the commutator, the output is a pulsating direct current, with two positive pulses: one from 0° to 180° (peaking at +10V at 90°) and another from 180° to 360° (peaking at +10V at 270°), with zero voltage at 0°, 180°, and 360°.
+   </p>
+<div class="img-alt">
+    Figure 1: Comparison of AC and DC generator construction and output waveforms.
+   </div>
+</div>
+<p>
+   Figure 1
+  </p>
+<p>
+   AC Generator
+  </p>
+<p>
+   DC Generator
+  </p>
+<p>
+   An AC generator is called an alternator, and a DC generator is called a dynamo. The rotating coil of a generator is called the rotor or armature.
+  </p>
+<h3>
+   Commutator
+  </h3>
+<p>
+   The commutator, shown in Fig. 1, is a mechanical rectifier that converts AC power into DC power. The commutator is a single slip ring that is split in half. Each half is insulated and connected to opposite ends of the rotating coil. Brushes allow current to flow to the connected load.
+  </p>
+<p>
+   The right-hand rule for generators is used to determine the current flow through the segments of the coil (see Fig. 2).
+  </p>
+<img alt="Diagram illustrating the Right-hand Rule for generators. A right hand is shown with the thumb pointing upwards, labeled 'Motion of Conductor'. The index finger points to the left, labeled 'Direction of Magnetic Field'. The middle finger points downwards and to the left, labeled 'Direction of Induced Current'." src="16d86083b7ebdc40c0647a1d3d46ace7_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<p>
+    The diagram shows a right hand in a generator configuration. The thumb is extended vertically upwards, representing the direction of motion of the conductor. The index finger is extended horizontally to the left, representing the direction of the magnetic field. The middle finger is extended vertically downwards and slightly to the left, representing the direction of the induced current. Arrows point from the text labels to the corresponding fingers.
+   </p>
+<div class="img-alt">
+    Diagram illustrating the Right-hand Rule for generators. A right hand is shown with the thumb pointing upwards, labeled 'Motion of Conductor'. The index finger points to the left, labeled 'Direction of Magnetic Field'. The middle finger points downwards and to the left, labeled 'Direction of Induced Current'.
+   </div>
+</div>
+<p>
+   Figure 2
+   <br/>
+   Right-hand Rule
+  </p>
+<p>
+   As the coil rotates, it allows current to leave in only one direction. Or, stated differently, the current has the same polarity as the coil is rotated through
+   \(
+    360^\circ
+   \)
+   .
+  </p>
+<p>
+   The operation of the commutator can be seen by following the coil as it rotates through
+   \(
+    360^\circ
+   \)
+   . The coil segments are labelled A and B, as shown in Fig. 3.
+  </p>
+<img alt="Figure 3: Coil Rotation. A series of five diagrams showing a rectangular coil (with segments A and B) rotating clockwise in a uniform magnetic field (indicated by an arrow pointing left). Each diagram shows the coil at a specific angle: 0°, 90°, 180°, 270°, and 360°. To the right of each coil position is a corresponding graph of induced EMF versus Time. The graphs show a rectified sine wave (all positive half-cycles) due to the commutator. The x-axis is labeled 'Time' with markers at 90°, 180°, 270°, and 360°. The y-axis has '+' and '-' indicators. The final graph at 360° includes a dashed horizontal line labeled 'RMS (Effective)'." src="de6e8b740c69dac308cce9edfec3eff4_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    Figure 3: Coil Rotation. A series of five diagrams showing a rectangular coil (with segments A and B) rotating clockwise in a uniform magnetic field (indicated by an arrow pointing left). Each diagram shows the coil at a specific angle: 0°, 90°, 180°, 270°, and 360°. To the right of each coil position is a corresponding graph of induced EMF versus Time. The graphs show a rectified sine wave (all positive half-cycles) due to the commutator. The x-axis is labeled 'Time' with markers at 90°, 180°, 270°, and 360°. The y-axis has '+' and '-' indicators. The final graph at 360° includes a dashed horizontal line labeled 'RMS (Effective)'.
+   </div>
+</div>
+<p align="center">
+<i>
+    Figure 3
+   </i>
+<br/>
+<i>
+    Coil Rotation
+   </i>
+</p>
+<ol style="list-style-type: none">
+<li>
+    At
+    \(
+     0^\circ
+    \)
+    : There is zero induced emf in the coil because segments A and B are moving parallel to the magnetic field.
+   </li>
+<li>
+    At
+    \(
+     90^\circ
+    \)
+    : Maximum emf is induced in the coil because segments A and B are moving at right angles to the magnetic field. Note the direction of current through the coil.
+   </li>
+<li>
+    At
+    \(
+     180^\circ
+    \)
+    : Zero emf is again induced because segments A and B are moving parallel to the magnetic field. It may seem that when the commutator is in this position the brushes would allow a short circuit between segments A and B of the armature coil. This is not the case because the induced emf is zero at the same instant that the brushes short the coil. This also holds true when the
+   </li>
+</ol>
+<p>
+   commutator is at
+   \(
+    0^\circ
+   \)
+   and at
+   \(
+    360^\circ
+   \)
+   . The point where no emf is induced in the rotating coil is called the neutral plain.
+  </p>
+<p>
+   At
+   \(
+    270^\circ
+   \)
+   : Maximum emf is induced in the coil because segments A and B are moving at right angles to the magnetic field. Note that the direction of current through the coil is the same as it was at
+   \(
+    90^\circ
+   \)
+   .
+  </p>
+<p>
+   At
+   \(
+    360^\circ
+   \)
+   : Zero emf is again induced because segments A and B are moving parallel to the magnetic field.
+  </p>
+<p>
+   As the armature continues to rotate, pulsating DC voltage and current are produced as shown. The voltage waveform shown in Fig. 3 has a significant ripple. This is the distance (or voltage) measured between the peaks and valleys of the waveform.
+  </p>
+<p>
+   The pulsating effect, or ripple effect, of the DC current shown in Fig. 3 is not desirable for most DC loads. In practical DC generators, more poles, armature coils, and commutator segments are added to reduce the pulsating effect of the induced DC voltage.
+  </p>
+<p>
+   Fig. 4 shows a more practical DC generator with 2 coils and 4 commutator segments.
+  </p>
+<img alt="Diagram of a DC generator with 2 coils and 4 commutator segments. The left side shows a 3D perspective of the armature with two coils (A and B) and a 4-segment commutator. A brush is shown in contact with one segment. The right side shows a graph of Voltage A and Voltage B over time (0 to 360 degrees). Voltage A starts at a peak at 0 degrees and decreases, while Voltage B starts at zero and increases. They cross at 45 degrees, labeled 'Switching Point Voltages are Equal'. The graph shows a pulsating DC output with a ripple." src="e1dda754c2c88a8ad0b968aea4fc0786_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<p>
+    The figure illustrates a DC generator with a 2-coil armature and a 4-segment commutator. On the left, a 3D diagram shows the armature with two coils, A and B, connected to a 4-segment commutator. A brush is in contact with one segment. The right side is a graph of Voltage A and Voltage B over a 360-degree rotation. Voltage A starts at a maximum at
+    \(
+     0^\circ
+    \)
+    and decreases, while Voltage B starts at zero and increases. They intersect at
+    \(
+     45^\circ
+    \)
+    , labeled as the 'Switching Point Voltages are Equal'. The resulting output is a pulsating DC voltage with a significant ripple.
+   </p>
+<div class="img-alt">
+    Diagram of a DC generator with 2 coils and 4 commutator segments. The left side shows a 3D perspective of the armature with two coils (A and B) and a 4-segment commutator. A brush is shown in contact with one segment. The right side shows a graph of Voltage A and Voltage B over time (0 to 360 degrees). Voltage A starts at a peak at 0 degrees and decreases, while Voltage B starts at zero and increases. They cross at 45 degrees, labeled 'Switching Point Voltages are Equal'. The graph shows a pulsating DC output with a ripple.
+   </div>
+</div>
+<p>
+<i>
+    Figure 4
+   </i>
+<br/>
+<i>
+    DC Generator with 2 Coils and 4 Commutator Segments
+   </i>
+</p>
+<p>
+   The commutator is divided into 4 segments because there are 4 ends to the 2 coils of the armature. A segment of the commutator passes under a brush every
+   \(
+    90^\circ
+   \)
+   as the armature rotates.
+  </p>
+<p>
+   At
+   \(
+    0^\circ
+   \)
+   : Coil A is generating maximum voltage and starting to decrease. Coil B is generating zero volts and starting to increase.
+  </p>
+<p>
+   At
+   \(
+    45^\circ
+   \)
+   : Coil A and Coil B are generating equal voltage. This means there is no potential difference between the voltages generated in each coil. This is the point where the coils are shorted by the brushes, but since there is voltage difference, the coil segments pass under the brushes without sparking.
+  </p>
+<p>
+   As the coils rotate through
+   \(
+    360^\circ
+   \)
+   , a net DC voltage is produced as shown in Fig. 4. Notice that the ripple has been significantly reduced. The effective, or RMS, value of the voltage is higher when more coils are added to the armature. See Fig. 5.
+  </p>
+<img alt="Figure 5: DC Waveform graph showing a pulsating DC voltage over one full cycle (0 to 360 degrees). The waveform has a periodic ripple. A horizontal dashed line represents the RMS (Effective) value of the voltage." src="73c3e4508cae529acf4e6c7fa70b361a_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<p>
+    The graph shows a DC waveform with a periodic ripple. The x-axis is labeled 'Time' and has markings for
+    \(
+     0^\circ
+    \)
+    ,
+    \(
+     90^\circ
+    \)
+    ,
+    \(
+     180^\circ
+    \)
+    ,
+    \(
+     270^\circ
+    \)
+    , and
+    \(
+     360^\circ
+    \)
+    . The y-axis represents voltage. A dashed horizontal line is labeled 'RMS (Effective)'.
+   </p>
+<div class="img-alt">
+    Figure 5: DC Waveform graph showing a pulsating DC voltage over one full cycle (0 to 360 degrees). The waveform has a periodic ripple. A horizontal dashed line represents the RMS (Effective) value of the voltage.
+   </div>
+</div>
+<p>
+   Figure 5
+   <br/>
+   DC Waveform
+  </p>
+<p>
+   The ripple in the DC waveform shown in Fig. 5 can be improved by adding more armature coils and commutator segments. It can also be improved by adding more poles, as shown in Fig. 6. More poles also provide a stronger field, and therefore a higher induced voltage.
+  </p>
+<img alt="Figure 6: 3D schematic diagram of a DC generator with four poles. It shows a central armature winding connected to a commutator with brushes. The stator has four magnetic poles labeled N (North) and S (South) arranged alternately. The output terminals are marked with '+' and '-' signs." src="0872c27ab0a48c6e88ef4f09f773872f_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<p>
+    The diagram illustrates a DC generator with four poles. The stator consists of four magnetic poles, two labeled 'N' (North) and two labeled 'S' (South), arranged in an alternating fashion. In the center is the armature, which is connected to a commutator. Brushes are shown in contact with the commutator, and the output is connected to terminals marked with '+' and '-' signs.
+   </p>
+<div class="img-alt">
+    Figure 6: 3D schematic diagram of a DC generator with four poles. It shows a central armature winding connected to a commutator with brushes. The stator has four magnetic poles labeled N (North) and S (South) arranged alternately. The output terminals are marked with '+' and '-' signs.
+   </div>
+</div>
+<p>
+   Figure 6
+   <br/>
+   DC Generator with 4 Poles
+  </p>
+<p>
+   Fig. 7 shows the stator frame of a DC generator. The three pole pairs (i.e. six poles) are visible in the photograph. The photograph also shows interpoles located between the pole pairs (Interpoles are discussed later in this module).
+  </p>
+<img alt="Figure 7: Stator Frame" src="c834b9abb4ddf70e5d10641f87d5ff5b_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<p>
+    A detailed black and white illustration of a stator frame, showing its outer casing and internal structure with radial and tangential ribs.
+   </p>
+<div class="img-alt">
+    Figure 7: Stator Frame
+   </div>
+</div>
+<p>
+<i>
+    Figure 7
+    <br/>
+    Stator Frame
+   </i>
+</p>
+<p>
+   Fig. 8 shows the armature. Visible from left to right are the commutator segments and coils. Next to the coils, a cooling fan is attached on the shaft of the armature.
+  </p>
+<img alt="Figure 8: Armature" src="efca2dce0095c9dc2a68e9af6b2bfd40_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<p>
+    A black and white illustration of an armature assembly, showing the commutator segments, armature coils, and a cooling fan mounted on the shaft.
+   </p>
+<div class="img-alt">
+    Figure 8: Armature
+   </div>
+</div>
+<p>
+<i>
+    Figure 8
+    <br/>
+    Armature
+   </i>
+</p>
+<h3>
+   ARMATURE REACTION
+  </h3>
+<p>
+   The magnetic field produced by the current that flows in the armature coils of a DC generator affects the magnetic field of the poles mounted on the stator.
+  </p>
+<p>
+   Fig. 9(a) shows the magnetic lines of force (flux) between the north and south poles of a 2-pole generator.
+  </p>
+<p>
+   Fig. 9(b) shows a cross-sectional view of the armature coil. In this position, no emf is generated. Again, this is the neutral plane and the position where the commutator segments transfer from one brush to the other.
+  </p>
+<p>
+   Fig. 9(c) shows the armature coil in the position where maximum emf is generated.
+  </p>
+<p>
+   Fig. 9(d) shows the current flowing in the armature coil. This current sets up magnetic fields as shown in the illustration. Current in the left coil segment is flowing into the paper which means the magnetic field is in the clockwise direction. Current in the right coil segment is flowing out of the paper which means the magnetic field is in the counter-clockwise direction.
+  </p>
+<p>
+   Fig. 9(e) shows the interaction of the stator field and the armature field. This is an oversimplified representation of an actual DC generator, but it illustrates that the stator field is distorted by the armature field. This results in a shift of the neutral plane and presents a problem in commutation.
+  </p>
+<p>
+   Commutation takes place at the point where the armature coil is moving parallel to the stator field. Fig. 9(e) demonstrates that if the commutator and brushes remain in the same position as shown in Fig. 9(a), an emf will be generated in the armature coil. This results in sparking when the coil segments transfer from one brush to the other.
+  </p>
+<p>
+   To provide good commutation, the brushes of a generator must be adjusted to compensate for the shift in the neutral plane.
+  </p>
+<p>
+   As discussed earlier, more coils are added to reduce the ripple in the DC voltage. Fig. 9(f) shows a cross-sectional view of an armature with several coil segments. Each segment sets up magnetic fields that are proportional to the amount of current being supplied to the DC load. Therefore, the amount of distortion of the stator field is proportional to the generator load. This makes it necessary to adjust the position of brushes according to the load in order to have a sparkless commutation.
+  </p>
+<img alt="Figure 9(a): A 3D perspective diagram of a DC generator. It shows a North (N) pole and a South (S) pole with magnetic lines of force (flux) passing between them. An armature coil is positioned between the poles, connected to a commutator. Brushes are in contact with the commutator, and the circuit is connected to a 'Load'." src="aaec7c7044d764c324cdb35c0201da6f_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    Figure 9(a): A 3D perspective diagram of a DC generator. It shows a North (N) pole and a South (S) pole with magnetic lines of force (flux) passing between them. An armature coil is positioned between the poles, connected to a commutator. Brushes are in contact with the commutator, and the circuit is connected to a 'Load'.
+   </div>
+</div>
+<p>
+<i>
+    Figure 9(a)
+   </i>
+<br/>
+<i>
+    Magnetic Lines of Force (flux)
+   </i>
+</p>
+<img alt="Figure 9(b): A cross-sectional diagram of an armature coil at the neutral plane. The coil is shown as a vertical line between the North (N) and South (S) poles. A dashed vertical line passes through the center of the coil, labeled 'Armature Coil at the Neutral Plane (Zero EMF)'." src="f5aaecb6473222e3d65f65164fab048e_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    Figure 9(b): A cross-sectional diagram of an armature coil at the neutral plane. The coil is shown as a vertical line between the North (N) and South (S) poles. A dashed vertical line passes through the center of the coil, labeled 'Armature Coil at the Neutral Plane (Zero EMF)'.
+   </div>
+</div>
+<p>
+<i>
+    Figure 9(b)
+   </i>
+<br/>
+<i>
+    Armature Coil (cross section)
+   </i>
+</p>
+<img alt="Diagram of a D.C. Generator showing the armature coil, commutator, and load." src="e7cb11f042fc58088dff4b6d9306845e_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<p>
+    A schematic diagram of a D.C. generator. It features a central armature coil (represented by a rectangle) positioned between two curved magnetic poles, North (N) and South (S). The armature is connected to a commutator, which is in turn connected to an external load. Arrows indicate the clockwise rotation of the armature.
+   </p>
+<div class="img-alt">
+    Diagram of a D.C. Generator showing the armature coil, commutator, and load.
+   </div>
+</div>
+<p>
+<i>
+    Figure 9(c)
+   </i>
+<br/>
+<i>
+    Armature Coil (maximum emf)
+   </i>
+</p>
+<img alt="Diagram showing the armature coil at maximum emf with magnetic field directions." src="349ca0a6a9c2e2651a4deeeaf8be6da1_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<p>
+    This diagram shows the armature coil in a vertical orientation, perpendicular to the horizontal magnetic field. The coil is connected to a commutator and a load. The magnetic field is indicated by dots and crosses, representing current flowing into and out of the paper, respectively. This position corresponds to the maximum induced electromotive force (emf).
+   </p>
+<div class="img-alt">
+    Diagram showing the armature coil at maximum emf with magnetic field directions.
+   </div>
+</div>
+<p>
+<i>
+    Figure 9(d)
+   </i>
+<br/>
+<i>
+    Armature Coil (current flow)
+   </i>
+</p>
+<img alt="Diagram showing the armature coil at the maximum position with the shifted neutral plane." src="e9b30aeb317ed964fa6de36804acf24c_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<p>
+    A diagram illustrating the effect of armature reaction. It shows the main magnetic field lines between the North (N) and South (S) poles. The armature coil, located at the bottom, is at the 'Maximum' position. The resulting magnetic field from the armature current distorts the main field, causing the 'Shifted Neutral Plane' to move in the direction of rotation.
+   </p>
+<div class="img-alt">
+    Diagram showing the armature coil at the maximum position with the shifted neutral plane.
+   </div>
+</div>
+<p>
+<i>
+    Figure 9(e)
+   </i>
+<br/>
+<i>
+    Stator Field and Armature Coil
+   </i>
+</p>
+<img alt="Diagram showing the stator field and armature coil segments." src="d3f6de4fe9f9138fc6afc584b5104433_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<p>
+    A detailed cross-sectional view of the stator and armature. It shows the stator field windings and the armature coil segments (represented by small circles) arranged around the armature core. The diagram illustrates the interaction between the stator's magnetic field and the armature's current-carrying segments.
+   </p>
+<div class="img-alt">
+    Diagram showing the stator field and armature coil segments.
+   </div>
+</div>
+<p>
+<i>
+    Figure 9(f)
+   </i>
+<br/>
+<i>
+    Armature with Several Coil Segments
+   </i>
+</p>
+<p>
+<b>
+    Note:
+   </b>
+   The action of the armature currents in establishing a field that distorts and weakens the stator field is called
+   <b>
+    armature reaction
+   </b>
+   .
+  </p>
+<h2>
+   Objective 2
+  </h2>
+<p>
+<b>
+    Explain the principle and application of compensating windings, interpoles and lap and wave armature windings.
+   </b>
+</p>
+<h3>
+   COMPENSATING WINDINGS
+  </h3>
+<p>
+   Compensating windings, or pole-face windings, can be used to reduce the effects of armature reaction. This type of winding has conductors embedded in the face of stator poles. The winding is arranged to be parallel to the armature windings. The winding is connected in series with the armature winding so that the full armature current flows through it but in the opposite direction to that of the adjacent armature conductors. The flux produced by the compensating winding neutralizes the flux produced by the armature current. Compensating windings are expensive and ordinarily only used in larger capacity machines.
+  </p>
+<p>
+   Fig. 10 shows a diagram of compensating windings. The compensating windings are machined into the face of the stator poles. The armature (rotor) windings are laid in slots as shown in the illustration.
+  </p>
+<img alt="Diagram of compensating windings showing a stator pole (N) and a rotor (Armature) with compensating windings." src="b5b16a821754dab72447d00e17ee376a_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<p>
+    A schematic diagram of a DC machine's stator and rotor. On the left is a North (N) pole, and on the right is a South (S) pole. Between them is a circular rotor labeled 'Armature' with an arrow. The rotor has 12 slots, each containing a conductor. Arrows in the slots indicate the direction of current flow. On the face of the N pole, there is a set of conductors labeled 'Compensating Winding' with an arrow. These conductors are arranged to carry current in the opposite direction to the armature conductors under the pole.
+   </p>
+<div class="img-alt">
+    Diagram of compensating windings showing a stator pole (N) and a rotor (Armature) with compensating windings.
+   </div>
+</div>
+<p>
+   Figure 10
+   <br/>
+   Compensating Windings
+  </p>
+<h3>
+   INTERPOLES
+  </h3>
+<p>
+   Interpoles, also called commutating poles, reduce armature reaction and improve commutation. Fig. 11 shows these poles arranged between the main stator poles. An interpole has the same polarity as the following pole in the direction of rotation. Interpoles are wound in series with the armature so that the amount of field created is proportional to the armature current. Interpoles shift the neutral plane in the opposite direction of armature reaction.
+  </p>
+<img alt="Figure 11: Two diagrams illustrating the function of interpoles in a DC machine. The left diagram shows a cross-section of a 4-pole machine with main poles labeled N and S, and a central armature. The right diagram shows a similar cross-section with interpoles (smaller poles between the main poles) and labels for 'Armature Brush &amp; Commutator', 'Interpole', 'N', 'S', and 'Armature Current'." src="d4af765160d04ecef538e5066006dc77_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    Figure 11: Two diagrams illustrating the function of interpoles in a DC machine. The left diagram shows a cross-section of a 4-pole machine with main poles labeled N and S, and a central armature. The right diagram shows a similar cross-section with interpoles (smaller poles between the main poles) and labels for 'Armature Brush &amp; Commutator', 'Interpole', 'N', 'S', and 'Armature Current'.
+   </div>
+</div>
+<p>
+<i>
+    Figure 11
+   </i>
+<br/>
+<i>
+    Interpoles
+   </i>
+</p>
+<p>
+   The interpole field must be strong enough to provide the commutating flux and to neutralize the flux that is shifted into the neutral plane by the effect of the armature reaction.
+  </p>
+<p>
+   It is not necessary to shift the brushes of a generator equipped with compensating windings or interpoles. Fig. 12 is a photograph of a 4-pole stator with interpoles. The interpoles are the smaller structures located between the larger main poles.
+  </p>
+<img alt="Figure 12: A photograph of a 4-pole stator with interpoles. The image shows the stator core with four main poles and four smaller interpoles positioned between them. The windings are visible on the poles." src="4d2624b1b2871a23382b647cd71e1c1c_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    Figure 12: A photograph of a 4-pole stator with interpoles. The image shows the stator core with four main poles and four smaller interpoles positioned between them. The windings are visible on the poles.
+   </div>
+</div>
+<p>
+<i>
+    Figure 12
+   </i>
+<br/>
+<i>
+    4-pole Stator with Interpoles
+   </i>
+</p>
+<p>
+   Fig. 13 is a photograph of an armature showing the commutator bars and windings embedded in slots. The windings are connected to the commutator bars.
+  </p>
+<img alt="Figure 13: Armature with Commutator Bars and Windings. A 3D perspective view of a cylindrical armature core with longitudinal slots. A series of commutator bars are mounted on one end of the core, and armature windings are shown connected to these bars." src="0f2a1e4a7b12fe5b8749882ecd636f5c_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    Figure 13: Armature with Commutator Bars and Windings. A 3D perspective view of a cylindrical armature core with longitudinal slots. A series of commutator bars are mounted on one end of the core, and armature windings are shown connected to these bars.
+   </div>
+</div>
+<p>
+<i>
+    Figure 13
+    <br/>
+    Armature with Commutator Bars and Windings
+   </i>
+</p>
+<h3>
+   ARMATURE WINDINGS
+  </h3>
+<p>
+   The armature windings of most DC generators are wound into slots on a drum-type armature. The windings are then connected to the commutator. Armature windings fall into the following categories:
+  </p>
+<ul style="list-style-type: none">
+<li>
+    • Lap
+   </li>
+<li>
+    • Wave
+   </li>
+</ul>
+<h4>
+   Lap Windings
+  </h4>
+<p>
+   Fig. 14 shows 2 coils of a simple DC generator. The ends of the coils are connected to commutator segments or bars.
+  </p>
+<img alt="Figure 14: Simple DC Generator. A schematic diagram showing a 2-coil armature (labeled 1 and 3) connected to a 4-segment commutator. A brush is in contact with one of the commutator segments. The armature is positioned between two magnetic poles, with an arrow indicating the 'Direction of Magnetic Field'. The commutator segments are labeled with '+' and '-' signs." src="9999a06627f39a35b608912ed95b09ac_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    Figure 14: Simple DC Generator. A schematic diagram showing a 2-coil armature (labeled 1 and 3) connected to a 4-segment commutator. A brush is in contact with one of the commutator segments. The armature is positioned between two magnetic poles, with an arrow indicating the 'Direction of Magnetic Field'. The commutator segments are labeled with '+' and '-' signs.
+   </div>
+</div>
+<p>
+<i>
+    Figure 14
+    <br/>
+    Simple DC Generator
+   </i>
+</p>
+<p>
+   Fig. 15 shows an armature coil with three turns. The ends of the coil are connected to commutator bars.
+  </p>
+<img alt="Diagram showing the construction of an armature winding. It starts with a single 'Armature Coil' (a hexagon with vertices 1 and 6). This is followed by an 'Armature Coil (3 turns)' (three nested hexagons with vertices 1 and 6). Then, a series of coils are shown connected in series, labeled 'Armature Winding'. The third coil has vertices 1 and 8, the fourth has 3 and 10, and the fifth is partially shown. The coils are connected at their bottom vertices by a common dashed line." src="4801720824e4b5e2361a5564f91cfb70_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    Diagram showing the construction of an armature winding. It starts with a single 'Armature Coil' (a hexagon with vertices 1 and 6). This is followed by an 'Armature Coil (3 turns)' (three nested hexagons with vertices 1 and 6). Then, a series of coils are shown connected in series, labeled 'Armature Winding'. The third coil has vertices 1 and 8, the fourth has 3 and 10, and the fifth is partially shown. The coils are connected at their bottom vertices by a common dashed line.
+   </div>
+</div>
+<p>
+   Figure 15
+   <br/>
+   Armature Coil
+  </p>
+<p>
+   Fig. 16 shows a typical drum-type armature with the lap windings embedded in slots. Lap windings are arranged in slots on the drum to allow parallel paths for armature current. The number of parallel paths is always the same as the number of poles. This design is well suited for high current DC generator applications. The ends of the armature coils are terminated on adjacent bars of the commutator. The number of brushes is the same as the number of poles.
+  </p>
+<img alt="A 3D perspective view of a drum-type armature. It shows a cylindrical core with longitudinal slots. A helical 'Lap Winding' is shown wrapped around the core, entering the slots. At the left end, a section of the commutator is visible, with vertical 'Commutator Bars' extending from the winding." src="a1d3651b1300f3670e3a9547bafc4db6_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    A 3D perspective view of a drum-type armature. It shows a cylindrical core with longitudinal slots. A helical 'Lap Winding' is shown wrapped around the core, entering the slots. At the left end, a section of the commutator is visible, with vertical 'Commutator Bars' extending from the winding.
+   </div>
+</div>
+<p>
+   Figure 16
+   <br/>
+   Drum-type Armature
+  </p>
+<p>
+   Fig. 17 shows the lap winding arrangement for a 4-pole DC generator. The coils of the winding are connected to commutator bars labelled A - L.
+  </p>
+<img alt="Figure 17: Lap Winding Arrangement. This diagram shows a detailed schematic of a lap winding in a DC machine. It features four magnetic poles labeled N (North) and S (South). Armature conductors are shown connected between commutator bars, forming a continuous loop. The winding is labeled 'Lap Winding'. Below the conductors, commutator bars are shown with brushes making contact. The brushes are connected to armature conductors, and the entire assembly is labeled 'Armature Conductors'." src="33ed1f9b27c7c21c797aa928b0f06851_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    Figure 17: Lap Winding Arrangement. This diagram shows a detailed schematic of a lap winding in a DC machine. It features four magnetic poles labeled N (North) and S (South). Armature conductors are shown connected between commutator bars, forming a continuous loop. The winding is labeled 'Lap Winding'. Below the conductors, commutator bars are shown with brushes making contact. The brushes are connected to armature conductors, and the entire assembly is labeled 'Armature Conductors'.
+   </div>
+</div>
+<p>
+   Figure 17
+   <br/>
+   Lap Winding Arrangement
+  </p>
+<p>
+   Fig. 18 shows a simplified connection drawing of same winding.
+  </p>
+<img alt="Figure 18: Lap Winding Connection Drawing. This is a simplified zigzag connection diagram for a lap winding. It shows a series of numbers representing armature conductors: 6, 1, 8, 3, 15, 5, 12, 7, 14, 9, 16, 11, 18, 13, 20, 15, 22, 17, 24, 19, 2, 21, 4, 23, 6, 1. Below the zigzag line, polarity markers (+, -, +, -) indicate the direction of current flow through the conductors." src="7efae06af3af43ffe5d4b956a679cf54_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    Figure 18: Lap Winding Connection Drawing. This is a simplified zigzag connection diagram for a lap winding. It shows a series of numbers representing armature conductors: 6, 1, 8, 3, 15, 5, 12, 7, 14, 9, 16, 11, 18, 13, 20, 15, 22, 17, 24, 19, 2, 21, 4, 23, 6, 1. Below the zigzag line, polarity markers (+, -, +, -) indicate the direction of current flow through the conductors.
+   </div>
+</div>
+<p>
+   Figure 18
+   <br/>
+   Lap Winding Connection Drawing
+  </p>
+<h4>
+   Wave Winding
+  </h4>
+<p>
+   Wave windings are used in high voltage applications. In this arrangement, the ends of the coil are brought out to commutator bars separated by the distance between poles.
+  </p>
+<p>
+   Only 2 brushes (i.e. one brush pair) are necessary but more brush pairs may be used. The brushes are separated by the distance between poles. The number of parallel paths is always 2. See Figs. 19(a), (b), and (c).
+  </p>
+<img alt="Figure 19(a): Wave Winding. This diagram shows a simplified connection drawing for a wave winding. It consists of a single zigzag line representing the path of the winding, connecting two armature conductors at the bottom. The path is much longer than in the lap winding diagram, spanning across multiple poles." src="c67d21fb3d9042e88cdc669f071b4e7c_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    Figure 19(a): Wave Winding. This diagram shows a simplified connection drawing for a wave winding. It consists of a single zigzag line representing the path of the winding, connecting two armature conductors at the bottom. The path is much longer than in the lap winding diagram, spanning across multiple poles.
+   </div>
+</div>
+<p>
+   Figure 19(a)
+   <br/>
+   Wave Winding
+  </p>
+<img alt="Figure 19(b): Wave Winding Arrangement. This diagram shows a cross-section of an armature with four magnetic poles labeled N (North) and S (South). The armature conductors are numbered 1 through 26. The winding is represented by a zigzag line connecting these conductors. Below the armature is a commutator with bars labeled a through l. Four brushes are shown in contact with the commutator bars, connected to positive and negative terminals. Labels include 'Commutator Bars', 'Brushes', and 'Armature Conductors'." src="fa859e4e468bfb2710a94527f2c504af_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<p>
+    The diagram illustrates a wave winding arrangement in an armature. It features four magnetic poles, alternatingly labeled North (N) and South (S). The armature windings are connected in a continuous wave pattern across all poles. Below the armature, a commutator is shown with 12 bars labeled 'a' through 'l'. Four brushes are positioned on the commutator, with two connected to positive terminals and two to negative terminals. The brushes are in contact with the commutator bars, which are further connected to the armature conductors.
+   </p>
+<div class="img-alt">
+    Figure 19(b): Wave Winding Arrangement. This diagram shows a cross-section of an armature with four magnetic poles labeled N (North) and S (South). The armature conductors are numbered 1 through 26. The winding is represented by a zigzag line connecting these conductors. Below the armature is a commutator with bars labeled a through l. Four brushes are shown in contact with the commutator bars, connected to positive and negative terminals. Labels include 'Commutator Bars', 'Brushes', and 'Armature Conductors'.
+   </div>
+</div>
+<p>
+<i>
+    Figure 19(b)
+   </i>
+<br/>
+<i>
+    Wave Winding Arrangement
+   </i>
+</p>
+<img alt="Figure 19(c): Wave Winding Connection Drawing. This diagram shows a sequence of armature conductors numbered 1 through 26, with some numbers repeated to show the loop. The connections between conductors are shown as a continuous zigzag line. Below the sequence, polarity signs (+, -, +, -) are indicated for the first four conductors in the sequence." src="0f985b39edc1d52ba3600c438bc8f0a5_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<p>
+    This connection drawing shows the sequence of armature conductors for a wave winding. The conductors are numbered in a sequence: 1, 6, 13, 18, 25, 4, 11, 16, 23, 2, 9, 14, 21, 26, 7, 12, 19, 24, 5, 10, 17, 22, 3, 8, 15, 20, and then back to 1. Below this sequence, polarity signs are indicated: +, -, +, -. The number 20 is shown at the far left, and the number 1 is at the far right, indicating the start and end of the sequence.
+   </p>
+<div class="img-alt">
+    Figure 19(c): Wave Winding Connection Drawing. This diagram shows a sequence of armature conductors numbered 1 through 26, with some numbers repeated to show the loop. The connections between conductors are shown as a continuous zigzag line. Below the sequence, polarity signs (+, -, +, -) are indicated for the first four conductors in the sequence.
+   </div>
+</div>
+<p>
+<i>
+    Figure 19(c)
+   </i>
+<br/>
+<i>
+    Wave Winding Connection Drawing
+   </i>
+</p>
+<h2>
+   Objective 3
+  </h2>
+<p>
+<b>
+    Explain the principles, applications, and load/voltage characteristics of generators.
+   </b>
+</p>
+<h3>
+   TYPES OF DC GENERATORS
+  </h3>
+<p>
+   There are three main types of DC generators. Each type is named according to the field and armature winding connections.
+  </p>
+<ul style="list-style-type: none">
+<li>
+    • Series wound
+   </li>
+<li>
+    • Shunt wound
+   </li>
+<li>
+    • Compound wound
+   </li>
+</ul>
+<h4>
+   Series-wound Generators
+  </h4>
+<p>
+   In this type of generator, the field winding is in series with the armature winding. Fig. 20 shows the armature current
+   \(
+    I_a
+   \)
+   flowing through the brushes to the field coil and to the load. A variable resistor (diverter) is used to vary the field current.
+  </p>
+<img alt="Circuit diagram and characteristic curve for a series-wound generator." src="36117e9cb27c58484cd8d3e5f9dc7ac3_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<p>
+    The figure contains two parts. On the left is a circuit diagram showing an armature (a circle with a clockwise arrow inside labeled
+    \(
+     I_A
+    \)
+    ) connected in series with a field winding (coil). A variable resistor, labeled 'Divertor', is connected in parallel with the field winding. The current through the field is
+    \(
+     I_F
+    \)
+    . The output is connected to a 'Load', where the load current is indicated as
+    \(
+     I_L = I_A - I_F
+    \)
+    . On the right is a graph with 'Terminal Voltage E' on the vertical axis and 'Loadd Current
+    \(
+     I_L
+    \)
+    ' on the horizontal axis. The curve starts at the origin (0,0), rises sharply with a positive slope, and then curves to become nearly horizontal as it reaches saturation.
+   </p>
+<div class="img-alt">
+    Circuit diagram and characteristic curve for a series-wound generator.
+   </div>
+</div>
+<p>
+<i>
+    Figure 20
+   </i>
+<br/>
+<i>
+    Series-wound Generator
+   </i>
+</p>
+<p>
+   Series-wound generators use very low resistance field coils. These coils consist of large diameter copper conductors. As shown in the load/current curve in Fig. 20, any increase in armature current causes an increase in flux and a corresponding increase in the voltage at the generator output terminals.
+  </p>
+<h4>
+   Shunt-wound Generators
+  </h4>
+<p>
+   The field windings of a shunt-wound generator are in parallel with the armature windings. Fig. 21 shows the field windings and the load/current characteristics. A field regulator (rheostat) is used to adjust the field. The shunt windings have a reduced voltage as generator load increases. This is due to the increased voltage drop (
+   \(
+    IR
+   \)
+   drop) through the armature. In other words, an increase in load current causes a decrease in terminal voltage.
+  </p>
+<img alt="Circuit diagram and graph for a shunt-wound generator." src="b6750d26d3dd287a4a4d49b3670a44bd_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<p>
+    The figure consists of two parts. On the left is a circuit diagram of a shunt-wound generator. It shows a central armature (circle with a dot) connected in parallel with a field winding (coil) and a load. A field regulator (rheostat) is connected in series with the field winding. The field current is labeled
+    \(
+     I_F
+    \)
+    , the armature current is
+    \(
+     I_A
+    \)
+    , and the load current is
+    \(
+     I_L
+    \)
+    . A formula above the load indicates
+    \(
+     I_L = I_A - I_F
+    \)
+    . On the right is a graph of Terminal Voltage
+    \(
+     E
+    \)
+    versus Load Current
+    \(
+     I_L
+    \)
+    . The curve starts at a no-load voltage and decreases as the load current increases.
+   </p>
+<div class="img-alt">
+    Circuit diagram and graph for a shunt-wound generator.
+   </div>
+</div>
+<p>
+   Figure 21
+   <br/>
+   Shunt-wound Generator
+  </p>
+<h4>
+   Compound-Wound Generators
+  </h4>
+<p>
+   Compound-wound generators (Fig. 22) have series and shunt fields. One of the field windings is in parallel with the generator armature and the other is in series. Both windings are placed on the stator.
+  </p>
+<img alt="Circuit diagram and graph for a compound-wound generator." src="595e9fd7e96f6b95bbaa6e6a45c32682_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<p>
+    The figure consists of two parts. On the left is a circuit diagram of a compound-wound generator. It shows a central armature (circle with a dot) connected in parallel with a shunt field (coil) and a series field (coil). The shunt field is connected across the armature terminals. The series field is connected in series with the armature. The shunt field current is labeled
+    \(
+     I_F
+    \)
+    , the armature current is
+    \(
+     I_A
+    \)
+    , and the load current is
+    \(
+     I_L
+    \)
+    . On the right is a graph of Terminal Voltage
+    \(
+     E
+    \)
+    versus Load Current
+    \(
+     I_L
+    \)
+    . Three curves are shown: one that is flat (flat-compounded), one that rises (over-compounded), and one that falls (under-compounded) as the load current increases from zero.
+   </p>
+<div class="img-alt">
+    Circuit diagram and graph for a compound-wound generator.
+   </div>
+</div>
+<p>
+   Figure 22
+   <br/>
+   Compound-wound Generator
+  </p>
+<p>
+   More turns in the series field produce a higher voltage with the same current. If enough turns are added to compensate for the voltage drop caused by armature resistance and armature reaction, the terminal voltage will be constant from a no-load condition to a full-load condition. This is known as a
+   <b>
+    flat-compounded
+   </b>
+   generator.
+  </p>
+<p>
+   More than the minimum number of turns required for a flat-compounded machine will cause the terminal voltage under load conditions to be greater than its no-load value. The machine is then said to be
+   <b>
+    over compounded
+   </b>
+   .
+  </p>
+<p>
+   Less than the minimum number of turns will result in an
+   <b>
+    under-compounded
+   </b>
+   machine. If the series field is connected so that its mmf
+   <b>
+    opposes
+   </b>
+   the mmf of the shunt field, an
+  </p>
+
+
+<p>
+   increase in armature current will cause a
+   <b>
+    decrease
+   </b>
+   in flux and a corresponding decrease in the generated emf. This type of connection is called
+   <b>
+    differential
+   </b>
+   compounding.
+  </p>
+<p>
+   Fig. 23 shows the circuit connections for a differentially-compounded DC generator. Note that the series-field connections are the reverse of those in Fig. 22.
+  </p>
+<img alt="Circuit diagram and characteristic curve for a differentially-compounded DC generator. The circuit shows a shunt field winding in parallel with the armature, and a series field winding connected in series with the load. The series field is connected in reverse compared to a standard compound generator. The characteristic curve shows Terminal Voltage E on the y-axis and Load Current I_L on the x-axis. The curve starts at a high no-load voltage and decreases as load current increases, forming a concave-down shape." src="52218820ae0a5a10bb2d604859f803e7_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    Circuit diagram and characteristic curve for a differentially-compounded DC generator. The circuit shows a shunt field winding in parallel with the armature, and a series field winding connected in series with the load. The series field is connected in reverse compared to a standard compound generator. The characteristic curve shows Terminal Voltage E on the y-axis and Load Current I_L on the x-axis. The curve starts at a high no-load voltage and decreases as load current increases, forming a concave-down shape.
+   </div>
+</div>
+<p>
+   Figure 23
+   <br/>
+<i>
+    Differentially Compounded Generator
+   </i>
+</p>
+<p>
+   Fig. 24 illustrates the variation in voltage from no-load to full-load conditions for various amounts of compounding. This compares with the characteristic curves shown in Fig. 22.
+  </p>
+<img alt="Graph showing DC Generator Voltage/Current Characteristics. The y-axis is 'Percent of Rated Voltage' from 0 to 100. The x-axis is 'Percent of Rated Load' from 0 to 100. Five curves are shown: Overcompounded (rises above 100%), Flat Compounded (dashed line stays at 100%), Undercompounded (falls below 100%), Shunt (falls more than undercompounded), and Differential Compounded (falls sharply). All curves start at 100% voltage at 0% load." src="2cb4ae7af8981b4179851b065f41dab8_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    Graph showing DC Generator Voltage/Current Characteristics. The y-axis is 'Percent of Rated Voltage' from 0 to 100. The x-axis is 'Percent of Rated Load' from 0 to 100. Five curves are shown: Overcompounded (rises above 100%), Flat Compounded (dashed line stays at 100%), Undercompounded (falls below 100%), Shunt (falls more than undercompounded), and Differential Compounded (falls sharply). All curves start at 100% voltage at 0% load.
+   </div>
+</div>
+<p>
+   Figure 24
+   <br/>
+<i>
+    DC Generators: Voltage/Current Characteristics
+   </i>
+</p>
+<p>
+   Over-compounded generators are used when the power is transmitted over long distances. This winding arrangement uses the rise in terminal voltage to compensate for the voltage drop (
+   \(
+    IR
+   \)
+   ) in the transmission lines.
+  </p>
+<p>
+   Flat-compounded generators are used when an unvarying voltage is required and the distance of transmission is short.
+  </p>
+<p>
+   Shunt and under-compounded generators are more stable for parallel operation than flat and over-compounded machines.
+  </p>
+<p>
+   Differential-compounded generators are used when inherent overload protection is more desirable than a fixed voltage. Examples of its application are in generators supplying electric winches and dredges, in which an overload or short circuit causes sufficient voltage drop to limit the magnitude of the current to a safe value.
+  </p>
+<p>
+   Fig. 25 shows the circuit and load characteristics for a separately-excited generator. It is shunt wound with a separate supply to the field. This produces a particularly flat voltage characteristic.
+  </p>
+<img alt="Circuit diagram and load characteristic graph for a separately excited generator." src="4792a2ccd62226861fadc22117edb7b1_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<p>
+    The diagram illustrates the circuit and load characteristics for a separately excited generator. On the left, a circuit diagram shows a 'd.c. Supply' connected to a 'Field' winding through a 'Field Regulator'. The field current is labeled
+    \(
+     I_f
+    \)
+    . The generator's armature is connected to a 'Load', with the armature current labeled
+    \(
+     I_A
+    \)
+    . The load current is indicated as
+    \(
+     I_L = I_A
+    \)
+    . On the right, a graph plots 'Terminal Voltage E' on the vertical axis against 'Load Current
+    \(
+     I_L
+    \)
+    ' on the horizontal axis. The curve starts at a constant voltage and remains nearly flat for a range of load currents before slightly drooping at higher currents.
+   </p>
+<div class="img-alt">
+    Circuit diagram and load characteristic graph for a separately excited generator.
+   </div>
+</div>
+<p>
+   Figure 25
+   <br/>
+<i>
+    Separately Excited Generator
+   </i>
+</p>
+<h1>
+   Objective 4
+  </h1>
+<p>
+<b>
+    Describe the parallel operation and voltage regulation of DC generators.
+   </b>
+</p>
+<h3>
+   PARALLEL OPERATION OF SHUNT GENERATORS
+  </h3>
+<p>
+   Generators are often operated in parallel to satisfy load demands (see Fig. 26). When the load varies, generators can be switched from off-line to on-line or vice versa.
+  </p>
+<img alt="Diagram of three DC generators connected in parallel to a common Load Bus. Each generator is labeled 'Generator No. 1' and is connected to the bus through a Load Breaker. Each generator also has a Field Regulator and a Field Switch connected to its field winding." src="163688ca8da9787f5d48edd68d8cc75b_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<p>
+    The diagram illustrates three DC generators connected in parallel to a single 'Load Bus' at the top. Each generator is represented by a circle with a zigzag symbol inside. Each generator is connected to the bus via a 'Load Breaker'. Each generator also has a 'Field Regulator' (represented by a rectangle with a diagonal arrow) and a 'Field Switch' (represented by a switch symbol) connected to its field winding. All three generators are labeled 'Generator No. 1' at the bottom.
+   </p>
+<div class="img-alt">
+    Diagram of three DC generators connected in parallel to a common Load Bus. Each generator is labeled 'Generator No. 1' and is connected to the bus through a Load Breaker. Each generator also has a Field Regulator and a Field Switch connected to its field winding.
+   </div>
+</div>
+<p>
+<i>
+    Figure 26
+    <br/>
+    Parallel DC Generators
+   </i>
+</p>
+<p>
+   The first step when bringing a generator on-line is to close the field switch and engage the prime mover. The voltage of the incoming machine is then adjusted to equal the bus voltage. The load breaker can be closed when the two voltages are equal. This procedure is satisfactory for paralleling shunt, under-compounded, and flat-compounded machines.
+  </p>
+<p>
+<b>
+    Note:
+   </b>
+   When paralleling shunt machines, it is recommended to raise the voltage of the incoming machine slightly above the bus voltage to ensure that it is taking load at the instant the load breaker is closed. This precaution is not necessary for both the flat and under-compounded machines because the series field helps to build up voltage quickly when the units are brought on-line.
+  </p>
+<p>
+   The output terminals of DC generators are always checked for polarity, especially if a new generator has been installed or an existing generator has been repaired.
+  </p>
+<p>
+   Once the DC generators are on-line, the load can be shared or balanced by adjusting the field rheostats. The output voltage of the machine that takes on more load is raised. The
+  </p>
+<p>
+   Once the DC generators are on-line, the load can be shared or balanced by adjusting the field rheostats. The output voltage of the machine that takes on more load is raised. The opposite is true for the machine that loses some load. The load on each generator can be observed on individual ammeters.
+  </p>
+<p>
+   Although the transfer of load between DC generators is accomplished indirectly by adjusting the field strength, the energy supplied by each generator still depends on the energy supplied by the prime mover. An automatic governor is used to control speed. For example, increasing the field excitation of one machine causes it to take more load. This causes the machine to slow down, and the automatic governor admits more energy to the prime mover.
+  </p>
+<p>
+   As shown in the preceding paragraph, the operating speed of DC generators, operating in parallel, can vary. This is different from AC generators which are more speed dependent because they must produce a constant frequency. In other words, AC generators with the same number of poles are operated at the same speed.
+  </p>
+<h3>
+   PARALLEL OPERATION OF COMPOUND GENERATORS
+  </h3>
+<p>
+   In general, for compound machines to operate successfully in parallel, it is necessary to parallel their series fields. This is accomplished by an equalizer connection as shown in Fig. 27.
+  </p>
+<img alt="Circuit diagram of two compound generators connected in parallel. The diagram shows two generators with their armatures connected to a common bus. Each generator has a shunt field connected in parallel with its armature and a series field connected in series with the armature. An equalizer bus connects the series fields of both generators. Rheostats are shown in series with the shunt fields." src="f0bae10b54c4f3cf8d0e33f5e2fb7cfa_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<p>
+    The diagram illustrates the electrical connections for two compound generators operating in parallel. At the top, a horizontal line represents the main output bus. Below it, another horizontal line is labeled 'Equalizer Bus'. Two armatures, represented by circles, are connected between the main bus and the equalizer bus. Each armature has a 'Shunt Field' (indicated by a label on the left and right) connected in parallel across it. Each armature also has a 'Series Field' (labeled at the bottom) connected in series with the main bus. An 'Equalizer Bus' connects the series fields of both generators. Rheostats, shown as variable resistors, are connected in series with the shunt fields of each generator. A label 'Communicating Field' points to the shunt field of the left generator.
+   </p>
+<div class="img-alt">
+    Circuit diagram of two compound generators connected in parallel. The diagram shows two generators with their armatures connected to a common bus. Each generator has a shunt field connected in parallel with its armature and a series field connected in series with the armature. An equalizer bus connects the series fields of both generators. Rheostats are shown in series with the shunt fields.
+   </div>
+</div>
+<p>
+<i>
+    Figure 27
+    <br/>
+    Two-Wire Compound Generators in Parallel
+   </i>
+</p>
+<p>
+   Consider two identical generators operating in parallel without an equalizer and with the load carefully balanced between the two. Any attempt to transfer some of the load from one machine to the other by adjustment of the field rheostats results in the machine with the greater excitation taking the entire load and driving the other as a motor.
+  </p>
+<p>
+   Without an equalizer, the machine that accepted some load has its series field strengthened, whereas the machine that gave up some load has its series field weakened. This would serve to increase the
+   \(
+    E
+   \)
+   of the machine that accepted load and to decrease the
+   \(
+    E
+   \)
+   of the machine that gave up some load and results in an additional load transfer.
+  </p>
+<p>
+   Hence, without an equalizer connection, any attempt to transfer some load between compounded machines in parallel results in a complete load swing to one machine and motorization of the other. Furthermore, a motorization of a compound generator without an equalizer results in a reversal of current through its series field, shunt field and the armature. Motorization of a compound generator with equalizer causes reversed current flow in shunt field and armature. The direction of the series field current remains unchanged as the series field is fed from the other generators through the equalizer. Motorization of a generator reverses the polarity of the residual magnetism and the machine will have reversed polarity. However, since it is standard practice to use equalizer connections with compounded machines, such difficulties as heavy load swings, motorization, and reversed polarity are not encountered during routine operations.
+  </p>
+<p>
+   When compounded machines of different kW ratings are paralleled, the equalizer ensures a division of load in proportion to the kW ratings of each machine. The total bus current is divided by the series fields in the inverse ratio of their respective series-field resistance. Because of its lower series-field resistance, the series field of the larger machine will take a higher percentage of the bus current.
+  </p>
+<h3>
+   VOLTAGE CONTROL
+  </h3>
+<p>
+   The process of voltage control involves changing the resistance of the field windings. More or less resistance means an increase or decrease of current in the field, which translates to more or less voltage at the output terminals of the generator. Voltage can be controlled automatically or manually.
+  </p>
+<p>
+   Manual voltage control usually takes place through a rheostat which is connected in series, parallel, or series/parallel with the field windings. A rheostat is a type of variable resistance device. Ultimately, the rheostat allows the field current to be changed.
+  </p>
+<p>
+   Automatic voltage regulators (AVRs) may be used in applications where the load can change without warning. AVRs allow an operator to enter the desired voltage (setpoint). Sophisticated AVRs can quickly sense the difference between the current output voltage and the desired output voltage. The regulator makes changes to the field current based on the magnitude of the difference between the current output voltage and the setpoint (error) and how fast the error is increasing or decreasing.
+  </p>
+<h3>
+   Voltage Regulation
+  </h3>
+<p>
+   Voltage regulation is based on the difference between the output voltage of a generator at no-load and the output voltage at full-load. Voltage regulation is determined while the generator is running at constant speed. It is usually expressed as a percentage.
+  </p>
+<p>
+   $$
+    \text{Voltage Regulation} = \frac{(\text{no - load volts}) - (\text{full - load volts})}{\text{full - load volts}} \times 100
+   $$
+  </p>
+<p>
+   Fig. 24 shows the voltage/current characteristics of various DC generators. However, the best regulation is obtained with a flat-compounded machine. The series machine has very little regulation (see Fig. 20).
+  </p>
+<h2>
+   Objective 5
+  </h2>
+<p>
+<b>
+    Review the principle of DC motor operation, including torque development and back emf.
+   </b>
+</p>
+<h2>
+   TORQUE DEVELOPMENT
+  </h2>
+<p>
+   In a DC generator, mechanical energy is changed into electrical energy by moving a conductor (armature) through a magnetic field (stator). In a DC motor, electrical energy is supplied to a conductor in an electrical field which establishes a magnetic field. Interaction of the armature field and the stator field produces mechanical energy.
+  </p>
+<p>
+   Torque is defined as the measurement of the action of a force on a body that tends to cause the body to rotate. In the context of motors, the measurement of the force that tends to rotate the armature is called the torque of the motor. Torque is an important characteristic of a motor because torque is related to the amount of work that the motor is able to do.
+  </p>
+<p>
+   Armature windings on a DC motor are wound in the same manner as generator windings. When a voltage is applied to the brushes of a motor, current flows into the positive brush, through the commutator and out the negative brush. See Fig. 28.
+  </p>
+<img alt="Diagram of a DC motor showing current flow from a D.C. Power Source through the commutator and brushes to the armature windings." src="1408b3d336e1d80c7a1abd0682f4f687_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<p>
+    The diagram illustrates the electrical circuit of a DC motor. A cylindrical armature is shown with its windings connected to a commutator. Two brushes are in contact with the commutator, one on each side. These brushes are connected to a D.C. Power Source, represented by a battery symbol with '+' and '-' terminals. An inset at the top provides a detailed view of the armature windings, showing the direction of current flow through the conductors. Labels with arrows point to the 'Armature Windings', 'Commutator Brushes', and 'D.C. Power Source'.
+   </p>
+<div class="img-alt">
+    Diagram of a DC motor showing current flow from a D.C. Power Source through the commutator and brushes to the armature windings.
+   </div>
+</div>
+<p>
+   Figure 28
+   <br/>
+   Current Flow
+  </p>
+<p>
+   Armature conductors are wound so that all conductors under the south field poles carry current in one direction, and all conductors under the north field poles carry current in the opposite direction.
+  </p>
+<p>
+   Fig. 29 shows the distribution of armature currents in a four-pole motor for a given polarity of applied terminal voltage. When voltage is applied to the motor, current flows through the field winding, establishing the magnetic field. Current also flows through the armature winding from the positive brushes to the negative brushes. Because each armature conductor under the four pole faces is carrying current in a magnetic field, each of these conductors has a force exerted on it, tending to move it at right angles to that field.
+  </p>
+<img alt="Diagram of a four-pole DC motor showing the distribution of armature currents." src="32a03202e95ff09a974e12e4be687885_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<p>
+    A cross-sectional diagram of a four-pole DC motor. The stator has four poles: North (N) and South (S) poles labeled as Pole D, Pole E, Pole F, and Pole G. The armature is the central rotating part, with conductors shown as dots (out of the page) and crosses (into the page). Arrows indicate the direction of current flow in the conductors. A central arrow indicates the direction of rotation.
+   </p>
+<div class="img-alt">
+    Diagram of a four-pole DC motor showing the distribution of armature currents.
+   </div>
+</div>
+<p>
+   Figure 29
+   <br/>
+   Four-Pole DC Motor
+  </p>
+<p>
+   Fig. 30 shows the right-hand rule for a conductor carrying current. The thumb points in the direction of the current and the fingers wrap around the conductor in the direction of the magnetic field produced by the current. An application of this rule to the armature conductors under the north pole
+   <i>
+    D
+   </i>
+   in Fig. 29 shows the magnetic field to be strengthened under the conductors, resulting in an upward force on the conductors. Similarly, force is exerted to the right on the conductors under south pole
+   <i>
+    E
+   </i>
+   , downward on the conductors under north pole
+   <i>
+    F
+   </i>
+   , and to the left on the conductors under south pole
+   <i>
+    G
+   </i>
+   .
+  </p>
+<img alt="Diagram illustrating the right-hand rule for a conductor carrying current." src="af54a0b30d50f3f8620b331cdc59ae3a_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<p>
+    A diagram illustrating the right-hand rule. A right hand is shown gripping a horizontal conductor. The thumb is extended parallel to the conductor, pointing to the right, labeled 'Current Flow'. The other four fingers are curled around the conductor, with arrows indicating the direction of the 'Magnetic Lines of Force'. Concentric circles around the conductor represent these magnetic lines, with dots and crosses indicating the direction of the field.
+   </p>
+<div class="img-alt">
+    Diagram illustrating the right-hand rule for a conductor carrying current.
+   </div>
+</div>
+<p>
+   Figure 30
+   <br/>
+   Right-Hand Rule
+  </p>
+<p>
+   Thus, there is a force developed on all the active armature conductors tending to turn the armature in a clockwise direction. The sum of these forces in newtons multiplied by the radius of the armature in metres is equal to the total torque developed by the motor in newton metres (Nm).
+  </p>
+<p>
+   If the armature is free to turn, that is, if the connected load is not too great, the armature will begin to rotate in a clockwise direction. As the armature rotates and the conductors move from under a pole into the neutral plane, the current is reversed in them by the action of the commutator. For example, in Fig. 29, as the conductor at
+   <i>
+    A
+   </i>
+   moves from under the north pole and approaches the neutral plane, the current is outward. At the neutral plane, the current is reversed so that as it moves under the south pole as at
+   <i>
+    B
+   </i>
+   it carries current inward. Thus, the conductors under a given pole carry current in the same direction at all times.
+  </p>
+<p>
+   It should be evident from Fig. 29 that if the armature current were reversed by reversing the armature leads, but leaving the field polarity the same, torque develops in a counter-clockwise direction. However, if both armature-current direction and field polarity were changed, torque develops in a clockwise direction.
+  </p>
+<p>
+   The direction of rotation of a DC motor may be reversed by reversing either the field or the armature connections. If both are reversed, the direction of rotation remains unchanged.
+  </p>
+<p>
+   The force developed on each conductor of a motor armature is due to the combined action of the main field and the field around the conductor. It follows, then, that the force developed is directly proportional to the strength of the main field flux and to the strength of the field around each conductor. The field around each armature conductor depends on the amount of armature current flowing in that conductor. Therefore, the torque developed by a motor may be shown to be
+  </p>
+<p>
+   $$
+    \begin{aligned} T &amp;= K\Phi I_a \\ \text{where } T &amp;= \text{torque, newton metres} \\ K &amp;= \text{a constant depending on the physical dimensions of the motor} \\ \Phi &amp;= \text{total number of lines of force per pole} \\ I_a &amp;= \text{armature current, amperes} \end{aligned}
+   $$
+  </p>
+<p>
+   This equation is of use in analyzing a motor's performance under various operating conditions.
+  </p>
+<h3>
+   BACK ELECTROMOTIVE FORCE
+  </h3>
+<p>
+   An electromotive force (emf) is induced in the armature winding of a DC motor as it moves through the magnetic field. This voltage is called back emf or counter emf (cemf). Counter emf is counter to, or opposes, the applied voltage at the armature brushes.
+  </p>
+<p>
+   Because the armature windings of a motor are made of copper, the resistance of the armature is very small (less than one ohm). Applying almost any voltage to such a 1-ohm
+  </p>
+<p>
+   armature at rest causes a huge short-circuit current to flow through it. If the armature was jammed (Fig. 31) so that it could not turn, it would heat up and burn out from all the current. But, because the armature is free to turn, the inrushing current causes the armature to turn, cutting the lines of force and creating an induced cemf.
+  </p>
+<img alt="Diagram of a jammed armature (Figure 31)" src="f4fdd410cdb84df81274da55721e56fb_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<p>
+    The diagram illustrates a motor armature connected to a D.C. Power Source. The armature on the left is labeled "No Rotation" and has a thick black bar across it indicating it is jammed. A large shaded arrow labeled "EMF" points from the power source to the armature. Below it, a thin line labeled "No CEMF" indicates no opposing force. A text box to the right explains: "If we jammed the armature so no cemf was produced, we would find the motor draws so much current it heats up."
+   </p>
+<div class="img-alt">
+    Diagram of a jammed armature (Figure 31)
+   </div>
+</div>
+<p>
+<i>
+    Figure 31
+   </i>
+<br/>
+<i>
+    Jammed Armature
+   </i>
+</p>
+<p>
+   Since the cemf opposes the line voltage, it acts to cut down the short-circuit current flow. This cemf acts as an automatic current limiter which reduces the flow of current to the armature to an adequate level to drive the motor but not enough to heat the armature to where it is in danger of burning out. Therefore, the power supply to the armature operates as a true electrical load (Fig. 32) instead of a short circuit and the motor receives useful power to support its operation.
+  </p>
+<img alt="Diagram of a rotating armature (Figure 32)" src="daa4a6fa7e2ba1954258f86b4928eb32_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<p>
+    The diagram shows a motor armature in operation, labeled "Rotation". It is connected to a D.C. Power Source. Two arrows are shown between them: a shaded arrow labeled "EMF" pointing toward the armature, and an opposing shaded arrow labeled "CEMF" pointing back toward the power source. A text box to the right states: "CEMF acts as a load for the d-c power supply feeding the motor, so that the low-resistance motor windings do not draw excessive amounts of current."
+   </p>
+<div class="img-alt">
+    Diagram of a rotating armature (Figure 32)
+   </div>
+</div>
+<p>
+<i>
+    Figure 32
+   </i>
+<br/>
+<i>
+    True Electrical Load
+   </i>
+</p>
+<p>
+   Counter emf is proportional to the number of turns in the armature coils, the length of each conductor that passes under a pole, the velocity of the armature, and the strength of the magnetic field produced by the stator windings.
+  </p>
+<p>
+   $$
+    \text{Armature current} = \frac{\text{applied voltage} - \text{counter emf}}{\text{armature resistance}}
+   $$
+  </p>
+<h2>
+   Objective 6
+  </h2>
+<p>
+<b>
+    Calculate torque, speed, and current of a DC motor.
+   </b>
+</p>
+<h3>
+   TORQUE
+  </h3>
+<p>
+   Torque is measured in newton metres (Nm). Torque is the vector sum of the resultant magnetic forces multiplied by the radius of the armature measured in metres.
+  </p>
+<p>
+   If the armature is free to turn, it begins to rotate in a clockwise direction. The armature coils under the north pole move towards the south pole. As they move into the interpole position (neutral plane), the polarity of the current is reversed by the action of the commutator. The momentum of the armature carries it far enough towards the next pole so that the interaction of the magnetic fields of the armature and the stator will keep the armature rotating. The action of the commutator keeps the conductors under one pole carrying current in the same direction at all times.
+  </p>
+<p>
+   The armature rotates counter-clockwise if the polarity of the applied voltage is reversed while the polarity on the stator windings is kept the same.
+  </p>
+<p>
+<b>
+    Note:
+   </b>
+   The direction of rotation of a DC motor may be reversed by reversing the polarity of either the stator field or the armature field. If both are reversed, the direction of rotation remains the same.
+  </p>
+<p>
+   The force exerted on a current-carrying conductor when in a magnetic field depends upon the strength of the field, the amount of current flowing, and the length of the conductor.
+  </p>
+<p>
+   The torque developed by a d-c motor will be the sum of all these forces exerted on the individual conductors and can be expressed by the equation:
+  </p>
+<p>
+   $$
+    F = B \times I \times L
+   $$
+  </p>
+<p>
+   Where
+   \(
+    F
+   \)
+   = Turning force newtons
+  </p>
+<p>
+   \(
+    B
+   \)
+   = Flux density, teslas
+  </p>
+<p>
+   \(
+    L
+   \)
+   = Total length of conductors, metres
+  </p>
+<p>
+   \(
+    I
+   \)
+   = Current in conductor, amperes
+  </p>
+<p>
+<b>
+    Note:
+   </b>
+   The symbol used for magnetic flux is
+   \(
+    \Phi
+   \)
+   (phi) and the unit is the weber Wb.
+  </p>
+<p>
+   The weber is the flux which when reduced to zero in one second produces one volt in a coil of one line lying in this flux.
+  </p>
+<p>
+   Magnetic flux density is the number of lines of flux (
+   \(
+    \Phi
+   \)
+   ) passing through a unit area
+   \(
+    A
+   \)
+   set at right angles to the flux.
+  </p>
+<p>
+   The symbol used for magnetic flux density is
+   \(
+    B
+   \)
+   and the unit is the tesla T.
+  </p>
+<p>
+   $$
+    B = \frac{\Phi}{A}
+   $$
+  </p>
+<p>
+   and 1 tesla = 1 weber per square metre
+   <br/>
+   or 1 T = 1 Wb/m
+   <sup>
+    2
+   </sup>
+</p>
+<h3>
+   Example 1
+  </h3>
+<p>
+   The armature of a DC motor has 650 conductors of which 70% lie under the pole faces at any given instant. The flux density under the poles is 0.7 T. If the armature diameter is 180 mm, its length 100 mm and the current in each conductor is 20 amperes.
+  </p>
+<p>
+   Find (a) The total force tending to rotate the armature
+   <br/>
+   (b) The torque exerted by the armature
+  </p>
+<h4>
+   Solution
+  </h4>
+<p>
+   Using
+   \(
+    F = B I L
+   \)
+  </p>
+<p>
+   Where
+   \(
+    F
+   \)
+   = force (newtons)
+  </p>
+<p>
+   \(
+    B
+   \)
+   = Flux density = 0.7 T
+  </p>
+<p>
+   \(
+    L
+   \)
+   = Total conductor length
+  </p>
+<p>
+   $$
+    \text{Force} = 0.7 \times 20 \times 650 \times 0.7 \times \frac{100}{1000}
+   $$
+  </p>
+<p>
+   Total Force =
+   <b>
+    637 Newtons
+   </b>
+</p>
+<p>
+   Torque = Force
+   \(
+    \times
+   \)
+   Radius
+  </p>
+<p>
+   $$
+    = 637 \times \frac{90}{100}
+   $$
+  </p>
+<p>
+   Torque exerted =
+   <b>
+    57.33 Nm
+   </b>
+</p>
+<h4>
+   Motor Speed
+  </h4>
+<p>
+   A reduction of the field flux of a motor causes the motor speed to increase. The reduction of field strength reduces the counter
+   \(
+    E
+   \)
+   of the motor because fewer lines of force are being cut by the armature conductors. A reduction of the counter
+   \(
+    E
+   \)
+   permits more armature current to flow. This increase in current causes a larger torque to be developed because the increase in armature current much more than offsets the decrease in field flux.
+  </p>
+<p>
+   The increased torque causes the motor speed to increase, thereby increasing the counter
+   \(
+    E
+   \)
+   in proportion. The speed and counter
+   \(
+    E
+   \)
+   increase until the armature current and the torque are reduced to values just large enough to supply the load at a new constant speed.
+  </p>
+<p>
+   An increase in the field strength causes a decrease in the motor speed for similar reasons. A greater counter
+   \(
+    E
+   \)
+   reduces the armature current and the torque, and the motor speed decreases. Thus, the motor slows down until the counter
+   \(
+    E
+   \)
+   and the armature current reach values such that the load is again carried at a constant speed.
+  </p>
+<p>
+   The fact that the speed of a motor varies with the field excitation provides a convenient means for controlling the speed of shunt and compound motors. The shunt-field current and, therefore, the field flux may be varied by a field rheostat. Reducing resistance in the field circuit causes a decrease in speed. This is the most common method of motor-speed control.
+  </p>
+<p>
+   Rated armature voltage in North America, for larger DC motors, falls between 250 to 500 VDC. An unloaded motor may run at 1200 RPM with 500 volts applied. The same unloaded motor would run at approximately 600 RPM with 250 volts applied.
+  </p>
+<p>
+   Specifications of motor performance are listed on the nameplate of the motor. This data includes the base speed of the motor at rated voltage and rated full-load amps. At constant field flux, the relationship between the voltage applied to the armature and speed is linear.
+  </p>
+<h3>
+   Example 2
+  </h3>
+<p>
+   Calculate the full-load speed of a DC motor operating from a 480 V supply, given:
+  </p>
+<p>
+   \(
+    R_a = 0.8 \Omega
+   \)
+   , full-load armature current is 60A, flux/pole is 0.03Wb. It is a four-pole motor with a simple wave-wound armature with 45 slots and 12 conductors/slot.
+  </p>
+<h4>
+   Solution
+  </h4>
+<h5>
+   Given:
+  </h5>
+<p>
+   \(
+    N
+   \)
+   = Speed of motor, rev/min
+  </p>
+<p>
+   \(
+    V
+   \)
+   = Supply voltage to motor
+  </p>
+<p>
+   \(
+    I_a
+   \)
+   = Armature current
+  </p>
+<p>
+   \(
+    R_a
+   \)
+   = Resistance
+  </p>
+<p>
+   \(
+    Z
+   \)
+   = Number of armature conductors
+  </p>
+<p>
+   \(
+    \Phi
+   \)
+   = Flux/pole
+  </p>
+<p>
+   \(
+    A
+   \)
+   = Number of parallel paths of the armature winding
+  </p>
+<p>
+<b>
+    Note:
+   </b>
+   Lap wound armature – number of parallel paths in the armature is always equal to the number of poles
+  </p>
+<p>
+   Wave wound armature – number of parallel paths is always two, regardless of the number of poles provided for the motor
+  </p>
+<p>
+   \(
+    P
+   \)
+   = Number of poles
+  </p>
+<p>
+   $$
+    N = \frac{(V - I_a R_a)}{Z \Phi} \times \frac{60 A}{P}
+   $$
+  </p>
+<p>
+   $$
+    N = \frac{(480 - 60 \times 0.8)}{540 \times 0.03} \times \frac{60 \times 2}{4}
+   $$
+  </p>
+<p>
+   $$
+    N = \frac{(480 - 48)}{16.2} \times \frac{120}{4}
+   $$
+  </p>
+<p>
+   $$
+    N = \frac{432}{16.2} \times 30
+   $$
+  </p>
+<p>
+   $$
+    N = 26.67 \times 30
+   $$
+  </p>
+<p>
+   $$
+    N = 800 \text{ r/min}
+   $$
+  </p>
+<h3>
+   CURRENT
+  </h3>
+<h3>
+   Example 3
+  </h3>
+<p>
+   A 480 V single phase DC motor is rated at 10 kW and operates at a power factor of 0.85 (lagging), with an efficiency of 92%. Calculate the current taken from the power supply.
+  </p>
+<h4>
+<b>
+    Solution
+   </b>
+</h4>
+<p>
+   $$
+    \begin{aligned}\text{Motor output} &amp;= 10.0 \times 1000 \\ &amp;= 10000 \text{ W}\end{aligned}
+   $$
+  </p>
+<p>
+   $$
+    \begin{aligned}\text{Motor input} &amp;= 10000 \times \frac{100}{92} \\ &amp;= 10870 \text{ W}\end{aligned}
+   $$
+  </p>
+<p>
+   $$
+    \text{But } VI\cos\phi = P
+   $$
+  </p>
+<p>
+   $$
+    \begin{aligned}I &amp;= \frac{P}{V\cos\phi} \\ &amp;= \frac{10870}{480 \times 0.85} \\ &amp;= \frac{10870}{408} \\ &amp;= 26.64 \text{ A}\end{aligned}
+   $$
+  </p>
+<p>
+   $$
+    \text{Motor current} = 26.64 \text{ A}
+   $$
+  </p>
+<h2>
+   Objective 7
+  </h2>
+<p>
+<b>
+    Explain the principle and application of shunt, series, and compound-wound DC motors including speed control.
+   </b>
+</p>
+<h2>
+   SHUNT MOTOR
+  </h2>
+<p>
+   The shunt motor (Fig. 33) is the most common type of DC motor. It is connected in the same way as the shunt generator, that is, its field winding is connected across the power supply line in parallel with the armature winding. This creates an independent path for current flow through each winding. The field current can be held constant while the armature circuit can be used to control the motor. A field rheostat is usually connected in series with the field.
+  </p>
+<img alt="Cross-sectional diagram of a shunt motor showing the field circuit and armature circuit." src="df82d77a0d2637cbf2da9ea920a554fa_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<p>
+    The diagram shows a cross-section of a DC motor. It features a central armature with multiple windings, surrounded by several field windings. On the left, two sets of terminals are shown. The top set is labeled 'Field Circuit' with terminals F
+    <sub>
+     1
+    </sub>
+    and F
+    <sub>
+     2
+    </sub>
+    . The bottom set is labeled 'Armature Circuit' with terminals A
+    <sub>
+     1
+    </sub>
+    and A
+    <sub>
+     2
+    </sub>
+    . Dotted lines trace the connections from these terminals to the respective windings within the motor's structure, illustrating their independent parallel paths.
+   </p>
+<div class="img-alt">
+    Cross-sectional diagram of a shunt motor showing the field circuit and armature circuit.
+   </div>
+</div>
+<p>
+   Tracing the wiring will indicate that the field circuit and the armature circuit are independent. Therefore, this is a shunt motor. You will notice that the interpoles are in series with the armature circuit to enable them to respond to armature current changes.
+  </p>
+<p>
+<i>
+    Figure 33
+    <br/>
+    Shunt Motor
+   </i>
+</p>
+<p>
+   A shunt motor has good speed regulation and is classed as a constant-speed motor even though its speed does decrease slightly with an increase in load. With an increase in load, there is a reduction in armature speed. This slowing of the armature reduces the cemf, which produces an increase in the amount of current flowing through the armature. This
+  </p>
+<p>
+   causes an increase in torque necessary to bring the armature speed back to normal. The reverse occurs when the load is decreased.
+  </p>
+<p>
+   Fig. 34 shows the characteristic curve of
+   <b>
+    Torque
+   </b>
+   \(
+    \times
+   \)
+   <b>
+    Speed
+   </b>
+   for a shunt motor supplied from a constant voltage source and with the field rheostat set to give full-field amperes.
+  </p>
+<img alt="Figure 34: Characteristic curve of Speed vs. Torque for a shunt motor." src="b6750d26d3dd287a4a4d49b3670a44bd_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<p>
+    A line graph showing the relationship between Speed (Y-axis) and Torque (X-axis) for a shunt motor. The Y-axis is labeled 'Speed' and has a '0' at the origin. The X-axis is labeled 'Torque'. The curve starts at a point on the Y-axis and is nearly horizontal, showing a very slight downward slope as Torque increases.
+   </p>
+<div class="img-alt">
+    Figure 34: Characteristic curve of Speed vs. Torque for a shunt motor.
+   </div>
+</div>
+<p>
+<i>
+    Figure 34
+   </i>
+<br/>
+<i>
+    Characteristic of Shunt and Separately-Excited DC Motors
+   </i>
+</p>
+<p>
+   The curve is also applicable to separately excited DC motors because their field connections are the same as the shunt-wound motor.
+  </p>
+<h3>
+   Speed Control
+  </h3>
+<p>
+   Speed control of a shunt motor can be accomplished through the use of a rheostat either in series with the field winding (Fig. 35), the armature winding (Fig. 36), or both. A rheostat in series with the field winding is the most common method of changing the speed of a shunt motor. This gives preference over the use of an armature rheostat since the field current is less than the armature current. This results in less of a power loss across the rheostat. This allows for more current to be available for motor operation.
+  </p>
+<p>
+   With the insertion of more resistance in series with the field, there is less current flowing through the field. This causes a drop in the strength of the field and the motor speeds up. When fewer flux lines are being cut by the rotating armature, the cemf drops. This allows more current to flow in the armature increasing the torque. The motor quickly speeds up, causing an increase in the cemf. The current is then reduced to a value that produces the required amount of torque.
+  </p>
+<p>
+   By inserting less resistance in series with the field, the field strength increases, causing the motor to slow down.
+  </p>
+<p>
+   With any part of the rheostat in the circuit, a portion of d-c supply voltage is dropped across it and less current flows through the motor element in series with it
+  </p>
+<p>
+   in the case of the field rheostat, decreasing the current flow causes the motor to speed up
+  </p>
+<img alt="Circuit diagram for Field Winding Rheostat Control. A DC supply is connected in parallel with a field rheostat and a motor. The field rheostat is connected in series with the field winding of the motor. The motor is represented by a circle with a dot in the center. The field rheostat is shown as a zigzag line with a tap. The DC supply is labeled 'D-C Supply'." src="2b3a967f6ce4f23649be995a353e39f8_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    Circuit diagram for Field Winding Rheostat Control. A DC supply is connected in parallel with a field rheostat and a motor. The field rheostat is connected in series with the field winding of the motor. The motor is represented by a circle with a dot in the center. The field rheostat is shown as a zigzag line with a tap. The DC supply is labeled 'D-C Supply'.
+   </div>
+</div>
+<p>
+<i>
+    Figure 35
+   </i>
+<br/>
+<i>
+    Field Winding Rheostat Control
+   </i>
+</p>
+<img alt="Circuit diagram for Armature Winding Rheostat Control. A DC supply is connected in parallel with an armature rheostat and a motor. The armature rheostat is connected in series with the armature of the motor. The motor is represented by a circle with a dot in the center. The armature rheostat is shown as a zigzag line with a tap. The DC supply is labeled 'D-C Supply'." src="10781f43062bf3e9601a1e086710556c_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    Circuit diagram for Armature Winding Rheostat Control. A DC supply is connected in parallel with an armature rheostat and a motor. The armature rheostat is connected in series with the armature of the motor. The motor is represented by a circle with a dot in the center. The armature rheostat is shown as a zigzag line with a tap. The DC supply is labeled 'D-C Supply'.
+   </div>
+</div>
+<p>
+   Decreasing the armature current slows the motor down
+  </p>
+<p>
+<i>
+    Figure 36
+   </i>
+<br/>
+<i>
+    Armature Winding Rheostat Control
+   </i>
+</p>
+<p>
+   Care must be taken never to open (Fig. 37) the field circuit of a shunt motor that is running unloaded. The motor tends to run away rather than stop because the residual magnetism of the pole pieces maintains a weak field. The armature circuit can still draw current since the field winding and the armature are in parallel across the power supply.
+  </p>
+<img alt="Diagram of a shunt motor with an open field winding. It shows a North (N) pole and a South (S) pole with a central armature. The armature is connected to an 'Armature Circuit'. The field winding, which is open at the South pole, is connected to a 'Field Circuit'. Magnetic lines are shown between the poles, indicating a weak field due to residual magnetism." src="b6671cfafda3820aafe9a24fa7a4d8c7_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<p style="text-align: center;">
+    Residual Magnetism
+    <br/>
+    Maintains a Weak Field
+   </p>
+<div class="img-alt">
+    Diagram of a shunt motor with an open field winding. It shows a North (N) pole and a South (S) pole with a central armature. The armature is connected to an 'Armature Circuit'. The field winding, which is open at the South pole, is connected to a 'Field Circuit'. Magnetic lines are shown between the poles, indicating a weak field due to residual magnetism.
+   </div>
+</div>
+<p>
+   With a field winding open, the shunt motor tends to run away rather than stop because residual magnetism of the pole pieces maintains a weak field. The armature circuit, of course, can still draw current because the field winding and the armature are in parallel across the power supply.
+  </p>
+<p style="text-align: center;">
+<i>
+    Figure 37
+   </i>
+<br/>
+<i>
+    Open Field Windings
+   </i>
+</p>
+<h3>
+   SERIES MOTOR
+  </h3>
+<p>
+   In the series motor (Fig. 38), the field is connected in series with the armature. As the series field must carry full armature current, it is wound with a few turns of comparatively large wire. Any change in load causes a change in armature current and also a change in field flux. Therefore as the load changes, the speed changes.
+  </p>
+
+
+<img alt="A cross-sectional diagram of a series motor. It shows a central armature with multiple windings, surrounded by four field windings. The field windings are connected in series with the armature windings. Two lines labeled 'D-C Supply' enter from the left and connect to the armature windings." src="2dfa6ac3edfe874f68aa0cbccaa42322_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    A cross-sectional diagram of a series motor. It shows a central armature with multiple windings, surrounded by four field windings. The field windings are connected in series with the armature windings. Two lines labeled 'D-C Supply' enter from the left and connect to the armature windings.
+   </div>
+</div>
+<p>
+   Tracing the wiring diagram will indicate that the field windings and the armature circuit are in series. Therefore, this is a series motor.
+  </p>
+<p>
+<i>
+    Figure 38
+   </i>
+<br/>
+<i>
+    Series Motor
+   </i>
+</p>
+<p>
+   The speed of a shunt motor is inversely proportional to the field flux. This is true also in a series motor. The armature circuit
+   \(
+    IR
+   \)
+   drop also varies with the load, but its effect is very small compared with the effect of the field flux. Therefore, the speed of a series motor depends almost entirely on the flux: the stronger the field flux, the lower the speed. Likewise, a decrease in load current and therefore in field current and field flux causes an increase in speed. Thus, the speed varies from a very high speed at light loads to a low speed at full load.
+  </p>
+<p>
+   A series motor is not a constant speed motor. In the shunt motor when the torque is increased, the speed increases, and vice versa. Torque and speed are inversely proportional in the series motor. This means that when the torque is low, the speed is high; when the torque is high, the speed is low.
+  </p>
+<p>
+   If a series motor is started or run without a load, it has a tendency to “run away.” Without a load, a low torque is required to turn the armature. The motor then speed up in an attempt to increase cemf to reduce the armature current required to keep the torque low. But, as the motor runs faster to reduce the armature current, the field flux and cemf also drop. Therefore, the motor runs faster to build up more cemf. The speed continues to increase until the physical force of rotation damages the motor (Fig. 39) through a combination of centrifugal force and friction heating. For this reason,
+   <b>
+    the load should never be removed from a series motor.
+   </b>
+</p>
+<img alt="Diagram of a series motor showing runaway speed and back EMF." src="2173c0102e23a5ff29d90d4353fc0339_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<p>
+    A schematic diagram of a series motor. The motor is represented by a circle with a central dot. A belt and pulley system is connected to the motor's shaft, with a label "RUNAWAY SPEED" above it. The motor is connected in a series circuit with a DC voltage source (represented by a battery symbol) and a circle labeled "CEMF" (Counter Electromotive Force).
+   </p>
+<div class="img-alt">
+    Diagram of a series motor showing runaway speed and back EMF.
+   </div>
+</div>
+<p>
+   Figure 39
+   <br/>
+<i>
+    Series Motor Runaway Speed
+   </i>
+</p>
+<p>
+   A series motor is used only where load is directly connected to the shaft or geared to the shaft. Very small series motors usually have enough friction and other losses to keep the no-load speed down to a safe limit. The speed-load curve of a typical series motor is shown in Fig. 40. The characteristic curve is ideal for application to cranes or for traction uses where high torque is required at low speeds.
+  </p>
+<img alt="Graph of Speed vs. Torque for a series DC motor." src="505116873ad67b610dfceb37016d04a3_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<p>
+    A graph showing the characteristic curve of a series DC motor. The vertical axis is labeled "Speed" and the horizontal axis is labeled "Torque". The origin is marked with "0". A curve starts at a high speed on the vertical axis and decreases as torque increases, approaching a horizontal asymptote.
+   </p>
+<div class="img-alt">
+    Graph of Speed vs. Torque for a series DC motor.
+   </div>
+</div>
+<p>
+   Figure 40
+   <br/>
+<i>
+    Characteristic of Series DC Motors
+   </i>
+</p>
+<h3>
+   Speed Control
+  </h3>
+<p>
+   Inserting resistance in the armature circuit, as shown in Fig. 41, controls the speed of a series motor.
+  </p>
+<img alt="Circuit diagram for series motor speed control." src="715219db84ec2a5622d09f9d822b4550_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<p>
+    A circuit diagram for speed control of a series motor. The motor is shown as a circle. It is connected in series with a "Series Field" winding and a "Variable Starting Resistor". The resistor is shown as a zigzag line with a tap labeled "a" and another labeled "b". The circuit is connected "To Power Source".
+   </p>
+<div class="img-alt">
+    Circuit diagram for series motor speed control.
+   </div>
+</div>
+<p>
+   Figure 41
+   <br/>
+<i>
+    Series Motor Speed Control
+   </i>
+</p>
+<h2>
+   COMPOUND MOTOR
+  </h2>
+<p>
+   There are two types of compound motors:
+  </p>
+<ul style="list-style-type: none">
+<li>
+    • Cumulative compound
+   </li>
+<li>
+    • Differential compound
+   </li>
+</ul>
+<h3>
+   Cumulative Compound
+  </h3>
+<p>
+   In the cumulative-compound motor, Fig. 42, a shunt field winding and a series field winding are wound in the same direction. In this combination, the windings aid each other in generating the required magnetic flux. This type, called a series-shunt motor, consist of a series motor with a few shunt turns to prevent the motor from running away under no-load conditions. This motor has a definite no-load speed and may be safely operated at no-load.
+  </p>
+<p>
+   Speed regulation in a cumulative-compound motor is not as good as in a shunt motor because as load is added, the increase in flux causes the speed to decrease more than a shunt motor.
+  </p>
+<p>
+   A cumulative-compound motor produces more torque than a shunt motor for a given amount of armature current. This is due to the increased flux from the series field.
+  </p>
+<p>
+   A cumulative compound motor is used in applications where a fairly constant speed is required with irregular loads. Examples are reciprocating machines such as presses and shears.
+  </p>
+<p>
+   There is another type of cumulative-compound motor in which the series characteristic of high starting torque is used to start the motor. Once at its standard running speed, the series winding is disconnected by a switch. The motor then operates by the speed-regulating characteristics of the shunt motor as described in the shunt motor paragraph earlier in this objective.
+  </p>
+<img alt="Circuit diagram of a cumulative-compound motor. It shows a DC voltage source connected to a motor armature and two field windings: a shunt field and a series field. The shunt field is connected in parallel with the armature, and the series field is connected in series with the armature. Arrows indicate the direction of current flow: clockwise for the shunt field and counter-clockwise for the series field. Labels 'Shunt Field Flux' and 'Series Field Flux' are present. To the right of the diagram, the text 'SERIES-SHUNT MOTOR' is written, followed by a paragraph explaining that in this cumulative-compound motor, a small shunt winding produces flux that adds the main series field, enabling the motor to retain the high-torque characteristic of a series motor and eliminating the tendency towards runaway under no-load conditions." src="2763901b7a1fd1b5d704cdc450d12ed0_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<p style="text-align: right;">
+<b>
+     SERIES-SHUNT MOTOR
+    </b>
+</p>
+<p style="text-align: right;">
+    In this cumulative-compound motor, a small shunt winding produces flux that adds the main series field. This enables the motor to retain the high-torque characteristic of a series motor, and eliminates the tendency towards runaway under no-load conditions.
+   </p>
+<div class="img-alt">
+    Circuit diagram of a cumulative-compound motor. It shows a DC voltage source connected to a motor armature and two field windings: a shunt field and a series field. The shunt field is connected in parallel with the armature, and the series field is connected in series with the armature. Arrows indicate the direction of current flow: clockwise for the shunt field and counter-clockwise for the series field. Labels 'Shunt Field Flux' and 'Series Field Flux' are present. To the right of the diagram, the text 'SERIES-SHUNT MOTOR' is written, followed by a paragraph explaining that in this cumulative-compound motor, a small shunt winding produces flux that adds the main series field, enabling the motor to retain the high-torque characteristic of a series motor and eliminating the tendency towards runaway under no-load conditions.
+   </div>
+</div>
+<p style="text-align: center;">
+<i>
+    Figure 42
+   </i>
+<br/>
+<i>
+    Cumulative-Compound Motor
+   </i>
+</p>
+<p>
+   Fig. 43 shows the speed/torque characteristics of a cumulative-compound motor.
+  </p>
+<img alt="Graph showing the speed/torque characteristics of a cumulative-compound motor. The vertical axis is labeled 'Speed' and the horizontal axis is labeled 'Torque'. The curve starts at a high speed on the vertical axis and decreases as torque increases, showing a drooping characteristic." src="f961cbef0f8217e216b553bed270315b_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    Graph showing the speed/torque characteristics of a cumulative-compound motor. The vertical axis is labeled 'Speed' and the horizontal axis is labeled 'Torque'. The curve starts at a high speed on the vertical axis and decreases as torque increases, showing a drooping characteristic.
+   </div>
+</div>
+<p style="text-align: center;">
+<i>
+    Figure 43
+   </i>
+<br/>
+<i>
+    Speed/Torque Characteristics of Cumulative-Compound Motors
+   </i>
+</p>
+<h3>
+   Differential-Compound
+  </h3>
+<p>
+   The differential-compound motor, Fig. 44, is a shunt motor with a small series field winding. But, the field windings are wound in opposite directions so that the series flux subtracts from the shunt flux. The motor operates at constant speed under varying load conditions.
+  </p>
+<p>
+   Because the shunt field overrides the series field, the differential-compound motor does not have the good starting torque characteristic of series motor. The series field acts to
+  </p>
+<p>
+   make the motor more sensitive to load changes. This gives better constant speed regulation than the standard shunt motor.
+  </p>
+<p>
+   When an increase in load causes the motor to slow down, the following occurs:
+  </p>
+<ol style="list-style-type: none">
+<li>
+    1. There is a decrease in cemf causing more armature current to flow in an attempt to bring up the motor speed.
+   </li>
+<li>
+    2. There is also an increase in the current in the series field windings.
+   </li>
+</ol>
+<p>
+   The increase in series flux opposes and reduces the dominant shunt field flux. The decrease in field strength also causes the motor to increase in speed to build up the cemf. This causes the motor to react much more quickly to maintain its speed.
+  </p>
+<img alt="Circuit diagram of a differential-compound motor. It shows a DC voltage source connected to a shunt field winding and a series field winding in series with the armature. The shunt field is labeled 'Shunt Field Flux' and the series field is labeled 'Series Field Flux'. Arrows indicate the direction of current flow. A text box on the right explains that the series field produces flux in opposition to the shunt field, allowing for constant speed operation." src="53f1f7d17b3e7aae62169c41d2a88a77_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<p>
+    The differential-compound motor has a small series field winding that produces flux in opposition to the main shunt field winding. This allows the motor to operate at practically a constant speed under varying load conditions.
+   </p>
+<div class="img-alt">
+    Circuit diagram of a differential-compound motor. It shows a DC voltage source connected to a shunt field winding and a series field winding in series with the armature. The shunt field is labeled 'Shunt Field Flux' and the series field is labeled 'Series Field Flux'. Arrows indicate the direction of current flow. A text box on the right explains that the series field produces flux in opposition to the shunt field, allowing for constant speed operation.
+   </div>
+</div>
+<p>
+   Figure 44
+   <br/>
+<i>
+    Differential-Compound Motor
+   </i>
+</p>
+<p>
+   Fig. 45 shows the speed/torque characteristics of a differential-compound DC motor.
+  </p>
+<img alt="Graph showing the speed/torque characteristics of a differential-compound motor. The vertical axis is labeled 'Speed' and the horizontal axis is labeled 'Torque'. The curve starts at a constant speed at zero torque and then increases as torque increases, showing a positive slope." src="3ef2266eb61ae3929cdae1742c1f526e_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<p>
+    The graph shows Speed on the vertical axis and Torque on the horizontal axis. The curve starts at a constant speed at zero torque and then increases as torque increases, showing a positive slope.
+   </p>
+<div class="img-alt">
+    Graph showing the speed/torque characteristics of a differential-compound motor. The vertical axis is labeled 'Speed' and the horizontal axis is labeled 'Torque'. The curve starts at a constant speed at zero torque and then increases as torque increases, showing a positive slope.
+   </div>
+</div>
+<p>
+   Figure 45
+   <br/>
+<i>
+    Speed/Torque Characteristics of Differential-Compound Motors
+   </i>
+</p>
+<p>
+   The differential compound motor has a nearly constant speed at all loads but has poor torque characteristics at heavy loads and is seldom used. A shunt motor has nearly constant speed for most applications and much better torque characteristics.
+  </p>
+<h3>
+   Objective 8
+  </h3>
+<p>
+<b>
+    Explain the principle and application of counter-E, current limit and time limit DC motor automatic starters.
+   </b>
+</p>
+<h2>
+   DC MOTOR STARTERS
+  </h2>
+<p>
+   Automatic starting of DC motors has several advantages over hand control. The settings on the starter can be arranged to give uniform acceleration throughout the motor run-up, and chances of improper operation which occur under hand control are eliminated.
+  </p>
+<p>
+   There are three types of automatic starters:
+  </p>
+<ul style="list-style-type: none">
+<li>
+    • Counter-E
+   </li>
+<li>
+    • Current limit
+   </li>
+<li>
+    • Time limit
+   </li>
+</ul>
+<h3>
+   Counter- E
+  </h3>
+<p>
+   Fig. 46 shows a wiring diagram for an automatic starter of the counter -E type with voltage sensitive relays. This type is sensitive to voltage and acts to cut out the armature resistance in steps as the motor back
+   \(
+    E
+   \)
+   builds up. Relays A, B and C are connected across the motor terminals where they measure the armature voltage. This will increase as the back
+   \(
+    E
+   \)
+   builds up.
+  </p>
+<p>
+   The motor is started by pressing the start button This energizes the main contactor M which instantly closes the main contacts MX, to start the motor, and the auxiliary contacts M1, to seal the start button. The motor therefore starts with resistances R1, R2, and R3 in series with the armature. As the speed increases, the rising terminal p.d. (potential difference) energizes the relays A, B, and C in sequence.
+  </p>
+<p>
+   Relay A is energized at about 40% voltage, relay B at 60% and relay C at 80%. Each relay operates to cut out armature resistance. Relay A closes the contacts AX, energizes the main relay A1 which in turn closes A1X and shorts out the R1 section of the resistance. When all resistance has been cut out, the motor runs until either the stop button is pressed or the contacts OL open by operation of the overload relay OL. In either case the motor stops and will not restart until the whole starting procedure is begun again.
+  </p>
+<h4>
+   Current limit
+  </h4>
+<p>
+   Current limit motor starters (Fig. 47) measure the armature current. flow and reduce the resistance in the circuit as the starting current decreases. This type employs series relays SR1, 2 and 3 which are sensitive to the armature current flowing. They operate the contactors 1 A, 2A and 3A which in turn control the contacts 1AX, 2AX, and 3AX.
+  </p>
+<p>
+   The motor is started by pressing the start button as before. Relay M is energized and closes contacts MX and M1. Current then flows through the armature, the three resistances R1, R2 and R3 and the series relay SR1. Heavy starting current through this relay causes it to open the (normally closed) contact SR1X. Contacts M2 close next under the action of the main relay M. This operation has been arranged to have a time lag which is sufficient to allow SR1X contacts to open first.
+  </p>
+<p>
+   Decreasing armature current, as the motor speeds up and generates counter-emf, is measured by the relay SR1 and used to re-close contacts SR1X at the required figure. Contactor 1A is now energized and closes main contacts 1AX and auxiliary contacts 1A. The section of armature resistance R1 is shorted out and the armature current flows through R3, R2 and series relay SR2.
+  </p>
+<h4>
+   Time limit
+  </h4>
+<p>
+   Fig. 48 shows a compound motor starter which operates through definite time lag relays. This type operates strictly on a time basis and cuts out armature resistance steps at definite time intervals.
+  </p>
+<p>
+   The contactors 1A, 2A, and 3A have time-closing contacts which are energized in sequence beginning with the main contactor M (operating auxiliary contacts M2).
+  </p>
+<p>
+   When all have closed and have cut out the armature resistances R1, R2 and R3 (normally closed), contacts 3AX are opened and the final motor speed adjustment and control is carried out by variation of the field rheostat resistance in the shunt field. The motor is stopped in the same way as in the counter-emf and current-limit starters.
+  </p>
+<p>
+   The sequence is repeated until all armature resistance is cut out, the motor then runs at standard speed until either stopped by hand or tripped on overload.
+  </p>
+<p>
+   The advantage of the current limiting type of starter is that the motor starts quickly on light load and more slowly on heavy load.
+  </p>
+<h4>
+<p>
+<b>
+     Legend
+    </b>
+    (Common to Figs. 46, 47 and 48)
+   </p>
+</h4>
+<table>
+<tr data-bbox="180 256 1024 296">
+<td rowspan="4">
+     Relays:
+    </td>
+<td>
+     Voltage: Sensitive (A, B and C - Fig. 46)
+    </td>
+</tr>
+<tr data-bbox="180 296 1024 333">
+<td>
+     Current Sensitive (SR1, 2, 3 - Fig. 47)
+    </td>
+</tr>
+<tr data-bbox="180 333 1024 373">
+<td>
+     Control Relay (CR - Fig. 48)
+    </td>
+</tr>
+<tr data-bbox="180 373 1024 411">
+<td>
+     Overload Relay (OL - Figs. 46, 47, 48)
+    </td>
+</tr>
+<tr data-bbox="180 411 1024 449">
+<td rowspan="2">
+     Contactors:
+    </td>
+<td>
+     Fig. 46 - M, A1, B1, C1
+    </td>
+</tr>
+<tr data-bbox="180 449 1024 487">
+<td>
+     Figs. 47 and 48 - M, 1A, 2A, 3A
+    </td>
+</tr>
+<tr data-bbox="180 487 1024 522">
+<td>
+     Contacts:
+    </td>
+<td>
+     Normally Open    Normally Closed
+    </td>
+</tr>
+</table>
+<img alt="Circuit diagram of a Counter-E DC Motor Starter (Figure 46). The diagram shows the electrical connections for starting and running a DC motor. At the top, a DC power source is connected through a switch. The main circuit includes a motor armature (M) in series with three resistors (R1, R2, R3) and three normally closed contacts (A1X, B1X, C1X). A shunt field winding is connected in parallel with the armature. An overload relay (OL) is connected in series with the shunt field. A voltmeter (A) is connected across the shunt field. A stop button and a start button (M1) are connected in series with the shunt field. The start button (M1) is a normally closed contact. The motor armature (M) is connected to three normally open contacts (AX, BX, CX) which are in series with three normally closed contacts (A1, B1, C1). The motor armature (M) is also connected to three voltmeters (A1, B1, C1). The motor armature (M) is also connected to three resistors (R1, R2, R3) through the contacts (A1X, B1X, C1X)." src="562f471e8153729557e6a4ee6343c32c_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    Circuit diagram of a Counter-E DC Motor Starter (Figure 46). The diagram shows the electrical connections for starting and running a DC motor. At the top, a DC power source is connected through a switch. The main circuit includes a motor armature (M) in series with three resistors (R1, R2, R3) and three normally closed contacts (A1X, B1X, C1X). A shunt field winding is connected in parallel with the armature. An overload relay (OL) is connected in series with the shunt field. A voltmeter (A) is connected across the shunt field. A stop button and a start button (M1) are connected in series with the shunt field. The start button (M1) is a normally closed contact. The motor armature (M) is connected to three normally open contacts (AX, BX, CX) which are in series with three normally closed contacts (A1, B1, C1). The motor armature (M) is also connected to three voltmeters (A1, B1, C1). The motor armature (M) is also connected to three resistors (R1, R2, R3) through the contacts (A1X, B1X, C1X).
+   </div>
+</div>
+<p>
+   Figure 46
+   <br/>
+<i>
+    Counter-E DC Motor Starter
+   </i>
+</p>
+<img alt="Circuit diagram of a Current Limit DC Motor Starter. The diagram shows a DC motor with a Shunt Field and a Series Field (Se. F.). The armature is connected to a series of resistors R1, R2, and R3. Each resistor has a current-sensing relay (SR1, SR2, SR3) connected across it. The relays are labeled 1AX, 2AX, and 3AX. The motor is controlled by a Start button (M1) and a Stop button (OL). The circuit also includes a no-volt coil (MX) and an overload relay (OL). The armature is also connected to a series of current-sensing relays (1A, 2A, 3A) which are labeled SR1X, SR2X, and SR3X. The relays are connected to a common bus (M) and a common bus (M2)." src="a5ee5c23b6dc52ec1d724b76d5a5f58f_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<p>
+    The diagram illustrates a current-limiting starter for a DC motor. At the top, a 'Shunt Field' winding is connected across the main supply lines. Below it, the motor's armature is shown with its 'I.F.' (Interpole Field) and 'Se. F.' (Series Field) windings. The armature circuit includes three resistors, R1, R2, and R3, in series. Current-sensing relays SR1, SR2, and SR3 are connected across these resistors, with labels 1AX, 2AX, and 3AX respectively. The main control circuit features a 'Stop' button (normally closed, labeled OL), a 'Start' button (normally open, labeled M1), and an 'OL' (overload) relay. A 'MX' (no-volt) coil is also present. At the bottom, a second set of current-sensing relays, labeled 1A, 2A, and 3A, are shown with their respective coils labeled SR1X, SR2X, and SR3X. These are connected to a common bus 'M' and another common bus 'M2'.
+   </p>
+<div class="img-alt">
+    Circuit diagram of a Current Limit DC Motor Starter. The diagram shows a DC motor with a Shunt Field and a Series Field (Se. F.). The armature is connected to a series of resistors R1, R2, and R3. Each resistor has a current-sensing relay (SR1, SR2, SR3) connected across it. The relays are labeled 1AX, 2AX, and 3AX. The motor is controlled by a Start button (M1) and a Stop button (OL). The circuit also includes a no-volt coil (MX) and an overload relay (OL). The armature is also connected to a series of current-sensing relays (1A, 2A, 3A) which are labeled SR1X, SR2X, and SR3X. The relays are connected to a common bus (M) and a common bus (M2).
+   </div>
+</div>
+<p>
+   Figure 47
+   <br/>
+   Current Limit DC Motor Starter
+  </p>
+<img alt="Wiring diagram of a Time Limit DC Motor Starter. The diagram shows a DC motor (M) connected to a power source through a series of components. The field circuit includes a Shunt Field winding and a Field Rheostat (3AX). The armature circuit includes an Overload (OL) relay, a No Volt Coil (I.F.), and a series of resistors (R1, R2, R3) with taps (1A, 2A, 3A). The control circuit includes a Stop button, a Start button, and a CR (Control Relay) coil. The motor is connected to a series of time limit relays (M1, M2, 1A, 2A, 3A) which are controlled by the CR coil and the motor's armature current. The diagram also shows various switches and relays used for starting and stopping the motor, including a Stop button, a Start button, and a CR (Control Relay) coil." src="cfef993dcc8fb513de79eb1f93cf26ae_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<p>
+    The diagram illustrates the electrical control circuit for a DC motor with a time limit starter. At the top, a DC power source is connected to a switch. Below this, the field circuit consists of a 'Shunt Field' winding and a 'Field Rheostat' labeled '3AX'. The armature circuit of the motor (M) includes an 'Overload' (OL) relay, a 'No Volt Coil' (I.F.), and a series of resistors labeled 'R1', 'R2', and 'R3'. These resistors have intermediate taps labeled '1A', '2A', and '3A'. A 'Start' button is connected in parallel with a 'CR' (Control Relay) coil. A 'Stop' button and an 'OL' (Overload) relay are also in the control circuit. Below the main circuit, there is a vertical stack of components: a 'CR' coil, a motor symbol 'M', and three time limit relays labeled '1A', '2A', and '3A'. These relays are connected to the resistors R1, R2, and R3. At the bottom of the stack, there are two more relays labeled 'M1' and 'M2', which are connected to the 'Start' button and the 'CR' coil.
+   </p>
+<div class="img-alt">
+    Wiring diagram of a Time Limit DC Motor Starter. The diagram shows a DC motor (M) connected to a power source through a series of components. The field circuit includes a Shunt Field winding and a Field Rheostat (3AX). The armature circuit includes an Overload (OL) relay, a No Volt Coil (I.F.), and a series of resistors (R1, R2, R3) with taps (1A, 2A, 3A). The control circuit includes a Stop button, a Start button, and a CR (Control Relay) coil. The motor is connected to a series of time limit relays (M1, M2, 1A, 2A, 3A) which are controlled by the CR coil and the motor's armature current. The diagram also shows various switches and relays used for starting and stopping the motor, including a Stop button, a Start button, and a CR (Control Relay) coil.
+   </div>
+</div>
+<p>
+   Figure 48
+   <br/>
+   Time Limit DC Motor Starter
+  </p>
+<h3>
+   Objective 9
+  </h3>
+<p>
+<b>
+    Explain the principle and application of dynamic and regenerative braking.
+   </b>
+</p>
+<h2>
+   DYNAMIC BRAKING
+  </h2>
+<p>
+   Direct-current motors may be decelerated quickly by converting the energy stored in the moving masses to electrical energy and dissipating it as heat through resistors. To do this, the motor armature is disconnected from the supply lines and connected across a suitable resistor and the shunt field is maintained at full strength. The motor behaves as a generator and feeds current to the resistor, dissipating heat at a rate equal to
+   \(
+    I^2R
+   \)
+   .
+  </p>
+<p>
+   The value of
+   \(
+    R
+   \)
+   is selected to provide an armature current that will equal 150 to 300 per cent of the rated motor current. Using Lenz's Law of Induction, the armature current produced by dynamic braking is in a direction to oppose the motion of the armature. It is this negative torque, or counter-torque, that slows the machine.
+  </p>
+<p>
+   Dynamic braking is also very useful for limiting the speed of overhauling loads, such as would be produced by lowering heavy loads on elevators and winches or by electric trains going down grade. Because the energy is expended in resistors, this type of braking is sometimes called
+   <b>
+    resistive braking
+   </b>
+   .
+  </p>
+<h3>
+   REGENERATIVE BRAKING
+  </h3>
+<p>
+   Regenerative braking converts the energy of overhauling loads into electrical energy and pumps it back into the electrical system. An overhauling load will drive a DC motor faster than it usually operates with a given applied voltage. This causes its counter emf (cemf) to become greater than the applied voltage and result in generator action.
+  </p>
+<p>
+   Regenerative braking is used extensively on electrified railroads and to some extent with elevators and winches. Regenerative braking cannot occur in the series motor unless the field is connected across the line with a current-limiting resistor in series or by separately exciting the series field from a low-voltage generator.
+  </p>
+<h3>
+<b>
+    DYNAMIC VERSUS REGENERATIVE BRAKING
+   </b>
+</h3>
+<p>
+   In dynamic braking, the energy produced by generator action is dissipated in resistors. There must a cool-down period or duty cycle to allow the resistors to get rid of the heat. For example, one manufacturer recommends that a 15 minute cool-down period take place after 3 consecutive stops of the motor.
+  </p>
+<p>
+   Regenerative braking is used if repetitive operation is required. Regenerative braking slows a motor faster from its base speed to a stop condition.
+  </p>
+<h3>
+   Objective 10
+  </h3>
+<p>
+<b>
+    Calculate efficiency and discuss the reasons for power losses in a DC motor and generator.
+   </b>
+</p>
+<h2>
+   POWER LOSSES
+  </h2>
+<p>
+   Losses that occur in DC machines are classified as rotational losses and electrical losses. These losses can be listed as:
+  </p>
+<ul style="list-style-type: none">
+<li>
+    • Friction
+   </li>
+<li>
+    • Iron
+   </li>
+<li>
+    • Copper
+   </li>
+</ul>
+<h3>
+   Friction
+  </h3>
+<p>
+   Friction losses include bearing friction, brush friction, and wind friction (i.e. friction against ambient air as the armature rotates).
+  </p>
+<h3>
+   Iron
+  </h3>
+<p>
+   These occur in the magnetic circuit due to:
+  </p>
+<ul style="list-style-type: none">
+<li>
+    • Eddy currents
+   </li>
+<li>
+    • Hysteresis
+   </li>
+</ul>
+<h3>
+   Eddy Current
+  </h3>
+<p>
+   The materials used to construct the core of the armature, other than the copper windings, also conduct electricity. When these materials are rotated in a magnetic field, they have currents induced in them. These currents are called eddy currents. The currents tend to flow within the magnetic materials of the armature but still generate heat and are considered a loss.
+  </p>
+<h3>
+   Hysteresis
+  </h3>
+<p>
+   Hysteresis refers to the losses associated with magnetizing and demagnetizing substances such as iron, steel, and associated alloys. For a material to be magnetized or conduct magnetic lines of force, the molecular particles are aligned to produce north and south poles. This takes energy. In the case of the rotating armature of DC machines, the flux is continually aligning and realigning. The energy required to do this produces heat and is a loss. To compensate for these losses, laminations of different alloys are used for the armature and stator components.
+  </p>
+<h3>
+   Copper
+  </h3>
+<p>
+   Loss of copper is due to the resistance of armature and field windings. They represent electrical power (
+   \(
+    I^2R
+   \)
+   ) that is turned into heat.
+  </p>
+<h2>
+   EFFICIENCY
+  </h2>
+<p>
+   The efficiency of any machine is given by:
+  </p>
+<p>
+   $$
+    \text{Efficiency} = \frac{\text{Power Output}}{\text{Power Input}}
+   $$
+  </p>
+<p>
+   In the case of a small DC motor, the output can be measured using a calibrated brake or a dynamometer. The input power is measured using electrical instrumentation. However, with large motors, it is more difficult to measure the output power with any degree of accuracy.
+  </p>
+<p>
+   Measuring the mechanical input of a generator is difficult. In the case of large generators, the electrical output requires the dissipation of large amounts of heat energy.
+  </p>
+<p>
+   The efficiency of a motor is calculated using the following formula:
+  </p>
+<p>
+   $$
+    \text{Efficiency} = \frac{\text{Power Input} - \text{Losses}}{\text{Power Input}}
+   $$
+  </p>
+<p>
+   The efficiency of a generator is calculated using the following formula:
+  </p>
+<p>
+   $$
+    \text{Efficiency} = \frac{\text{Power Input}}{\text{Power Input} + \text{Losses}}
+   $$
+  </p>
+<p>
+   The following example shows the application to a generator efficiency calculation.
+  </p>
+<h3>
+   Example 4
+  </h3>
+<p>
+   A shunt generator has the following particulars at full-load rating: output 10 kilowatts, volts 230, armature circuit resistance 0.4 ohms, field circuit resistance 192 ohms; friction and iron losses combined 750 watts. Calculate the generator efficiency at this load.
+  </p>
+<h4>
+   Solution
+  </h4>
+<p>
+   $$
+    \begin{aligned}\text{Generator Efficiency} &amp;= \frac{\text{Output}}{\text{Input}} \\ \text{Output} &amp;= \text{Input} - \text{Losses}\end{aligned}
+   $$
+  </p>
+<p>
+   The losses are Copper loss + Iron loss + Friction loss
+   <br/>
+   and the Copper loss = Armature
+   \(
+    I^2R
+   \)
+   + Field Circuit
+   \(
+    I^2R
+   \)
+  </p>
+<p>
+   $$
+    \begin{aligned}\text{Generator Output Current} &amp;= \frac{10\,000 \text{ watts}}{230 \text{ volts}} \\ &amp;= 43.5 \text{ amperes}\end{aligned}
+   $$
+  </p>
+<p>
+   $$
+    \begin{aligned}
+ \text{Field Circuit Current} &amp;= \frac{230 \text{ volts}}{192 \text{ ohms}} \\
+ &amp;= 1.2 \text{ amperes} \\
+ \text{Armature Current} &amp;= 43.5 + 1.2 \\
+ &amp;= 44.7 \text{ amperes} \\
+ \text{Armature } I^2R &amp;= 44.7^2 \times 0.4 \\
+ &amp;= 799.2 \text{ watts} \\
+ \text{Field Circuit } I^2R &amp;= 1.2^2 \times 192 \\
+ &amp;= 276.5 \\
+ \text{Total Copper loss} &amp;= 799.2 + 276.5 \\
+ &amp;= 1075.7 \text{ watts} \\
+ \text{Total losses at full load} &amp;= 1075.7 + 750 \\
+ &amp;= 1825.7 \text{ watts} \\
+ \text{Generator Efficiency} &amp;= \frac{10\,000 \text{ watts}}{10\,000 + 1825.7} \\
+ &amp;= 0.846 \\
+ &amp;= \mathbf{84.6\%} \text{ (Ans.)}
+ \end{aligned}
+   $$
+  </p>
+<p>
+   Typically DC machines have an efficiency of 80% to 95%.
+  </p>
+<p>
+   The efficiency of a DC motor may be calculated in exactly the same way from measurement of the circuit resistances together with a test to find the rotational losses. The motor is run at rated speed but no load and the measured input gives the no-load rotational loss.
+  </p>
+<h2>
+   Chapter Questions
+  </h2>
+<p>
+   B3.2
+  </p>
+<ol style="list-style-type: none">
+<li>
+    1. Explain the operation a commutator.
+   </li>
+<li>
+    2. How is ripple reduced in a DC generator?
+   </li>
+<li>
+    3. What is the term for the action of the armature currents that establish a field that distorts and weakens the stator field?
+   </li>
+<li>
+    4. What is one method of reducing armature reaction in a DC generator?
+   </li>
+<li>
+    5. What is the most common application in industry for a DC generator with lap windings? Wave windings?
+   </li>
+<li>
+    6. Explain the difference between series-wound DC generators and shunt-wound generators.
+   </li>
+<li>
+    7. The voltage of a generator changes from 130 volts at a no-load condition to 120 volts at a full-load condition. What is the voltage regulation of this machine?
+   </li>
+<li>
+    8. Describe back emf for a motor.
+   </li>
+<li>
+    9. What is the approximate magnitude of the starting current compared to the full load current?
+   </li>
+<li>
+    10. Describe two methods of limiting armature resistance during the startup period for motors.
+   </li>
+<li>
+    11. Explain the difference between dynamic braking and regenerative braking.
+   </li>
+<li>
+    12. Name three types of losses in a generator or motor.
+   </li>
+<li>
+    13. A shunt generator has the following particulars at full-load rating: output 15 kilowatts, volts 240, armature circuit resistance 0.5 ohms, field circuit resistance 180 ohms; friction and iron losses combined 700 watts. Calculate the generator efficiency at this load.
+   </li>
+</ol>
+</body>
+</html>

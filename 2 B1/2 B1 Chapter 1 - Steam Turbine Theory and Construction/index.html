@@ -1,0 +1,4457 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="utf-8"/>
+<script>
+    MathJax = {
+      tex: {
+        inlineMath: [['\\(', '\\)']],
+        displayMath: [['$$', '$$']]
+      }
+    };
+    </script>
+<script async="" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+<div id="nav-header" style="padding: 15px 20px; background: #2c3e50; color: white; display: flex; align-items: center; gap: 20px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+<a href="../index.html" style="color: white; text-decoration: none; background: #34495e; padding: 8px 16px; border-radius: 4px; font-weight: 600; font-size: 0.9rem; transition: background 0.2s;">← Back to Index</a>
+<h1 style="margin: 0; font-size: 1.2rem; font-weight: 500; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Power Engineering Series</h1>
+</div>
+<h1>
+<b>
+    Power Engineering
+    <br/>
+    Second Class (B1):
+    <br/>
+    Prime Movers
+   </b>
+</h1>
+<h2>
+<b>
+<u>
+     Table of Contents
+    </u>
+</b>
+</h2>
+<table>
+<thead>
+<tr data-bbox="160 579 1289 619">
+<th>
+<b>
+<u>
+        Chapter
+       </u>
+</b>
+</th>
+<th>
+<b>
+<u>
+        Page
+       </u>
+</b>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr data-bbox="160 619 1289 659">
+<td>
+      1. Steam Turbine Theory and Construction
+     </td>
+<td>
+      1
+     </td>
+</tr>
+<tr data-bbox="160 659 1289 699">
+<td>
+      2. Steam Turbine Auxiliaries and Control
+     </td>
+<td>
+      75
+     </td>
+</tr>
+<tr data-bbox="160 699 1289 739">
+<td>
+      3. Steam Turbine Operation and Maintenance
+     </td>
+<td>
+      131
+     </td>
+</tr>
+<tr data-bbox="160 739 1289 779">
+<td>
+      4. Steam Condensers
+     </td>
+<td>
+      161
+     </td>
+</tr>
+<tr data-bbox="160 779 1289 819">
+<td>
+      5. Internal Combustion Engines - Components and Auxiliaries
+     </td>
+<td>
+      217
+     </td>
+</tr>
+<tr data-bbox="160 819 1289 858">
+<td>
+      6. Internal Combustion Engines - Operation and Maintenance
+     </td>
+<td>
+      261
+     </td>
+</tr>
+<tr data-bbox="160 858 1289 898">
+<td>
+      7. Gas Turbine Design and Auxiliaries
+     </td>
+<td>
+      303
+     </td>
+</tr>
+<tr data-bbox="160 898 1289 938">
+<td>
+      8. Gas Turbine Operation and Control
+     </td>
+<td>
+      377
+     </td>
+</tr>
+<tr data-bbox="160 938 1289 978">
+<td>
+      9. Lubrication
+     </td>
+<td>
+      425
+     </td>
+</tr>
+<tr data-bbox="160 978 1289 1018">
+<td>
+      10. Piping
+     </td>
+<td>
+      481
+     </td>
+</tr>
+<tr data-bbox="160 1018 1289 1058">
+<td>
+      11. Mechanical Drawing
+     </td>
+<td>
+      533
+     </td>
+</tr>
+<tr data-bbox="160 1098 1289 1136">
+<td>
+      End of Chapter Questions and Solutions
+     </td>
+<td>
+      567
+     </td>
+</tr>
+</tbody>
+</table>
+<h2>
+   Steam Turbine Theory and Construction
+  </h2>
+<h6>
+   1
+  </h6>
+<h3>
+   Learning Outcome
+  </h3>
+<p>
+<i>
+    When you complete this learning material, you will be able to:
+   </i>
+</p>
+<p>
+   Explain the design and components of a steam turbine and calculate nozzle and steam velocities.
+  </p>
+<h3>
+   Learning Objectives
+  </h3>
+<p>
+<i>
+    You will specifically be able to complete the following tasks:
+   </i>
+</p>
+<ol style="list-style-type: none">
+<li>
+    1. Explain selection criteria for a turbine application.
+   </li>
+<li>
+    2. Describe the design and components of steam turbine casings and casing drains.
+   </li>
+<li>
+    3. Describe the design and components of steam turbine rotors, blading, and diaphragms.
+   </li>
+<li>
+    4. Describe shaft seal designs, including stuffing boxes, carbon rings, labyrinth and water seals.
+   </li>
+<li>
+    5. Describe the design and components of steam turbine bearings.
+   </li>
+<li>
+    6. Describe the ways in which steam turbines are designed to counteract thrust.
+   </li>
+<li>
+    7. Describe the purpose and design of expansion and anchoring components.
+   </li>
+<li>
+    8. Explain the principles of steam turbine nozzle design.
+   </li>
+<li>
+    9. Explain a steam turbine steam velocity diagram.
+   </li>
+<li>
+    10. Calculate the steam velocity and angle of entry for impulse and reaction turbine blading.
+   </li>
+<li>
+    11. Calculate the work done on steam turbine blades and the resulting power developed.
+   </li>
+<li>
+    12. Calculate steam turbine Rankine cycle thermal efficiency.
+   </li>
+</ol>
+<p>
+</p>
+<h3>
+   Objective 1
+  </h3>
+<p>
+<b>
+<i>
+     Explain selection criteria for a turbine application.
+    </i>
+</b>
+</p>
+<h4>
+<b>
+    TURBINE TYPES AND APPLICATIONS
+   </b>
+</h4>
+<p>
+   Steam turbines are used in various plants and cycles to convert the heat energy in the steam generated in fired boilers and heat recovery steam generators into mechanical work. The selection of a specific type of steam turbine depends upon factors including the steam conditions provided by the steam generator, the unit rating, the desired flexibility of the system, and compatibility with the heat balance of the plant. Turbines are available in small sizes for driving pumps and fans to multi-casing units for power generation. Power generation turbines are available in sizes from a few megawatts to over 1000 megawatts.
+  </p>
+<p>
+   An almost limitless series of arrangements are available in adapting the turbine to power plant requirements. This is a distinct advantage when we consider the many varied heat balance needs of modern industry. There are two general classes into which all turbines fall. Turbines exhausting at pressures below atmospheric pressure are
+   <b>
+    condensing turbines
+   </b>
+   and those exhausting at or above atmospheric pressure are
+   <b>
+    noncondensing turbines
+   </b>
+   . Condensing turbines are used where there is no need for process steam. A condenser, cooled by either air or water, is required to condense the exhaust steam. Noncondensing turbines are used when the exhaust steam is utilized for process heating.
+  </p>
+<p>
+   In some condensing turbines not all of the steam passes through to the exhaust. Part of the steam is extracted, or bled off, at one or more points. After doing some work by expansion, the extracted steam is used to heat the feedwater. This cycle, which uses bled steam to heat feedwater, is called a
+   <b>
+    regenerative cycle
+   </b>
+   and the turbine is called a
+   <b>
+    bleeder turbine
+   </b>
+   .
+  </p>
+<p>
+   Similarly, steam may be drawn off at one or more points at different pressures for process steam. This requires automatic control of the steam quantity supplied to the lower pressure section of the turbine. This arrangement is termed
+   <b>
+    automatic extraction
+   </b>
+   in contrast to bleeder turbines, where the pressure at the bleed points varies with the steam flow through the turbine. Bleed points range in number from one to eight, but extraction generally requires only one or two pressure levels.
+  </p>
+<h4>
+   Steam Turbines for Power Generation
+  </h4>
+<p>
+   There are as many types of steam turbines as there are types of power plant. They are used for small gas fired cogeneration plants, for subcritical and supercritical fossil fuel fired plants, and for nuclear power plants. Industrial plants, such as chemical plants, refineries, and pulp mills, often use steam turbines to generate power for the plant site.
+  </p>
+<p>
+   Fig. 1 illustrates the casing arrangements offered by a Japanese turbine manufacturer. The 2 and 3 casing designs are for fossil fuel fired plants up to 1000 megawatts (MW). The 4 casing arrangement is often found in fossil fuel fired plants of 600 MW and above. The 4 casing (cross compound) arrangement is common in nuclear power plants from 800 MW to over 1300 MW.
+  </p>
+<img alt="Figure 1: Turbine Casings and MW Ratings. A graph showing the application range (MW) for different turbine casing arrangements. The y-axis is labeled 'Application Range (MW)' with markers at 500 and 1000. The x-axis represents different casing types. The graph shows four arrangements: 2 Casing, 3 Casing, 4 Casing, and 4 Casing (Cross Compound). The 2 Casing arrangement is shown for ratings up to approximately 750 MW. The 3 Casing arrangement is shown for ratings up to 1000 MW. The 4 Casing arrangement is shown for ratings starting around 600 MW and extending beyond 1000 MW. The 4 Casing (Cross Compound) arrangement is shown for ratings starting around 800 MW and extending beyond 1000 MW." src="46f43cb4ffd47565e7c0ca306d461435_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<table border="1">
+<thead>
+<tr>
+<th>
+       Turbine Casing Arrangement
+      </th>
+<th>
+       Application Range (MW)
+      </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+       2 Casing
+      </td>
+<td>
+       Up to ~750
+      </td>
+</tr>
+<tr>
+<td>
+       3 Casing
+      </td>
+<td>
+       Up to 1000
+      </td>
+</tr>
+<tr>
+<td>
+       4 Casing
+      </td>
+<td>
+       600 and above
+      </td>
+</tr>
+<tr>
+<td>
+       4 Casing (Cross Compound)
+      </td>
+<td>
+       800 to over 1300
+      </td>
+</tr>
+</tbody>
+</table>
+<div class="img-alt">
+    Figure 1: Turbine Casings and MW Ratings. A graph showing the application range (MW) for different turbine casing arrangements. The y-axis is labeled 'Application Range (MW)' with markers at 500 and 1000. The x-axis represents different casing types. The graph shows four arrangements: 2 Casing, 3 Casing, 4 Casing, and 4 Casing (Cross Compound). The 2 Casing arrangement is shown for ratings up to approximately 750 MW. The 3 Casing arrangement is shown for ratings up to 1000 MW. The 4 Casing arrangement is shown for ratings starting around 600 MW and extending beyond 1000 MW. The 4 Casing (Cross Compound) arrangement is shown for ratings starting around 800 MW and extending beyond 1000 MW.
+   </div>
+</div>
+<p>
+<i>
+    Figure 1
+    <br/>
+    Turbine Casings and MW Ratings
+   </i>
+</p>
+<p>
+   The 2-cylinder reheat turbine in Fig. 2 has the HP (high pressure) and IP (intermediate pressure) rotors in the first case. The LP (low pressure) case contains a double-flow rotor. In a double-flow rotor, the steam enters at the centre of the rotor with half of the steam flowing toward the front of the machine and half towards the rear. It exhausts downward into the surface condenser.
+  </p>
+<img alt="Figure 2: 2-Cylinder Reheat Turbine. This is a 3D perspective cutaway illustration of a steam turbine. It shows two main cylindrical casings. The first casing on the left is the high-pressure section, containing several rows of blades. The second casing on the right is the intermediate-pressure section, also containing multiple blade rows. The two casings are connected by a duct that represents the reheat section. The entire unit is supported by a sturdy base." src="a68671ef36320b8515aa85d288d82cf1_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    Figure 2: 2-Cylinder Reheat Turbine. This is a 3D perspective cutaway illustration of a steam turbine. It shows two main cylindrical casings. The first casing on the left is the high-pressure section, containing several rows of blades. The second casing on the right is the intermediate-pressure section, also containing multiple blade rows. The two casings are connected by a duct that represents the reheat section. The entire unit is supported by a sturdy base.
+   </div>
+</div>
+<p>
+<i>
+    Figure 2
+    <br/>
+    2-Cylinder Reheat Turbine
+   </i>
+</p>
+<p>
+   Another 2 case machine is shown in Fig. 3 with the exhaust steam ducted axially into a surface condenser. The surface condenser is on the same level, or floor, as the turbine. This arrangement uses less plant space than designs with the turbine above the condenser.
+  </p>
+<img alt="Figure 3: Two-Cylinder Reheat Steam Turbine. This is a 2D cross-sectional side view of a steam turbine. It features two main turbine casings. The first casing on the left is the high-pressure section, and the second casing on the right is the intermediate-pressure section. A reheat duct connects the two casings. The exhaust from the second casing is directed through a long, narrow duct that leads into a large, rectangular component representing a surface condenser. The turbine and condenser are shown on the same horizontal level." src="c1c7af7ea36be0323047962df57d75b0_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    Figure 3: Two-Cylinder Reheat Steam Turbine. This is a 2D cross-sectional side view of a steam turbine. It features two main turbine casings. The first casing on the left is the high-pressure section, and the second casing on the right is the intermediate-pressure section. A reheat duct connects the two casings. The exhaust from the second casing is directed through a long, narrow duct that leads into a large, rectangular component representing a surface condenser. The turbine and condenser are shown on the same horizontal level.
+   </div>
+</div>
+<p>
+<i>
+    Figure 3
+    <br/>
+    Two-Cylinder Reheat Steam Turbine
+   </i>
+</p>
+<p>
+   The steam flow through these units is too high to build in a
+   <b>
+    tandem compound
+   </b>
+   arrangement, such as those in Fig. 2 and Fig. 3. A tandem compound machine has all of the turbine rotors and load connected axially into a single shaft. Cross compounding features two separate and unconnected shafts, with the steam flowing from one machine to another. Nuclear steam generators operate at lower pressures and lower temperatures than similar sized fossil-fired units.
+  </p>
+<p>
+   The 4 casing
+   <b>
+    cross compound
+   </b>
+   design used for nuclear power plants is shown in Fig. 4. The HP and IP sections drive one generator, and the LP cases drive the second generator.
+  </p>
+<img alt="Figure 4: Cross Compound Steam Turbine" src="c834b9abb4ddf70e5d10641f87d5ff5b_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<p>
+    A black and white photograph showing a large, complex industrial steam turbine. The turbine is composed of several distinct cylindrical sections of varying diameters, connected by pipes and structural supports. It is situated in an industrial environment with other machinery and piping visible in the background.
+   </p>
+<div class="img-alt">
+    Figure 4: Cross Compound Steam Turbine
+   </div>
+</div>
+<p>
+   Figure 4
+   <br/>
+   Cross Compound Steam Turbine
+  </p>
+<h4>
+   Industrial Applications
+  </h4>
+<p>
+   Steam turbines for industrial applications range in size from fan or pump drivers to units of 50 MW. They often drive large compressors. Fig. 5 shows a General Electric (GE) mechanical drive turbine. These turbines are built in ratings from 7.5 to 900 kW, running at speeds from 1000 to 6500 rev/min. They are used to drive pumps, compressors, fans, blowers, and similar equipment. The turbine illustrated in Fig. 5 is a single-stage, velocity compounded, impulse type. Two rows of moving blades are arranged with a row of stationary blades between them.
+  </p>
+<img alt="Figure 5: Single-Stage Mechanical Drive Turbine" src="e0ebcd8fdcfd34b12de3601b59505fdd_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<p>
+    A detailed cutaway diagram of a single-stage mechanical drive turbine. The diagram shows the internal components of the turbine, including the nozzle, nozzle plate, buckets and shroud bands, carbon packing rings and spring assembly, rotor, oil deflectors, thrust runners, non-sparking overspeed governor, and a flexible support. The turbine is shown in a horizontal orientation, with the nozzle on the left and the rotor extending to the right.
+   </p>
+<div class="img-alt">
+    Figure 5: Single-Stage Mechanical Drive Turbine
+   </div>
+</div>
+<p>
+   Figure 5
+   <br/>
+   Single-Stage Mechanical Drive Turbine
+   <br/>
+   (Courtesy of General Electric)
+  </p>
+<p>
+   The turbine shown in Fig. 6 is an Allis-Chalmers with two extraction points. Two impulse wheels are used, one before the HP reaction staging and one before the LP reaction stages. This is a typical extraction type of turbine. This machine is rated at 4000 kW at 3600 rev/min.
+  </p>
+<img alt="Cross-sectional diagram of an automatic extraction or mixed pressure type turbine." src="d4e9f8f6bf5d7853ecae9c9633900af1_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<p>
+    A detailed cross-sectional line drawing of a steam turbine. The diagram shows the internal components including the boiler, the turbine casing, the high-pressure (HP) reaction staging, the low-pressure (LP) reaction stages, and two impulse wheels. The turbine is mounted on a base, and various external piping and structural elements are visible. The drawing is a technical illustration, likely from a textbook or technical manual.
+   </p>
+<div class="img-alt">
+    Cross-sectional diagram of an automatic extraction or mixed pressure type turbine.
+   </div>
+</div>
+<p>
+<i>
+    Figure 6
+   </i>
+<br/>
+<i>
+    Automatic Extraction or Mixed Pressure Type Turbine
+   </i>
+</p>
+<p>
+   Fig. 7 shows a GE industrial turbine with the top casing removed. These turbines come in many sizes.
+  </p>
+<img alt="Photograph of a GE industrial turbine with the top casing removed." src="a86610f7a0e579fec9f34dea52fa088b_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<p>
+    A black and white photograph of a large industrial steam turbine. The top casing has been removed, revealing the internal components, including the high-pressure and low-pressure sections, and the impulse wheels. The turbine is situated in an industrial setting, and the lighting is somewhat dim, highlighting the metallic surfaces and complex structure of the machine.
+   </p>
+<div class="img-alt">
+    Photograph of a GE industrial turbine with the top casing removed.
+   </div>
+</div>
+<p>
+<i>
+    Figure 7
+   </i>
+<br/>
+<i>
+    GE Industrial Turbine
+   </i>
+</p>
+<p>
+   Table 1 shows the various sizes available from GE. The most common sizes are from 15 to 50 MW. Smaller units down to 1 MW are available, as are units up to 100 MW.
+  </p>
+<p>
+<i>
+    Table 1
+    <br/>
+    GE Small Turbines
+   </i>
+</p>
+<table border="1">
+<thead>
+<tr data-bbox="285 413 1432 489">
+<th>
+      Turbine Code
+     </th>
+<th>
+      Type
+     </th>
+<th>
+      Backpressure Limits
+     </th>
+<th>
+      Pressure
+     </th>
+<th>
+      Temp
+     </th>
+<th>
+      Single / Multivalve
+     </th>
+<th>
+      Power Range
+     </th>
+<th>
+      Speed Range
+     </th>
+<th>
+      Steam Path Technology
+     </th>
+</tr>
+</thead>
+<tbody>
+<tr data-bbox="285 489 1432 554">
+<td>
+      NG
+     </td>
+<td>
+      Backpressure
+     </td>
+<td>
+      Up to 20 bar
+     </td>
+<td>
+      70 bar
+      <br/>
+      1000 psi
+     </td>
+<td>
+      540°C
+      <br/>
+      1000°F
+     </td>
+<td>
+      Multi
+     </td>
+<td>
+      1 to 50 MW
+     </td>
+<td>
+      3000 to
+      <br/>
+      16000 RPM
+     </td>
+<td>
+      Impulse / Reaction
+      <br/>
+      Hybrid
+     </td>
+</tr>
+<tr data-bbox="285 554 1432 619">
+<td>
+      HNG
+     </td>
+<td>
+      Backpressure
+     </td>
+<td>
+      Up to 20 bar
+     </td>
+<td>
+      140 bar
+      <br/>
+      2000 psi
+     </td>
+<td>
+      540°C
+      <br/>
+      1000°F
+     </td>
+<td>
+      Multi
+     </td>
+<td>
+      1 to 50 MW
+     </td>
+<td>
+      3000 to
+      <br/>
+      16000 RPM
+     </td>
+<td>
+      Impulse / Reaction
+      <br/>
+      Hybrid
+     </td>
+</tr>
+<tr data-bbox="285 619 1432 684">
+<td>
+      HG
+     </td>
+<td>
+      Backpressure
+     </td>
+<td>
+      Up to 60 bar
+     </td>
+<td>
+      140 bar
+      <br/>
+      2000 psi
+     </td>
+<td>
+      540°C
+     </td>
+<td>
+      Multi
+     </td>
+<td>
+      1 to 40 MW
+     </td>
+<td>
+      3000 to
+      <br/>
+      16000 RPM
+     </td>
+<td>
+      Impulse / Reaction
+      <br/>
+      Hybrid
+     </td>
+</tr>
+<tr data-bbox="285 684 1432 749">
+<td>
+      NK
+     </td>
+<td>
+      Condensing
+     </td>
+<td>
+      N/A
+     </td>
+<td>
+      70 bar
+      <br/>
+      1000 psi
+     </td>
+<td>
+      540°C
+      <br/>
+      1000°F
+     </td>
+<td>
+      Multi
+     </td>
+<td>
+      1 to 65 MW
+     </td>
+<td>
+      3000 to
+      <br/>
+      16000 RPM
+     </td>
+<td>
+      Impulse / Reaction
+      <br/>
+      Hybrid
+     </td>
+</tr>
+<tr data-bbox="285 749 1432 814">
+<td>
+      HNK
+     </td>
+<td>
+      Condensing
+     </td>
+<td>
+      N/A
+     </td>
+<td>
+      140 bar
+      <br/>
+      2000 psi
+     </td>
+<td>
+      540°C
+      <br/>
+      1000°F
+     </td>
+<td>
+      Multi
+     </td>
+<td>
+      5 to 100 MW
+     </td>
+<td>
+      3000 to
+      <br/>
+      12500 RPM
+     </td>
+<td>
+      Impulse / Reaction
+      <br/>
+      Hybrid
+     </td>
+</tr>
+<tr data-bbox="285 814 1432 879">
+<td>
+      P
+     </td>
+<td>
+      Backpressure
+     </td>
+<td>
+      Up to 80 bar
+     </td>
+<td>
+      80 bar
+      <br/>
+      1150 psi
+     </td>
+<td>
+      480°C
+      <br/>
+      900°F
+     </td>
+<td>
+      Single
+     </td>
+<td>
+      Up to 5 MW
+     </td>
+<td>
+      Up to
+      <br/>
+      16000 RPM
+     </td>
+<td>
+      Impulse
+     </td>
+</tr>
+<tr data-bbox="285 879 1432 945">
+<td>
+      MP
+     </td>
+<td>
+      Backpressure
+     </td>
+<td>
+      Up to 150 bar
+     </td>
+<td>
+      150 bar
+      <br/>
+      2150 psi
+     </td>
+<td>
+      540°C
+      <br/>
+      1000°F
+     </td>
+<td>
+      Multi
+     </td>
+<td>
+      Up to 40 MW
+     </td>
+<td>
+      Up to
+      <br/>
+      16000 RPM
+     </td>
+<td>
+      Impulse
+     </td>
+</tr>
+<tr data-bbox="285 945 1432 1010">
+<td>
+      C
+     </td>
+<td>
+      Condensing
+     </td>
+<td>
+      N/A
+     </td>
+<td>
+      80 bar
+      <br/>
+      1150 psi
+     </td>
+<td>
+      480°C
+      <br/>
+      900°F
+     </td>
+<td>
+      Single
+     </td>
+<td>
+      Up to 6 MW
+     </td>
+<td>
+      Up to
+      <br/>
+      16000 RPM
+     </td>
+<td>
+      Impulse
+     </td>
+</tr>
+<tr data-bbox="285 1010 1432 1075">
+<td>
+      MC
+     </td>
+<td>
+      Condensing
+     </td>
+<td>
+      N/A
+     </td>
+<td>
+      150 bar
+      <br/>
+      2150 psi
+     </td>
+<td>
+      540°C
+      <br/>
+      1000°F
+     </td>
+<td>
+      Multi
+     </td>
+<td>
+      Up to 40 MW
+     </td>
+<td>
+      Up to
+      <br/>
+      16000 RPM
+     </td>
+<td>
+      Impulse
+     </td>
+</tr>
+</tbody>
+</table>
+<p>
+   A packaged axial flow turbine generator set is shown in Fig. 8. This is a compact design suitable for small power plants or cogeneration applications. It comes complete with a generator and surface condenser.
+  </p>
+<img alt="A schematic diagram of a packaged axial exhaust turbine. The diagram shows a control room building on the left connected to a turbine and generator unit. The turbine is connected to a generator, which is in turn connected to a large circular condenser unit on the right. The entire assembly is shown on a foundation." src="e9b30aeb317ed964fa6de36804acf24c_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    A schematic diagram of a packaged axial exhaust turbine. The diagram shows a control room building on the left connected to a turbine and generator unit. The turbine is connected to a generator, which is in turn connected to a large circular condenser unit on the right. The entire assembly is shown on a foundation.
+   </div>
+</div>
+<p>
+<i>
+    Figure 8
+    <br/>
+    Packaged Axial Exhaust Turbine
+   </i>
+</p>
+<h3>
+   Objective 2
+  </h3>
+<p>
+<b>
+    Describe the design and components of steam turbine casings and casing drains.
+   </b>
+</p>
+<h3>
+   TURBINE CASINGS
+  </h3>
+<p>
+   Turbine casings are designed to handle high pressures and temperatures while:
+  </p>
+<ul style="list-style-type: none">
+<li>
+    • Resisting distortion.
+   </li>
+<li>
+    • Maintaining constant clearances between the blading, casing, bearings, and sealing glands.
+   </li>
+<li>
+    • Maintaining correct alignment of the turbine rotating assembly.
+   </li>
+</ul>
+<h4>
+   Split Casings
+  </h4>
+<p>
+   Horizontal split casings or cylinders are used to facilitate assembly and inspection. This is not ideal as the heavy flanges of the joints are slow to follow the temperature changes of the cylinder walls. Casings are made of thick material in order to withstand the high pressures and temperatures. In practice, the thickness of walls and flanges decreases from the inlet to the exhaust end.
+  </p>
+<p>
+   Large casings for low-pressure turbines are constructed of welded plates. Smaller low-pressure casings are cast iron, which may be used for temperatures up to 230°C. Casings for intermediate pressures are made of cast carbon steel able to withstand temperatures up to 425°C. High-pressure, high-temperature casings used for temperatures above 550°C are made of cast alloy steels like 3% chromium and 1% molybdenum. Higher temperatures require higher alloy metals (higher chromium content). The alloys must also have a high creep resistance to operate at these temperatures.
+  </p>
+<p>
+   Casings are made steam tight without the use of gaskets by machining their flange surfaces to a very exact and smooth surface and then joining those surfaces accurately and securely together. Dowel pins are often used to secure exact alignment of the flange joint. A boring mill machines the inside of the casing. Grooves are machined for the diaphragms (for impulse turbines) or for stationary blades (reaction turbines). The casing is also bored for shaft seals and bearings.
+  </p>
+<p>
+   For high-pressure casings, the flanges must be very thick. Consequently, they will heat up much more slowly than the casing walls. Some type of auxiliary flange heating is often used for quicker and more uniform heating of the flanges and casing. Steam flows through machined channels between the flanges or through holes drilled axially through the upper and lower flanges.
+  </p>
+<p>
+   Fig. 9 shows the lower section of a horizontally split casing. The centreline support allows the casing to expand and contract evenly while maintaining alignment.
+  </p>
+<img alt="Figure 9: Turbine Lower Casing and Support" src="e3b8510f6a2194e250205ab7bc38076d_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<p>
+    A 3D perspective view of the lower half of a horizontally split turbine casing. The casing is a large, dark, metallic structure with a complex, irregular shape. It features a central horizontal split line and several vertical support legs or brackets that extend downwards to provide stability and alignment. The surface appears rough and cast.
+   </p>
+<div class="img-alt">
+    Figure 9: Turbine Lower Casing and Support
+   </div>
+</div>
+<p>
+<i>
+    Figure 9
+    <br/>
+    Turbine Lower Casing and Support
+   </i>
+</p>
+<h4>
+   Double Casings
+  </h4>
+<p>
+   Double casings are used for very high steam pressure applications. The highest pressure is applied to the inner casing, which is open at the exhaust end. The turbine inner casing exhausts to the outer casing. The pressure is divided between the casings, and more importantly, so is the temperature. The thermal stresses on casings and flanges are greatly reduced. Fig.10 illustrates a double-shell HP turbine casing.
+  </p>
+<img alt="Figure 10: Double-Shell HP Casing" src="7b4218684dabfd7cc15685f82dbe5faf_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<p>
+    A cross-sectional diagram of a double-shell high-pressure turbine casing. It shows two concentric cylindrical shells. The inner shell is smaller and has a central opening. The outer shell is larger and has a more complex structure with various flanges and bolts. The diagram is symmetrical about a vertical centerline, showing the internal components and the outer casing's support structure.
+   </p>
+<div class="img-alt">
+    Figure 10: Double-Shell HP Casing
+   </div>
+</div>
+<p>
+<i>
+    Figure 10
+    <br/>
+    Double-Shell HP Casing
+   </i>
+</p>
+<h4>
+   Cylinder Casing Drains
+  </h4>
+<p>
+   It is important that the steam moving through the turbine be as dry (absence of water) as possible. Water in the steam causes a loss in turbine efficiency and corrodes the turbine blading it comes in contact with. Turbines are designed to have slightly wet steam exiting the low-pressure blading. It is generally accepted that the maximum percentage of wetness of the steam leaving the exhaust end of a turbine should be 14%.
+  </p>
+<p>
+   The shape of the cylinder casing allows this water to drain to the condenser. Special draining grooves are arranged in the cylinder casing to help remove water more effectively. An example of this type of draining arrangement is illustrated in Fig. 11.
+  </p>
+<img alt="Diagram of cylinder casing drainage arrangement." src="0cc86fe8fc37b0edc9581f2af9459a52_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<p>
+    The diagram shows a cross-sectional view of a turbine cylinder casing. It features several vertical drain pipes extending from the casing down to a common drain line labeled 'Drain to Condenser'. A 'Belt for Bleeding Steam to Feeheater' is shown as a horizontal line within the casing. An inset on the right shows a detailed view of a blade inlet with a 'Section Showing Hardened Shield on Blade Inlet'. Another label points to a protective 'Erosion Shield (see section above)' located near the bottom of the casing.
+   </p>
+<div class="img-alt">
+    Diagram of cylinder casing drainage arrangement.
+   </div>
+</div>
+<p>
+<i>
+    Figure 11
+   </i>
+<br/>
+<i>
+    Cylinder Casing Drainage
+   </i>
+</p>
+<p>
+   Drains must be located, and be of sufficient number, to avoid buildup of condensate at any point in the turbine. Liquid water is likely to be re-entrained into the steam flow causing erosion of the turbine blades and diaphragms. Standing pools of condensate will also cause severe corrosion of the turbine casing. Turbines are designed to avoid the formation of condensate before the steam reaches the exhaust end. Condensate that forms prematurely (called early condensate) may be corrosive (if it has a low pH) and should be drained as quickly as it forms.
+  </p>
+<h3>
+   Objective 3
+  </h3>
+<p>
+<b>
+    Describe the design and components of steam turbine rotors, blading, and diaphragms.
+   </b>
+</p>
+<h3>
+   TURBINE ROTORS
+  </h3>
+<p>
+   Turbine rotors (Fig. 12) are categorized in three ways according to construction:
+  </p>
+<ul style="list-style-type: none">
+<li>
+    • Solid Forged Rotor
+   </li>
+<li>
+    • Disc Rotor
+   </li>
+<li>
+    • Welded Rotor
+   </li>
+</ul>
+<img alt="Figure 12: Turbine Rotors. The diagram shows three types of turbine rotors in cross-section, labeled from top to bottom: Solid Rotor, Shrunk-On Disc Rotor, and Welded Rotor. The Solid Rotor is a single piece with grooves for blading. The Shrunk-On Disc Rotor shows individual discs mounted on a shaft. The Welded Rotor shows discs that are welded to the shaft." src="be217a121b8cc1b82eb1598749372865_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    Figure 12: Turbine Rotors. The diagram shows three types of turbine rotors in cross-section, labeled from top to bottom: Solid Rotor, Shrunk-On Disc Rotor, and Welded Rotor. The Solid Rotor is a single piece with grooves for blading. The Shrunk-On Disc Rotor shows individual discs mounted on a shaft. The Welded Rotor shows discs that are welded to the shaft.
+   </div>
+</div>
+<p>
+   Figure 12
+   <br/>
+   Turbine Rotors
+  </p>
+<h4>
+   Solid Forged Rotors
+  </h4>
+<p>
+   Rotors of this type have wheels and shaft machined from one solid forging, the whole rotor being one piece of metal. This is a rigid construction. Solid rotors eliminate the possibility of loose wheels, which can occur with shrunk-on type rotors. Grooves are machined in the wheel rims of solid rotors to attach the blading.
+  </p>
+<p>
+   Solid forged rotors are used in the HP and IP cylinders for designs employing impulse type blading and for IP cylinders when reaction type blading is used. Fig. 13 shows a rotor of the solid forged type.
+  </p>
+<p>
+   The choice of a solid rotor is dependent upon the turbine startup procedure. Stresses in the rotor material are caused by the temperature differences between the surface areas and the centre parts of the rotor. The rotor temperature becomes more uniform as the rotor is heated by the steam. The turbine is warmed up slowly, allowing for uniform heating across all areas of the turbine. This ensures balanced thermal expansion between the rotor assembly and the casing. The stress levels in a rotor are affected by the steam temperature, the diameter of the rotor, and the time taken to reach full-load operating conditions.
+  </p>
+<img alt="A technical drawing of a solid forged rotor. It shows a central shaft with several discs mounted on it. The outer rims of these discs have grooves for blade fixing, indicated by arrows and the label 'Grooves for Blade Fixing'." src="662933fe00899933b36b5a214ac6095c_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    A technical drawing of a solid forged rotor. It shows a central shaft with several discs mounted on it. The outer rims of these discs have grooves for blade fixing, indicated by arrows and the label 'Grooves for Blade Fixing'.
+   </div>
+</div>
+<p>
+   Figure 13
+   <br/>
+   Solid Forged Rotor
+  </p>
+<h4>
+   Disc Rotors
+  </h4>
+<p>
+   The disc rotor is constructed of a number of separately forged discs or wheels. The hubs of these wheels are shrunk or keyed onto the central shaft. The outer rims of the wheels have grooves machined to allow for attaching the blades. Suitable clearances are left between the hubs to allow for expansion axially along the line of the shaft. Disc rotors are also referred to as built-up rotors.
+  </p>
+<p>
+   Under operating conditions, the temperature of the wheels rises faster than that of the shaft. This might tend to make the wheel hubs become loose. To avoid any such danger, care is taken during construction of the rotor to ensure the wheels are shrunk on tight and correctly stressed. Fig. 14 illustrates a disc type of rotor which is the type used in the LP cylinder of most designs of large turbines.
+  </p>
+<img alt="Figure 14: Disc Type Rotor. The top part of the image shows a perspective view of a disc-type rotor assembly, featuring a central shaft with multiple discs and blades. The bottom part is a cross-sectional view labeled 'Section Through Disc Type Rotor', showing the internal structure. Labels with arrows point to 'Wheels' (the discs), 'Blades' (the vanes), and 'Shaft' (the central rotating element)." src="ac852a162572ca8a8c8478c49b571af5_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    Figure 14: Disc Type Rotor. The top part of the image shows a perspective view of a disc-type rotor assembly, featuring a central shaft with multiple discs and blades. The bottom part is a cross-sectional view labeled 'Section Through Disc Type Rotor', showing the internal structure. Labels with arrows point to 'Wheels' (the discs), 'Blades' (the vanes), and 'Shaft' (the central rotating element).
+   </div>
+</div>
+<p>
+   Figure 14
+   <br/>
+   Disc Type Rotor
+  </p>
+<h4>
+   Welded Rotors
+  </h4>
+<p>
+   Welded rotors are built up from a number of discs and two shaft ends. They are joined together by welding at the circumferences. Because there are no central holes in the discs, the structure is very strong. Small holes are drilled in the discs to allow steam to enter inside the rotor body and supply uniform heat to the rotor. Grooves are machined in the discs to attach the blades.
+  </p>
+<p>
+   A fairly light and rigid drum rotor may be manufactured from discs welded together to form a drum, as shown in Fig. 15. Before welding, the rotor is heated by induction heating. Welding is performed with automatic welding machines such as the
+   <b>
+    argon arc
+   </b>
+   process, where the arc burns in an argon atmosphere.
+  </p>
+<img alt="A cross-sectional diagram of a welded drum turbine rotor. It shows a central shaft with a series of blades of varying lengths mounted on a drum. The blades are secured at their roots to the drum. The diagram illustrates the internal structure of the rotor, including the shaft, the drum, and the blade assembly." src="fbfaa723129f8b8e3be651c6fe7cfab7_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    A cross-sectional diagram of a welded drum turbine rotor. It shows a central shaft with a series of blades of varying lengths mounted on a drum. The blades are secured at their roots to the drum. The diagram illustrates the internal structure of the rotor, including the shaft, the drum, and the blade assembly.
+   </div>
+</div>
+<p>
+   Figure 15
+   <br/>
+   Welded Drum Turbine Rotor
+  </p>
+<h4>
+   BLADING
+  </h4>
+<p>
+   The design of turbine blading affects the reliability and efficiency of the turbine. Depending upon the design of the turbine, there is either:
+  </p>
+<ul style="list-style-type: none">
+<li>
+    • An impulse force
+    <b>
+     impulse type blading
+    </b>
+</li>
+<li>
+    • A combination of impulse and reaction forces
+    <b>
+     reaction type blading
+    </b>
+    acting on the turbine blades due to the steam flow
+   </li>
+</ul>
+<p>
+   The longer the blade the greater the bending force at the root, or fixing point, of the blade. There is also a centrifugal force, due to the speed at which the blade is rotating, trying to throw the blade outwards.
+  </p>
+<p>
+   These two forces—the bending force and the throwing-out force—are at maximum in the largest blade wheel at the LP exhaust end of the turbine. Thus, the stresses which these forces impose limit the size of the blades and the diameter of the last wheel. This limitation is one of the reasons why turbines are designed with double flow in the LP cylinder. In the double flow design, steam enters at the centre of the rotor with half of the steam flowing to the front of the machine and half flowing toward the rear of the machine. This design can handle double the flow of steam compared to a single flow with the same diameter of blading. The rotor in Fig. 2 is a double flow rotor.
+  </p>
+<p>
+   The mechanical stresses just described are not a great problem in the short HP moving blading. This blading is subject to higher temperatures, which is a greater problem from the design aspect.
+  </p>
+<h5>
+   Reaction Blading
+  </h5>
+<p>
+   In reaction blading, pressure drops occur across both fixed and moving blades. In the HP cylinder, a very effective seal between fixed and moving blading is essential to prevent steam leakage. Steam that leaks or bypasses the blades produces no work and reduces the efficiency of the turbine. Fixed blades fit in grooves in the cylinder casing and moving blades fit in grooves machined in the rotor.
+  </p>
+<p>
+   Blading subject to high temperatures in HP cylinders are made with root section and shrouding in one piece. The shrouds have a projecting portion thinning down to form a single knife-edge on the moving blades. On the fixed blades, a second strip is tapered to form a double knife-edge. The blade packets fit in the grooves to form a complete row of fixed or moving blades. The blade packets are serrated along the roots and secured in the grooves, which are also serrated, by means of a side-locking strip as shown in Fig. 16.
+  </p>
+<p>
+   An illustration of reaction blading is shown in Fig. 16. The leakage of steam is controlled by the axial clearance, that is, the clearance along the line of the shaft. This type of sealing is known as end tightening. Additional sealing is provided by a radial fin machined into the shroud and adjusted to a fine clearance between cylinder bore or rotor body.
+  </p>
+<img alt="Figure 16: HP Reaction Type Blading showing End Tightening. This is a 3D cutaway diagram of a turbine assembly. It shows a series of 'Fixed Blades' and 'Moving Blades' arranged in alternating rows. The 'Fixed Blades' are mounted on a stationary casing, while the 'Moving Blades' are mounted on a central 'Rotor'. The blades are connected at their tips by shrouds. Labels point to various components: 'Single Knife-Edged Seal' on the moving blade shroud, 'Double Knife-Edged Seal' on the fixed blade shroud, 'Serrated Locking Strip' at the base of the blades, 'Radial Fin' on the casing, and the 'Rotor' itself." src="1630bfd9ebf9b95faec11ae6cdfd9c0a_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    Figure 16: HP Reaction Type Blading showing End Tightening. This is a 3D cutaway diagram of a turbine assembly. It shows a series of 'Fixed Blades' and 'Moving Blades' arranged in alternating rows. The 'Fixed Blades' are mounted on a stationary casing, while the 'Moving Blades' are mounted on a central 'Rotor'. The blades are connected at their tips by shrouds. Labels point to various components: 'Single Knife-Edged Seal' on the moving blade shroud, 'Double Knife-Edged Seal' on the fixed blade shroud, 'Serrated Locking Strip' at the base of the blades, 'Radial Fin' on the casing, and the 'Rotor' itself.
+   </div>
+</div>
+<p>
+   Figure 16
+   <br/>
+<i>
+    HP Reaction Type Blading showing End Tightening
+   </i>
+</p>
+<h5>
+   Blade Shrouding
+  </h5>
+<p>
+   The shrouding supplies support strength to the blades in addition to preventing steam leakage, as shown in Fig. 17. In lower pressure stages of the turbine where support is more important than sealing, a lacing wire is used, as in Fig. 18. Turbine blades must be made of materials which will withstand high temperatures in the inlet stages, and low temperatures but high rotational stresses in the exhaust stages. The most common material in use today is stainless steel having low carbon content, about 0.1%, and a chromium content of about 12%. This material is strong, resistant to corrosion and erosion, and can be forged, machined and welded.
+  </p>
+<img alt="Close-up photograph of shrouded built-up reaction blading, showing a series of blades with a top shroud." src="cd91fd97c6e4da454b42f4fde13f7e44_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<p>
+    A close-up, black and white photograph showing a section of a turbine or compressor. The blades are arranged in a row and are topped with a continuous shroud, which is a common feature in high-pressure or high-speed turbomachinery to reduce tip leakage and improve efficiency. The blades themselves have a complex, curved profile.
+   </p>
+<div class="img-alt">
+    Close-up photograph of shrouded built-up reaction blading, showing a series of blades with a top shroud.
+   </div>
+</div>
+<p>
+<i>
+    Figure 17
+    <br/>
+    Shrouded Built-up Reaction Blading
+   </i>
+</p>
+<img alt="Close-up photograph of unshrouded built-up reaction blading, showing a series of blades without a top shroud." src="eea8b24476b46def99046ef43c716b10_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<p>
+    A close-up, black and white photograph showing a section of turbomachinery blades. Unlike the previous image, these blades are unshrouded, meaning there is no continuous top cover. Each blade has its own individual tip. The arrangement and profile of the blades are similar to those in Figure 17, but the lack of a shroud is the primary distinguishing feature.
+   </p>
+<div class="img-alt">
+    Close-up photograph of unshrouded built-up reaction blading, showing a series of blades without a top shroud.
+   </div>
+</div>
+<p>
+<i>
+    Figure 18
+    <br/>
+    Unshrouded Built-up Reaction Blading
+   </i>
+</p>
+<h5>
+   Impulse Blading
+  </h5>
+<p>
+   The HP moving blades for impulse turbines are machined from solid bar, and the roots and spacers are formed with the blade. This is illustrated in Fig. 19. Tangs are left at the tips of the blades, so that when fixed in position in the wheel, the shrouding can be attached. The shrouding is made up from sections of metal strip punched with holes to correspond with the tangs. The strip is passed over the tangs which secure the strip in position. The shrouding fits in separate sections to allow for expansion.
+  </p>
+<p>
+   There is no pressure drop across the moving blades of an impulse turbine, and therefore, the sealing arrangements are not as important as in the reaction type. The shrouding on the impulse blading helps to guide the steam through the moving blades, allowing larger radial clearance and strengthening the assembly.
+  </p>
+<p>
+   Due to the steam pressure difference on each side of the diaphragm, it is necessary to provide seals at the hole, where the shaft passes through the diaphragm, to prevent steam leakage along the shaft.
+  </p>
+<img alt="Figure 19: Stages in the manufacture of HP Impulse Type Moving Blades. The diagram shows five sequential stages of blade manufacturing. From left to right: 1. A solid rectangular blade. 2. The blade with a notch cut into its base. 3. The blade with a more complex notch and a small tang at the top. 4. The blade with a larger tang and a more complex base. 5. Two blades with tangs at the top, labeled 'Tang' with arrows pointing to them. The tangs are small protrusions at the top of the blades." src="cc777601b892d144a2c0b69f56ef03bf_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    Figure 19: Stages in the manufacture of HP Impulse Type Moving Blades. The diagram shows five sequential stages of blade manufacturing. From left to right: 1. A solid rectangular blade. 2. The blade with a notch cut into its base. 3. The blade with a more complex notch and a small tang at the top. 4. The blade with a larger tang and a more complex base. 5. Two blades with tangs at the top, labeled 'Tang' with arrows pointing to them. The tangs are small protrusions at the top of the blades.
+   </div>
+</div>
+<p>
+<i>
+    Figure 19
+    <br/>
+    Stages in the manufacture of HP Impulse Type Moving Blades
+   </i>
+</p>
+<h5>
+   3-D Blading
+  </h5>
+<p>
+   A significant improvement in steam turbine efficiency was brought about by the use of computer modelling of steam flows through turbine blading. The shape of the blading changed after 3-D (3-dimensional) modelling. The blading profile, or shape, is not symmetrical; it changed from parallel sided to twisted or bowed. Fig. 20 compares conventional turbine blading and 3-D modelled blading. The resulting steam flow is more evenly distributed across the blading with 3-D modelled blading. Fewer vortices with a less turbulent flow are other advantages of 3-D modelled blading. The twisted shape of a low pressure case blade (3-D modelled) is shown in Fig. 21.
+  </p>
+<img alt="Profile view of a conventional blade with parallel sides. Cross-sectional diagram of flow over a conventional blade. It shows a radial line, tip and base end walls, mean flow, and secondary flow. 3D perspective view of flow over a conventional blade. It shows main flow, secondary flow, and vortices. Profile view of a full 3-D blade that is twisted and bowed. Cross-sectional diagram of flow over a full 3-D blade. It shows tip flow, radial line, tip and base end walls, mean flow, and base flow. 3D perspective view of flow over a full 3-D blade. It shows main flow and secondary flow." src="e69b9188aa2c14ec6b21c83f711fef65_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<table border="0">
+<tr data-bbox="280 128 1445 373">
+<td style="vertical-align: top; padding-right: 20px;">
+      Conventional
+     </td>
+<td style="text-align: center;">
+<p>
+       Profile
+      </p>
+<p>
+       (Parallel Sided)
+      </p>
+</td>
+<td style="text-align: center;">
+<p>
+       Flow
+      </p>
+<p>
+       Radial Line
+       <br/>
+       Tip End Wall
+       <br/>
+       Mean Flow
+       <br/>
+       Base End Wall
+      </p>
+</td>
+<td style="text-align: center;">
+<p>
+       Main Flow
+      </p>
+<p>
+       Secondary Flow
+       <br/>
+       Vortices
+      </p>
+</td>
+</tr>
+<tr data-bbox="280 373 1445 611">
+<td style="vertical-align: top; padding-right: 20px;">
+      Full 3-D
+     </td>
+<td style="text-align: center;">
+<p>
+       Profile
+      </p>
+<p>
+       (Twisted &amp; Bowed)
+      </p>
+</td>
+<td style="text-align: center;">
+<p>
+       Flow
+      </p>
+<p>
+       Tip Flow
+       <br/>
+       Radial Line
+       <br/>
+       Tip End Wall
+       <br/>
+       Mean Flow
+       <br/>
+       Base Flow
+       <br/>
+       Base End Wall
+      </p>
+</td>
+<td style="text-align: center;">
+<p>
+       Main Flow
+      </p>
+<p>
+       Secondary Flow
+      </p>
+</td>
+</tr>
+</table>
+<div class="img-alt">
+    Profile view of a conventional blade with parallel sides. Cross-sectional diagram of flow over a conventional blade. It shows a radial line, tip and base end walls, mean flow, and secondary flow. 3D perspective view of flow over a conventional blade. It shows main flow, secondary flow, and vortices. Profile view of a full 3-D blade that is twisted and bowed. Cross-sectional diagram of flow over a full 3-D blade. It shows tip flow, radial line, tip and base end walls, mean flow, and base flow. 3D perspective view of flow over a full 3-D blade. It shows main flow and secondary flow.
+   </div>
+</div>
+<p style="text-align: center;">
+<i>
+    Figure 20
+   </i>
+<br/>
+<i>
+    Conventional and 3-D Blading
+   </i>
+</p>
+<img alt="A grayscale image of a low-pressure turbine blade, showing its complex 3D profile with twist and bow." src="0b0dbdb00519a67d96c812ee07da3a1e_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    A grayscale image of a low-pressure turbine blade, showing its complex 3D profile with twist and bow.
+   </div>
+</div>
+<p style="text-align: center;">
+<i>
+    Figure 21
+   </i>
+<br/>
+<i>
+    Low Pressure Turbine Blade
+   </i>
+</p>
+<h4>
+   Diaphragms
+  </h4>
+<p>
+   Fixed blading of an impulse turbine consists of nozzles mounted in diaphragms. The diaphragm is made in two halves; one half is attached to the upper half of the cylinder casing, and the other half is attached to the lower half of the cylinder casing. The diaphragms are positioned in the cylinder casings by means of keys that allow for some expansion. Special carrier rings support the diaphragms in HP cylinders.
+  </p>
+<p>
+   At the HP end of the turbine, the diaphragms are the built-up type. Nozzles are machined separately from a solid bar and attached by grooves and rivets to the diaphragm plate. In some cases, the nozzles are welded together and to the plate. Fig. 22 illustrates attachment of nozzles to the diaphragm plates.
+  </p>
+<img alt="Diagram of a built-up diaphragm showing nozzle attachment details and a full circular view." src="f756d8e1fde6bc6ebdf4a5d7f1b2a57a_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<p>
+    The diagram illustrates the construction of a built-up diaphragm. The top portion shows a detailed view of a 'Separate Machined Nozzle' being attached to a 'Diaphragm Plate' using a 'Fixing Rivet' and a 'Fixing Screw'. A 'Groove in Diaphragm Plate' is also indicated. The bottom portion shows a full circular view of the diaphragm plate with multiple nozzles attached around its circumference.
+   </p>
+<div class="img-alt">
+    Diagram of a built-up diaphragm showing nozzle attachment details and a full circular view.
+   </div>
+</div>
+<p>
+   Figure 22
+   <br/>
+   Built-up Diaphragm
+  </p>
+<p>
+<!-- The page is blank. -->
+</p>
+<h3>
+   Objective 4
+  </h3>
+<p>
+<b>
+    Describe shaft seal designs, including stuffing boxes, carbon rings, labyrinth and water seals.
+   </b>
+</p>
+<h3>
+   SHAFT SEALING
+  </h3>
+<p>
+   Due to the design and operating characteristics of steam turbines, there are a number of pressure differential points across stages and sections of the turbine. Leakage of steam across these points is a waste of energy and reduces the efficiency of the turbine. Leakage is kept to a minimum at all times. At the high-pressure end of the turbine, correct shaft sealing keeps the steam from leaking past the shaft.
+  </p>
+<p>
+   At the low-pressure end of noncondensing turbines, the potential for steam loss to the atmosphere is greatly reduced due to the smaller pressure difference across the casing to the atmosphere. In condensing units, the final stages of the turbine operate below atmospheric pressure tending to draw air into these stages. Air infiltration must be minimized and/or eliminated as the air increases the pressure in the condenser. The increased backpressure decreases the efficiency of the turbine and increases the cooling load on the condenser.
+  </p>
+<p>
+   Four methods of sealing rotating parts are:
+  </p>
+<ul style="list-style-type: none">
+<li>
+    • Stuffing Box
+   </li>
+<li>
+    • Carbon Rings
+   </li>
+<li>
+    • Labyrinth Seals
+   </li>
+<li>
+    • Water Seals
+   </li>
+</ul>
+<h4>
+   Stuffing Box
+  </h4>
+<p>
+   Stuffing boxes are often used in centrifugal pumps. They are used only rarely on the smallest of turbines.
+  </p>
+<h4>
+   Carbon Rings
+  </h4>
+<p>
+   An effective seal is produced by a series of spring-backed carbon rings. Fig. 23 shows four rings mounted in a packing box or container. The detail at the right side of the figure indicates how each ring is divided into three sections. The spring encircles the ring allowing some radial adjustment but preventing axial movement. Clearances are held extremely close and the graphite (carbon) is self-lubricating.
+  </p>
+<img alt="Figure 23: Carbon Ring Shaft Seal diagram" src="7b517f15a2d307945bd78e30c13a75bd_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<p>
+    A cross-sectional diagram of a carbon ring shaft seal. The diagram is divided into two main sections: 'Gear Side' on the left and 'Turbine Side' on the right. On the turbine side, a 'Wire Loop' is shown at the top, followed by 'Carbon Rings'. Below the rings is a 'Flat Wire Spring' and a 'Retainer Segment'. On the gear side, there is a 'Steam Leak-Off' section and a 'Sealing-Steam Inlet' at the bottom.
+   </p>
+<div class="img-alt">
+    Figure 23: Carbon Ring Shaft Seal diagram
+   </div>
+</div>
+<p>
+   Figure 23
+   <br/>
+   Carbon Ring Shaft Seal
+  </p>
+<h4>
+   Labyrinth Seals
+  </h4>
+<p>
+   In large machines, the greater shaft diameters increase the surface speed above the limits of carbon rings. Labyrinth rings are effective for larger shafts (see Fig. 24). The seals function by breaking down the leakage over a number of steps (depending on the pressure drop involved). Each step causes eddy currents reducing the velocity of the steam through the preceding clearance. The total pressure drop is broken down into many small pressure drops. Sealing steam maybe added partway down the shaft. A steam leakoff section is used to bleed off steam before it exits along the shaft to atmosphere. The leakoff also removes any condensate that forms in the seal.
+  </p>
+<img alt="Figure 24: Low-Pressure Labyrinth Shaft Seal diagram" src="daff947a443eb2a4735e3a81b6f756d9_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<p>
+    A cross-sectional diagram of a low-pressure labyrinth shaft seal. It shows the 'Turbine Case' at the top, followed by 'Labyrinth Rings' on the shaft. A 'Spring' is shown on the left side of the shaft. The 'Shaft' itself is labeled. 'Sealing Steam' is indicated entering from the bottom, and a 'Steam Leak-Off' section is shown at the bottom right.
+   </p>
+<div class="img-alt">
+    Figure 24: Low-Pressure Labyrinth Shaft Seal diagram
+   </div>
+</div>
+<p>
+   Figure 24
+   <br/>
+   Low-Pressure Labyrinth Shaft Seal
+  </p>
+<h4>
+   Water Seals
+  </h4>
+<p>
+   Labyrinth and carbon rings reduce but do not eliminate leakage of steam where the shaft leaves the casing. A water sealing gland used in combination with labyrinths effectively provides a positive seal. This gland, shown in Fig. 25, is quite simple in its application. It consists of a centrifugal pump runner (impeller) fixed to the turbine shaft. Cooling water (usually condensate) is fed to the runner and builds up a ring of water under centrifugal pressure at its periphery. The ring of water forms a positive seal. A detailed view of the seal is shown in Fig. 26. The main advantage of water seals is that there is no leakage steam at the shaft.
+  </p>
+<p>
+   Disadvantages of this arrangement are:
+  </p>
+<ul style="list-style-type: none">
+<li>
+    • The seal is not effective until the turbine approaches running speed
+   </li>
+<li>
+    • Scale will form if the water is not free of all impurities
+   </li>
+<li>
+    • The quenching effects of the comparatively cool water on the hot rotor shaft; repetition of this quenching may lead to cracking of the shaft
+   </li>
+<li>
+    • They require more adjusting than steam glands do
+   </li>
+</ul>
+<img alt="Figure 25: Water Sealed Gland Overview. A cross-sectional diagram of a turbine shaft assembly. The central vertical component is the 'Turbine Shaft'. A 'Runner' (impeller) is mounted on the shaft. Above the runner is a 'Water Seal' assembly. Labels include 'Leak Off' at the top and bottom, 'Water Seal' pointing to the upper assembly, 'Runner' pointing to the impeller, 'Turbine Shaft' pointing to the main shaft, 'Labyrinth Seals' pointing to the seal rings, and 'Drain' pointing to a lower outlet." src="537621e5080a52b8b7b39881b862f198_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    Figure 25: Water Sealed Gland Overview. A cross-sectional diagram of a turbine shaft assembly. The central vertical component is the 'Turbine Shaft'. A 'Runner' (impeller) is mounted on the shaft. Above the runner is a 'Water Seal' assembly. Labels include 'Leak Off' at the top and bottom, 'Water Seal' pointing to the upper assembly, 'Runner' pointing to the impeller, 'Turbine Shaft' pointing to the main shaft, 'Labyrinth Seals' pointing to the seal rings, and 'Drain' pointing to a lower outlet.
+   </div>
+</div>
+<p>
+   Figure 25
+   <br/>
+   Water Sealed Gland Overview
+  </p>
+<img alt="Cross-sectional diagram of a water-sealed gland detail showing various components labeled 1 through 7." src="cce1f4715971176232d2f8cf7b80acf7_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<p>
+    A cross-sectional diagram of a water-sealed gland assembly. The diagram shows a central shaft (gland runner) passing through a series of seals and chambers.
+    <ul style="list-style-type: none">
+<li>
+      Label 1 points to two small openings at the top of the gland casing.
+     </li>
+<li>
+      Label 2 points to the outer casing of the turbine exhaust.
+     </li>
+<li>
+      Label 3 points to labyrinth packing seals located on both sides of the gland runner.
+     </li>
+<li>
+      Label 4 points to the main gland casing.
+     </li>
+<li>
+      Label 5 points to an inlet for circulating water at the top right.
+     </li>
+<li>
+      Label 6 points to the gland runner shaft.
+     </li>
+<li>
+      Label 7 points to an outlet for circulating water at the top left.
+     </li>
+</ul>
+    The diagram uses hatching to distinguish between different components like the casing, runner, and packing.
+   </p>
+<div class="img-alt">
+    Cross-sectional diagram of a water-sealed gland detail showing various components labeled 1 through 7.
+   </div>
+</div>
+<ol style="list-style-type: none">
+<li>
+    1. Hole for water to get to gland runner chamber
+   </li>
+<li>
+    2. Turbine exhaust casing
+   </li>
+<li>
+    3. Labyrinth packing
+   </li>
+<li>
+    4. Gland casing
+   </li>
+<li>
+    5. Circulating water inlet
+   </li>
+<li>
+    6. Gland runner
+   </li>
+<li>
+    7. Circulating water outlet
+   </li>
+</ol>
+<p>
+   Figure 26
+   <br/>
+<i>
+    Water Sealed Gland Detail
+   </i>
+</p>
+
+
+<h2>
+   Objective 5
+  </h2>
+<p>
+<b>
+    Describe the design and components of steam turbine bearings.
+   </b>
+</p>
+<h2>
+   STEAM TURBINE BEARINGS
+  </h2>
+<p>
+   The bearing on a turbine really “gets around.” A typical 200 mm diameter bearing operating at 3600 rev/min has a surface speed of 130 km/h. Such a bearing must run continuously for years. In five years it would travel over 5 600 000 km with only minor wear. Bearings are precision assemblies that require attention and preventative maintenance during operation and careful handling during installation.
+  </p>
+<p>
+   Bearing housings are usually of sturdy box-construction. They are bolted to or form an integral part of the main body casting. Rigidity and alignment are major considerations in steam turbine bearings. Rotor sag causes misalignment of bearings in larger units. Some misalignment is dealt with by self-aligning bearings.
+  </p>
+<p>
+   Small turbines often use ball bearings. They are the deep-groove type, either single or double row. They are used where end thrust is low. Double row and angular thrust types are used for heavier end thrust. Normally, the bearing at one end of the turbine rotor is fixed rigidly in the housing and takes end thrust. The other end allows movement (a limited amount) in an axial direction to allow for differential expansion and contraction between the rotor and the casing.
+  </p>
+<h3>
+   Ring-Oiled Bearings
+  </h3>
+<p>
+   A cut-away section of a small turbine equipped with ring-oiled bearings is shown in Fig. 27. The rings ride freely on the journals revolving with them, dipping into oil contained in the bearing housing. They automatically carry oil to the top of the journal from the reservoir. It is distributed over the length of the journal by the force created by shaft rotation and by special grooves machined into the bearing surface.
+  </p>
+<p>
+   When the turbine is operating with high temperature steam, or is in a warm location, the oil in the bearing reservoirs may become quite hot. To maintain the oil at a steady operating temperature, cooling water jackets or coils are often incorporated in the bearing design.
+  </p>
+<img alt="Cutaway section of a small turbine and gear box with various components labeled." src="2173c0102e23a5ff29d90d4353fc0339_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<p>
+    A detailed cutaway photograph of a small turbine and gear box assembly. The image shows internal mechanical components including a turbine section with blades and a gear box section. Several labels with leader lines point to specific parts: "Ring Oiled Bearing" at the top left, "Carbon Sealing Rings" near the top center, "Moving Blades" at the top right, "Nozzle" in the center, "Bearing Oil Reservoir" at the bottom left, "Steam Admission Valve" at the bottom center, "Gear Oil Reservoir" at the bottom right, and "Exhaust Steam" at the bottom right.
+   </p>
+<div class="img-alt">
+    Cutaway section of a small turbine and gear box with various components labeled.
+   </div>
+</div>
+<p>
+<i>
+    Figure 27
+   </i>
+<br/>
+<i>
+    Cutaway Section of a Small Turbine and Gear Box
+   </i>
+</p>
+<p>
+   Most small mechanical-drive turbines are fitted with ring-oiled bearings as shown in Fig. 28. The rings rest on the journal and dip into the oil reservoir in the bearing base. Rotation of the journal rotates the rings that carry oil from the reservoir to the top of the journal. It is distributed to the bearing surface. In this design, cooling water is used to cool the oil.
+  </p>
+<img alt="Cross-sectional diagram of a ring-oiled bearing showing the ring, journal, and cooling water system." src="317e0525ef1b2458976c246876f4a948_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<p>
+    A cross-sectional technical drawing of a ring-oiled bearing. It shows a central journal (shaft) surrounded by a bearing housing. A "Ring" is shown resting on the journal and dipping into an oil reservoir at the bottom. The bearing housing has a "Cooling Water Inlet" at the bottom right and a "Cooling Water Outlet" at the bottom left, with internal channels for circulating cooling water.
+   </p>
+<div class="img-alt">
+    Cross-sectional diagram of a ring-oiled bearing showing the ring, journal, and cooling water system.
+   </div>
+</div>
+<p>
+<i>
+    Figure 28
+   </i>
+<br/>
+<i>
+    Ring-Oiled Bearing
+   </i>
+</p>
+<h3>
+   Pressure-Fed Bearings
+  </h3>
+<p>
+   Sleeve bearings find application in all sizes of turbines. Small machines normally have the babbitt-lined, horizontally-split type fitted with one or more oil rings. Cooling is accomplished either by means of a large oil reservoir or by a water jacket forming part of the bearing casting, provision being made for the circulation of cooling water.
+  </p>
+<p>
+   All large turbines use babbitt-lined sleeve bearings. They have proven to be most reliable and require a minimum amount of maintenance and attention. They have a very low coefficient of friction. Friction values are about 0.005 at 1800 rev/min for normal operating temperature and loading. Normal values refer to the operating temperature ranges specified by the manufacturer of the turbine.
+  </p>
+<p>
+   The rotor of a steam turbine is supported by two main bearings located outside the steam cylinder. Because of the extremely small clearances between the shaft and the shaft seals and between the blading and the stationary parts, the bearings must be accurately aligned. Wear must be kept to a minimum for the same reason, or damage will result to the shaft seals and blading.
+  </p>
+<p>
+   The loads imposed upon the main bearings are chiefly due to the weight of the rotor assembly. This may or may not be equally divided between the bearings depending upon the relative position of the bearings and the centre of gravity of the rotor assembly. The design is usually such that the bearings do take equal shares of the load. In turbines where the admission steam is not uniformly distributed around the circumference, the forces on the blades have an influence on the bearing loads and pressures. If unbalanced forces become great enough, a vibrating load may be imposed upon the bearing in addition to that imposed by the rotor weight.
+  </p>
+<p>
+   Large turbine main bearings generally consist of shells split horizontally and lined with an anti-friction bearing metal. The bearings are enclosed in a housing to which a generous supply of oil is pumped by the circulating pump. This oil is delivered to the bearing, and chamfers and oil grooves assist in its even distribution along the length of the journal. When an oil of correct viscosity is used, a wedge is formed between the journal and the bearing. The journal floats on the oil wedge. Metal to metal contact between the journal and bearing cannot occur.
+  </p>
+<p>
+   The passages and grooves in the bearings are sized to permit a considerably greater flow of oil than is required solely for lubrication. This additional oil flow is required to remove heat. The heat is from friction and heat conducted to the bearing by the shaft. The shaft is heated by hot parts of the turbine such as hot blading. The oil flow is sufficient to cool the bearing, prevent hot spots due to induced heat, and maintain the oil and the bearing at operating temperature. The oil supplied to turbine main bearings serves more as a cooling agent than as a lubricant.
+  </p>
+<p>
+   A thermometer is normally provided in each main bearing to allow the bearing temperature to be viewed and logged at regular intervals. The temperatures are a good indication of the condition of the bearings. A sudden rise in temperature indicates a condition needing attention such as oil flows, oil cooling, or turbine loading.
+  </p>
+<p>
+   In turbines where the inlet steam is not uniformly distributed around the entire circumference of the rotating element, the forces on the blading can impact the bearing loadings. This and other unbalanced conditions can generate vibrations across the unit, adding to the stresses and reducing the life of the bearings. Fig. 29 shows a journal main bearing used on a steam turbine.
+  </p>
+<img alt="Cross-sectional diagram of a journal main bearing assembly." src="ddfe517a5ad9c77c89a57a5e780b24ca_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<p>
+    A cross-sectional diagram of a journal main bearing assembly. The diagram shows a central circular shaft with a clockwise rotation arrow. The shaft is surrounded by a 'White Metal Lining' which is held within a 'Cast Iron Shell'. An 'Oil Groove' is located at the top of the lining. The entire assembly is contained within a 'Housing'. An 'Oil Inlet' is indicated at the bottom left with an arrow pointing into the housing base.
+   </p>
+<div class="img-alt">
+    Cross-sectional diagram of a journal main bearing assembly.
+   </div>
+</div>
+<p>
+<i>
+    Figure 29
+   </i>
+<br/>
+<i>
+    Main Bearing
+   </i>
+</p>
+<h2>
+   Objective 6
+  </h2>
+<p>
+<b>
+    Describe the ways in which steam turbines are designed to counteract thrust.
+   </b>
+</p>
+<h2>
+   TURBINE THRUST
+  </h2>
+<h3>
+   Impulse Turbines
+  </h3>
+<p>
+   In an impulse turbine, the pressure of the steam drops in the stationary nozzles. Theoretically, the steam pressures on both sides of the moving blades are equal. The thrust the steam exerts axially on the shaft is small. There is always a small thrust tending to move the shaft in an axial direction toward the discharge end of the turbine. This thrust is counteracted by preventing contact between the moving and stationary parts of the turbine. A thrust bearing is commonly used for impulse turbines to counteract the steam-induced thrust. The thrust bearing maintains the axial position of the spindle in relation to the cylinder and is a vital element in a steam turbine unit.
+  </p>
+<h3>
+   Reaction Turbines
+  </h3>
+<p>
+   The reaction turbine has a pressure drop across each row of moving blades resulting in an end thrust imparted to the turbine shaft. This thrust is in addition to the thrust developed by the rotation of the shaft. One method of reducing the end thrust is the double-flow principle of turbine design. Steam is admitted to a point midway along the turbine casing, dividing and flowing axially in both directions. Opposing rows of blading are mounted on either side of the steam inlet. The nearly equal end thrusts developed by the blades counteract each other since they are moving in opposing directions. Various methods are employed to offset any remaining thrust. In turbines that are not double flow, other methods of thrust control are needed including: the use of thrust bearings and dummy pistons.
+  </p>
+<h3>
+   Thrust Bearings
+  </h3>
+<p>
+   The thrust bearing maintains the axial position of the shaft in relation to the cylinder. The size of the thrust bearing is matched to the amount of thrust. All turbines have some thrust and require a thrust bearing to fix the position of the rotating shaft and blades in relation to the stationary blading.
+  </p>
+<p>
+   In small turbines,
+   <b>
+    ball bearings
+   </b>
+   carry axial and radial loads. Since the blading is usually impulse type, axial loading is low. The ball bearings for light loads are either single or double row or deep-groove type. Double row, angular thrust ball bearings (Fig. 30) are used for heavier end loading. Normally, the bearing at one end of the turbine rotor is fixed rigidly in the housing and takes any end thrust. The other end has limited
+  </p>
+<p>
+   movement in an axial direction to allow for differential thermal expansion and contraction of the rotor and the casing.
+  </p>
+<img alt="Cross-sectional diagram of a double row ball bearing assembly. The diagram shows a shaft with a shoulder, a housing with a shoulder, and a double row of balls held in place by a cage. Labels with arrows point to a 'Flinger' (a ring on the shaft), a 'Seal' (a ring between the housing and the bearing), and a 'Reservoir' (a cavity in the housing)." src="afe5eb459b7c9cfe880b067777d876d8_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    Cross-sectional diagram of a double row ball bearing assembly. The diagram shows a shaft with a shoulder, a housing with a shoulder, and a double row of balls held in place by a cage. Labels with arrows point to a 'Flinger' (a ring on the shaft), a 'Seal' (a ring between the housing and the bearing), and a 'Reservoir' (a cavity in the housing).
+   </div>
+</div>
+<p>
+   Figure 30
+   <br/>
+<i>
+    Ball Bearing - Double Row
+   </i>
+</p>
+<p>
+   For larger turbines, there are two general types of thrust bearings in common use:
+  </p>
+<ul style="list-style-type: none">
+<li>
+    • Tapered land
+   </li>
+<li>
+    • Kingsbury
+   </li>
+</ul>
+<h3>
+   Tapered Land
+  </h3>
+<p>
+   In the
+   <b>
+    tapered land
+   </b>
+   , Fig. 31(a), a large diameter collar takes the thrust in both directions. Fig. 31(b) shows the theory of operation. The tapered shape of the lands builds up a wedge of oil forcing the collar away from actual metal-to-metal contact. The bearing itself is comprised of a revolving ring and a stationary ring. The revolving ring offers a smooth flat thrust surface, while the surface of the stationary ring is grooved radially. Half of each sector is chamfered towards the groove as shown. Radial holes admit oil from the external circumference of the bearing to the inner core. When the bearing is operating, the oil in the grooved and chamfered portions of the stationary ring is drawn into the pressure areas, thus forming complete surface-separating films.
+  </p>
+<img alt="Figure 31: Tapered Land Bearing. (a) Cross-sectional view of the bearing assembly. (b) Exploded view showing the Revolving Ring, Grooves, Tapered Lands, Stationary Ring, Load, and another Revolving Ring." src="a68671ef36320b8515aa85d288d82cf1_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<p>
+    Figure 31 consists of two parts: (a) and (b). Part (a) is a cross-sectional view of a tapered land bearing assembly, showing the internal components and their arrangement. Part (b) is an exploded view of the bearing, illustrating the following components: a top
+    <b>
+     Revolving Ring
+    </b>
+    , a middle
+    <b>
+     Stationary Ring
+    </b>
+    with
+    <b>
+     Grooves
+    </b>
+    and
+    <b>
+     Tapered Lands
+    </b>
+    , a bottom
+    <b>
+     Stationary Ring
+    </b>
+    , and a
+    <b>
+     Revolving Ring
+    </b>
+    at the base. A
+    <b>
+     Load
+    </b>
+    is indicated by a downward arrow on the top ring.
+   </p>
+<div class="img-alt">
+    Figure 31: Tapered Land Bearing. (a) Cross-sectional view of the bearing assembly. (b) Exploded view showing the Revolving Ring, Grooves, Tapered Lands, Stationary Ring, Load, and another Revolving Ring.
+   </div>
+</div>
+<p>
+   Figure 31
+   <br/>
+   Tapered Land Bearing
+  </p>
+<h3>
+   Kingsbury
+  </h3>
+<p>
+   The
+   <b>
+    Kingsbury
+   </b>
+   thrust bearing, shown in Fig. 32, uses a number of segments or tilting pads which are free to rock. Since the pivot point is slightly off centre, an oil wedge is set up with each segment automatically taking up its share of the load.
+  </p>
+<img alt="Figure 32: Kingsbury Thrust Bearing. Cross-sectional view showing the Direction of Rotation, Supporting Oil Wedge, Thrust Collar, Thrust, Shaft, Pivot, Stationary Thrust Shoe, and Thrust Pads." src="0872c27ab0a48c6e88ef4f09f773872f_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<p>
+    Figure 32 is a cross-sectional view of a Kingsbury thrust bearing. It shows a
+    <b>
+     Shaft
+    </b>
+    with a
+    <b>
+     Thrust Collar
+    </b>
+    . The collar is in contact with
+    <b>
+     Thrust Pads
+    </b>
+    mounted on a
+    <b>
+     Stationary Thrust Shoe
+    </b>
+    . Each pad is pivoted on a
+    <b>
+     Pivot
+    </b>
+    . The
+    <b>
+     Direction of Rotation
+    </b>
+    is indicated by a downward arrow. As the shaft rotates, a
+    <b>
+     Supporting Oil Wedge
+    </b>
+    is formed between the thrust collar and the pads. A
+    <b>
+     Thrust
+    </b>
+    force is indicated by a leftward arrow on the shaft.
+   </p>
+<div class="img-alt">
+    Figure 32: Kingsbury Thrust Bearing. Cross-sectional view showing the Direction of Rotation, Supporting Oil Wedge, Thrust Collar, Thrust, Shaft, Pivot, Stationary Thrust Shoe, and Thrust Pads.
+   </div>
+</div>
+<p>
+   Figure 32
+   <br/>
+   Kingsbury Thrust Bearing
+  </p>
+<p>
+   Fig. 33 shows another tilting pad type of thrust bearing. These tilting pads have a button pivot that causes the pad to pivot. Tilting pad thrust bearings require large amounts of oil to carry away the generated heat.
+  </p>
+<img alt="Figure 33: Tilting Pad Thrust Bearing. The diagram consists of two parts: a plan view on the left and a cross-sectional view on the right. The plan view shows a circular bearing assembly with eight individual pads arranged around a central shaft. The cross-sectional view shows the internal structure of the bearing, including the 'Button Pivot' that allows the pads to tilt, the 'Tilting Thrust Pad', 'Leveling Links' that connect the pads, and an 'Oil Supply Nozzle' at the bottom for lubrication." src="892f25e3d71d8e315a2a51092a8a8da7_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    Figure 33: Tilting Pad Thrust Bearing. The diagram consists of two parts: a plan view on the left and a cross-sectional view on the right. The plan view shows a circular bearing assembly with eight individual pads arranged around a central shaft. The cross-sectional view shows the internal structure of the bearing, including the 'Button Pivot' that allows the pads to tilt, the 'Tilting Thrust Pad', 'Leveling Links' that connect the pads, and an 'Oil Supply Nozzle' at the bottom for lubrication.
+   </div>
+</div>
+<p>
+   Figure 33
+   <br/>
+<i>
+    Tilting Pad Thrust Bearing
+   </i>
+</p>
+<h3>
+   Dummy Pistons
+  </h3>
+<p>
+   There is a pressure drop across each row of blades in a reaction turbine, and a considerable force is set up, which acts on the rotor in the direction of the steam flow. In order to counteract this force and reduce the load on the thrust bearings, dummy pistons are designed as part of the rotor at the steam inlet end.
+  </p>
+<p>
+   An example of a dummy piston with balance pipe is shown in Fig. 34. The dummy piston diameter is calculated so that the force of the steam pressure acting upon it in the opposite direction to the steam flow balances out the force on the rotor blades in the direction of the steam flow. The size of the dummy piston is designed to keep a small but definite thrust towards the exhaust end of the turbine. A balance pipe is connected from the casing, on the outer side of the balance piston, to a tap-off point down the cylinder. The differential pressure remains constant at varying steam flow conditions.
+  </p>
+<img alt="Diagram of a turbine assembly showing a dummy piston and balance pipe. The diagram includes labels for 'Labyrinth Packing to Prevent Steam Leakage', 'Steam Inlet', 'Steam Thrust on Blades', 'Thrust Due to Steam Pressure', and 'Balance Pipe'. A circular inset shows a detailed view of the labyrinth packing." src="fd955384881fd240be5518d3050588d9_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<p>
+    The diagram illustrates a turbine rotor assembly. A circular inset at the top left shows a cross-section of the 'Labyrinth Packing to Prevent Steam Leakage', which consists of a series of interlocking teeth. The main diagram shows the rotor assembly with a 'Steam Inlet' at the top. Arrows indicate 'Steam Thrust on Blades' and 'Thrust Due to Steam Pressure' acting on the rotor. A 'Balance Pipe' is shown at the bottom, connected to the rotor assembly.
+   </p>
+<div class="img-alt">
+    Diagram of a turbine assembly showing a dummy piston and balance pipe. The diagram includes labels for 'Labyrinth Packing to Prevent Steam Leakage', 'Steam Inlet', 'Steam Thrust on Blades', 'Thrust Due to Steam Pressure', and 'Balance Pipe'. A circular inset shows a detailed view of the labyrinth packing.
+   </div>
+</div>
+<p>
+   Figure 34
+   <br/>
+   Dummy Piston and Balance Pipe
+  </p>
+<h3>
+   Thrust Adjusting Gear
+  </h3>
+<p>
+   The efficiency of reaction turbines depends upon close clearances between the stationary and moving blades. To protect the axial seals, an adjustable thrust bearing, or block, as shown in Fig. 35, is used. The whole thrust block is cylindrical and fits like a piston in the cylinder with the thrust block able to move axially. The axial position of the rotor is controlled within strictly defined limits. During startup, the thrust block is pushed against a stop in the direction of exhaust for maximum clearance between the stationary and moving blades, avoiding any danger of rubbing due to uneven temperatures. The clearances are set to normal after the turbine has been loaded and is up to operating temperature. The turbine blade clearances are adjusted by moving the thrust block for minimum blade clearance. Maintaining minimum blade clearances during operation minimizes the loss of steam energy bypassing the blades and helps maximize turbine efficiencies.
+  </p>
+<img alt="Figure 35: Turbine Thrust Adjusting Gear. The image contains two diagrams. The left diagram, labeled 'End View', shows a circular gear assembly with a hand crank on the left side. It features several smaller gears arranged around a central hub. The right diagram, labeled 'Part Section Through X-X', is a cross-sectional view of the gear assembly, showing internal components like shafts, bearings, and housing details." src="e7cb11f042fc58088dff4b6d9306845e_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    Figure 35: Turbine Thrust Adjusting Gear. The image contains two diagrams. The left diagram, labeled 'End View', shows a circular gear assembly with a hand crank on the left side. It features several smaller gears arranged around a central hub. The right diagram, labeled 'Part Section Through X-X', is a cross-sectional view of the gear assembly, showing internal components like shafts, bearings, and housing details.
+   </div>
+</div>
+<p>
+   Figure 35
+   <br/>
+   Turbine Thrust Adjusting Gear
+  </p>
+<h3>
+   Minimizing Axial Thrust
+  </h3>
+<p>
+   Turbine manufacturers strive to minimize large axial thrusts on turbine rotors. Steam flows can be designed in opposite directions on a single shaft. This balances the thrusts, as shown for the LP turbine section of Fig. 36. Steam is admitted to the centre of the LP section. Half of the flow goes toward the HP section, and the other half flows toward the generator. The result is very little overall thrust in either direction.
+  </p>
+<img alt="Figure 36: GE Turbine – Double Flow Down Exhaust LP Casing. This is a schematic diagram of a turbine-generator set. From left to right, it shows an HP (High Pressure) turbine section, an LP (Low Pressure) turbine section, and a Generator. Steam is shown entering the HP section from the top left. The LP section has a central steam inlet and two exhaust paths, one pointing down and one pointing up, indicating a double-flow arrangement. The HP and LP sections are connected by a common shaft, which is also connected to the Generator." src="daa4a6fa7e2ba1954258f86b4928eb32_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    Figure 36: GE Turbine – Double Flow Down Exhaust LP Casing. This is a schematic diagram of a turbine-generator set. From left to right, it shows an HP (High Pressure) turbine section, an LP (Low Pressure) turbine section, and a Generator. Steam is shown entering the HP section from the top left. The LP section has a central steam inlet and two exhaust paths, one pointing down and one pointing up, indicating a double-flow arrangement. The HP and LP sections are connected by a common shaft, which is also connected to the Generator.
+   </div>
+</div>
+<p>
+   Figure 36
+   <br/>
+   GE Turbine – Double Flow Down Exhaust LP Casing
+  </p>
+<p>
+   A more detailed view of this arrangement is shown in Fig. 37.
+  </p>
+<img alt="Figure 37: Non-reheat, Double Flow Down Exhaust Unit. This is a detailed cross-sectional diagram of a steam turbine. On the left, the 'High Pressure Rotor' is shown within the 'High Pressure Casing', with 'High Pressure Admission' at its center. A 'Crossover Pipe' leads from the top of the HP casing to a generator. The HP rotor connects to a 'Low Pressure Rotor' via 'Bearing #2'. The LP rotor is housed in an 'Exhaust Casing' and features 'Last-Stage Bucket' blades. A 'Turning Gear' is mounted on the right end of the LP rotor, with an arrow pointing 'To Generator'. The entire assembly is supported by 'Bearing #1', 'Bearing #3', and 'Bearing #4'. 'Thrust Bearings' are located at the far left end of the HP casing." src="967c30813761a8952ecc5e16bf42ea45_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    Figure 37: Non-reheat, Double Flow Down Exhaust Unit. This is a detailed cross-sectional diagram of a steam turbine. On the left, the 'High Pressure Rotor' is shown within the 'High Pressure Casing', with 'High Pressure Admission' at its center. A 'Crossover Pipe' leads from the top of the HP casing to a generator. The HP rotor connects to a 'Low Pressure Rotor' via 'Bearing #2'. The LP rotor is housed in an 'Exhaust Casing' and features 'Last-Stage Bucket' blades. A 'Turning Gear' is mounted on the right end of the LP rotor, with an arrow pointing 'To Generator'. The entire assembly is supported by 'Bearing #1', 'Bearing #3', and 'Bearing #4'. 'Thrust Bearings' are located at the far left end of the HP casing.
+   </div>
+</div>
+<p>
+   Figure 37
+   <br/>
+   Non-reheat, Double Flow Down Exhaust Unit
+  </p>
+<p>
+   Fig. 38 illustrates how opposed steam flow in the HP and IP sections can also be used to reduce axial thrusts. In this arrangement, the HP casing steam flow is toward the front of the turbine. The IP flow is toward the rear of the turbine. The HP and IP use a single shaft, making it possible to use one thrust bearing for the HP/IP casing.
+  </p>
+<img alt="Figure 38: Opposed Flow HP/IP Section. This diagram shows a simplified cross-section of a turbine with 'HP' (High Pressure) and 'IP' (Intermediate Pressure) sections on a single shaft. An arrow points from the IP section upwards, labeled 'To Crossover To LP'. Below the main diagram, a smaller schematic shows steam flow directions: 'Cold Reheat' entering from the left, 'Main Stream' entering from the bottom, and 'Hot Reheat' entering from the right. Arrows indicate the resulting flow directions within the HP and IP casings." src="3668a836db39d25d24b56180a9c9a7fb_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    Figure 38: Opposed Flow HP/IP Section. This diagram shows a simplified cross-section of a turbine with 'HP' (High Pressure) and 'IP' (Intermediate Pressure) sections on a single shaft. An arrow points from the IP section upwards, labeled 'To Crossover To LP'. Below the main diagram, a smaller schematic shows steam flow directions: 'Cold Reheat' entering from the left, 'Main Stream' entering from the bottom, and 'Hot Reheat' entering from the right. Arrows indicate the resulting flow directions within the HP and IP casings.
+   </div>
+</div>
+<p>
+   Figure 38
+   <br/>
+   Opposed Flow HP/IP Section
+  </p>
+<p>
+   Image: A blank white page with three circular punch holes on the right margin and two faint vertical lines running down the center of the page.
+  </p>
+<h2>
+   Objective 7
+  </h2>
+<p>
+<b>
+    Describe the purpose and design of expansion and anchoring components.
+   </b>
+</p>
+<h2>
+   TURBINE EXPANSION
+  </h2>
+<p>
+   To ensure that correct alignment of the turbine is maintained under all operating conditions, provision is made to allow controlled axial and radial expansion.
+   <b>
+    Axial
+   </b>
+   means the expanding steam flow is parallel to the line of the shafts.
+   <b>
+    Radial
+   </b>
+   (or transverse) means the expansion is at right angles to the line of the shafts. The LP cylinder casing exhaust is usually anchored to the foundation (axially only) at one point. Movement of both the LP and the HP cylinder casings is allowed to take place by means of sliding supports or keyways. The casing supports and pedestals are designed specifically for each turbine and their specific operating conditions.
+  </p>
+<p>
+   An example of sliding supports for a HP cylinder is shown in Fig. 39. The cylinder casing is rigidly connected to the bearing pedestal. It is free to move radially away from the shaft in all directions while remaining in alignment. The bearing pedestal is allowed to slide axially on keyways attached to the bedplate and the pedestal.
+  </p>
+<img alt="Diagram of HP Pedestal and Casing Support showing sliding keyways for radial and axial movement." src="eb22a8740f7c6a0f6ee98f16d99ed8b9_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<p>
+    The diagram illustrates the support system for a high-pressure (HP) turbine cylinder. It shows a cross-section of the cylinder casing, which is rigidly connected to a bearing pedestal. The bearing pedestal is mounted on a bedplate. The diagram highlights three key components for movement: 'Sliding Keyways for Cylinder Radial Movement Vertically' (indicated by a vertical arrow), 'Sliding Keyway for Cylinder Horizontal Movement' (indicated by a horizontal arrow), and 'Keyway for Axial Movement of Both Cylinder and Pedestal' (indicated by an arrow pointing along the shaft axis). The labels 'Cylinder Casing', 'Bearing Pedestal', and 'Bedplate' are also present.
+   </p>
+<div class="img-alt">
+    Diagram of HP Pedestal and Casing Support showing sliding keyways for radial and axial movement.
+   </div>
+</div>
+<p>
+   Figure 39
+   <br/>
+   HP Pedestal and Casing Support
+  </p>
+<p>
+   An example of an arrangement for the expansion of a two-cylinder turbine is shown in Fig. 40.
+  </p>
+<img alt="Figure 40: Provision for Expansion of Two-Cylinder Turbine. The figure contains two diagrams. The top diagram is a longitudinal cross-section of a two-cylinder turbine showing expansion pieces fitted to interconnecting pipes. Arrows labeled 'Expansion' indicate axial movement. The bottom diagram is a plan view of the turbine showing flexible couplings and keys. A legend identifies: A Keys Permitting Axial Expansion, B Keys Locating Turbine Relative to Foundations, and C Keys Permitting Radial Expansion." src="78f163db583eb0c6d013e6f8ffe6d7d8_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<p>
+    Expansion Pieces Fitted to Interconnecting Pipes
+   </p>
+<p>
+    Expansion
+   </p>
+<p>
+    Expansion
+   </p>
+<p>
+    Flexible Coupling
+   </p>
+<p>
+    Flexible Coupling
+   </p>
+<p>
+    A Keys Permitting Axial Expansion
+    <br/>
+    B Keys Locating Turbine Relative to Foundations
+    <br/>
+    C Keys Permitting Radial Expansion
+   </p>
+<div class="img-alt">
+    Figure 40: Provision for Expansion of Two-Cylinder Turbine. The figure contains two diagrams. The top diagram is a longitudinal cross-section of a two-cylinder turbine showing expansion pieces fitted to interconnecting pipes. Arrows labeled 'Expansion' indicate axial movement. The bottom diagram is a plan view of the turbine showing flexible couplings and keys. A legend identifies: A Keys Permitting Axial Expansion, B Keys Locating Turbine Relative to Foundations, and C Keys Permitting Radial Expansion.
+   </div>
+</div>
+<p>
+<i>
+    Figure 40
+    <br/>
+    Provision for Expansion of Two-Cylinder Turbine
+   </i>
+</p>
+<p>
+   In some turbines, the pedestal bearings are fixed solid to the foundation, and the casings are allowed to expand axially at one end by means of supporting feet and sliding keyways.
+  </p>
+<h2>
+<b>
+    TURBINE ANCHORING
+   </b>
+</h2>
+<p>
+   A system of cylinder anchorage for a three-cylinder, tandem compound, reaction turbine is shown in Fig. 41. Anchorage systems depend upon the following:
+  </p>
+<ul style="list-style-type: none">
+<li>
+    • Type and size of the machine
+   </li>
+<li>
+    • Number of cylinders
+   </li>
+<li>
+    • Amount of expansion expected
+   </li>
+</ul>
+<img alt="Figure 41: Anchorage of Three-Cylinder Turbine. This is a schematic cross-sectional diagram of a three-cylinder turbine (HP, IP, and LP) showing its internal anchorage and guidance system. The HP cylinder on the left is anchored at its inlet by transverse keys (A) and a central key (B). Its exhaust end features sliding feet (C) on brackets, with slipper guides (D) to prevent lifting and a central key (E) for centering. The IP cylinder is anchored at its inlet by a transverse key (F) and a central key (G). At its exhaust end, it has a central guide key (H), sliding feet brackets (J), and slipper guides (K). The LP cylinder's transverse keys are located at (M) on the cylinder pedestals. Side guides (L) prevent lateral movement, and slipper guides (N) are located at the alternator end. The diagram uses various letters (A-N) to label specific components like keys, guides, and brackets." src="5f2c99ae08864cf2d5c949947bac2b98_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    Figure 41: Anchorage of Three-Cylinder Turbine. This is a schematic cross-sectional diagram of a three-cylinder turbine (HP, IP, and LP) showing its internal anchorage and guidance system. The HP cylinder on the left is anchored at its inlet by transverse keys (A) and a central key (B). Its exhaust end features sliding feet (C) on brackets, with slipper guides (D) to prevent lifting and a central key (E) for centering. The IP cylinder is anchored at its inlet by a transverse key (F) and a central key (G). At its exhaust end, it has a central guide key (H), sliding feet brackets (J), and slipper guides (K). The LP cylinder's transverse keys are located at (M) on the cylinder pedestals. Side guides (L) prevent lateral movement, and slipper guides (N) are located at the alternator end. The diagram uses various letters (A-N) to label specific components like keys, guides, and brackets.
+   </div>
+</div>
+<p style="text-align: center;">
+<i>
+    Figure 41
+   </i>
+<br/>
+<i>
+    Anchorage of Three-Cylinder Turbine
+   </i>
+</p>
+<p>
+   Referring to Fig. 41, the
+   <b>
+    HP cylinder
+   </b>
+   is prevented from moving axially at the steam inlet end by transverse keys
+   <b>
+    A
+   </b>
+   that allow radial movement. A centre key
+   <b>
+    B
+   </b>
+   keeps the cylinder central but does not restrict radial expansion.
+  </p>
+<p>
+   The exhaust end of the HP cylinder has two sliding feet resting on brackets. They are an integral part of the intermediate bearing
+   <b>
+    C
+   </b>
+   . Slipper guides
+   <b>
+    D
+   </b>
+   prevent the cylinder from lifting due to torque reaction. A centre key
+   <b>
+    E
+   </b>
+   keeps the cylinder centred at this end without restricting axial or radial movement.
+  </p>
+<p>
+   The
+   <b>
+    IP cylinder
+   </b>
+   is anchored in a similar manner.
+   <b>
+    F
+   </b>
+   is the transverse key at the inlet end and
+   <b>
+    G
+   </b>
+   is the centre key. At the exhaust end, the centre guide key is
+   <b>
+    H
+   </b>
+   . The sliding feet brackets are
+   <b>
+    J
+   </b>
+   and the slipper guides are
+   <b>
+    K
+   </b>
+   .
+  </p>
+<p>
+   The sliding feet brackets
+   <b>
+    J
+   </b>
+   are an integral part of the
+   <b>
+    LP turbine
+   </b>
+   exhaust. The transverse keys of the LP cylinder are located at
+   <b>
+    M
+   </b>
+   on the cylinder pedestals. The side-guides
+   <b>
+    L
+   </b>
+   prevent body lateral movement. The slipper guides
+   <b>
+    N
+   </b>
+   are at the alternator end of the LP turbine.
+  </p>
+<p>
+</p>
+<h2>
+   Objective 8
+  </h2>
+<p>
+<b>
+    Explain the principles of steam turbine nozzle design.
+   </b>
+</p>
+<h2>
+   IMPULSE TURBINE OPERATING PRINCIPLES
+  </h2>
+<p>
+   When steam at high pressure expands through a stationary nozzle, the steam pressure drops and velocity increases. The steam exits the nozzle in the form of a high-speed jet. The high velocity steam contacts the turbine blading. The direction of the steam flow changes due to the shape of the blade, as shown in Fig. 42. The change in direction of the steam flow produces an impulse force on the blade (
+   \(
+    F
+   \)
+   in Fig. 42). The change in angular momentum of the fluid in a rotating passage causes torque on the rotor. As the blade is attached to the rotor of a turbine, the force on the blades causes the rotor to revolve.
+  </p>
+<img alt="Diagram of an impulse turbine blade section showing steam flow and force." src="41245ac07db266bea228735b9e8c8b73_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<p>
+    A cross-sectional diagram of an impulse turbine blade. The blade is a curved, hatched shape. On the right, an arrow labeled 'Steam In' points towards the concave (inner) surface of the blade. On the left, an arrow labeled 'Force F' points horizontally to the left, away from the blade. At the bottom right, an arrow labeled 'Steam Out' points away from the blade's exit. The top left of the blade is labeled 'Leading Edge'.
+   </p>
+<div class="img-alt">
+    Diagram of an impulse turbine blade section showing steam flow and force.
+   </div>
+</div>
+<p>
+   Figure 42
+   <br/>
+<i>
+    Impulse Turbine Blade Section
+   </i>
+</p>
+<p>
+   In Fig. 42, a force applied to the blade is developed by causing the steam to change direction of flow (Newton's second law—change of momentum). The change of momentum produces the impulse force. In an impulse turbine, there are a number of stationary nozzles and the moving blades are arranged completely around the rotor.
+  </p>
+<h3>
+   Impulse Turbine Nozzles and Buckets
+  </h3>
+<p>
+   Fig. 43 shows a cutaway of impulse turbine nozzles and buckets. The nozzles are stationary blading attached to the stationary diaphragm. The buckets, or moving blades, on the rotor are attached to the turbine wheels. The wheels are connected to the shaft. The moving blades convert the velocity energy of the steam into mechanical energy causing the shaft to rotate. This turbine type has the disadvantages of very high speed and extremely high centrifugal force.
+  </p>
+<img alt="A 3D perspective diagram of an impulse turbine assembly. On the left, a 'Stationary Diaphragm' holds several 'Nozzle' units. These nozzles direct steam onto a series of 'Buckets' (or blades) mounted on a 'Wheel'. The wheel is shown with an arrow indicating 'Rotation'. A 'Bucket Cover' is shown above the buckets, indicating the casing of the turbine." src="fbfaa723129f8b8e3be651c6fe7cfab7_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    A 3D perspective diagram of an impulse turbine assembly. On the left, a 'Stationary Diaphragm' holds several 'Nozzle' units. These nozzles direct steam onto a series of 'Buckets' (or blades) mounted on a 'Wheel'. The wheel is shown with an arrow indicating 'Rotation'. A 'Bucket Cover' is shown above the buckets, indicating the casing of the turbine.
+   </div>
+</div>
+<p>
+   Figure 43
+   <br/>
+   Impulse Turbine Nozzles and Buckets
+  </p>
+<h3>
+   Steam Nozzles
+  </h3>
+<p>
+   Nozzles are often constructed of Monel metal formed over special dies. Monel metal is a high tensile strength nickel-copper alloy. Each nozzle is individually designed for proper expansion of steam at the pressure and temperature specified. The following two types of nozzles are used for steam turbines:
+  </p>
+<ul style="list-style-type: none">
+<li>
+    • Convergent
+   </li>
+<li>
+    • Convergent-divergent
+   </li>
+</ul>
+<h4>
+   Convergent Nozzle
+  </h4>
+<p>
+   The convergent nozzle, shown in Fig. 44, is used for small pressure drops. As the pressure drop across the nozzle is increased, the steam velocity also increases, but only up to a specific minimum exit pressure called the
+   <b>
+    critical pressure
+   </b>
+   . The ratio of exit pressure to inlet pressure, below which no increase in velocity is possible, is called the
+   <b>
+    critical pressure ratio
+   </b>
+   . A typical value of this ratio for wet or saturated steam is 0.577, while a typical value for superheated steam is 0.55. With a decrease in the exit pressure to a pressure below the critical pressure, any extra energy that is added goes into turbulence and the formation of eddy currents at the nozzle exit, rather than increasing steam velocity.
+  </p>
+<img alt="Diagram of a convergent nozzle showing the entrance, flow direction, and exit." src="3267a096e9ca525744d8cd820f12eb59_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<p>
+    A schematic diagram of a convergent nozzle. It shows a nozzle body, represented by two hatched areas, that narrows from left to right. A horizontal line with an arrow pointing to the right indicates the flow direction. The entrance is marked by a vertical dashed line on the left, and the exit is marked by a vertical dashed line on the right. The labels 'Entrance', 'Flow', and 'Exit' are placed above the nozzle.
+   </p>
+<div class="img-alt">
+    Diagram of a convergent nozzle showing the entrance, flow direction, and exit.
+   </div>
+</div>
+<p>
+   Figure 44
+   <br/>
+   Convergent Nozzle
+  </p>
+<h4>
+   Convergent-Divergent Nozzle
+  </h4>
+<p>
+   When large pressure drops are required, a convergent-divergent nozzle, Fig. 45, is used. The pressure at the narrowest part of the nozzle, the throat of the nozzle, should be at the critical pressure. The pressure continues to drop in the divergent part of the nozzle. The divergent section is designed to have increasing volume to match the increase in steam volume as the pressure decreases. A properly designed convergent-divergent nozzle can handle any pressure drop, producing the calculated steam velocity, without eddy currents.
+  </p>
+<img alt="Diagram of a convergent-divergent nozzle showing the entrance, throat, divergent section, flow direction, and exit." src="8935d7297fc189503125ecbbd7c41f27_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<p>
+    A schematic diagram of a convergent-divergent nozzle. The nozzle body is shown in two hatched parts. It narrows from the entrance on the left to a narrowest point labeled 'Throat', and then widens into a 'Divergent Section' before reaching the 'Exit' on the right. A horizontal line with an arrow indicates the flow direction from left to right. Vertical dashed lines mark the entrance, throat, and exit. The labels 'Entrance', 'Flow', and 'Exit' are above the nozzle. Below the nozzle, arrows point to the 'Convergent Section' (the narrowing part) and the 'Divergent Section' (the widening part).
+   </p>
+<div class="img-alt">
+    Diagram of a convergent-divergent nozzle showing the entrance, throat, divergent section, flow direction, and exit.
+   </div>
+</div>
+<p>
+   Figure 45
+   <br/>
+   Convergent-Divergent Nozzle
+  </p>
+<h2>
+   Objective 9
+  </h2>
+<p>
+<b>
+    Explain a steam turbine steam velocity diagram.
+   </b>
+</p>
+<h2>
+   TURBINE BLADE VELOCITY DIAGRAMS
+  </h2>
+<p>
+   Steam nozzles are used to direct steam onto turbine blades at the correct angle resulting in the most efficient energy conversion. The blades utilize the energy in the steam to produce mechanical energy at the turbine shaft.
+  </p>
+<p>
+   The principle behind this energy transformation is given in Newton's second law of motion, which states:
+  </p>
+<p>
+   $$
+    \text{Force} = \text{Mass} \times \text{Acceleration}
+   $$
+  </p>
+<p>
+   A force can be produced if a mass of some substance can be made to accelerate (or decelerate). The mass applied to a turbine blade is the steam flowing over it. Acceleration is defined as a rate of change of velocity. Velocity is a
+   <b>
+    vector
+   </b>
+   quantity and must be specified in direction as well as magnitude. A
+   <b>
+    change in direction
+   </b>
+   is therefore a change in velocity, and the rate of change is the acceleration produced.
+  </p>
+<p>
+   $$
+    \text{Force} \times \text{Distance moved} = \text{Work done}
+   $$
+  </p>
+<p>
+   The product of the force exerted on a turbine blade and the distance through which it moves determine the work done. Work taken over a time interval enables the power produced to be calculated.
+  </p>
+<p>
+   Blade velocity diagrams allow an estimate of the power developed from certain turbine nozzle and blade combinations. Fig. 46 shows an example of a single-stage axial-flow turbine with one nozzle (note the steam and blade directions).
+  </p>
+<img alt="Diagram of a single-stage axial flow turbine showing the nozzle, blades, and steam flow directions." src="da9505d99521f95115e588a0f9e87cc1_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<p>
+    The diagram illustrates a single-stage axial-flow turbine. On the left, a nozzle directs steam towards a set of blades. The steam enters at an angle
+    \(
+     \alpha
+    \)
+    and leaves at an angle
+    \(
+     \delta
+    \)
+    . The blades are mounted on a rotor with a diameter
+    \(
+     D
+    \)
+    . The rotor rotates at a speed
+    \(
+     N
+    \)
+    in r.p.m. The axis of rotation is shown as a dashed line. The direction of rotation of the blades is indicated by a curved arrow. The nozzle is also shown in a cross-sectional view on the right, with the steam flow direction indicated.
+   </p>
+<div class="img-alt">
+    Diagram of a single-stage axial flow turbine showing the nozzle, blades, and steam flow directions.
+   </div>
+</div>
+<p>
+   Figure 46
+   <br/>
+   Single-Stage Axial Flow Turbine
+  </p>
+<p>
+   For the purposes of the following calculations, it is assumed that the row of turbine buckets on the rim of the wheel is equivalent to a straight line of buckets moving in a tangential direction. Fig. 47 shows a cross-section of the flow path looking radially inward towards the axis of rotation.
+  </p>
+<img alt="Figure 47: Cross-Section of Steam Flow Path. The diagram illustrates a fixed nozzle at the top, from which a stream of steam (represented by curved lines) flows into a series of moving buckets. The buckets are crescent-shaped and arranged in a horizontal row. An arrow pointing right indicates the 'Tangential Direction', and an arrow pointing down indicates the 'Axial Direction'. The text 'Radial Cross-Section' is placed to the left of the buckets." src="55d74563d1b88865295879cdaffce3ff_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    Figure 47: Cross-Section of Steam Flow Path. The diagram illustrates a fixed nozzle at the top, from which a stream of steam (represented by curved lines) flows into a series of moving buckets. The buckets are crescent-shaped and arranged in a horizontal row. An arrow pointing right indicates the 'Tangential Direction', and an arrow pointing down indicates the 'Axial Direction'. The text 'Radial Cross-Section' is placed to the left of the buckets.
+   </div>
+</div>
+<p>
+   Figure 47
+   <br/>
+   Cross-Section of Steam Flow Path
+  </p>
+<p>
+   If one of the buckets, or blades, is considered, and the angles and speeds of steam and blade are drawn, they appear as in Fig. 48.
+  </p>
+<img alt="Figure 48: Turbine Blade Velocity-Vector Diagram. This vector diagram shows the relationship between steam velocities and blade motion. A horizontal dashed line indicates the 'Direction of Blade Motion'. At the inlet (top), $V_1$ is the absolute steam velocity at angle $\alpha$, and $V_{R1}$ is the relative steam velocity at angle $\beta$. At the outlet (bottom), $V_2$ is the absolute exit velocity at angle $\delta$, and $V_{R2}$ is the relative exit velocity at angle $\gamma$. $V_b$ represents the blade velocity. A shaded bucket profile is shown between the inlet and outlet velocity triangles." src="c4c8cd9c58f395c25a2a2b217ca7c2fb_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    Figure 48: Turbine Blade Velocity-Vector Diagram. This vector diagram shows the relationship between steam velocities and blade motion. A horizontal dashed line indicates the 'Direction of Blade Motion'. At the inlet (top), $V_1$ is the absolute steam velocity at angle $\alpha$, and $V_{R1}$ is the relative steam velocity at angle $\beta$. At the outlet (bottom), $V_2$ is the absolute exit velocity at angle $\delta$, and $V_{R2}$ is the relative exit velocity at angle $\gamma$. $V_b$ represents the blade velocity. A shaded bucket profile is shown between the inlet and outlet velocity triangles.
+   </div>
+</div>
+<p>
+   Figure 48
+   <br/>
+   Turbine Blade Velocity-Vector Diagram
+  </p>
+<p>
+   The letters used in the turbine blading diagrams are from the Greek alphabet:
+  </p>
+<table>
+<tr data-bbox="474 1556 683 1593">
+<td>
+     \(
+      \alpha
+     \)
+    </td>
+<td>
+     Alpha
+    </td>
+</tr>
+<tr data-bbox="474 1593 683 1631">
+<td>
+     \(
+      \beta
+     \)
+    </td>
+<td>
+     Beta
+    </td>
+</tr>
+<tr data-bbox="474 1631 683 1671">
+<td>
+     \(
+      \delta
+     \)
+    </td>
+<td>
+     Delta
+    </td>
+</tr>
+<tr data-bbox="474 1671 683 1713">
+<td>
+     \(
+      \gamma
+     \)
+    </td>
+<td>
+     Gamma
+    </td>
+</tr>
+</table>
+<h3>
+   Explanation of Terms in Fig. 48
+  </h3>
+<ul style="list-style-type: none">
+<li>
+    \(
+     V_1
+    \)
+    represents (in magnitude and direction) the steam leaving the nozzle. This becomes the steam inlet to the moving blade.
+   </li>
+<li>
+    \(
+     \alpha
+    \)
+    is the angle of the axis of the nozzle with the direction of blade movement.
+   </li>
+<li>
+    \(
+     V_b
+    \)
+    is the blade velocity.
+   </li>
+<li>
+    \(
+     V_{R1}
+    \)
+    (Velocity, relative, inlet) is the resultant of
+    \(
+     V_1
+    \)
+    and
+    \(
+     V_b
+    \)
+    and represents the velocity and direction of the incoming steam relative to the moving blade.
+   </li>
+<li>
+    \(
+     \beta
+    \)
+    is the inlet angle of the blade. Note that this angle matches the incoming steam direction exactly so the steam enters the blades without shock.
+   </li>
+</ul>
+<p>
+   The above angles and sides form the
+   <b>
+    inlet blade velocity
+   </b>
+   diagram.
+  </p>
+<p>
+   Another triangle is formed by the conditions obtained at the
+   <b>
+    moving blade outlet
+   </b>
+   as follows:
+  </p>
+<ul style="list-style-type: none">
+<li>
+    \(
+     V_{R2}
+    \)
+    represents the steam leaving the blade.
+    \(
+     V_{R2}
+    \)
+    is measured relative to the moving blade. The only reduction in magnitude of this steam velocity will be that due to friction as the steam passes over the blade. The direction of steam leaving the blade (angle
+    \(
+     \gamma
+    \)
+    ) depends upon the shape of blade used.
+   </li>
+<li>
+    \(
+     \gamma
+    \)
+    is the exit angle of the blade.
+   </li>
+<li>
+    \(
+     V_b
+    \)
+    represents the blade speed (this is identical with
+    \(
+     V_b
+    \)
+    in the inlet triangle).
+   </li>
+<li>
+    \(
+     V_2
+    \)
+    is the resultant of
+    \(
+     V_{R2}
+    \)
+    and
+    \(
+     V_b
+    \)
+    and represents the absolute steam-exit speed and direction. The term absolute is used when a measurement is made with reference to a fixed object, in this case the fixed parts of the turbine. The fixed parts are the casing or the fixed blades. The term relative is used when a measurement is made with reference to a moving object, in this case the moving blades.
+   </li>
+<li>
+    \(
+     \delta
+    \)
+    is the angle at which the steam leaves the moving blade, referred to a fixed point. Hence, this is its angle of approach to the next row of fixed blades.
+   </li>
+</ul>
+
+
+<h1>
+   Objective 10
+  </h1>
+<p>
+<b>
+    Calculate the steam velocity and angle of entry for impulse and reaction turbine blading.
+   </b>
+</p>
+<h2>
+   TURBINE BLADE CHARACTERISTICS
+  </h2>
+<p>
+   The two blading types—impulse and reaction—have basic characteristics which distinguish them. Each blading type has a characteristic shape of velocity vector diagram.
+  </p>
+<h3>
+   Impulse Blading
+  </h3>
+<p>
+   Simple impulse blading is usually made so that the moving blades have the
+  </p>
+<p>
+   $$
+    \text{Inlet angle } \beta = \text{Outlet angle } \gamma
+   $$
+  </p>
+<p>
+   Each blade is
+   <b>
+    symmetrical
+   </b>
+   about its centreline.
+  </p>
+<p>
+   There is no pressure drop across a moving impulse blade and no velocity increase.
+  </p>
+<p>
+   If friction is neglected, there is no velocity decrease.
+  </p>
+<p>
+   $$
+    V_{R1} = V_{R2}
+   $$
+  </p>
+<p>
+   The moving blade section of the diagram is shown in Fig. 49.
+  </p>
+<p>
+   Where
+   \(
+    \angle \beta = \angle \gamma
+   \)
+   (these angles are usually equal in an impulse turbine)
+  </p>
+<p>
+   $$
+    \text{And } V_{R1} = V_{R2}
+   $$
+  </p>
+<img alt="Figure 49: Impulse Moving Bading diagram. A horizontal dashed line represents the blade. Two vectors, V_R1 and V_R2, originate from a point on the blade. V_R1 points up and to the left, making an angle beta with the blade. V_R2 points up and to the right, making an angle gamma with the blade. Above the vectors, the text 'and V_R1 = V_R2' is present." src="68ac34ff111db52afaa786afcb8346c3_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    Figure 49: Impulse Moving Bading diagram. A horizontal dashed line represents the blade. Two vectors, V_R1 and V_R2, originate from a point on the blade. V_R1 points up and to the left, making an angle beta with the blade. V_R2 points up and to the right, making an angle gamma with the blade. Above the vectors, the text 'and V_R1 = V_R2' is present.
+   </div>
+</div>
+<p>
+   Figure 49
+   <br/>
+   Impulse Moving Bading
+  </p>
+<h4>
+   Impulse Blading Calculations
+  </h4>
+<h4>
+   Example 1
+  </h4>
+<p>
+   Referring to the impulse blading vector diagram in Fig. 50, steam flows from the nozzle of a simple impulse turbine at a velocity of 600 m/s and at an angle of
+   \(
+    20^\circ
+   \)
+   to the direction of blade motion. Blade velocity is 225 m/s. Neglecting friction, and with equal blade inlet and outlet angles, calculate:
+  </p>
+<ol style="list-style-type: none">
+<li>
+    Blade inlet angle so that the steam will enter without shock (
+    \(
+     V_2
+    \)
+    ).
+   </li>
+<li>
+    Magnitude and direction of the absolute velocity of the steam leaving the blades.
+   </li>
+</ol>
+<h5>
+   Solution
+  </h5>
+<img alt="Figure 50: Impulse Blading Vector Diagram. A horizontal dashed line represents the blade's path. The blade velocity V_B = 225 m/s is shown as a vector along this line. The absolute inlet velocity V_1 = 600 m/s is shown as a vector at an angle alpha = 20 degrees to the horizontal. The relative inlet velocity V_R1 is shown as a vector from the blade's position to the tip of V_1. The relative outlet velocity V_R2 is shown as a vector from the blade's position to the tip of V_2. The absolute outlet velocity V_2 is shown as a vector from the nozzle's position to the blade's position. The diagram includes various horizontal and vertical components labeled X_1, X_B, V_wl, V_w, V_wo, V_fl, and V_TB. The blade inlet angle beta and outlet angle gamma are indicated at the blade's position." src="6d06e66b7a838f8c809884aeee597a5e_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    Figure 50: Impulse Blading Vector Diagram. A horizontal dashed line represents the blade's path. The blade velocity V_B = 225 m/s is shown as a vector along this line. The absolute inlet velocity V_1 = 600 m/s is shown as a vector at an angle alpha = 20 degrees to the horizontal. The relative inlet velocity V_R1 is shown as a vector from the blade's position to the tip of V_1. The relative outlet velocity V_R2 is shown as a vector from the blade's position to the tip of V_2. The absolute outlet velocity V_2 is shown as a vector from the nozzle's position to the blade's position. The diagram includes various horizontal and vertical components labeled X_1, X_B, V_wl, V_w, V_wo, V_fl, and V_TB. The blade inlet angle beta and outlet angle gamma are indicated at the blade's position.
+   </div>
+</div>
+<p>
+   Figure 50
+   <br/>
+   Impulse Blading Vector Diagram
+  </p>
+<p>
+   Given data:
+  </p>
+<p>
+   $$
+    V_1 = 600 \text{ m/s}
+   $$
+  </p>
+<p>
+   $$
+    V_b = 225 \text{ m/s}
+   $$
+  </p>
+<p>
+   $$
+    \alpha = 20^\circ
+   $$
+  </p>
+<p>
+   $$
+    V_{R2} = V_{R1}
+   $$
+  </p>
+<p>
+   $$
+    \gamma = \beta
+   $$
+  </p>
+<p>
+   Values
+   \(
+    X_1
+   \)
+   and
+   \(
+    X_b
+   \)
+   are added to the diagram for ease of reference and to simplify the trigonometric calculations.
+  </p>
+<ol style="list-style-type: none">
+<li>
+    (a) Blade inlet angle so that the steam will enter without shock (
+    \(
+     V_2
+    \)
+    ).
+   </li>
+</ol>
+<p>
+   $$
+    V_{w1} = V_1 \times \cos \alpha
+   $$
+  </p>
+<p>
+   $$
+    V_{w1} = 600 \text{ m/s} \times \cos 20^\circ
+   $$
+  </p>
+<p>
+   $$
+    V_{w1} = 600 \text{ m/s} \times 0.9397
+   $$
+  </p>
+<p>
+   $$
+    V_{w1} = 563.82 \text{ m/s}
+   $$
+  </p>
+<p>
+   $$
+    V_{f1} = V_1 \times \sin \alpha
+   $$
+  </p>
+<p>
+   $$
+    V_{f1} = 600 \text{ m/s} \times \sin 20^\circ
+   $$
+  </p>
+<p>
+   $$
+    V_{f1} = 600 \text{ m/s} \times 0.3420
+   $$
+  </p>
+<p>
+   $$
+    V_{f1} = 205.21 \text{ m/s}
+   $$
+  </p>
+<p>
+   $$
+    X_1 = V_{w1} - V_b
+   $$
+  </p>
+<p>
+   $$
+    X_1 = 563.82 \text{ m/s} - 225 \text{ m/s}
+   $$
+  </p>
+<p>
+   $$
+    X_1 = 338.82 \text{ m/s}
+   $$
+  </p>
+<p>
+   $$
+    \beta = \tan^{-1} \frac{V_{f1}}{X_1}
+   $$
+  </p>
+<p>
+   $$
+    \beta = \tan^{-1} \left( \frac{205.21 \text{ m/s}}{338.82 \text{ m/s}} \right)
+   $$
+  </p>
+<p>
+   $$
+    \beta = \tan^{-1} (0.6057)
+   $$
+  </p>
+<p>
+   $$
+    \beta = 31^\circ 12' \text{ (Ans.)}
+   $$
+  </p>
+<ol style="list-style-type: none">
+<li>
+    (b) Magnitude and direction of the absolute velocity of the steam leaving the blades.
+   </li>
+</ol>
+<p>
+   $$
+    \text{Blade outlet angle } \gamma = \text{Blade inlet angle } \beta
+   $$
+  </p>
+<p>
+   $$
+    \gamma = \beta
+   $$
+  </p>
+<p>
+   $$
+    \text{Blade outlet angle } \gamma = 31^\circ 12' \text{ (Ans.)}
+   $$
+  </p>
+<p>
+   $$
+    \text{Since } V_{R2} = V_{R1}
+   $$
+  </p>
+<p>
+   $$
+    X_B = X_1
+   $$
+  </p>
+<p>
+   $$
+    \text{But } X_1 = 338.82 \text{ m/s}
+   $$
+  </p>
+<p>
+   $$
+    X_B = 338.82 \text{ m/s}
+   $$
+  </p>
+<p>
+   $$
+    V_{W0} = X_E - V_B
+   $$
+  </p>
+<p>
+   $$
+    V_{W0} = 338.82 \text{ m/s} - 225 \text{ m/s}
+   $$
+  </p>
+<p>
+   $$
+    V_{W0} = 113.82 \text{ m/s}
+   $$
+  </p>
+<p>
+   $$
+    V_{FB} = V_{F1}
+   $$
+  </p>
+<p>
+   $$
+    \text{But } V_{F1} = 205.21 \text{ m/s}
+   $$
+  </p>
+<p>
+   $$
+    V_{FB} = 205.21 \text{ m/s}
+   $$
+  </p>
+<p>
+   From Pythagoras' theorem:
+  </p>
+<p>
+   $$
+    V_2 = \sqrt{V_{FB}^2 + V_{W0}^2}
+   $$
+  </p>
+<p>
+   $$
+    V_2 = \sqrt{(205.21 \text{ m/s})^2 + (113.82 \text{ m/s})^2}
+   $$
+  </p>
+<p>
+   $$
+    V_2 = \sqrt{42111.14 + 12954.99}
+   $$
+  </p>
+<p>
+   $$
+    V_2 = \sqrt{55066.13}
+   $$
+  </p>
+<p>
+   Magnitude of steam velocity
+   \(
+    V_2 = 234.66 \text{ m/s}
+   \)
+   (Ans.)
+  </p>
+<h3>
+   Reaction Blading
+  </h3>
+<p>
+   Reaction blading is made so that the moving and fixed blades are identical. This relationship produces a
+   <b>
+    50% reaction turbine
+   </b>
+   in which 50% of the steam's loss of enthalpy occurs in the fixed blades and 50% occurs in the moving blades; 100% reaction blading is not attainable in practice. The term reaction turbine usually refers to a 50% reaction turbine.
+  </p>
+<p>
+   Moving blade inlet angle
+   \(
+    \beta
+   \)
+   = Fixed blade inlet angle
+   \(
+    \delta
+   \)
+  </p>
+<p>
+   Moving blade exit angle
+   \(
+    \gamma
+   \)
+   = Fixed blade exit angle
+   \(
+    \alpha
+   \)
+  </p>
+<p>
+   The relative velocity of the steam does not remain constant over the moving blade, as in an impulse turbine, because the steam is expanding as it flows over the blade. This expansion causes a pressure drop and a consequent velocity increase;
+   \(
+    V_{R2}
+   \)
+   will therefore be greater than
+   \(
+    V_{R1}
+   \)
+   .
+  </p>
+<p>
+   Because angles
+   \(
+    \beta
+   \)
+   and
+   \(
+    \delta
+   \)
+   are equal and angles
+   \(
+    \gamma
+   \)
+   and
+   \(
+    \alpha
+   \)
+   are equal, the blade velocity vector diagram for a 50% reaction turbine is symmetrical about a central vertical axis as shown in Fig. 51.
+  </p>
+<img alt="Figure 51: Reaction Blading Diagram. A symmetrical vector diagram for a 50% reaction turbine. It shows four vectors originating from a central vertical axis: V1 and VR1 on the left, and VR2 and V2 on the right. The angles between the horizontal axis and these vectors are labeled beta, gamma, alpha, and delta respectively. The diagram is symmetrical about the central vertical axis." src="e0d425c8e4eef259e4c52d81426d93fa_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    Figure 51: Reaction Blading Diagram. A symmetrical vector diagram for a 50% reaction turbine. It shows four vectors originating from a central vertical axis: V1 and VR1 on the left, and VR2 and V2 on the right. The angles between the horizontal axis and these vectors are labeled beta, gamma, alpha, and delta respectively. The diagram is symmetrical about the central vertical axis.
+   </div>
+</div>
+<p>
+   Figure 51
+   <br/>
+   Reaction Blading Diagram
+  </p>
+<h4>
+   Reaction Blading Calculations
+  </h4>
+<h4>
+   Example 2
+  </h4>
+<p>
+   Referring to the reaction blading vector diagram in Fig. 52, at one stage in a reaction turbine, the velocity of the steam leaving the fixed blades is 100 m/s and the fixed blade exit angle is
+   \(
+    20^\circ
+   \)
+   . The linear velocity of the moving blade is 66 m/s. The steam consumption is 1.4 kg/s. Assuming the fixed and moving blades have identical sections, calculate the entrance angle of the blades.
+  </p>
+<h5>
+   Solution
+  </h5>
+<img alt="Figure 52: Reaction Blading Vector Diagram. A detailed vector diagram for a reaction turbine stage. The horizontal axis represents the blade velocity Vb = 66 m/s. The absolute velocity of steam leaving the fixed blades is V1 = 100 m/s at an angle alpha = 20 degrees. The relative velocity of steam entering the moving blades is VR1. The absolute velocity of steam leaving the moving blades is V2. The relative velocity of steam leaving the moving blades is VR2. The diagram also shows the axial components of velocity (Vf1, Vf2) and the tangential components (Vw1, Vw2). The entrance angle beta is the unknown to be determined." src="3ef2266eb61ae3929cdae1742c1f526e_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    Figure 52: Reaction Blading Vector Diagram. A detailed vector diagram for a reaction turbine stage. The horizontal axis represents the blade velocity Vb = 66 m/s. The absolute velocity of steam leaving the fixed blades is V1 = 100 m/s at an angle alpha = 20 degrees. The relative velocity of steam entering the moving blades is VR1. The absolute velocity of steam leaving the moving blades is V2. The relative velocity of steam leaving the moving blades is VR2. The diagram also shows the axial components of velocity (Vf1, Vf2) and the tangential components (Vw1, Vw2). The entrance angle beta is the unknown to be determined.
+   </div>
+</div>
+<p>
+   Figure 52
+   <br/>
+   Reaction Blading Vector Diagram
+  </p>
+<p>
+   Given data:
+  </p>
+<p>
+   $$
+    \begin{aligned} V_1 &amp;= 100 \text{ m/s (because fixed blade outlet is moving blade inlet)} \\ \alpha &amp;= 20^\circ \text{ (because fixed blade outlet is moving blade inlet)} \\ V_b &amp;= 66 \text{ m/s} \end{aligned}
+   $$
+  </p>
+<p>
+   $$
+    \begin{aligned} V_{w1} &amp;= V_1 \times \cos \alpha \\ V_{w1} &amp;= 100 \text{ m/s} \times \cos 20^\circ \\ V_{w1} &amp;= 100 \text{ m/s} \times 0.9397 \\ V_{w1} &amp;= 93.97 \text{ m/s} \end{aligned}
+   $$
+  </p>
+<p>
+   $$
+    \begin{aligned} V_{F1} &amp;= V_1 \times \sin \alpha \\ V_{F1} &amp;= 100 \text{ m/s} \times \sin 20^\circ \\ V_{F1} &amp;= 100 \text{ m/s} \times 0.3420^\circ \\ V_{F1} &amp;= 34.20 \text{ m/s} \end{aligned}
+   $$
+  </p>
+<p>
+   $$
+    \begin{aligned} X_1 &amp;= V_{w1} - V_B \\ X_1 &amp;= 93.97 \text{ m/s} - 66 \text{ m/s} \\ X_1 &amp;= 27.97 \text{ m/s} \end{aligned}
+   $$
+  </p>
+<p>
+   $$
+    \begin{aligned} \beta &amp;= \tan^{-1} \left( \frac{V_{F1}}{X_1} \right) \\ \beta &amp;= \tan^{-1} \left( \frac{34.20 \text{ m/s}}{27.97 \text{ m/s}} \right) \\ \beta &amp;= \tan^{-1} (1.2227) \\ \beta &amp;= 50^\circ 43' \text{ (Ans.)} \end{aligned}
+   $$
+  </p>
+<h1>
+   Objective 11
+  </h1>
+<p>
+<b>
+    Calculate the work done on steam turbine blades and the resulting power developed.
+   </b>
+</p>
+<h2>
+   WORK DONE ON BLADES
+  </h2>
+<p>
+   The force exerted on a blade depends upon the change in the component of the steam velocity in the direction of the blade movement. At the inlet to the blade this component will be
+   \(
+    V_1 \cos \alpha
+   \)
+   . This is an absolute velocity referred to as the
+   <b>
+    velocity of whirl
+   </b>
+   .
+  </p>
+<p>
+   At the outlet from the blade, the velocity of whirl is
+   \(
+    V_2 \cos \delta
+   \)
+   .
+  </p>
+<p>
+   Fig. 53 shows that
+   \(
+    V_1 \cos \alpha
+   \)
+   must be in a
+   <b>
+    left to right
+   </b>
+   direction, whereas
+   \(
+    V_2 \cos \beta
+   \)
+   is in a
+   <b>
+    right to left
+   </b>
+   direction.
+  </p>
+<p>
+   Thus, the total change in this component of velocity is the sum of
+   \(
+    V_1 \cos \alpha
+   \)
+   and
+   \(
+    V_2 \cos \beta
+   \)
+   .
+  </p>
+<p>
+   The force exerted on the blade is given by:
+  </p>
+<p>
+   $$
+    \text{Force} = \text{mass} \times \text{acceleration}
+   $$
+  </p>
+<p>
+   $$
+    F \text{ (newtons)} = \text{kg steam flowing/s} \times \text{change in velocity (m/s}^2\text{)}
+   $$
+  </p>
+<p>
+   $$
+    F \text{ (newtons)} = m(V_1 \cos \alpha + V_2 \cos \beta)
+   $$
+  </p>
+<p>
+   The force
+   \(
+    F
+   \)
+   newtons exerted on the blade does work by moving the blade.
+  </p>
+<p>
+   $$
+    \text{Work done/s} = F \text{ (N)} \times \text{Blade speed (m/s)}
+   $$
+  </p>
+<p>
+   $$
+    \text{Power developed} = \frac{F \times V_b}{1000} \text{ kW}
+   $$
+  </p>
+<p>
+   where
+   \(
+    V_b
+   \)
+   = blade speed, m/s
+  </p>
+<p>
+   Fig. 53 shows the inlet triangle.
+  </p>
+<img alt="Figure 53: Inlet Triangle. A vector diagram showing the inlet conditions for a turbine. A vertical dashed line on the left represents the 'Direction of Steam Flow Through the Turbine'. A horizontal dashed line represents the 'Direction of Blade Movement'. The absolute velocity vector V1 is shown at an angle alpha to the horizontal. Its components are Vf1 (vertical, flow) and Vw1 (horizontal, whirl). The relative velocity vector Vr1 is shown at an angle beta to the horizontal. The base of the triangle is the blade velocity Vb." src="c3c305cefbac2e7b13be34ab87054d1e_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    Figure 53: Inlet Triangle. A vector diagram showing the inlet conditions for a turbine. A vertical dashed line on the left represents the 'Direction of Steam Flow Through the Turbine'. A horizontal dashed line represents the 'Direction of Blade Movement'. The absolute velocity vector V1 is shown at an angle alpha to the horizontal. Its components are Vf1 (vertical, flow) and Vw1 (horizontal, whirl). The relative velocity vector Vr1 is shown at an angle beta to the horizontal. The base of the triangle is the blade velocity Vb.
+   </div>
+</div>
+<p>
+   Figure 53
+   <br/>
+   Inlet Triangle
+  </p>
+<p>
+   The vector
+   \(
+    V_1
+   \)
+   is resolved into two components:
+  </p>
+<ul style="list-style-type: none">
+<li>
+    •
+    \(
+     V_{f1}
+    \)
+    (velocity, flow, inlet) in the direction of steam flow.
+   </li>
+<li>
+    •
+    \(
+     V_{w1}
+    \)
+    (velocity, whirl, inlet) in the direction of blade movement or
+    <b>
+     whirl
+    </b>
+    .
+   </li>
+</ul>
+<p>
+   Fig. 54 shows the vector diagram of the steam exit vectors.
+  </p>
+<img alt="Figure 54: Steam Exit Vectors. A vector diagram showing the exit conditions. A horizontal dashed line represents the blade speed Vb. A vertical dashed line on the right represents the flow direction. The absolute exit velocity vector V2 is shown with components Vfo (vertical, flow) and Vwo (horizontal, whirl). The relative exit velocity vector Vr2 is also shown." src="7ff005f9556dc6518981bb92091d36ab_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    Figure 54: Steam Exit Vectors. A vector diagram showing the exit conditions. A horizontal dashed line represents the blade speed Vb. A vertical dashed line on the right represents the flow direction. The absolute exit velocity vector V2 is shown with components Vfo (vertical, flow) and Vwo (horizontal, whirl). The relative exit velocity vector Vr2 is also shown.
+   </div>
+</div>
+<p>
+   Figure 54
+   <br/>
+   Steam Exit Vectors
+  </p>
+<p>
+   The vector
+   \(
+    V_2
+   \)
+   is resolved into two components:
+  </p>
+<ul style="list-style-type: none">
+<li>
+    •
+    \(
+     V_{fo}
+    \)
+    (velocity, flow, outlet) in the direction of steam flow.
+   </li>
+<li>
+    •
+    \(
+     V_{wo}
+    \)
+    (velocity, whirl, outlet) in the direction of whirl.
+   </li>
+</ul>
+<p>
+   Fig. 55 shows the inlet and outlet triangles superimposed upon the common base
+   \(
+    V_b
+   \)
+   .
+  </p>
+<img alt="Figure 56: Inlet and Outlet Triangles. This is a velocity vector diagram for a turbine stage. A horizontal line at the bottom represents the blade speed V_b, moving from left to right. Point A is on this line, and point B is further to the right. Vector V_1 (absolute inlet velocity) starts from a point above A and points down to A at an angle beta. Vector V_R1 (relative inlet velocity) starts from A and points up to the same point as V_1. Vector V_2 (absolute exit velocity) starts from B and points up to a point above B at an angle delta. Vector V_R2 (relative exit velocity) starts from B and points up to the same point as V_2. The angle between V_1 and the horizontal at A is beta. The angle between V_R1 and the horizontal at A is gamma. The angle between V_2 and the horizontal at B is delta. The angle between V_R2 and the horizontal at B is alpha. Vertical dashed lines at the left and right show the total change in the vertical component of velocity (whirl)." src="352c5fab6f936356e9570761a02ab71e_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    Figure 56: Inlet and Outlet Triangles. This is a velocity vector diagram for a turbine stage. A horizontal line at the bottom represents the blade speed V_b, moving from left to right. Point A is on this line, and point B is further to the right. Vector V_1 (absolute inlet velocity) starts from a point above A and points down to A at an angle beta. Vector V_R1 (relative inlet velocity) starts from A and points up to the same point as V_1. Vector V_2 (absolute exit velocity) starts from B and points up to a point above B at an angle delta. Vector V_R2 (relative exit velocity) starts from B and points up to the same point as V_2. The angle between V_1 and the horizontal at A is beta. The angle between V_R1 and the horizontal at A is gamma. The angle between V_2 and the horizontal at B is delta. The angle between V_R2 and the horizontal at B is alpha. Vertical dashed lines at the left and right show the total change in the vertical component of velocity (whirl).
+   </div>
+</div>
+<p>
+   Figure 56
+   <br/>
+   Inlet and Outlet Triangles
+  </p>
+<p>
+   This is a convenient arrangement for the solution of problems, particularly when the total change in velocity of whirl is required for calculation of turbine stage power.
+  </p>
+<p>
+   The turbine blade velocity-vector diagram in Fig. 56 shows some interesting aspects. The vectors
+   \(
+    V_1
+   \)
+   and
+   \(
+    V_2
+   \)
+   represent steam flows measured from fixed points (absolute velocities). The two angles,
+   \(
+    \alpha
+   \)
+   and
+   \(
+    \delta
+   \)
+   , are respectively the exit and the entrance angles for the rows of fixed blades.
+  </p>
+<p>
+   The point
+   \(
+    B
+   \)
+   can therefore be said to represent the fixed blade conditions.
+  </p>
+<p>
+   The vectors
+   \(
+    V_{R1}
+   \)
+   and
+   \(
+    V_{R2}
+   \)
+   represent steam conditions measured from moving blades (relative velocities). Further, the angles
+   \(
+    \beta
+   \)
+   and
+   \(
+    \gamma
+   \)
+   are the inlet and exit angles of the moving blade. Thus, point
+   \(
+    A
+   \)
+   can be said to represent the moving blade conditions.
+  </p>
+<h3>
+   Example 3
+  </h3>
+<p>
+   Referring to the vector diagram in Fig. 56, steam at a velocity of 760 m/s from a nozzle is directed onto the blades of a turbine at
+   \(
+    20^\circ
+   \)
+   to the direction of blade movement.
+  </p>
+<p>
+   Calculate the inlet angle of the blades so that the steam will enter without shock when the linear velocity of the blades is 275 m/s. If the exit angle of the blades is the same as the inlet angle, find, neglecting blade friction, the magnitude and direction of the steam velocity leaving the blades.
+  </p>
+<h5>
+   Solution
+  </h5>
+<p>
+   Given
+  </p>
+<p>
+   $$
+    V_1 = 760 \text{ m/s}
+   $$
+  </p>
+<p>
+   $$
+    V_b = 275 \text{ m/s}
+   $$
+  </p>
+<p>
+   Find
+   \(
+    V_2
+   \)
+   and Angle
+   \(
+    \delta
+   \)
+  </p>
+<img alt="Figure 56: Vector Diagram for a simple impulse turbine. The diagram shows the velocity vectors at the inlet (C) and outlet (E) of the moving blades. The inlet absolute velocity V1 = 760 m/s is at an angle of 20° to the horizontal. The inlet relative velocity VR1 is at an angle β to the horizontal. The blade velocity Vb = 275 m/s is shown as the vector AB. The outlet absolute velocity V2 is at an angle δ to the vertical. The outlet relative velocity VR2 is at an angle γ to the horizontal. The angle between the horizontal and the line CB is 20°. The angle between the horizontal and the line AB is 20°. The angle between the horizontal and the line AC is β. The angle between the horizontal and the line AE is γ. The angle between the horizontal and the line BE is 20°. The angle between the vertical and the line BE is δ. The direction of blade movement is indicated by an arrow pointing to the right from F." src="adb1f42239329fa8283d1a40005f989f_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    Figure 56: Vector Diagram for a simple impulse turbine. The diagram shows the velocity vectors at the inlet (C) and outlet (E) of the moving blades. The inlet absolute velocity V1 = 760 m/s is at an angle of 20° to the horizontal. The inlet relative velocity VR1 is at an angle β to the horizontal. The blade velocity Vb = 275 m/s is shown as the vector AB. The outlet absolute velocity V2 is at an angle δ to the vertical. The outlet relative velocity VR2 is at an angle γ to the horizontal. The angle between the horizontal and the line CB is 20°. The angle between the horizontal and the line AB is 20°. The angle between the horizontal and the line AC is β. The angle between the horizontal and the line AE is γ. The angle between the horizontal and the line BE is 20°. The angle between the vertical and the line BE is δ. The direction of blade movement is indicated by an arrow pointing to the right from F.
+   </div>
+</div>
+<p>
+   Figure 56
+   <br/>
+   Vector Diagram
+  </p>
+<p>
+   The turbine is a simple impulse type since the inlet and exit angles of the moving blade are equal. Point
+   <i>
+    A
+   </i>
+   on the diagram represents conditions around the moving blade. Given that no friction occurs as the steam flows over the blades, the incoming velocity
+   \(
+    V_{R1}
+   \)
+   will be the same as the exit velocity
+   \(
+    V_{R2}
+   \)
+   . The direction is such that
+  </p>
+<p>
+   $$
+    \text{angle } \beta = \text{angle } \gamma
+   $$
+  </p>
+<p>
+   If perpendiculars are dropped from
+   <i>
+    C
+   </i>
+   to
+   <i>
+    D
+   </i>
+   and from
+   <i>
+    E
+   </i>
+   to
+   <i>
+    F
+   </i>
+   , the following calculations can be carried out.
+  </p>
+<p>
+   In triangle
+   <i>
+    BCD
+   </i>
+   :
+  </p>
+<p>
+   $$
+    \sin 20^\circ = \frac{CD}{V_1}
+   $$
+  </p>
+<p>
+   $$
+    CD = V_1 \times \sin 20^\circ
+   $$
+  </p>
+<p>
+   $$
+    CD = 760 \times 0.3420
+   $$
+  </p>
+<p>
+   $$
+    CD = 259.94 \text{ m/s}
+   $$
+  </p>
+<p>
+   $$
+    \cos 20^\circ = \frac{DB}{V_1}
+   $$
+  </p>
+<p>
+   $$
+    DB = V_1 \times \cos 20^\circ
+   $$
+  </p>
+<p>
+   $$
+    DB = 760 \text{ m/s} \times 0.9397
+   $$
+  </p>
+<p>
+   $$
+    DB = 714.17 \text{ m/s}
+   $$
+  </p>
+<p>
+   $$
+    DA = DB - AB
+   $$
+  </p>
+<p>
+   $$
+    DA = 714.17 - 275 \text{ m/s}
+   $$
+  </p>
+<p>
+   $$
+    DA = 439.17 \text{ m/s}
+   $$
+  </p>
+<p>
+   In triangle
+   \(
+    ACD
+   \)
+   :
+  </p>
+<p>
+   $$
+    \tan \beta = \frac{CD}{DA}
+   $$
+  </p>
+<p>
+   $$
+    \tan \beta = \frac{259.94}{439.17}
+   $$
+  </p>
+<p>
+   $$
+    \tan \beta = 0.5919
+   $$
+  </p>
+<p>
+   $$
+    \text{Angle } \beta = 30^\circ 37' \text{ (Ans.)}
+   $$
+  </p>
+<p>
+<b>
+    This is the inlet angle of the blades.
+   </b>
+</p>
+<p>
+   $$
+    \sin \beta = \frac{CD}{VR_1}
+   $$
+  </p>
+<p>
+   $$
+    VR_1 \sin \beta = CD
+   $$
+  </p>
+<p>
+   $$
+    VR_1 = \frac{CD}{\sin \beta}
+   $$
+  </p>
+<p>
+   $$
+    VR_1 = \frac{259.94 \text{ m/s}}{\sin 30^\circ 37'}
+   $$
+  </p>
+<p>
+   $$
+    VR_1 = \frac{259.94 \text{ m/s}}{0.5093}
+   $$
+  </p>
+<p>
+   $$
+    VR_1 = 510.39 \text{ m/s}
+   $$
+  </p>
+<p>
+   Since there is no friction of steam over the blades,
+   \(
+    V_{R2}
+   \)
+   will also be 510.39 m/s and angle
+   \(
+    \gamma
+   \)
+   will be
+   \(
+    30^\circ 37'
+   \)
+   .
+  </p>
+<p>
+   Now consider triangle
+   \(
+    AEF
+   \)
+   :
+  </p>
+<p>
+   $$
+    EF = CD
+   $$
+  </p>
+<p>
+   $$
+    EF = 259.94 \text{ m/s}
+   $$
+  </p>
+<p>
+   $$
+    \cos 30^\circ 37' = \frac{AF}{V_{R2}}
+   $$
+  </p>
+<p>
+   $$
+    AF = V_{R2} \times \cos 30^\circ 37'
+   $$
+  </p>
+<p>
+   $$
+    AF = 510.39 \text{ m/s} \times 0.8606
+   $$
+  </p>
+<p>
+   $$
+    AF = 439.24 \text{ m/s}
+   $$
+  </p>
+<p>
+   In triangle BEF:
+  </p>
+<p>
+   $$
+    BF = AF - V_b
+   $$
+  </p>
+<p>
+   $$
+    BF = 439.24 \text{ m/s} - 275 \text{ m/s}
+   $$
+  </p>
+<p>
+   $$
+    BF = 164.24 \text{ m/s}
+   $$
+  </p>
+<p>
+   $$
+    \tan \delta = \frac{EF}{BF}
+   $$
+  </p>
+<p>
+   $$
+    \tan \delta = \frac{259.94 \text{ m/s}}{164.24 \text{ m/s}}
+   $$
+  </p>
+<p>
+   $$
+    \tan \delta = 1.5827
+   $$
+  </p>
+<p>
+   $$
+    \angle \delta = 57^\circ 43' \text{ (Ans.)}
+   $$
+  </p>
+<p>
+   This is the direction of the steam leaving the blades.
+  </p>
+<p>
+   $$
+    \sin 57^\circ 43' = \frac{EF}{V_2}
+   $$
+  </p>
+<p>
+   $$
+    V_2 = \frac{EF}{\sin 57^\circ 43'}
+   $$
+  </p>
+<p>
+   $$
+    V_2 = \frac{259.94 \text{ m/s}}{0.8434}
+   $$
+  </p>
+<p>
+   $$
+    V_2 = 308.21 \text{ m/s} \text{ (Ans.)}
+   $$
+  </p>
+<p>
+   This is the steam velocity leaving the blades, measured from the turbine casing,
+   <i>
+    i.e.
+   </i>
+   an absolute velocity.
+  </p>
+<h4>
+   Example 4
+  </h4>
+<p>
+   Referring to Fig. 57, steam leaves the fixed blades of one stage of a reaction turbine at 120 m/s with an exit angle of
+   \(
+    25^\circ
+   \)
+   . The moving blades travel with a linear speed of 90 m/s and the steam consumption of the turbine is 1 kg/s.
+  </p>
+<p>
+   Calculate the entrance angle of the blades and the horsepower developed in one turbine stage (assume 50% reaction blading).
+  </p>
+<h5>
+   Solution
+  </h5>
+<img alt="Figure 57: Vector Diagram for a reaction turbine. The diagram shows two horizontal lines representing the absolute velocity (V1) and blade velocity (Vb) paths. Point C is on the top line, and point E is on the top line. Point D is on the bottom line, and point F is on the bottom line. Point A is on the bottom line, and point B is on the bottom line. The vector V1 = 120 m/s is shown as a solid line from C to B. The vector Vb = 90 m/s is shown as a solid line from A to B. The vector VRI is shown as a dashed line from C to A. The angle between the horizontal line CE and the vector CB is 25°. The angle between the horizontal line DF and the vector CB is 25°. The angle between the horizontal line DF and the vector CA is β. The angle between the horizontal line DF and the vector AB is α. The total change in velocity of whirl is shown as a horizontal line from C to E." src="2236272d3b3db6e6363337f5a8db72f6_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    Figure 57: Vector Diagram for a reaction turbine. The diagram shows two horizontal lines representing the absolute velocity (V1) and blade velocity (Vb) paths. Point C is on the top line, and point E is on the top line. Point D is on the bottom line, and point F is on the bottom line. Point A is on the bottom line, and point B is on the bottom line. The vector V1 = 120 m/s is shown as a solid line from C to B. The vector Vb = 90 m/s is shown as a solid line from A to B. The vector VRI is shown as a dashed line from C to A. The angle between the horizontal line CE and the vector CB is 25°. The angle between the horizontal line DF and the vector CB is 25°. The angle between the horizontal line DF and the vector CA is β. The angle between the horizontal line DF and the vector AB is α. The total change in velocity of whirl is shown as a horizontal line from C to E.
+   </div>
+</div>
+<p>
+   Figure 57
+   <br/>
+   Vector Diagram
+  </p>
+<p>
+   Given:
+  </p>
+<p>
+   $$
+    V_1 = 120 \text{ m/s}
+   $$
+  </p>
+<p>
+   $$
+    V_b = 90 \text{ m/s}
+   $$
+  </p>
+<p>
+   $$
+    \angle \alpha = 25^\circ
+   $$
+  </p>
+<p>
+   Reaction (or 50% reaction) blading has identical moving and fixed blades. The angles and vectors around point
+   <i>
+    A
+   </i>
+   are duplicated around point
+   <i>
+    B
+   </i>
+   . The angle required is
+   \(
+    \beta
+   \)
+   .
+  </p>
+<p>
+   $$
+    \cos 25^\circ = \frac{DB}{V_1}
+   $$
+  </p>
+<p>
+   $$
+    DB = V_1 \cos 25^\circ
+   $$
+  </p>
+<p>
+   $$
+    DB = 120 \text{ m/s} \times 0.9063
+   $$
+  </p>
+<p>
+   $$
+    DB = 108.76 \text{ m/s}
+   $$
+  </p>
+<p>
+   $$
+    DA = DB - AB
+   $$
+  </p>
+<p>
+   $$
+    DA = 108.76 \text{ m/s} - 90
+   $$
+  </p>
+<p>
+   $$
+    DA = 18.76 \text{ m/s}
+   $$
+  </p>
+<p>
+   $$
+    \sin 25^\circ = \frac{CD}{V_1}
+   $$
+  </p>
+<p>
+   $$
+    CD = V_1 \sin 25^\circ
+   $$
+  </p>
+<p>
+   $$
+    CD = 120 \text{ m/s} \times 0.4226
+   $$
+  </p>
+<p>
+   $$
+    CD = 50.71 \text{ m/s}
+   $$
+  </p>
+<p>
+   $$
+    \tan \beta = \frac{CD}{DA}
+   $$
+  </p>
+<p>
+   $$
+    \tan \beta = \frac{50.71 \text{ m/s}}{18.76 \text{ m/s}}
+   $$
+  </p>
+<p>
+   $$
+    \tan \beta = 2.7031
+   $$
+  </p>
+<p>
+   Entrance angle of the blades
+   \(
+    \beta = 69^\circ 42'
+   \)
+   (Ans.)
+  </p>
+<p>
+   The total change in the velocity of whirl is required for calculations of work done on the blading as detailed earlier. This is represented by the length
+   \(
+    CE
+   \)
+   on the diagram:
+  </p>
+<p>
+   $$
+    CE = DA + AB + BF \text{ (because } CD \text{ and } EF \text{ are perpendiculars)}
+   $$
+  </p>
+<p>
+   If the diagram is symmetrical about its centre:
+  </p>
+<p>
+   $$
+    \text{then } DA = BF
+   $$
+  </p>
+<p>
+   $$
+    \text{and } CE = 2 \times DA + AB
+   $$
+  </p>
+<p>
+   But
+   \(
+    AB
+   \)
+   is blade speed 90 m/s and
+   \(
+    DA = 18.76 \text{ m/s}
+   \)
+  </p>
+<p>
+   $$
+    CE = 2 \times DA + AB
+   $$
+  </p>
+<p>
+   $$
+    CE = (2 \times 18.76 \text{ m/s}) + 90 \text{ m/s}
+   $$
+  </p>
+<p>
+   $$
+    CE = 37.52 \text{ m/s} + 90 \text{ m/s}
+   $$
+  </p>
+<p>
+   $$
+    CE = 127.52 \text{ N}
+   $$
+  </p>
+<p>
+   Force exerted on blading =
+   \(
+    w \times a
+   \)
+   (newtons)
+  </p>
+<p>
+   Force exerted on blading = kg steam/s
+   \(
+    \times
+   \)
+   change in velocity, m/s
+   <sup>
+    2
+   </sup>
+</p>
+<p>
+   Force exerted on blading = 1.0 kg/s
+   \(
+    \times
+   \)
+   127.52 m/s
+  </p>
+<p>
+   Force exerted on blading = 127.52 N
+  </p>
+<p>
+   Horsepower developed = force
+   \(
+    \times
+   \)
+   bleed speed, Nm/s
+  </p>
+<p>
+   $$
+    \text{Horsepower developed} = \frac{127.52 \text{ N} \times 90 \text{ m/s}}{1000}
+   $$
+  </p>
+<p>
+   Horsepower developed =
+   <b>
+    11.48 kW
+   </b>
+   (Ans.)
+  </p>
+<h4>
+   Example 5
+  </h4>
+<p>
+   Referring to Fig. 58, a single-stage impulse turbine has a steam consumption of 20 kg/min. The nozzles are inclined at
+   \(
+    20^\circ
+   \)
+   to the plane of the wheel and steam leaves the nozzles at 600 m/s. The mean diameter of the blade ring is 1 metre and the wheel rotates at 5000 rev/min. Find the inlet angle of the moving blades and the power of the wheel, neglecting all losses.
+  </p>
+<h5>
+   Solution
+  </h5>
+<img alt="Blade Velocity Vector Diagram (Figure 58). The diagram shows a horizontal line segment AB representing the blade speed V_b = 261.8 m/s. Point A is the origin for the absolute velocity vector V_1 = 600 m/s, which makes an angle of 20 degrees with the horizontal. Point C is vertically above A, and point D is vertically below A. The relative velocity vector V_R1 is shown from C to A, making an angle beta with the horizontal. The absolute velocity vector V_2 is shown from A to E, making an angle gamma with the horizontal. The relative velocity vector V_R2 is shown from E to B, making an angle alpha with the horizontal. The change in velocity of whirl is indicated by the horizontal distance CE." src="eaae122ace5c0d761133c6ce971a6ffd_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    Blade Velocity Vector Diagram (Figure 58). The diagram shows a horizontal line segment AB representing the blade speed V_b = 261.8 m/s. Point A is the origin for the absolute velocity vector V_1 = 600 m/s, which makes an angle of 20 degrees with the horizontal. Point C is vertically above A, and point D is vertically below A. The relative velocity vector V_R1 is shown from C to A, making an angle beta with the horizontal. The absolute velocity vector V_2 is shown from A to E, making an angle gamma with the horizontal. The relative velocity vector V_R2 is shown from E to B, making an angle alpha with the horizontal. The change in velocity of whirl is indicated by the horizontal distance CE.
+   </div>
+</div>
+<p>
+   Figure 58
+   <br/>
+   Blade Velocity Vector Diagram
+  </p>
+<p>
+   Blade wheel rotates at 5000 rev/min. Circumference is
+   \(
+    \pi \times 1
+   \)
+   m.
+  </p>
+<p>
+   $$
+    \text{Linear blade speed} = \pi \times 1 \text{ m/rev} \times \frac{5000 \text{ rev/min}}{60 \text{ s/min}}
+   $$
+  </p>
+<p>
+   $$
+    \text{Linear blade speed} = 3.1416 \times 1 \text{ m/rev} \times 83.33
+   $$
+  </p>
+<p>
+   $$
+    \text{Linear blade speed} = 261.80 \text{ m/s}
+   $$
+  </p>
+<p>
+   To find the power of the wheel, it is necessary to find the change in velocity of whirl,
+   <i>
+    i.e.
+   </i>
+   the distance
+   \(
+    CE
+   \)
+   on the diagram.
+  </p>
+<p>
+   In the triangle
+   \(
+    BCD
+   \)
+   :
+  </p>
+<p>
+   $$
+    \cos 20^\circ = \frac{DB}{V_1}
+   $$
+  </p>
+<p>
+   $$
+    DB = V_1 \times \cos 20^\circ
+   $$
+  </p>
+<p>
+   $$
+    DB = 600 \text{ m/s} \times 0.9397
+   $$
+  </p>
+<p>
+   $$
+    DB = 563.82 \text{ m/s}
+   $$
+  </p>
+<p>
+   $$
+    DB = DA + AB
+   $$
+  </p>
+<p>
+   $$
+    DA = DB - AB
+   $$
+  </p>
+<p>
+   $$
+    DA = 563.82 \text{ m/s} - 261.80 \text{ m/s}
+   $$
+  </p>
+<p>
+   $$
+    DA = 302.02 \text{ m/s}
+   $$
+  </p>
+<p>
+   $$
+    \sin 20^\circ = \frac{CD}{V_1}
+   $$
+  </p>
+<p>
+   $$
+    CD = V_1 \times \sin 20^\circ
+   $$
+  </p>
+<p>
+   $$
+    CD = 600 \text{ m/s} \times 0.3420
+   $$
+  </p>
+<p>
+   $$
+    CD = 205.21 \text{ m/s}
+   $$
+  </p>
+<p>
+   $$
+    \tan \beta = \frac{CD}{DA}
+   $$
+  </p>
+<p>
+   $$
+    \tan \beta = \frac{205.21 \text{ m/s}}{302.02 \text{ m/s}}
+   $$
+  </p>
+<p>
+   $$
+    \tan \beta = 0.6795
+   $$
+  </p>
+<p>
+   Inlet angle of moving blades =
+   <b>
+    \(
+     34^\circ 12'
+    \)
+   </b>
+   (Ans.)
+  </p>
+<p>
+   This is the inlet angle of the moving blades. Angle
+   \(
+    \beta
+   \)
+   is assumed to be equal to angle
+   \(
+    \gamma
+   \)
+   (for simple impulse blading).
+   \(
+    V_{R1}
+   \)
+   (inlet steam speed relative to moving blade) will be equal to
+   \(
+    V_{R2}
+   \)
+   (outlet steam speed relative to moving blade) if there is no friction loss in passing over the blades.
+  </p>
+<p>
+   In triangles
+   \(
+    CDA
+   \)
+   and
+   \(
+    EFA
+   \)
+   :
+  </p>
+<p>
+   $$
+    \text{Angle } \beta = \text{Angle } \gamma
+   $$
+  </p>
+<p>
+   $$
+    \text{and } CA = EA
+   $$
+  </p>
+<p>
+   \(
+    CD
+   \)
+   will be equal to
+   \(
+    EF
+   \)
+   because both are perpendiculars dropped to the same base.
+  </p>
+<p>
+   The triangles are congruent and
+   \(
+    DA = AF
+   \)
+   .
+  </p>
+<p>
+   The total change in velocity is given by the distance
+   \(
+    CE
+   \)
+  </p>
+<p>
+   $$
+    CE = DA + AF
+   $$
+  </p>
+<p>
+<b>
+    Note:
+   </b>
+   If the angles
+   \(
+    \beta
+   \)
+   and
+   \(
+    \gamma
+   \)
+   are large enough, the perpendicular
+   \(
+    EF
+   \)
+   will bring
+   \(
+    F
+   \)
+   to the left of point
+   \(
+    B
+   \)
+   . This would represent steam leaving the moving blades with a velocity component, in the direction of whirl, which is less than the blade speed
+   \(
+    AB
+   \)
+   ;
+   <i>
+    i.e.
+   </i>
+   , the leaving steam would be moving partly in the direction of the blades.
+  </p>
+<p>
+   In this case:
+  </p>
+<p>
+   $$
+    AF = DA
+   $$
+  </p>
+<p>
+   $$
+    \text{but } DA = 302.02 \text{ m/s}
+   $$
+  </p>
+<p>
+   $$
+    AF = 302.02 \text{ m/s (which is greater than the blade speed } 261.80 \text{ m/s)}
+   $$
+  </p>
+<p>
+   $$
+    CE = DA + AF
+   $$
+  </p>
+<p>
+   $$
+    CE = 302.02 \text{ m/s} + 302.02 \text{ m/s}
+   $$
+  </p>
+<p>
+   $$
+    CE = 604.04 \text{ m/s}
+   $$
+  </p>
+<p>
+   $$
+    \text{Force on blades (newtons)} = w \times \alpha
+   $$
+  </p>
+<p>
+   $$
+    w = \frac{20 \text{ kg/min}}{60 \text{ s/min}}
+   $$
+  </p>
+<p>
+   $$
+    \alpha = \text{change of velocity}
+   $$
+  </p>
+<p>
+   $$
+    \alpha = 604.04 \text{ m/s}
+   $$
+  </p>
+<p>
+   $$
+    \text{Force on blades (newtons)} = w \times \alpha
+   $$
+  </p>
+<p>
+   $$
+    \text{Force on blades (newtons)} = \frac{20 \text{ kg/min}}{60 \text{ s/min}} \times 604.04 \text{ m/s}
+   $$
+  </p>
+<p>
+   $$
+    \text{Force on blades (newtons)} = 201.35 \text{ N}
+   $$
+  </p>
+<p>
+   $$
+    \text{Power} = \text{force} \times \text{blade speed (Nm/s or watts)}
+   $$
+  </p>
+<p>
+   $$
+    \text{Power} = \frac{201.35 \text{ N} \times 261.80 \text{ m/s}}{1000}
+   $$
+  </p>
+<p>
+   $$
+    \text{Power} = 52.71 \text{ kW (Ans.)}
+   $$
+  </p>
+<h1>
+   Objective 12
+  </h1>
+<p>
+<b>
+    Calculate steam turbine Rankine cycle thermal efficiency.
+   </b>
+</p>
+<h2>
+   STEAM TURBINE CYCLE
+  </h2>
+<p>
+   The Rankine cycle is the cycle used in steam plants. A temperature-entropy diagram of the Rankine cycle is shown in Fig. 59. The heat supplied to the steam includes superheat
+   <b>
+    de
+   </b>
+   after the steam leaves the boiler dry and saturated at
+   <b>
+    d
+   </b>
+   . This heat addition will follow the constant pressure line from
+   <b>
+    d
+   </b>
+   to
+   <b>
+    e
+   </b>
+   . The expansion of steam through the turbine is given by
+   <b>
+    ef
+   </b>
+   , which in the ideal case is a vertical line (at constant entropy). The thermal efficiency of this cycle is:
+  </p>
+<p>
+   $$
+    \text{Thermal efficiency} = \frac{\text{work done}}{\text{heat supplied}}
+   $$
+  </p>
+<img alt="Temperature-Entropy Diagram for Rankine Cycle" src="93587f920736a2fdcefeba94b29f302a_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<p>
+    A Temperature-Entropy (T-S) diagram for the Rankine cycle. The vertical axis is labeled 'Temperature T' and the horizontal axis is labeled 'Entropy S'. A saturation dome is shown with a 'Water Line' (saturated liquid line) on the left and a 'Saturation Line' (saturated vapor line) on the right. The cycle consists of several states:
+    <b>
+     a
+    </b>
+    is on the Water Line;
+    <b>
+     b
+    </b>
+    is on the Water Line at a higher temperature and entropy than
+    <b>
+     a
+    </b>
+    ;
+    <b>
+     c
+    </b>
+    is on the Water Line at a higher temperature and entropy than
+    <b>
+     b
+    </b>
+    ;
+    <b>
+     d
+    </b>
+    is on the Saturation Line at the same temperature as
+    <b>
+     c
+    </b>
+    ;
+    <b>
+     e
+    </b>
+    is a superheated vapor state at a higher temperature and entropy than
+    <b>
+     d
+    </b>
+    ;
+    <b>
+     f
+    </b>
+    is on the Saturation Line at a lower temperature and entropy than
+    <b>
+     e
+    </b>
+    ;
+    <b>
+     g
+    </b>
+    is on the Saturation Line at the same entropy as
+    <b>
+     f
+    </b>
+    ;
+    <b>
+     h
+    </b>
+    is on the Water Line at the same entropy as
+    <b>
+     g
+    </b>
+    . The cycle path is
+    <b>
+     a-b-c-d-e-f-g-h-a
+    </b>
+    . The area under the path
+    <b>
+     a-b-c-d-e-f
+    </b>
+    is shaded with diagonal lines. Vertical dashed lines connect
+    <b>
+     h
+    </b>
+    to
+    <b>
+     a
+    </b>
+    and
+    <b>
+     g
+    </b>
+    to
+    <b>
+     f
+    </b>
+    .
+   </p>
+<div class="img-alt">
+    Temperature-Entropy Diagram for Rankine Cycle
+   </div>
+</div>
+<p>
+   Figure 59
+   <br/>
+   Temperature-Entropy Diagram for Rankine Cycle
+  </p>
+<p>
+<b>
+    Note:
+   </b>
+   Rankine cycle efficiency is the efficiency of the cycle including boiler, turbine, and condenser. It is not the efficiency of the steam turbine by itself. It is the ratio of the shaded area (
+   <b>
+    abcdef
+   </b>
+   ) of the diagram to the total area (
+   <b>
+    habcdefg
+   </b>
+   ).
+  </p>
+<h3>
+   Example 6
+  </h3>
+<p>
+   Steam is supplied to a turbine at a pressure of 6000 kPa and 500°C. It is expanded adiabatically and without friction to a backpressure of 10 kPa. It is condensed at this pressure and returned to the boiler through an extraction pump and feed pump.
+  </p>
+<p>
+   Neglecting the pump work, calculate:
+  </p>
+<ol style="list-style-type: none">
+<li>
+    (a) Heat supplied per kg of steam
+   </li>
+<li>
+    (b) Work done by turbine per kg steam
+   </li>
+<li>
+    (c) Thermal efficiency
+   </li>
+</ol>
+<p>
+   This could be done from first principles by calculating the total heat supplied to give the whole diagram area, and then subtracting the product of the entropy change
+   <b>
+    h
+   </b>
+   to
+   <b>
+    g
+   </b>
+   and the temperature
+   <b>
+    h
+   </b>
+   to
+   <b>
+    a
+   </b>
+   .
+  </p>
+<p>
+   The calculations can also be done using the steam tables, as shown below.
+  </p>
+<h5>
+   Solution
+  </h5>
+<ol style="list-style-type: none">
+<li>
+    (a) Heat supplied per kg of steam.
+   </li>
+</ol>
+<p>
+   $$
+    \text{Total heat per kg steam at 6000 kPa and 500}^\circ\text{C} = 3422.2 \text{ kJ/kg}
+   $$
+  </p>
+<p>
+   $$
+    \text{Enthalpy of water at 10 kPa} = 191.83 \text{ kJ/kg}
+   $$
+  </p>
+<p>
+   $$
+    \text{Heat supplied} = 3422.2 \text{ kJ/kg} - 191.83 \text{ kJ/kg}
+   $$
+  </p>
+<p>
+   $$
+    \text{Heat supplied} = \mathbf{3230.37 \text{ kJ/kg}} \text{ (Ans.)}
+   $$
+  </p>
+<ol style="list-style-type: none">
+<li>
+    (b) Work done by turbine per kg steam (from Steam Tables).
+   </li>
+</ol>
+<p>
+   $$
+    \text{Entropy of steam per kg at 6000 kPa and 500}^\circ\text{C} = 6.8803 \text{ kJ/kg}
+   $$
+  </p>
+<p>
+   $$
+    \text{Entropy of 1 kg water at 10 kPa} = 0.6493 \text{ kJ/kg}
+   $$
+  </p>
+<p>
+   $$
+    \text{Difference} = \text{change in entropy}
+   $$
+  </p>
+<p>
+   $$
+    \text{Difference} = 6.8803 \text{ kJ/kg} - 0.6493 \text{ kJ/kg}
+   $$
+  </p>
+<p>
+   $$
+    \text{Difference} = 6.2310 \text{ kJ/kg}
+   $$
+  </p>
+<p>
+   \(
+    T_a
+   \)
+   = absolute temperature of steam at 10 kPa
+  </p>
+<p>
+   $$
+    T_a = 45.81^\circ\text{C} + 273
+   $$
+  </p>
+<p>
+   $$
+    T_a = 318.81\text{K}
+   $$
+  </p>
+<p>
+   $$
+    \begin{aligned}\text{Heat rejected} &amp;= \text{area on the graph afgh} \\ &amp;= T_a \times \text{Entropy change h to g} \\ &amp;= 318.81 \text{ K} \times 6.231 \text{ kJ/kg} \\ &amp;= 1986.51 \text{ kJ}\end{aligned}
+   $$
+  </p>
+<p>
+   $$
+    \text{Work done} = 3230.37 \text{ kJ/kg} - 1986.51 \text{ kJ/kg}
+   $$
+  </p>
+<p>
+   $$
+    \text{Work done} = \mathbf{1243.86 \text{ kJ/kg}} \text{ (Ans.)}
+   $$
+  </p>
+<p>
+   (c) Thermal efficiency.
+  </p>
+<p>
+   $$
+    \text{Rankine Cycle Thermal Efficiency} = \frac{\text{work done}}{\text{heat supplied}}
+   $$
+  </p>
+<p>
+   $$
+    \text{Rankine Cycle Thermal Efficiency} = \frac{1243.86}{3230.37} \times 100
+   $$
+  </p>
+<p>
+   $$
+    \text{Rankine Cycle Thermal Efficiency} = 0.3851 \times 100
+   $$
+  </p>
+<p>
+   $$
+    \text{Rankine Cycle Thermal Efficiency} = \mathbf{38.51\%} \text{ (Ans.)}
+   $$
+  </p>
+<h2>
+   Chapter Questions
+  </h2>
+<h1>
+   B1.1
+  </h1>
+<ol style="list-style-type: none">
+<li>
+    1. Describe why some turbines are designed with steam entering through two separate inlets in the LP cylinder.
+   </li>
+<li>
+    2. Sketch and describe a dummy piston used to counteract thrust forces in a steam turbine.
+   </li>
+<li>
+    3. Sketch and describe a velocity-vector diagram for impulse moving blading.
+   </li>
+<li>
+    4. a) What is the difference between an extraction turbine and a bleeder turbine?
+    <br/>
+    b) What are typical applications for these types of turbines?
+   </li>
+<li>
+    5. When would a turbine be constructed using a double casing? Explain.
+   </li>
+<li>
+    6. a) Describe a disc type of turbine rotor.
+    <br/>
+    b) What is a common application for this type of rotor?
+   </li>
+<li>
+    7. What are three types of shaft seals used on steam turbines?
+   </li>
+<li>
+    8. a) What are two methods of lubricating steam turbine bearings?
+    <br/>
+    b) What applications would be suitable for each type?
+   </li>
+<li>
+    9. Steam flows from a nozzle of a simple impulse turbine at a velocity of 550 m/s and an angle of
+    \(
+     21^\circ
+    \)
+    to the direction of blade motion. Blade velocity is 220 m/s. Neglecting friction, and with equal blade inlet and outlet angles, calculate:
+    <ol style="list-style-type: none">
+<li>
+      a) The blade inlet angle so that the steam will enter without shock (
+      \(
+       V_2
+      \)
+      ).
+     </li>
+<li>
+      b) The magnitude and direction of the absolute velocity of the steam leaving the blades.
+     </li>
+</ol>
+</li>
+<li>
+    10. Steam leaves the fixed blades of one stage of a reaction turbine at 122 m/s with an exit angle of
+    \(
+     23^\circ
+    \)
+    . The moving blades travel with a linear speed of 88 m/s and the steam consumption of the turbine is 1.1 kg/s.
+    <ol style="list-style-type: none">
+<li>
+      a) Calculate the entrance angle of the blades
+     </li>
+<li>
+      b) Horsepower developed in one turbine stage (assume 50% reaction blading).
+     </li>
+</ol>
+</li>
+</ol>
+<p>
+   11. Steam is supplied to a turbine at a pressure of 10 250 kPa and 500°C. It is then expanded adiabatically and without friction to a backpressure of 15 kPa. It is condensed at this pressure and returned to the boiler by a feedwater pump.
+  </p>
+<p>
+   Neglecting the pump work, calculate:
+  </p>
+<ul style="list-style-type: none">
+<li>
+    a) Heat supplied per kg of steam
+   </li>
+<li>
+    b) Work done by turbine per kg steam
+   </li>
+<li>
+    c) Thermal efficiency
+   </li>
+</ul>
+</body>
+</html>

@@ -1,0 +1,1400 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="utf-8"/>
+<script>
+    MathJax = {
+      tex: {
+        inlineMath: [['\\(', '\\)']],
+        displayMath: [['$$', '$$']]
+      }
+    };
+    </script>
+<script async="" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+<div id="nav-header" style="padding: 15px 20px; background: #2c3e50; color: white; display: flex; align-items: center; gap: 20px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+<a href="../index.html" style="color: white; text-decoration: none; background: #34495e; padding: 8px 16px; border-radius: 4px; font-weight: 600; font-size: 0.9rem; transition: background 0.2s;">← Back to Index</a>
+<h1 style="margin: 0; font-size: 1.2rem; font-weight: 500; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Power Engineering Series</h1>
+</div>
+<h1>
+   Water Chemistry and Analysis
+  </h1>
+<h2>
+   6
+  </h2>
+<h2>
+   Learning Outcome
+  </h2>
+<p>
+<i>
+    When you complete this learning material, you will be able to:
+   </i>
+</p>
+<p>
+   Discuss the significance of common water impurities and the application of water analyses.
+  </p>
+<h2>
+   Learning Objectives
+  </h2>
+<p>
+<i>
+    You will specifically be able to complete the following tasks:
+   </i>
+</p>
+<ol style="list-style-type: none">
+<li>
+    1. Describe the sources of the impurities found in raw water.
+   </li>
+<li>
+    2. Describe the effect of the listed water impurities on power plant equipment and processes.
+   </li>
+<li>
+    3. Explain the significance and importance of standard methods of water analysis.
+   </li>
+<li>
+    4. Describe which analyses are appropriate at given sampling points including the significance of the sampling point locations.
+   </li>
+<li>
+    5. Interpret the results of a comprehensive standardized water analysis including the relationship of the various parameters.
+   </li>
+<li>
+    6. Explain the purposes and principles of testing instruments, including embrittlement detector, total solids meter, and pH meter.
+   </li>
+<li>
+    7. Explain the purpose of steam purity measurement and process of steam sampling.
+   </li>
+</ol>
+<h2>
+   Objective 1
+  </h2>
+<p>
+<b>
+    Describe the sources of the impurities found in raw water.
+   </b>
+</p>
+<p>
+   Supplies of fresh water are necessary for use in all industries. Uses of water include boiler feedwater, cooling water, potable water and sanitary water. Industry is also a part of the global water cycle. The global water cycle is shown in Fig. 1. Industries must locate near a suitable water supply, often a river or lake. Groundwater can also be used if the supply is large enough. Ocean water is often used for cooling water, but has too many dissolved solids to be used for most industrial applications.
+  </p>
+<img alt="Diagram of the Global Water Cycle showing evaporation, condensation, precipitation, and runoff." src="4792a2ccd62226861fadc22117edb7b1_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<p>
+    The diagram illustrates the global water cycle. At the top, a sun labeled 'Energy' has arrows pointing upwards from the ocean and land towards 'Clouds, Fog, Haze'. These arrows are labeled 'Evaporation'. From the clouds, a large downward arrow labeled 'Precipitation' points to the ground, with smaller labels 'Snow, Rain, Sleet, Hail, Mist'. The land is shown as a series of hills. On the left, arrows point from the ground into the earth labeled 'Infiltration (Recharge)', leading to a dashed line labeled 'Water Table'. Below this, arrows point horizontally labeled 'Groundwater Flow'. On the right side of the hills, an arrow labeled 'Runoff' points into a 'Stream or Lake'. From the stream or lake, an arrow labeled 'Evaporation' points upwards. Further right, the land meets the 'Ocean'. Arrows labeled 'Springs' point from the land into the ocean, and another set of arrows labeled 'Evaporation' points from the ocean into the air.
+   </p>
+<div class="img-alt">
+    Diagram of the Global Water Cycle showing evaporation, condensation, precipitation, and runoff.
+   </div>
+</div>
+<p>
+   Figure 1
+   <br/>
+   Global Water Cycle
+  </p>
+<p>
+   Water is evaporated from the earth's surface by the heat of the sun. As the water rises into the upper atmosphere, the temperature drops causing the water to condense. The water and the clouds are transported over large distances by the air movements in the atmosphere. The water falls back to earth as precipitation. As the water falls to the ground, it absorbs gases from the environment. If the air contains acid causing gases, such as sulphur dioxide, acid rain is the result.
+  </p>
+<table border="1">
+<tr data-bbox="207 210 1429 378">
+<td>
+<b>
+      Hardness
+     </b>
+</td>
+<td>
+     Calcium and Magnesium expressed as
+     \(
+      \text{CaCO}_3
+     \)
+    </td>
+<td>
+     Chief Source of scale in heat exchangers and boilers
+    </td>
+<td>
+     Softening, Demineralization. Internal boiler treatment.
+    </td>
+</tr>
+<tr data-bbox="207 378 1429 581">
+<td>
+<b>
+      Free Mineral Acid (FMA)
+     </b>
+</td>
+<td>
+     \(
+      \text{H}_2\text{SO}_4
+     \)
+     ,
+     \(
+      \text{HCl}
+     \)
+     , etc., expressed as
+     \(
+      \text{CaCO}_3
+     \)
+    </td>
+<td>
+     Corrosion
+    </td>
+<td>
+     Neutralization with alkalis.
+    </td>
+</tr>
+<tr data-bbox="207 581 1429 770">
+<td>
+<b>
+      Carbon Dioxide
+     </b>
+</td>
+<td>
+     \(
+      \text{CO}_2
+     \)
+    </td>
+<td>
+     Corrosion in water, steam and condensate lines
+    </td>
+<td>
+     Aeration, Deaeration, Neutralization with alkalis.
+    </td>
+</tr>
+<tr data-bbox="207 770 1429 974">
+<td>
+<b>
+      pH
+     </b>
+</td>
+<td>
+     Hydrogen Ion Concentration defined as:
+     <br/>
+     $$
+      \text{pH} = \log \frac{1}{(\text{H}^+)}
+     $$
+    </td>
+<td>
+     pH varies as acids or alkalis in water. Most natural waters have a pH of 6 – 8.
+    </td>
+<td>
+     pH can be increased by alkalis or decreased by acids.
+    </td>
+</tr>
+<tr data-bbox="207 974 1429 1192">
+<td>
+<b>
+      Alkalinity
+     </b>
+</td>
+<td>
+     Bicarbonate (
+     \(
+      \text{HCO}_3
+     \)
+     )
+     <br/>
+     Carbonate (
+     \(
+      \text{CO}_3
+     \)
+     ),
+     <br/>
+     and
+     <br/>
+     Hydroxide (
+     \(
+      \text{OH}
+     \)
+     ),
+     <br/>
+     expressed as
+     \(
+      \text{CaCO}_3
+     \)
+    </td>
+<td>
+     Foaming and carryover. Embrittlement of boiler steel.
+     \(
+      \text{HCO}_3
+     \)
+     and
+     \(
+      \text{CO}_3
+     \)
+     produce
+     \(
+      \text{CO}_2
+     \)
+     in steam causing condensate line corrosion.
+    </td>
+<td>
+     Lime and lime soda softening. Acid treatment. Hydrogen zeolite softening. Demineralization by ion exchange.
+    </td>
+</tr>
+<tr data-bbox="207 1192 1429 1396">
+<td>
+<b>
+      Chloride
+     </b>
+</td>
+<td>
+     \(
+      \text{Cl}^-
+     \)
+    </td>
+<td>
+     Adds to solids.
+     <br/>
+     Adds to corrosive character of water.
+    </td>
+<td>
+     Demineralization, reverse osmosis, electrodialysis, or evaporation
+    </td>
+</tr>
+</table>
+<table border="1">
+<tr data-bbox="207 220 1429 510">
+<td>
+<b>
+      Dissolved solids
+     </b>
+</td>
+<td>
+     None
+    </td>
+<td>
+     Total dissolved matter.
+     <br/>
+     High concentrations cause process interference.
+    </td>
+<td>
+     Lime softening and cation exchange by hydrogen zeolite.
+     <br/>
+     Demineralization.
+    </td>
+</tr>
+<tr data-bbox="207 510 1429 800">
+<td>
+<b>
+      Suspended solids
+     </b>
+</td>
+<td>
+     None
+    </td>
+<td>
+     Measurement of undissolved matter.
+     <br/>
+     Deposits in heat exchangers and boilers
+    </td>
+<td>
+     Subsidence. Filtration after coagulation and settling.
+    </td>
+</tr>
+<tr data-bbox="207 800 1429 924">
+<td>
+<b>
+      Total solids
+     </b>
+</td>
+<td>
+     None
+    </td>
+<td>
+     Sum of dissolved and suspended solids.
+    </td>
+<td>
+     As per dissolved and suspended solids.
+    </td>
+</tr>
+</table>
+<h3>
+   Surface Water
+  </h3>
+<p>
+   The sources of surface water include rain, melting snow, and glaciers. The water finds its way into streams and rivers. The contamination that the water picks up depends upon the course of the river or stream. If the river is lined with rocks, the water slowly dissolves the rocks. The dissolved minerals are mostly in the form of hardness such as calcium and magnesium. The water may also pick up sand and soil particles. They usually remain as suspended solids. The water is aerated as it splashes over the rocks in the riverbed. Aeration saturates the water with oxygen. The combination of sunlight, organic material and inorganic nutrients causes a range of life forms to grow in the water. Some of these are: algae, fungi, bacteria, and fish.
+  </p>
+<p>
+   The water often picks up grasses, along with debris from trees along the riverbed. Some of this material dissolves in the river water. These organics can cause problems in water treatment systems, especially demineralizers.
+  </p>
+<p>
+   The surface water quality can vary widely over a period of one year. Slower flows in winter causes clear water with higher hardness levels. Water has more time to dissolve the rocks of the riverbed. There is little silt and organics to affect the clarity levels. Periods of high flow such as spring runoff or runoff from storms can make the river much more turbid as it carries more silt. The water contains more suspended solids, but it may also have a lower hardness reading.
+  </p>
+<h4>
+   Copper
+  </h4>
+<p>
+   The water may have come in contact with copper bearing minerals, or runoff from copper production. Copper in plant water systems may be a product of corrosion of copper or copper alloy pipe from fittings inside the plant piping. The copper may be added deliberately to water supply reservoirs for algae control. It is undesirable in plant waters because it is corrosive to aluminum.
+  </p>
+<h4>
+   Lead
+  </h4>
+<p>
+   Water becomes contaminated with lead from metallurgical wastes or from lead containing poisons such as arsenic. Concentrations of lead must be kept below 0.05 mg/l in drinking water. It must be removed from wastewaters being discharged. Because lead remains suspended rather than dissolving in water, it is most easily removed by filtration. Lead is classed as a heavy metal and causes serious health problems in animals.
+   <b>
+    Heavy metal
+   </b>
+   refers to any metallic chemical element that has a relatively high density and is toxic or poisonous at low concentrations. Examples of heavy metals and metalloids include mercury (Hg), cadmium (Cd), arsenic (As), chromium (Cr), thallium (Tl), and lead (Pb).
+  </p>
+<h4>
+   Phosphate
+  </h4>
+<p>
+   Phosphate compounds are widely used in fertilizers and detergents. Silt from agricultural runoff and municipal wastewaters contain phosphate compounds. Phosphate compounds can be precipitated at a pH over 10.0 with alum, sodium aluminate, or ferric chloride. Phosphates increase algae growths in cooling water systems, which requires more chemical use to control the microbiological activity.
+  </p>
+<h4>
+   Zinc
+  </h4>
+<p>
+   Zinc is present in water because of discharges from mining or metallurgical operations. It also appears because of corrosion of galvanized steel piping. Zinc is removed by lime softening or by cation exchange.
+  </p>
+<h4>
+   Chromium
+  </h4>
+<p>
+   Chromium finds its way into water supplies from industrial processes such as chrome plating operations. It can be reduced by filtration and removed by anion exchange. Chromium contamination from cooling tower blowdown has largely been eliminated by restrictions on chromate use as a cooling system corrosion inhibitor. Chromate is now only used in closed recirculating systems.
+  </p>
+<h4>
+   Mercury
+  </h4>
+<p>
+   Mercury is produced in water by wastes from caustic production. It is also a heavy metal and leaches out (is carried out by water) of coal ashes. It is restricted to very low levels in potable water supplies (below 0.002 mg/l). It is often removed by reduction and filtration.
+  </p>
+<h2>
+   Objective 2
+  </h2>
+<p>
+<b>
+    Describe the effect of the listed water impurities on power plant equipment and processes.
+   </b>
+</p>
+<h3>
+   Suspended Solids
+  </h3>
+<p>
+   As previously stated, suspended solids are not completely dissolved or soluble in water. They give the water a turbid appearance. Examples are sand particles or the debris from vegetation. The silt present in river water is an example of a suspended solid.
+  </p>
+<p>
+   Suspended solids must be removed in the pretreatment section of the plant. This is accomplished by coagulation and sedimentation followed by filtration. If low levels of suspended solids are present, as with groundwater, the pretreatment section of the plant may be very small. It may only have one level of filtration. Very turbid river water may require a settling pond before the water is introduced to the pretreatment section of the plant. The pretreatment section of the plant has a clarifier and filtration section. The water must be free of suspended solids before it is further purified in the demineralization section of the plant.
+  </p>
+<p>
+   Suspended solids are not acceptable in boiler water. They can lead to deposits on the heating surfaces, which lead to corrosion of the metal surfaces. In cooling water systems, a small amount of suspended solids are usually present. They come from the makeup water or originate from dust in the air flowing through the cooling tower. The solids cause sludge to accumulate in the cooling tower basin. The solids also deposit in the heat exchangers in the plant causing increased corrosion rates. Suspended solids in cooling tower systems are reduced by side stream filtration of the cooling tower water.
+  </p>
+<h4>
+   Dissolved Solids
+  </h4>
+<p>
+   Completely dissolved substances are present as molecule-sized ions. They often do not add colour to the water. Ions that cause hardness in the water are calcium and magnesium ions. They are removed in acid cation units and in sodium zeolite softeners. They are not soluble even at low pressures and will form scale in the boiler. The acid cation units remove sodium ions as well. Sodium ions must be removed for boiler water treatment programs above 4000 kPa. Above 4000 kPa the sodium will come out of solution and form scales. The anions that were joined with the calcium, magnesium and sodium ions are removed in the demineralizer's anion unit.
+  </p>
+<p>
+   The boiler water treatment programme must handle any dissolved solids that were not removed in the water treatment section. There will always be trace amounts of suspended solids entering the boiler.
+  </p>
+<p>
+   Organics that are in colloidal form are removed with coagulation and filtration. Organic matter is often removed by filter beds of activated carbon that removes the colour and odour of the water.
+  </p>
+<p>
+   Oxidizing chemicals such as chlorine dioxide and ozone have proven effective in destroying organics and may be used in lieu of activated carbon filters. Chlorine destroys organics, but chlorine also reacts with organics to form halogenated compounds. Because many halogenated organics are suspected carcinogens, chlorine is not recommended for organic destruction in all applications. However, it is still an effective biocide, although the carcinogen issue has caused some to discontinue its use and switch to other biocides. The combination of ultraviolet light and ozone is becoming more popular for organic destruction, especially in low-volume streams.
+  </p>
+<h4>
+   Industrial Contaminants
+  </h4>
+<h4>
+   Hydrocarbons
+  </h4>
+<p>
+   Hydrocarbons are not commonly present in groundwater or river water. They may be present as a result of environmental incidents or accidental spills. Some plants recycle wastewaters such as surface runoff, often containing hydrocarbons. The water being recycled requires a knockout or filter arrangement to skim off any accumulated oil.
+  </p>
+<p>
+   Some hydrocarbons may enter the pretreatment section. The clarification and filtration processes remove small amounts of hydrocarbons. The hydrocarbons may foul the filter media in time. This is preferable to having the hydrocarbons foul the demineralizer resins or RO (reverse osmosis) membranes.
+  </p>
+<h4>
+   Metals
+  </h4>
+<p>
+   Trace amounts of metals in the makeup water to a plant are not normally a problem. A careful analysis of the makeup water is done before the treatment system is specified. Unusually high levels of metals are taken into consideration when the water treatment facilities are designed. The pretreatment step is used to remove normal trace amounts of metals. Clarification and filtration steps are often adequate to protect the demineralizer resins.
+  </p>
+<p>
+   Metals in the cooling tower system may be of concern as the tower water concentrations increase due to partial evaporation of the water. A tower may have 10-15 cycles of concentration. This means that the water in the cooling water circuit is 10-15 times higher in metals than the makeup water. Enough dispersant has to be added to keep the metal in solution until it can be removed via the cooling tower blowdown. If the metal comes out of solution, it forms deposits on heat exchanger surfaces. The deposits provide a site for underdeposit corrosion.
+  </p>
+<h2>
+   Objective 3
+  </h2>
+<p>
+<b>
+    Explain the significance and importance of standard methods of water analysis.
+   </b>
+</p>
+<h3>
+   WATER TESTING
+  </h3>
+<h3>
+   Analytical Methods
+  </h3>
+<p>
+   When preparing industrial water, chemical analyses are necessary to track the treatment processes. All water treatment areas require some testing. Makeup water, pretreatment plant, demineralizer plant, cooling water, and effluent waters are all areas of plants that require testing. Standard testing methods of carrying out the testing are necessary. Each person must do the tests in the same manner. The tests are verified by sending samples out to off-site labs. The analytical methods used in a plant setting are suitable for on-site analysis. On-site analytical methods may vary from methods used in larger lab settings.
+  </p>
+<p>
+   Companies that supply water treatment chemicals and consulting often supply the analytical methods and testing supplies to their clients. They also supply testing equipment and reagents. Testing procedures come from several sources, including: “The Annual Book of ASTM Standards” and “The AWWA Standard Methods for the Examination of Water and Wastewater.” (AWWA is the American Water Works Association).
+  </p>
+<p>
+   It is very important that the water analysis produced by the plant personnel is accurate and reliable. Variations in water analyses cannot be mistaken for changes that are occurring in the water treatment plant or in the boiler chemistry. Changes to the boiler chemistry are usually based on the water analysis readings.
+  </p>
+<h4>
+   Standard Units
+  </h4>
+<p>
+   There are a number of methods of expressing water analyses. For example, the quantity of calcium present in a given sample can be expressed in several ways. It can be expressed either directly as the mass of pure calcium or indirectly as the equivalent mass of different calcium compounds. For consistent understanding and application of analysis results, it is important that a standard be followed for the presentation of the data.
+  </p>
+<p>
+   Water analyses are usually stated in milligrams per litre (mg/l) or parts per million (ppm). The relationship between the two is:
+   <b>
+    ppm × solution density = mg/l
+   </b>
+   . If the solution's relative density is equal to or extremely close to one, then
+   <b>
+    ppm = mg/l
+   </b>
+   . This is usually the case for weak aqueous solutions found in industrial water treatment. For practical purposes these units are the same.
+  </p>
+<p>
+   observed, and the quantity of the reagent used to produce it is recorded. A calculation is made to determine the quantity of the constituent measured. A reagent serves to quantify the concentration of the constituent being measured. The quality and strength of the reagent must conform exactly to specifications.
+  </p>
+<p>
+   Most reagents are solutions of acids or alkalis. Specifications for solution strength have been established. For example, N/50 sulphuric acid is used as a reagent in alkalinity tests. The prefix N/50 represents the solution strength of the sulphuric acid. This particular strength is chosen because one ml of this reagent dissolves 10 ppm of
+   \(
+    \text{CaCO}_3
+   \)
+   . A change in strength changes the quantity that is dissolved. Standards are established for the quality and strength of each reagent.
+  </p>
+<p>
+   Standardization is critical for accurate testing. Reagents are obtained from firms specializing in their manufacture. Time has an adverse effect on the strength of some reagents. Hence excessive quantities should not be stocked. The maximum stock is often limited to a six months' supply.
+  </p>
+<h4>
+   Indicators
+  </h4>
+<p>
+   An indicator is a solution that exhibits a change in its colour when a very small quantity is dissolved in a sample of water whose acidity or alkalinity is within a specific range. A number of indicators are available and each changes its colour over a different acidity (or alkalinity) range. All of them are organic compounds with complex chemical formulae and are themselves weak acids or alkalis. When added to other solutions, they do not undergo chemical reactions with any of the constituents of the solution beyond being ionized. The colour change is the special characteristic caused by such ionization.
+  </p>
+<p>
+   Indicators are used in test kits. Appropriate colour changes can be produced.
+   <b>
+    Titration
+   </b>
+   of the sample with the reagents can be stopped when the colour change is observed. The principal indicators employed in the different tests are: phenolphthalein, methylorange solution, starch solution, and a set of pH indicator solutions
+  </p>
+<h4>
+   Titration
+  </h4>
+<p>
+   Titration is a procedure where a standard solution or reagent from a calibrated container is slowly added to the water sample. The color of the sample is watched as the reagent is added to the sample. When a visual change occurs in the sample color, addition of the solution is stopped. The point at which the color change occurs is termed the
+   <b>
+    end point
+   </b>
+   . The amount of the standard solution used is proportional to the amount of the impurity present in the sample.
+  </p>
+<h4>
+   Sampling
+  </h4>
+<p>
+   Analyses have little meaning if the samples are not representative. To study the effect of an addition of treatment chemicals in a boiler, the sample is not taken from the boiler immediately after the addition of the chemicals. Time must be allowed for the change to become effective. The samples are run through sample coolers and contained in
+  </p>
+<h2>
+   Objective 4
+  </h2>
+<p>
+<b>
+    Describe which analyses are appropriate at given sampling points including the significance of the sampling point locations.
+   </b>
+</p>
+<h3>
+   SAMPLING POINTS
+  </h3>
+<p>
+   Water samples are collected from water treatment and boiler systems to assure the system is functioning as required. Normally, a sample is taken upstream and downstream of each step in the water treatment or boiler process. In this way the water quality is tracked from the source and through the systems. The sample should be representative of the stream from which it is taken. Sample lines (small bore tubing) are flushed before the sample is taken, and all sampling procedures are well defined. The sampling locations are well defined and marked. For most tests, the samples should be cooled to room temperature prior to testing. Filtering may also be required.
+  </p>
+<h3>
+   System Sampling
+  </h3>
+<p>
+   As an example, the sampling locations through a water treatment plant and are listed below. The sampling points on the list include river water makeup, a cold lime clarification and filtration process, and a demineralizer plant. The sample points are numbered for reference to the flow diagram as shown in Fig 2. Location of on-line analyzers is also noted. The analyzers are used to alert the operators to changes and to control the chemical feed systems.
+  </p>
+<h4>
+   Water Treatment Plant Sampling
+  </h4>
+<h5>
+   1. Raw Water
+  </h5>
+<ul style="list-style-type: none">
+<li>
+    • Total hardness is checked to see if it is changing. Rivers tend to change with the seasons, while well waters change very little.
+   </li>
+<li>
+    • River water is checked for turbidity or clarity level. Turbidity is an indication of the amount of suspended solids in the water.
+   </li>
+<li>
+    • Colour of river waters may also be checked to indicate the amount of organics present.
+   </li>
+</ul>
+<h5>
+   2. The Lime Softener or Clarifier Outlet
+  </h5>
+<ul style="list-style-type: none">
+<li>
+    • Total hardness at the outlet is checked to see if the softener is functioning as designed.
+   </li>
+<li>
+    • The turbidity is checked to ensure the clarity of the outlet water.
+   </li>
+</ul>
+<img alt="A detailed schematic diagram of a water treatment and boiler water circuit. The process begins with 'RAW WATER' (1) entering a 'CLARIFIER'. The output (2) goes to a 'COLD LIME SOFTENER', which then feeds into 'GRAVITY FILTERS' (3). The filtered water (4) is stored in a 'FILTERED WATER TANK' and then pumped into a 'CATION' exchange tank. The output (5) goes to a 'DEGASIFIER' equipped with an 'AIR BLOWER'. The water (6) then passes through 'ANION' and 'MIXED BED POLISHER' tanks (7). The polished water (8) is pumped by 'BFW PUMPS' into a 'DEAEATOR' which has a 'VENT' and 'STEAM' input. The deaerated water (9) is pumped into a 'BOILER' (12). Steam from the boiler (10) goes to a 'TURB' (turbine) connected to a 'GEN' (generator). Exhaust from the turbine (11) goes to a 'SURFACE CONDENSER' cooled by 'COOLING WATER'. The condensed water (12) collects in a 'HOT WELL' and is pumped by an 'EXTRACTION PUMP' through 'LP HEATERS' (13) and a 'COND POLISHER' (14) before returning to the 'DEAEATOR'. A 'DUMIN WATER TANK' (15) is also connected to the 'BFW PUMPS'." src="cfef993dcc8fb513de79eb1f93cf26ae_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    A detailed schematic diagram of a water treatment and boiler water circuit. The process begins with 'RAW WATER' (1) entering a 'CLARIFIER'. The output (2) goes to a 'COLD LIME SOFTENER', which then feeds into 'GRAVITY FILTERS' (3). The filtered water (4) is stored in a 'FILTERED WATER TANK' and then pumped into a 'CATION' exchange tank. The output (5) goes to a 'DEGASIFIER' equipped with an 'AIR BLOWER'. The water (6) then passes through 'ANION' and 'MIXED BED POLISHER' tanks (7). The polished water (8) is pumped by 'BFW PUMPS' into a 'DEAEATOR' which has a 'VENT' and 'STEAM' input. The deaerated water (9) is pumped into a 'BOILER' (12). Steam from the boiler (10) goes to a 'TURB' (turbine) connected to a 'GEN' (generator). Exhaust from the turbine (11) goes to a 'SURFACE CONDENSER' cooled by 'COOLING WATER'. The condensed water (12) collects in a 'HOT WELL' and is pumped by an 'EXTRACTION PUMP' through 'LP HEATERS' (13) and a 'COND POLISHER' (14) before returning to the 'DEAEATOR'. A 'DUMIN WATER TANK' (15) is also connected to the 'BFW PUMPS'.
+   </div>
+</div>
+<p>
+   Figure 2
+   <br/>
+   Water Treatment/Boiler Water Sample Points
+  </p>
+<h5>
+   Boiler Water Sampling
+  </h5>
+<p>
+   An example of a boiler and turbine water circuit and its sampling points is also outlined in Fig. 2. This boiler turbine circuit uses demineralized water produced by the water treatment system for makeup. The deaerator is fed amines to control the pH of the
+  </p>
+
+
+<h1>
+   12. Steam Purity Sample Point
+  </h1>
+<p>
+   Steam purity samples are not checked on a daily or weekly basis. This test is usually done on a biannual or annual basis unless problems are suspected. The steam purity sample is used to check the quality of the steam. The steam purity is affected by carryover of water from the steam drum. The sample point is either built into the steam drum and takes steam off the steam separating equipment, or a sampling arrangement is installed on the main steam pipe between the boiler and the superheater.
+  </p>
+<ul style="list-style-type: none">
+<li>
+    • Conductivity is checked to determine the quantity of boiler water being carried over. Boiler water has a higher conductivity than steam because the water that is evaporated leaves behind any solids that were dissolved or suspended in it. This increases the concentration of solids in the remaining water. Boiler water that carries over with the steam contaminates the steam.
+   </li>
+</ul>
+<h2>
+   Objective 5
+  </h2>
+<p>
+<b>
+    Interpret the results of a comprehensive standardized water analysis including the relationship of the various parameters.
+   </b>
+</p>
+<h3>
+   STANDARDIZED WATER ANALYSIS
+  </h3>
+<p>
+   Water treatment companies and water analysis laboratories use standard water analysis forms. When an analysis is completed, the pertinent sections of the analysis form are filled out. An example of a standard analysis form is shown in Table 2. It shows analysis of various rivers and lakes. The cations are listed first followed by the total of cations. Next the anions are listed followed by the total of anions. Because the cations and anions balance, the total cations and total anions are the same.
+  </p>
+<p>
+   Next the alkalinity is listed, in this case as M alkalinity, and P alkalinity. Closely related is the carbon dioxide content. The pH is also listed. The pH value is normally close to 7, but as the readings illustrate, there is quite a variation.
+  </p>
+<p>
+   Table 2 is a standardized water analysis form. The four waters that were analyzed are:
+  </p>
+<ul style="list-style-type: none">
+<li>
+    A. Water from the Great Lakes
+   </li>
+<li>
+    B. Water from a western mountain lake
+   </li>
+<li>
+    C. Mississippi river water
+   </li>
+<li>
+    D. Mountain river at Great Falls Montana
+   </li>
+</ul>
+<p>
+   As shown on the analysis form, all results are stated as
+   \(
+    \text{CaCO}_3
+   \)
+   unless otherwise noted. Turbidity, for example, is stated in Nephelometric Turbidity Units. NTU is a standard for measuring the clarity of the water. Other standards for turbidity measurement include Formazin Turbidity Units (FTU), Jackson Turbidity Units (JTU), and particulate count or concentration. The water with the most suspended solids is from a large flowing river where the bottom is not lined with rocks. Analysis C, the Mississippi river, has higher colour, silica, and turbidity levels because it has a sandy riverbed. The mountain river in Montana, analysis D, has lower colour, silica, and turbidity levels because it has a rocky riverbed. The river waters are quite similar, but the Mississippi is further from its source so it has more dissolved material.
+  </p>
+<p>
+   The lake waters are quite different. The Great Lakes water has more hardness and has more suspended solids. The categories of cation, anion, turbidity, and TDS are higher in the Great Lakes water. The mountain lake is fed primarily from glaciers. It has much lower levels of dissolved solids and suspended solids. The lake water is clear with a turbidity of 7 and little colour.
+  </p>
+<p>
+   The only difference between stream B and stream C is that the
+   \(
+    \text{CO}_2
+   \)
+   is reduced from 29 to 5.
+  </p>
+<ul style="list-style-type: none">
+<li>
+    •
+    <b>
+     Stream D
+    </b>
+    is the demineralizer effluent downstream of the anion unit. The anions and the remaining
+    \(
+     \text{CO}_2
+    \)
+    have been reduced to trace amounts. This is high purity water suitable for boiler feedwater.
+   </li>
+</ul>
+<p>
+<i>
+    Table 3
+   </i>
+<br/>
+<i>
+    Standard Water Analysis - Demineralizers
+   </i>
+</p>
+<table border="1">
+<thead>
+<tr data-bbox="211 560 1079 625">
+<th colspan="7">
+<b>
+       WATER ANALYSIS REPORT
+      </b>
+</th>
+</tr>
+<tr data-bbox="211 625 1079 695">
+<th colspan="2">
+      Constituent
+     </th>
+<th>
+      Analysis in ppm as
+     </th>
+<th>
+      A
+     </th>
+<th>
+      B
+     </th>
+<th>
+      C
+     </th>
+<th>
+      D
+     </th>
+</tr>
+</thead>
+<tbody>
+<tr data-bbox="211 695 1079 741">
+<td>
+</td>
+<td>
+      Calcium (
+      \(
+       \text{Ca}^{2+}
+      \)
+      )
+     </td>
+<td>
+      \(
+       \text{CaCO}_3
+      \)
+     </td>
+<td>
+      43
+     </td>
+<td>
+      0
+     </td>
+<td>
+      0
+     </td>
+<td>
+      0
+     </td>
+</tr>
+<tr data-bbox="211 741 1079 787">
+<td>
+</td>
+<td>
+      Magnesium (
+      \(
+       \text{Mg}^{2+}
+      \)
+      )
+     </td>
+<td>
+      \(
+       \text{CaCO}_3
+      \)
+     </td>
+<td>
+      12
+     </td>
+<td>
+      0
+     </td>
+<td>
+      0
+     </td>
+<td>
+      0
+     </td>
+</tr>
+<tr data-bbox="211 787 1079 833">
+<td>
+</td>
+<td>
+      Sodium to Balance (
+      \(
+       \text{Na}^{2+}
+      \)
+      )
+     </td>
+<td>
+      \(
+       \text{CaCO}_3
+      \)
+     </td>
+<td>
+      28
+     </td>
+<td>
+      0.2
+     </td>
+<td>
+      0.2
+     </td>
+<td>
+      0.2
+     </td>
+</tr>
+<tr data-bbox="211 833 1079 879">
+<td>
+</td>
+<td>
+      Hydrogen - FMA (
+      \(
+       \text{H}^+
+      \)
+      )
+     </td>
+<td>
+      \(
+       \text{CaCO}_3
+      \)
+     </td>
+<td>
+</td>
+<td>
+      56.8
+     </td>
+<td>
+      56.8
+     </td>
+<td>
+</td>
+</tr>
+<tr data-bbox="211 879 1079 926">
+<td>
+</td>
+<td>
+      Potassium (
+      \(
+       \text{K}^+
+      \)
+      )
+     </td>
+<td>
+      \(
+       \text{CaCO}_3
+      \)
+     </td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr data-bbox="211 926 1079 972">
+<td>
+</td>
+<td>
+<b>
+       TOTAL CATIONS
+      </b>
+</td>
+<td>
+      \(
+       \text{CaCO}_3
+      \)
+     </td>
+<td>
+      83
+     </td>
+<td>
+      57
+     </td>
+<td>
+      57
+     </td>
+<td>
+      0.2
+     </td>
+</tr>
+<tr data-bbox="211 997 1079 1043">
+<td>
+</td>
+<td>
+      Bicarbonate (
+      \(
+       \text{HCO}_3^-
+      \)
+      )
+     </td>
+<td>
+      \(
+       \text{CaCO}_3
+      \)
+     </td>
+<td>
+      26
+     </td>
+<td>
+      0
+     </td>
+<td>
+      0
+     </td>
+<td>
+      0
+     </td>
+</tr>
+<tr data-bbox="211 1043 1079 1089">
+<td>
+</td>
+<td>
+      Carbonate (
+      \(
+       \text{CO}_3^{2-}
+      \)
+      )
+     </td>
+<td>
+      \(
+       \text{CaCO}_3
+      \)
+     </td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr data-bbox="211 1089 1079 1136">
+<td>
+</td>
+<td>
+      Hydroxide (
+      \(
+       \text{OH}^-
+      \)
+      )
+     </td>
+<td>
+      \(
+       \text{CaCO}_3
+      \)
+     </td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+      0.2
+     </td>
+</tr>
+<tr data-bbox="211 1136 1079 1182">
+<td>
+</td>
+<td>
+      Sulfate (
+      \(
+       \text{SO}_4^{2-}
+      \)
+      )
+     </td>
+<td>
+      \(
+       \text{CaCO}_3
+      \)
+     </td>
+<td>
+      41
+     </td>
+<td>
+      41
+     </td>
+<td>
+      41
+     </td>
+<td>
+      0
+     </td>
+</tr>
+<tr data-bbox="211 1182 1079 1228">
+<td>
+</td>
+<td>
+      Chloride (
+      \(
+       \text{Cl}^-
+      \)
+      )
+     </td>
+<td>
+      \(
+       \text{CaCO}_3
+      \)
+     </td>
+<td>
+      15
+     </td>
+<td>
+      15
+     </td>
+<td>
+      15
+     </td>
+<td>
+      0
+     </td>
+</tr>
+<tr data-bbox="211 1228 1079 1274">
+<td>
+</td>
+<td>
+      Nitrate (
+      \(
+       \text{NO}_3^-
+      \)
+      )
+     </td>
+<td>
+      \(
+       \text{CaCO}_3
+      \)
+     </td>
+<td>
+      1
+     </td>
+<td>
+      1
+     </td>
+<td>
+      1
+     </td>
+<td>
+      0
+     </td>
+</tr>
+<tr data-bbox="211 1274 1079 1320">
+<td>
+</td>
+<td>
+      Phosphate (
+      \(
+       \text{PO}_4^{2-}
+      \)
+      )
+     </td>
+<td>
+      \(
+       \text{CaCO}_3
+      \)
+     </td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr data-bbox="211 1320 1079 1367">
+<td>
+</td>
+<td>
+<b>
+       TOTAL ANIONS
+      </b>
+</td>
+<td>
+      \(
+       \text{CaCO}_3
+      \)
+     </td>
+<td>
+      83
+     </td>
+<td>
+      57
+     </td>
+<td>
+      57
+     </td>
+<td>
+      0.2
+     </td>
+</tr>
+<tr data-bbox="211 1367 1079 1413">
+<td>
+</td>
+<td>
+      Carbon Dioxide Free (
+      \(
+       \text{CO}_2
+      \)
+      )
+     </td>
+<td>
+      \(
+       \text{CaCO}_3
+      \)
+     </td>
+<td>
+      3
+     </td>
+<td>
+      29
+     </td>
+<td>
+      5
+     </td>
+<td>
+      0
+     </td>
+</tr>
+<tr data-bbox="211 1413 1079 1459">
+<td>
+</td>
+<td>
+      Silica (
+      \(
+       \text{SiO}_2
+      \)
+      )
+     </td>
+<td>
+      \(
+       \text{CaCO}_3
+      \)
+     </td>
+<td>
+      7
+     </td>
+<td>
+      7
+     </td>
+<td>
+      7
+     </td>
+<td>
+      0.2
+     </td>
+</tr>
+<tr data-bbox="211 1459 1079 1501">
+<td>
+</td>
+<td>
+<b>
+       EXCHANGABLE ANIONS
+      </b>
+</td>
+<td>
+      \(
+       \text{CaCO}_3
+      \)
+     </td>
+<td>
+      93
+     </td>
+<td>
+      93
+     </td>
+<td>
+      69
+     </td>
+<td>
+      0.4
+     </td>
+</tr>
+</tbody>
+</table>
+<h2>
+   Objective 6
+  </h2>
+<p>
+<b>
+<i>
+     Explain the purposes and principles of testing instruments, including embrittlement detector, total solids meter, and pH meter.
+    </i>
+</b>
+</p>
+<h3>
+<b>
+    WATER TESTING INSTRUMENTS
+   </b>
+</h3>
+<p>
+   In industrial water treatment, accurate chemical analyses are necessary to control the water treatment process. Many of the same instruments are used to give quick readings for the pretreatment, demineralization, and boiler water sections of the plant. A complete analysis of the water is not required for day-to-day operations. Many quick and accurate tests with instruments can guide the water treatment and boiler operators. The most common tests are pH, conductivity, hardness, silica, and phosphate tests. The pH, conductivity, and silica tests are done with simple electronic instruments. The hardness test is done by titration using common reagent chemicals.
+  </p>
+<h3>
+<b>
+    Embrittlement Detector
+   </b>
+</h3>
+<p>
+   Caustic embrittlement is a corrosion process that is described in Module 2-3-09, Internal Water Treatment. An embrittlement detector, as shown in Fig. 3, is a device used to test boiler water for embrittlement tendencies. The detector is installed in the continuous blowdown line of a boiler. The boiler water is kept at boiler temperature as it circulates through the detector.
+  </p>
+<p>
+   The detector has a metal test specimen (the same metal as the boiler is constructed of) that is subjected to boiler water. The specimen is bolted in place and clamped to put it under stress. Adjustment of the adjusting screw allows water to leak out very slowly under the specimen. The escaping water and steam leaves a concentrated solution in contact with the stressed surface of the metal specimen. The specimen cracks if the water has embrittlement tendencies. The specimen is checked at monthly intervals for signs of cracking.
+  </p>
+<p>
+   The conductivity test is an accurate test for the dissolved solids in boiler water. It is accurate enough to determine steam purity (conductivity of the condensate) as well.
+  </p>
+<p>
+   The conductivity test is not specific to any one ion. It is a measure of the total ion concentration. A basic conductivity cell is shown in Fig. 4.
+  </p>
+<img alt="Diagram of a basic conductivity cell. It shows a rectangular cell with two vertical electrodes on the left and right sides. Current lines are shown flowing from the left electrode to the right electrode, with some lines curving towards the top and bottom. A label 'Electrode' points to the right electrode." src="edd10d3006553f0a7a5a7f844ed8cd01_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    Diagram of a basic conductivity cell. It shows a rectangular cell with two vertical electrodes on the left and right sides. Current lines are shown flowing from the left electrode to the right electrode, with some lines curving towards the top and bottom. A label 'Electrode' points to the right electrode.
+   </div>
+</div>
+<p>
+   Figure 4
+   <br/>
+   Basic Conductivity Cell
+  </p>
+<p>
+   Referring to Fig. 4, a voltage is applied to each of the drive electrodes of the conductivity cell. One side is positive and the other is negative. The sense electrodes detect the flow of current through the solution.
+  </p>
+<h3>
+   Conductivity Meters
+  </h3>
+<p>
+   Conductivity meters are lab instruments that have a probe that is inserted into the sample. The probe of a conductivity meter is connected to an electronic instrument. The meter has an output needle or digital output to read the conductivity of the sample. The meter may be calibrated to read directly in TDS. The meter may have a probe with two electrodes for high purity waters and a four-electrode probe for more concentrated solutions.
+  </p>
+<p>
+   The four-electrode model in Fig. 5 has two drive electrodes and two sensing electrodes. The current is applied to the two drive electrodes and the sensing electrodes measure the current flow through the solution.
+  </p>
+<p>
+   A similar setup is used for an on-line conductivity meter. In this type a small flow of water is passed through the cell. The meter output is connected to the control room. The signal can be used to control such variables as boiler blowdown or chemical feeds.
+  </p>
+<img alt="Figure 6: A graph showing the relationship between pH and millivolts (mV). The x-axis represents pH from 0 to 14, with major ticks at 4, 7, 10, and 14. The y-axis represents mV from -400 to 400, with major ticks at -400, -200, 0, 200, and 400. A dashed line with a negative slope passes through the point (7, 0)." src="431b8889a0e7f676f0eef40859590349_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<table border="1">
+<caption>
+     Data points from Figure 6
+    </caption>
+<thead>
+<tr>
+<th>
+       pH
+      </th>
+<th>
+       mV
+      </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+       4
+      </td>
+<td>
+       ~200
+      </td>
+</tr>
+<tr>
+<td>
+       7
+      </td>
+<td>
+       0
+      </td>
+</tr>
+<tr>
+<td>
+       10
+      </td>
+<td>
+       ~-200
+      </td>
+</tr>
+<tr>
+<td>
+       14
+      </td>
+<td>
+       ~-400
+      </td>
+</tr>
+</tbody>
+</table>
+<div class="img-alt">
+    Figure 6: A graph showing the relationship between pH and millivolts (mV). The x-axis represents pH from 0 to 14, with major ticks at 4, 7, 10, and 14. The y-axis represents mV from -400 to 400, with major ticks at -400, -200, 0, 200, and 400. A dashed line with a negative slope passes through the point (7, 0).
+   </div>
+</div>
+<p>
+   Figure 6
+   <br/>
+   Electrode Values of pH and millivolts
+  </p>
+<p>
+   One or two electrodes are supplied with the meter. One electrode is used for reference and develops a constant voltage. The constant voltage is compared to the changing voltage of the second electrode. The voltage of second electrode changes as the pH changes. The pH electrode is usually contained within a glass tube. In some units, especially the portable type, two electrodes are mounted in a single unit. This is called a combined or combination electrode.
+  </p>
+<img alt="Figure 7: pH Meter Operation. The diagram shows a beaker with a pH probe and a temperature sensor connected to a pH meter displaying 'pH 7.0'. To the right, two schematic diagrams illustrate the internal circuitry. The first schematic shows the pH meter connected to a sample via pH and reference electrodes. The second schematic shows the equivalent circuit with input voltages mV_i and mV_r, a buffer resistance R_b, and battery voltages mV_b and mV_j." src="88b0f3f4393228e9ea4d6542aef7c399_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    Figure 7: pH Meter Operation. The diagram shows a beaker with a pH probe and a temperature sensor connected to a pH meter displaying 'pH 7.0'. To the right, two schematic diagrams illustrate the internal circuitry. The first schematic shows the pH meter connected to a sample via pH and reference electrodes. The second schematic shows the equivalent circuit with input voltages mV_i and mV_r, a buffer resistance R_b, and battery voltages mV_b and mV_j.
+   </div>
+</div>
+<p>
+   Figure 7
+   <br/>
+   pH Meter Operation
+  </p>
+<h2>
+   Objective 7
+  </h2>
+<p>
+<b>
+    Explain the purpose of steam purity measurement and process of steam sampling.
+   </b>
+</p>
+<h3>
+   Steam Purity Measurement
+  </h3>
+<p>
+   Steam purity refers to the amount of contamination in the steam. The contamination is liquid, solid, or vaporous contamination of the steam. Steam purity is reported as the solids content.
+  </p>
+<p>
+<b>
+    Note:
+   </b>
+   steam purity should not be confused with steam quality. Steam quality refers to the amount of moisture in the steam.
+  </p>
+<p>
+   Carryover is any solid, liquid, or vaporous contaminant that leaves a boiler along with the steam. The most common cause of steam contamination is entrainment of boiler water with the steam. The boiler water may contain dissolved solids and suspended solids.
+  </p>
+<p>
+   When boiler water is carried over with the steam from a boiler drum, the steam is contaminated with solid material or particles. When water is carried over it contains the dissolved solids that were present in the boiler water. Water droplets are vaporized in the superheater. The dissolved solids remain as particles in the steam. The carryover causes deposits in the superheater piping or on the turbine nozzles and blading.
+  </p>
+<p>
+   Steam turbines are susceptible to deposition and impingement damage as a result of impure steam. When the steam is used for steam turbines or process steam, a steam purity of 0.03 mg/L of total dissolved solids is necessary to prevent deposits. This is a standard limit for industrial applications for boiler pressures of 2000 kPa to 10 200 kPa. Operation below the limit ensures reliable service from the superheaters and turbines downstream of the carryover.
+  </p>
+<p>
+   Boiler manufacturers often provide a steam purity guarantee of 1.0 mg/L. In practice, steam purity levels of 0.01 mg/l are often achieved. An accurate method of measuring steam purity is necessary for the successful operation of plants where limits on steam purity are especially low.
+  </p>
+<h3>
+   Steam Purity Sampling
+  </h3>
+<p>
+   A steam sample is condensed for analysis. This is more difficult than it may seem because the steam sample must be a representative sample. The steam sample is taken with an isokinetic sampling arrangement. The nozzles used for the sampling are specially designed for each size of piping. They take a representative sample across the diameter of the pipe. Turns and other irregularities of the steam piping influence the
+  </p>
+<p>
+   cooler. The interconnecting piping or tubing is made of stainless steel to avoid adding iron to the sample.
+  </p>
+<p>
+   Steam purity is normally measured by the conductivity or sodium content of the sample. Conductivity is used on lower pressure boilers. The conductivity is affected by amines in the steam, which are used to control the pH in the condensate system. Sodium content is more applicable to ultrapure water from high pressure (over 10 000 kPa) boilers. The salts dissolved in the boiler water are in the sodium form. The presence of sodium in the steam is a direct indication of boiler carryover. The sample may be taken to the lab for analysis, or an on-line sodium analyzer can be used to track steam purity.
+  </p>
+<h3>
+   Causes of Carryover
+  </h3>
+<p>
+   In drum-type boilers, incomplete separation of steam from the steam and water mixture in the boiler causes carryover. Many factors, both mechanical and chemical, contribute to the lack of separation.
+  </p>
+<p>
+   Mechanical factors influencing carryover include the following:
+  </p>
+<ul style="list-style-type: none">
+<li>
+    • Boiler and steam drum design
+   </li>
+</ul>
+<p>
+   Operating with high steam drum levels
+  </p>
+<ul style="list-style-type: none">
+<li>
+    • The load characteristics (the steam demand may increase very rapidly)
+   </li>
+<li>
+    • Inadequate or leaking steam separating equipment in the steam drum
+   </li>
+</ul>
+<p>
+   Chemical factors influencing carryover include the following:
+  </p>
+<ul style="list-style-type: none">
+<li>
+    • High total solids concentration (dissolved and/or suspended solids) causing foaming
+   </li>
+<li>
+    • The presence of hydrocarbons or other organic contaminants, that cause foaming
+   </li>
+<li>
+    • Vaporization of solids such as silica
+   </li>
+</ul>
+<p>
+   Operating the boiler well below design pressure also causes carryover. The steam flow passages in a boiler are designed for a specific volumetric flow rate. Reducing the operating pressure causes lower density with more voluminous steam. This causes a velocity increase. The increased velocity increases the amount of entrained water in the steam.
+  </p>
+<h3>
+   Preventing Carryover
+  </h3>
+<p>
+   Carryover can never be eliminated completely. The best boiler designs with controlled water chemistry still produce trace amounts of carryover. When excessive boiler water concentrations cause carryover, increasing the continuous blowdown rate is a simple solution to the problem. If there are high levels of impurities entering the boiler with the makeup water, changes or upgrades are made in the water treatment section of the plant.
+  </p>
+<p>
+   To prevent carryover it is necessary to find the root cause of the problem. An on-line analyzer is a valuable tool for finding the root cause. The output of the analyzer is graphed and compared to other variables such as drum level or changes in water chemistry. The carryover may not occur during steady operation, but only during upsets. Carryover can be detected with an on-line analyzer. Often the water treatment chemical supplier and consultant to a plant (such as Betz or Nalco) can supply an analyzer for the test.
+  </p>
+<h2>
+   Chapter Questions
+  </h2>
+<p>
+   A3.6
+  </p>
+<ol style="list-style-type: none">
+<li>
+    1. List four industrial contaminants that may be present in raw water supplies. What are possible sources of origin for each type?
+   </li>
+<li>
+    2. What are the mechanical and chemical factors that may influence boiler water carryover?
+   </li>
+<li>
+    3. Sketch and describe an isokinetic steam sampling arrangement. Why is this arrangement necessary?
+   </li>
+<li>
+    4. List the dissolved gases that are present in raw water. Why are they removed to make the water suitable for boiler feedwater?
+   </li>
+<li>
+    5. Why are water analysis reports often stated in units as
+    \(
+     \text{CaCO}_3
+    \)
+    ?
+   </li>
+<li>
+    6. Sketch a basic conductivity cell. Explain its principle of operation.
+   </li>
+<li>
+    7. What are two boiler water treatment methods used to combat caustic embrittlement?
+   </li>
+</ol>
+</body>
+</html>

@@ -1,0 +1,1486 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+ 
+    <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['\\(', '\\)']],
+        displayMath: [['$$', '$$']]
+      }
+    };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+</head>
+ <body>
+    <div id="nav-header" style="padding: 15px 20px; background: #2c3e50; color: white; display: flex; align-items: center; gap: 20px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+        <a href="../index.html" style="color: white; text-decoration: none; background: #34495e; padding: 8px 16px; border-radius: 4px; font-weight: 600; font-size: 0.9rem; transition: background 0.2s;">← Back to Index</a>
+        <h1 style="margin: 0; font-size: 1.2rem; font-weight: 500; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Power Engineering Series</h1>
+    </div>
+    
+  <h2>
+   Learning Outcome
+  </h2>
+  <p>
+   <i>
+    When you complete this learning material, you will be able to:
+   </i>
+  </p>
+  <p>
+   Explain the significance of environmental parameters and methods of monitoring.
+  </p>
+  <h2>
+   Learning Objectives
+  </h2>
+  <p>
+   <i>
+    You will specifically be able to complete the following tasks:
+   </i>
+  </p>
+  <ol style="list-style-type: none">
+   <li>
+    1. Explain the significance of the following air quality parameters: particulates, stack opacity,
+    \(
+     \text{SO}_2
+    \)
+    concentration,
+    \(
+     \text{SO}_2
+    \)
+    mass flow,
+    \(
+     \text{NO}_x
+    \)
+    concentration,
+    \(
+     \text{NO}_x
+    \)
+    mass flow, mercury,
+    \(
+     \text{O}_2
+    \)
+    ,
+    \(
+     \text{CO}_2
+    \)
+    , and hydrocarbons.
+   </li>
+   <li>
+    2. Explain the basic principles of operation for Continuous Emissions Monitoring Systems (CEMS) measurement instruments.
+   </li>
+   <li>
+    3. Explain the general requirements for Continuous Emissions Monitoring Systems (CEMS.)
+   </li>
+   <li>
+    4. Explain the significance of the following water quality parameters: iron, phosphorous, biological oxygen demand (BOD), chemical oxygen demand (COD), hydrocarbons, temperature, flow, pH, and nitrogen.
+   </li>
+   <li>
+    5. Explain the general requirements for wastewater monitoring.
+   </li>
+   <li>
+    6. Explain how data that is received from environmental monitoring equipment is interpreted.
+   </li>
+   <li>
+    7. Explain the significance of environmental monitoring equipment failure.
+   </li>
+   <li>
+    8. Describe the procedures used for troubleshooting environmental monitoring equipment.
+   </li>
+  </ol>
+  <p>
+  </p>
+  <h2>
+   Objective 1
+  </h2>
+  <p>
+   <b>
+    Explain the significance of the following air quality parameters: particulates, stack opacity,
+    \(
+     \text{SO}_2
+    \)
+    concentration,
+    \(
+     \text{SO}_2
+    \)
+    mass flow,
+    \(
+     \text{NO}_x
+    \)
+    concentration,
+    \(
+     \text{NO}_x
+    \)
+    mass flow, mercury,
+    \(
+     \text{O}_2
+    \)
+    ,
+    \(
+     \text{CO}_2
+    \)
+    , and hydrocarbons.
+   </b>
+  </p>
+  <h3>
+   AIR QUALITY PARAMETERS
+  </h3>
+  <p>
+   Thousands of chemical elements and compounds produced as by-products of industrial processes are released into the air. Although many are also produced and released by ongoing natural processes, all emissions are contaminants or pollutants. Government regulations cover hundreds of emissions in various jurisdictions although a relative few are so important and so widespread that they are regulated in most jurisdictions. This module is concerned with emissions from combustion processes in a power plant that are released to the environment through the stack of a boiler or heat engine. Local or regional legislation or licenses define maximum acceptable limits for the concentration of each emission monitored.
+  </p>
+  <p>
+   Some industries have reduced emissions to near zero levels. An example of this is the “zero effluent discharge” approach taken towards water contamination in the pulp and paper and chemical industries. In order to comply with regulations, all plants have a legal obligation to maintain low emission levels. This requires long-term planning for emissions control, including quantitative monitoring of released contaminants and a budget for maintaining or improving future emissions performance. This type of program is both good for business and environmentally sustainable.
+  </p>
+  <p>
+   The most significant power plant air emissions are part of a group called Criteria Air Pollutants, a term coined by the United States’ Environmental Protection Agency. Environment Canada publishes similar Criteria Air Contaminant Emissions for Canada. They are available on the Environment Canada Website. Ambient air quality standards are set and acceptable exposure levels are determined for Criteria Air Pollutants. Exceeding the acceptable levels causes excessive damage to the environment, and/or to risks to the health of animals and people exposed.
+  </p>
+  <p>
+   An accumulation of Critical Air Pollutants causes smog. Smog forms when high levels of reactive chemicals in the air combine with particles of material such as smoke. In certain combinations of weather and sunlight, smog is a murky brown haze in the air which can cause serious health effects in humans. Smog is often found in urban areas and is a function of vehicle exhaust. However, many of the compounds that produce smog are also emitted from industrial stacks, so smog is a factor in the need for control and regulation of stack emissions.
+  </p>
+  <h4>
+   Emissions Trading
+  </h4>
+  <p>
+   Emissions trading originated when the U.S. Environmental Protection Agency (E.P.A.) undertook an innovative initiative to reduce sulphur dioxide (
+   \(
+    \text{SO}_2
+   \)
+   ) emissions from stacks. National
+   \(
+    \text{SO}_2
+   \)
+   emissions were determined, and companies were issued credits which allowed them to continue producing
+   \(
+    \text{SO}_2
+   \)
+   emissions at their current level.
+  </p>
+  <p>
+   No additional credits were allowed. Any company facing an increase in
+   \(
+    \text{SO}_2
+   \)
+   emissions due to expansions, new plants, or declining performance was legally obligated to offset the added emissions. They could purchase technology to remove
+   \(
+    \text{SO}_2
+   \)
+   emissions, or purchase credits from other companies. The market in credits created a positive economic reason for reducing emissions both to save money in penalties and to earn added revenue by selling
+   \(
+    \text{SO}_2
+   \)
+   emission credits. Environmental lobby groups purchased and retired some credits which reduced national
+   \(
+    \text{SO}_2
+   \)
+   emissions. This system works well, and emissions trading may be proposed worldwide and for other types of emissions such as
+   \(
+    \text{CO}_2
+   \)
+   . Emissions trading may be a factor in the management of stack emissions in the future.
+  </p>
+  <h4>
+   Plant Emission Limits
+  </h4>
+  <p>
+   Each plant has:
+  </p>
+  <ul style="list-style-type: none">
+   <li>
+    • Clearly defined limits for the maximum emissions that are allowed from its stacks
+   </li>
+   <li>
+    • Requirements for the continuous monitoring of some of these emissions
+   </li>
+   <li>
+    • Requirements for reporting on the results to a government agency.
+   </li>
+  </ul>
+  <p>
+   The emissions that are monitored and the emission limits vary from jurisdiction to jurisdiction and from plant to plant.
+  </p>
+  <p>
+   The Power Engineer responsible for the safe operation of the plant is familiar with the emissions requirements, the monitoring that is in place, the current performance against emissions requirements, and the type and frequency of reporting that is required. Violation of environmental legislation or regulations is serious, and has severe penalties.
+  </p>
+  <p>
+   Concerns about stack emissions do not end at the stack exit. Emissions that exit a high stack at high velocity are spread over a large area. Even small stacks can spread pollution for many kilometres. Large stacks with considerable height and with high flows can create environmental damage hundreds of kilometres away. For this reason, there is growing interest in regulating emissions based on the total amount of contaminant released within a region, rather than looking at each plant individually.
+  </p>
+  <h4>
+   Particulates and Stack Opacity
+  </h4>
+  <p>
+   Particulate Matter (PM) are solids or liquids entrained in the air other than pure water. Two initial results of particulate emissions from a stack are:
+  </p>
+  <ul style="list-style-type: none">
+   <li>
+    • The stack plume becomes much more visible.
+   </li>
+   <li>
+    • Particles settle on buildings, grounds, vehicles, and people in the vicinity
+   </li>
+  </ul>
+  <p>
+   Particulate Matter is a major concern for plants that burn solid fuels such as coal which produce large amounts of non-combustible ash. However, Particulate Matter is also
+  </p>
+  <p>
+   emitted from the combustion of other fuels due in part to ash content but also to the soot produced from incomplete combustion of carbon.
+  </p>
+  <p>
+   Finer particles are of particular concern for health reasons, and two standards exist for their differentiation.
+   \(
+    PM_{10}
+   \)
+   is particulate that is less than 10 microns in diameter, and is readily inhaled into the lungs. A micron is equal to
+   \(
+    10^{-6}
+   \)
+   m, or
+   \(
+    10^{-3}
+   \)
+   mm.
+   \(
+    PM_{10}
+   \)
+   particles include smoke, soot, dust, salt, acids, metals, and compounds formed by the reaction of exhaust gases in the atmosphere. Their effect on people includes irritation of the eyes, throat, and respiratory tract. They can cause asthma, bronchitis, and increased susceptibility to infection.
+  </p>
+  <p>
+   \(
+    PM_{2.5}
+   \)
+   particles are less than 2.5 microns in diameter. These particles penetrate deep into the lungs. They also contribute to smog.
+  </p>
+  <p>
+   Particulate Matter emissions are monitored directly in terms of their unit mass per unit volume of stack gases (e.g.
+   \(
+    mg/m^3
+   \)
+   ). This is the standard for measurement that is used in Europe. However, direct measurement of particle concentration is difficult to achieve. The common standard in North America is to infer particulate concentration by measuring stack opacity. Opacity is the quantity of light that is lost as the light moves through the stack gases and is reflected by entrained particles.
+  </p>
+  <h4>
+   <b>
+    \(
+     SO_2
+    \)
+    Concentration and Mass Flow
+   </b>
+  </h4>
+  <p>
+   Combustion of sulphur in fossil fuels releases sulphur oxides. Sulphur may be introduced into fuels as part of a chemical additive. Some sulphur oxides exist in the atmosphere as a result of natural processes, and quantities are also emitted from specific industrial processes other than combustion.
+   \(
+    SO_2
+   \)
+   or sulphur dioxide is of special interest due its detrimental effects.
+   \(
+    SO_2
+   \)
+   dissolves in water in the atmosphere forming sulphuric acid which is then contained in the water droplets that are returned to earth as rain. This is the well-known “acid rain” phenomenon.
+  </p>
+  <p>
+   The effects of acid rain are destruction of vegetation and lichens, and the lowering of pH in lakes which causes the death of aquatic plants, fish, and animals. If the
+   \(
+    SO_2
+   \)
+   is further oxidized to sulphate (
+   \(
+    SO_4
+   \)
+   ), the sulphate forms a solid particulate and contributes to smog. Direct effects of
+   \(
+    SO_2
+   \)
+   on human health include respiratory irritation and ailments. It may cause bronchitis and asthma.
+  </p>
+  <p>
+   \(
+    SO_2
+   \)
+   stack emissions are measured in two ways,
+   \(
+    SO_2
+   \)
+   concentration and
+   \(
+    SO_2
+   \)
+   mass flow.
+   \(
+    SO_2
+   \)
+   concentration is the unit mass per unit volume of stack gases.
+   \(
+    SO_2
+   \)
+   mass flow is the absolute mass of contaminant produced per unit time (such as tonnes per hour). Both are monitored and reported because there are limits on concentration and on the total amount emitted.
+  </p>
+  <h4>
+   <b>
+    \(
+     NO_x
+    \)
+    Concentration and Mass Flow
+   </b>
+  </h4>
+  <p>
+   Oxides of nitrogen are collectively called
+   \(
+    NO_x
+   \)
+   . They constitute a complex family of compounds that are not easily distinguished from each other in stack gases although nitrogen dioxide (
+   \(
+    NO_2
+   \)
+   ) is the most prevalent. Oxidation of atmospheric nitrogen during
+  </p>
+  <p>
+   the combustion process produces
+   \(
+    \text{NO}_x
+   \)
+   . Although many methods and technologies exist to reduce its production,
+   \(
+    \text{NO}_x
+   \)
+   is still a product of all power plant combustion regardless of the fuel or equipment used. As with many other Criteria Air Pollutants,
+   \(
+    \text{NO}_x
+   \)
+   is also produced naturally.
+  </p>
+  <p>
+   \(
+    \text{NO}_x
+   \)
+   is a reddish-brown gas. It is a major component of both smog and acid rain. It increases susceptibility to lung infections and may cause asthma. The acidic nature of
+   \(
+    \text{NO}_x
+   \)
+   makes it harmful to plants and corrosive to buildings. Its detrimental effects are compounded when it appears in combination with
+   \(
+    \text{SO}_2
+   \)
+   and ozone.
+  </p>
+  <p>
+   Like
+   \(
+    \text{SO}_2
+   \)
+   ,
+   \(
+    \text{NO}_x
+   \)
+   is measured in two ways,
+   \(
+    \text{NO}_x
+   \)
+   concentration and
+   \(
+    \text{NO}_x
+   \)
+   mass flow.
+   \(
+    \text{NO}_x
+   \)
+   concentration is the unit mass per unit volume of stack gases.
+   \(
+    \text{NO}_x
+   \)
+   mass flow is the absolute mass of contaminant produced per unit time (such as tonnes per hour). Both are monitored and reported because concentration affects the surrounding area and the mass effects the larger regional ecosystem
+  </p>
+  <h4>
+   Mercury
+  </h4>
+  <p>
+   Elemental Mercury is a heavy metal that is a significant air emission. It originates from mercury contained naturally within fossil fuels particularly coal. The E.P.A. has determined that coal-fired electric generating plants emit the most atmospheric mercury, and account for 1/3 of mercury emissions caused by humans. Mercury is difficult or impossible to expel from living tissue. As a result, continued exposure tends to build up the concentration until it reaches dangerous levels. This effect is known as bioaccumulation.
+  </p>
+  <p>
+   Atmospheric mercury is not a major concern. However, it makes its way into groundwater causing bioaccumulation as toxic methylmercury in fish. Animals that eat fish can have concentrations of mercury in their tissues that are millions of times higher than the concentration found in the water. The main source of human exposure to mercury is the consumption of contaminated fish. Resulting symptoms can include neurological problems, developmental disorders, loss of sensory or cognitive ability, tremors, convulsions, and death. Unborn fetuses are particularly susceptible.
+  </p>
+  <p>
+   The relationship between atmospheric release of mercury, water concentrations, and bioaccumulation is still being researched and has not been quantified. For this reason, regulations requiring monitoring of mercury are not applied in all jurisdictions. Monitoring equipment for stack mercury emissions is an emerging technology. Mercury monitors tend to be expensive to purchase, require high maintenance, and are not as reliable as other types of stack monitoring equipment.
+  </p>
+  <h5>
+   Oxygen
+  </h5>
+  <p>
+   Measuring the percentage of oxygen in stack gases is rarely a reporting requirement (to government agencies), but it is often monitored. The measurement serves as a backup for boiler excess oxygen measurements which ensure complete combustion in the boiler furnace. Incomplete combustion causes the emission of carbon monoxide which is highly toxic. Additionally, incomplete combustion of oil and solid fuels produces more soot
+  </p>
+  <p>
+   because some of the carbon is allowed to pass through the furnace intact. The soot causes increased particulate matter. Oxygen content is also a factor in the production of
+   \(
+    \text{NO}_x
+   \)
+   which can be restricted by reducing the amount of excess oxygen. Stack oxygen becomes an important and valuable measurement when there are multiple sources of emissions directed to one stack, for example, when two boiler furnaces discharge to the same stack.
+  </p>
+  <h4>
+   Carbon Dioxide
+  </h4>
+  <p>
+   Carbon Dioxide (
+   \(
+    \text{CO}_2
+   \)
+   ) is the most important of the “greenhouse gases” because of the large volume that is produced every day. The heating value of all fossil fuels and other commonly used fuels is determined by the carbon content, and every atom of carbon that is oxidized during combustion produces a molecule of
+   \(
+    \text{CO}_2
+   \)
+   . Coal-fired power plants alone produce tens of thousands of tons of
+   \(
+    \text{CO}_2
+   \)
+   across North America every day. As with the other greenhouse gases, it is believed that the buildup due to industrial emissions is a major contributor to global warming. Many environmental agencies and research groups have identified global warming as the greatest current environmental challenge worldwide, and there is considerable interest in reducing the amount of
+   \(
+    \text{CO}_2
+   \)
+   production.
+  </p>
+  <p>
+   \(
+    \text{CO}_2
+   \)
+   is not usually monitored directly because its level of production is easily calculated based on fuel consumption and the amount of carbon content in the fuel. These two indirect indications of
+   \(
+    \text{CO}_2
+   \)
+   emissions are often reported to government environmental authorities. Fuel consumption figures are readily available to plant operating staff because they are an important measure of plant efficiency and economic performance. The carbon content of most commercial fuels can be obtained from the manufacturer or supplier. Fuels such as coal that have variable carbon content, require regular sampling and analysis to determine their carbon content, and reporting on this analysis is usually a regulatory requirement.
+  </p>
+  <h4>
+   Hydrocarbons
+  </h4>
+  <p>
+   Hydrocarbons are composed of hydrogen and carbon atoms. They occur in the air as a result of natural processes and as a result of fossil and biomass fuel combustion, but not in significant quantities. Airborne hydrocarbons, called Volatile Organic Compounds or VOC, are a major contributor to smog, especially those that are photochemically reactive called Reactive Organic Gases (ROG) or Non-Methane Organic Gases (NMOG.)
+  </p>
+  <p>
+   Unlike the other contaminants, hydrocarbons are not a significant component of combustion gases, and are not normally monitored or regulated for power plant stack emissions. Hydrocarbon emissions are associated with petroleum and petrochemical industries. These industries monitor hydrocarbon emissions which are often regulated. There are hundreds of different hydrocarbon compounds, and each one requires an analyzer specifically calibrated for it. The reporting requirements for hydrocarbon emissions tend to vary from plant to plant.
+  </p>
+  <h2>
+   Objective 2
+  </h2>
+  <p>
+   <b>
+    Explain the basic principles of operation for Continuous Emission Monitoring System (CEMS) measurement instruments.
+   </b>
+  </p>
+  <h3>
+   <b>
+    CEMS MEASUREMENT INSTRUMENTS
+   </b>
+  </h3>
+  <p>
+   Prior to having continuous monitoring systems, the only means of measuring and monitoring stack emissions was through periodic stack testing using specialized portable equipment and by taking samples for lab analysis. This was not satisfactory partly due to the cost and difficulty of managing such testing, but mainly because periodic testing did not confirm emissions produced between tests.
+  </p>
+  <p>
+   Continuous Emission Monitoring Systems (CEMS) use equipment that measures emissions from each stack at all times and records the data automatically for regulatory reporting requirements. Each instrument is approved by the regulatory authority as acceptable for assessing the plant's compliance with its emissions limit and is called a compliance instrument or compliance device.
+  </p>
+  <p>
+   A CEMS is classified into two categories, extractive and in-situ. Extractive systems draw a sample of gas from the stack and transport it to the analyzers which may be at ground level and slightly removed from the stack. The advantage of this is ease of maintenance and operation and not subjecting the monitoring equipment to the heat and vibration associated with stack monitoring. However, the transport of the gas causes problems with measurement due to changes in the gas temperature and pressure and to the corrosive nature of some stack gases. The second approach is to use in-situ analyzers which are mounted on the stack itself avoiding gas transport problems but placing the instruments in a less friendly environment. Many CEMS installations use a combination of extractive and in-situ instruments, as shown in Fig. 1.
+  </p>
+  <img alt="Diagram of CEMS In-Situ and Extractive Instruments. On the left, a vertical stack is shown with a Flow Monitor and an Opacity Monitor attached to its side. A Gas Sampling Probe is inserted into the stack. On the right, an extractive system is depicted, consisting of Gas Cylinders, a Pump, a Chiller, Analyzers, a Flow Control Panel, and a Data Acquisition System, all interconnected by lines representing gas and electrical connections." src="e7cb11f042fc58088dff4b6d9306845e_img.jpg"/>
+  <div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+   <div class="img-alt">
+    Diagram of CEMS In-Situ and Extractive Instruments. On the left, a vertical stack is shown with a Flow Monitor and an Opacity Monitor attached to its side. A Gas Sampling Probe is inserted into the stack. On the right, an extractive system is depicted, consisting of Gas Cylinders, a Pump, a Chiller, Analyzers, a Flow Control Panel, and a Data Acquisition System, all interconnected by lines representing gas and electrical connections.
+   </div>
+  </div>
+  <p>
+   <i>
+    Figure 1
+   </i>
+   <br/>
+   <i>
+    CEMS In-Situ and Extractive Instruments
+   </i>
+  </p>
+  <p>
+   A CEMS has three components as shown in Fig. 1:
+  </p>
+  <ul style="list-style-type: none">
+   <li>
+    • The sampling system is between the stack gas and the analyzer. In an extractive system, this consists of gas conditioning devices and can be quite elaborate. In an in-situ system, the analyzer itself is mounted on the stack.
+   </li>
+   <li>
+    • The gas analyzers. There may be a separate analyzer for each parameter monitored or an analyzer that is capable of measuring multiple parameters.
+   </li>
+   <li>
+    • A data acquisition and controller system which automatically monitors and controls the system's performance and records data for regulatory reporting.
+   </li>
+  </ul>
+  <p>
+   Gas conditioning for an extractive system includes the following functions:
+  </p>
+  <ul style="list-style-type: none">
+   <li>
+    • Dilution of the gas with air to enable the analyzers to function properly. (Some analyzer technologies accept the gas at source-level concentrations, so that dilution is not needed.)
+   </li>
+   <li>
+    • Cooling of the sample gas
+   </li>
+   <li>
+    • Removal of particulate matter
+   </li>
+   <li>
+    • Removal of water vapour. (Some analyzers operate on a "hot-wet" basis and do not need water removal or gas cooling.)
+   </li>
+  </ul>
+  <h4>
+   Particulates and Stack Opacity
+  </h4>
+  <p>
+   Continuous monitoring of Particulate Matter concentrations is not a standard practice in North America because no technology exists to measure particulate mass directly on a continuous basis. Most jurisdictions require periodic stack testing by a third party in addition to the ongoing monitoring provided by a CEMS. Particulate Matter
+  </p>
+  <p>
+   concentration is measured at that time. CEMS analyzers commonly measure stack opacity which infers the concentration of Particulate Matter.
+  </p>
+  <p>
+   To measure opacity, an optical measuring device called a transmissometer is used which works as follows. A light source is placed on one side of the stack with a detector on the opposite side. The intensity of light is measured at both locations, and the difference in intensities is due to the light lost due to intervening Particulate Matter. The proportion of light that is lost in transmission is the opacity. Such a system is shown in Fig. 2.
+  </p>
+  <img alt="Diagram of an opacity monitoring system (Figure 2) showing a light source and detector on opposite sides of a stack with windows and blowers." src="6d9013c24741e861f3c8e0a763b6da22_img.jpg"/>
+  <div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+   <p>
+    A schematic diagram of an opacity monitoring system. A central vertical stack is shown. On the left side, a rectangular housing contains a 'Light Source'. A horizontal line representing a light beam passes through a 'Window' in this housing, across the stack, and through another 'Window' in a similar housing on the right side. In the right housing, the beam is detected by a 'Detector'. Below each housing is a circular 'Blower' unit, indicated by arrows showing air flow towards the windows to prevent fouling.
+   </p>
+   <div class="img-alt">
+    Diagram of an opacity monitoring system (Figure 2) showing a light source and detector on opposite sides of a stack with windows and blowers.
+   </div>
+  </div>
+  <p>
+   <i>
+    Figure 2
+    <br/>
+    Opacity Monitoring
+   </i>
+  </p>
+  <p>
+   The blower in this system is intended to prevent fouling the windows with particulate. Although this system is simple, inexpensive, and useful for plant internal control, it is not usually acceptable as a compliance instrument because of its single pass design. A double pass design that houses the light source and light detector in one location is shown in Fig. 3. This design makes it much easier to routinely check the operation and accuracy of the instrument.
+  </p>
+  <img alt="Diagram of an opacity monitoring system. A light beam is emitted from a lamp, passes through a detector, a beam splitter, a calibration filter, and a window. The beam then enters a large cylindrical stack. Inside the stack, the beam passes through a zero mirror. On the opposite side of the stack, the beam passes through another window and a retroreflector. Blowers are shown at the base of the stack on both sides." src="d5a837fa4f4675e5ee596003cf55985c_img.jpg"/>
+  <div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+   <div class="img-alt">
+    Diagram of an opacity monitoring system. A light beam is emitted from a lamp, passes through a detector, a beam splitter, a calibration filter, and a window. The beam then enters a large cylindrical stack. Inside the stack, the beam passes through a zero mirror. On the opposite side of the stack, the beam passes through another window and a retroreflector. Blowers are shown at the base of the stack on both sides.
+   </div>
+  </div>
+  <p>
+   Figure 3
+   <br/>
+   Opacity Monitoring
+  </p>
+  <p>
+   The zero mirror shown in Fig. 3 is used during preventive maintenance procedures to calibrate the instrument's zero reading. It is placed in the light path, so that the light intensity can be measured with no loss due to opacity. Similarly, the calibration filter (light filter) provides a known density for the light and is used to calibrate the opacity reading when it is placed in the light path.
+  </p>
+  <h4>
+   SO
+   <sub>
+    2
+   </sub>
+   Concentration and Mass Flow
+  </h4>
+  <p>
+   There are several methods of measuring SO
+   <sub>
+    2
+   </sub>
+   concentration. In each case, the design of the instrument may be different, but the general principles apply. In infrared spectroscopy, as shown in Fig. 4, each type of molecule absorbs light at certain frequencies producing a unique absorption spectrum which serves as a "fingerprint." The analyzer has an infrared light source with the light admitted to two cells in parallel. A detector measures the light energy exiting from each cell. The reference cell contains a gas that does not absorb the light frequency used (e.g. argon or nitrogen), and the sample cell contains the stack gas tested.
+  </p>
+  <p>
+   The difference in light intensities exiting the cells is a measure of the concentration of the gas measured in the sample. Initially, a light frequency is selected using the band-pass filter which has the same absorption spectrum as the gas being tested for. The instrument is calibrated to measure a wide range of contaminants such as SO
+   <sub>
+    2
+   </sub>
+   .
+  </p>
+  <img alt="Figure 4: SO2 Monitoring setup diagram" src="af7916c89a458fdab6c3f443217388ae_img.jpg"/>
+  <div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+   <p>
+    This diagram illustrates an SO
+    <sub>
+     2
+    </sub>
+    monitoring setup. A 'Light Source' on the left emits a beam of light that passes through a 'Band-Pass Filter'. The filtered light then splits or passes through a 'Gas Cell' (with 'Sample In' and 'Sample Out' ports) and a 'Reference Cell'. Both beams are finally detected by a 'Detector' on the right. Wavy lines represent the light path throughout the system.
+   </p>
+   <div class="img-alt">
+    Figure 4: SO2 Monitoring setup diagram
+   </div>
+  </div>
+  <p>
+   Figure 4
+   <br/>
+   <i>
+    SO
+    <sub>
+     2
+    </sub>
+    Monitoring
+   </i>
+  </p>
+  <p>
+   In differential absorption spectroscopy only a sample cell is used, and two light beams are admitted to it at different wavelengths. The reference measurement is made using one wavelength. It is the wavelength at which the gas does not absorb any energy.
+  </p>
+  <p>
+   In ultraviolet spectroscopy, ultraviolet light is used instead of infrared light. Fig. 5 shows an ultraviolet differential spectroscopy analyzer.
+  </p>
+  <img alt="Figure 5: Ultraviolet Spectroscopy setup diagram" src="cab0834804fb031b43865554cc8d06ab_img.jpg"/>
+  <div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+   <p>
+    This diagram shows an ultraviolet differential spectroscopy analyzer. At the bottom right, a 'UV Lamp' emits light at two wavelengths, labeled
+    \(
+     \lambda_1
+    \)
+    and
+    \(
+     \lambda_2
+    \)
+    . The light passes through a gas cell with 'Sample In' and 'Sample Out' ports. The light then passes through a rotating wheel containing a 'Measuring Filter' (associated with 'Measurement Wavelength,
+    \(
+     \lambda
+    \)
+    ') and a 'Reference Filter' (associated with 'Reference Wavelength,
+    \(
+     \lambda_0
+    \)
+    '). The filtered light is then directed to a 'Photomultiplier Filter' and 'Electronics' for signal processing.
+   </p>
+   <div class="img-alt">
+    Figure 5: Ultraviolet Spectroscopy setup diagram
+   </div>
+  </div>
+  <p>
+   Figure 5
+   <br/>
+   <i>
+    Ultraviolet Spectroscopy
+   </i>
+  </p>
+  <p>
+   An entirely different approach is to monitor the photoluminescence, or fluorescence, of the gas tested for. This is based on the principle of a gas absorbing light at one wavelength and then emitting light at a different wavelength. Each compound has a unique fluorescence spectrum, just as it has a unique absorption spectrum. A fluorescence analyzer is shown in Fig. 6. The available concentration of SO
+   <sub>
+    2
+   </sub>
+   molecules excited by the ultraviolet lamp determines the intensity of the emitted light.
+  </p>
+  <img alt="Diagram of a Fluorescence Analyzer (Figure 6). A UV Lamp emits light that passes through a 210-nm Band-Pass Filter. This light enters a sample tube where 'Sample In' is introduced. Inside the tube, SO2 molecules are excited. The resulting fluorescence passes through a 350-nm Band-Pass Filter and is detected by a Photomultiplier Tube. 'Sample Out' is shown exiting the tube." src="0dd5ee731e9d7e34e498b5c926110773_img.jpg"/>
+  <div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+   <div class="img-alt">
+    Diagram of a Fluorescence Analyzer (Figure 6). A UV Lamp emits light that passes through a 210-nm Band-Pass Filter. This light enters a sample tube where 'Sample In' is introduced. Inside the tube, SO2 molecules are excited. The resulting fluorescence passes through a 350-nm Band-Pass Filter and is detected by a Photomultiplier Tube. 'Sample Out' is shown exiting the tube.
+   </div>
+  </div>
+  <p>
+   Figure 6
+   <br/>
+   Fluorescence Analyzer
+  </p>
+  <p>
+   Polarographic analyzers, also called voltametric analyzers or electrochemical transducers, operate on an electrochemical principle. The
+   \(
+    \text{SO}_2
+   \)
+   molecules are separated from the gas sample stream by a membrane that allows only the
+   \(
+    \text{SO}_2
+   \)
+   to pass. The
+   \(
+    \text{SO}_2
+   \)
+   is diffused into an electrolyte solution. The solution is oxidized at an electrode that is part of an electric circuit. The oxidation produces a potential difference between the electrodes. The resulting current gives an indication of the original
+   \(
+    \text{SO}_2
+   \)
+   concentration. See Fig. 7.
+  </p>
+  <img alt="Diagram of a Polarographic Analyzer (Figure 7). A gas sample enters through a 'Sample in' tube, passing through a 'Membrane' that selectively allows SO2 molecules to pass into the 'Bulk electrolyte'. Inside the electrolyte, SO2 is oxidized at a 'Porous sensing electrode' (anode) and reduced at a 'Counterelectrode' (cathode). The oxidation produces H+ and SO4 2- ions, and a precipitate of FeSO4. The reduction produces FeSO4. The electrodes are connected to an external circuit with a battery and a variable resistor, showing the flow of 'Electrons' from the anode to the cathode. 'Sample out' tubes exit the cell." src="a1d3651b1300f3670e3a9547bafc4db6_img.jpg"/>
+  <div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+   <div class="img-alt">
+    Diagram of a Polarographic Analyzer (Figure 7). A gas sample enters through a 'Sample in' tube, passing through a 'Membrane' that selectively allows SO2 molecules to pass into the 'Bulk electrolyte'. Inside the electrolyte, SO2 is oxidized at a 'Porous sensing electrode' (anode) and reduced at a 'Counterelectrode' (cathode). The oxidation produces H+ and SO4 2- ions, and a precipitate of FeSO4. The reduction produces FeSO4. The electrodes are connected to an external circuit with a battery and a variable resistor, showing the flow of 'Electrons' from the anode to the cathode. 'Sample out' tubes exit the cell.
+   </div>
+  </div>
+  <p>
+   Figure 7
+   <br/>
+   Polarographic Analyzer
+  </p>
+  <p>
+   Another type of
+   \(
+    \text{SO}_2
+   \)
+   analyzer uses thermal conductivity. The sample gas is directed across a heated wire, and the wire is cooled. The resulting change in resistance is measured. The degree of cooling and resulting resistance change is used to infer the makeup of the sample gas.
+  </p>
+  <p>
+   All of the analyzers discussed here can be used in either extractive or in-situ systems, with the exception of the photoluminescence analyzer which is not used in-situ.
+  </p>
+  <p>
+   \(
+    \text{SO}_2
+   \)
+   mass flow is not normally measured directly. Instead, a stack gas flow rate monitor is used, and the CEMS data acquisition computer calculates
+   \(
+    \text{SO}_2
+   \)
+   mass flow from the measured
+   \(
+    \text{SO}_2
+   \)
+   concentration and the flow rate of stack gases. This is called an inferred, or calculated, parameter.
+  </p>
+  <h5>
+   \(
+    \text{NO}_x
+   \)
+   Concentration and Mass Flow
+  </h5>
+  <p>
+   \(
+    \text{NO}_x
+   \)
+   concentration is measured in some of the same ways as
+   \(
+    \text{SO}_2
+   \)
+   using infrared or ultraviolet spectroscopy or palaeography but not with photoluminescence or thermal conductivity.
+  </p>
+  <p>
+   One method used to measure
+   \(
+    \text{NO}_x
+   \)
+   concentration utilizes chemiluminescence. The first step is to reduce any
+   \(
+    \text{NO}_2
+   \)
+   to
+   \(
+    \text{NO}
+   \)
+   which is done in a heated catalytic chamber. An ozone (
+   \(
+    \text{O}_3
+   \)
+   ) generator produces ozone by irradiating oxygen in a quartz tube with ultraviolet light. When the ozone and
+   \(
+    \text{NO}
+   \)
+   are brought together, the resulting chemical reaction produces infrared light in a specific range. The intensity of the light produced indicates the amount of
+   \(
+    \text{NO}_x
+   \)
+   in the initial gas sample. This is correlated with the sample flow rate to provide a measure of
+   \(
+    \text{NO}_x
+   \)
+   concentration. The analyzer is shown in Figure 8.
+  </p>
+  <img alt="Diagram of a Chemiluminescence Analyzer showing the process from sample input to light detection." src="9ae17964ddd9b814c7d905b1af2fddf2_img.jpg"/>
+  <div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+   <p>
+    The diagram illustrates the components and flow of a chemiluminescence analyzer. A sample gas stream, labeled "NO + NO
+    <sub>
+     2
+    </sub>
+    Sample in", enters a "Reaction chamber". Inside this chamber, the
+    \(
+     \text{NO}_2
+    \)
+    is converted to
+    \(
+     \text{NO}
+    \)
+    according to the reaction:
+    \(
+     \text{NO}_2 + \text{NO} \rightarrow \text{NO} + \frac{1}{2} \text{O}_2
+    \)
+    . This conversion is labeled as "Step 2: NO + NO (Converted from NO
+    <sub>
+     2
+    </sub>
+    )". The chamber is connected to an "
+    \(
+     \text{O}_3
+    \)
+    generator". The output of the reaction chamber, now containing
+    \(
+     \text{NO}
+    \)
+    and
+    \(
+     \text{O}_3
+    \)
+    , passes through a "Band-pass filter" and into a "Photomultiplier tube", which detects the emitted light. An "
+    \(
+     \text{O}_2
+    \)
+    source" is also shown connected to the system.
+   </p>
+   <div class="img-alt">
+    Diagram of a Chemiluminescence Analyzer showing the process from sample input to light detection.
+   </div>
+  </div>
+  <p>
+   Figure 8
+   <br/>
+   Chemiluminescence Analyzer
+  </p>
+  <p>
+   In catalytic calorimetry, two resistance temperature devices (RTDs) are coated with a ceramic catalyst. One RTD is exposed to the sample gas and the other to a reference gas. The catalyst causes the
+   \(
+    \text{NO}_x
+   \)
+   in the sample gas to be reduced to
+   \(
+    \text{N}_2
+   \)
+   releasing heat. The resulting temperature difference between the RTDs is used to infer the original
+   \(
+    \text{NO}_x
+   \)
+  </p>
+  <p>
+   concentration. As with
+   \(
+    \text{SO}_2
+   \)
+   ,
+   \(
+    \text{NO}_x
+   \)
+   mass flow is not normally measured directly but is a calculated parameter. Instead, the CEMS data acquisition computer calculates
+   \(
+    \text{NO}_x
+   \)
+   mass flow from the measured
+   \(
+    \text{NO}_x
+   \)
+   concentration and the flow rate of stack gases.
+  </p>
+  <h5>
+   Mercury
+  </h5>
+  <p>
+   Elemental mercury is detected using absorption spectroscopy, vapour absorption onto a sensor coated with noble metal, or fluorescence. However, measurement of mercury concentration is made difficult because up to 10% of the mercury in flue gas is bound to the Particulate Matter as various compounds that behave differently. Heat and chemical reactions reduce the various mercury compounds to elemental mercury. Ultraviolet absorption is then used to measure the mercury concentration.
+  </p>
+  <h4>
+   Oxygen
+  </h4>
+  <p>
+   Oxygen concentration in stack gas can be measured using an electrocatalytic process called a fuel-cell oxygen analyzer. An electrochemical cell is constructed using zirconium oxide as a solid electrolyte. The gas sample to be tested is admitted on one side of the cell and a reference gas containing 21% oxygen is admitted on the other side. The electrolyte is heated to
+   \(
+    850^\circ\text{C}
+   \)
+   , allowing oxygen ions to pass through it aided by a platinum film on the electrolyte that serves as a catalyst. Oxygen ions migrate from the reference side to the sample side creating a potential difference which is dependent on the difference between oxygen partial pressures. The resulting voltage is measured and combined with the known partial pressure of the reference gas. The voltage is used to calculate the percentage of oxygen in the sample. This type of analyzer can be used in either an extractive or an in-situ system. See Fig. 9.
+  </p>
+  <img alt="Diagram of a Fuel-Cell Oxygen Analyzer showing the flow of oxygen ions from a reference gas to a sample gas through a zirconium oxide electrolyte." src="a83ba9e3e2c1e21dd69953a7b09e45b4_img.jpg"/>
+  <div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+   <p>
+    The diagram illustrates the internal structure of a fuel-cell oxygen analyzer. It features a central Zirconium Oxide Electrolyte. On the left, Reference Gas is introduced, and on the right, Sample Gas is introduced. Both gas streams pass over an Electrocatalytic Surface. Oxygen molecules (
+    \(
+     \text{O}_2
+    \)
+    ) from the reference gas are shown dissociating into oxygen ions (
+    \(
+     \text{O}^{2-}
+    \)
+    ) at the catalytic surface. These ions then migrate through the electrolyte towards the sample gas side. On the sample gas side, the oxygen ions recombine to form oxygen molecules (
+    \(
+     \text{O}_2
+    \)
+    ). Arrows indicate the flow of the gases and the migration of the oxygen ions. Electrical connections are shown at the top and bottom, indicating the measurement of the resulting potential difference.
+   </p>
+   <div class="img-alt">
+    Diagram of a Fuel-Cell Oxygen Analyzer showing the flow of oxygen ions from a reference gas to a sample gas through a zirconium oxide electrolyte.
+   </div>
+  </div>
+  <p>
+   Figure 9
+   <br/>
+   Fuel-Cell Oxygen Analyzer
+  </p>
+  <p>
+   Oxygen concentration can also be measured in extractive analyzers because oxygen is paramagnetic (
+   <i>
+    i.e.
+   </i>
+   attracted by a magnetic field). Most other constituents of stack gases are diamagnetic (
+   <i>
+    i.e.
+   </i>
+   repelled by a magnetic field.) Several designs of analyzers utilize this principle.
+  </p>
+  <h2>
+   Objective 3
+  </h2>
+  <h3>
+   Explain the general requirements for Continuous Emissions Monitoring Systems (CEMS.)
+  </h3>
+  <p>
+   Because the installation and use of CEMS is required for industrial stacks, it is often forgotten that the resulting data also has value in the ongoing control of plant operations. Reporting on emissions is of more value if the results are used for real-time adjustments to keep the emissions at an acceptable value. This cycle of gathering data and applying it is shown in Fig. 10.
+  </p>
+  <img alt="Diagram of the CEMS Data Cycle showing a continuous loop between Plant Emissions, Continuous Emissions Data, Plant Operations Control, and Emissions Reporting." src="8307f6b04df072c9332f9987e034272c_img.jpg"/>
+  <div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+   <pre>graph TD; A[PLANT EMISSIONS] --&gt; B[CONTINUOUS EMISSIONS DATA]; B --&gt; C[PLANT OPERATIONS CONTROL]; C --&gt; A; B --&gt; D[EMISSIONS REPORTING];</pre>
+   <p>
+    The diagram illustrates the CEMS Data Cycle as a continuous loop. It consists of four main components arranged in a circle: 'PLANT EMISSIONS' at the top left, 'CONTINUOUS EMISSIONS DATA' at the top right, 'PLANT OPERATIONS CONTROL' at the bottom left, and 'EMISSIONS REPORTING' at the bottom right. Arrows indicate a clockwise flow: from 'PLANT EMISSIONS' to 'CONTINUOUS EMISSIONS DATA', from 'CONTINUOUS EMISSIONS DATA' to 'PLANT OPERATIONS CONTROL', and from 'PLANT OPERATIONS CONTROL' back to 'PLANT EMISSIONS'. Additionally, a downward arrow points from 'CONTINUOUS EMISSIONS DATA' to 'EMISSIONS REPORTING'.
+   </p>
+   <div class="img-alt">
+    Diagram of the CEMS Data Cycle showing a continuous loop between Plant Emissions, Continuous Emissions Data, Plant Operations Control, and Emissions Reporting.
+   </div>
+  </div>
+  <p>
+   Figure 10
+   <br/>
+   CEMS Data Cycle
+  </p>
+  <p>
+   The legal requirements for CEMS installations are contained within legislation, regulations, and plant environmental licenses or permits. They are specific to the regulatory jurisdiction(s) where the plant is located. CEMS regulations have three elements:
+  </p>
+  <ul style="list-style-type: none">
+   <li>
+    • Rules for implementation which identify different types of plants as sources for regulated contaminants and specify what types of compliance monitoring and reporting are required as a result.
+   </li>
+   <li>
+    • Performance specifications listing the specifications for the installation and certification of CEMS equipment.
+   </li>
+   <li>
+    • Quality Assurance requirements listing the required procedures, such as preventive maintenance, ensuring the gathered data is accurate and is continuously gathered.
+   </li>
+  </ul>
+  <p>
+   Environment Canada publishes national guidelines for CEMS, but the implementation of the guidelines is the responsibility of the individual provinces, through their own legislation, regulations, and licensing procedures. Enforcement of the guidelines is also a
+  </p>
+  <p>
+   provincial responsibility. Non-compliance with any regulation or license requirements is a serious offence, as with all government regulations and licenses, and will carry penalties that are defined both for the company and the individuals that are responsible.
+  </p>
+  <h4>
+   Data Acquisition and Handling
+  </h4>
+  <p>
+   A critical part of a CEMS is the Data Acquisition and Handling System and the related control and reporting functions that are integrated with it. A typical system is shown schematically in Fig. 11, and Fig. 12 showing the hardware interconnection for a plant with two sources of emissions (such as two electrical generating or process production units).
+  </p>
+  <img alt="" src="4356776ca004ecba5d599667a155d7d4_img.jpg"/>
+  <div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+   <table border="1">
+    <tbody>
+     <tr>
+      <td style="text-align: center;">
+       SAMPLING SYSTEM
+       <br/>
+       &amp; ANALYZERS
+      </td>
+      <td style="text-align: center;">
+       CONTROLLER
+      </td>
+      <td style="text-align: center;">
+       DAHS
+       <br/>
+       COMPUTER
+      </td>
+      <td>
+       Hardware
+      </td>
+     </tr>
+     <tr>
+      <td style="text-align: center;">
+       Data
+       <br/>
+       Generation
+      </td>
+      <td style="text-align: center;">
+       CEM System
+       <br/>
+       Control
+      </td>
+      <td style="text-align: center;">
+       Data Handling
+       <br/>
+       Data Acquisition
+       <br/>
+       Display
+       <br/>
+       Recording
+       <br/>
+       Reporting
+      </td>
+      <td>
+       Function
+      </td>
+     </tr>
+     <tr>
+      <td colspan="3" style="text-align: center;">
+       Data Transfer
+       <br/>
+       DCS, LAN, WAN, Intranet, Internet, Agency remote access
+      </td>
+      <td>
+      </td>
+     </tr>
+    </tbody>
+   </table>
+  </div>
+  <p>
+   Figure 11
+   <br/>
+   CEMS Data Acquisition
+  </p>
+  <img alt="Figure 12: CEMS Data Acquisition. A schematic diagram showing two CEM System Units (Unit 1 and Unit 2) connected to Dataloggers. The Dataloggers are connected to a central Plant DCS. The Plant DCS is connected to a DAHS Computer, which is connected to a Printer and a Server. The Server is connected to a network consisting of a Local Area Network (LAN), Wide Area Network (WAN), Intranet, and Internet." src="9cd90f495b95ad2116ff780248c26d95_img.jpg"/>
+  <div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+   <pre>
+graph TD
+    U1[CEM System Unit 1] --&gt; D1[Datalogger]
+    U2[CEM System Unit 2] --&gt; D2[Datalogger]
+    D1 --&gt; DCS[Plant DCS]
+    D2 --&gt; DCS
+    DCS --&gt; DAHS[DAHS Computer]
+    DAHS --&gt; P[Printer]
+    DAHS --&gt; S[Server]
+    S --&gt; N[Local Area Network<br/>Wide Area Network<br/>Intranet<br/>Internet]
+</pre>
+   <div class="img-alt">
+    Figure 12: CEMS Data Acquisition. A schematic diagram showing two CEM System Units (Unit 1 and Unit 2) connected to Dataloggers. The Dataloggers are connected to a central Plant DCS. The Plant DCS is connected to a DAHS Computer, which is connected to a Printer and a Server. The Server is connected to a network consisting of a Local Area Network (LAN), Wide Area Network (WAN), Intranet, and Internet.
+   </div>
+  </div>
+  <p>
+   Figure 12
+   <br/>
+   CEMS Data Acquisition
+  </p>
+  <h4>
+   Equipment Certification
+  </h4>
+  <p>
+   The regulatory authority certifies CEMS equipment before it is accepted for compliance monitoring. Certification is done according to Guideline EPS/1/PG/7 of Environment Canada. It includes comparison of the instruments' measurement with an independent reference measurement ensuring the accuracy and overall performance testing of the entire system. Several standards of the International Standards Organization (ISO) are also available for CEMS certification. Certification is renewed through independent testing once or twice per year.
+  </p>
+  <p>
+   Performance specification testing for certification includes the following:
+  </p>
+  <ul style="list-style-type: none">
+   <li>
+    • Calibration drift (error) testing to show the system's ability to retain calibration over time
+   </li>
+   <li>
+    • Linearity testing to show linear response of the system to different contaminant concentrations
+   </li>
+   <li>
+    • Cycle time/response time testing to show that the system can provide accurate readings if it is cycling between different analyzers or sample points, or when it is conducting automated maintenance procedures such as purging or sample averaging
+   </li>
+   <li>
+    • Relative accuracy testing showing the system data is accurate
+   </li>
+   <li>
+    • Bias testing to determine if errors are introduced to the data as a result of the reference sample or testing that is used
+   </li>
+  </ul>
+  <h4>
+   Quality Assurance
+  </h4>
+  <p>
+   CEMS equipment is complex and specialized, and it can only operate reliably and accurately if it is well maintained. A comprehensive Quality Assurance (QA) program, which must be documented in a QA Manual and approved by the regulatory authority, is required. The QA activities are documented, and their completion and results reported to the regulatory authority on a regular basis.
+  </p>
+  <p>
+   Quality Assurance begins with the specifications and procurement of a new system and continues through its installation, performance specification testing, and certification. In routine operation, Quality Assurance programs involve the following procedures, which are reported on to the regulatory authority as they are completed:
+  </p>
+  <ul style="list-style-type: none">
+   <li>
+    • Testing for calibration drift and linearity
+   </li>
+   <li>
+    • Adjusting calibration drift and linearity as needed
+   </li>
+   <li>
+    • Preventive maintenance of equipment
+   </li>
+   <li>
+    • Corrective maintenance of equipment that has failed or is inaccurate
+   </li>
+   <li>
+    • Data recording and reporting
+   </li>
+   <li>
+    • Performance audits, including Relative Accuracy Test Audits (RATA)
+   </li>
+  </ul>
+  <h2>
+   Objective 4
+  </h2>
+  <p>
+   <b>
+    Explain the significance of the following water quality parameters: iron, phosphorous, biochemical oxygen demand (BOD), chemical oxygen demand (COD), hydrocarbons, temperature, flow, pH, and nitrogen.
+   </b>
+  </p>
+  <h3>
+   <b>
+    WATER QUALITY PARAMETERS
+   </b>
+  </h3>
+  <p>
+   Plants and industries often use large volumes of water in their processes and for cooling. Much of this water is returned to the environment but the quality of the water has changed. The effects of effluent water on natural water bodies and on the life forms that depend on them can be severe. The water downstream of the plant (effluent) must also be in a form that is usable by downstream consumers. As with air emissions, the regulations, permits, and licenses that govern a plant's environmental performance include clearly defined limits for the maximum quantity of certain contaminants. These include requirements for the monitoring and reporting to a government agency.
+  </p>
+  <p>
+   Exactly what is monitored and what the limits are varies from jurisdiction to jurisdiction and from plant to plant. The Engineer responsible for the safe operation of the plant must be familiar with all of the environmental requirements, the monitoring that is in place, the current performance against emissions requirements, and the type and frequency of reporting required.
+  </p>
+  <h4>
+   <b>
+    Iron
+   </b>
+  </h4>
+  <p>
+   Iron appears in natural waters as a result of runoff and iron in ground water. Dissolved iron, in both ferrous and ferric forms, is an indication of corrosion in upstream plant equipment. It discolours equipment that uses the water, especially porcelain equipment such as sinks and toilets. Iron levels are reduced in water that is to be used for cooling tower makeup or boiler feed water. Iron levels are reduced in clarifiers, softeners and demineralizers. Iron in drinking water alters the taste of beverages, such as tea and coffee, and discolours laundry.
+  </p>
+  <h4>
+   <b>
+    Phosphorous
+   </b>
+  </h4>
+  <p>
+   Phosphorous is a nutrient for plants. When it is present in water bodies as a contaminant, it encourages excessive growth of water plants that alters the natural habitat of fish and animals. It also makes the water unsuitable for recreational purposes such as swimming and boating. At certain times of the year, excess phosphorous encourages algae growth in lake water which produces seasonal algal blooms. Algae can also block sunlight to the lake plants and produces an unpleasant smell as it decays after dying back. The entire ecology of a lake habitat can be adversely affected by algae.
+  </p>
+  <p>
+   In industrial plants algae can foul the cooling surfaces of heat exchangers and condensers. Boiler blowdown water, water treated with phosphate (
+   \(
+    \text{PO}_4
+   \)
+   ), and surface water runoff from land fertilized with phosphorous cause phosphorous contamination of natural water.
+  </p>
+  <h4>
+   <b>
+    Biochemical Oxygen Demand (BOD)
+   </b>
+  </h4>
+  <p>
+   BOD is the amount of oxygen in mg/L consumed by microorganisms (mainly bacteria) in water as the organisms break down food into its usable nutrients. The food is primarily organic compounds in the water. BOD is measured in a water sample over a five day period at a temperature of
+   \(
+    20^\circ\text{C}
+   \)
+   .
+  </p>
+  <p>
+   As contamination increases, the number of microorganisms increases in response to the larger food supply. As the microorganisms break down the contamination, they consume more oxygen and BOD increases. An increase in BOD is an indication of both an increase in organic contamination of the water and a potential decrease in the oxygen concentration. The reduced oxygen availability eventually has an impact on all oxygen-breathing life forms in the water including fish and microorganisms. As beneficial aerobic (oxygen consuming) bacteria are killed, their role in breaking down organic compounds is assumed by anaerobic bacteria. The anaerobic bacteria do not require oxygen, but do add toxins, such as
+   \(
+    \text{H}_2\text{S}
+   \)
+   , to the water as a result of their own digestive processes. If the oxygen concentration reaches zero, the water turns black and emits a strong, pungent odour.
+  </p>
+  <h4>
+   <b>
+    Chemical Oxygen Demand (COD)
+   </b>
+  </h4>
+  <p>
+   COD is the amount of oxygen in mg/L required to oxidize both organic and oxidizable inorganic compounds. Both biodegradable and non-biodegradable material is included in the measure. The test for COD can be completed in three hours. The significance of COD is in comparing the difference between COD and BOD. This difference is due to non-biodegradable contaminants that oxidize in a water body by consuming oxygen directly, and the presence of these contaminants is what is effectively being measured. Non-biodegradable contaminants include:
+  </p>
+  <ul style="list-style-type: none">
+   <li>
+    • Oxidizable nitrogen
+   </li>
+   <li>
+    • Chemical reducing compounds (e.g. ferrous iron, sulphite, and sulphide)
+   </li>
+  </ul>
+  <h4>
+   <b>
+    Hydrocarbons
+   </b>
+  </h4>
+  <p>
+   Hydrocarbons are molecules containing hydrogen and carbon. There are many varieties of hydrocarbons used and produced in the processes of industrial plants. They are also called organic compounds. They include alcohols, aldehydes and ketones, acids, esters, ethers, mercaptans, amines and amides, aromatics, carbohydrates, fats, oils, waxes, proteins, and amino acids.
+  </p>
+  <p>
+   Hydrocarbons are extremely toxic to plant and/or animal life when they contaminate natural waters. The film, that some hydrocarbons leave as they float on the water's surface, inhibits the natural gas exchange between the water's surface and the atmosphere. It deprives the water and its inhabitants of oxygen. Many hydrocarbons also produce a film on anything that they contact. This can vary from a light oil film on the hull of a recreational boat, to an oil spill that causes widespread fatalities among birds.
+  </p>
+  <p>
+   Wastewater that is contaminated with hydrocarbons is difficult to treat because the many different types of hydrocarbons require different removal processes. Therefore, a wastewater treatment system is custom designed for each specific application. Hydrocarbon contamination is the usual cause of an increase in BOD and/or COD.
+  </p>
+  <h4>
+   Temperature
+  </h4>
+  <p>
+   Many plant processes, especially those that use natural water for cooling purposes, return the water to the environment at an elevated temperature. This can disturb the natural habitat by favouring certain plant species over others. It also encourages excessive plant growth that chokes a river or lake, altering the quality of fish available for recreational or commercial fishing. It also creates zones of temperature difference in the lake or river. These zones can cause fatalities among fish, which swim from one temperature area to another suddenly and are unable to adjust to the change.
+  </p>
+  <p>
+   If water temperature is elevated even slightly, it increases evaporation and causes a net loss of water from the body of water. This has a similar effect to industrial consumption of water that is not returned, and these two situations may compound each other's effects.
+  </p>
+  <h4>
+   Flow
+  </h4>
+  <p>
+   Many environmental regulations, permits, and licenses require measurement and monitoring of the flow of water into and out of a plant in order to calculate or estimate overall water consumption. It is important to ensure that water returned to a natural environment is as clean and free of contaminants as possible. The net amount of water returned to the environment is also a concern. Industrial consumption of water causes lowered levels in lakes and rivers which affects their suitability for recreational purposes. Additionally, a lower water level allows sunlight to penetrate more deeply into the water, altering the ecology of the natural habitat by favouring some species of plants over others. Excessive plant growth alters the habitat for fish, invertebrates and animals, and the resulting shift in the ecology becomes irreversible.
+  </p>
+  <p>
+   A high flow rate of water from a plant to a natural water body may produce high water velocity. This can cause layers or zones of the water body to differ in temperature and oxygen content, affecting cold-blooded animals, such as fish, which swim from one zone to another and are subjected to sudden temperature changes. Large-scale deaths of a fish population can result. In some cases, there may be a need to regulate wastewater flow as part of a regional flood control scheme.
+  </p>
+  <p>
+   Finally, wastewater flow rate affects the concentration of the contaminants in the stream, so it may be required to measure and report flow rate. An increase in flow rate may sometimes be necessary in order to dilute the contaminants and keep them within legal limits.
+  </p>
+  <h4>
+   pH
+  </h4>
+  <p>
+   Living organisms are highly sensitive to pH alterations in their environment. Aquatic plants and animals suffer and often die due to industrial contamination that has altered the pH of their home waters. An example is the effect of acid rain along the eastern seaboard
+  </p>
+  <p>
+   of North America. Due to the lowering of the pH, all life forms in entire lakes have been killed. The pH of natural waters can be altered by:
+  </p>
+  <ul style="list-style-type: none">
+   <li>
+    • Industrial effluents added directly
+   </li>
+   <li>
+    • Breakdown of chemicals that are themselves relatively harmless
+   </li>
+   <li>
+    • Decay of organic contaminants
+   </li>
+  </ul>
+  <h4>
+   Nitrogen
+  </h4>
+  <p>
+   When contaminant chemicals break down, they release nitrogen and other elements and compounds into natural water. Common examples of chemical contaminants are nitrite and ammonia.
+  </p>
+  <p>
+   Like phosphorus, nitrogen is of concern because it is a nutrient for plants, and its detrimental effects to natural waters are similar to those of phosphorus.
+  </p>
+  <p>
+   Ammonia (
+   \(
+    \text{NH}_3
+   \)
+   ) in natural waters forms ammonium hydroxide (
+   \(
+    \text{NH}_4\text{OH}
+   \)
+   ) which elevates the pH of the water, so it becomes detrimental to fish, plants, and invertebrates.
+  </p>
+  <p>
+   Some organisms consume nitrogen as food, so its presence can raise the Biochemical Oxygen Demand in the same way as organic contaminants.
+  </p>
+  <h2>
+   Objective 5
+  </h2>
+  <p>
+   <b>
+    Explain the general requirements for wastewater monitoring.
+   </b>
+  </p>
+  <p>
+   As with CEMS equipment, the legal requirements for wastewater monitoring and reporting are contained in the legislation, regulations, and plant environmental licenses or permits. All the permits are specific to the regulatory jurisdiction(s) that the plant is located within. Each plant has clearly defined limits for:
+  </p>
+  <ul style="list-style-type: none">
+   <li>
+    • The maximum quantity of emissions it is allowed to discharge,
+   </li>
+   <li>
+    • Requirements for the continuous or periodic monitoring of these emissions
+   </li>
+   <li>
+    • Requirements for reporting the results of monitoring to a government agency.
+   </li>
+  </ul>
+  <p>
+   Wastewater from industrial plants is often heavily contaminated with toxic compounds or disease-causing organisms. The water is purified to a level where it is an acceptable feed for municipal water treatment plants that provide drinking water. In addition, wastewater is often very low in oxygen content due to a high BOD and/or COD. This condition is hazardous to all plants and animals that live in the natural waters to which the wastewater discharges. Add to these concerns the issues around the appearance, taste, and odour of contaminated water and it becomes evident that wastewater treatment is a complex undertaking. Treatment processes and equipment are specific to the individual plant that produces the wastewater although the ultimate goal is to produce a clean effluent that meets or exceeds the standards of the regulatory authorities.
+  </p>
+  <p>
+   Because of the complex nature of the processes involved and because of the immediate risk to human health if wastewater is not properly treated, wastewater treatment plant operators are often certified. This requires a process of education and certification that has levels of competence and is administered independently of any other professional or trade certification process. In other cases, a specific level of Power Engineering certification is required sometimes in conjunction with specified levels of education about wastewater treatment.
+  </p>
+  <h2>
+   Objective 6
+  </h2>
+  <p>
+   <b>
+    <i>
+     Explain how data received from environmental monitoring equipment is interpreted.
+    </i>
+   </b>
+  </p>
+  <p>
+   The Data Acquisition and Handling System of an environmental monitoring system has two main functions:
+  </p>
+  <ul style="list-style-type: none">
+   <li>
+    • Handling of data from the analyzers
+   </li>
+   <li>
+    • Control of the system's automated functions
+   </li>
+  </ul>
+  <p>
+   The data handling function involves receiving and storing the data in a retrievable format so that it can be used to:
+  </p>
+  <ul style="list-style-type: none">
+   <li>
+    • Adjust plant operating conditions in order to optimize efficiency and environmental performance
+   </li>
+   <li>
+    • Monitor trends in performance that can be analyzed for deterioration indicating equipment wear or failure, or inadequate Quality Assurance practices.
+   </li>
+   <li>
+    • Prepare the requisite routine, incident, and emergency reporting for the regulatory authority
+   </li>
+  </ul>
+  <p>
+   In order to address these needs, data is presented in real-time, as it is gathered, to the operating staff in a format or interface. When presented in real time, the information is useful and timely. Data is also categorized and stored as historical data for ongoing reporting and for any future inquiries. The historical method of achieving this is to utilize paper chart recorders, with the charts stored for future reference. Today's systems, especially in larger plants, are more likely to have the data processed by computers and stored in dedicated "historian" electronic databanks.
+  </p>
+  <p>
+   The control function of the system usually initiates and monitors the routine preventive maintenance tasks such as regularly scheduled analyzer calibrations, data backup procedures, and routine changeover of redundant equipment. The system has alarms which alert the operations people to any variables that are out of limits. The alarm system can be via a hardwired annunciator or through the computer interface. The alarms also warn of equipment malfunctions, calibration failures, or unusual situations which require intervention.
+  </p>
+  <p>
+   Emissions limits are often expressed in terms of an average emission over a unit period of time, such as kilograms per day. The data handling and control systems automatically average the data as needed before using it for display, alarming, or reporting. Time periods vary widely depending on the importance and volatility of the parameter
+  </p>
+  <p>
+   measured and on the difficulty of getting an accurate measurement. Stack opacity is often measured as a six-minute average, whereas other emissions may be averaged for 15 minutes, one hour, 24 hours, or one month. Sometimes, multiple limits may exist for one parameter. For example, stack opacity may be restricted to a certain maximum value on a six-minute average, but also be restricted to a slightly lower value for a one hour average.
+  </p>
+  <p>
+   These two limits are displayed and alarmed separately, since exceeding either one constitutes a non-compliance event (often called a violation.) Averaging data can be done in two ways depending on the regulatory requirement. The data can be averaged into blocks of time that are discrete and distinct from each other and follow each other in time sequence. Alternatively, the data can be in the form of a rolling average which is averaged over a certain number of the immediately preceding time periods. The earliest time period in the average is dropped after a new time period has elapsed, and the new time period's data takes its place to complete the average. This is illustrated in Fig. 13, showing a three hour average in both block and rolling form.
+  </p>
+  <img alt="Figure 13: Three Hour Averages of Data. The figure contains two diagrams, (a) and (b), illustrating different averaging methods over a 15-hour timeline. Diagram (a) shows 3-hour block averages, with three distinct arcs representing the first three blocks (0-3, 3-6, 6-9 hours). Diagram (b) shows 3-hour rolling averages, with a continuous series of arcs starting from hour 0 and ending at hour 15, where each arc represents a 3-hour window ending at the current hour." src="abc0eb594f9d2c0daa0e60df05f2a666_img.jpg"/>
+  <div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+   <p>
+    a. 3-h block averages
+   </p>
+   <p>
+    b. 3-h rolling averages
+   </p>
+   <div class="img-alt">
+    Figure 13: Three Hour Averages of Data. The figure contains two diagrams, (a) and (b), illustrating different averaging methods over a 15-hour timeline. Diagram (a) shows 3-hour block averages, with three distinct arcs representing the first three blocks (0-3, 3-6, 6-9 hours). Diagram (b) shows 3-hour rolling averages, with a continuous series of arcs starting from hour 0 and ending at hour 15, where each arc represents a 3-hour window ending at the current hour.
+   </div>
+  </div>
+  <p>
+   <i>
+    Figure 13
+    <br/>
+    Three Hour Averages of Data
+   </i>
+  </p>
+  <p>
+   Rolling averages are used because malfunctions or upsets of equipment can be corrected, and emissions brought back under control, without causing nuisance alarms and indications of violations.
+  </p>
+  <h2>
+   Objective 7
+  </h2>
+  <p>
+   <b>
+    Explain the significance of environmental monitoring equipment failure.
+   </b>
+  </p>
+  <p>
+   Environmental monitoring has a defined minimum availability of the monitoring system and equipment. If the monitoring system malfunctions and does not produce reliable data, then there is no environmental monitoring. System availability is defined as a percentage as follows:
+  </p>
+  <p>
+   $$
+    \frac{\text{Total unit operating hours for which the monitor (system) provided quality-assured data}}{\text{Total operating hours during the period (daily, monthly, or quarterly)}} \times 100
+   $$
+  </p>
+  <p>
+   The system, or any of its individual components, does not have to fail completely for the system to be unavailable. The system fails to “provide quality – assured data” if an analyzer has a calibration error or if the calibration drift is excessive. At any time an analyzer’s drift exceeds twice the amount of drift in its performance specification, the analyzer is “out-of-control,” and the data that it produces is invalid. If the system availability falls below its required minimum, the monitoring system is out of compliance. This event becomes a license or regulation violation (just as if a limit on an emission’s concentration had been exceeded.)
+  </p>
+  <p>
+   Availability is sometimes referred to as “uptime,” and the required minima (minimum values) vary from jurisdiction to jurisdiction, and depending on the equipment used and the emissions monitored. Typical minima are from 90% to 95% in each calendar month.
+  </p>
+  <p>
+   Continuous Emissions Monitoring Systems that are used where emissions are reported in units of mass per unit time (e.g. kilograms per hour) fill in the database for time periods when data is invalid or if the data is unavailable due to system failure. The fill data that is used can be reference test data, Quality assured data from a certified backup system, data from predictive models, or data from algorithms that are approved by the regulatory authority. In Canada, the correlation between emissions and plant load, and/or the mass balance correlation between emissions and fuel flow, if they are pre-determined, can be used to fill in invalid or missing data for up to 168 hours. After that time, backfill data must come from either reference testing or another CEMS.
+  </p>
+  <h2>
+   Objective 8
+  </h2>
+  <h3>
+   <b>
+    Describe the procedures used for troubleshooting environmental monitoring equipment.
+   </b>
+  </h3>
+  <p>
+   Indications of problems with environmental monitoring equipment come from the system alarm screens and/or annunciators. The operating staff routinely checks the real-time data. The regulatory authorities also require periodic reviews of the recorded data. Alarms give an indication of immediate problems, such as analyzer failures or computer crashes. Data reviews give an indication of more long-term problems, such as:
+  </p>
+  <ul style="list-style-type: none">
+   <li>
+    • Data which is inaccurate to the degree that this is obvious to a visual inspection.
+   </li>
+   <li>
+    • Data which is showing a consistent long-term trend in one direction as though the analyzer were gradually failing.
+   </li>
+   <li>
+    • Data which is “flat lining,” meaning that the values are not changing and new data is not being collected.
+   </li>
+  </ul>
+  <p>
+   When a system problem is discovered, it is ascertained how the diagnosis and repair of the problem will affect the system’s availability for the current reporting period.
+  </p>
+  <p>
+   Questions to ask include:
+  </p>
+  <ul style="list-style-type: none">
+   <li>
+    • What is the level of availability for the current reporting period? (specifically, is additional downtime due to equipment diagnosis and repair likely to cause a non-compliance event?)
+   </li>
+   <li>
+    • Is the current problem already causing a loss of availability? (which makes the problem a high priority for immediate repair.)
+   </li>
+   <li>
+    • If not, then what is the likelihood that addressing the problem will cause a loss of availability, and for how long?
+   </li>
+   <li>
+    • How urgent is the repair? Can it wait until the next reporting period?
+   </li>
+  </ul>
+  <p>
+   If an alarm or annunciator indicated the problem, then it is likely that there is a malfunction or failure in a specific instrument or device which is indicated by the alarm system. Repair is a matter of having the appropriate staff diagnose the cause and repair it. If visual inspection of data indicates a problem, there are several possibilities:
+  </p>
+  <ul style="list-style-type: none">
+   <li>
+    • The analyzer is in the process of failing or is experiencing calibration drift.
+   </li>
+   <li>
+    • There is a problem with the electronic communication equipment between the analyzer and the data acquisition system computer. Environmental analyzers as well as their sensors and cables are located in various remote locations, and often in hostile environments.
+   </li>
+   <li>
+    • The data acquisition system computer is at fault.
+   </li>
+  </ul>
+  <p>
+   These possibilities are confirmed by the appropriate staff, one at a time, until the problem is found and corrected.
+  </p>
+  <p>
+   Breakdowns that require corrective maintenance that affects system availability, or may affect it, are repaired with special attention given to the root cause of the failure. This may include replacement of equipment which is aging or prone to failure, the introduction of new preventive maintenance practices, or the modification of existing maintenance practices including the interval of their scheduling.
+  </p>
+  <p>
+   Finally, if system availability is compromised for a reporting period, it is imperative to make the regulatory authority aware of this. If the data acquisition system is not accessed directly by the regulators, a formal notice of non-compliance is required, usually in writing. This may be required immediately or after the end of the reporting period.
+  </p>
+  <h2>
+   Chapter Questions
+  </h2>
+  <p>
+   B2.8
+  </p>
+  <ol style="list-style-type: none">
+   <li>
+    1. What is meant by
+    \(
+     PM_{10}
+    \)
+    and
+    \(
+     PM_{2.5}
+    \)
+    , and what is the significance of these terms?
+   </li>
+   <li>
+    2. What are the two basic categories of CEMS equipment, and what are the three basic components of a CEMS?
+   </li>
+   <li>
+    3. What are the three main elements of CEMS regulations?
+   </li>
+   <li>
+    4. Explain the meaning and significance of the terms “BOD” and “COD.”
+   </li>
+   <li>
+    5. What is the source of the wastewater parameter limits that a plant must work within?
+   </li>
+   <li>
+    6. Explain the concept of a rolling average for environmental monitoring data.
+   </li>
+   <li>
+    7. If CEMS data is invalid, what other sources can be used to backfill the emissions database?
+   </li>
+   <li>
+    8. How are problems with an environmental monitoring system's data discovered?
+   </li>
+  </ol>
+ </body>
+</html>

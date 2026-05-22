@@ -1,0 +1,4152 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="utf-8"/>
+<script>
+    MathJax = {
+      tex: {
+        inlineMath: [['\\(', '\\)']],
+        displayMath: [['$$', '$$']]
+      }
+    };
+    </script>
+<script async="" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+<div id="nav-header" style="padding: 15px 20px; background: #2c3e50; color: white; display: flex; align-items: center; gap: 20px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+<a href="../index.html" style="color: white; text-decoration: none; background: #34495e; padding: 8px 16px; border-radius: 4px; font-weight: 600; font-size: 0.9rem; transition: background 0.2s;">← Back to Index</a>
+<h1 style="margin: 0; font-size: 1.2rem; font-weight: 500; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Power Engineering Series</h1>
+</div>
+<h1>
+   End of Chapter Questions
+   <br/>
+   and Solutions
+  </h1>
+<h1>
+   Chapter 1 Solutions
+  </h1>
+<h2>
+   Steam Turbine Theory and Construction
+  </h2>
+<ol style="list-style-type: none">
+<li>
+    1. Describe why some turbines are designed with steam entering through two separate inlets in the LP cylinder.
+   </li>
+</ol>
+<p>
+   The design of turbine blading affects the reliability and efficiency of the turbine. The longer the blade the greater the bending force at the root, or fixing point, of the blade. There is also a centrifugal force, due to the speed at which the blade is rotating, trying to throw the blade outwards. These two forces—the bending force and the throwing-out force—are at maximum in the largest blade wheel at the LP exhaust end of the turbine. Thus, the stresses which these forces impose limit the size of the blades and the diameter of the last wheel. This limitation is one of the reasons why turbines are designed with double flow in the LP cylinder.
+  </p>
+<p>
+   In the double flow design, steam enters at the centre of the rotor with half of the steam flowing to the front of the machine and half flowing toward the rear of the machine. This design can handle double the flow of steam compared to a single flow with the same diameter of blading.
+  </p>
+<ol style="list-style-type: none">
+<li>
+    2. Sketch and describe a dummy piston used to counteract thrust forces in a steam turbine.
+   </li>
+</ol>
+<p>
+   There is a pressure drop across each row of blades in a reaction turbine, and a considerable force is set up, which acts on the rotor in the direction of the steam flow. In order to counteract this force and reduce the load on the thrust bearings, dummy pistons are designed as part of the rotor at the steam inlet end. The dummy piston diameter is calculated so that the force of the steam pressure acting upon it in the opposite direction to the steam flow balances out the force on the rotor blades in the direction of the steam flow. The size of the dummy piston is designed to keep a small but definite thrust towards the exhaust end of the turbine. A balance pipe is connected from the casing, on the outer side of the balance piston, to a tap-off point down the cylinder. The differential pressure remains constant at varying steam flow conditions.
+  </p>
+<img alt="Diagram of a steam turbine showing a dummy piston and balance pipe. A circular inset shows a detail of the labyrinth packing. Labels include: 'Labyrinth Packing to Prevent Steam Leakage', 'Steam Inlet', 'Steam Thrust on Blades', 'Thrust Due to Steam Pressure', and 'Balance Pipe'." src="2173c0102e23a5ff29d90d4353fc0339_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    Diagram of a steam turbine showing a dummy piston and balance pipe. A circular inset shows a detail of the labyrinth packing. Labels include: 'Labyrinth Packing to Prevent Steam Leakage', 'Steam Inlet', 'Steam Thrust on Blades', 'Thrust Due to Steam Pressure', and 'Balance Pipe'.
+   </div>
+</div>
+<p>
+<i>
+    Dummy Piston and Balance Pipe
+   </i>
+</p>
+<ol style="list-style-type: none">
+<li>
+    3. Sketch and describe a velocity-vector diagram for impulse moving blading.
+   </li>
+</ol>
+<img alt="Velocity-vector diagram for impulse moving blading. It shows vectors V1, V2, Vn1, Vn2, Vw1, and Vw2 relative to the 'Direction of Blade Motion'. Angles alpha, beta, gamma, and delta are indicated." src="4792a2ccd62226861fadc22117edb7b1_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    Velocity-vector diagram for impulse moving blading. It shows vectors V1, V2, Vn1, Vn2, Vw1, and Vw2 relative to the 'Direction of Blade Motion'. Angles alpha, beta, gamma, and delta are indicated.
+   </div>
+</div>
+<p>
+<i>
+    Turbine Blade Velocity-Vector Diagram
+   </i>
+</p>
+<p>
+   The letters used in the turbine blading diagrams are from the Greek alphabet:
+  </p>
+<table>
+<tr data-bbox="477 1568 685 1606">
+<td>
+     \(
+      \alpha
+     \)
+    </td>
+<td>
+     Alpha
+    </td>
+</tr>
+<tr data-bbox="477 1606 685 1644">
+<td>
+     \(
+      \beta
+     \)
+    </td>
+<td>
+     Beta
+    </td>
+</tr>
+<tr data-bbox="477 1644 685 1684">
+<td>
+     \(
+      \delta
+     \)
+    </td>
+<td>
+     Delta
+    </td>
+</tr>
+<tr data-bbox="477 1684 685 1726">
+<td>
+     \(
+      \gamma
+     \)
+    </td>
+<td>
+     Gamma
+    </td>
+</tr>
+</table>
+<p>
+   Explanation of Terms in the Above Diagram
+  </p>
+<p>
+   \(
+    V_1
+   \)
+   represents (in magnitude and direction) the steam leaving the nozzle. This becomes the steam inlet to the moving blade.
+  </p>
+<ul style="list-style-type: none">
+<li>
+    \(
+     \alpha
+    \)
+    is the angle of the axis of the nozzle with the direction of blade movement.
+   </li>
+<li>
+    \(
+     V_b
+    \)
+    is the blade velocity.
+   </li>
+<li>
+    \(
+     V_{R1}
+    \)
+    (Velocity, relative, inlet) is the resultant of
+    \(
+     V_1
+    \)
+    and
+    \(
+     V_b
+    \)
+    and represents the velocity and direction of the incoming steam relative to the moving blade.
+   </li>
+<li>
+    \(
+     \beta
+    \)
+    is the inlet angle of the blade. Note that this angle matches the incoming steam direction exactly so the steam enters the blades without shock.
+   </li>
+</ul>
+<p>
+   The above angles and sides form the
+   <b>
+    inlet blade velocity
+   </b>
+   diagram.
+  </p>
+<p>
+   Another triangle is formed by the conditions obtained at the
+   <b>
+    moving blade outlet
+   </b>
+   as follows:
+  </p>
+<ul style="list-style-type: none">
+<li>
+    \(
+     V_{R2}
+    \)
+    represents the steam leaving the blade.
+    \(
+     V_{R2}
+    \)
+    is measured relative to the moving blade. The only reduction in magnitude of this steam velocity will be that due to friction as the steam passes over the blade. The direction of steam leaving the blade (angle
+    \(
+     \gamma
+    \)
+    ) depends upon the shape of blade used.
+   </li>
+<li>
+    \(
+     \gamma
+    \)
+    is the exit angle of the blade.
+   </li>
+<li>
+    \(
+     V_b
+    \)
+    represents the blade speed (this is identical with
+    \(
+     V_b
+    \)
+    in the inlet triangle).
+   </li>
+<li>
+    \(
+     V_2
+    \)
+    is the resultant of
+    \(
+     V_{R2}
+    \)
+    and
+    \(
+     V_b
+    \)
+    and represents the absolute steam-exit speed and direction. The term absolute is used when a measurement is made with reference to a fixed object, in this case the fixed parts of the turbine. The fixed parts are the casing or the fixed blades. The term relative is used when a measurement is made with reference to a moving object, in this case the moving blades.
+   </li>
+<li>
+    \(
+     \delta
+    \)
+    is the angle at which the steam leaves the moving blade, referred to a fixed point. Hence, this is its angle of approach to the next row of fixed blades.
+   </li>
+</ul>
+<ol style="list-style-type: none">
+<li>
+    4. a)
+    <b>
+     What is the difference between an extraction turbine and a bleeder turbine?
+    </b>
+<br/>
+    b)
+    <b>
+     What are typical applications for these types of turbines?
+    </b>
+<ol style="list-style-type: none">
+<li>
+      a) In some condensing turbines not all of the steam passes through to the exhaust. Part of the steam is extracted, or bled off, at one or more points. After doing some work by expansion, the extracted steam is used to heat the feedwater. This cycle, which uses bled steam to heat feedwater, is called a regenerative cycle and the turbine is called a bleeder turbine.
+     </li>
+</ol>
+</li>
+</ol>
+<p>
+   Similarly, steam may be drawn off at one or more points at different pressures for process steam. This requires automatic control of the steam quantity supplied to the lower pressure section of the turbine. This arrangement is termed automatic extraction in contrast to bleeder turbines, where the pressure at the bleed points varies with the steam flow through the turbine. Bleed points range in number from one to eight, but extraction generally requires only one or two pressure levels.
+  </p>
+<ol style="list-style-type: none">
+<li>
+<ol style="list-style-type: none">
+<li>
+      b) The steam from a bleeder turbine is used to heat feedwater in a boiler feedwater heater. Steam from an extraction turbine supplies at a lower pressure for process use.
+     </li>
+</ol>
+</li>
+<li>
+    5.
+    <b>
+     When would a turbine be constructed using a double casing? Explain.
+    </b>
+</li>
+</ol>
+<p>
+   Double casings are used for very high steam pressure applications. The highest pressure is applied to the inner casing, which is open at the exhaust end. The turbine inner casing exhausts to the outer casing. The pressure is divided between the casings, and more importantly, so is the temperature. The thermal stresses on casings and flanges are greatly reduced.
+  </p>
+<ol style="list-style-type: none">
+<li>
+    6. a)
+    <b>
+     Describe a disc type of turbine rotor.
+    </b>
+<br/>
+    b)
+    <b>
+     What is a common application for this type of rotor?
+    </b>
+<ol style="list-style-type: none">
+<li>
+      a) The disc rotor is constructed of a number of separately forged discs or wheels. The hubs of these wheels are shrunk or keyed onto the central shaft. The outer rims of the wheels have grooves machined to allow for attaching the blades. Suitable clearances are left between the hubs to allow for expansion axially along the line of the shaft. Disc rotors are also referred to as built-up rotors.
+     </li>
+</ol>
+</li>
+</ol>
+<p>
+   Under operating conditions, the temperature of the wheels rises faster than that of the shaft. This might tend to make the wheel hubs become loose. To avoid any such danger, care is taken during construction of the rotor to ensure the wheels are shrunk on tight and correctly stressed. Fig. 14 illustrates a disc type of rotor which is the type used in the LP cylinder of most designs of large turbines.
+  </p>
+<ol style="list-style-type: none">
+<li>
+<ol style="list-style-type: none">
+<li>
+      b) Disc type rotors are used in the LP cylinder of most designs of large turbines.
+     </li>
+</ol>
+</li>
+<li>
+    7.
+    <b>
+     What are three types of shaft seals used on steam turbines?
+    </b>
+</li>
+</ol>
+<p>
+   The following types of shaft seals are used on steam turbines:
+  </p>
+<ul style="list-style-type: none">
+<li>
+    • Carbon Rings
+   </li>
+<li>
+    • Labyrinth Seals
+   </li>
+<li>
+    • Water Seals
+   </li>
+</ul>
+<ol style="list-style-type: none">
+<li>
+    8. a) What are two methods of lubricating steam turbine bearings?
+    <br/>
+    b) What applications would be suitable for each type?
+   </li>
+<li>
+    a) Two methods of lubricating steam turbine bearings are:
+   </li>
+<li>
+<ul style="list-style-type: none">
+<li>
+      • Ring oiled
+     </li>
+<li>
+      • Pressure fed
+     </li>
+</ul>
+</li>
+<li>
+    b) Most small mechanical-drive turbines are fitted with ring-oiled bearings. Large turbine main bearings generally consist of shells split horizontally and lined with an anti-friction bearing metal. The bearings are enclosed in a housing to which a generous supply of oil is pumped by the circulating pump. This oil is delivered to the bearing, and chamfers and oil grooves assist in its even distribution along the length of the journal.
+   </li>
+<li>
+    9. Steam flows from a nozzle of a simple impulse turbine at a velocity of 550 m/s and an angle of
+    \(
+     21^\circ
+    \)
+    to the direction of blade motion. Blade velocity is 220 m/s. Neglecting blade friction, and with equal blade inlet and outlet angles, calculate:
+   </li>
+<li>
+    a) The blade inlet angle so that the steam will enter without shock (
+    \(
+     V_2
+    \)
+    ).
+    <br/>
+    b) The magnitude and direction of the absolute velocity of the steam leaving the blades.
+   </li>
+</ol>
+<h3>
+   Solution
+  </h3>
+<p>
+   The combined velocity-vector diagram representing the conditions must first be drawn.
+  </p>
+<img alt="Impulse Blading Vector Diagram showing velocity vectors V1, V2, Vw1, Vw2, Vn1, Vn2, Vb, and angles alpha, beta, delta." src="6bbc398f520a7bcc5491cab18d3e4cac_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<p>
+    The diagram illustrates the velocity vectors for an impulse turbine blade. A horizontal line represents the blade's path, with the blade velocity
+    \(
+     V_b = 220 \text{ m/s}
+    \)
+    indicated by a double-headed arrow. The absolute inlet velocity
+    \(
+     V_1 = 550 \text{ m/s}
+    \)
+    is shown as a vector entering from the top left at an angle
+    \(
+     \alpha = 21^\circ
+    \)
+    . The relative inlet velocity
+    \(
+     V_{r1}
+    \)
+    is the vector difference between
+    \(
+     V_1
+    \)
+    and
+    \(
+     V_b
+    \)
+    . The absolute outlet velocity
+    \(
+     V_2
+    \)
+    is shown as a vector exiting to the top right. The relative outlet velocity
+    \(
+     V_{r2}
+    \)
+    is the vector difference between
+    \(
+     V_2
+    \)
+    and
+    \(
+     V_b
+    \)
+    . The diagram also shows the axial components
+    \(
+     V_{n1}
+    \)
+    and
+    \(
+     V_{n2}
+    \)
+    , the tangential components
+    \(
+     V_{w1}
+    \)
+    and
+    \(
+     V_{w2}
+    \)
+    , and the blade inlet and outlet angles
+    \(
+     \beta
+    \)
+    and
+    \(
+     \delta
+    \)
+    .
+   </p>
+<div class="img-alt">
+    Impulse Blading Vector Diagram showing velocity vectors V1, V2, Vw1, Vw2, Vn1, Vn2, Vb, and angles alpha, beta, delta.
+   </div>
+</div>
+<p>
+   Impulse Blading Vector Diagram
+  </p>
+<p>
+   Given data:
+  </p>
+<p>
+   $$
+    V_1 = 550 \text{ m/s}
+   $$
+  </p>
+<p>
+   $$
+    V_b = 220 \text{ m/s}
+   $$
+  </p>
+<p>
+   $$
+    \alpha = 21^\circ
+   $$
+  </p>
+<p>
+   $$
+    V_{R2} = V_{R1}
+   $$
+  </p>
+<p>
+   $$
+    \gamma = \beta
+   $$
+  </p>
+<p>
+   Values
+   \(
+    X_1
+   \)
+   and
+   \(
+    X_B
+   \)
+   are added to the diagram for ease of reference and to simplify the trigonometric calculations.
+  </p>
+<p>
+   (a) Blade inlet angle so that the steam will enter without shock (
+   \(
+    V_2
+   \)
+   ).
+  </p>
+<p>
+   $$
+    V_{w1} = V_1 \times \cos \alpha
+   $$
+  </p>
+<p>
+   $$
+    V_{w1} = 550 \text{ m/s} \times \cos 21^\circ
+   $$
+  </p>
+<p>
+   $$
+    V_{w1} = 550 \text{ m/s} \times 0.9336
+   $$
+  </p>
+<p>
+   $$
+    V_{w1} = 513.47 \text{ m/s}
+   $$
+  </p>
+<p>
+   $$
+    V_{f1} = V_1 \times \sin \alpha
+   $$
+  </p>
+<p>
+   $$
+    V_{f1} = 550 \text{ m/s} \times \sin 21^\circ
+   $$
+  </p>
+<p>
+   $$
+    V_{f1} = 550 \text{ m/s} \times 0.3584
+   $$
+  </p>
+<p>
+   $$
+    V_{f1} = 197.10 \text{ m/s}
+   $$
+  </p>
+<p>
+   $$
+    X_1 = V_{w1} - V_B
+   $$
+  </p>
+<p>
+   $$
+    X_1 = 513.47 \text{ m/s} - 220 \text{ m/s}
+   $$
+  </p>
+<p>
+   $$
+    X_1 = 293.47 \text{ m/s}
+   $$
+  </p>
+<p>
+   $$
+    \beta = \tan^{-1} \frac{V_{f1}}{X_1}
+   $$
+  </p>
+<p>
+   $$
+    \beta = \tan^{-1} \left( \frac{197.10 \text{ m/s}}{293.47 \text{ m/s}} \right)
+   $$
+  </p>
+<p>
+   $$
+    \beta = \tan^{-1} (0.6716)
+   $$
+  </p>
+<p>
+   $$
+    \beta = 33^\circ 53' \text{ (Ans.)}
+   $$
+  </p>
+<p>
+   (b) Magnitude and direction of the absolute velocity of the steam leaving the blades.
+  </p>
+<p>
+   $$
+    \text{Blade outlet angle } \gamma = \text{Blade inlet angle } \beta
+   $$
+  </p>
+<p>
+   $$
+    \gamma = \beta
+   $$
+  </p>
+<p>
+   $$
+    \text{Blade outlet angle } \gamma = 33^\circ 53' \text{ (Ans.)}
+   $$
+  </p>
+<p>
+   Since
+   \(
+    V_{R2} = V_{R1}
+   \)
+  </p>
+<p>
+   $$
+    X_B = X_1
+   $$
+  </p>
+<p>
+   Then But
+   \(
+    X_1 = 293.47 \text{ m/s}
+   \)
+  </p>
+<p>
+   $$
+    X_B = 293.47 \text{ m/s}
+   $$
+  </p>
+<p>
+   $$
+    V_{W0} = X_E - V_B
+   $$
+  </p>
+<p>
+   $$
+    V_{W0} = 293.47 \text{ m/s} - 220 \text{ m/s}
+   $$
+  </p>
+<p>
+   $$
+    V_{W0} = 73.47 \text{ m/s}
+   $$
+  </p>
+<p>
+   $$
+    V_{FB} = V_{F1}
+   $$
+  </p>
+<p>
+   But
+   \(
+    V_{F1} = 197.10 \text{ m/s}
+   \)
+  </p>
+<p>
+   $$
+    V_{FB} = 197.10 \text{ m/s}
+   $$
+  </p>
+<p>
+   From Pythagoras's theorem:
+  </p>
+<p>
+   $$
+    V_2 = \sqrt{V_{FB}^2 + V_{W0}^2}
+   $$
+  </p>
+<p>
+   $$
+    V_2 = \sqrt{(197.10 \text{ m/s})^2 + (73.47 \text{ m/s})^2}
+   $$
+  </p>
+<p>
+   $$
+    V_2 = \sqrt{38848.41 + 5397.84}
+   $$
+  </p>
+<p>
+   $$
+    V_2 = \sqrt{44246.25}
+   $$
+  </p>
+<p>
+   Magnitude of steam velocity
+   \(
+    V_2 = \mathbf{210.35 \text{ m/s}}
+   \)
+   (Ans.)
+  </p>
+<ol style="list-style-type: none">
+<li>
+    10. Steam leaves the fixed blades of one stage of a reaction turbine at 122 m/s with an exit angle of
+    \(
+     23^\circ
+    \)
+    . The moving blades travel with a linear speed of 88 m/s and the steam consumption of the turbine is 1.1 kg/s.
+   </li>
+<li>
+<ol style="list-style-type: none">
+<li>
+      Calculate the entrance angle of the blades
+     </li>
+<li>
+      Horsepower developed in one turbine stage (assume 50% reaction blading).
+     </li>
+</ol>
+</li>
+</ol>
+<h4>
+   Solution
+  </h4>
+<img alt="Vector diagram for a reaction turbine. The diagram shows two horizontal lines representing the absolute velocity (V1) and blade velocity (Vb) paths. The absolute velocity V1 = 122 m/s enters at an angle of 23 degrees from the horizontal at point C and exits at point E. The blade velocity Vb = 88 m/s is shown as a horizontal vector from A to B. The relative velocity Vrf is shown as a vector from A to D. The total change in velocity of whirl is indicated by a horizontal double-headed arrow between C and E. The angle alpha is 23 degrees at point B." src="3121afa7ca030b22ee0345864ca6f38b_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    Vector diagram for a reaction turbine. The diagram shows two horizontal lines representing the absolute velocity (V1) and blade velocity (Vb) paths. The absolute velocity V1 = 122 m/s enters at an angle of 23 degrees from the horizontal at point C and exits at point E. The blade velocity Vb = 88 m/s is shown as a horizontal vector from A to B. The relative velocity Vrf is shown as a vector from A to D. The total change in velocity of whirl is indicated by a horizontal double-headed arrow between C and E. The angle alpha is 23 degrees at point B.
+   </div>
+</div>
+<p>
+   Vector Diagram
+  </p>
+<p>
+   a) Given:
+  </p>
+<p>
+   $$
+    V_1 = 122 \text{ m/s}
+   $$
+  </p>
+<p>
+   $$
+    V_b = 88 \text{ m/s}
+   $$
+  </p>
+<p>
+   $$
+    \angle \alpha = 23^\circ
+   $$
+  </p>
+<p>
+   Reaction (or 50% reaction) blading has identical moving and fixed blades. The angles and vectors around point A are duplicated around point B. The angle required is
+   \(
+    \beta
+   \)
+   .
+  </p>
+<p>
+   $$
+    \cos 23^\circ = \frac{DB}{V_1}
+   $$
+  </p>
+<p>
+   $$
+    \text{Chapter 2} \quad DB = V_1 \cos 23^\circ
+   $$
+  </p>
+<p>
+   $$
+    DB = 122 \text{ m/s} \times 0.9205
+   $$
+  </p>
+<p>
+   $$
+    DB = 112.30 \text{ m/s}
+   $$
+  </p>
+<p>
+   $$
+    DA = DB - AB
+   $$
+  </p>
+<p>
+   $$
+    DA = 112.30 \text{ m/s} - 88
+   $$
+  </p>
+<p>
+   $$
+    DA = 24.30 \text{ m/s}
+   $$
+  </p>
+<p>
+   $$
+    \sin 23^\circ = \frac{CD}{V_1}
+   $$
+  </p>
+<p>
+   $$
+    CD = V_1 \sin 23^\circ
+   $$
+  </p>
+<p>
+   $$
+    CD = 122 \text{ m/s} \times 0.3907
+   $$
+  </p>
+<p>
+   $$
+    CD = 47.67 \text{ m/s}
+   $$
+  </p>
+<p>
+   $$
+    \tan \beta = \frac{CD}{DA}
+   $$
+  </p>
+<p>
+   $$
+    \tan \beta = \frac{47.67 \text{ m/s}}{24.30 \text{ m/s}}
+   $$
+  </p>
+<p>
+   $$
+    \tan \beta = 1.9617
+   $$
+  </p>
+<p>
+   Entrance angle of the blades
+   \(
+    \beta = 62^\circ 59'
+   \)
+   (Ans.)
+  </p>
+<p>
+   The total change in the velocity of whirl is required for calculations of work done on the blading as detailed earlier. This is represented by the length
+   \(
+    CE
+   \)
+   on the diagram:
+  </p>
+<p>
+   $$
+    CE = DA + AB + BF \text{ (because } CD \text{ and } EF \text{ are perpendiculars)}
+   $$
+  </p>
+<p>
+   b) If the diagram is symmetrical about its centre:
+  </p>
+<p>
+   $$
+    \text{then } DA = BF
+   $$
+  </p>
+<p>
+   $$
+    \text{and } CE = 2 \times DA + AB
+   $$
+  </p>
+<p>
+   $$
+    \text{But } AB \text{ is blade speed } 88 \text{ m/s and } DA = 24.30 \text{ m/s}
+   $$
+  </p>
+<p>
+   $$
+    CE = 2 \times DA + AB
+   $$
+  </p>
+<p>
+   $$
+    CE = (2 \times 24.30 \text{ m/s}) + 88 \text{ m/s}
+   $$
+  </p>
+<p>
+   $$
+    CE = 48.60 \text{ m/s} + 88 \text{ m/s}
+   $$
+  </p>
+<p>
+   $$
+    CE = 136.60 \text{ N}
+   $$
+  </p>
+<p>
+   $$
+    \text{Force exerted on blading} = w \times a \text{ (newtons )}
+   $$
+  </p>
+<p>
+   $$
+    \text{Force exerted on blading} = \text{kg steam/s} \times \text{change in velocity, m/s}^2
+   $$
+  </p>
+<p>
+   $$
+    \text{Force exerted on blading} = 1.1 \text{ kg/s} \times 136.60 \text{ m/s}
+   $$
+  </p>
+<p>
+   $$
+    \text{Force exerted on blading} = 150.26 \text{ N}
+   $$
+  </p>
+<p>
+   $$
+    \text{Horsepower developed} = \text{force} \times \text{bleed speed, Nm/s}
+   $$
+  </p>
+<p>
+   $$
+    \text{Horsepower developed} = \frac{150.26 \times 88 \text{ m/s}}{1000}
+   $$
+  </p>
+<p>
+   $$
+    \text{Horsepower developed} = 13.22 \text{ kW (Ans.)}
+   $$
+  </p>
+<p>
+   11. Steam is supplied to a turbine at a pressure of 10 250 kPa and 500°C. It is then expanded adiabatically and without friction to a backpressure of 15 kPa. It is condensed at this pressure and returned to the boiler by a feedwater pump.
+  </p>
+<p>
+   Neglecting the pump work, calculate:
+  </p>
+<ol style="list-style-type: none">
+<li>
+    Heat supplied per kg of steam
+   </li>
+<li>
+    Work done by turbine per kg steam
+   </li>
+</ol>
+<h4>
+   c) Thermal efficiency
+  </h4>
+<h3>
+   Solution
+  </h3>
+<p>
+   (a) Enthalpy per kg of steam:
+  </p>
+<p>
+   $$
+    10 \text{ 250 kPa, } 500^\circ\text{C} = 10 \text{ 000 kPa, } 500^\circ\text{C} + \frac{250}{1000}(11 \text{ 000 kPa, } 500^\circ\text{C} - 10 \text{ 000 kPa at } 500^\circ\text{C})
+   $$
+  </p>
+<p>
+   $$
+    10 \text{ 250 kPa, } 500^\circ\text{C} = 3373.7 \text{ kJ/kg} + \frac{250}{1000}(3361.0 \text{ kJ/kg} - 3373.7 \text{ kJ/kg})
+   $$
+  </p>
+<p>
+   $$
+    10 \text{ 250 kPa, } 500^\circ\text{C} = 3373.7 \text{ kJ/kg} + \frac{250}{1000}(-12.70 \text{ kJ/kg})
+   $$
+  </p>
+<p>
+   $$
+    10 \text{ 250 kPa, } 500^\circ\text{C} = 3373.7 \text{ kJ/kg} - 3.175 \text{ kJ/kg}
+   $$
+  </p>
+<p>
+   $$
+    10 \text{ 250 kPa, } 500^\circ\text{C} = 3370.53 \text{ kJ/kg}
+   $$
+  </p>
+<p>
+   $$
+    \text{Enthalpy Water at } 15 \text{ kPa} = 225.94 \text{ kJ/kg}
+   $$
+  </p>
+<p>
+   $$
+    \text{Heat supplied} = 3370.53 \text{ kJ/kg} - 225.94 \text{ kJ/kg}
+   $$
+  </p>
+<p>
+   $$
+    \text{Heat supplied} = \mathbf{3144.59 \text{ kJ/kg}} \text{ (Ans.)}
+   $$
+  </p>
+<p>
+   (b) Work done by turbine per kg steam:
+  </p>
+<p>
+   Entropy:
+  </p>
+<p>
+   $$
+    10\ 250\ \text{kPa}, 500^\circ\text{C} = 10\ 000\ \text{kPa}, 500^\circ\text{C} + \frac{250}{1000}(11\ 000\ \text{kPa}, 500^\circ\text{C} - 10\ 000\ \text{kPa}, 500^\circ\text{C})
+   $$
+  </p>
+<p>
+   $$
+    10\ 250\ \text{kPa}, 500^\circ\text{C} = 6.5966\ \text{kJ/kg} + \frac{250}{1000}(6.5400\ \text{kJ/kg} - 6.5966\ \text{kJ/kg})
+   $$
+  </p>
+<p>
+   $$
+    10\ 250\ \text{kPa}, 500^\circ\text{C} = 6.5966\ \text{kJ/kg} + \frac{250}{1000}(-0.0566\ \text{kJ/kg})
+   $$
+  </p>
+<p>
+   $$
+    10\ 250\ \text{kPa}, 500^\circ\text{C} = 6.5966\ \text{kJ/kg} - 0.0142
+   $$
+  </p>
+<p>
+   $$
+    10\ 250\ \text{kPa}, 500^\circ\text{C} = 6.5824\ \text{kJ/kg}
+   $$
+  </p>
+<p>
+   $$
+    1\ \text{kg water at } 15\ \text{kPa} = 0.7549\ \text{kJ/kg}
+   $$
+  </p>
+<p>
+   Difference = change in entropy
+  </p>
+<p>
+   $$
+    \text{Difference} = 6.5824\ \text{kJ/kg} - 0.7549\ \text{kJ/kg}
+   $$
+  </p>
+<p>
+   $$
+    \text{Difference} = 5.8275\ \text{kJ/kg}
+   $$
+  </p>
+<p>
+   \(
+    T_a
+   \)
+   = absolute temperature of steam at 15 kPa
+  </p>
+<p>
+   $$
+    T_a = 53.97^\circ\text{C} + 273
+   $$
+  </p>
+<p>
+   $$
+    T_a = 326.97\ \text{K}
+   $$
+  </p>
+<p>
+   $$
+    \text{Heat rejected} = T_a \times \text{Change in entropy}
+   $$
+  </p>
+<p>
+   $$
+    \text{Heat rejected} = 326.97\ \text{K} \times 5.8275\ \text{kJ/kg}
+   $$
+  </p>
+<p>
+   $$
+    \text{Heat rejected} = 1905.42\ \text{kJ}
+   $$
+  </p>
+<p>
+   $$
+    \text{Work done} = 3144.59\ \text{kJ/kg} - 1905.42\ \text{kJ/kg}
+   $$
+  </p>
+<p>
+   $$
+    \text{Work done} = \mathbf{1239.17\ kJ/kg\ (Ans.)}
+   $$
+  </p>
+<p>
+   (c) Thermal efficiency:
+  </p>
+<p>
+   $$
+    \text{Rankine Cycle Thermal Efficiency} = \frac{\text{work done}}{\text{heat supplied}}
+   $$
+  </p>
+<p>
+   $$
+    \text{Rankine Cycle Thermal Efficiency} = \frac{1239.17}{3144.59} \times 100
+   $$
+  </p>
+<p>
+   $$
+    \text{Rankine Cycle Thermal Efficiency} = 0.3941 \times 100
+   $$
+  </p>
+<p>
+   $$
+    \text{Rankine Cycle Thermal Efficiency} = \mathbf{39.41\% \ (Ans.)}
+   $$
+  </p>
+<h2>
+   Chapter 2 Solutions
+  </h2>
+<h2>
+   Steam Turbine Auxiliaries and Control
+  </h2>
+<h3>
+   1. What is a thrust adjusting gear used for?
+  </h3>
+<p>
+   The efficiency of reaction turbines depends upon the close clearances between the stationary and moving blades. To protect the axial seals, an adjustable thrust bearing is used. The thrust block is cylindrical and fits like a piston in the cylinder. The thrust block can be adjusted axially. The axial position of the rotor is controlled within strictly defined limits. During startup, the thrust block is moved against a stop in the direction of the turbine exhaust. This setting is for maximum clearance between the stationary and moving blades so that uneven temperatures during startup do not cause rubbing. When the turbine is heated up and loaded, the thrust block is adjusted to reducing the clearances to minimum clearance producing maximum efficiency.
+  </p>
+<h3>
+   2. When is a turning gear used? When starting up a turbine, at what point is the turning gear shut off?
+  </h3>
+<p>
+   When a turbine is left cold and at a standstill, the mass of the rotor tends to cause the rotor to sag slightly. This is called
+   <b>
+    bowing
+   </b>
+   . If left at a standstill while the turbine is still hot, the lower half of the rotor cools faster than the upper half. The rotor bends upwards. This is called
+   <b>
+    hogging
+   </b>
+   . In both cases, the turbine is difficult, if not impossible, to start up due to rubbing within the bearings, glands and diaphragms. To overcome this problem, the manufacturer supplies large turbines with a turning or barring gear. It consists of an electric motor and sets of reducing gears that turn the turbine shaft at low speed. Once the turbine rotor is above 40 rpm, the barring gear is shutoff.
+  </p>
+<h3>
+   3. Describe the difference between lubrication oil and jacking oil. What is governor oil used for?
+  </h3>
+<h4>
+   Lubrication Oil
+  </h4>
+<p>
+   Turbines are the prime movers that many plants depend upon. They must be provided with a reliable supply of lubrication oil. The size of the turbine determines whether to use a simple or complex lubricating system. Turbines of less than 150 kW, used to drive auxiliary equipment, are often provided with ring-oiled bearings.
+  </p>
+<p>
+   Moderate-sized turbines, particularly if driving through a reduction gear, may have both ring-oiled bearings and a circulating system. These pressurized oil systems not only supply oil in the form of a spray to the gears but also supply oil to the bearings of the gearbox and the turbine.
+  </p>
+<p>
+   Large turbines have circulating systems supplying oil to the:
+  </p>
+<ul style="list-style-type: none">
+<li>
+    • Turbine bearings
+   </li>
+<li>
+    • Governor mechanisms
+   </li>
+<li>
+    • Hydraulically operated steam throttle valves
+   </li>
+<li>
+    • Bearings of the driven generators
+   </li>
+</ul>
+<h4>
+<b>
+    Jacking Oil
+   </b>
+</h4>
+<p>
+   Large turbines, with heavy rotors, are generally equipped with a jacking oil pump. It supplies the lower part of the bearings with oil, at approximately 2 000 to 10 000 kPa, lifting the shaft and supplying lubricating oil. Oil pressure lifts or jacks the shaft a few millimeters, so there is no metal-to-metal contact during the initial movement of the rotor. Jacking of the shaft reduces the load on the barring gear motor. Jacking oil is applied before starting the barring gear and while operating the turbine at slow speed.
+  </p>
+<h4>
+<b>
+    Governor Oil
+   </b>
+</h4>
+<p>
+   Governor relay oil acts as a sensitive regulating medium. It transmits oil pressure signals to various parts of the governor oil system.
+  </p>
+<h3>
+<b>
+    4. Explain static and dynamic balancing. When is each type used?
+   </b>
+</h3>
+<p>
+<b>
+    Static
+   </b>
+   balancing involves supporting the shaft journals on transverse “knife edges. Rotors are statically balanced at rest. The tendency of the rotor to roll is measured. Then mass is added or removed to delete the tendency to roll.
+  </p>
+<p>
+<b>
+    Dynamic
+   </b>
+   balancing is done after the static process in a machine with flexible bearing supports. The rotor is run up to speed by an electric motor, and vibrations are measured. Mass is added or removed to the rotor before it is retested. The process is repeated until the vibration readings are in an acceptable range. The balanced rotor must have very low vibrations when running at designed speed. New rotors are balanced at the factory. Overhauled or refurbished rotors must also be dynamically balanced.
+  </p>
+<h3>
+<p>
+<b>
+     5. Describe the two distinct functions of a trip and throttle valve.
+    </b>
+</p>
+</h3>
+<p>
+   Trip and throttle valves have the following two separate and distinct functions:
+  </p>
+<ul style="list-style-type: none">
+<li>
+    • When a safety device such as an overspeed governor manually or automatically trips the trip and throttle valve, it acts as a quick-closing valve
+   </li>
+<li>
+    • It also operates as a hand throttle valve for starting and bringing the turbine up to speed.
+   </li>
+</ul>
+<h3>
+<p>
+<b>
+     6. What are the three methods of speed-sensitive governing used for steam turbines?
+    </b>
+</p>
+</h3>
+<p>
+   Three methods of speed-sensitive governor are:
+  </p>
+<ul style="list-style-type: none">
+<li>
+    • Nozzle
+   </li>
+<li>
+    • Throttle
+   </li>
+<li>
+    • Bypass or overload
+   </li>
+</ul>
+<h3>
+<p>
+<b>
+     7. What is coupling “lock up”? What types of problems does a locked coupling cause?
+    </b>
+</p>
+</h3>
+<p>
+   Couplings can lock up (fail to move) transferring axial movement through the shaft. This can cause overloading of thrust bearings and vibration problems.
+  </p>
+<h3>
+<p>
+<b>
+     8. When are speed reduction gears used? List some applications using speed reduction gears.
+    </b>
+</p>
+</h3>
+<p>
+   Steam turbines operate at speeds higher than the required operating speed of the driven machine. Reduction gear sets are used to reduce the shaft speed of the turbine to suit that of the machine being driven.
+  </p>
+<p>
+   Applications using speed reduction gears include turbine-driven:
+  </p>
+<ul style="list-style-type: none">
+<li>
+    • Direct-current generators
+   </li>
+<li>
+    • Paper making machines
+   </li>
+<li>
+    • Centrifugal pumps
+   </li>
+<li>
+    • Blowers and fans
+   </li>
+</ul>
+<h3>
+   9. Describe a steam turbine grid type extraction valve.
+  </h3>
+<p>
+   Grid type extraction valves are placed inside the turbine casing after the stage that the steam is extracted from. It controls the flow of steam to the remainder of the turbine.
+  </p>
+<p>
+   The valve consists of a ported stationary disc and a ported grid that rotates. When the openings in the disc and the grid coincide, the valve is open and a full flow of steam passes to the remainder of the turbine. When the grid is rotated from the fully open position, the ports in the disc are partially covered by the grid. The steam flow is restricted and the desired pressure maintained. A pilot valve, operated by a pressure governor, controls the oil or steam supply pressure to either side of the operating piston. The operating piston rotates the grid valve with a gear and teeth. The linkage from the pressure governor is interlocked with the speed governor. Changes in the rate of steam extraction do not interfere with the turbine speed.
+  </p>
+<h3>
+   10. List five variables that are monitored by supervisory equipment. What is differential expansion?
+  </h3>
+<p>
+   Five variables that are monitored by supervisory equipment are:
+  </p>
+<ul style="list-style-type: none">
+<li>
+    • Machine speed
+   </li>
+<li>
+    • Bearing temperatures
+   </li>
+<li>
+    • Vibration detection
+   </li>
+<li>
+    • Differential axial expansion
+   </li>
+<li>
+    • Generator output
+   </li>
+</ul>
+<h4>
+   Differential Expansion
+  </h4>
+<p>
+   Differential expansion refers to the relative difference in expansion between the rotor and the turbine case. If excessive, it will lead to the rotor blades rubbing the turbine diaphragm.
+  </p>
+<h3>
+   11. Sketch and describe a magnetic speed sensor pickup used on an electronic turbine overspeed trip system.
+  </h3>
+<p>
+   In the following figure, the turbine shaft contains a notched gear wheel. Inductive sensors, also known as magnetic speed pickups, are mounted in or on the turbine casing. As the gear teeth pass the sensors, the principle of magnetic induction generates an AC voltage that can be read by the ECM (Electronic Control Module), which contains pulse-counting sensors.
+  </p>
+<p>
+   These units then convert the electronic pulse signals to revolutions per minute for calculating the turbine shaft speed. Some steam turbines' overspeed trip systems, installed with three magnetic speed pickups, require that two out of the three sensors agree the unit has reached the overspeed condition before a trip is initiated.
+  </p>
+<img alt="Schematic diagram of a magnetic speed pickup sensor. It shows a notched gear wheel with a clockwise rotation arrow. A magnetic pickup (inductive sensor) is positioned near the gear, secured by an O-ring. A wire connects the sensor to an electronic control module, with the signal labeled 'Voltage (Square Wave Signal)'." src="fa859e4e468bfb2710a94527f2c504af_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<p>
+    Notched Gear Wheel
+   </p>
+<p>
+    Magnetic Pickup
+   </p>
+<p>
+    O-Ring
+   </p>
+<p>
+    Inductive Sensor
+   </p>
+<p>
+    Voltage (Square Wave Signal)
+   </p>
+<p>
+    Electronic Control Module
+   </p>
+<div class="img-alt">
+    Schematic diagram of a magnetic speed pickup sensor. It shows a notched gear wheel with a clockwise rotation arrow. A magnetic pickup (inductive sensor) is positioned near the gear, secured by an O-ring. A wire connects the sensor to an electronic control module, with the signal labeled 'Voltage (Square Wave Signal)'.
+   </div>
+</div>
+<p>
+<i>
+    Magnetic Speed Pickup Sensor
+   </i>
+</p>
+<h2>
+   Chapter 3 Solutions
+  </h2>
+<h2>
+   Steam Turbine Operation and Maintenance
+  </h2>
+<ol style="list-style-type: none">
+<li>
+    1. Explain why different balancing procedures are used for solid and buildup rotors.
+   </li>
+</ol>
+<p>
+   Methods for balancing built-up and solid rotors differ because of their construction. With the built up rotors, each wheel or disc is added separately to the shaft. Each wheel is temporarily fitted to a small shaft where they are statically balanced. Metal is usually removed from the wheel or disc to balance it. The balanced wheels are then attached to the permanent rotor.
+  </p>
+<p>
+   When all the wheels have been attached, the rotor is then dynamically balanced. Any remaining parts are added to the rotor. These parts include the thrust bearing disc and the overspeed trip assemblies. Then a final dynamic balance is done. The rotor is then ready for installation.
+  </p>
+<ol style="list-style-type: none">
+<li>
+    2. Using a simple sketch, explain what is meant by turbine blade clearances. Why is it important to keep the clearances as close to original specifications as possible?
+   </li>
+</ol>
+<p>
+   The efficient operation of a turbine depends to a large extent on the maintenance of the correct clearances between fixed and moving elements. Excessive clearances result in increased steam consumption while reduced clearances may result in blade rubbing.
+  </p>
+<p>
+   When a turbine is erected the clearances are carefully set and a record is kept at the plant. When the top halves of the casing are removed the clearances should be checked against the record. Care must be taken to ensure that the rotors are in the running position when taking measurements. Provision is usually made to move the rotor axially to a position for lifting from and returning to the casing.
+  </p>
+<p>
+   Particular care is necessary with the clearances at the velocity stages which are frequently fitted to the high-pressure end of impulse machines, as shown in the following figure. A thorough check of clearances is essential if any replacement blades, nozzles or packing rings have been fitted.
+  </p>
+<img alt="Diagram of a velocity stage wheel in a turbine, showing steam flow and clearance points A, B, and C." src="76b0cd79baaedd942af4dc42f2e764b8_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<p>
+    The diagram illustrates a cross-section of a velocity stage wheel within a turbine casing. The wheel is labeled 'Velocity Stage Wheel'. An arrow indicates 'Steam Flow' entering from the right. Three clearance points are marked with double-headed arrows: 'A' at the top between the nozzle and the wheel, 'B' in the middle between the wheel and the casing, and 'C' at the top between the nozzle and the casing. To the right of the diagram is a table:
+   </p>
+<table border="1">
+<thead>
+<tr data-bbox="1133 732 1330 785">
+<th>
+       Point
+      </th>
+<th>
+       Clearance min.
+      </th>
+</tr>
+</thead>
+<tbody>
+<tr data-bbox="1133 785 1330 821">
+<td>
+       A
+      </td>
+<td>
+       2
+      </td>
+</tr>
+<tr data-bbox="1133 821 1330 856">
+<td>
+       B
+      </td>
+<td>
+       5
+      </td>
+</tr>
+<tr data-bbox="1133 856 1330 892">
+<td>
+       C
+      </td>
+<td>
+       2
+      </td>
+</tr>
+</tbody>
+</table>
+<div class="img-alt">
+    Diagram of a velocity stage wheel in a turbine, showing steam flow and clearance points A, B, and C.
+   </div>
+</div>
+<p>
+<i>
+    Velocity Stage Clearances
+   </i>
+</p>
+<ol style="list-style-type: none">
+<li>
+    3. What are two types of turbine blade deposits? How do they affect turbine performance?
+   </li>
+</ol>
+<p>
+   Deposits develop from carryover in the steam from the boilers and are principally sodium hydroxide (caustic soda) and silica.
+  </p>
+<p>
+   Caustic soda melts at
+   \(
+    315^{\circ}\text{C}
+   \)
+   and is soluble in water, hence it will deposit in areas in the turbine where the temperature is below
+   \(
+    315^{\circ}\text{C}
+   \)
+   and where the steam moisture content is insufficient to give a blade-washing effect.
+  </p>
+<p>
+   Silica vaporizes at pressures above 4150 kPa and is insoluble in water. Deposits of silica may be spread through the turbine blading and will also combine with the soluble deposits.
+  </p>
+<p>
+   Turbine blading must be maintained in a clean condition if it is to produce the full designed output of the turbine. Deposits which adhere to the blades decrease the turbine efficiency and output. They may cause an outage or even mechanical damage if not removed. Deposits on turbine blades will gradually reduce the steam passage area and consequently increase the pressure drop through each of the affected stages.
+  </p>
+<ol style="list-style-type: none">
+<li>
+<b>
+     4. Why would a steam turbine be slow-rolled before the speed is increased to minimum governor speed?
+    </b>
+</li>
+</ol>
+<p>
+   Turbines, especially those with no barring gear, are slow-rolled at 300-500 rev/min. Rotate at this speed for sufficient time to provide even warming and removal of any distortion of the rotors that were developed after the last shutdown. This may take 15-30 minutes or longer.
+  </p>
+<ol style="list-style-type: none">
+<li>
+<b>
+     5. What important safety device is checked before putting a turbine on load?
+    </b>
+</li>
+</ol>
+<p>
+   When the machine has reached normal running speed and is under control of its governor, the overspeed governor trip operation is tested.
+  </p>
+<ol style="list-style-type: none">
+<li>
+<b>
+     6. Explain the difference between a hot start and a cold start in relation to a steam turbine start-up.
+    </b>
+</li>
+</ol>
+<p>
+   The longer the downtime the colder the turbine casings and rotors become. They require more time to be heated to operating temperatures. An 8 hour start would be a typical hot start; a warm start takes approximately 48 hours while a cold startup takes 150 hours.
+  </p>
+<ol style="list-style-type: none">
+<li>
+<b>
+     7. When starting a steam turbine, when would the barring gear be disengaged? Why is this important?
+    </b>
+</li>
+</ol>
+<p>
+   The barring gear is disengaged and shutdown when the turbine speed reaches 200-300 rev/min, depending upon the manufacturer's run-up program. The barring gear is not designed to run at the normal operating speed of the turbine. It is only used to rotate the turbine rotor at a slow speed to allow uniform cooling.
+  </p>
+<ol style="list-style-type: none">
+<li>
+    8. Sketch a condensing steam turbine with feed water heaters. For simplicity show only one HP feedwater heater and one LP feedwater heater as well as the deaerator.
+   </li>
+</ol>
+<img alt="A detailed schematic diagram of a condensing steam turbine system with 7 stages of feed water heating. The diagram shows the flow of steam from the boiler through a High-Pressure Turbine, then to a Reheat Turbine, and finally to a Low-Pressure Turbine. The exhaust from the Low-Pressure Turbine goes to a Condenser. The condensate from the condenser is pumped through a series of Low-Pressure Bleed Heaters, then through a Deaer. Htr. (Deaerator), and then through a series of High-Pressure Bleed Heaters before being pumped back to the boiler by a Feedwater Pump. The boiler itself contains an Economizer, Boiler, Reheater, and Superheater. The diagram also shows the extraction of steam from various stages of the turbines to heat the feedwater in the bleed heaters and the deaerator. A Feed Water Drive Turbine is also shown, connected to the boiler feedwater line." src="83852ec55d4802521a727926336bedab_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    A detailed schematic diagram of a condensing steam turbine system with 7 stages of feed water heating. The diagram shows the flow of steam from the boiler through a High-Pressure Turbine, then to a Reheat Turbine, and finally to a Low-Pressure Turbine. The exhaust from the Low-Pressure Turbine goes to a Condenser. The condensate from the condenser is pumped through a series of Low-Pressure Bleed Heaters, then through a Deaer. Htr. (Deaerator), and then through a series of High-Pressure Bleed Heaters before being pumped back to the boiler by a Feedwater Pump. The boiler itself contains an Economizer, Boiler, Reheater, and Superheater. The diagram also shows the extraction of steam from various stages of the turbines to heat the feedwater in the bleed heaters and the deaerator. A Feed Water Drive Turbine is also shown, connected to the boiler feedwater line.
+   </div>
+</div>
+<p>
+<i>
+    Condensing Turbine with 7 Stages of Feed Water Heating
+   </i>
+</p>
+<ol style="list-style-type: none">
+<li>
+    9. What are the things monitored on a steam turbine during normal operation?
+   </li>
+</ol>
+<p>
+   The items listed on the daily log will vary with the plant, but a typical set of readings would give:
+  </p>
+<ul style="list-style-type: none">
+<li>
+    • Machine load
+   </li>
+<li>
+    • Steam pressures and temperatures
+   </li>
+<li>
+    • Lubricating oil pressures and temperatures
+   </li>
+<li>
+    • Turbine expansion
+   </li>
+<li>
+    • Vibration readings
+   </li>
+<li>
+    • Condenser vacuum
+   </li>
+<li>
+    • Condenser hotwell level and position of level control valve
+   </li>
+<li>
+    • Circulating water pressure and temperatures
+   </li>
+<li>
+    • Feed heater pressures and temperatures
+   </li>
+<li>
+    • Ammeter readings for extraction pumps and feed pumps
+   </li>
+<li>
+    • Notes on the oil coolers and air ejectors in service
+   </li>
+<li>
+    • Normal positions of condenser circulating water valves
+   </li>
+<li>
+    • Records of the steam flow to the machine and the make-up water passing to the condenser.
+   </li>
+</ul>
+<h2>
+   Chapter 4 Solutions
+  </h2>
+<h2>
+   Steam Condensers
+  </h2>
+<h3>
+<p>
+<b>
+     1. Define the following terms:
+    </b>
+</p>
+</h3>
+<ol style="list-style-type: none">
+<li>
+<ul style="list-style-type: none">
+<li>
+      a)
+      <b>
+       Low-level jet condenser
+      </b>
+</li>
+<li>
+      b)
+      <b>
+       Barometric condenser
+      </b>
+</li>
+<li>
+      c)
+      <b>
+       Parallel flow
+      </b>
+</li>
+<li>
+      d)
+      <b>
+       Counter flow
+      </b>
+</li>
+</ul>
+</li>
+<li>
+<br/>
+</li>
+<li>
+<ul style="list-style-type: none">
+<li>
+      a) Low-level jet condenser is a jet condenser that has to use a pump to remove the condensate from the condenser body.
+     </li>
+<li>
+      b) Barometric condenser is a jet condenser which has the condenser body set at sufficient height above the hotwell that the water will flow out by gravity.
+     </li>
+<li>
+      c) Parallel flow is a jet condenser where the air and other gases flow together with the condensate into the hotwell.
+     </li>
+<li>
+      d) Counter flow is a jet condenser where the air and other gases are removed from the top condenser body, while the condensate flows down to the hotwell.
+     </li>
+</ul>
+</li>
+</ol>
+<h3>
+<p>
+<b>
+     2. Describe the term Regenerative, as it applies to a surface condenser.
+    </b>
+</p>
+</h3>
+<p>
+   Regenerative is the term used to describe a condenser design that uses wide tube spacing and has open spaces or steam lanes to allow the entering steam to penetrate through the tube nest and come into contact with the condensate falling from the upper tubes. By this means the condensate temperature is maintained equal with the exhaust steam.
+  </p>
+<h3>
+<p>
+<b>
+     3. What are the advantages and disadvantages of a jet condenser as compared to a surface condenser?
+    </b>
+</p>
+</h3>
+<p>
+   Advantages of the jet condenser are:
+  </p>
+<ul style="list-style-type: none">
+<li>
+    • Simple construction
+   </li>
+<li>
+    • Low initial cost
+   </li>
+<li>
+    • Occupies less space
+   </li>
+<li>
+    • Can be usefully employed where the quantity of steam to be condensed is moderate
+   </li>
+</ul>
+<p>
+   Disadvantages of jet condensers are:
+  </p>
+<ul style="list-style-type: none">
+<li>
+    • Cooling water has to be the same quality as the boiler feedwater
+   </li>
+<li>
+    • Vacuum achieved is limited to 660 to 685 mm which is not sufficient for a turbine, therefore, they find limited use
+   </li>
+</ul>
+<h3>
+<p>
+<b>
+     4. What are the two methods used to deal with the expansion between the turbine exhaust flange and the condenser?
+    </b>
+</p>
+</h3>
+<p>
+   In small installations this is done by bolting the condenser feet rigidly to the foundations and fitting an expansion joint such as a corrugated bellows piece between the turbine exhaust flange and the condenser inlet flange.
+  </p>
+<p>
+   For large installations the condenser is bolted to the turbine exhaust flange and supported on springs, which are so proportioned as to just support the mass of the condenser when operating full of cooling water and so relieve the turbine exhaust of any thrust.
+  </p>
+<h3>
+<p>
+<b>
+     5. a) Explain the impact that tube fouling has on the performance of a condenser.
+     <br/>
+     b) Explain the impact that air leakage has on the performance of a condenser.
+    </b>
+</p>
+</h3>
+<ul style="list-style-type: none">
+<li>
+    a) If tube fouling occurs, the cooling water will not be able to absorb heat as well as it should. The cooling water outlet temperature will go down and the exhaust steam temperature will rise due to a diminishing vacuum. Thus a widening gap between the exhaust steam and cooling water outlet temperatures.
+   </li>
+<li>
+    b) It increases the condenser pressure and hence the turbine back pressure. It tends to cling to the outsides of the condenser tubes and impede the heat flow from steam to cooling water, and it lowers the condensate temperature.
+   </li>
+</ul>
+<ol style="list-style-type: none">
+<li>
+    6. A condenser receives 20,000 kg/hr of dry saturated steam at 36.2°C. The condensate outlet temperature is 34.6°C. Calculate the thermal efficiency for this condenser.
+   </li>
+</ol>
+<p>
+   $$
+    H_g \text{ at } 36.2^\circ\text{C} = H_g \text{ at } 35^\circ\text{C} + \frac{1.2}{5} (H_g \text{ at } 40^\circ\text{C} - H_g \text{ at } 35^\circ\text{C})
+   $$
+  </p>
+<p>
+   $$
+    H_g \text{ at } 36.2^\circ\text{C} = 2565.3 \text{ kJ/kgK} + \frac{1.2}{5} (2574.3 \text{ kJ/kgK} - 2565.3 \text{ kJ/kgK})
+   $$
+  </p>
+<p>
+   $$
+    H_g \text{ at } 36.2^\circ\text{C} = 2565.3 \text{ kJ/kgK} + 0.24 (9 \text{ kJ/kgK})
+   $$
+  </p>
+<p>
+   $$
+    H_g \text{ at } 36.2^\circ\text{C} = 2565.3 \text{ kJ/kgK} + 2.16 \text{ kJ/kgK}
+   $$
+  </p>
+<p>
+   $$
+    H_g \text{ at } 36.2^\circ\text{C} = 2567.46 \text{ kJ/kgK}
+   $$
+  </p>
+<p>
+   $$
+    H_f \text{ at } 36.2^\circ\text{C} = H_f \text{ at } 35^\circ\text{C} + \frac{1.2}{5} (H_f \text{ at } 40^\circ\text{C} - H_f \text{ at } 35^\circ\text{C})
+   $$
+  </p>
+<p>
+   $$
+    H_f \text{ at } 36.2^\circ\text{C} = 146.68 \text{ kJ/kgK} + \frac{1.2}{5} (167.57 \text{ kJ/kgK} - 146.68 \text{ kJ/kgK})
+   $$
+  </p>
+<p>
+   $$
+    H_f \text{ at } 36.2^\circ\text{C} = 146.68 \text{ kJ/kgK} + 0.24 (20.89 \text{ kJ/kgK})
+   $$
+  </p>
+<p>
+   $$
+    H_f \text{ at } 36.2^\circ\text{C} = 146.68 \text{ kJ/kgK} + 5.02 \text{ kJ/kgK}
+   $$
+  </p>
+<p>
+   $$
+    H_f \text{ at } 36.2^\circ\text{C} = 151.69 \text{ kJ/kgK}
+   $$
+  </p>
+<p>
+   $$
+    \text{Condenser Thermal Efficiency} = \frac{2567.46 \text{ kJ/kgK} - 151.69 \text{ kJ/kgK}}{2567.46 \text{ kJ/kgK}}
+   $$
+  </p>
+<p>
+   $$
+    \text{Condenser Thermal Efficiency} = \frac{2415.77 \text{ kJ/kgK}}{2567.46 \text{ kJ/kgK}}
+   $$
+  </p>
+<p>
+   $$
+    \text{Condenser Thermal Efficiency} = 0.9409
+   $$
+  </p>
+<p>
+   $$
+    \text{Condenser Thermal Efficiency} = \mathbf{94.09\%} \text{ (Ans.)}
+   $$
+  </p>
+<ol style="list-style-type: none">
+<li>
+    7. Explain the procedures used to troubleshoot condenser performance.
+   </li>
+</ol>
+<p>
+   To properly observe the performance of a condenser, the operating parameters must be monitored. The required readings or parameters used to determine condenser performance are the:
+  </p>
+<ul style="list-style-type: none">
+<li>
+    • Condenser vacuum
+   </li>
+<li>
+    • Temperature of the steam entering the condenser
+   </li>
+<li>
+    • Temperature of the condensate leaving the condenser
+   </li>
+<li>
+    • Cooling water inlet and outlet temperatures
+   </li>
+</ul>
+<p>
+   These readings are compared with the original readings taken when the condenser was first put into service. When the condenser is new, the temperature of the steam exhaust, the condensate, and the cooling water outlet are relatively close. A graph (like the one in Fig. 17 – Objective 3) is developed to show the reduction of the condenser vacuum. Comparisons of these various readings indicate whether the performance of the condenser is deteriorating. In order to troubleshoot condenser performance issues, the following four items are examined:
+  </p>
+<ul style="list-style-type: none">
+<li>
+    • Terminal difference
+   </li>
+<li>
+    • Loss of vacuum
+   </li>
+<li>
+    • Air leaks
+   </li>
+<li>
+    • Insufficient circulating water
+   </li>
+</ul>
+<h4>
+   Terminal Difference
+  </h4>
+<p>
+   A comparison of the temperature differential or difference between the exhaust steam temperature and the cooling water outlet is called the condenser terminal difference and this figure is sometimes used as a guide to condenser fouling.
+  </p>
+<h4>
+   Loss of Vacuum
+  </h4>
+<p>
+   The most frequent cause of low vacuum is slime and mud on the waterside of the tubes. This acts as an insulator and slows down the rate of heat transfer from steam to circulating water. Increased partial pressure due to uncondensed steam adversely affects the vacuum and the temperature at turbine exhaust rises. The temperature of the condensate also rises because the vacuum has dropped. There is no sub-cooling of the condensate because the heat cannot be transmitted through the condenser tubes.
+  </p>
+<p>
+   In this case, both the steam exhaust and condensate temperatures rise above normal operating conditions and the cooling water outlet temperature is low.
+  </p>
+<h4>
+   Air Leaks
+  </h4>
+<p>
+   Increased air leakage into the condenser vacuum creates a widening difference between the temperature of the exhaust steam and the temperature of the condensate. Another way to determine if there is an increase in air infiltrating the condenser is to compare the readings taken from the air flow meter. Faulty air extraction also compounds the problem of air leakage.
+  </p>
+<h4>
+   Insufficient Circulating Water
+  </h4>
+<p>
+   A lack of sufficient cooling water reduces the vacuum. If the cooling water system has a flow meter and accumulator, the amount of cooling water flow can be determined for a given period of time. If the amount of cooling water flow is lower than usual, the reason for the reduced flow must be resolved. If the normal pump motor amperes are known, a drop in load on the pump monitor may indicate the reduced flow. An increase in the temperature differential between the cooling water in and out temperatures also indicates reduced flow. If the tubes are clean, the heat transfer rate is normal, and then the reduced quantity of cooling water is raised to a higher temperature.
+  </p>
+<h3>
+   8. Describe the operation of an air ejector.
+  </h3>
+<p>
+   Referring to the figures, HP steam delivered to the steam nozzle passes into the air chamber with high velocity and produces an area of low pressure in its wake. Air and other gaseous vapours drawn from the condenser into this low-pressure area, become entrained in the jet of steam, and are carried through the diffuser to the discharge.
+  </p>
+<img alt="Diagram of an air ejector system showing the flow of steam and air." src="d4c143a69ccd7e28fe8d01dbc9dfbcfa_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<p>
+    The diagram illustrates the internal components and flow of an air ejector. On the left, a vertical assembly shows a steam nozzle at the top leading into a mixing chamber. Arrows indicate the flow of steam downwards and air being drawn in from the side. On the right, a simplified schematic shows 'Steam' entering from the top, 'Air' entering from the side into a mixing chamber, and the combined mixture being expelled through a diffuser at the bottom, labeled 'Discharge'.
+   </p>
+<div class="img-alt">
+    Diagram of an air ejector system showing the flow of steam and air.
+   </div>
+</div>
+<ol style="list-style-type: none">
+<li>
+    9. a)
+    <b>
+     Describe the operation of a dual-flow cooling water intake screen.
+    </b>
+<br/>
+    b)
+    <b>
+     What are the advantages of this filter as compared to the through-flow filter?
+    </b>
+</li>
+<li>
+    a) This filter is a belt type of filter. The influent water flow goes through both the ascending and descending filter panels, with the filtered effluent exiting from the center of the filter. Therefore, only clean filtered water is allowed to flow downstream to the pump. The water jets used to clean the debris from the filter panels are above the operating floor.
+   </li>
+<li>
+    b) The advantages of this filter over the through-flow filter are:
+   </li>
+<li>
+<ul style="list-style-type: none">
+<li>
+      • Water passes through the filter panels only in one direction. Therefore no chance of debris not removed by the water jets, from being dislodged by the filtered effluent, and getting into the pumps and condenser.
+     </li>
+<li>
+      • The only way debris can be carried over with this filter is if one of the filter panels breaks.
+     </li>
+<li>
+      • Debris not cleaned from the panels by the water jets simply returns to the influent water flow, to be removed by the next cleaning cycle.
+     </li>
+<li>
+      • The filter size for a given screening area can be reduced due to the debris being removed by the ascending and descending panels. This will result in a lower initial cost and lower total screen weight.
+     </li>
+</ul>
+</li>
+<li>
+    10. a)
+    <b>
+     Give a brief description of how a cooling tower works.
+    </b>
+<br/>
+    b)
+    <b>
+     What are the two classifications of cooling towers? Give a brief description of each classification.
+    </b>
+</li>
+<li>
+    a) In all cooling towers, the water supply is introduced at or near the top and it falls by gravity over the fill into the water reservoir at the bottom. The fill consists of some arrangement of splash bars, generally constructed of redwood or cypress, or cement asbestos and designed to cause the falling water to be broken into droplets or to run across the boards in a film, the object being to present the maximum water surface area to the cooling air.
+   </li>
+<li>
+    b) The two classifications of cooling towers are:
+   </li>
+<li>
+<ul style="list-style-type: none">
+<li>
+      • Natural draft
+     </li>
+<li>
+      • Mechanical draft.
+     </li>
+</ul>
+</li>
+</ol>
+<h4>
+<b>
+    Natural Draft
+   </b>
+</h4>
+<p>
+   The natural draft has two types of designs. The first one is the
+   <b>
+    open
+   </b>
+   or
+   <b>
+    atmospheric
+   </b>
+   type. It has walls constructed of wooden louvers or slats laid horizontally along the length of the walls and angled so that the air enters the tower in a downward direction. This reduces the tendency to lift the fine water spray out of the top of the tower and gives a better distribution of cooling air across the whole cross section. The movement of air is dependent upon natural convection currents.
+  </p>
+<p>
+   The natural draft type of tower is often built with closed sides, which are carried above the level of the water entry. This type is known as the
+   <b>
+    closed or chimney type
+   </b>
+   .
+  </p>
+<h4>
+<b>
+    Mechanical Draft
+   </b>
+</h4>
+<p>
+   The Mechanical draft also has two different types of designs. They are the:
+  </p>
+<ul style="list-style-type: none">
+<li>
+    • Forced draft
+   </li>
+<li>
+    • Induced draft
+   </li>
+</ul>
+<h4>
+<b>
+    Forced Draft
+   </b>
+</h4>
+<p>
+   The forced draft method includes in its arrangement a fan placed at the bottom of the tower to draw air from the surrounding atmosphere and force it upwards across the fill in contra-flow to the falling water.
+  </p>
+<h4>
+<b>
+    Induced Draft
+   </b>
+</h4>
+<p>
+   The induced draft method is the most widely used at the present time. Advantages over the forced draft system are:
+  </p>
+<ul style="list-style-type: none">
+<li>
+    • The fan is placed at the top of the tower and discharges upward. The air is thereby directed away at high velocity and has little chance of recirculating by returning to the intake at the bottom of the tower
+   </li>
+<li>
+    • There is less chance of the fan being subject to icing because it is in the path of the warm discharge air and noise from the fan is at a minimum because of its location. Air enters the tower through a very large louver section too, thus decreasing frost tendency in winter
+   </li>
+<li>
+    • Finally, air flow and consequently the cooling effect is more evenly distributed across all sections of the tower
+   </li>
+</ul>
+<p>
+   Disadvantage of the induced system is the:
+  </p>
+<ul style="list-style-type: none">
+<li>
+    • Increased fan power required to handle the hot air instead of the cold air
+   </li>
+</ul>
+<h3>
+   11. With the aid of a simple sketch, describe the operation of an atmospheric relief valve.
+  </h3>
+<p>
+   Since the condenser is a closed vessel, it is possible for the back pressure to rise until it is above atmospheric pressure. This happens, for example, if the cooling water flow is stopped. The shell is not designed to withstand a pressure from the inside and would soon burst. The atmospheric relief valve is designed to open when the pressure in the condenser rises above atmospheric.
+  </p>
+<p>
+   Referring to the following figure, under standard conditions, a vacuum holds the atmospheric valve shut. A water seal, supplied with condensate, prevents air from leaking through. When the pressure reaches 7 kPa, the force on the disc area is greater than the water head on the reverse side, thus, the disc lifts relieving the pressure to atmosphere. The valve is usually fitted with a pivoted lever and a chain brought to operating level. Its operation can be checked when the machine is off load and a manual assist can be supplied in the case of failing to open under emergency conditions.
+  </p>
+<img alt="Diagram of an atmospheric relief valve showing its external and internal components." src="4aa9c7965776f4f4b8eba638b2c53369_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<p>
+    The diagram illustrates the external and internal components of an atmospheric relief valve. The left side shows the external view of a cylindrical vessel with an 'INLET' and 'WATER OUTLET' on the top. An arrow labeled 'Steam' points upwards towards the bottom of the vessel. The right side shows a cross-sectional view of the valve assembly. It includes a 'LIFTING BAR' connected to a 'SEALING DISK' via 'GUIDE BUSHINGS'. A 'WATER LEVEL' is indicated on the left side of the internal assembly. A 'HAND WHEEL' is connected to the lifting bar on the right. An arrow labeled 'Steam' points upwards towards the bottom of the valve housing.
+   </p>
+<div class="img-alt">
+    Diagram of an atmospheric relief valve showing its external and internal components.
+   </div>
+</div>
+<p>
+<i>
+    Atmospheric Relief Valve
+   </i>
+</p>
+
+
+<h1>
+   Chapter 5 Solutions
+  </h1>
+<h2>
+   Internal Combustion Engines Components and Auxiliaries
+  </h2>
+<h3>
+   1. Describe the steps of a four-stroke cycle for a spark ignition engine.
+  </h3>
+<p>
+   The four-stroke cycle occurs over two rotations of the engine. It consists of the following steps:
+  </p>
+<h4>
+   Induction
+  </h4>
+<p>
+   As the piston moves down, air is drawn into the cylinder through the intake port. The exhaust valve is closed. In spark-ignition engines, a mixture of air and fuel is drawn into the cylinder — unless direct fuel injection is used.
+  </p>
+<h4>
+   Compression
+  </h4>
+<p>
+   The intake and exhaust valves are closed and the air (or air-fuel mixture) is compressed. In spark-ignition engines, an electric spark ignites the air-fuel mixture just before top dead centre (TDC) and starts the combustion process. In compression-ignition engines, or fuel injected spark-ignition engines, fuel is injected prior to top dead centre after which combustion occurs.
+  </p>
+<h4>
+   Expansion
+  </h4>
+<p>
+   In spark-ignition engines, combustion is largely finished at the beginning of the power stroke. The hot gases expand and force the piston down from top dead centre. The exhaust valve opens just before the end of the stroke. In compression-ignition engines, combustion continues for most of the power stroke.
+  </p>
+<h4>
+   Exhaust
+  </h4>
+<p>
+   The exhaust valve remains open and the products of combustion are exhausted to the atmosphere. At the end of this stroke, the exhaust valve closes and the intake valve opens. The process then repeats itself.
+  </p>
+<ol style="list-style-type: none">
+<li>
+    2.
+    <b>
+     What are the differences between a spark-ignition and a compression-ignition engine?
+    </b>
+</li>
+</ol>
+<h4>
+<p>
+<b>
+     Spark Ignition
+    </b>
+</p>
+</h4>
+<p>
+   In spark-ignition engines, a spark ignites the air-fuel mixture. Fuel can be pre-mixed in a carburetor or injected directly into the cylinder.
+  </p>
+<h4>
+<p>
+<b>
+     Compression Ignition
+    </b>
+</p>
+</h4>
+<p>
+   In compression-ignition engines, spontaneous ignition occurs due to the rise in temperature caused by high compression ratios. This results in a more efficient engine.
+  </p>
+<ol style="list-style-type: none">
+<li>
+    3.
+    <b>
+     List the two types of supercharging and describe how they function.
+    </b>
+</li>
+</ol>
+<h4>
+<p>
+<b>
+     Turbochargers
+    </b>
+</p>
+</h4>
+<p>
+   Turbochargers use a compressor which is attached to a turbine driven by exhaust gases. Turbochargers are common on many engines even though they increase the mechanical complexity of the engine and its control.
+  </p>
+<h4>
+<p>
+<b>
+     Superchargers
+    </b>
+</p>
+</h4>
+<p>
+   Superchargers make use of a blower or compressor that is directly coupled to the engine. Superchargers are not common in industrial applications because they are less efficient than turbochargers. However, they respond faster to load changes. Superchargers usually consist of a positive displacement compressor.
+  </p>
+<ol style="list-style-type: none">
+<li>
+    4.
+    <b>
+     With the aid of a simple sketch, describe the design of a lean burn fuel system used in a spark-ignition engine system.
+    </b>
+</li>
+</ol>
+<p>
+   In a lean-burn fuel system, the main air/gas mixer (carburetor), which has a governor controlled throttle, mixes the fuel and air. A pressure balance line between the carburetor and main gas pressure regulator maintains a constant gas-over-air pressure differential. The main gas pressure regulator ensures that natural gas is provided to the main air/gas mixer, and to the prechamber air/gas mixer, at the correct pressure. The prechamber air-fuel mixture is admitted into the cylinder through a separate manifold and special admission valves.
+  </p>
+<img alt="Schematic diagram of a Lean Burn Fuel System. The diagram shows an engine connected to a prechamber manifold and an intake manifold. The intake manifold is connected to a governor-controlled throttle, which is then connected to a main air/gas mixer &amp; control unit. This unit is also connected to a turbocharged compressor. The main air/gas mixer &amp; control unit is connected to a pressure balance line, which is connected to a main gas pressure regulator. The main gas pressure regulator is connected to a gas source. The main gas pressure regulator is also connected to a prechamber air/gas mixer &amp; control unit. The prechamber air/gas mixer &amp; control unit is connected to a prechamber air/fuel source. The engine is connected to the prechamber air/fuel source. The engine is also connected to a pressure control signal, which is connected to the prechamber air/gas mixer &amp; control unit." src="b230b8f21d8e82d55c0d311c8c32ef73_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<p>
+    The diagram illustrates a lean burn fuel system architecture. At the top, a 'Prechamber Manifold' is connected to an 'Engine'. Below the engine is an 'Intake Manifold'. A 'Governor Controlled Throttle' is positioned on the intake manifold. Downstream of the throttle is a 'Main Air / Gas Mixer &amp; Control' unit. This unit receives 'Air' from a 'Turbocharged Compressor' and 'Gas' from a 'Main Gas Pressure Regulator'. A 'Pressure Balance Line' connects this mixer to the gas regulator. The 'Main Air / Gas Mixer &amp; Control' unit also sends a 'Pressure Control Signal' to a 'Prechamber Air / Gas Mixer &amp; Control' unit. This second mixer receives 'Air' from the intake manifold and 'Gas' from the 'Main Gas Pressure Regulator'. Its output, labeled 'Prechamber Air / Fuel', is directed back to the 'Prechamber Manifold'.
+   </p>
+<div class="img-alt">
+    Schematic diagram of a Lean Burn Fuel System. The diagram shows an engine connected to a prechamber manifold and an intake manifold. The intake manifold is connected to a governor-controlled throttle, which is then connected to a main air/gas mixer &amp; control unit. This unit is also connected to a turbocharged compressor. The main air/gas mixer &amp; control unit is connected to a pressure balance line, which is connected to a main gas pressure regulator. The main gas pressure regulator is connected to a gas source. The main gas pressure regulator is also connected to a prechamber air/gas mixer &amp; control unit. The prechamber air/gas mixer &amp; control unit is connected to a prechamber air/fuel source. The engine is connected to the prechamber air/fuel source. The engine is also connected to a pressure control signal, which is connected to the prechamber air/gas mixer &amp; control unit.
+   </div>
+</div>
+<p>
+<i>
+    Lean Burn Fuel System
+    <br/>
+    (Courtesy of Waukesha Engine)
+   </i>
+</p>
+<h3>
+<p>
+<b>
+     5. Describe the three major purposes for engine cooling.
+    </b>
+</p>
+</h3>
+<p>
+   The purposes of engine cooling are to:
+  </p>
+<ul style="list-style-type: none">
+<li>
+    • Promote efficiency
+   </li>
+<li>
+    • Enhance combustion
+   </li>
+<li>
+    • Ensure mechanical reliability
+   </li>
+</ul>
+<p>
+   Engine efficiency is improved when more air is inducted into the cylinder. When the cylinder walls are cooled, more air can be drawn into the cylinder.
+  </p>
+<p>
+   In spark-ignition engines, combustion is enhanced by having cooler cylinder walls which will also inhibit knock and detonation.
+  </p>
+<p>
+   Mechanical reliability is adversely affected by high metal temperatures and thermal strain. In addition, if the temperature of the top rings on the cylinder exceeds 200°C, lubricants will degrade and fail to provide adequate protection. Thus, it is very important that the cooling system function properly since it has to remove about 20%-40% of the energy input into the engine.
+  </p>
+<h3>
+   6. What are three aspects of oil quality that need to be monitored? (any three of)
+  </h3>
+<h4>
+   Viscosity
+  </h4>
+<p>
+   Viscosity measures the resistance of a fluid to deformation under pressure. Oil with a higher viscosity is better able to withstand the friction forces from two adjacent components. However, friction losses are higher with a higher viscosity, so the proper level of viscosity has to be determined for each application. Since viscosity decreases with temperature, operating temperatures have to be taken into consideration.
+  </p>
+<h4>
+   Additives
+  </h4>
+<p>
+   Additives are present in lube oils to improve performance, to prevent deterioration, and to combat contaminants. Common additives are:
+  </p>
+<ul style="list-style-type: none">
+<li>
+    • Detergents to clean engine surfaces by reacting with oxidation products
+   </li>
+<li>
+    • Oxidation inhibitors to prevent increases in viscosity, organic acids or other compounds
+   </li>
+<li>
+    • Dispersants to prevent the formation of sludge by keeping contaminants in suspension
+   </li>
+<li>
+    • Alkalinity agents to neutralize acids
+   </li>
+<li>
+    • Anti-wear agents to reduce friction
+   </li>
+<li>
+    • Pour-point dispersants to counteract the formation of waxes at low temperatures
+   </li>
+<li>
+    • Viscosity improvers to increase viscosity at higher temperatures.
+   </li>
+</ul>
+<h4>
+   Acidity
+  </h4>
+<p>
+   Acidity must be closely controlled because acids can corrode wetted oil system surfaces.
+  </p>
+<h4>
+   Contaminants
+  </h4>
+<p>
+   Oil quality can deteriorate over time due to heat and use. It can be contaminated by particles caused by the internal wear of engine components, or by external contaminants such as dirt or glycol.
+  </p>
+<p>
+   Oil can also be affected by fuel contaminants such as hydrogen sulphide (H
+   <sub>
+    2
+   </sub>
+   S). If sulphur compounds cannot be totally removed from the fuel, additional precautions, such as enhanced oil sampling and reduced oil replacement intervals, need to be taken. The engine manufacturer should be consulted on recommended lube oil type.
+  </p>
+<ol style="list-style-type: none">
+<li>
+    7. Discuss four operating conditions for which engine protection is required (any four).
+   </li>
+</ol>
+<h4>
+   General Engine Operation Protection
+  </h4>
+<p>
+   Protection for general engine operation may include:
+  </p>
+<ul style="list-style-type: none">
+<li>
+    • Intake air restriction caused by plugging of the intake air filter or blockage of the intake
+   </li>
+<li>
+    • High intake air temperature caused by high ambient temperature or inadequate cooling by the intercooler (for turbocharged engines)
+   </li>
+<li>
+    • Engine overspeed caused by loss of load
+   </li>
+<li>
+    • High vibration caused by a number of different factors such as mechanical failure, unbalance, or misalignment
+   </li>
+<li>
+    • High crankcase pressure due to wear or failure of the piston ring or cylinder
+   </li>
+<li>
+    • High main bearing temperature caused by long term wear or high oil temperature
+   </li>
+</ul>
+<h4>
+   Fuel System Protection
+  </h4>
+<p>
+   Fuel system protection may include:
+  </p>
+<ul style="list-style-type: none">
+<li>
+    • Low fuel temperature resulting from failure of the fuel heater
+   </li>
+<li>
+    • High fuel pressure due to failure of the fuel regulator
+   </li>
+<li>
+    • High fuel filter differential pressure due to clogging of the filter
+   </li>
+</ul>
+<h4>
+   Cooling System Protection
+  </h4>
+<p>
+   Cooling system protection may include:
+  </p>
+<ul style="list-style-type: none">
+<li>
+    • Low coolant level in the coolant reservoir
+   </li>
+<li>
+    • High jacket water temperature due to failure of cooling or inadequate coolant flow
+   </li>
+<li>
+    • Cooler vibration due to unbalance, or misalignment of the cooler fan
+   </li>
+</ul>
+<h4>
+   Oil System Protection
+  </h4>
+<p>
+   Oil system protection may include:
+  </p>
+<ul style="list-style-type: none">
+<li>
+    • Low oil pressure due to failure of the oil pump or a restriction
+   </li>
+<li>
+    • Low oil temperature resulting from failure of the oil heater
+   </li>
+<li>
+    • Low oil level in the sump
+   </li>
+<li>
+    • High oil pressure caused by failure of the oil pump relief valve
+   </li>
+<li>
+    • High oil temperature caused by failure of the oil cooling system
+   </li>
+<li>
+    • High oil filter differential pressure due to clogging of the filter
+   </li>
+</ul>
+<h4>
+   Combustion System Protection
+  </h4>
+<p>
+   Protection for combustion systems may include:
+  </p>
+<ul style="list-style-type: none">
+<li>
+    • High exhaust gas temperature (measured by a pyrometer -usually one per cylinder)
+   </li>
+</ul>
+<ul style="list-style-type: none">
+<li>
+    • High exhaust gas temperature spread (difference between the highest and lowest temperature)
+   </li>
+<li>
+    • Activation of a detonation sensor (usually one per cylinder)
+   </li>
+</ul>
+<h3>
+   Safety Parameters
+  </h3>
+<p>
+   During startup, relevant safety parameters include:
+  </p>
+<ul style="list-style-type: none">
+<li>
+    • Low starting gas pressure (for an air or gas starter)
+   </li>
+<li>
+    • Excessive cranking time due to a bad starter or insufficient start pressure
+   </li>
+<li>
+    • Low oil pressure caused by cold oil or failure of the prelube pump
+   </li>
+</ul>
+<h1>
+   Chapter 6 Solutions
+  </h1>
+<h2>
+<i>
+    Internal Combustion Engines - Operation and Maintenance
+   </i>
+</h2>
+<ol style="list-style-type: none">
+<li>
+    1. a) Explain what inspections are carried out before starting an internal combustion engine.
+    <br/>
+    b) Explain the steps that occur during starting the engine.
+   </li>
+</ol>
+<h3>
+   a) Pre-Start Inspection
+  </h3>
+<p>
+   Steps required for the pre-start inspection vary with the type of startup. For automatic starting and when the engine is in a remote location, these steps cannot be carried out but protective devices minimize the risks in the control system.
+  </p>
+<p>
+   If the equipment is used frequently and no maintenance work has been done, only a few checks need to be carried out. These may include a walk-around and visual inspection of the engine to check for:
+  </p>
+<ul style="list-style-type: none">
+<li>
+    • Leaks from the coolant system, especially from the pump seals, fittings, and hoses
+   </li>
+<li>
+    • Leaks from the oil system including pumps, fittings, piping, and tubing
+   </li>
+<li>
+    • Coolant level
+   </li>
+<li>
+    • Oil tank and sump level
+   </li>
+<li>
+    • Air intake obstructions
+   </li>
+<li>
+    • All guards and covers are in place and securely fastened
+   </li>
+<li>
+    • General hazards
+   </li>
+<li>
+    • Diesel fuel day tank levels
+   </li>
+</ul>
+<h3>
+   b) Startup Sequence
+  </h3>
+<p>
+   The startup sequence following depends on the type of engine and starting system.
+  </p>
+<ol style="list-style-type: none">
+<li>
+    1. To lubricate the engine, operate the prelube pump for a determined time period after sufficient pressure is obtained.
+   </li>
+<li>
+    2. If so equipped, the barring device, used to rotate the engine, should be engaged.
+   </li>
+<li>
+    3. Engage the starter, the engine cranks over, and ignition commences.
+   </li>
+<li>
+    4. Once the engine operates on its own, the starter is turned off.
+   </li>
+<li>
+    5. The engine operates at idle speed until it warms up.
+   </li>
+<li>
+    6. Load the engine by closing the breaker to the generator.
+   </li>
+<li>
+    7. If the engine cranks for a determined time period, it will shutdown on overcrank.
+   </li>
+</ol>
+<h3>
+   2. Describe the two types of shutdowns and the differences between them.
+  </h3>
+<p>
+   A shutdown is either normal or emergency.
+  </p>
+<h4>
+   Normal Shutdown
+  </h4>
+<p>
+   Upon activation of a normal shutdown, the load is reduced and the engine operates at idle speed for 15-30 minutes. Closing the fuel valve first and shortly afterwards (typically 10 seconds) stopping the ignition, stops the engine so that the fuel downstream of the fuel valve is exhausted and not allowed to collect in the engine.
+  </p>
+<p>
+   The prelube pump is operated for a predetermined time as a post-lube to assist with lubrication on run-down and for cooling.
+  </p>
+<h4>
+   Emergency Shutdown
+  </h4>
+<p>
+   In an emergency shutdown, there is no cooldown period and the fuel valve closes immediately. If the emergency does not endanger the operator or the condition of the engine, the ignition remains on for a short period so that all of the fuel is burned and not left in the engine and the exhaust system. For safety-related emergencies, the ignition is stopped at the same time as the fuel valve is closed. In these cases, when restarted, the engine should go through a purge cycle and crank for approximately 10 seconds with the fuel valve closed and the ignition system off.
+  </p>
+<h3>
+   3. List three examples of routine maintenance for the lubrication system.
+  </h3>
+<p>
+   Use any of the following tasks.
+  </p>
+<p>
+   Routine maintenance of the lubrication system may include:
+  </p>
+<ul style="list-style-type: none">
+<li>
+    • Inspecting lubrication system components, piping, and hoses for leaks
+   </li>
+<li>
+    • Monitoring oil levels
+   </li>
+<li>
+    • Monitoring oil filter differential pressure
+   </li>
+<li>
+    • Checking belt tension for pumps
+   </li>
+<li>
+    • Oil sampling
+   </li>
+<li>
+    • Testing relief valves
+   </li>
+<li>
+    • Lube oil pressure adjustment
+   </li>
+<li>
+    • Oil change
+   </li>
+</ul>
+<h3>
+<p>
+    4. What parts of the cylinder head wear with use?
+   </p>
+</h3>
+<p>
+   Typical wear will occur with valve seats and valve guides.
+  </p>
+<h3>
+<p>
+    5. What causes blow-by of exhaust gases into the crankcase?
+   </p>
+</h3>
+<p>
+   Blow-by is caused either by worn piston rings, worn cylinder sleeves (or liners) or a combination of both of these factors.
+  </p>
+<h3>
+<p>
+    6. What are the three aspects of troubleshooting described in a typical troubleshooting chart?
+   </p>
+</h3>
+<p>
+   There are three aspects to troubleshooting:
+  </p>
+<ul style="list-style-type: none">
+<li>
+    a) The
+    <b>
+     symptom
+    </b>
+    describes what an operator might notice or detect during the operation of the engine.
+   </li>
+<li>
+    b) The
+    <b>
+     probable cause
+    </b>
+    lists the likely reasons for the symptom.
+   </li>
+<li>
+    c) The
+    <b>
+     remedy
+    </b>
+    makes recommendations on how the problem may be resolved.
+   </li>
+</ul>
+<h1>
+   Chapter 7 Solutions
+  </h1>
+<h2>
+   Gas Turbine Design and Auxiliaries
+  </h2>
+<h3>
+   1. What factors influence the selection of the type of gas turbine engine for a specific application?
+  </h3>
+<p>
+   The selection of a gas turbine engine for a specific application depends on factors such as:
+  </p>
+<ul style="list-style-type: none">
+<li>
+    • Performance ratings
+   </li>
+<li>
+    • Weight and size restrictions
+   </li>
+<li>
+    • Type of fuel available
+   </li>
+<li>
+    • Maintenance support resources
+   </li>
+<li>
+    • Life cycle costs
+   </li>
+</ul>
+<h4>
+   Performance Ratings
+  </h4>
+<p>
+   The performance rating and required range of power output are important factors to consider when choosing a specific gas turbine. Gas turbines operate most efficiently when running full loaded. Although they can operate down to 50% of full load rating, the lower operating ranges will cause the turbine output efficiency to drop substantially, down into the 30% to 40% range.
+  </p>
+<p>
+   This makes it important to choose a gas turbine that operates at, or near, its maximum power capabilities. Smaller gas turbines are less efficient, although waste heat recovery or combined cycle applications can be very efficient. For short-term peak power applications, a gas turbine can sometimes be run at higher than rated power output, but this practice will reduce the life cycle of the turbine and cause an increase in maintenance and repair costs.
+  </p>
+<h4>
+   Weight and Size Restrictions
+  </h4>
+<p>
+   Weight and size restrictions usually favour gas turbines over other types of engines, such as reciprocating internal combustion engines, especially for higher power applications. Aero-derivative engines normally provide the lowest-weight solution.
+  </p>
+<h4>
+   Type of Fuel Available
+  </h4>
+<p>
+   The type of fuel available needs to be considered. The cleanest and most accessible fuel should be used. Pipeline quality natural gas is desirable because it delivers the most efficient, cost-effective, and environmentally acceptable solution. Lower quality gaseous fuels such as landfill or sewage gas require special handling and delivery systems and, due to their lower kJ values, will result in lower power output and turbine efficiencies.
+  </p>
+<p>
+   Liquid fuel, such as kerosene, provides reliable operation but may be unsuitable where emissions are an issue, or where fuel sources are not easily accessible. Lower grade liquid fuels may be cost-effective, but require fuel treatment and could result in higher maintenance costs.
+  </p>
+<h4>
+   Maintenance Support Resources
+  </h4>
+<p>
+   Maintenance has to be taken into consideration before a final selection is made. This includes the availability of skilled personnel, spare parts, and other support requirements.
+  </p>
+<h4>
+   Life Cycle Costs
+  </h4>
+<p>
+   Life cycle costs include not only the initial capital investment, but also fuel, operating, and maintenance costs. Simple cycle gas turbines are now efficient enough to compete with other types of engines on a cost basis. The use of gas turbines in combined cycle applications provides an efficient solution over the life cycle of the engine.
+  </p>
+<p>
+   When selecting a gas turbine engine, it is important to consult with manufacturers on recommendations for proper application, engine rating, and equipment configuration.
+  </p>
+<h3>
+   2. With the aid of a simple sketch, describe the gas turbine thermodynamic cycle.
+  </h3>
+<p>
+   The gas turbine thermodynamic cycle, called the Brayton cycle, is shown in the following figure.. It consists of four steps:
+  </p>
+<ol style="list-style-type: none">
+<li>
+    1. The air is compressed, which increases the pressure and temperature and decreases the volume (from stage 1 to stage 2).
+   </li>
+<li>
+    2. Heat is added, which results in a major increase in temperature and a small increase in volume, but almost no change in pressure (from stage 2 to stage 3).
+   </li>
+<li>
+    3. Then, the air is expanded through the turbine and produces mechanical work. Pressure decreases to near atmospheric level. The temperature also decreases, although the air is still quite hot when it exits (from stage 3 to stage 4).
+   </li>
+<li>
+    4. The air is cooled to ambient conditions and returns to its original volume and density (from stage 4 to stage 1).
+   </li>
+</ol>
+<p>
+<b>
+    Note:
+   </b>
+   a significant part of the work of the turbine (
+   \(
+    W_{33'}
+   \)
+   ) is used to run the compressor. The remaining energy extracted (
+   \(
+    W_{3'4}
+   \)
+   ) is available to drive the load.
+  </p>
+<img alt="P-V diagram of the Brayton Cycle showing pressure (P) vs volume (V). The cycle starts at point 1 (START), goes to point 2 (compression), then to point 3 (combustion), then to point 3' (turbine expansion), then to point 4 (exhaust), and back to point 1. Heat added through combustion is Q23. Output work to run compressor is W33'. Pressure is increased through compressor as Volume is reduced. Exhaust heat is Q41. Useful Work available for shaft power or thrust is W3'4. The diagram is labeled 'The Brayton Cycle'." src="36ac3e730a00d3f42d3400f5709f641a_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<p>
+    The diagram illustrates the Brayton Cycle on a Pressure (P) vs. Volume (V) plot. The cycle consists of the following states and processes:
+   </p>
+<ul style="list-style-type: none">
+<li>
+<b>
+      State 1 (START):
+     </b>
+     The initial state of the air.
+    </li>
+<li>
+<b>
+      Process 1-2:
+     </b>
+     Compression. Pressure is increased through the compressor as volume is reduced. Work input is
+     \(
+      W_{12}
+     \)
+     .
+    </li>
+<li>
+<b>
+      State 2:
+     </b>
+     The state of the air after compression.
+    </li>
+<li>
+<b>
+      Process 2-3:
+     </b>
+     Combustion. Heat added through combustion is
+     \(
+      Q_{23}
+     \)
+     . This is an isobaric process.
+    </li>
+<li>
+<b>
+      State 3:
+     </b>
+     The state of the air after combustion.
+    </li>
+<li>
+<b>
+      Process 3-3':
+     </b>
+     Expansion in the turbine. Output work to run the compressor is
+     \(
+      W_{33'}
+     \)
+     .
+    </li>
+<li>
+<b>
+      State 3':
+     </b>
+     The state of the air after expansion.
+    </li>
+<li>
+<b>
+      Process 3'-4:
+     </b>
+     Further expansion in the turbine. Useful Work available for shaft power or thrust is
+     \(
+      W_{3'4}
+     \)
+     .
+    </li>
+<li>
+<b>
+      State 4:
+     </b>
+     The state of the air before exhaust.
+    </li>
+<li>
+<b>
+      Process 4-1:
+     </b>
+     Exhaust. Exhaust heat is
+     \(
+      Q_{41}
+     \)
+     . This is an isobaric process.
+    </li>
+</ul>
+<div class="img-alt">
+    P-V diagram of the Brayton Cycle showing pressure (P) vs volume (V). The cycle starts at point 1 (START), goes to point 2 (compression), then to point 3 (combustion), then to point 3' (turbine expansion), then to point 4 (exhaust), and back to point 1. Heat added through combustion is Q23. Output work to run compressor is W33'. Pressure is increased through compressor as Volume is reduced. Exhaust heat is Q41. Useful Work available for shaft power or thrust is W3'4. The diagram is labeled 'The Brayton Cycle'.
+   </div>
+</div>
+<p>
+<i>
+    The Brayton Cycle
+   </i>
+</p>
+<h3>
+<p>
+<b>
+     3. Explain the advantages of a fired HRSG system over an unfired unit.
+    </b>
+</p>
+</h3>
+<p>
+   The advantages of the fired system are that it:
+  </p>
+<ul style="list-style-type: none">
+<li>
+    • Compensates for changes in gas turbine output to give constant steam production
+   </li>
+<li>
+    • Can be used when the turbine is at low loads or not on at all to generate steam for the facility
+   </li>
+</ul>
+<h3>
+<p>
+<b>
+     4. Explain the advantages for using intercooling to improve the efficiency of the basic gas turbine cycle.
+    </b>
+</p>
+</h3>
+<p>
+   In some gas turbines, inlet air is compressed in two stages using a dual shaft arrangement. The air is cooled between the stages in a heat exchanger, or intercooler. Since isothermal compression (compression without an increase in air temperature) takes less work than adiabatic compression (compression without removing heat which increases the air temperature), more turbine power is available for the output load. Another advantage of intercooling is that the total mass of air that needs to be circulated through the cycle per kW of energy produced is reduced.
+  </p>
+<ol style="list-style-type: none">
+<li>
+    5. Using simple sketches, describe the hot end and cold end drives that are used in multi-shaft arrangements for gas turbines.
+   </li>
+</ol>
+<p>
+   The following figure shows a fairly common aero-derivative design that uses a two-shaft arrangement for the engine, and a third shaft for the power turbine. The low-pressure compressor and turbine are connected by a shaft fitted inside the hollow shaft connecting the high-pressure compressor and turbine. Mechanically, this design is more complicated (especially for the bearings), but offers greater efficiency and operational flexibility.
+  </p>
+<p>
+   An even more complicated layout positions the load at the cold end, which requires three shafts on the same centerline.
+  </p>
+<img alt="Two schematic diagrams of gas turbine shaft layouts. Diagram (a) 'Hot End Drive' shows a High Pressure Compressor connected to a High Pressure Turbine, which is connected to a Load. A Low Pressure Compressor is connected to a Low Pressure Turbine, which is connected to a Power Turbine. Diagram (b) 'Cold End Drive' shows a Load connected to a Low Pressure Compressor, which is connected to a High Pressure Turbine, which is connected to a High Pressure Compressor. Both diagrams show a Power Turbine connected to a Load." src="ff0952ef692c9d960ce5f6708bcc9711_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    Two schematic diagrams of gas turbine shaft layouts. Diagram (a) 'Hot End Drive' shows a High Pressure Compressor connected to a High Pressure Turbine, which is connected to a Load. A Low Pressure Compressor is connected to a Low Pressure Turbine, which is connected to a Power Turbine. Diagram (b) 'Cold End Drive' shows a Load connected to a Low Pressure Compressor, which is connected to a High Pressure Turbine, which is connected to a High Pressure Compressor. Both diagrams show a Power Turbine connected to a Load.
+   </div>
+</div>
+<p>
+   (a) Hot End Drive
+  </p>
+<p>
+   (b) Cold End Drive
+  </p>
+<p>
+   Shaft Layouts – Triple Shaft
+  </p>
+<ol style="list-style-type: none">
+<li>
+    6. Give a brief explanation of the following types of combustors that are used for gas turbines:
+   </li>
+</ol>
+<ol style="list-style-type: none">
+<li>
+    Annular
+   </li>
+<li>
+    Can-annular
+   </li>
+</ol>
+<h4>
+<p>
+    a) Annular
+   </p>
+</h4>
+<p>
+   The annular combustor consists of a singular flame tube in an annular shape. It is smaller in size than the can burner and does not have the problem of combustion propagation between chambers. Combustion takes place in a single combustion liner, with an inner and outer casing, that encircles the centerline of the gas turbine. Fuel nozzles are evenly spaced around the ring. This is a very simple design that minimizes the complexity of the combustion and dilution air flows.
+  </p>
+<h4>
+<p>
+    b) Can-Annular
+   </p>
+</h4>
+<p>
+   In the can-annular design combustor, combustion takes place in multiple combustors (also called combustion cans) placed around the centerline of the gas turbine. Some aero-derivative gas turbines use this straight-through combustor design since it minimizes the front area of the turbine.
+  </p>
+<ol style="list-style-type: none">
+<li>
+    7. With the aid of a simple sketch, describe how a refrigeration chiller is used to increase the power output of a gas turbine.
+   </li>
+</ol>
+<p>
+   Inlet air to the gas turbine is cooled by passing it through a finned coil of tubes which uses either NH
+   <sub>
+    3
+   </sub>
+   (Ammonia) or HFC-134a refrigerant as the cooling medium. The air temperature must not be less than 5°C to prevent the formation of ice on the coils. Refrigeration will always provide the design inlet temperature regardless of the ambient conditions, unlike the evaporative systems which lose effectiveness in high humidity conditions.
+  </p>
+<img alt="Diagram of a Refrigeration Air Cooling System for a gas turbine. The diagram shows a 'Mechanical Refrigeration Machine' connected to a 'Combustion Turbine'. The 'Mechanical Refrigeration Machine' has an 'Ammonia Suction Line' and an 'Ammonia Liquid Line'. The 'Ammonia Liquid Line' passes through a 'Condensate Drip Pan' and then to a 'Finned Coil' (evaporator) where it cools the 'Combustion Air'. The 'Combustion Air' is drawn from the 'Air Filter' and passes through the 'Finned Coil' before entering the 'Combustion Turbine'. The 'Combustion Turbine' is connected to a 'Generator' (indicated by a circle with a dot). The 'Combustion Turbine' also receives 'Fuel' and produces 'Exhaust Gas'." src="4ee27dbf5ef12e7b58b0ef0937bc5a5e_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    Diagram of a Refrigeration Air Cooling System for a gas turbine. The diagram shows a 'Mechanical Refrigeration Machine' connected to a 'Combustion Turbine'. The 'Mechanical Refrigeration Machine' has an 'Ammonia Suction Line' and an 'Ammonia Liquid Line'. The 'Ammonia Liquid Line' passes through a 'Condensate Drip Pan' and then to a 'Finned Coil' (evaporator) where it cools the 'Combustion Air'. The 'Combustion Air' is drawn from the 'Air Filter' and passes through the 'Finned Coil' before entering the 'Combustion Turbine'. The 'Combustion Turbine' is connected to a 'Generator' (indicated by a circle with a dot). The 'Combustion Turbine' also receives 'Fuel' and produces 'Exhaust Gas'.
+   </div>
+</div>
+<p>
+<i>
+    Refrigeration Air Cooling System
+   </i>
+</p>
+<ol style="list-style-type: none">
+<li>
+    8. a) Using a simple sketch, describe an aero-derivative gas turbine lube oil system.
+    <br/>
+    b) Discuss the use of chip detectors to detect metal particles in the oil.
+   </li>
+<li>
+    a)
+    <b>
+     Aero-Derivative Gas Turbine Lube Oil System
+    </b>
+</li>
+</ol>
+<p>
+   The following figure shows the lube oil system for an aero-derivative gas turbine — the General Electric LM6000 (used for power generation). It lubricates the gas turbine and power turbine bearings. The driven equipment is handled by a separate system.
+  </p>
+<img alt="Schematic diagram of the General Electric LM6000 Lube Oil System, divided into Supply and Scavenge sections." src="33ed1f9b27c7c21c797aa928b0f06851_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<p>
+    The diagram illustrates the lube oil system for the General Electric LM6000, organized into two primary sections: the
+    <b>
+     SUPPLY SYSTEM
+    </b>
+    on the left and the
+    <b>
+     SCAVENGE SYSTEM
+    </b>
+    on the right.
+   </p>
+<ul style="list-style-type: none">
+<li>
+<b>
+      Supply System:
+     </b>
+     This section begins with a
+     <b>
+      supply pump
+     </b>
+     that draws oil from a reservoir. The oil then passes through
+     <b>
+      Duplex Supply Filters
+     </b>
+     . Various monitoring instruments are connected to this part of the system, including temperature elements (TE), pressure transmitters (PT), pressure indicators (PI), and differential pressure sensors (PDH, PDSH, PDI). The filtered oil is then directed into the engine's bearing assembly.
+    </li>
+<li>
+<b>
+      Scavenge System:
+     </b>
+     This section collects oil that has passed through the bearings. It includes five
+     <b>
+      Scavenge Pump Element (5)
+     </b>
+     units located within the engine. The oil is then pumped to an
+     <b>
+      Air/Oil Separator
+     </b>
+     , which vents
+     <b>
+      AIR
+     </b>
+     from the top. The separated oil flows through
+     <b>
+      Duplex Scavenge Filters
+     </b>
+     . Monitoring instruments such as differential pressure sensors (PDH, PDSH, PDI) are also present in this section. The oil then passes through
+     <b>
+      Duplex Shell &amp; Tube Coolers
+     </b>
+     , which utilize
+     <b>
+      Cooling Water In
+     </b>
+     and
+     <b>
+      Cooling Water Out
+     </b>
+     connections. Finally, the cooled oil is returned to the reservoir.
+    </li>
+<li>
+<b>
+      Reservoir:
+     </b>
+     The oil reservoir is shown at the bottom left, containing a heater and equipped with level sensors (LSH, LG) and temperature sensors (TI, TSL).
+    </li>
+<li>
+<b>
+      Auxiliary Components:
+     </b>
+     An
+     <b>
+      Auxiliary Gearbox Mechanical Drive
+     </b>
+     is shown, which likely powers the supply pump or other system components.
+    </li>
+</ul>
+<div class="img-alt">
+    Schematic diagram of the General Electric LM6000 Lube Oil System, divided into Supply and Scavenge sections.
+   </div>
+</div>
+<p>
+<i>
+    General Electric LM6000 Lube Oil System
+    <br/>
+    (Courtesy of GE Power Systems)
+   </i>
+</p>
+<p>
+   This lube oil system is divided into two sections: a supply system and a scavenge system. To prevent corrosion, all piping, fittings, and the reservoir are Type 304 stainless steel. The lube oil used is synthetic type oil suitable for high temperatures.
+  </p>
+<p>
+   The oil reservoir contains approximately 500L in a 568L tank. It is fitted with protective devices to guard against low oil level and low oil temperature. A thermostatically controlled heater in the lube oil tank reservoir ensures that a minimum oil temperature is maintained to reduce the stresses on the turbine on startup and to keep moisture from condensing in the reservoir and contaminating the oil.
+  </p>
+<p>
+   An electric motor driven auxiliary lube oil pump is used to initially pressurize the system and satisfy the permissives to allow the turbine to start.
+  </p>
+<p>
+   A positive displacement pump, driven by an auxiliary gearbox on the engine, provides the required pressure to the bearings. After it leaves the pump, the oil is filtered through a duplex full-flow filter.
+  </p>
+<p>
+   The oil supply is protected by switches for:
+  </p>
+<ul style="list-style-type: none">
+<li>
+    • High oil temperature
+   </li>
+<li>
+    • Low oil pressure
+   </li>
+<li>
+    • High filter differential pressure
+   </li>
+</ul>
+<p>
+   Then, the oil flows through the bearings and accumulates in the bearing sumps. The oil temperature is measured at each scavenge line in case of bearing problems.
+  </p>
+<p>
+   Scavenge pumps (also driven by the auxiliary gearbox) provide pressure to flow the oil from the bearing sumps through another set of filters, and then through duplex thermostatically controlled water-cooled coolers. Then, the oil flows back into the reservoir.
+  </p>
+<h4>
+   b) Chip Detectors
+  </h4>
+<p>
+   Chip detectors are often located in the sumps to detect metal particles. If a bearing becomes damaged, metal particles break away and become entrained in the oil. Chip detectors are basically magnets that attract metal particles and detect when they accumulate. When the chip detector alarms, the detector will be removed and the particles that have been captured by the detector will be analyzed. The quantity and type of material collected will indicate:
+  </p>
+<ul style="list-style-type: none">
+<li>
+    • Where the problem is
+   </li>
+<li>
+    • How severe the problem has become
+   </li>
+</ul>
+<h3>
+   9. Explain, with the aid of a simple sketch, a type of fuel gas system for a gas turbine.
+  </h3>
+<h4>
+   Fuel Gas System
+  </h4>
+<p>
+   The General Electric LM6000 fuel gas system is representative of most gas turbines.
+  </p>
+<p>
+   A fuel gas compressor is installed in case extra compression is required to boost a low pressure fuel source. The pressure of the fuel gas has to be higher than the pressure of the compressed air delivered to the combustion section. A pressure regulator and relief valve is installed to ensure that the fuel gas supply is maintained at the correct pressure. Low and high pressure switches protect against over or under pressure conditions.
+  </p>
+<p>
+   A fuel filter ensures that contaminants do not enter the fuel system. Some systems use heat exchangers to raise the fuel gas to its optimum temperature to ensure that:
+  </p>
+<ul style="list-style-type: none">
+<li>
+    • Complete combustion occurs in the combustor
+   </li>
+<li>
+    • The gas always remains above the dew point temperatures of the heaviest constituents in the fuel gas
+   </li>
+</ul>
+<p>
+   A fuel gas flow meter monitors fuel consumption, but is not used for fuel control. Fuel is metered and controlled by the fuel metering valve, one of the most important components of the fuel gas system. It is also an essential component of the startup and shutdown sequence. Fuel valves are normally electrically controlled with hydraulic actuation, but electrically actuated valves are becoming more common. The fuel metering valve ensures that the correct amount of fuel is provided according to the operating conditions. It precisely controls the flow of fuel to ensure that maximum turbine temperature is not exceeded. The rate at which the fuel valve is opened and closed is limited to prevent temperature increases that might damage the turbine. Additional shutoff valves are provided for emergency purposes. Additional shutoff valves are provided for emergency purposes.
+  </p>
+<img alt="Schematic diagram of the General Electric LM6000 Fuel Gas System. The diagram shows the flow of fuel gas from a compressor through various components to a fuel gas manifold and nozzles. The top line shows the fuel gas compressor connected to a fuel gas scrubber, a bypass valve, an FSD valve, a pressure regulator, and a duplex filter separator. The bottom line shows the fuel gas flow meter, a 100 mesh strainer, a primary shut off valve, a fuel metering valve, and a secondary shut off valve. Various sensors (PT, PS1, PS2, FI, TE) are connected to the system and to a unit control panel." src="c85ded401105f62f2d6ff26b3b5eb4af_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<p>
+    The diagram illustrates the fuel gas system for the General Electric LM6000. The fuel gas is supplied from a
+    <b>
+     FUEL GAS COMPRESSOR
+    </b>
+    through a series of components: a
+    <b>
+     FUEL GAS SCRUBBER
+    </b>
+    , a
+    <b>
+     BYPASS VALVE
+    </b>
+    , an
+    <b>
+     FSD VALVE
+    </b>
+    , a
+    <b>
+     PRESSURE REGULATOR
+    </b>
+    , and a
+    <b>
+     DUPLEX FILTER SEPARATOR
+    </b>
+    . The duplex filter separator is connected to a
+    <b>
+     To unit control panel
+    </b>
+    . The fuel gas then passes through a
+    <b>
+     100 mesh (149 micron) strainer
+    </b>
+    and a
+    <b>
+     FUEL GAS FLOW METER
+    </b>
+    . The flow meter is connected to a
+    <b>
+     TE
+    </b>
+    (Temperature Element) and a
+    <b>
+     FI
+    </b>
+    (Flow Indicator). The fuel gas then passes through a
+    <b>
+     PRIMARY SHUT OFF VALVE
+    </b>
+    , a
+    <b>
+     FUEL METERING VALVE
+    </b>
+    , and a
+    <b>
+     SECONDARY SHUT OFF VALVE
+    </b>
+    . The fuel metering valve is connected to a
+    <b>
+     EM
+    </b>
+    (Electro-Mechanical) actuator. The fuel gas then passes through a
+    <b>
+     Fuel Gas Manifold
+    </b>
+    and
+    <b>
+     To 30 Fuel Gas Nozzles
+    </b>
+    . Various sensors are connected to the system:
+    <b>
+     PT
+    </b>
+    (Pressure Transmitter) sensors are located at the inlet of the flow meter, after the primary shut off valve, and before the fuel gas manifold.
+    <b>
+     PS1
+    </b>
+    (Pressure Switch) and
+    <b>
+     PS2
+    </b>
+    (Pressure Switch) sensors are located at the inlet of the flow meter.
+    <b>
+     PI
+    </b>
+    (Pressure Indicator) sensors are located at the inlet of the flow meter, after the primary shut off valve, and before the fuel gas manifold. All sensors are connected to a
+    <b>
+     To Unit Control Panel
+    </b>
+    .
+   </p>
+<div class="img-alt">
+    Schematic diagram of the General Electric LM6000 Fuel Gas System. The diagram shows the flow of fuel gas from a compressor through various components to a fuel gas manifold and nozzles. The top line shows the fuel gas compressor connected to a fuel gas scrubber, a bypass valve, an FSD valve, a pressure regulator, and a duplex filter separator. The bottom line shows the fuel gas flow meter, a 100 mesh strainer, a primary shut off valve, a fuel metering valve, and a secondary shut off valve. Various sensors (PT, PS1, PS2, FI, TE) are connected to the system and to a unit control panel.
+   </div>
+</div>
+<p>
+   General Electric LM6000 Fuel Gas System
+   <br/>
+   (Courtesy of GE Power Systems)
+  </p>
+<h3>
+<p>
+<b>
+     10. With the use of simple equations, describe how ammonia is used in the catalytic reduction of NO
+     <sub>
+      x
+     </sub>
+     emissions from the exhaust gases of a gas turbine.
+    </b>
+</p>
+</h3>
+<p>
+   NO
+   <sub>
+    x
+   </sub>
+   emissions are removed from the burner exhaust gases through the use of a catalyst. In one process, ammonia is added to the flue gas prior to the gas passing over a catalyst. The catalyst enables the ammonia to react chemically with the NO
+   <sub>
+    x
+   </sub>
+   converting it to molecular nitrogen and water. The catalyst used is a combination of titanium and vanadium oxides. This system promotes the removal of up to 90% of nitrogen oxides from the flue gases.
+  </p>
+<p>
+   The ammonia reacts with both the nitrogen monoxide (NO) and nitrogen dioxide (NO
+   <sub>
+    2
+   </sub>
+   )
+  </p>
+<p>
+   Reaction with NO:
+  </p>
+<img alt="" src="6c8984b9dc519f12fe211c68e83fd492_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+   $$
+    4NO + 4NH_3 + O_2 = 4N_2 + 6H_2O
+   $$
+  </div>
+<p>
+   Reaction with NO
+   <sub>
+    2
+   </sub>
+   :
+  </p>
+<img alt="" src="87a4869488182e92e56d63bc28fd00b7_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+   $$
+    2NO_2 + 4NH_3 + O_2 = 3N_2 + 6H_2O
+   $$
+  </div>
+<p>
+   The NO and NO
+   <sub>
+    2
+   </sub>
+   react with the ammonia to form nitrogen and water. The nitrogen is harmless and can be released back into the atmosphere.
+  </p>
+
+
+<h1>
+   Chapter 8 Solutions
+  </h1>
+<h2>
+<i>
+    Gas Turbine Operation and Control
+   </i>
+</h2>
+<h3>
+<b>
+    1. Describe the functions of a gas turbine control system.
+   </b>
+</h3>
+<p>
+   The major function of a control system is to ensure correct sequencing during startup and shutdown. The control system must safely control the flow of fuel to the combustors to ensure that the gas turbine efficiently drives the process load under all conditions. It positions the fuel metering valve based upon load or demand (e.g. generator frequency or compressor discharge pressure).
+  </p>
+<p>
+   Changes in demand loading requires a very controlled “ramp up” or “ramp down” response from the gas turbine control system as a rapid increase or decrease in acceleration can cause surge, flame out or other combustion problems..
+  </p>
+<p>
+   Depending on ambient temperature, there are maximum limits to operation. At higher ambient temperatures, a gas turbine is limited by exhaust gas temperature to ensure that temperature limits for combustion and turbine section components are not exceeded. At lower ambient temperatures, a gas turbine is limited by rotor speed to regulate the stresses placed on rotor blades. For dual shaft gas turbines, there are minimum and maximum limits on power turbine speed.
+  </p>
+<p>
+   Additional controls are required for bleed valves and variable guide vanes. Sometimes, these controls are independent, but it is becoming common to include them in the main gas turbine control system. Both bleed valve and variable guide vane operations are controlled by the main gas turbine controller using a calculation embedded into the logic sequencing that matches their positions to a specific startup time line and engine speed.
+  </p>
+<p>
+   Another function of the control system is to indicate when abnormal levels are reached by generating an alarm, or by shutting down the gas turbine under certain conditions.
+  </p>
+<h3>
+<p>
+<b>
+     2. List the monitoring points that are associated with the following gas turbine system protection.
+    </b>
+</p>
+</h3>
+<ul style="list-style-type: none">
+<li>
+<b>
+     a) Oil
+    </b>
+</li>
+<li>
+<b>
+     b) Combustion
+    </b>
+</li>
+</ul>
+<ul style="list-style-type: none">
+<li>
+<b>
+     a) Oil
+    </b>
+</li>
+</ul>
+<p>
+   Oil system protection includes:
+  </p>
+<ul style="list-style-type: none">
+<li>
+    • Low oil pressure (fast shutdown)
+   </li>
+<li>
+    • Low lube oil tank temperature (alarm only)
+   </li>
+<li>
+    • High lube oil header temperature (alarm and fast shutdown)
+   </li>
+<li>
+    • High bearing temperature (alarm and fast shutdown)
+   </li>
+<li>
+    • Low oil level (alarm and shutdown)
+   </li>
+<li>
+    • High oil filter differential pressure (alarm only)
+   </li>
+</ul>
+<ul style="list-style-type: none">
+<li>
+<b>
+     b) Combustion
+    </b>
+</li>
+</ul>
+<p>
+   Combustion protection includes:
+  </p>
+<ul style="list-style-type: none">
+<li>
+    • High exhaust gas temperature (fast shutdown)
+   </li>
+<li>
+    • High exhaust gas temperature spread (alarm only)
+   </li>
+<li>
+    • Loss of flame (fast shutdown)
+   </li>
+<li>
+    • Ignition failure on startup (fast shutdown)
+   </li>
+</ul>
+<h3>
+<p>
+<b>
+     3. What steps are followed to prepare a gas turbine for startup?
+    </b>
+</p>
+</h3>
+<p>
+   If the equipment is used frequently and maintenance work has not been done recently, only a few checks are required. These may include a walk-around and visual inspection of the engine to check for:
+  </p>
+<ul style="list-style-type: none">
+<li>
+    • Leaks in the oil system (including pumps, fittings, piping and tubing)
+   </li>
+<li>
+    • Oil tank and sump level
+   </li>
+<li>
+    • Air intake obstructions
+   </li>
+<li>
+    • Correct placement and secure fastening of all guards and covers
+   </li>
+<li>
+    • General hazards
+   </li>
+</ul>
+<p>
+   If the equipment has been shut down for an extended period of time, the operator should check that all the following auxiliary equipment and support systems are activated and energized:
+  </p>
+<ul style="list-style-type: none">
+<li>
+    • Electrical
+   </li>
+<li>
+    • Pneumatic
+   </li>
+<li>
+    • Fuel
+   </li>
+<li>
+    • Instrumentation
+   </li>
+<li>
+    • Lubrication
+   </li>
+<li>
+    • System controllers
+   </li>
+</ul>
+<p>
+   These systems may have been shutdown and need to be activated before the startup is initiated.
+  </p>
+<p>
+   If routine, minor, or major maintenance has been done recently, the work area has to be cleaned and all tools, parts and supplies removed prior to startup. Shutoff valves may need to be opened or unlocked. Other maintenance-specific steps may need to be taken, and a more thorough pre-start inspection may be required.
+  </p>
+<h3>
+<b>
+    4. Describe the steps to be followed in the normal shutdown of a gas turbine.
+   </b>
+</h3>
+<p>
+   The first step in a controlled shutdown is to reduce the speed, over a specified period of time, down to “zero load speed”. As the speed is being reduced, the load on the turbine (electric generator or gas compressor) will be reduced and the entire unit will be allowed to cool down under even and stable conditions. Once at idle speed, the power turbine will be unloaded completely by disconnecting from the main electrical grid or fully opening the recycle valves if the load is a gas compressor. During this cool down period, the turbine can be quickly loaded back up if the need arises.
+  </p>
+<p>
+   When the cooldown timer timeframe has been completed or the specific minimum set temperatures across the machine have been reached, the fuel valve is closed and combustion is eliminated. The rotor speed will decrease and the machine will stop.
+  </p>
+<p>
+   As the speed drops, the main lube oil pump (if driven off the rotor) loses pressure. At a specified point, usually based on oil pressure, the prelube pump starts and continues to lubricate and cool the bearings for a specified time period. The enclosure or building fans shut off.
+  </p>
+<p>
+   On most heavy-duty gas turbines, the turning gear activates at either 15% of operating speed or immediately after the rotor stops turning. The turning gear rotates the rotor at a slow speed for a certain time period — ranging from 5 hours for a small gas turbine to as many as 60 hours for a very large gas turbine. Restart at any time during this time period is allowed. This cooldown period prevents bowing of the rotor, which would cause high vibration on the next startup and could lock-up the rotor and prevent starter rotation.
+  </p>
+<h3>
+<p>
+<b>
+     5. Discuss the methods used to waterwash gas turbine blades, including the type of cleaner used.
+    </b>
+</p>
+</h3>
+<p>
+   The most effective method of compressor cleaning is the offline waterwash. This consists of stopping the unit, injecting waterwash fluids into the intake of the compressor while running on the starter, and then restarting the unit. It is also referred to as the crank-soak method. Online water washing is not as effective as off-line although it is still a viable alternative if downtime is not acceptable.
+  </p>
+<p>
+   To remove oily substances, additional cleaning agents and solvents are mixed with the water. Acceptable cleaners are often specified by gas turbine vendors. However, the most effective cleaning agents are also the most toxic and require special handling.
+  </p>
+<p>
+   If the temperature is less than 4°C, a 1:1 mixture of water and ethylene glycol is recommended to prevent icing. The gas turbine vendor should be consulted since commercial and automotive anti-freeze products are usually not acceptable.
+  </p>
+<h3>
+<p>
+<b>
+     6. Discuss the steps involved in the overhaul of an aeroderivative gas turbine.
+    </b>
+</p>
+</h3>
+<ul style="list-style-type: none">
+<li>
+    a) The engine is placed in a vertical hydraulic pit so it can be easily dismantled.
+   </li>
+<li>
+    b) All parts, especially blades, are carefully organized in trays.
+   </li>
+<li>
+    c) Parts are cleaned using sandblasting, chemical cleaning tanks, and ceramic media cleaning tanks.
+   </li>
+<li>
+    d) Blades are checked for cracks by spraying dye penetrant on the blade and then cleaning it off. The dye remains in the cracks and can be detected under ultraviolet light.
+   </li>
+<li>
+    e) A process called dispositioning is used to decide whether components should be kept, repaired, or have to be rejected. This is based on specific criteria such as the dimensions, type, and size of cracks, loss of coatings, and sometimes the number of operating hours.
+   </li>
+<li>
+    f) Repairs are then carried out and the engine parts are stored waiting for new parts.
+   </li>
+<li>
+    g) The rotor and blading are reassembled. This usually involves carefully restacking the stages of the rotor to prevent unbalance.
+   </li>
+<li>
+    h) The rotor is balanced in a balancing machine to ensure that vibration levels are within acceptable limits.
+   </li>
+<li>
+    i) The final re-assembly takes place by assembling rotors, casings, combustion components and all auxiliaries mounted on the engine.
+   </li>
+<li>
+    j) The engine is tested in a test cell to verify performance and check vibration levels.
+   </li>
+</ul>
+<ol style="list-style-type: none">
+<li>
+    7. Briefly outline the symptom, probable cause and remedy for a high vibration alarm to annunciate.
+   </li>
+</ol>
+<table border="1">
+<thead>
+<tr data-bbox="228 338 1299 394">
+<th>
+      Symptom
+     </th>
+<th>
+      Probable Cause
+     </th>
+<th>
+      Remedy
+     </th>
+</tr>
+</thead>
+<tbody>
+<tr data-bbox="228 394 1299 741">
+<td rowspan="4">
+      Vibration high
+     </td>
+<td>
+      Problem with vibration transducer or wiring
+     </td>
+<td>
+      Check vibration transducer or wiring
+     </td>
+</tr>
+<tr data-bbox="228 478 1299 548">
+<td>
+      Alarm and shutdown levels not correct
+     </td>
+<td>
+      Reset alarm and shutdown levels
+     </td>
+</tr>
+<tr data-bbox="228 548 1299 617">
+<td>
+      Engine mountings too tight or seized
+     </td>
+<td>
+      Check engine mountings
+     </td>
+</tr>
+<tr data-bbox="228 617 1299 741">
+<td>
+      Major engine problem or internal failure
+     </td>
+<td>
+      Perform borescope. If necessary schedule major overhaul
+     </td>
+</tr>
+</tbody>
+</table>
+<h1>
+   Chapter 9 Solutions
+  </h1>
+<h2>
+   Lubrication
+  </h2>
+<ol style="list-style-type: none">
+<li>
+    1. With the aid of a simple sketch, describe how the various cuts of oils are separated in a fractionating tower.
+   </li>
+</ol>
+<p>
+   Crude oil is preheated and continuously pumped into the tower at the approximate level shown. Heat within the tower is applied by means of steam jets streaming directly into the charge of crude oil. The crude oil boils and the vapors produced rise into the tower. These vapors must pass through the bubble caps in each tray in their progress up the tower and as their temperature falls, condensation of the various constituents takes place.
+  </p>
+<img alt="A schematic diagram of a fractionating tower used for distilling crude oil. The tower is a vertical column containing several horizontal trays. Each tray is equipped with bubble caps, which are shown as inverted U-shaped structures. Heated crude oil is introduced into the lower part of the tower. At the very bottom, steam jets are shown entering the oil. As the oil heats up, vapors rise through the tower. On the left side, labels from top to bottom are: 'Bubble Caps', 'Heated Crude oil', and 'Steam'. On the right side, labels from top to bottom are: 'Gasoline' (at the top), 'Trays' (pointing to one of the horizontal plates), 'Kerosene', 'Gas Oil (Light Fuel Oils) (Cracking Stock)', 'Light Lubricating Oil (Spindle Oils)', and 'Undistilled Residue Asphalt or Lubricating Oil Stock Depending Upon Type of Crude' (at the bottom)." src="f6d72d7c790e7f585532140f3971639a_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    A schematic diagram of a fractionating tower used for distilling crude oil. The tower is a vertical column containing several horizontal trays. Each tray is equipped with bubble caps, which are shown as inverted U-shaped structures. Heated crude oil is introduced into the lower part of the tower. At the very bottom, steam jets are shown entering the oil. As the oil heats up, vapors rise through the tower. On the left side, labels from top to bottom are: 'Bubble Caps', 'Heated Crude oil', and 'Steam'. On the right side, labels from top to bottom are: 'Gasoline' (at the top), 'Trays' (pointing to one of the horizontal plates), 'Kerosene', 'Gas Oil (Light Fuel Oils) (Cracking Stock)', 'Light Lubricating Oil (Spindle Oils)', and 'Undistilled Residue Asphalt or Lubricating Oil Stock Depending Upon Type of Crude' (at the bottom).
+   </div>
+</div>
+<p>
+<i>
+    Fractionating Tower
+   </i>
+</p>
+<h3>
+<p>
+<b>
+     2. Briefly describe the following:
+    </b>
+</p>
+</h3>
+<ul style="list-style-type: none">
+<li>
+<b>
+     a) Viscosity
+    </b>
+</li>
+<li>
+<b>
+     b) Pour point
+    </b>
+</li>
+<li>
+<b>
+     c) Cloud point
+    </b>
+</li>
+<li>
+<b>
+     d) Flash point
+    </b>
+</li>
+</ul>
+<ul style="list-style-type: none">
+<li>
+    a) Viscosity is a measure of the oil's resistance to shear. Viscosity is more commonly known as resistance to flow.
+   </li>
+<li>
+    b) Pour point of an oil is the lowest temperature at which an oil will flow.
+   </li>
+<li>
+    c) Cloud point is the temperature at which dissolved solids in the oil, such as paraffin wax, begin to form and separate from the oil
+   </li>
+<li>
+    d) Flash point of an oil is the temperature to which it must be heated to give off sufficient vapor to form an inflammable mixture with air.
+   </li>
+</ul>
+<h3>
+<p>
+<b>
+     3. a) Explain what occurs when lubricating oils react with oxygen.
+    </b>
+</p>
+</h3>
+<h4>
+<p>
+<b>
+     b) Briefly describe various causes for this reaction to be accelerated.
+    </b>
+</p>
+</h4>
+<ul style="list-style-type: none">
+<li>
+    a) When lubricating oils react with oxygen, materials are formed that impair the qualities of the oil. Eventually they become insoluble in the oil, form sludge, especially with water and foreign suspended matter, and promote the formation of deposits. On continued oxidation, the oil will develop organic acids and in severe cases the viscosity will increase significantly.
+   </li>
+<li>
+    b) The reaction between oil and oxygen is accelerated by:
+    <ul style="list-style-type: none">
+<li>
+      • Increasing the temperature
+     </li>
+<li>
+      • Metallic catalysts
+     </li>
+<li>
+      • Water
+     </li>
+<li>
+      • Foreign suspended matter
+     </li>
+<li>
+      • The oxidation products themselves
+     </li>
+</ul>
+</li>
+</ul>
+<h3>
+<p>
+<b>
+     4. Give a brief explanation of the following lubrication additives.
+    </b>
+</p>
+</h3>
+<ul style="list-style-type: none">
+<li>
+<b>
+     a) Detergent-dispersent
+    </b>
+</li>
+<li>
+<b>
+     b) Anti-wear agents
+    </b>
+</li>
+<li>
+<b>
+     c) Foam inhibitors
+    </b>
+</li>
+<li>
+<b>
+     d) Rust prevention
+    </b>
+</li>
+</ul>
+<ul style="list-style-type: none">
+<li>
+    a) Detergent-dispersent are used in crankcase oils is to keep the engine clean. The detergent acts to maintain metal surfaces clean and prevent deposit formation of all types, by keeping oxidation products soluble in the oil. The dispersant acts to break down insolubles into a finely divided state so that they will remain suspended in colloidal form in the oil. They are metallo-organic compounds such as phosphates and sulphonates, or high molecular weight soaps.
+   </li>
+<li>
+    b) Anti-wear agents form a film on metal surfaces by chemical action at times of extreme high pressure, or high temperature so as to reduce the surface friction and prevent scoring or seizure. They also will reduce or minimize wear. They are organic compounds containing chlorine, phosphorus and sulphur. As long as good film lubrication conditions exist in a bearing, there can be no metal-to-metal contact but if the oil film is destroyed due to excess pressure or high temperature the condition becomes one of boundary lubrication and at these times the anti-wear additives act to reduce the resulting friction.
+   </li>
+<li>
+    c) Foam in a lubricating oil is formed by the entrainment of air bubbles. This can occur when an oil is violently agitated in the presence of air; high viscosity oils will have a stronger tendency to do this than the lighter oils. The additives used are silicone polymers and they act so as to reduce the surface tension between air bubbles so that they tend to combine into larger bubbles which can rise to the surface of the oil and escape.
+   </li>
+<li>
+    d) Rust prevention These are used to prevent rusting of metal parts during shut-down periods or to protect equipment during storage or shipment. They consist of sulphonates, amines, or the derivatives of some fatty acids. They act to absorb certain active materials on a metal surface, neutralize corrosive acids and form a protective film which repels water.
+   </li>
+</ul>
+<h3>
+<p>
+<b>
+     5. What are the advantages to planning the entire plant lubrication program as one combined operation?
+    </b>
+</p>
+</h3>
+<p>
+   In almost any plant it will be advantageous to plan the entire plant lubrication as one combined operation. Savings will be effected through the:
+  </p>
+<ul style="list-style-type: none">
+<li>
+    • Reduction in the number and variety of lubricants used
+   </li>
+<li>
+    • Reduction in maintenance costs and plant-outage time
+   </li>
+<li>
+    • Increased life of equipment due to proper lubrication
+   </li>
+</ul>
+<h3>
+<p>
+<b>
+     6. With the aid of a simple sketch, explain the operation of a lube oil centrifuge.
+    </b>
+</p>
+</h3>
+<p>
+   In the centrifuge, centrifugal force is produced by rotating the liquid at high speeds, up to 15 000 rev/min. This facilitates the separation of the contaminants that are heavier than oil. Sedimentation and separation are continuous and very fast. When liquid and solid particles in a liquid mixture are subjected to the centrifugal force in a separator bowl, it takes only a few seconds to achieve what takes many hours in a tank under the influence of gravity.
+  </p>
+<p>
+   The centrifugal bowl is equipped with a series of conical shaped discs which divide the feed material into layers less than .13 cm in thickness. The oil, water and solids are fed into the top inlet A. The still mixed feed material travels down the inlet tube (B) into the centrifuge bowl.
+  </p>
+<p>
+   The feed material is forced upward through the holes in the intermediate discs (C) and into the spaces between them. This is where the centrifugal action immediately separates the feed material into the heavy and light phases (oil, water, and solids.)
+  </p>
+<p>
+   The solids are thrown directly to the bowl wall (D). The oil, with its lighter density, is displaced inward and travels upward through the space around the inlet tube to the light phase discharge (E). The water phase, thrown outward by centrifugal force, is displaced by the incoming feed material and travels upward along the outer edge of the bowl to the heavy phase discharge (F). Solids may be retained in the bowl or discharged immediately, depending on bowl design and operating requirements.
+  </p>
+<img alt="A cross-sectional diagram of a centrifugal separator. A central vertical inlet tube (B) leads to a 'Mixed Feed Inlet' (A) at the top. The mixture enters a bowl (D) formed by two conical disks (G) with holes (C) between them. The bowl wall (D) is shown with diagonal hatching. The disks (G) are also hatched. The bowl rotates around a central vertical axis, indicated by a curved arrow at the bottom. Two discharge streams exit from the top: 'Light Phase Discharge' (E) and 'Heavy Phase Discharge' (F)." src="e7cb11f042fc58088dff4b6d9306845e_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<p>
+    A. Mixed Feed Inlet
+    <br/>
+    B. Inlet Tube
+    <br/>
+    C. Disc Holes
+    <br/>
+    D. Bowl Wall
+    <br/>
+    E. Light Phase Discharge
+    <br/>
+    F. Heavy Phase Discharge
+    <br/>
+    G. Disks
+   </p>
+<div class="img-alt">
+    A cross-sectional diagram of a centrifugal separator. A central vertical inlet tube (B) leads to a 'Mixed Feed Inlet' (A) at the top. The mixture enters a bowl (D) formed by two conical disks (G) with holes (C) between them. The bowl wall (D) is shown with diagonal hatching. The disks (G) are also hatched. The bowl rotates around a central vertical axis, indicated by a curved arrow at the bottom. Two discharge streams exit from the top: 'Light Phase Discharge' (E) and 'Heavy Phase Discharge' (F).
+   </div>
+</div>
+<h4>
+<i>
+    Centrifugal Separation
+   </i>
+</h4>
+<h3>
+   7. With the aid of a sketch, explain the hydrodynamic theory of lubrication.
+  </h3>
+<p>
+   The hydro-dynamics theory of lubrication involves the complete separation of opposing surfaces by a fluid film. The following diagrams give a graphic analysis of this action.
+  </p>
+<p>
+   Fig. (a) and (b) show a surface X moving at constant velocity across a stationary surface Y with an oil film between the two. In Fig. (a), the X and Y surfaces are parallel. In Fig. (b), the X surface is at a slight angle. In each case the triangle abc represents the quantity of oil entering between the surfaces and the triangle a'b'c' the quantity of oil leaving.
+  </p>
+<img alt="Two diagrams, (a) and (b), illustrating hydrodynamic theory. Diagram (a) shows a block X moving right over a surface Y, with a uniform oil film thickness bc = b'c'. Diagram (b) shows the same setup but with a wedge-shaped oil film where bc &gt; b'c', creating a vertical force." src="967c30813761a8952ecc5e16bf42ea45_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<p>
+    The image contains two diagrams, (a) and (b), illustrating hydrodynamic theory. Both diagrams show a hatched block labeled 'X' moving to the right over a horizontal surface labeled 'Y'. In diagram (a), the block is at a uniform height above the surface. Points a, b, c and a', b', c' are marked to show velocity profiles. In diagram (b), the block is tilted, creating a wedge-shaped oil film where the entry height bc is greater than the exit height b'c'.
+   </p>
+<div class="img-alt">
+    Two diagrams, (a) and (b), illustrating hydrodynamic theory. Diagram (a) shows a block X moving right over a surface Y, with a uniform oil film thickness bc = b'c'. Diagram (b) shows the same setup but with a wedge-shaped oil film where bc &gt; b'c', creating a vertical force.
+   </div>
+</div>
+<h4>
+<i>
+    Hydro-Dynamic Theory
+   </i>
+</h4>
+<p>
+   In Fig. (a),
+   \(
+    bc = b'c'
+   \)
+   , the triangles are equal, and the quantity of oil entering the bearing equals the quantity leaving; there is therefore no upward force acting to separate the surfaces X and Y.
+  </p>
+<p>
+   In Fig. (b)
+   \(
+    bc
+   \)
+   is greater than
+   \(
+    b'c'
+   \)
+   and
+   \(
+    ac
+   \)
+   than
+   \(
+    a'c'
+   \)
+   . Therefore triangle
+   \(
+    abc
+   \)
+   is greater than
+   \(
+    a'b'c'
+   \)
+   . Thus more oil can enter than is able to leave and a vertical force results which tends to separate X from Y.
+  </p>
+<p>
+   In both Fig. (a) and 20 (b), there is a horizontal force shearing the oil but only in (b) is there a resultant vertical force. This simple basic principle explains why moving surfaces must be designed to provide a wedge if full fluid film lubrication is to be achieved, and machinery is to carry high loads without wear.
+  </p>
+<h1>
+   Chapter 10 Solutions
+  </h1>
+<h2>
+   Piping
+  </h2>
+<ol style="list-style-type: none">
+<li>
+    1. List the properties that contribute to the suitability and economy of a given pipe material.
+   </li>
+</ol>
+<p>
+   The following properties contribute to the attractiveness and economy of a given pipe material:
+  </p>
+<ol style="list-style-type: none">
+<li>
+<ul style="list-style-type: none">
+<li>
+      • Ability to be bent or formed
+     </li>
+<li>
+      • Suitability for welding or other methods of joining
+     </li>
+<li>
+      • Ease of heat treatment
+     </li>
+<li>
+      • Uniformity and stability of the resultant microstructure
+     </li>
+</ul>
+</li>
+<li>
+<ol style="list-style-type: none">
+<li>
+      2. a) Calculate the required thickness for 406.4 mm nominal size plain end steam pipe to operate at 17 250 kPa and 540°C. The material is to be seamless alloy steel SA-335P21.
+     </li>
+</ol>
+</li>
+</ol>
+<h3>
+   Solution
+  </h3>
+<p>
+   $$
+    P = 17.25 \text{ MPa (given)}
+   $$
+  </p>
+<p>
+   $$
+    D_o = 406.40 \text{ mm (Table 1)}
+   $$
+  </p>
+<p>
+   $$
+    SE = 37.92 \text{ MPa (Table 1A)}
+   $$
+  </p>
+<p>
+   $$
+    y = 0.7 \text{ (Table 3)}
+   $$
+  </p>
+<p>
+   $$
+    A = 0.000
+   $$
+  </p>
+<p>
+   $$
+    t_m = \frac{PD_o}{2(SE + P_y)} + A
+   $$
+  </p>
+<p>
+   $$
+    t_m = \frac{17.25 \text{ MPa} \times 406.40 \text{ mm}}{2(37.92 \text{ MPa} + 17.25 \times 0.7)} + 0
+   $$
+  </p>
+<p>
+   $$
+    t_m = \frac{7010.40}{2(49.995)} + 0
+   $$
+  </p>
+<p>
+   $$
+    t_m = \frac{7010.40}{99.99} + 0
+   $$
+  </p>
+<p>
+   $$
+    t_m = 70.11 + 0
+   $$
+  </p>
+<p>
+   $$
+    t_m = 70.11 \text{ mm}
+   $$
+  </p>
+<p>
+   Using a manufacturer's tolerance allowance of 12.5%, then the required wall thickness is:
+  </p>
+<p>
+   $$
+    70.11 \times 1.125 = 78.87 \text{ mm (Ans.)}
+   $$
+  </p>
+<ol style="list-style-type: none">
+<li>
+    a) Calculate the maximum allowable working pressure, in MPa, for the nominal size plain end steam pipe in the above example.
+   </li>
+</ol>
+<p>
+   $$
+    \begin{aligned} P &amp;= \frac{2 SE (t_m - A)}{D_o - 2y (t_m - A)} \\ &amp;= \frac{2 \times 37.92 (78.87 - 0)}{406.40 - 2 \times 0.7 (78.87 - 0)} \\ &amp;= \frac{2 \times 37.92 (78.87)}{406.40 - 2 \times 0.7 (78.87)} \\ &amp;= \frac{2 \times 2990.75}{406.40 - 2 \times 55.21} \\ &amp;= \frac{5981.50}{406.40 - 110.42} \\ &amp;= \frac{5981.50}{295.98} \\ &amp;= \mathbf{20.21 \text{ MPa}} \end{aligned}
+   $$
+  </p>
+<ol style="list-style-type: none">
+<li>
+    3. With the aid of a simple sketch, show how the probes are located in relation to the weld in time-of-flight diffraction.
+   </li>
+</ol>
+<h3>
+   Time-of-Flight Diffraction (TOFD)
+  </h3>
+<p>
+   The TOFD technique is an effective fully computerized inspection method for the detection and sizing of flaws with a high rate of accuracy. With the TOFD technique, which applies diffraction signals instead of reflection signals type, location, geometry or orientation of the anomalies is irrelevant for detection and sizing. In the TOFD technique, a transmitter and a receiver are placed on equal distances of the weld. The scanner with the probes is moved in most cases swiftly parallel with the weld.
+  </p>
+<p>
+   TOFD is utilized over the entirety of the weld seam lengths for expedient detection and classification of inherent flaws and creep damage. The small, high intensity beam spot achieved in this inspection has proven effective in detecting incipient creep damage to a very early form of cavitation.
+  </p>
+<p>
+   The following figure shows the typical TOFD arrangement for the detection of deep-seated damage, with the probes set relatively broadly such that the intersection point of the beam centers lies at a depth of approximately 2/3 wall. This inspection can be implemented in a single scan pass, with the transducers straddling the weld.
+  </p>
+<img alt="Diagram of TOFD Transducer Configuration for Deep Coverage. It shows a cross-section of a pipe with a 'Transmitter' on the left and a 'Receiver' on the right. A 'Weld' is indicated by a vertical dashed line. A shaded trapezoidal area represents the 'Volume of Coverage' for the weld. The 'Weld Centerline' is marked at the bottom of the weld. The diagram illustrates the setup for deep coverage using Time of Flight Diffraction (TOFD) transducers." src="0dd5ee731e9d7e34e498b5c926110773_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<div class="img-alt">
+    Diagram of TOFD Transducer Configuration for Deep Coverage. It shows a cross-section of a pipe with a 'Transmitter' on the left and a 'Receiver' on the right. A 'Weld' is indicated by a vertical dashed line. A shaded trapezoidal area represents the 'Volume of Coverage' for the weld. The 'Weld Centerline' is marked at the bottom of the weld. The diagram illustrates the setup for deep coverage using Time of Flight Diffraction (TOFD) transducers.
+   </div>
+</div>
+<p>
+<i>
+    TOFD Transducer Configuration for Deep Coverage
+   </i>
+</p>
+<h3>
+<p>
+<b>
+     4. Explain how high temperatures affect the tensile strength of piping.
+    </b>
+</p>
+</h3>
+<h4>
+<p>
+<b>
+     Tensile Strength
+    </b>
+</p>
+</h4>
+<p>
+   As the temperature is increased, the properties of the pipe material will change. The tensile strength of the material will rapidly decrease above a certain temperature. This is indicated in Table 1A of the ASME Code, Section II, Part D. For any material listed in this table, the working stress allowed will decrease as the temperature increases. For example, steel pipe of material SA-53B is allowed a working stress of 103 425 kPa at 343°C. But, at a temperature of 427°C, the working stress allowed is only 74 466 kPa.
+  </p>
+<h3>
+<p>
+<b>
+     5. Give the advantages and disadvantages of the following:
+    </b>
+</p>
+</h3>
+<ul style="list-style-type: none">
+<li>
+<b>
+     a) Expansion bends
+    </b>
+</li>
+<li>
+<b>
+     b) Slip expansion joints
+    </b>
+</li>
+<li>
+<b>
+     c) Corrugated expansion joints
+    </b>
+</li>
+</ul>
+<h4>
+<p>
+<b>
+     a) Expansion Bends
+    </b>
+</p>
+</h4>
+<p>
+   Advantages of expansion bends are:
+  </p>
+<ul style="list-style-type: none">
+<li>
+    • Most trouble-free method as there is no maintenance involved
+   </li>
+<li>
+    • Leakage is unlikely
+   </li>
+<li>
+    • Any temperature, pressure or fluid can be handled by proper selection of material and thickness
+   </li>
+</ul>
+<p>
+   Disadvantages of expansion bends are:
+  </p>
+<ul style="list-style-type: none">
+<li>
+    • Require a larger amount of space
+   </li>
+<li>
+    • Produce a higher pressure drop and heat loss
+   </li>
+<li>
+    • More costly than expansion joints
+   </li>
+<li>
+    • Produce higher end thrusts which can present problems when connecting to equipment such as turbines and pumps.
+   </li>
+</ul>
+<ul style="list-style-type: none">
+<li>
+    •
+   </li>
+</ul>
+<h4>
+<b>
+    b) Slip Expansion Joints
+   </b>
+</h4>
+<p>
+   Advantages of slip expansion joints are:
+  </p>
+<ul style="list-style-type: none">
+<li>
+    • Simple and rugged
+   </li>
+<li>
+    • Capable of handling a large amount of expansion
+   </li>
+<li>
+    • Minimum space required
+   </li>
+<li>
+    • Produce little pressure drop and heat loss
+   </li>
+</ul>
+<p>
+   Disadvantages of slip expansion joints are:
+  </p>
+<ul style="list-style-type: none">
+<li>
+    • Must be located where the packing can be given attention
+   </li>
+<li>
+    • Problems may arise if the joint is poorly aligned or if it becomes corroded
+   </li>
+<li>
+    • Joint needs to be installed and maintained according to manufacturer's instructions
+   </li>
+<li>
+    • Proper packing must be used
+   </li>
+<li>
+    • Needs to be lubricated two or three times a year unless self-lubricating packing is used.
+   </li>
+</ul>
+<h4>
+<b>
+    c) Corrugated Expansion Joints
+   </b>
+</h4>
+<p>
+   Advantages of corrugated expansion joints are:
+  </p>
+<ul style="list-style-type: none">
+<li>
+    • Require less space
+   </li>
+<li>
+    • Produce less pressure drop and heat loss than the expansion bends or loops
+   </li>
+<li>
+    • Do not require maintenance as in the case of the slip type
+   </li>
+</ul>
+<p>
+   Disadvantages of corrugated expansion joints are
+  </p>
+<ul style="list-style-type: none">
+<li>
+    • Amount of movement provided by the bellows or corrugations is less than can be provided by the slip expansion joint
+   </li>
+<li>
+    • Vulnerable to condensate corrosion during shutdown periods as the condensate will not drain effectively
+   </li>
+</ul>
+<h3>
+   6. Explain how the sudden closing of a valve can cause water hammer in a pipe.
+  </h3>
+<h3>
+   Valve Operation
+  </h3>
+<p>
+   In the case of a valve being quickly closed in a pipeline through which water is flowing, the first effect is the sudden decrease in the velocity of the water and a correspondingly increase in pressure at the valve. This causes a pressure wave to travel back upstream to the inlet end of the pipe where it reverses and surges back and forth through the pipe, getting weaker with each successive reversal. This pressure wave due to water hammer is in addition to the normal water pressure within the pipe and depends upon the magnitude and rate of change in velocity as well as the elasticity of the pipe and of the water. Complete stoppage of flow is not necessary to produce water hammer as any sudden change in velocity will bring it about to a greater or less degree depending upon the above conditions.
+  </p>
+<p>
+   Where too rapid closing of a valve is the cause of the water hammer, the remedy is to ensure that the valve is closed slowly. The period of effective closing of a gate valve takes place in the last 20% of the valve travel and this portion should be undertaken as slowly as possible. If the valve is equipped with a bypass, the bypass should be opened to equalize the pressure on both sides of the valve. Then the bypass valve is closed.
+  </p>
+<p>
+   When opening a gate valve, the first 20% of the valve travel is the most critical portion. If so equipped, the bypass should be opened to allow for pressure equalization. Then the valve should be opened as slowly as possible. As a general rule, all valves should be opened and closed slowly and cautiously.
+  </p>
+<h1>
+   Chapter 11 Solutions
+  </h1>
+<h2>
+   Mechanical Drawing
+  </h2>
+<ol style="list-style-type: none">
+<li>
+    1. When is sectioning used in orthographic projections?
+   </li>
+</ol>
+<p>
+   Showing interior details with hidden feature lines in orthographic drawings is very difficult. For internal details in orthographic drawings, “Sectioning” is used. It is a cutaway type of view showing internal details.
+  </p>
+<ol style="list-style-type: none">
+<li>
+    2. With reference to the following pressure vessel drawing, what is the distance from the centre of nozzle N1 to the outside of the flange on N2?
+   </li>
+</ol>
+<img alt="Technical drawing of a pressure vessel showing End View A-A and Elevation View with dimensions." src="a706c91f074ac2840c161a3d4a7c0f91_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<p>
+    The figure consists of two orthographic views of a pressure vessel. The 'End View A-A' on the left shows a circular cross-section with a central vertical axis. Nozzle N1 is at the top (0°), nozzle N2 is at the bottom (180°), and a cutout C1 is on the right (90°). Section lines A-A, B-B, and C-C are indicated at 45° angles. The 'Elevation View' on the right shows the vessel as a horizontal cylinder. Nozzle N1 is at the top left, nozzle N2 is at the right end, and cutout C1 is at the bottom. A vertical dashed line labeled 'REF. LINE' is positioned 1.22 m from the left end. The distance from the center of N1 to this reference line is 1.82 m. The distance from the reference line to the tangent point of the N2 flange is 0.838 m. Other dimensions include 1.931 m from the left end to the center of C1, 2.44 m from the left end to the center of C1, and 0.813 m from the center of C1 to the reference line.
+   </p>
+<div class="img-alt">
+    Technical drawing of a pressure vessel showing End View A-A and Elevation View with dimensions.
+   </div>
+</div>
+<p>
+<i>
+    Pressure Vessel Drawing with Dimensions
+   </i>
+</p>
+<p>
+   Distance from the centre of nozzle N1 to the outside of the flange on N2:
+  </p>
+<p>
+   $$
+    \begin{aligned} &amp;= \text{Centre of N1 to reference line} + \text{reference line to outside of flange N2} \\ &amp;= 1.82 \text{ m} + 0.838 \text{ m} \\ &amp;= 2.658 \text{ m (Ans.)} \end{aligned}
+   $$
+  </p>
+<ol style="list-style-type: none">
+<li>
+    3. What is the thickness of the steam drum and the mud drum in the following drawing?
+   </li>
+</ol>
+<img alt="Side Elevation of Boiler and Economizer drawing showing various dimensions and components." src="ff7ce44f3fdd51bae7b231f34df07c6a_img.jpg"/>
+<div class="img-description" style="border: 1px solid #ccc; padding: 10px;">
+<p>
+    The diagram is a side elevation of a boiler and economizer system. It features two main cylindrical drums: a steam drum at the top and a mud drum at the bottom. The steam drum has a diameter of 1.52 m (ID) and a wall thickness of 12.38 cm. The mud drum has a diameter of 1.07 m (ID) and a wall thickness of 8.57 cm. A series of vertical tubes connect the two drums. On the right side, an economizer is shown, consisting of a bundle of tubes. The economizer has an inlet at the top and an outlet at the bottom. Various dimensions are provided in meters (m) and centimeters (cm). Horizontal dimensions include 2.44 m, 0.953 m, 2.30 m, 1.94 m, 2.46 m x 2.74 m, and 2.30 m. Vertical dimensions include 2.07 m, 0.75 m, 1.83 m, 4.15 m, 7.31 m, 6.18 m, 3.05 m, 4.35 m, and an EXP 3/16. Tube specifications are given as 5 @ 12.7 cm (ID = 15.2 cm). The drawing is labeled 'SIDE ELEV.' at the bottom left.
+   </p>
+<div class="img-alt">
+    Side Elevation of Boiler and Economizer drawing showing various dimensions and components.
+   </div>
+</div>
+<p>
+<i>
+    Side Elevation of Boiler and Economizer
+   </i>
+</p>
+<p>
+   The thickness of the steam drum is 12.38 cm.
+   <br/>
+   The thickness of the mud drum is 8.57 cm.
+  </p>
+<h3>
+   4. Explain the difference between a process flow diagram and a process and instrument diagram.
+  </h3>
+<p>
+   Process flow diagrams are simplified schematics of a plant, or portion of a plant. They show only the major equipment items and the major process flow streams. A process flow diagram lists the prime function of the major equipment and the reference numbers of the material balance table.
+  </p>
+<p>
+   In most plants the mechanical flow diagram is called a Process and Instrument Diagram or for short P&amp;ID. Unlike the simplified process flow diagram, the mechanical flow diagram (P&amp;ID) includes details. The P&amp;ID visually summarizes all the system and process calculations that were based on flow rates, pressures, temperatures, and general layout of the process flow diagram.
+  </p>
+<h3>
+   5. What lists of symbols accompanies process and instrument diagrams?
+  </h3>
+<p>
+   Mechanical drawings come in sets for a particular plant or section of a larger plant. The set of drawings includes a legend showing all the following symbols used in the drawing. This legend could include the following list of piping symbols:
+  </p>
+<ul style="list-style-type: none">
+<li>
+    • Valve Symbols - these symbols identify different types of valves such as globe valves, plug valves, control valves, and ball valves; each type of valve has its own symbol
+   </li>
+<li>
+    • Line Symbols - these symbols identify different types of piping, such as normal piping, instrument airlines, and instrument and electrical lines
+   </li>
+<li>
+    • Flow Diagram Abbreviations - these abbreviations stand for standard terms that are used on P&amp;ID drawings; some examples are NO for normally open for valves, SO for steam out, and CO for car seal open
+   </li>
+<li>
+    • Miscellaneous Symbols - they are used for specific items that are not common on all P&amp;ID drawings; examples are spectacle blinds and specialty piping items
+   </li>
+</ul>
+<p>
+   Because P&amp;ID drawings contain instrumentation data, a list of instrumentation symbols is also included with the piping symbols.
+  </p>
+<h3>
+<p>
+<b>
+     6. Why do process and instrument drawings refer to isometric piping drawings?
+    </b>
+</p>
+</h3>
+<p>
+   When more information than is found on P&amp;ID drawings is needed, the isometric piping drawings are used. The piping line numbers from the P&amp;ID are used to reference the isometric drawings. The isometric view shows three sides of the piping in one practical and easy to read view.
+  </p>
+<h3>
+<p>
+<b>
+     7. Name the three forms used to draw piping spool drawings.
+    </b>
+</p>
+</h3>
+<p>
+   Piping spool drawings can be drawn the following formats.
+  </p>
+<ul style="list-style-type: none">
+<li>
+    • An isometric spool drawing.
+   </li>
+<li>
+    • A single line orthographic spool drawing.
+   </li>
+<li>
+    • A double line orthographic spool drawing.
+   </li>
+</ul>
+<h3>
+<p>
+<b>
+     8. What is a bill of material and when would it be used?
+    </b>
+</p>
+</h3>
+<p>
+   Isometric piping spool drawings reference flanges, piping and fitting details. These materials are itemized on a bill of materials for each spool drawing. The Bill of Materials is used for construction of the piping on the spool drawing and for repairs to existing piping. Included on the Bill of Materials are such details as the quantity and type of fittings, flanges, bolts and gaskets.
+  </p>
+<h3>
+<p>
+<b>
+     9. What is the difference between an isometric and an oblique drawing?
+    </b>
+</p>
+</h3>
+<p>
+   Pictorial drawings have the objective of approximating a camera snapshot. They give the reader a three dimensional view of the object being shown. This makes it easier to visualize the object as it would appear when constructed. Isometric and oblique drawings are both types of pictorial drawings. In isometric drawings, the angles used are: vertical and 30° angles to the vertical.
+  </p>
+<p>
+   Oblique drawings are also pictorial three dimensional drawings. Lines are drawn vertical, horizontal and at a 30° angle to the horizontal.
+  </p>
+</body>
+</html>
