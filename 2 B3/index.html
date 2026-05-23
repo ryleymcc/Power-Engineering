@@ -208,7 +208,7 @@
             <div class="section-container">
                 <h2>NotebookLM Sources</h2>
                 <p style="margin-bottom: 15px; color: #666; font-size: 0.95rem;">
-                    Click the button below to copy a comma-separated list of all chapter URLs in this section. This list can be pasted directly into NotebookLM as a source.
+                    Click the button below to copy a newline-separated list of all chapter URLs in this section. This list can be pasted directly into NotebookLM as a source.
                 </p>
                 <button id="copy-links-btn" class="copy-button">
                     <span>📋</span> Copy All Chapter Links
@@ -241,9 +241,9 @@
                         return basePath + path.split('/').map(segment => encodeURIComponent(segment)).join('/');
                     });
 
-                    const commaSeparated = fullUrls.join(',');
+                    const newlineSeparated = fullUrls.join('\n');
 
-                    navigator.clipboard.writeText(commaSeparated).then(() => {
+                    navigator.clipboard.writeText(newlineSeparated).then(() => {
                         const status = document.getElementById('copy-status');
                         status.style.opacity = '1';
                         setTimeout(() => {

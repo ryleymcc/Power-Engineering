@@ -247,7 +247,7 @@
             <div class="section-container">
                 <h2>NotebookLM Sources</h2>
                 <p style="margin-bottom: 15px; color: #666; font-size: 0.95rem;">
-                    Click the button below to copy a comma-separated list of all chapter and reference document URLs. This list can be pasted directly into NotebookLM as a source.
+                    Click the button below to copy a newline-separated list of all chapter and reference document URLs. This list can be pasted directly into NotebookLM as a source.
                 </p>
                 <button id="copy-links-btn" class="copy-button">
                     <span>📋</span> Copy All Chapter Links
@@ -318,18 +318,7 @@
                     "2 B3/2 B3 Chapter 7 - Air and Gas Compression/index.html",
                     "2 B3/2 B3 Chapter 8 - Refrigeration Systems and Equipment/index.html",
                     "2 B3/2 B3 Chapter 9 - Refrigeration Safety, Control and Operation/index.html",
-                    "2 B3/2 B3 Chapter 10 - Refrigeration Calculations/index.html",
-                    "Academic Supplement 2012.pdf",
-                    "ASME BPVC 2010 Section I.pdf",
-                    "ASME BPVC 2015 Section II - Materials - Part D (Metric).pdf",
-                    "ASME BPVC 2015 Section IV.pdf",
-                    "ASME BPVC 2015 Section V.pdf",
-                    "ASME BPVC 2015 Section VI.pdf",
-                    "ASME BPVC 2015 Section VII.pdf",
-                    "ASME-B31.1.pdf",
-                    "B16-5_2013.pdf",
-                    "B51-2009.pdf",
-                    "B52_2013.pdf"
+                    "2 B3/2 B3 Chapter 10 - Refrigeration Calculations/index.html"
                 ];
 
                 document.getElementById('copy-links-btn').addEventListener('click', () => {
@@ -342,9 +331,9 @@
                         return basePath + path.split('/').map(segment => encodeURIComponent(segment)).join('/');
                     });
 
-                    const commaSeparated = fullUrls.join(',');
+                    const newlineSeparated = fullUrls.join('\n');
 
-                    navigator.clipboard.writeText(commaSeparated).then(() => {
+                    navigator.clipboard.writeText(newlineSeparated).then(() => {
                         const status = document.getElementById('copy-status');
                         status.style.opacity = '1';
                         setTimeout(() => {
