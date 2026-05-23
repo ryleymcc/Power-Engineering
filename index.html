@@ -97,6 +97,32 @@
         border-radius: 12px;
         border: 1px solid var(--border-color);
     }
+    .copy-button {
+        background-color: #2980b9;
+        color: white;
+        border: none;
+        padding: 12px 24px;
+        border-radius: 6px;
+        cursor: pointer;
+        font-weight: 600;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        transition: background 0.2s;
+    }
+    .copy-button:hover {
+        background-color: #2471a3;
+    }
+    .copy-button:active {
+        transform: translateY(1px);
+    }
+    #copy-status {
+        margin-left: 12px;
+        font-size: 0.9rem;
+        color: #27ae60;
+        opacity: 0;
+        transition: opacity 0.3s;
+    }
 </style>
 </head>
     <body><div class="main-content">
@@ -192,28 +218,144 @@
                         </a>
                     </li>
                     <li style="margin: 0; border-bottom: 1px solid var(--border-color);">
-                        <a href="B51-2009.pdf" download style="text-decoration: none; color: #2980b9; padding: 15px; display: flex; align-items: center; gap: 12px; transition: background 0.2s;">
+                        <a href="ASME-B31.1.pdf" download style="text-decoration: none; color: #2980b9; padding: 15px; display: flex; align-items: center; gap: 12px; transition: background 0.2s;">
                             <span style="font-size: 1.4rem;">📄</span>
-                            <span style="font-weight: 500;">B51-2009 (PDF)</span>
+                            <span style="font-weight: 500;">ASME-B31.1 (PDF)</span>
                         </a>
                     </li>
                     <li style="margin: 0; border-bottom: 1px solid var(--border-color);">
-                        <a href="B52_2013.pdf" download style="text-decoration: none; color: #2980b9; padding: 15px; display: flex; align-items: center; gap: 12px; transition: background 0.2s;">
-                            <span style="font-size: 1.4rem;">📄</span>
-                            <span style="font-weight: 500;">B52_2013 (PDF)</span>
-                        </a>
-                    </li>
-                    <li style="margin: 0;">
                         <a href="B16-5_2013.pdf" download style="text-decoration: none; color: #2980b9; padding: 15px; display: flex; align-items: center; gap: 12px; transition: background 0.2s;">
                             <span style="font-size: 1.4rem;">📄</span>
                             <span style="font-weight: 500;">B16-5_2013 (PDF)</span>
                         </a>
                     </li>
+                    <li style="margin: 0; border-bottom: 1px solid var(--border-color);">
+                        <a href="B51-2009.pdf" download style="text-decoration: none; color: #2980b9; padding: 15px; display: flex; align-items: center; gap: 12px; transition: background 0.2s;">
+                            <span style="font-size: 1.4rem;">📄</span>
+                            <span style="font-weight: 500;">B51-2009 (PDF)</span>
+                        </a>
+                    </li>
+                    <li style="margin: 0;">
+                        <a href="B52_2013.pdf" download style="text-decoration: none; color: #2980b9; padding: 15px; display: flex; align-items: center; gap: 12px; transition: background 0.2s;">
+                            <span style="font-size: 1.4rem;">📄</span>
+                            <span style="font-weight: 500;">B52_2013 (PDF)</span>
+                        </a>
+                    </li>
                 </ul>
             </div>
 
+            <div class="section-container">
+                <h2>NotebookLM Sources</h2>
+                <p style="margin-bottom: 15px; color: #666; font-size: 0.95rem;">
+                    Click the button below to copy a comma-separated list of all chapter and reference document URLs. This list can be pasted directly into NotebookLM as a source.
+                </p>
+                <button id="copy-links-btn" class="copy-button">
+                    <span>📋</span> Copy All Chapter Links
+                </button>
+                <span id="copy-status">Links copied!</span>
+            </div>
 
+            <script>
+                const chapterPaths = [
+                    "2 A1/2 A1 - Answers/index.html",
+                    "2 A1/2 A1 Chapter 1 - A.S.M.E. Code Calculations - Cylindrical Components/index.html",
+                    "2 A1/2 A1 Chapter 2 - ASME Code Calculations - Stayed Surfaces, Safety Valves, Furnaces/index.html",
+                    "2 A1/2 A1 Chapter 3 - Boiler and Pressure Vessel Legislation/index.html",
+                    "2 A1/2 A1 Chapter 4 - Plant Design and Installation/index.html",
+                    "2 A1/2 A1 Chapter 5 - Management and Supervision/index.html",
+                    "2 A1/2 A1 Chapter 6 - Plant Maintenance/index.html",
+                    "2 A1/2 A1 Chapter 7 - Safety/index.html",
+                    "2 A1/2 A1 Chapter 8 - Linear Motion/index.html",
+                    "2 A1/2 A1 Chapter 9 - Angular Motion/index.html",
+                    "2 A1/2 A1 Chapter 10 - Friction/index.html",
+                    "2 A1/2 A1 Chapter 11 - Static and Dynamic Forces/index.html",
+                    "2 A1/2 A1 Chapter 12 - Fluid Mechanics/index.html",
+                    "2 A2/2 A2 - Answers/index.html",
+                    "2 A2/2 A2 Chapter 1 - Thermodynamics of Gases/index.html",
+                    "2 A2/2 A2 Chapter 2 - Thermodynamics of Steam/index.html",
+                    "2 A2/2 A2 Chapter 3 - Practical Thermodynamic Cycles/index.html",
+                    "2 A2/2 A2 Chapter 4 - Metallurgy/index.html",
+                    "2 A2/2 A2 Chapter 5 - Testing of Metals/index.html",
+                    "2 A3/2 A3 - Answers/index.html",
+                    "2 A3/2 A3 Chapter 1 - Steam Generator Components and Design/index.html",
+                    "2 A3/2 A3 Chapter 2 - Specialized Boiler Designs/index.html",
+                    "2 A3/2 A3 Chapter 3 - Boiler and Steam Generator Operation/index.html",
+                    "2 A3/2 A3 Chapter 4 - Boiler and Steam Generator Maintenance and Inspection/index.html",
+                    "2 A3/2 A3 Chapter 5 - Management and Supervision/index.html",
+                    "2 A3/2 A3 Chapter 6 - Water Chemistry and Analysis/index.html",
+                    "2 A3/2 A3 Chapter 7 - Water Pretreatment I/index.html",
+                    "2 A3/2 A3 Chapter 8 - Water Pre-Treatment II/index.html",
+                    "2 A3/2 A3 Chapter 9 - Internal Water Treatment/index.html",
+                    "2 A3/2 A3 Chapter 10 - Non-Boiler Water Treatment/index.html",
+                    "2 B1/2 B1 - Answers/index.html",
+                    "2 B1/2 B1 Chapter 1 - Steam Turbine Theory and Construction/index.html",
+                    "2 B1/2 B1 Chapter 2 - Steam Turbine Auxiliaries and Control/index.html",
+                    "2 B1/2 B1 Chapter 3 - Steam Turbine Operation and Maintenance/index.html",
+                    "2 B1/2 B1 Chapter 4 - Steam Condensers/index.html",
+                    "2 B1/2 B1 Chapter 5 - Internal Combustion Engines Components and Auxiliaries/index.html",
+                    "2 B1/2 B1 Chapter 6 - Internal Combustion Engines Operation and Maintenance/index.html",
+                    "2 B1/2 B1 Chapter 7 - Gas Turbine Design and Auxiliaries/index.html",
+                    "2 B1/2 B1 Chapter 8 - Gas Turbine Operation and Control/index.html",
+                    "2 B1/2 B1 Chapter 9 - Lubrication/index.html",
+                    "2 B1/2 B1 Chapter 10 - Piping/index.html",
+                    "2 B1/2 B1 Chapter 11 - Mechanical Drawing/index.html",
+                    "2 B2/2 B2 - Answers/index.html",
+                    "2 B2/2 B2 Chapter 1 - Power Plant Fuel Systems/index.html",
+                    "2 B2/2 B2 Chapter 2 - Power Plant Water and Steam Systems/index.html",
+                    "2 B2/2 B2 Chapter 3 - Measurement and Control Components/index.html",
+                    "2 B2/2 B2 Chapter 5 - Fuels and Combustion Calculations/index.html",
+                    "2 B2/2 B2 Chapter 6 - Firing and Draft Equipment/index.html",
+                    "2 B2/2 B2 Chapter 7 - Combustion Control and Safeguards/index.html",
+                    "2 B2/2 B2 Chapter 8 - Environmental Monitoring/index.html",
+                    "2 B2/2 B2 Chapter 9 - Environmental Control Methods/index.html",
+                    "2 B3/2 B3 - Answers/index.html",
+                    "2 B3/2 B3 Chapter 1 - Alternating Current Theory/index.html",
+                    "2 B3/2 B3 Chapter 2 - Direct Current Machines/index.html",
+                    "2 B3/2 B3 Chapter 3 - Alternating Current Generators/index.html",
+                    "2 B3/2 B3 Chapter 4 - Alternating Current Motors/index.html",
+                    "2 B3/2 B3 Chapter 5 - Transformers/index.html",
+                    "2 B3/2 B3 Chapter 6 - Electrical System Protection/index.html",
+                    "2 B3/2 B3 Chapter 7 - Air and Gas Compression/index.html",
+                    "2 B3/2 B3 Chapter 8 - Refrigeration Systems and Equipment/index.html",
+                    "2 B3/2 B3 Chapter 9 - Refrigeration Safety, Control and Operation/index.html",
+                    "2 B3/2 B3 Chapter 10 - Refrigeration Calculations/index.html",
+                    "Academic Supplement 2012.pdf",
+                    "ASME BPVC 2010 Section I.pdf",
+                    "ASME BPVC 2015 Section II - Materials - Part D (Metric).pdf",
+                    "ASME BPVC 2015 Section IV.pdf",
+                    "ASME BPVC 2015 Section V.pdf",
+                    "ASME BPVC 2015 Section VI.pdf",
+                    "ASME BPVC 2015 Section VII.pdf",
+                    "ASME-B31.1.pdf",
+                    "B16-5_2013.pdf",
+                    "B51-2009.pdf",
+                    "B52_2013.pdf"
+                ];
 
+                document.getElementById('copy-links-btn').addEventListener('click', () => {
+                    // Get base path (everything before index.html in the current URL)
+                    let basePath = window.location.href.split('index.html')[0];
+                    if (!basePath.endsWith('/')) basePath += '/';
+
+                    const fullUrls = chapterPaths.map(path => {
+                        // Encode spaces and special characters, then append to base path
+                        return basePath + path.split('/').map(segment => encodeURIComponent(segment)).join('/');
+                    });
+
+                    const commaSeparated = fullUrls.join(',');
+
+                    navigator.clipboard.writeText(commaSeparated).then(() => {
+                        const status = document.getElementById('copy-status');
+                        status.style.opacity = '1';
+                        setTimeout(() => {
+                            status.style.opacity = '0';
+                        }, 2000);
+                    }).catch(err => {
+                        console.error('Failed to copy: ', err);
+                        alert('Failed to copy links to clipboard.');
+                    });
+                });
+            </script>
 
         </div>
     </div></body>

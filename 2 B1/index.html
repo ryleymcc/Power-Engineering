@@ -86,88 +86,183 @@
         background-color: var(--table-bg);
         font-weight: 600;
     }
+
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+    .section-container {
+        margin-bottom: 40px;
+        background: var(--table-bg);
+        padding: 20px;
+        border-radius: 12px;
+        border: 1px solid var(--border-color);
+    }
+    .copy-button {
+        background-color: #2980b9;
+        color: white;
+        border: none;
+        padding: 12px 24px;
+        border-radius: 6px;
+        cursor: pointer;
+        font-weight: 600;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        transition: background 0.2s;
+    }
+    .copy-button:hover {
+        background-color: #2471a3;
+    }
+    .copy-button:active {
+        transform: translateY(1px);
+    }
+    #copy-status {
+        margin-left: 12px;
+        font-size: 0.9rem;
+        color: #27ae60;
+        opacity: 0;
+        transition: opacity 0.3s;
+    }
 </style>
 </head>
     <body><div class="main-content">
         <div class="container">
             <a href="../index.html" style="text-decoration: none; color: #7f8c8d; margin-bottom: 20px; display: inline-flex; align-items: center; gap: 5px; font-weight: 500;"> <span style="font-size: 1.2rem;">↑</span> Parent Directory</a>
             <h1>Chapter Index - 2 B1</h1>
-            <ul>
+            <div class="section-container">
+                <h2>Chapters</h2>
+                <ul>
                 
 
-        <li style="margin: 0; border-bottom: 1px solid #eee;">
+        <li style="margin: 0; border-bottom: 1px solid var(--border-color);">
             <a href="2 B1 Chapter 1 - Steam Turbine Theory and Construction/index.html" style="text-decoration: none; color: #2980b9; padding: 15px; display: flex; align-items: center; gap: 12px; transition: background 0.2s;">
                 <span style="font-size: 1.4rem;">📖</span>
                 <span style="font-weight: 500;">Chapter 1 - Steam Turbine Theory and Construction</span>
             </a>
         </li>
-        <li style="margin: 0; border-bottom: 1px solid #eee;">
+        <li style="margin: 0; border-bottom: 1px solid var(--border-color);">
             <a href="2 B1 Chapter 11 - Mechanical Drawing/index.html" style="text-decoration: none; color: #2980b9; padding: 15px; display: flex; align-items: center; gap: 12px; transition: background 0.2s;">
                 <span style="font-size: 1.4rem;">📖</span>
                 <span style="font-weight: 500;">Chapter 11 - Mechanical Drawing</span>
             </a>
         </li>
-        <li style="margin: 0; border-bottom: 1px solid #eee;">
+        <li style="margin: 0; border-bottom: 1px solid var(--border-color);">
             <a href="2 B1 Chapter 2 - Steam Turbine Auxiliaries and Control/index.html" style="text-decoration: none; color: #2980b9; padding: 15px; display: flex; align-items: center; gap: 12px; transition: background 0.2s;">
                 <span style="font-size: 1.4rem;">📖</span>
                 <span style="font-weight: 500;">Chapter 2 - Steam Turbine Auxiliaries and Control</span>
             </a>
         </li>
-        <li style="margin: 0; border-bottom: 1px solid #eee;">
+        <li style="margin: 0; border-bottom: 1px solid var(--border-color);">
             <a href="2 B1 Chapter 3 - Steam Turbine Operation and Maintenance/index.html" style="text-decoration: none; color: #2980b9; padding: 15px; display: flex; align-items: center; gap: 12px; transition: background 0.2s;">
                 <span style="font-size: 1.4rem;">📖</span>
                 <span style="font-weight: 500;">Chapter 3 - Steam Turbine Operation and Maintenance</span>
             </a>
         </li>
-        <li style="margin: 0; border-bottom: 1px solid #eee;">
+        <li style="margin: 0; border-bottom: 1px solid var(--border-color);">
             <a href="2 B1 Chapter 4 - Steam Condensers/index.html" style="text-decoration: none; color: #2980b9; padding: 15px; display: flex; align-items: center; gap: 12px; transition: background 0.2s;">
                 <span style="font-size: 1.4rem;">📖</span>
                 <span style="font-weight: 500;">Chapter 4 - Steam Condensers</span>
             </a>
         </li>
-        <li style="margin: 0; border-bottom: 1px solid #eee;">
+        <li style="margin: 0; border-bottom: 1px solid var(--border-color);">
             <a href="2 B1 Chapter 5 - Internal Combustion Engines Components and Auxiliaries/index.html" style="text-decoration: none; color: #2980b9; padding: 15px; display: flex; align-items: center; gap: 12px; transition: background 0.2s;">
                 <span style="font-size: 1.4rem;">📖</span>
                 <span style="font-weight: 500;">Chapter 5 - Internal Combustion Engines Components and Auxiliaries</span>
             </a>
         </li>
-        <li style="margin: 0; border-bottom: 1px solid #eee;">
+        <li style="margin: 0; border-bottom: 1px solid var(--border-color);">
             <a href="2 B1 Chapter 6 - Internal Combustion Engines Operation and Maintenance/index.html" style="text-decoration: none; color: #2980b9; padding: 15px; display: flex; align-items: center; gap: 12px; transition: background 0.2s;">
                 <span style="font-size: 1.4rem;">📖</span>
                 <span style="font-weight: 500;">Chapter 6 - Internal Combustion Engines Operation and Maintenance</span>
             </a>
         </li>
-        <li style="margin: 0; border-bottom: 1px solid #eee;">
+        <li style="margin: 0; border-bottom: 1px solid var(--border-color);">
             <a href="2 B1 Chapter 7 - Gas Turbine Design and Auxiliaries/index.html" style="text-decoration: none; color: #2980b9; padding: 15px; display: flex; align-items: center; gap: 12px; transition: background 0.2s;">
                 <span style="font-size: 1.4rem;">📖</span>
                 <span style="font-weight: 500;">Chapter 7 - Gas Turbine Design and Auxiliaries</span>
             </a>
         </li>
-        <li style="margin: 0; border-bottom: 1px solid #eee;">
+        <li style="margin: 0; border-bottom: 1px solid var(--border-color);">
             <a href="2 B1 Chapter 8 - Gas Turbine Operation and Control/index.html" style="text-decoration: none; color: #2980b9; padding: 15px; display: flex; align-items: center; gap: 12px; transition: background 0.2s;">
                 <span style="font-size: 1.4rem;">📖</span>
                 <span style="font-weight: 500;">Chapter 8 - Gas Turbine Operation and Control</span>
             </a>
         </li>
-        <li style="margin: 0; border-bottom: 1px solid #eee;">
+        <li style="margin: 0; border-bottom: 1px solid var(--border-color);">
             <a href="2 B1 Chapter 9 - Lubrication/index.html" style="text-decoration: none; color: #2980b9; padding: 15px; display: flex; align-items: center; gap: 12px; transition: background 0.2s;">
                 <span style="font-size: 1.4rem;">📖</span>
                 <span style="font-weight: 500;">Chapter 9 - Lubrication</span>
             </a>
         </li>
-        <li style="margin: 0; border-bottom: 1px solid #eee;">
+        <li style="margin: 0; border-bottom: 1px solid var(--border-color);">
             <a href="2 B1 Chapter 10 - Piping/index.html" style="text-decoration: none; color: #2980b9; padding: 15px; display: flex; align-items: center; gap: 12px; transition: background 0.2s;">
                 <span style="font-size: 1.4rem;">📖</span>
                 <span style="font-weight: 500;">Chapter 10 - Piping</span>
             </a>
         </li>
-        <li style="margin: 0; border-bottom: 1px solid #eee;">
+        <li style="margin: 0;">
             <a href="2 B1 - Answers/index.html" style="text-decoration: none; color: #2980b9; padding: 15px; display: flex; align-items: center; gap: 12px; transition: background 0.2s;">
                 <span style="font-size: 1.4rem;">📖</span>
                 <span style="font-weight: 500;">2 B1 - Answers</span>
             </a>
         </li>
             </ul>
+            </div>
+
+            
+
+            <div class="section-container">
+                <h2>NotebookLM Sources</h2>
+                <p style="margin-bottom: 15px; color: #666; font-size: 0.95rem;">
+                    Click the button below to copy a comma-separated list of all chapter URLs in this section. This list can be pasted directly into NotebookLM as a source.
+                </p>
+                <button id="copy-links-btn" class="copy-button">
+                    <span>📋</span> Copy All Chapter Links
+                </button>
+                <span id="copy-status">Links copied!</span>
+            </div>
+
+            <script>
+                const chapterPaths = [
+                    "2 B1 Chapter 1 - Steam Turbine Theory and Construction/index.html",
+                    "2 B1 Chapter 11 - Mechanical Drawing/index.html",
+                    "2 B1 Chapter 2 - Steam Turbine Auxiliaries and Control/index.html",
+                    "2 B1 Chapter 3 - Steam Turbine Operation and Maintenance/index.html",
+                    "2 B1 Chapter 4 - Steam Condensers/index.html",
+                    "2 B1 Chapter 5 - Internal Combustion Engines Components and Auxiliaries/index.html",
+                    "2 B1 Chapter 6 - Internal Combustion Engines Operation and Maintenance/index.html",
+                    "2 B1 Chapter 7 - Gas Turbine Design and Auxiliaries/index.html",
+                    "2 B1 Chapter 8 - Gas Turbine Operation and Control/index.html",
+                    "2 B1 Chapter 9 - Lubrication/index.html",
+                    "2 B1 Chapter 10 - Piping/index.html",
+                    "2 B1 - Answers/index.html"
+                ];
+
+                document.getElementById('copy-links-btn').addEventListener('click', () => {
+                    // Get base path (everything before index.html in the current URL)
+                    let basePath = window.location.href.split('index.html')[0];
+                    if (!basePath.endsWith('/')) basePath += '/';
+
+                    const fullUrls = chapterPaths.map(path => {
+                        // Encode spaces and special characters, then append to base path
+                        return basePath + path.split('/').map(segment => encodeURIComponent(segment)).join('/');
+                    });
+
+                    const commaSeparated = fullUrls.join(',');
+
+                    navigator.clipboard.writeText(commaSeparated).then(() => {
+                        const status = document.getElementById('copy-status');
+                        status.style.opacity = '1';
+                        setTimeout(() => {
+                            status.style.opacity = '0';
+                        }, 2000);
+                    }).catch(err => {
+                        console.error('Failed to copy: ', err);
+                        alert('Failed to copy links to clipboard.');
+                    });
+                });
+            </script>
         </div>
     </div></body>
     </html>
